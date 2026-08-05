@@ -29,35 +29,30 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd core-web-vitals-testing
           npm ci
 
       - name: Install Playwright Browsers
         run: |
-          cd core-web-vitals-testing
           npx playwright install --with-deps chromium
 
       - name: Run Core Web Vitals Tests
         run: |
-          cd core-web-vitals-testing
           npm run test:cwv -- --project=desktop-chrome --project=mobile-chrome
 
       - name: Run Diagnostics Spec
         run: |
-          cd core-web-vitals-testing
           npx playwright test tests/diagnostic-audit.spec.js --project=desktop-chrome --project=mobile-chrome
         continue-on-error: true
 
       - name: Generate Reports
         run: |
-          cd core-web-vitals-testing
           node scripts/generate-report.js
           node scripts/generate-diagnostic-report.js
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: core-web-vitals-testing # Deploys the entire directory containing reports/
+          folder: reports # Deploys the reports directory directly
           branch: gh-pages
 
       - name: Send Slack Notification
@@ -65,5 +60,4 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
         run: |
-          cd core-web-vitals-testing
           node scripts/slack-notifier.js

@@ -50,12 +50,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          cd core-web-vitals-testing
           npm ci
 
       - name: Install Playwright Browsers
         run: |
-          cd core-web-vitals-testing
           npx playwright install --with-deps chromium
 
       - name: Run Core Web Vitals Tests
@@ -63,7 +61,6 @@ jobs:
           TARGET_DOMAIN: "${{ matrix.site.url }}"
           DOMAIN_ID: "${{ matrix.site.id }}"
         run: |
-          cd core-web-vitals-testing
           npm run test:cwv -- --project=desktop-chrome --project=mobile-chrome
 
       - name: Run Diagnostics Spec
@@ -71,13 +68,11 @@ jobs:
           TARGET_DOMAIN: "${{ matrix.site.url }}"
           DOMAIN_ID: "${{ matrix.site.id }}"
         run: |
-          cd core-web-vitals-testing
           npx playwright test tests/diagnostic-audit.spec.js --project=desktop-chrome --project=mobile-chrome
         continue-on-error: true
 
       - name: Generate Reports
         run: |
-          cd core-web-vitals-testing
           node scripts/generate-report.js
           node scripts/generate-diagnostic-report.js
 
@@ -86,7 +81,7 @@ jobs:
         continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./core-web-vitals-testing/reports
+          publish_dir: ./reports
           destination_dir: ${{ matrix.site.id }} # Deploy reports to site subfolders e.g. /detailedvehiclehistory
           keep_files: true
           allow_empty_commit: true
@@ -96,5 +91,4 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ matrix.site.id }}
         run: |
-          cd core-web-vitals-testing
           node scripts/slack-notifier.js
