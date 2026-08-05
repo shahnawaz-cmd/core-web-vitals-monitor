@@ -6,8 +6,6 @@ permissions:
   id-token: write
 
 on:
-  push:
-    branches: [ main, master ]
   schedule:
     - cron: '0 8 * * *' # Run daily at 8:00 AM UTC
   workflow_dispatch:
@@ -35,7 +33,7 @@ jobs:
     timeout-minutes: 120
     continue-on-error: true
     strategy:
-      max-parallel: 1
+      max-parallel: 8
       fail-fast: false
       matrix:
         site: ${{ fromJson(needs.setup.outputs.matrix) }}
