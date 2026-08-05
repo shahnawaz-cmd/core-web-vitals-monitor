@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Web Vitals Report — Aug 5, 2026, 11:35 AM</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    :root {
+      --bg-primary: #0a0e1a;
+      --bg-secondary: #111827;
+      --bg-card: #1a2035;
+      --bg-card-hover: #1f2847;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --border: #1e293b;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.3);
+      --good: #0cce6b;
+      --good-bg: rgba(12, 206, 107, 0.1);
+      --warning: #ffa400;
+      --warning-bg: rgba(255, 164, 0, 0.1);
+      --poor: #ff4e42;
+      --poor-bg: rgba(255, 78, 66, 0.1);
+      --gradient-1: linear-gradient(135deg, #6366f1, #8b5cf6);
+      --gradient-2: linear-gradient(135deg, #06b6d4, #3b82f6);
+      --gradient-3: linear-gradient(135deg, #f59e0b, #ef4444);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(180deg, rgba(99,102,241,0.15) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 0;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: var(--gradient-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header .subtitle {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .header-stats {
+      display: flex;
+      gap: 24px;
+    }
+
+    .header-stat {
+      text-align: center;
+    }
+
+    .header-stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .header-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+    }
+
+    /* ── Container ── */
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+
+    /* ── Tabs ── */
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 32px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius);
+      padding: 4px;
+      width: fit-content;
+    }
+
+    .tab {
+      padding: 10px 24px;
+      border-radius: 12px;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .tab:hover { color: var(--text-primary); }
+
+    .tab.active {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 2px 12px var(--accent-glow);
+    }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* ── Section ── */
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title .icon {
+      font-size: 24px;
+    }
+
+    /* ── Cards Grid ── */
+    .site-section {
+      margin-bottom: 48px;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .site-name {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .site-badge {
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* ── Metric Cards ── */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .metric-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .metric-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: 0 8px 40px rgba(99, 102, 241, 0.15);
+    }
+
+    .metric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .metric-card.good::before { background: var(--good); }
+    .metric-card.warning::before { background: var(--warning); }
+    .metric-card.poor::before { background: var(--poor); }
+
+    .metric-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .metric-name {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--text-secondary);
+    }
+
+    .metric-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .metric-badge.good { background: var(--good-bg); color: var(--good); }
+    .metric-badge.warning { background: var(--warning-bg); color: var(--warning); }
+    .metric-badge.poor { background: var(--poor-bg); color: var(--poor); }
+
+    .metric-value {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric-value.good { color: var(--good); }
+    .metric-value.warning { color: var(--warning); }
+    .metric-value.poor { color: var(--poor); }
+
+    .metric-threshold {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── URL Result Row ── */
+    .url-result {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .url-result:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+
+    .url-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .url-label {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .url-link {
+      color: var(--accent);
+      font-size: 13px;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .url-link:hover { text-decoration: underline; }
+
+    .url-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 16px;
+    }
+
+    .metric-cell {
+      text-align: center;
+      padding: 12px;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-sm);
+      transition: all 0.3s ease;
+    }
+
+    .metric-cell:hover { background: var(--bg-card-hover); }
+
+    .metric-cell-name {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .metric-cell-value {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .metric-cell-value.good { color: var(--good); }
+    .metric-cell-value.warning { color: var(--warning); }
+    .metric-cell-value.poor { color: var(--poor); }
+    .metric-cell-value.neutral { color: var(--text-secondary); }
+
+    /* ── Score Ring ── */
+    .score-ring {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 12px;
+    }
+
+    .score-ring svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .score-ring-bg {
+      fill: none;
+      stroke: var(--border);
+      stroke-width: 8;
+    }
+
+    .score-ring-progress {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+      transform: rotate(-90deg);
+      transform-origin: center;
+      transition: stroke-dashoffset 1s ease;
+    }
+
+    .score-ring-text {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      fill: var(--text-primary);
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+
+    /* ── PSI Cards ── */
+    .psi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 24px;
+    }
+
+    .psi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: all 0.3s ease;
+    }
+
+    .psi-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .psi-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .psi-strategy-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .psi-strategy-badge.mobile {
+      background: rgba(6, 182, 212, 0.15);
+      color: #06b6d4;
+    }
+
+    .psi-strategy-badge.desktop {
+      background: rgba(139, 92, 246, 0.15);
+      color: #8b5cf6;
+    }
+
+    /* ── Opportunities ── */
+    .opportunities {
+      margin-top: 20px;
+    }
+
+    .opportunity {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+
+    .opportunity:last-child { border-bottom: none; }
+
+    .opportunity-title { color: var(--text-primary); flex: 1; }
+
+    .opportunity-savings {
+      color: var(--warning);
+      font-weight: 600;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+
+    /* ── Summary Table ── */
+    .summary-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .summary-table th {
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .summary-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .summary-table tr:last-child td { border-bottom: none; }
+
+    .summary-table tr:hover td {
+      background: var(--bg-card-hover);
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+      margin-top: 60px;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-in {
+      animation: fadeInUp 0.5s ease forwards;
+      opacity: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .header-inner { flex-direction: column; text-align: center; }
+      .header-stats { justify-content: center; }
+      .metrics-row { grid-template-columns: repeat(3, 1fr); }
+      .psi-grid { grid-template-columns: 1fr; }
+      .container { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header">
+    <div class="header-inner">
+      <div>
+        <h1>⚡ Core Web Vitals Report</h1>
+        <div class="subtitle">Generated on Aug 5, 2026, 11:35 AM</div>
+      </div>
+      <div class="header-stats">
+        <div class="header-stat">
+          <div class="header-stat-value">1</div>
+          <div class="header-stat-label">Sites Tested</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-value">4</div>
+          <div class="header-stat-label">Pages Tested</div>
+        </div>
+        <div class="header-stat">
+          <div class="header-stat-value">24</div>
+          <div class="header-stat-label">Browser Runs</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- ═══ TABS ═══ -->
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('overview')">📊 Overview</button>
+      <button class="tab" onclick="switchTab('browser')">🌐 Browser Tests</button>
+      <button class="tab" onclick="switchTab('pagespeed')">🔬 PageSpeed Insights</button>
+      <button class="tab" onclick="switchTab('summary')">📋 Summary Table</button>
+    </div>
+
+    <!-- ═══ OVERVIEW TAB ═══ -->
+    <div id="tab-overview" class="tab-content active">
+      <div class="section-title"><span class="icon">📊</span> Overview — All Sites</div>
+      <div class="site-section">
+      <div class="site-header">
+        <span class="site-name">🌐 classicdecoder</span>
+        <span class="site-badge">8 results</span>
+      </div><h3 style="margin: 16px 0 10px; color: var(--text-primary); font-size: 15px; display: flex; align-items: center; gap: 8px;">🖥️ Desktop Viewport Results</h3><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Homepage</div>
+              <a class="url-link" href="https://classicdecoder.com" target="_blank">https://classicdecoder.com</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">575ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value good">511ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0000</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">39ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">1.02s</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">License Plate Lookup</div>
+              <a class="url-link" href="https://classicdecoder.com/license-plate-lookup" target="_blank">https://classicdecoder.com/license-plate-lookup</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">971ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value good">841ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0100</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">178ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">789ms</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">VIN Check</div>
+              <a class="url-link" href="https://classicdecoder.com/vin-check" target="_blank">https://classicdecoder.com/vin-check</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">1.03s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value good">855ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0100</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">222ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">806ms</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Window Sticker</div>
+              <a class="url-link" href="https://classicdecoder.com/window-sticker" target="_blank">https://classicdecoder.com/window-sticker</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">955ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value good">829ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0100</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">152ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">790ms</div>
+            </div>
+          </div>
+        </div><h3 style="margin: 24px 0 10px; color: var(--text-primary); font-size: 15px; display: flex; align-items: center; gap: 8px;">📱 Mobile Viewport Results</h3><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Homepage</div>
+              <a class="url-link" href="https://classicdecoder.com" target="_blank">https://classicdecoder.com</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">636ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value good">636ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0000</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">27ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">2.22s</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">License Plate Lookup</div>
+              <a class="url-link" href="https://classicdecoder.com/license-plate-lookup" target="_blank">https://classicdecoder.com/license-plate-lookup</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">2.39s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value warning">2.14s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0300</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">62ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">2.13s</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">VIN Check</div>
+              <a class="url-link" href="https://classicdecoder.com/vin-check" target="_blank">https://classicdecoder.com/vin-check</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">2.32s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value warning">2.11s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0300</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">63ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">2.10s</div>
+            </div>
+          </div>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Window Sticker</div>
+              <a class="url-link" href="https://classicdecoder.com/window-sticker" target="_blank">https://classicdecoder.com/window-sticker</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>📅 8/5/2026</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-cell">
+              <div class="metric-cell-name">LCP</div>
+              <div class="metric-cell-value good">2.31s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">FCP</div>
+              <div class="metric-cell-value warning">2.10s</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">CLS</div>
+              <div class="metric-cell-value good">0.0300</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TTFB</div>
+              <div class="metric-cell-value good">129ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">TBT</div>
+              <div class="metric-cell-value good">0ms</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">Speed Index</div>
+              <div class="metric-cell-value neutral">2.09s</div>
+            </div>
+          </div>
+        </div></div>
+    </div>
+
+    <!-- ═══ BROWSER TESTS TAB ═══ -->
+    <div id="tab-browser" class="tab-content">
+      <div class="section-title"><span class="icon">🌐</span> Real Browser Metrics (Playwright)</div>
+      <div class="site-section">
+      <div class="site-header">
+        <span class="site-name">classicdecoder</span>
+        <span class="site-badge">8 pages tested</span>
+      </div><h3 style="margin: 16px 0 10px; color: var(--text-primary); font-size: 15px; display: flex; align-items: center; gap: 8px;">🖥️ Desktop Viewport</h3><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Homepage</div>
+              <a class="url-link" href="https://classicdecoder.com" target="_blank">https://classicdecoder.com</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">575ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value good">511ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0000</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">39ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">98.67</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="good">LCP: 608ms</span>
+        <span class="good">FCP: 460ms</span>
+        <span class="good">CLS: 0.0006</span>
+        <span class="good">TTFB: 33ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 492ms</span>
+        <span class="good">FCP: 448ms</span>
+        <span class="good">CLS: 0.0006</span>
+        <span class="good">TTFB: 54ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 624ms</span>
+        <span class="good">FCP: 624ms</span>
+        <span class="good">CLS: 0.0006</span>
+        <span class="good">TTFB: 29ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">License Plate Lookup</div>
+              <a class="url-link" href="https://classicdecoder.com/license-plate-lookup" target="_blank">https://classicdecoder.com/license-plate-lookup</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">971ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value good">841ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0100</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">178ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">57</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="good">LCP: 1.06s</span>
+        <span class="good">FCP: 916ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 387ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 856ms</span>
+        <span class="good">FCP: 800ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 83ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 992ms</span>
+        <span class="good">FCP: 808ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 63ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">VIN Check</div>
+              <a class="url-link" href="https://classicdecoder.com/vin-check" target="_blank">https://classicdecoder.com/vin-check</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">1.03s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value good">855ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0100</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">222ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">57</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="good">LCP: 1.29s</span>
+        <span class="good">FCP: 1.12s</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 534ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 888ms</span>
+        <span class="good">FCP: 692ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 60ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 912ms</span>
+        <span class="good">FCP: 752ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 72ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Window Sticker</div>
+              <a class="url-link" href="https://classicdecoder.com/window-sticker" target="_blank">https://classicdecoder.com/window-sticker</a>
+            </div>
+            <div class="url-meta">
+              <span>🖥️ desktop-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">955ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value good">829ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0100</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">152ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">57</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="good">LCP: 1.05s</span>
+        <span class="good">FCP: 896ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 317ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 804ms</span>
+        <span class="good">FCP: 644ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 65ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 1.01s</span>
+        <span class="good">FCP: 948ms</span>
+        <span class="good">CLS: 0.0106</span>
+        <span class="good">TTFB: 73ms</span>
+      </div></div></details>
+        </div><h3 style="margin: 24px 0 10px; color: var(--text-primary); font-size: 15px; display: flex; align-items: center; gap: 8px;">📱 Mobile Viewport</h3><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Homepage</div>
+              <a class="url-link" href="https://classicdecoder.com" target="_blank">https://classicdecoder.com</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">636ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value good">636ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0000</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">27ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">91.33</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="good">LCP: 1.28s</span>
+        <span class="good">FCP: 1.28s</span>
+        <span class="good">CLS: 0.0000</span>
+        <span class="good">TTFB: 28ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 312ms</span>
+        <span class="good">FCP: 312ms</span>
+        <span class="good">CLS: 0.0000</span>
+        <span class="good">TTFB: 27ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 320ms</span>
+        <span class="good">FCP: 320ms</span>
+        <span class="good">CLS: 0.0000</span>
+        <span class="good">TTFB: 26ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">License Plate Lookup</div>
+              <a class="url-link" href="https://classicdecoder.com/license-plate-lookup" target="_blank">https://classicdecoder.com/license-plate-lookup</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">2.39s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value warning">2.14s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0300</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">62ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">53</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="poor">LCP: 5.36s</span>
+        <span class="poor">FCP: 4.94s</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 61ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 764ms</span>
+        <span class="good">FCP: 632ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 65ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 1.04s</span>
+        <span class="good">FCP: 844ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 60ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">VIN Check</div>
+              <a class="url-link" href="https://classicdecoder.com/vin-check" target="_blank">https://classicdecoder.com/vin-check</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">2.32s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value warning">2.11s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0300</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">63ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">53</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="poor">LCP: 5.26s</span>
+        <span class="poor">FCP: 4.94s</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 57ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 820ms</span>
+        <span class="good">FCP: 724ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 65ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 876ms</span>
+        <span class="good">FCP: 680ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 68ms</span>
+      </div></div></details>
+        </div><div class="url-result">
+          <div class="url-header">
+            <div>
+              <div class="url-label">Window Sticker</div>
+              <a class="url-link" href="https://classicdecoder.com/window-sticker" target="_blank">https://classicdecoder.com/window-sticker</a>
+            </div>
+            <div class="url-meta">
+              <span>📱 mobile-chrome</span>
+              <span>3 runs</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+    <div class="metric-cell">
+      <div class="metric-cell-name">LCP</div>
+      <div class="metric-cell-value good">2.31s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">FCP</div>
+      <div class="metric-cell-value warning">2.10s</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">CLS</div>
+      <div class="metric-cell-value good">0.0300</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TTFB</div>
+      <div class="metric-cell-value good">129ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">TBT</div>
+      <div class="metric-cell-value good">0ms</div>
+    </div>
+    <div class="metric-cell">
+      <div class="metric-cell-name">Resources</div>
+      <div class="metric-cell-value neutral">53</div>
+    </div>
+  </div><details style="margin-top: 8px; margin-bottom: 16px; padding: 0 12px 8px;">
+      <summary style="cursor: pointer; color: var(--text-secondary); font-size: 13px;">Show individual runs</summary>
+      <div style="margin-top: 12px;"><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 1</span>
+        <span class="poor">LCP: 5.31s</span>
+        <span class="poor">FCP: 4.89s</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 68ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 2</span>
+        <span class="good">LCP: 712ms</span>
+        <span class="good">FCP: 600ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 63ms</span>
+      </div><div style="display: flex; gap: 16px; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 13px;">
+        <span style="color: var(--text-muted); width: 60px;">Run 3</span>
+        <span class="good">LCP: 904ms</span>
+        <span class="good">FCP: 804ms</span>
+        <span class="good">CLS: 0.0342</span>
+        <span class="good">TTFB: 255ms</span>
+      </div></div></details>
+        </div></div>
+    </div>
+
+    <!-- ═══ PAGESPEED TAB ═══ -->
+    <div id="tab-pagespeed" class="tab-content">
+      <div class="section-title"><span class="icon">🔬</span> PageSpeed Insights Lab Data</div>
+      <p style="color: var(--text-muted);">No PageSpeed Insights results. Run: <code>npm run test:psi</code></p>
+    </div>
+
+    <!-- ═══ SUMMARY TAB ═══ -->
+    <div id="tab-summary" class="tab-content">
+      <div class="section-title"><span class="icon">📋</span> Summary Comparison</div>
+      <div style="overflow-x: auto;">
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th>Site</th>
+          <th>Page</th>
+          <th>Source</th>
+          <th>LCP</th>
+          <th>FCP</th>
+          <th>CLS</th>
+          <th>TTFB</th>
+          <th>TBT</th>
+          <th>SI</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody><tr>
+      <td>classicdecoder</td>
+      <td>Homepage</td>
+      <td>🌐 desktop-chrome</td>
+      <td><span class="good">575ms</span></td>
+      <td><span class="good">511ms</span></td>
+      <td><span class="good">0.0000</span></td>
+      <td><span class="good">39ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>1.02s</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>Homepage</td>
+      <td>🌐 mobile-chrome</td>
+      <td><span class="good">636ms</span></td>
+      <td><span class="good">636ms</span></td>
+      <td><span class="good">0.0000</span></td>
+      <td><span class="good">27ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>2.22s</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>License Plate Lookup</td>
+      <td>🌐 desktop-chrome</td>
+      <td><span class="good">971ms</span></td>
+      <td><span class="good">841ms</span></td>
+      <td><span class="good">0.0100</span></td>
+      <td><span class="good">178ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>789ms</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>License Plate Lookup</td>
+      <td>🌐 mobile-chrome</td>
+      <td><span class="good">2.39s</span></td>
+      <td><span class="warning">2.14s</span></td>
+      <td><span class="good">0.0300</span></td>
+      <td><span class="good">62ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>2.13s</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>VIN Check</td>
+      <td>🌐 desktop-chrome</td>
+      <td><span class="good">1.03s</span></td>
+      <td><span class="good">855ms</span></td>
+      <td><span class="good">0.0100</span></td>
+      <td><span class="good">222ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>806ms</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>VIN Check</td>
+      <td>🌐 mobile-chrome</td>
+      <td><span class="good">2.32s</span></td>
+      <td><span class="warning">2.11s</span></td>
+      <td><span class="good">0.0300</span></td>
+      <td><span class="good">63ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>2.10s</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>Window Sticker</td>
+      <td>🌐 desktop-chrome</td>
+      <td><span class="good">955ms</span></td>
+      <td><span class="good">829ms</span></td>
+      <td><span class="good">0.0100</span></td>
+      <td><span class="good">152ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>790ms</td>
+      <td>—</td>
+    </tr><tr>
+      <td>classicdecoder</td>
+      <td>Window Sticker</td>
+      <td>🌐 mobile-chrome</td>
+      <td><span class="good">2.31s</span></td>
+      <td><span class="warning">2.10s</span></td>
+      <td><span class="good">0.0300</span></td>
+      <td><span class="good">129ms</span></td>
+      <td><span class="good">0ms</span></td>
+      <td>2.09s</td>
+      <td>—</td>
+    </tr></tbody></table></div>
+    </div>
+
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <div class="footer">
+    <p>Core Web Vitals Testing Suite — Report generated on Aug 5, 2026, 11:35 AM</p>
+    <p style="margin-top: 8px;">
+      Thresholds: LCP ≤ 2.5s 🟢 ≤ 4s 🟡 &gt;4s 🔴 &nbsp;|&nbsp;
+      FCP ≤ 1.8s 🟢 ≤ 3s 🟡 &gt;3s 🔴 &nbsp;|&nbsp;
+      CLS ≤ 0.1 🟢 ≤ 0.25 🟡 &gt;0.25 🔴 &nbsp;|&nbsp;
+      TTFB ≤ 800ms 🟢 ≤ 1.8s 🟡 &gt;1.8s 🔴
+    </p>
+  </div>
+
+  <script>
+    function switchTab(tabName) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+      document.getElementById('tab-' + tabName).classList.add('active');
+    }
+
+    // Animate elements on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationDelay = (i * 0.05) + 's';
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.metric-card, .url-result, .psi-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
