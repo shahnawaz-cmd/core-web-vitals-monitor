@@ -10,14 +10,39 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const configPath = path.resolve(__dirname, '..', 'sites.json');
-const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
-const { settings, sites } = config;
+// Load configuration or fall back to environment variables
+const TARGET_DOMAIN = process.env.TARGET_DOMAIN || '';
+const DOMAIN_ID = process.env.DOMAIN_ID || '';
+
+let sites = [];
+let settings = { pagespeed_enabled: true, pagespeed_api_key: '' };
+
+if (TARGET_DOMAIN) {
+  settings.pagespeed_api_key = process.env.PAGESPEED_API_KEY || '';
+  sites = [
+    {
+      name: DOMAIN_ID,
+      urls: [
+        { label: "Homepage", url: TARGET_DOMAIN },
+        { label: "VIN Check", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/vin-check` },
+        { label: "License Plate Lookup", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/license-plate-lookup` },
+        { label: "Window Sticker", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/window-sticker` }
+      ]
+    }
+  ];
+} else {
+  const configPath = path.resolve(__dirname, '..', 'sites.json');
+  if (fs.existsSync(configPath)) {
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+    sites = config.sites || [];
+    settings = config.settings || settings;
+  }
+}
 
 const API_KEY = settings.pagespeed_api_key || process.env.PAGESPEED_API_KEY || '';
 
 if (!settings.pagespeed_enabled) {
-  console.log('⚠️  PageSpeed Insights is disabled in sites.json. Set pagespeed_enabled: true to enable.');
+  console.log('⚠️  PageSpeed Insights is disabled. Skipping.');
   process.exit(0);
 }
 

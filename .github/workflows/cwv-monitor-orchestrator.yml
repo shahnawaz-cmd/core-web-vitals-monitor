@@ -78,6 +78,15 @@ jobs:
           npx playwright test tests/diagnostic-audit.spec.js --project=desktop-chrome --project=mobile-chrome
         continue-on-error: true
 
+      - name: Run PageSpeed Insights Audit
+        env:
+          PAGESPEED_API_KEY: ${{ secrets.PAGESPEED_API_KEY }}
+          TARGET_DOMAIN: "${{ matrix.site.url }}"
+          DOMAIN_ID: "${{ matrix.site.id }}"
+        run: |
+          node scripts/pagespeed-audit.js
+        continue-on-error: true
+
       - name: Generate Reports
         run: |
           node scripts/generate-report.js

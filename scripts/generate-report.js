@@ -748,7 +748,7 @@ function generateOverviewCards() {
               <span>📅 ${new Date(result.timestamp).toLocaleDateString()}</span>
             </div>
           </div>
-          <div class="metrics-row">
+          <div class="metrics-row" style="grid-template-columns: repeat(7, 1fr);">
             <div class="metric-cell">
               <div class="metric-cell-name">LCP</div>
               <div class="metric-cell-value ${ratingClass(result.ratings?.lcp)}">${formatMs(avg.lcp)}</div>
@@ -768,6 +768,10 @@ function generateOverviewCards() {
             <div class="metric-cell">
               <div class="metric-cell-name">TBT</div>
               <div class="metric-cell-value ${ratingClass(result.ratings?.tbt)}">${formatMs(avg.totalBlockingTime)}</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">INP</div>
+              <div class="metric-cell-value ${ratingClass(result.ratings?.inp)}">${avg.inp !== null ? formatMs(avg.inp) : '—'}</div>
             </div>
             <div class="metric-cell">
               <div class="metric-cell-name">Speed Index</div>
@@ -794,7 +798,7 @@ function generateOverviewCards() {
               <span>📅 ${new Date(result.timestamp).toLocaleDateString()}</span>
             </div>
           </div>
-          <div class="metrics-row">
+          <div class="metrics-row" style="grid-template-columns: repeat(7, 1fr);">
             <div class="metric-cell">
               <div class="metric-cell-name">LCP</div>
               <div class="metric-cell-value ${ratingClass(result.ratings?.lcp)}">${formatMs(avg.lcp)}</div>
@@ -814,6 +818,10 @@ function generateOverviewCards() {
             <div class="metric-cell">
               <div class="metric-cell-name">TBT</div>
               <div class="metric-cell-value ${ratingClass(result.ratings?.tbt)}">${formatMs(avg.totalBlockingTime)}</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-cell-name">INP</div>
+              <div class="metric-cell-value ${ratingClass(result.ratings?.inp)}">${avg.inp !== null ? formatMs(avg.inp) : '—'}</div>
             </div>
             <div class="metric-cell">
               <div class="metric-cell-name">Speed Index</div>
@@ -901,7 +909,7 @@ function generateBrowserResults() {
 
 // We will keep a helper function that returns the HTML of a card row to prevent duplicating rendering logic
 function renderMetricRowHtml(result, avg) {
-  let html = `<div class="metrics-row">
+  let html = `<div class="metrics-row" style="grid-template-columns: repeat(7, 1fr);">
     <div class="metric-cell">
       <div class="metric-cell-name">LCP</div>
       <div class="metric-cell-value ${ratingClass(result.ratings?.lcp)}">${formatMs(avg.lcp)}</div>
@@ -923,6 +931,10 @@ function renderMetricRowHtml(result, avg) {
       <div class="metric-cell-value ${ratingClass(result.ratings?.tbt)}">${formatMs(avg.totalBlockingTime)}</div>
     </div>
     <div class="metric-cell">
+      <div class="metric-cell-name">INP</div>
+      <div class="metric-cell-value ${ratingClass(result.ratings?.inp)}">${avg.inp !== null ? formatMs(avg.inp) : '—'}</div>
+    </div>
+    <div class="metric-cell">
       <div class="metric-cell-name">Resources</div>
       <div class="metric-cell-value neutral">${avg.resourceCount || 'N/A'}</div>
     </div>
@@ -940,6 +952,7 @@ function renderMetricRowHtml(result, avg) {
         <span class="${ratingClass(run.ratings?.fcp)}">FCP: ${formatMs(run.fcp)}</span>
         <span class="${ratingClass(run.ratings?.cls)}">CLS: ${formatCLS(run.cls)}</span>
         <span class="${ratingClass(run.ratings?.ttfb)}">TTFB: ${formatMs(run.ttfb)}</span>
+        <span class="${ratingClass(run.ratings?.inp)}">INP: ${run.inp !== null ? formatMs(run.inp) : '—'}</span>
       </div>`;
     }
 
@@ -1109,6 +1122,7 @@ function generateSummaryTable() {
           <th>CLS</th>
           <th>TTFB</th>
           <th>TBT</th>
+          <th>INP</th>
           <th>SI</th>
           <th>Score</th>
         </tr>
@@ -1127,6 +1141,7 @@ function generateSummaryTable() {
       <td><span class="${ratingClass(r.ratings?.cls)}">${formatCLS(avg.cls)}</span></td>
       <td><span class="${ratingClass(r.ratings?.ttfb)}">${formatMs(avg.ttfb)}</span></td>
       <td><span class="${ratingClass(r.ratings?.tbt)}">${formatMs(avg.totalBlockingTime)}</span></td>
+      <td><span class="${ratingClass(r.ratings?.inp)}">${avg.inp !== null ? formatMs(avg.inp) : '—'}</span></td>
       <td>${formatMs(avg.si)}</td>
       <td>—</td>
     </tr>`;
@@ -1144,6 +1159,7 @@ function generateSummaryTable() {
       <td>${r.cls?.displayValue || 'N/A'}</td>
       <td>${r.ttfb?.displayValue || 'N/A'}</td>
       <td>${r.tbt?.displayValue || 'N/A'}</td>
+      <td>${r.inp?.displayValue || '—'}</td>
       <td>${r.si?.displayValue || 'N/A'}</td>
       <td><span style="color: ${color}; font-weight: 700;">${r.performanceScore}</span></td>
     </tr>`;
