@@ -1,0 +1,25 @@
+{
+  "name": "core-web-vitals-testing",
+  "version": "1.0.0",
+  "description": "Professional Core Web Vitals testing for multiple sites with HTML reports and PageSpeed Insights integration",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:cwv": "npx playwright test tests/core-web-vitals.spec.js",
+    "test:psi": "node scripts/pagespeed-audit.js",
+    "test:diagnose": "npx playwright test tests/diagnostic-audit.spec.js && node scripts/generate-diagnostic-report.js",
+    "test:all": "npx playwright test tests/core-web-vitals.spec.js && node scripts/pagespeed-audit.js && node scripts/generate-report.js",
+    "test:full-audit": "npx playwright test && node scripts/pagespeed-audit.js && node scripts/generate-report.js && node scripts/generate-diagnostic-report.js",
+    "report": "node scripts/generate-report.js",
+    "report:diagnose": "node scripts/generate-diagnostic-report.js",
+    "report:open": "node scripts/generate-report.js && start reports/cwv-report.html",
+    "report:diagnose:open": "node scripts/generate-diagnostic-report.js && start reports/diagnostic-report.html",
+    "slack-notify": "node scripts/slack-notifier.js",
+    "test:mobile": "npx playwright test tests/core-web-vitals.spec.js --project=mobile-chrome"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  },
+  "dependencies": {
+    "web-vitals": "^4.2.4"
+  }
+}

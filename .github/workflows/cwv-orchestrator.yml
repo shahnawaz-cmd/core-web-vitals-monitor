@@ -1,0 +1,100 @@
+name: Core Web Vitals - Orchestrator Run
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # Run daily at 8:00 AM UTC
+  workflow_dispatch:
+
+jobs:
+  setup:
+    name: ⚙️ Setup Matrix Configuration
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Generate Matrix Output
+        id: set-matrix
+        run: |
+          JSON_CONTENT=$(cat core-web-vitals-testing/sites-matrix.json | tr -d '\n' | tr -d ' ')
+          echo "matrix=${JSON_CONTENT}" >> $GITHUB_OUTPUT
+
+  audit-and-deploy:
+    name: ⚡ Audit ${{ matrix.site.id }}
+    needs: setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    continue-on-error: true
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        site: ${{ fromJson(needs.setup.outputs.matrix) }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: core-web-vitals-testing/package-lock.json
+
+      - name: Install Dependencies
+        run: |
+          cd core-web-vitals-testing
+          npm ci
+
+      - name: Install Playwright Browsers
+        run: |
+          cd core-web-vitals-testing
+          npx playwright install --with-deps chromium
+
+      - name: Run Core Web Vitals Tests
+        env:
+          TARGET_DOMAIN: "${{ matrix.site.url }}"
+          DOMAIN_ID: "${{ matrix.site.id }}"
+        run: |
+          cd core-web-vitals-testing
+          npm run test:cwv -- --project=desktop-chrome --project=mobile-chrome
+
+      - name: Run Diagnostics Spec
+        env:
+          TARGET_DOMAIN: "${{ matrix.site.url }}"
+          DOMAIN_ID: "${{ matrix.site.id }}"
+        run: |
+          cd core-web-vitals-testing
+          npx playwright test tests/diagnostic-audit.spec.js --project=desktop-chrome --project=mobile-chrome
+        continue-on-error: true
+
+      - name: Generate Reports
+        run: |
+          cd core-web-vitals-testing
+          node scripts/generate-report.js
+          node scripts/generate-diagnostic-report.js
+
+      - name: Deploy Consolidated Report to GitHub Pages Branch
+        uses: peaceiris/actions-gh-pages@v4
+        continue-on-error: true
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./core-web-vitals-testing/reports
+          destination_dir: ${{ matrix.site.id }} # Deploy reports to site subfolders e.g. /detailedvehiclehistory
+          keep_files: true
+          allow_empty_commit: true
+
+      - name: Send Slack Notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ matrix.site.id }}
+        run: |
+          cd core-web-vitals-testing
+          node scripts/slack-notifier.js
