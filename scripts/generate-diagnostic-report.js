@@ -13,12 +13,31 @@ const reportsDir = path.resolve(__dirname, '..', 'reports');
 const diagnosticsPath = path.join(reportsDir, 'diagnostics.json');
 const outputPath = path.join(reportsDir, 'diagnostic-report.html');
 
-if (!fs.existsSync(diagnosticsPath)) {
+let diagnostics = [];
+
+const tempResultsDir = path.join(reportsDir, 'temp-results');
+if (fs.existsSync(tempResultsDir)) {
+  const files = fs.readdirSync(tempResultsDir);
+  files.forEach(file => {
+    if (file.endsWith('.json') && file.startsWith('diag-')) {
+      try {
+        const fileContent = JSON.parse(fs.readFileSync(path.join(tempResultsDir, file), 'utf-8'));
+        diagnostics.push(fileContent);
+      } catch (e) {
+        console.warn(`⚠️ Failed to parse temp file: ${file}`);
+      }
+    }
+  });
+  // Write the consolidated diagnostics file
+  fs.writeFileSync(diagnosticsPath, JSON.stringify(diagnostics, null, 2));
+} else if (fs.existsSync(diagnosticsPath)) {
+  diagnostics = JSON.parse(fs.readFileSync(diagnosticsPath, 'utf-8'));
+}
+
+if (diagnostics.length === 0) {
   console.log('❌ No diagnostics found. Run: npm run test:diagnose');
   process.exit(1);
 }
-
-const diagnostics = JSON.parse(fs.readFileSync(diagnosticsPath, 'utf-8'));
 const timestamp = new Date().toLocaleString('en-US', {
   year: 'numeric', month: 'short', day: 'numeric',
   hour: '2-digit', minute: '2-digit',

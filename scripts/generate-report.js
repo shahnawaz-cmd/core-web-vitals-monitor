@@ -14,13 +14,29 @@ const cwvResultsPath = path.join(reportsDir, 'cwv-results.json');
 const psiResultsPath = path.join(reportsDir, 'psi-results.json');
 const outputPath = path.join(reportsDir, 'cwv-report.html');
 
-// Load data
+// Load data and compile from temp directory if it exists
 let cwvResults = [];
 let psiResults = [];
 
-if (fs.existsSync(cwvResultsPath)) {
+const tempResultsDir = path.join(reportsDir, 'temp-results');
+if (fs.existsSync(tempResultsDir)) {
+  const files = fs.readdirSync(tempResultsDir);
+  files.forEach(file => {
+    if (file.endsWith('.json') && !file.startsWith('diag-')) {
+      try {
+        const fileContent = JSON.parse(fs.readFileSync(path.join(tempResultsDir, file), 'utf-8'));
+        cwvResults.push(fileContent);
+      } catch (e) {
+        console.warn(`⚠️ Failed to parse temp file: ${file}`);
+      }
+    }
+  });
+  // Write the consolidated results file
+  fs.writeFileSync(cwvResultsPath, JSON.stringify(cwvResults, null, 2));
+} else if (fs.existsSync(cwvResultsPath)) {
   cwvResults = JSON.parse(fs.readFileSync(cwvResultsPath, 'utf-8'));
 }
+
 if (fs.existsSync(psiResultsPath)) {
   psiResults = JSON.parse(fs.readFileSync(psiResultsPath, 'utf-8'));
 }

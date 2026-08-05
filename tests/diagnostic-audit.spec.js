@@ -756,22 +756,16 @@ for (const site of sites) {
           );
         }
 
+        // Save this page's diagnostics to a unique temporary file
+        const tempDir = path.resolve(__dirname, '..', 'reports', 'temp-results');
+        if (!fs.existsSync(tempDir)) {
+          fs.mkdirSync(tempDir, { recursive: true });
+        }
+        const tempFile = path.join(tempDir, `diag-${site.name}-${urlEntry.label}-${test.info().project.name}.json`.replace(/[^a-zA-Z0-9.-]/g, '_'));
+        fs.writeFileSync(tempFile, JSON.stringify(diagnostic, null, 2));
+
         console.log(`\n  ────────────────────────────────────────────\n`);
       });
     }
   });
 }
-
-// ──────────────────────────────────────────────────────────────
-//  Save Diagnostics
-// ──────────────────────────────────────────────────────────────
-test.afterAll(async () => {
-  const outputDir = path.resolve(__dirname, '..', 'reports');
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-
-  const outputFile = path.join(outputDir, 'diagnostics.json');
-  fs.writeFileSync(outputFile, JSON.stringify(allDiagnostics, null, 2));
-  console.log(`\n✅ Diagnostics saved to ${outputFile}\n`);
-});

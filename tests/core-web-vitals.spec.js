@@ -220,7 +220,13 @@ for (const site of sites) {
           },
         };
 
-        allResults.push(result);
+        // Save this page's results to a unique temporary file
+        const tempDir = path.resolve(__dirname, '..', 'reports', 'temp-results');
+        if (!fs.existsSync(tempDir)) {
+          fs.mkdirSync(tempDir, { recursive: true });
+        }
+        const tempFile = path.join(tempDir, `${site.name}-${urlEntry.label}-${test.info().project.name}.json`.replace(/[^a-zA-Z0-9.-]/g, '_'));
+        fs.writeFileSync(tempFile, JSON.stringify(result, null, 2));
 
         console.log(`\n  📈 AVERAGES — ${site.name} / ${urlEntry.label}`);
         console.log(`     LCP:  ${avg.lcp !== null ? avg.lcp + 'ms' : 'N/A'} [${rateMetric('lcp', avg.lcp)}]`);
@@ -230,30 +236,3 @@ for (const site of sites) {
     }
   });
 }
-
-test.afterAll(async () => {
-  const outputDir = path.resolve(__dirname, '..', 'reports');
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-
-  const outputFile = path.join(outputDir, 'cwv-results.json');
-  
-  let combined = [];
-  if (fs.existsSync(outputFile)) {
-    try {
-      const existing = JSON.parse(fs.readFileSync(outputFile, 'utf-8'));
-      // Keep entries that do not match the current run page & browser
-      combined = existing.filter(ex => 
-        !allResults.some(r => r.url === ex.url && r.browser === ex.browser)
-      );
-    } catch (e) {
-      combined = [];
-    }
-  }
-
-  // Merge current results with remaining clean entries
-  combined = [...combined, ...allResults];
-  fs.writeFileSync(outputFile, JSON.stringify(combined, null, 2));
-  console.log(`\n✅ Results saved to ${outputFile}\n`);
-});

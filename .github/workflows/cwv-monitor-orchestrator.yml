@@ -23,7 +23,7 @@ jobs:
       - name: Generate Matrix Output
         id: set-matrix
         run: |
-          JSON_CONTENT=$(cat core-web-vitals-testing/sites-matrix.json | tr -d '\n' | tr -d ' ')
+          JSON_CONTENT=$(cat sites-matrix.json | tr -d '\n' | tr -d ' ')
           echo "matrix=${JSON_CONTENT}" >> $GITHUB_OUTPUT
 
   audit-and-deploy:
@@ -52,6 +52,11 @@ jobs:
         run: |
           npm ci
 
+      - name: Clean Temporary Results Directory
+        run: |
+          rm -rf reports/temp-results
+          mkdir -p reports/temp-results
+
       - name: Install Playwright Browsers
         run: |
           npx playwright install --with-deps chromium
@@ -75,6 +80,7 @@ jobs:
         run: |
           node scripts/generate-report.js
           node scripts/generate-diagnostic-report.js
+          npm run report:portal
 
       - name: Deploy Consolidated Report to GitHub Pages Branch
         uses: peaceiris/actions-gh-pages@v4
@@ -83,6 +89,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./reports
           destination_dir: ${{ matrix.site.id }} # Deploy reports to site subfolders e.g. /detailedvehiclehistory
+          keep_files: true
+          allow_empty_commit: true
+
+      - name: Deploy Index Portal Page to Root Directory
+        uses: peaceiris/actions-gh-pages@v4
+        continue-on-error: true
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
+          destination_dir: . # Deploy index.html directly to root folder
           keep_files: true
           allow_empty_commit: true
 

@@ -8,7 +8,7 @@ module.exports = defineConfig({
   expect: { timeout: 15_000 },
   fullyParallel: false, // Sequential to avoid resource contention during perf testing
   retries: 0, // No retries — we want accurate perf data
-  workers: 1, // Single worker for consistent measurements
+  workers: 3, // Run 3 tests in parallel to speed up execution
   reporter: [
     ['html', { outputFolder: path.resolve(__dirname, 'playwright-report'), open: 'never' }],
     ['json', { outputFile: path.resolve(__dirname, 'reports/playwright-results.json') }],
