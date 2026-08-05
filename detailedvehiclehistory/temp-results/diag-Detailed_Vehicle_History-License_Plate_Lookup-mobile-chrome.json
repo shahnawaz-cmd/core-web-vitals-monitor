@@ -3,7 +3,7 @@
   "label": "License Plate Lookup",
   "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
   "browser": "mobile-chrome",
-  "timestamp": "2026-08-05T14:02:50.859Z",
+  "timestamp": "2026-08-05T14:33:51.416Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -17,7 +17,8 @@
     "totalCLS": 0,
     "shifts": [],
     "issues": [
-      "8 image(s) missing width/height attributes"
+      "8 image(s) missing width/height attributes",
+      "1 iframe(s) missing dimensions"
     ]
   },
   "ttfbAnalysis": {
@@ -26,12 +27,12 @@
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 33,
-      "ttfb": 97,
-      "download": 12,
-      "domParsing": 213,
-      "domContentLoaded": 330,
-      "loadEvent": 395,
+      "serverProcessing": 20,
+      "ttfb": 42,
+      "download": 4,
+      "domParsing": 281,
+      "domContentLoaded": 350,
+      "loadEvent": 506,
       "transferSize": 80377,
       "encodedBodySize": 80077,
       "decodedBodySize": 879974,
@@ -41,42 +42,110 @@
   },
   "renderBlocking": [
     {
+      "type": "CSS",
+      "url": "/_next/static/css/c0052ec527bf5b7f.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "JS",
+      "url": "https://scripts.clarity.ms/0.8.69/clarity.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://www.clarity.ms/tag/a242ziivdi?ref=gtm",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://bat.bing.com/bat.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://a.quora.com/qevents.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6840h2",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6840h2",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
       "type": "JS",
       "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
       "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 48,
-    "totalSize": 492566,
+    "totalCount": 94,
+    "totalSize": 954037,
     "byType": {
       "link": {
-        "count": 10,
-        "totalSize": 74237,
-        "totalDuration": 734.0000000001164
+        "count": 12,
+        "totalSize": 77170,
+        "totalDuration": 913.6000000000931
       },
       "script": {
-        "count": 36,
-        "totalSize": 337962,
-        "totalDuration": 3532.600000000035
+        "count": 55,
+        "totalSize": 648531,
+        "totalDuration": 4010.79999999993
       },
       "img": {
-        "count": 1,
+        "count": 4,
         "totalSize": 80067,
-        "totalDuration": 107.09999999997672
+        "totalDuration": 400.5000000001164
       },
       "xmlhttprequest": {
-        "count": 1,
+        "count": 6,
         "totalSize": 300,
-        "totalDuration": 19
+        "totalDuration": 699.199999999837
+      },
+      "fetch": {
+        "count": 16,
+        "totalSize": 147969,
+        "totalDuration": 2555.600000000093
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 11.400000000023283
       }
     },
-    "largeResources": [],
+    "largeResources": [
+      {
+        "url": "https://detailedvehiclehistory.com/_next/static/chunks/67974.1e65644a3a348f46.js",
+        "type": "script",
+        "size": 108641,
+        "duration": 21
+      },
+      {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "script",
+        "size": 106474,
+        "duration": 104
+      }
+    ],
     "issues": []
   },
   "imageAudit": {
-    "totalImages": 17,
-    "issueCount": 6,
+    "totalImages": 18,
+    "issueCount": 7,
     "images": [
       {
         "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
@@ -164,31 +233,111 @@
           "Oversized: 300x150 displayed at 22x25",
           "Missing alt text"
         ]
+      },
+      {
+        "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=c3d668eb-56aa-47ad-8307-d1e7652aeb3f&bo=1&sid=9",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "displayWidth": 0,
+        "displayHeight": 0,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": false,
+        "hasDimensions": true,
+        "issues": [
+          "Missing alt text"
+        ]
       }
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 492566,
-    "thirdPartySize": 0,
+    "firstPartySize": 784601,
+    "thirdPartySize": 169436,
     "thirdPartyDomains": [
+      {
+        "domain": "connect.facebook.net",
+        "count": 2,
+        "size": 169436,
+        "duration": 133
+      },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 66
+        "duration": 71
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 43
+      },
+      {
+        "domain": "bat.bing.com",
+        "count": 3,
+        "size": 0,
+        "duration": 95
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 18
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 104
+      },
+      {
+        "domain": "j.clarity.ms",
+        "count": 3,
+        "size": 0,
+        "duration": 89
+      },
+      {
+        "domain": "www.facebook.com",
+        "count": 1,
+        "size": 0,
+        "duration": 116
+      },
+      {
+        "domain": "vhr.nyc3.digitaloceanspaces.com",
+        "count": 1,
+        "size": 0,
+        "duration": 52
+      },
+      {
+        "domain": "ipinfo.io",
+        "count": 1,
+        "size": 0,
+        "duration": 91
+      },
+      {
+        "domain": "prodmiddleware.vehiclehistory.report",
+        "count": 1,
+        "size": 0,
+        "duration": 505
+      },
+      {
+        "domain": "affiliate-middleware.detailedvehiclehistory.com",
+        "count": 1,
+        "size": 0,
+        "duration": 1116
       }
     ],
-    "totalDomains": 1
+    "totalDomains": 12
   },
   "domAnalysis": {
-    "totalElements": 1784,
+    "totalElements": 2011,
     "maxDepth": 20,
-    "maxChildren": 95,
+    "maxChildren": 104,
     "widestElement": "BODY",
     "deepestElement": "SPAN",
     "issues": [
-      "Large DOM: 1784 elements (recommended < 1500)",
-      "Wide node: BODY has 95 children (recommended < 60)"
+      "Large DOM: 2011 elements (recommended < 1500)",
+      "Wide node: BODY has 104 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -196,7 +345,7 @@
       {
         "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
         "size": 48736,
-        "duration": 38
+        "duration": 11
       }
     ],
     "fontFaces": [
@@ -281,11 +430,21 @@
       {
         "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
         "as": "script"
+      },
+      {
+        "href": "/_next/static/css/c0052ec527bf5b7f.css",
+        "as": "style"
+      },
+      {
+        "href": "https://vhr.nyc3.digitaloceanspaces.com/affliateassets/script/statistics-trackin",
+        "as": "script"
       }
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "12 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [
     "Error: <svg> attribute width: Expected length, \"full\".",
@@ -310,13 +469,46 @@
     "Error: <svg> attribute height: Expected length, \"full\"."
   ],
   "consoleWarnings": [
+    "@builder.io/partytown package has changed organization and now is\n@qwik.dev/partytown https://www.npmjs.com/package/@qwik.dev/partytown\nWe recommend using the new package to stay up to date on feature releases and bug fixes.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/95131.670df7d23a0aa2bf.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/85166.038bf892f5a875a5.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/45936.036868943e0f2cb0.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/74085.686d8ee5d401a3d4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/95131.670df7d23a0aa2bf.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/85166.038bf892f5a875a5.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/45936.036868943e0f2cb0.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://detailedvehiclehistory.com/_next/static/chunks/74085.686d8ee5d401a3d4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://detailedvehiclehistory.com/_next/static/chunks/55313-dfd6c263abf1684d.js",
+      "url": "https://bat.bing.com/bat.js",
       "status": 0,
-      "resourceType": "script",
+      "resourceType": "fetch",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://a.quora.com/qevents.js",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940403716&_gaz=1&gc",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=1208419778.1785940407&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd8990825",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940403716&gcd=13l3l",
+      "status": 0,
+      "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     }
   ]
