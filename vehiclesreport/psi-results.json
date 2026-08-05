@@ -4,17 +4,17 @@
     "label": "Homepage",
     "url": "https://vehiclesreport.com",
     "strategy": "mobile",
-    "timestamp": "2026-08-05T12:00:30.587Z",
-    "performanceScore": 74,
+    "timestamp": "2026-08-05T12:31:16.590Z",
+    "performanceScore": 79,
     "lcp": {
-      "value": 5380.5,
-      "displayValue": "5.4 s",
-      "score": 0.2
+      "value": 4592,
+      "displayValue": "4.6 s",
+      "score": 0.35
     },
     "fcp": {
-      "value": 2178,
-      "displayValue": "2.2 s",
-      "score": 0.78
+      "value": 1709.0701511703155,
+      "displayValue": "1.7 s",
+      "score": 0.92
     },
     "cls": {
       "value": null,
@@ -22,40 +22,53 @@
       "score": 1
     },
     "tbt": {
-      "value": 2,
-      "displayValue": "0 ms",
-      "score": 1
+      "value": 213,
+      "displayValue": "210 ms",
+      "score": 0.88
     },
     "si": {
-      "value": 5208.186734078244,
-      "displayValue": "5.2 s",
-      "score": 0.6
+      "value": 3150.272640551742,
+      "displayValue": "3.2 s",
+      "score": 0.92
     },
     "ttfb": {
-      "value": 39,
-      "displayValue": "Root document took 40 ms",
+      "value": 162,
+      "displayValue": "Root document took 160 ms",
       "score": 1
     },
     "interactive": {
-      "value": 5388.75,
-      "displayValue": "5.4 s",
-      "score": 0.72
+      "value": 5782.35,
+      "displayValue": "5.8 s",
+      "score": 0.67
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 410,
-        "savingsBytes": 81432
+        "savingsMs": 170,
+        "savingsBytes": 81312
+      },
+      {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
+        "savingsMs": 62,
+        "savingsBytes": 0
       }
     ],
     "diagnostics": [
       {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.7 s",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
@@ -64,72 +77,6 @@
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 160 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "vehiclesreport",
-    "label": "Homepage",
-    "url": "https://vehiclesreport.com",
-    "strategy": "desktop",
-    "timestamp": "2026-08-05T12:00:59.013Z",
-    "performanceScore": 99,
-    "lcp": {
-      "value": 881,
-      "displayValue": "0.9 s",
-      "score": 0.97
-    },
-    "fcp": {
-      "value": 463.6955253417202,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 16.5,
-      "displayValue": "20 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 1008.5632662696273,
-      "displayValue": "1.0 s",
-      "score": 0.97
-    },
-    "ttfb": {
-      "value": 47,
-      "displayValue": "Root document took 50 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1222.65,
-      "displayValue": "1.2 s",
-      "score": 1
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 81264
-      }
-    ],
-    "diagnostics": [
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
@@ -138,13 +85,8 @@
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
       }
     ]
   },
@@ -153,17 +95,17 @@
     "label": "VIN Check",
     "url": "https://vehiclesreport.com/vin-check",
     "strategy": "mobile",
-    "timestamp": "2026-08-05T12:01:23.906Z",
-    "performanceScore": 74,
+    "timestamp": "2026-08-05T12:32:39.224Z",
+    "performanceScore": 81,
     "lcp": {
-      "value": 5756.5,
-      "displayValue": "5.8 s",
-      "score": 0.16
+      "value": 4876,
+      "displayValue": "4.9 s",
+      "score": 0.29
     },
     "fcp": {
-      "value": 1980,
-      "displayValue": "2.0 s",
-      "score": 0.85
+      "value": 1677.4111451969147,
+      "displayValue": "1.7 s",
+      "score": 0.92
     },
     "cls": {
       "value": null,
@@ -171,128 +113,57 @@
       "score": 1
     },
     "tbt": {
-      "value": 40,
-      "displayValue": "40 ms",
+      "value": 56.5,
+      "displayValue": "60 ms",
       "score": 1
     },
     "si": {
-      "value": 4711.166830826798,
-      "displayValue": "4.7 s",
-      "score": 0.68
+      "value": 2304.2000563933334,
+      "displayValue": "2.3 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 11,
-      "displayValue": "Root document took 10 ms",
+      "value": 47,
+      "displayValue": "Root document took 50 ms",
       "score": 1
     },
     "interactive": {
-      "value": 6023.900000000001,
-      "displayValue": "6.0 s",
-      "score": 0.64
+      "value": 5849.200000000001,
+      "displayValue": "5.8 s",
+      "score": 0.66
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 175641
+        "savingsMs": 150,
+        "savingsBytes": 81415
       }
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 450 ms",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
         "score": 0
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 82 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "vehiclesreport",
-    "label": "VIN Check",
-    "url": "https://vehiclesreport.com/vin-check",
-    "strategy": "desktop",
-    "timestamp": "2026-08-05T12:01:49.798Z",
-    "performanceScore": 99,
-    "lcp": {
-      "value": 921,
-      "displayValue": "0.9 s",
-      "score": 0.96
-    },
-    "fcp": {
-      "value": 486.7808033611184,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 31.5,
-      "displayValue": "30 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 853.1337814007825,
-      "displayValue": "0.9 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 16,
-      "displayValue": "Root document took 20 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1281.25,
-      "displayValue": "1.3 s",
-      "score": 1
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 81374
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
         "score": 0
       }
     ]
@@ -302,15 +173,147 @@
     "label": "License Plate Lookup",
     "url": "https://vehiclesreport.com/license-plate-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-08-05T12:02:04.059Z",
-    "performanceScore": 84,
+    "timestamp": "2026-08-05T12:34:01.445Z",
+    "performanceScore": 83,
     "lcp": {
-      "value": 4437,
+      "value": 4322,
+      "displayValue": "4.3 s",
+      "score": 0.41
+    },
+    "fcp": {
+      "value": 1761.4452375,
+      "displayValue": "1.8 s",
+      "score": 0.9
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 93,
+      "displayValue": "90 ms",
+      "score": 0.98
+    },
+    "si": {
+      "value": 2466.1044704608908,
+      "displayValue": "2.5 s",
+      "score": 0.98
+    },
+    "ttfb": {
+      "value": 78,
+      "displayValue": "Root document took 80 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 4327.400000000001,
+      "displayValue": "4.3 s",
+      "score": 0.84
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 96473
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "vehiclesreport",
+    "label": "License Plate Lookup",
+    "url": "https://vehiclesreport.com/license-plate-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-08-05T12:34:18.739Z",
+    "performanceScore": 99,
+    "lcp": {
+      "value": 952.5,
+      "displayValue": "1.0 s",
+      "score": 0.95
+    },
+    "fcp": {
+      "value": 439.4104,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 49,
+      "displayValue": "50 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 676.9368142265479,
+      "displayValue": "0.7 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 20,
+      "displayValue": "Root document took 20 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 953.8500000000001,
+      "displayValue": "1.0 s",
+      "score": 1
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 20,
+        "savingsBytes": 96809
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "vehiclesreport",
+    "label": "Window Sticker",
+    "url": "https://vehiclesreport.com/window-sticker",
+    "strategy": "mobile",
+    "timestamp": "2026-08-05T12:34:38.218Z",
+    "performanceScore": 83,
+    "lcp": {
+      "value": 4438,
       "displayValue": "4.4 s",
       "score": 0.38
     },
     "fcp": {
-      "value": 1750.134635,
+      "value": 1753.0248525,
       "displayValue": "1.8 s",
       "score": 0.91
     },
@@ -320,12 +323,12 @@
       "score": 1
     },
     "tbt": {
-      "value": 52,
-      "displayValue": "50 ms",
-      "score": 1
+      "value": 102,
+      "displayValue": "100 ms",
+      "score": 0.98
     },
     "si": {
-      "value": 1750.134635,
+      "value": 1765.5881417446135,
       "displayValue": "1.8 s",
       "score": 1
     },
@@ -335,7 +338,7 @@
       "score": 1
     },
     "interactive": {
-      "value": 4437,
+      "value": 4445.5,
       "displayValue": "4.4 s",
       "score": 0.83
     },
@@ -345,139 +348,7 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 96640
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "vehiclesreport",
-    "label": "License Plate Lookup",
-    "url": "https://vehiclesreport.com/license-plate-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-08-05T12:02:26.134Z",
-    "performanceScore": 95,
-    "lcp": {
-      "value": 1094.5,
-      "displayValue": "1.1 s",
-      "score": 0.92
-    },
-    "fcp": {
-      "value": 443.6571125,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 140,
-      "displayValue": "140 ms",
-      "score": 0.91
-    },
-    "si": {
-      "value": 854.6951503140931,
-      "displayValue": "0.9 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 20,
-      "displayValue": "Root document took 20 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1094.65,
-      "displayValue": "1.1 s",
-      "score": 1
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 70,
-        "savingsBytes": 96727
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "vehiclesreport",
-    "label": "Window Sticker",
-    "url": "https://vehiclesreport.com/window-sticker",
-    "strategy": "mobile",
-    "timestamp": "2026-08-05T12:02:48.252Z",
-    "performanceScore": 82,
-    "lcp": {
-      "value": 4435,
-      "displayValue": "4.4 s",
-      "score": 0.38
-    },
-    "fcp": {
-      "value": 1758.4578649999999,
-      "displayValue": "1.8 s",
-      "score": 0.91
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 118,
-      "displayValue": "120 ms",
-      "score": 0.97
-    },
-    "si": {
-      "value": 2634.239733895778,
-      "displayValue": "2.6 s",
-      "score": 0.97
-    },
-    "ttfb": {
-      "value": 86,
-      "displayValue": "Root document took 90 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 4643.450000000001,
-      "displayValue": "4.6 s",
-      "score": 0.81
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 96469
+        "savingsBytes": 96808
       }
     ],
     "diagnostics": [
@@ -485,12 +356,12 @@
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
+        "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
+        "displayValue": "Est savings of 5��KiB",
         "score": 0.5
       }
     ]
@@ -500,15 +371,15 @@
     "label": "Window Sticker",
     "url": "https://vehiclesreport.com/window-sticker",
     "strategy": "desktop",
-    "timestamp": "2026-08-05T12:03:03.767Z",
+    "timestamp": "2026-08-05T12:34:53.319Z",
     "performanceScore": 99,
     "lcp": {
-      "value": 953,
-      "displayValue": "1.0 s",
-      "score": 0.95
+      "value": 861,
+      "displayValue": "0.9 s",
+      "score": 0.97
     },
     "fcp": {
-      "value": 438.8213,
+      "value": 434.5285525,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -518,23 +389,23 @@
       "score": 1
     },
     "tbt": {
-      "value": 40,
-      "displayValue": "40 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 647.6849326109492,
-      "displayValue": "0.6 s",
+      "value": 541.5546928604044,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 10,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 953.0000000000001,
-      "displayValue": "1.0 s",
+      "value": 861,
+      "displayValue": "0.9 s",
       "score": 1
     },
     "opportunities": [
@@ -542,8 +413,8 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 60,
-        "savingsBytes": 96639
+        "savingsMs": 40,
+        "savingsBytes": 96473
       }
     ],
     "diagnostics": [
