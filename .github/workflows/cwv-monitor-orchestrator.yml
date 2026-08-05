@@ -131,6 +131,8 @@ jobs:
       - name: Send Slack Notification
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ matrix.site.id }}
+          GITHUB_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          TARGET_DOMAIN: "${{ matrix.site.url }}"
+          DOMAIN_ID: "${{ matrix.site.id }}"
         run: |
           node scripts/slack-notifier.js

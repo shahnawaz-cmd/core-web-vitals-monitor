@@ -28,10 +28,24 @@ if (!fs.existsSync(cwvResultsPath)) {
 
 const cwvResults = JSON.parse(fs.readFileSync(cwvResultsPath, 'utf-8'));
 
+// Load diagnostics if available to extract actionable opportunities
+const diagnosticsPath = path.join(reportsDir, 'diagnostics.json');
+let diagnostics = [];
+if (fs.existsSync(diagnosticsPath)) {
+  try {
+    diagnostics = JSON.parse(fs.readFileSync(diagnosticsPath, 'utf-8'));
+  } catch (e) {
+    // Ignore parse error
+  }
+}
+
 // Group results by site name
 const siteGroups = {};
 let overallStatus = '🟢 PASS';
 const failureExplanations = [];
+let totalPassed = 0;
+let totalWarned = 0;
+let totalFailed = 0;
 
 cwvResults.forEach((result) => {
   const avg = result.averages || {};
@@ -64,35 +78,68 @@ cwvResults.forEach((result) => {
 
   if (lcp === 'poor' || tbt === 'poor' || cls === 'poor' || inp === 'poor') {
     group.failed++;
+    totalFailed++;
     pageStatus = 'FAILED 🔴';
     hasIssue = true;
   } else if (lcp === 'needs-improvement' || tbt === 'needs-improvement' || inp === 'needs-improvement') {
     group.warned++;
+    totalWarned++;
     pageStatus = 'WARNING 🟡';
     hasIssue = true;
   } else {
     group.passed++;
+    totalPassed++;
   }
 
   if (hasIssue) {
     let metricsIssues = [];
     if (lcp === 'poor') metricsIssues.push(`LCP: ${avg.lcp}ms (Poor)`);
+    if (lcp === 'needs-improvement') metricsIssues.push(`LCP: ${avg.lcp}ms (Needs Imp.)`);
     if (tbt === 'poor') metricsIssues.push(`TBT: ${avg.totalBlockingTime}ms (Poor)`);
+    if (tbt === 'needs-improvement') metricsIssues.push(`TBT: ${avg.totalBlockingTime}ms (Needs Imp.)`);
     if (inp === 'poor') metricsIssues.push(`INP: ${avg.inp}ms (Poor)`);
+    if (inp === 'needs-improvement') metricsIssues.push(`INP: ${avg.inp}ms (Needs Imp.)`);
     if (cls === 'poor') metricsIssues.push(`CLS: ${avg.cls} (Poor)`);
+    if (cls === 'needs-improvement') metricsIssues.push(`CLS: ${avg.cls} (Needs Imp.)`);
 
     group.pages.push(`• ${result.label} (${result.browser}): *${pageStatus}* [${metricsIssues.join(', ')}]`);
 
-    // Add explanatory impact messages for specific failures
-    if (inp === 'poor') {
-      failureExplanations.push(`⚠️ *INP Issue on ${result.label} (${result.browser}):* Measured at *${avg.inp}ms (🔴 Poor)*. This indicates that when the user types in input fields or clicks submit, the browser interface takes over half a second to respond and start rendering the next screen.`);
+    // Add explanatory impact messages for specific failures and warnings
+    if (inp === 'poor' || inp === 'needs-improvement') {
+      const ratingWord = inp === 'poor' ? 'Poor' : 'Needs Improvement';
+      const ratingEmoji = inp === 'poor' ? '🔴' : '🟡';
+      failureExplanations.push(`⚠️ *INP Issue on ${result.label} (${result.browser}):* Measured at *${avg.inp}ms (${ratingEmoji} ${ratingWord})*. This indicates that when the user types in input fields or clicks submit, the browser interface takes over half a second to respond and start rendering the next screen.`);
     }
-    if (tbt === 'poor') {
-      failureExplanations.push(`⚠️ *TBT Issue on ${result.label} (${result.browser}):* Measured at *${avg.totalBlockingTime}ms (🔴 Poor)*. This indicates heavy JavaScript execution is blocking the main thread, making the page unresponsive during load.`);
+    if (tbt === 'poor' || tbt === 'needs-improvement') {
+      const ratingWord = tbt === 'poor' ? 'Poor' : 'Needs Improvement';
+      const ratingEmoji = tbt === 'poor' ? '🔴' : '🟡';
+      failureExplanations.push(`⚠️ *TBT Issue on ${result.label} (${result.browser}):* Measured at *${avg.totalBlockingTime}ms (${ratingEmoji} ${ratingWord})*. This indicates heavy JavaScript execution is blocking the main thread, making the page unresponsive during load.`);
     }
-    if (lcp === 'poor') {
-      failureExplanations.push(`⚠️ *LCP Issue on ${result.label} (${result.browser}):* Measured at *${avg.lcp}ms (🔴 Poor)*. The largest visual element took too long to load, increasing the risk of user bounce.`);
+    if (lcp === 'poor' || lcp === 'needs-improvement') {
+      const ratingWord = lcp === 'poor' ? 'Poor' : 'Needs Improvement';
+      const ratingEmoji = lcp === 'poor' ? '🔴' : '🟡';
+      failureExplanations.push(`⚠️ *LCP Issue on ${result.label} (${result.browser}):* Measured at *${avg.lcp}ms (${ratingEmoji} ${ratingWord})*. The largest visual element took too long to load, increasing the risk of user bounce.`);
     }
+    if (cls === 'poor' || cls === 'needs-improvement') {
+      const ratingWord = cls === 'poor' ? 'Poor' : 'Needs Improvement';
+      const ratingEmoji = cls === 'poor' ? '🔴' : '🟡';
+      failureExplanations.push(`⚠️ *CLS Issue on ${result.label} (${result.browser}):* Measured at *${avg.cls} (${ratingEmoji} ${ratingWord})*. Layout shifts detected, which can cause unexpected shifts on the screen while loading.`);
+    }
+  }
+});
+
+// Extract top diagnostic recommendations
+const recommendations = [];
+diagnostics.forEach(diag => {
+  if (diag.renderBlocking && diag.renderBlocking.length > 0) {
+    diag.renderBlocking.slice(0, 1).forEach(r => {
+      recommendations.push(`• *Render-blocking script found on ${diag.label}:* ${r.url.split('/').pop()} (~${r.duration}ms latency contribution). Consider applying async/defer tags.`);
+    });
+  }
+  if (diag.imageAudit && diag.imageAudit.issues && diag.imageAudit.issues.length > 0) {
+    diag.imageAudit.issues.slice(0, 1).forEach(i => {
+      recommendations.push(`• *Image Issue on ${diag.label}:* ${i}`);
+    });
   }
 });
 
@@ -101,7 +148,8 @@ const summaryBlocks = [];
 
 Object.entries(siteGroups).forEach(([siteName, data]) => {
   const statusEmoji = data.failed > 0 ? '🔴' : data.warned > 0 ? '🟡' : '🟢';
-  let detailsText = `*${statusEmoji} ${siteName}* — Passed: ${data.passed}/${data.total}`;
+  const siteId = siteName.toLowerCase().replace(/[^a-z0-9]/g, '');
+  let detailsText = `*${statusEmoji} ${siteName}* — Passed: ${data.passed}/${data.total} (<${GITHUB_PAGES_URL}/${siteId}/cwv-report.html|View site reports>)`;
   
   if (data.warned > 0 || data.failed > 0) {
     detailsText += `\n${data.pages.slice(0, 5).join('\n')}`;
@@ -122,7 +170,6 @@ Object.entries(siteGroups).forEach(([siteName, data]) => {
 // Generate explanations block if any failures occurred
 const explanationBlocks = [];
 if (failureExplanations.length > 0) {
-  // Deduplicate and slice explanations to keep message clean
   const uniqueExplanations = [...new Set(failureExplanations)].slice(0, 3);
   explanationBlocks.push({
     type: 'section',
@@ -133,43 +180,74 @@ if (failureExplanations.length > 0) {
   });
 }
 
-const payload = {
-  text: `⚡ *Core Web Vitals Audit: ${overallStatus}*`,
-  blocks: [
-    {
-      type: 'header',
-      text: {
-        type: 'plain_text',
-        text: `⚡ Core Web Vitals Audit Summary`,
-        emoji: true
-      }
-    },
-    {
-      type: 'section',
-      text: {
-        type: 'mrkdwn',
-        text: `*Overall Status:* ${overallStatus}\n*Report URL:* <${GITHUB_PAGES_URL}/reports/cwv-report.html|Open HTML Report 📊>`
-      }
-    },
-    {
-      type: 'divider'
-    },
-    ...summaryBlocks,
-    {
-      type: 'divider'
-    },
-    ...explanationBlocks,
-    failureExplanations.length > 0 ? { type: 'divider' } : null,
-    {
-      type: 'context',
-      elements: [
-        {
-          type: 'mrkdwn',
-          text: `Tested on standard mobile & desktop viewports using Playwright CI runner.`
-        }
-      ]
+// Generate recommendations blocks
+const recommendationBlocks = [];
+if (recommendations.length > 0) {
+  const uniqueRecs = [...new Set(recommendations)].slice(0, 3);
+  recommendationBlocks.push({
+    type: 'section',
+    text: {
+      type: 'mrkdwn',
+      text: `*💡 Actionable Performance Opportunities:*\n${uniqueRecs.join('\n')}`
     }
-  ].filter(Boolean)
+  });
+}
+
+// Determine attachment sidebar color
+let attachmentColor = '#2eb886'; // Green
+if (overallStatus === '🔴 FAIL') {
+  attachmentColor = '#a30200'; // Red
+} else if (overallStatus === '🟡 WARNING') {
+  attachmentColor = '#e8a838'; // Yellow
+}
+
+const DOMAIN_ID = process.env.DOMAIN_ID || '';
+const TARGET_DOMAIN = process.env.TARGET_DOMAIN || '';
+const siteDisplay = DOMAIN_ID ? ` — ${DOMAIN_ID.toUpperCase().replace(/-/g, ' ')}` : '';
+
+const payload = {
+  attachments: [
+    {
+      color: attachmentColor,
+      blocks: [
+        {
+          type: 'header',
+          text: {
+            type: 'plain_text',
+            text: `⚡ Core Web Vitals Audit${siteDisplay}`,
+            emoji: true
+          }
+        },
+        {
+          type: 'section',
+          text: {
+            type: 'mrkdwn',
+            text: `*Status:* ${overallStatus}  •  *Passed:* ${totalPassed}  •  *Warnings:* ${totalWarned}  •  *Failed:* ${totalFailed}\n*Portal URL:* <${GITHUB_PAGES_URL}|Open HTML Report Portal 📊>`
+          }
+        },
+        {
+          type: 'divider'
+        },
+        ...summaryBlocks,
+        explanationBlocks.length > 0 ? { type: 'divider' } : null,
+        ...explanationBlocks,
+        recommendationBlocks.length > 0 ? { type: 'divider' } : null,
+        ...recommendationBlocks,
+        {
+          type: 'divider'
+        },
+        {
+          type: 'context',
+          elements: [
+            {
+              type: 'mrkdwn',
+              text: `Tested on standard mobile & desktop viewports using Playwright CI runner.`
+            }
+          ]
+        }
+      ].filter(Boolean)
+    }
+  ]
 };
 
 // Send webhook request
