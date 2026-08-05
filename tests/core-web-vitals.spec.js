@@ -9,7 +9,10 @@ const path = require('path');
 // ──────────────────────────────────────────────────────────────
 
 const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../sites.json'), 'utf8'));
-const sites = config.sites;
+let sites = config.sites;
+if (process.env.DOMAIN_ID) {
+  sites = sites.filter(s => s.name.toLowerCase().replace(/[^a-z0-9]/g, '') === process.env.DOMAIN_ID);
+}
 const RUNS = 3;
 
 const allResults = [];
