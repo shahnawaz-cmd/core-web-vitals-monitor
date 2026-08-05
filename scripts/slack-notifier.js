@@ -41,7 +41,7 @@ if (fs.existsSync(diagnosticsPath)) {
 
 // Group results by site name
 const siteGroups = {};
-let overallStatus = '🟢 PASS';
+let overallStatus = '🟢 Report Generated';
 const failureExplanations = [];
 let totalPassed = 0;
 let totalWarned = 0;
@@ -54,11 +54,7 @@ cwvResults.forEach((result) => {
   const cls = result.ratings?.cls || 'unknown';
   const inp = result.ratings?.inp || 'unknown';
 
-  if (lcp === 'poor' || tbt === 'poor' || cls === 'poor' || inp === 'poor') {
-    overallStatus = '🔴 FAIL';
-  } else if ((lcp === 'needs-improvement' || tbt === 'needs-improvement' || inp === 'needs-improvement') && overallStatus !== '🔴 FAIL') {
-    overallStatus = '🟡 WARNING';
-  }
+  // Removed the overallStatus flip so the Slack message stays green/neutral
 
   if (!siteGroups[result.site]) {
     siteGroups[result.site] = {

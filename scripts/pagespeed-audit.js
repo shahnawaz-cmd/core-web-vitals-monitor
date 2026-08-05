@@ -17,25 +17,14 @@ const DOMAIN_ID = process.env.DOMAIN_ID || '';
 let sites = [];
 let settings = { pagespeed_enabled: true, pagespeed_api_key: '' };
 
-if (TARGET_DOMAIN) {
-  settings.pagespeed_api_key = process.env.PAGESPEED_API_KEY || '';
-  sites = [
-    {
-      name: DOMAIN_ID,
-      urls: [
-        { label: "Homepage", url: TARGET_DOMAIN },
-        { label: "VIN Check", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/vin-check` },
-        { label: "License Plate Lookup", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/license-plate-lookup` },
-        { label: "Window Sticker", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/window-sticker` }
-      ]
-    }
-  ];
-} else {
-  const configPath = path.resolve(__dirname, '..', 'sites.json');
-  if (fs.existsSync(configPath)) {
-    const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
-    sites = config.sites || [];
-    settings = config.settings || settings;
+const configPath = path.resolve(__dirname, '..', 'sites.json');
+if (fs.existsSync(configPath)) {
+  const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+  sites = config.sites || [];
+  settings = config.settings || settings;
+  
+  if (DOMAIN_ID) {
+    sites = sites.filter(s => s.name.toLowerCase().replace(/[^a-z0-9]/g, '') === DOMAIN_ID);
   }
 }
 
