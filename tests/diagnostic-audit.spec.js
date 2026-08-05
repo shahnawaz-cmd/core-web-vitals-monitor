@@ -8,21 +8,8 @@ const path = require('path');
 //  When Core Web Vitals are poor, THIS tells you WHY.
 // ──────────────────────────────────────────────────────────────
 
-// Dynamically set targets using GITHUB environment variables or sites.json fallback
-const TARGET_DOMAIN = process.env.TARGET_DOMAIN || 'https://www.detailedvehiclehistory.com';
-const DOMAIN_ID = process.env.DOMAIN_ID || 'detailedvehiclehistory';
-
-const sites = [
-  {
-    name: DOMAIN_ID,
-    urls: [
-      { label: "Homepage", url: TARGET_DOMAIN },
-      { label: "VIN Check", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/vin-check` },
-      { label: "License Plate Lookup", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/license-plate-lookup` },
-      { label: "Window Sticker", url: `${TARGET_DOMAIN.replace(/\/$/, '')}/window-sticker` }
-    ]
-  }
-];
+const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../sites.json'), 'utf8'));
+const sites = config.sites;
 const allDiagnostics = [];
 
 for (const site of sites) {
