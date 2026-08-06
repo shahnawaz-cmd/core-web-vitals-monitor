@@ -4,7 +4,7 @@
     "label": "Homepage",
     "url": "https://www.detailedvehiclehistory.com",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-05T14:33:12.195Z",
+    "timestamp": "2026-08-06T10:30:08.444Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -18,7 +18,8 @@
       "totalCLS": 0,
       "shifts": [],
       "issues": [
-        "10 image(s) missing width/height attributes"
+        "10 image(s) missing width/height attributes",
+        "1 iframe(s) missing dimensions"
       ]
     },
     "ttfbAnalysis": {
@@ -27,15 +28,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 26,
-        "ttfb": 63,
-        "download": 12,
-        "domParsing": 690,
-        "domContentLoaded": 779,
-        "loadEvent": 902,
-        "transferSize": 89395,
-        "encodedBodySize": 89095,
-        "decodedBodySize": 1012106,
+        "serverProcessing": 16,
+        "ttfb": 43,
+        "download": 6,
+        "domParsing": 80,
+        "domContentLoaded": 558,
+        "loadEvent": 962,
+        "transferSize": 89021,
+        "encodedBodySize": 88721,
+        "decodedBodySize": 1011090,
         "protocol": "h2"
       },
       "issues": []
@@ -53,48 +54,59 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 77,
-      "totalSize": 767985,
+      "totalCount": 89,
+      "totalSize": 942013,
       "byType": {
         "link": {
           "count": 12,
-          "totalSize": 88928,
-          "totalDuration": 1736.1000000000931
+          "totalSize": 89539,
+          "totalDuration": 1445.7000000000698
         },
         "script": {
-          "count": 46,
-          "totalSize": 367707,
-          "totalDuration": 6137
+          "count": 54,
+          "totalSize": 541124,
+          "totalDuration": 5955.899999999907
         },
         "img": {
-          "count": 7,
+          "count": 9,
           "totalSize": 206933,
-          "totalDuration": 498.9999999998836
+          "totalDuration": 2440.6999999999534
         },
         "xmlhttprequest": {
-          "count": 1,
+          "count": 2,
           "totalSize": 300,
-          "totalDuration": 13.599999999976717
+          "totalDuration": 240.5
         },
         "fetch": {
           "count": 11,
           "totalSize": 104117,
-          "totalDuration": 1615.299999999581
+          "totalDuration": 3560.899999999907
+        },
+        "iframe": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 9
         }
       },
       "largeResources": [
         {
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "type": "script",
+          "size": 106474,
+          "duration": 404
+        },
+        {
           "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
           "type": "img",
           "size": 102925,
-          "duration": 77
+          "duration": 438
         }
       ],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 22,
-      "issueCount": 13,
+      "totalImages": 23,
+      "issueCount": 14,
       "images": [
         {
           "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
@@ -280,31 +292,87 @@
             "Oversized: 300x150 displayed at 22x25",
             "Missing alt text"
           ]
+        },
+        {
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=023d9aaf-0c1a-420a-962a-2527e660d227&bo=1&sid=c",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "displayWidth": 0,
+          "displayHeight": 0,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Missing alt text"
+          ]
         }
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 767985,
-      "thirdPartySize": 0,
+      "firstPartySize": 772577,
+      "thirdPartySize": 169436,
       "thirdPartyDomains": [
+        {
+          "domain": "connect.facebook.net",
+          "count": 2,
+          "size": 169436,
+          "duration": 500
+        },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 98
+          "duration": 140
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 436
+        },
+        {
+          "domain": "bat.bing.com",
+          "count": 3,
+          "size": 0,
+          "duration": 91
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 20
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 190
+        },
+        {
+          "domain": "l.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 581
+        },
+        {
+          "domain": "www.facebook.com",
+          "count": 1,
+          "size": 0,
+          "duration": 221
         }
       ],
-      "totalDomains": 1
+      "totalDomains": 8
     },
     "domAnalysis": {
-      "totalElements": 2509,
+      "totalElements": 2528,
       "maxDepth": 18,
-      "maxChildren": 112,
+      "maxChildren": 122,
       "widestElement": "BODY",
       "deepestElement": "SPAN",
       "issues": [
-        "Large DOM: 2509 elements (recommended < 1500)",
-        "Wide node: BODY has 112 children (recommended < 60)"
+        "Large DOM: 2528 elements (recommended < 1500)",
+        "Wide node: BODY has 122 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -312,7 +380,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 21
+          "duration": 63
         }
       ],
       "fontFaces": [
@@ -409,7 +477,9 @@
       ],
       "preconnects": [],
       "dnsPrefetch": [],
-      "issues": []
+      "issues": [
+        "8 third-party origins without preconnect hints"
+      ]
     },
     "consoleErrors": [
       "Error: <svg> attribute width: Expected length, \"full\".",
@@ -434,23 +504,17 @@
       "Error: <svg> attribute height: Expected length, \"full\"."
     ],
     "consoleWarnings": [
+      "@builder.io/partytown package has changed organization and now is\n@qwik.dev/partytown https://www.npmjs.com/package/@qwik.dev/partytown\nWe recommend using the new package to stay up to date on feature releases and bug fixes.",
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
-      {
-        "url": "https://detailedvehiclehistory.com/_next/static/chunks/45936.036868943e0f2cb0.js",
-        "status": 0,
-        "resourceType": "script",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
+    "failedRequests": []
   },
   {
     "site": "Detailed Vehicle History",
     "label": "Homepage",
     "url": "https://www.detailedvehiclehistory.com",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-05T14:33:12.280Z",
+    "timestamp": "2026-08-06T10:30:08.402Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -464,7 +528,8 @@
       "totalCLS": 0,
       "shifts": [],
       "issues": [
-        "10 image(s) missing width/height attributes"
+        "10 image(s) missing width/height attributes",
+        "1 iframe(s) missing dimensions"
       ]
     },
     "ttfbAnalysis": {
@@ -473,15 +538,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 27,
-        "ttfb": 179,
-        "download": 8,
-        "domParsing": 732,
-        "domContentLoaded": 930,
-        "loadEvent": 930,
-        "transferSize": 89396,
-        "encodedBodySize": 89096,
-        "decodedBodySize": 1012106,
+        "serverProcessing": 97,
+        "ttfb": 172,
+        "download": 13,
+        "domParsing": 662,
+        "domContentLoaded": 854,
+        "loadEvent": 1061,
+        "transferSize": 89196,
+        "encodedBodySize": 88896,
+        "decodedBodySize": 1011090,
         "protocol": "h2"
       },
       "issues": []
@@ -499,41 +564,53 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 76,
-      "totalSize": 617107,
+      "totalCount": 87,
+      "totalSize": 786543,
       "byType": {
         "link": {
           "count": 12,
           "totalSize": 89539,
-          "totalDuration": 1306.4000000000233
+          "totalDuration": 1191.4000000002561
         },
         "script": {
-          "count": 47,
-          "totalSize": 371688,
-          "totalDuration": 4660.899999999674
+          "count": 54,
+          "totalSize": 541124,
+          "totalDuration": 5297.500000000116
         },
         "img": {
-          "count": 5,
+          "count": 7,
           "totalSize": 51463,
-          "totalDuration": 282.69999999995343
+          "totalDuration": 1668.9000000000233
         },
         "xmlhttprequest": {
-          "count": 1,
+          "count": 2,
           "totalSize": 300,
-          "totalDuration": 7.699999999953434
+          "totalDuration": 398.19999999995343
         },
         "fetch": {
           "count": 11,
           "totalSize": 104117,
-          "totalDuration": 1747.9999999997672
+          "totalDuration": 3479.5999999999767
+        },
+        "iframe": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 7.800000000046566
         }
       },
-      "largeResources": [],
+      "largeResources": [
+        {
+          "url": "https://connect.facebook.net/en_US/fbevents.js",
+          "type": "script",
+          "size": 106474,
+          "duration": 437
+        }
+      ],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 22,
-      "issueCount": 11,
+      "totalImages": 23,
+      "issueCount": 12,
       "images": [
         {
           "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
@@ -691,31 +768,87 @@
             "Oversized: 300x150 displayed at 22x25",
             "Missing alt text"
           ]
+        },
+        {
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=9bc8dd13-209c-4d79-9732-18861d283e2f&bo=1&sid=c",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "displayWidth": 0,
+          "displayHeight": 0,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Missing alt text"
+          ]
         }
       ]
     },
     "thirdPartyAnalysis": {
       "firstPartySize": 617107,
-      "thirdPartySize": 0,
+      "thirdPartySize": 169436,
       "thirdPartyDomains": [
+        {
+          "domain": "connect.facebook.net",
+          "count": 2,
+          "size": 169436,
+          "duration": 542
+        },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 321
+          "duration": 120
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 423
+        },
+        {
+          "domain": "bat.bing.com",
+          "count": 3,
+          "size": 0,
+          "duration": 93
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 20
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 160
+        },
+        {
+          "domain": "l.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 392
+        },
+        {
+          "domain": "www.facebook.com",
+          "count": 1,
+          "size": 0,
+          "duration": 225
         }
       ],
-      "totalDomains": 1
+      "totalDomains": 8
     },
     "domAnalysis": {
-      "totalElements": 2521,
+      "totalElements": 2540,
       "maxDepth": 18,
-      "maxChildren": 112,
+      "maxChildren": 122,
       "widestElement": "BODY",
       "deepestElement": "SPAN",
       "issues": [
-        "Large DOM: 2521 elements (recommended < 1500)",
-        "Wide node: BODY has 112 children (recommended < 60)"
+        "Large DOM: 2540 elements (recommended < 1500)",
+        "Wide node: BODY has 122 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -723,7 +856,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 68
+          "duration": 81
         }
       ],
       "fontFaces": [
@@ -820,7 +953,9 @@
       ],
       "preconnects": [],
       "dnsPrefetch": [],
-      "issues": []
+      "issues": [
+        "8 third-party origins without preconnect hints"
+      ]
     },
     "consoleErrors": [
       "Error: <svg> attribute width: Expected length, \"full\".",
@@ -845,6 +980,7 @@
       "Error: <svg> attribute height: Expected length, \"full\"."
     ],
     "consoleWarnings": [
+      "@builder.io/partytown package has changed organization and now is\n@qwik.dev/partytown https://www.npmjs.com/package/@qwik.dev/partytown\nWe recommend using the new package to stay up to date on feature releases and bug fixes.",
       "Deprecated API for given entry type."
     ],
     "failedRequests": []
@@ -854,7 +990,7 @@
     "label": "License Plate Lookup",
     "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-05T14:33:50.503Z",
+    "timestamp": "2026-08-06T10:30:46.908Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -878,15 +1014,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 30,
-        "ttfb": 57,
-        "download": 4,
-        "domParsing": 256,
-        "domContentLoaded": 327,
-        "loadEvent": 489,
-        "transferSize": 80376,
-        "encodedBodySize": 80076,
-        "decodedBodySize": 879974,
+        "serverProcessing": 17,
+        "ttfb": 44,
+        "download": 5,
+        "domParsing": 454,
+        "domContentLoaded": 516,
+        "loadEvent": 516,
+        "transferSize": 80384,
+        "encodedBodySize": 80084,
+        "decodedBodySize": 879977,
         "protocol": "h2"
       },
       "issues": []
@@ -919,22 +1055,22 @@
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
@@ -944,38 +1080,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 96,
-      "totalSize": 1077952,
+      "totalCount": 95,
+      "totalSize": 1077818,
       "byType": {
         "link": {
           "count": 12,
           "totalSize": 77170,
-          "totalDuration": 1058.3000000000466
+          "totalDuration": 1324.600000000326
         },
         "script": {
           "count": 55,
           "totalSize": 648531,
-          "totalDuration": 4211.4000000003725
+          "totalDuration": 4347.699999999721
         },
         "img": {
           "count": 6,
           "totalSize": 203982,
-          "totalDuration": 433.5999999998603
+          "totalDuration": 903.0999999998603
         },
         "xmlhttprequest": {
-          "count": 6,
+          "count": 5,
           "totalSize": 300,
-          "totalDuration": 1013.2000000000698
+          "totalDuration": 2967.699999999837
         },
         "fetch": {
           "count": 16,
-          "totalSize": 147969,
-          "totalDuration": 2655.0999999998603
+          "totalSize": 147835,
+          "totalDuration": 4244.999999999884
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 7
+          "totalDuration": 4.099999999976717
         }
       },
       "largeResources": [
@@ -983,19 +1119,19 @@
           "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
           "type": "img",
           "size": 112066,
-          "duration": 102
+          "duration": 318
         },
         {
           "url": "https://detailedvehiclehistory.com/_next/static/chunks/67974.1e65644a3a348f46.js",
           "type": "script",
           "size": 108641,
-          "duration": 85
+          "duration": 54
         },
         {
           "url": "https://connect.facebook.net/en_US/fbevents.js",
           "type": "script",
           "size": 106474,
-          "duration": 97
+          "duration": 432
         }
       ],
       "issues": []
@@ -1120,7 +1256,7 @@
           ]
         },
         {
-          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=706f61ad-7d0e-4e51-a6f7-6e9d579b3274&bo=1&sid=9",
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=9a2cd7a9-0859-46df-a07b-5537d54d57bc&bo=1&sid=d",
           "naturalWidth": 0,
           "naturalHeight": 0,
           "displayWidth": 0,
@@ -1136,80 +1272,80 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 908516,
+      "firstPartySize": 908382,
       "thirdPartySize": 169436,
       "thirdPartyDomains": [
         {
           "domain": "connect.facebook.net",
           "count": 2,
           "size": 169436,
-          "duration": 122
+          "duration": 535
         },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 67
+          "duration": 61
         },
         {
           "domain": "www.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 71
+          "duration": 421
         },
         {
           "domain": "bat.bing.com",
           "count": 3,
           "size": 0,
-          "duration": 39
+          "duration": 88
         },
         {
           "domain": "scripts.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 12
+          "duration": 16
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 147
+          "duration": 123
         },
         {
-          "domain": "j.clarity.ms",
-          "count": 3,
+          "domain": "l.clarity.ms",
+          "count": 2,
           "size": 0,
-          "duration": 116
+          "duration": 584
         },
         {
           "domain": "www.facebook.com",
           "count": 1,
           "size": 0,
-          "duration": 110
+          "duration": 222
         },
         {
           "domain": "vhr.nyc3.digitaloceanspaces.com",
           "count": 1,
           "size": 0,
-          "duration": 65
+          "duration": 423
         },
         {
           "domain": "ipinfo.io",
           "count": 1,
           "size": 0,
-          "duration": 104
+          "duration": 144
         },
         {
           "domain": "prodmiddleware.vehiclehistory.report",
           "count": 1,
           "size": 0,
-          "duration": 785
+          "duration": 2235
         },
         {
           "domain": "affiliate-middleware.detailedvehiclehistory.com",
           "count": 1,
           "size": 0,
-          "duration": 1146
+          "duration": 1411
         }
       ],
       "totalDomains": 12
@@ -1230,7 +1366,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 71
+          "duration": 12
         }
       ],
       "fontFaces": [
@@ -1379,19 +1515,25 @@
         "failure": "net::ERR_FAILED"
       },
       {
-        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=1247355501.1785940406&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012219278&_gaz=1&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940402948&_gaz=1&gcd=",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=610429667.1786012222&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940402948&gcd=13l3l3l",
+        "url": "https://www.googletagmanager.com/a?v=3&t=l&pid=1373226641&rv=6841&tag_exp=115616986~115938465~115938468~118395335~118897920~118897930~119404700~119527",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012219278&gcd=13l3l3l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1403,7 +1545,7 @@
     "label": "License Plate Lookup",
     "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-05T14:33:51.416Z",
+    "timestamp": "2026-08-06T10:30:47.292Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1427,15 +1569,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 20,
-        "ttfb": 42,
+        "serverProcessing": 13,
+        "ttfb": 35,
         "download": 4,
-        "domParsing": 281,
-        "domContentLoaded": 350,
-        "loadEvent": 506,
-        "transferSize": 80377,
-        "encodedBodySize": 80077,
-        "decodedBodySize": 879974,
+        "domParsing": 345,
+        "domContentLoaded": 474,
+        "loadEvent": 475,
+        "transferSize": 80384,
+        "encodedBodySize": 80084,
+        "decodedBodySize": 879977,
         "protocol": "h2"
       },
       "issues": []
@@ -1468,22 +1610,22 @@
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
@@ -1494,37 +1636,37 @@
     ],
     "resourceAnalysis": {
       "totalCount": 94,
-      "totalSize": 954037,
+      "totalSize": 953903,
       "byType": {
         "link": {
           "count": 12,
           "totalSize": 77170,
-          "totalDuration": 913.6000000000931
+          "totalDuration": 1276.699999999837
         },
         "script": {
           "count": 55,
           "totalSize": 648531,
-          "totalDuration": 4010.79999999993
+          "totalDuration": 3979.2999999992317
         },
         "img": {
           "count": 4,
           "totalSize": 80067,
-          "totalDuration": 400.5000000001164
+          "totalDuration": 656.3999999999069
         },
         "xmlhttprequest": {
           "count": 6,
           "totalSize": 300,
-          "totalDuration": 699.199999999837
+          "totalDuration": 2775.79999999993
         },
         "fetch": {
           "count": 16,
-          "totalSize": 147969,
-          "totalDuration": 2555.600000000093
+          "totalSize": 147835,
+          "totalDuration": 4284.10000000021
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 11.400000000023283
+          "totalDuration": 6.299999999930151
         }
       },
       "largeResources": [
@@ -1532,13 +1674,13 @@
           "url": "https://detailedvehiclehistory.com/_next/static/chunks/67974.1e65644a3a348f46.js",
           "type": "script",
           "size": 108641,
-          "duration": 21
+          "duration": 28
         },
         {
           "url": "https://connect.facebook.net/en_US/fbevents.js",
           "type": "script",
           "size": 106474,
-          "duration": 104
+          "duration": 399
         }
       ],
       "issues": []
@@ -1635,7 +1777,7 @@
           ]
         },
         {
-          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=c3d668eb-56aa-47ad-8307-d1e7652aeb3f&bo=1&sid=9",
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=07a63569-1178-471c-9f8c-2c035ffd0be1&bo=1&sid=d",
           "naturalWidth": 0,
           "naturalHeight": 0,
           "displayWidth": 0,
@@ -1651,80 +1793,80 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 784601,
+      "firstPartySize": 784467,
       "thirdPartySize": 169436,
       "thirdPartyDomains": [
         {
           "domain": "connect.facebook.net",
           "count": 2,
           "size": 169436,
-          "duration": 133
+          "duration": 494
         },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 71
+          "duration": 28
         },
         {
           "domain": "www.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 43
+          "duration": 430
         },
         {
           "domain": "bat.bing.com",
           "count": 3,
           "size": 0,
-          "duration": 95
+          "duration": 88
         },
         {
           "domain": "scripts.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 18
+          "duration": 15
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 104
+          "duration": 155
         },
         {
-          "domain": "j.clarity.ms",
+          "domain": "l.clarity.ms",
           "count": 3,
           "size": 0,
-          "duration": 89
+          "duration": 724
         },
         {
           "domain": "www.facebook.com",
           "count": 1,
           "size": 0,
-          "duration": 116
+          "duration": 222
         },
         {
           "domain": "vhr.nyc3.digitaloceanspaces.com",
           "count": 1,
           "size": 0,
-          "duration": 52
+          "duration": 410
         },
         {
           "domain": "ipinfo.io",
           "count": 1,
           "size": 0,
-          "duration": 91
+          "duration": 144
         },
         {
           "domain": "prodmiddleware.vehiclehistory.report",
           "count": 1,
           "size": 0,
-          "duration": 505
+          "duration": 1898
         },
         {
           "domain": "affiliate-middleware.detailedvehiclehistory.com",
           "count": 1,
           "size": 0,
-          "duration": 1116
+          "duration": 1512
         }
       ],
       "totalDomains": 12
@@ -1745,7 +1887,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 11
+          "duration": 12
         }
       ],
       "fontFaces": [
@@ -1894,19 +2036,19 @@
         "failure": "net::ERR_FAILED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940403716&_gaz=1&gc",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012219645&_gaz=1&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=1208419778.1785940407&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd8990825",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=2075185320.1786012223&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940403716&gcd=13l3l",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012219645&gcd=13l3l3l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1918,362 +2060,7 @@
     "label": "VIN Check",
     "url": "https://www.detailedvehiclehistory.com/vin-check",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-05T14:33:17.444Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": [
-        "7 image(s) missing width/height attributes"
-      ]
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 0,
-        "connection": 0,
-        "tls": 0,
-        "serverProcessing": 33,
-        "ttfb": 68,
-        "download": 11,
-        "domParsing": 500,
-        "domContentLoaded": 625,
-        "loadEvent": 625,
-        "transferSize": 87755,
-        "encodedBodySize": 87455,
-        "decodedBodySize": 1124923,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/css/c0052ec527bf5b7f.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 72,
-      "totalSize": 578240,
-      "byType": {
-        "link": {
-          "count": 10,
-          "totalSize": 75020,
-          "totalDuration": 884.7000000001863
-        },
-        "script": {
-          "count": 46,
-          "totalSize": 367707,
-          "totalDuration": 4303.300000000163
-        },
-        "img": {
-          "count": 4,
-          "totalSize": 8190,
-          "totalDuration": 496.19999999995343
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 7.300000000046566
-        },
-        "fetch": {
-          "count": 11,
-          "totalSize": 127023,
-          "totalDuration": 2677.8999999997905
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 13,
-      "issueCount": 9,
-      "images": [
-        {
-          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
-          "naturalWidth": 145,
-          "naturalHeight": 38,
-          "displayWidth": 110,
-          "displayHeight": 32,
-          "loading": "lazy",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Above-fold image has loading=\"lazy\" — slows LCP"
-          ]
-        },
-        {
-          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
-          "naturalWidth": 145,
-          "naturalHeight": 40,
-          "displayWidth": 110,
-          "displayHeight": 32,
-          "loading": "lazy",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Above-fold image has loading=\"lazy\" — slows LCP"
-          ]
-        },
-        {
-          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
-          "naturalWidth": 145,
-          "naturalHeight": 40,
-          "displayWidth": 110,
-          "displayHeight": 32,
-          "loading": "lazy",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Above-fold image has loading=\"lazy\" — slows LCP"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 96,
-          "displayHeight": 28,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 96x28"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 19,
-          "displayHeight": 25,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 19x25"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 69,
-          "displayHeight": 16,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": false,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 69x16",
-            "Missing alt text"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 67,
-          "displayHeight": 6,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": false,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 67x6",
-            "Missing alt text"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 67,
-          "displayHeight": 22,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 67x22"
-          ]
-        },
-        {
-          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
-          "naturalWidth": 300,
-          "naturalHeight": 150,
-          "displayWidth": 22,
-          "displayHeight": 25,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": false,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 300x150 displayed at 22x25",
-            "Missing alt text"
-          ]
-        }
-      ]
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 578240,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 29
-        }
-      ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 2854,
-      "maxDepth": 17,
-      "maxChildren": 132,
-      "widestElement": "BODY",
-      "deepestElement": "circle",
-      "issues": [
-        "Large DOM: 2854 elements (recommended < 1500)",
-        "Wide node: BODY has 132 children (recommended < 60)"
-      ]
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
-          "size": 48736,
-          "duration": 28
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "Inter",
-          "display": "swap"
-        },
-        {
-          "family": "\"Inter Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [
-        {
-          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/dvh-assets/DVH_Logo.svg",
-          "as": "image"
-        },
-        {
-          "href": "/dvh-assets/DVH-Logo-Footer.svg",
-          "as": "image"
-        },
-        {
-          "href": "/_next/static/chunks/webpack-2155c49040adaff5.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/12149.039aa64b360353cb.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/css/c0052ec527bf5b7f.css",
-          "as": "style"
-        }
-      ],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": []
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 403 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2Fdvh-assets%2Fvin-check.webp&w=1920&q=75",
-        "status": 403,
-        "resourceType": "image"
-      }
-    ]
-  },
-  {
-    "site": "Detailed Vehicle History",
-    "label": "VIN Check",
-    "url": "https://www.detailedvehiclehistory.com/vin-check",
-    "browser": "mobile-chrome",
-    "timestamp": "2026-08-05T14:33:17.655Z",
+    "timestamp": "2026-08-06T10:30:13.712Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2297,14 +2084,14 @@
         "connection": 0,
         "tls": 0,
         "serverProcessing": 25,
-        "ttfb": 50,
-        "download": 6,
-        "domParsing": 358,
-        "domContentLoaded": 495,
-        "loadEvent": 1059,
-        "transferSize": 87758,
-        "encodedBodySize": 87458,
-        "decodedBodySize": 1124923,
+        "ttfb": 49,
+        "download": 8,
+        "domParsing": 498,
+        "domContentLoaded": 569,
+        "loadEvent": 570,
+        "transferSize": 87685,
+        "encodedBodySize": 87385,
+        "decodedBodySize": 1125296,
         "protocol": "h2"
       },
       "issues": []
@@ -2323,32 +2110,32 @@
     ],
     "resourceAnalysis": {
       "totalCount": 72,
-      "totalSize": 578240,
+      "totalSize": 589834,
       "byType": {
         "link": {
           "count": 10,
           "totalSize": 75020,
-          "totalDuration": 2382.9000000001397
+          "totalDuration": 758.1000000002095
         },
         "script": {
           "count": 46,
           "totalSize": 367707,
-          "totalDuration": 3208.1999999993714
+          "totalDuration": 2777.399999999674
         },
         "img": {
           "count": 4,
-          "totalSize": 8190,
-          "totalDuration": 3058.4000000001397
-        },
-        "fetch": {
-          "count": 11,
-          "totalSize": 127023,
-          "totalDuration": 1950.4000000003725
+          "totalSize": 19840,
+          "totalDuration": 585.5999999999767
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 6.5
+          "totalDuration": 6.199999999953434
+        },
+        "fetch": {
+          "count": 11,
+          "totalSize": 126967,
+          "totalDuration": 2215.7999999996973
         }
       },
       "largeResources": [],
@@ -2362,7 +2149,7 @@
           "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
           "naturalWidth": 145,
           "naturalHeight": 38,
-          "displayWidth": 85,
+          "displayWidth": 110,
           "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
@@ -2376,7 +2163,7 @@
           "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
           "naturalWidth": 145,
           "naturalHeight": 40,
-          "displayWidth": 85,
+          "displayWidth": 110,
           "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
@@ -2390,7 +2177,7 @@
           "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
           "naturalWidth": 145,
           "naturalHeight": 40,
-          "displayWidth": 85,
+          "displayWidth": 110,
           "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
@@ -2490,14 +2277,14 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 578240,
+      "firstPartySize": 589834,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 34
+          "duration": 23
         }
       ],
       "totalDomains": 1
@@ -2609,26 +2396,365 @@
       "dnsPrefetch": [],
       "issues": []
     },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 403 ()"
-    ],
+    "consoleErrors": [],
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
+    "failedRequests": []
+  },
+  {
+    "site": "Detailed Vehicle History",
+    "label": "VIN Check",
+    "url": "https://www.detailedvehiclehistory.com/vin-check",
+    "browser": "mobile-chrome",
+    "timestamp": "2026-08-06T10:30:13.788Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "7 image(s) missing width/height attributes"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 15,
+        "ttfb": 50,
+        "download": 11,
+        "domParsing": 491,
+        "domContentLoaded": 576,
+        "loadEvent": 576,
+        "transferSize": 87739,
+        "encodedBodySize": 87439,
+        "decodedBodySize": 1125296,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
       {
-        "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2Fdvh-assets%2Fvin-check.webp&w=1280&q=75",
-        "status": 403,
-        "resourceType": "image"
+        "type": "CSS",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "suggestion": "Add async or defer attribute"
       }
-    ]
+    ],
+    "resourceAnalysis": {
+      "totalCount": 72,
+      "totalSize": 589834,
+      "byType": {
+        "link": {
+          "count": 10,
+          "totalSize": 75020,
+          "totalDuration": 785.2999999998137
+        },
+        "script": {
+          "count": 46,
+          "totalSize": 367707,
+          "totalDuration": 3069.2999999996973
+        },
+        "img": {
+          "count": 4,
+          "totalSize": 19840,
+          "totalDuration": 497.4000000001397
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 6.700000000069849
+        },
+        "fetch": {
+          "count": 11,
+          "totalSize": 126967,
+          "totalDuration": 1930.5
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 13,
+      "issueCount": 9,
+      "images": [
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
+        }
+      ]
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 589834,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 23
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 2854,
+      "maxDepth": 17,
+      "maxChildren": 132,
+      "widestElement": "BODY",
+      "deepestElement": "circle",
+      "issues": [
+        "Large DOM: 2854 elements (recommended < 1500)",
+        "Wide node: BODY has 132 children (recommended < 60)"
+      ]
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 13
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "\"Inter Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-2155c49040adaff5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.039aa64b360353cb.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": []
+    },
+    "consoleErrors": [],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": []
   },
   {
     "site": "Detailed Vehicle History",
     "label": "Window Sticker",
     "url": "https://www.detailedvehiclehistory.com/window-sticker",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-05T14:34:24.208Z",
+    "timestamp": "2026-08-06T10:31:20.493Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2652,15 +2778,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 25,
-        "ttfb": 45,
-        "download": 7,
-        "domParsing": 550,
-        "domContentLoaded": 684,
-        "loadEvent": 684,
-        "transferSize": 106500,
-        "encodedBodySize": 106200,
-        "decodedBodySize": 1214674,
+        "serverProcessing": 17,
+        "ttfb": 56,
+        "download": 5,
+        "domParsing": 678,
+        "domContentLoaded": 750,
+        "loadEvent": 750,
+        "transferSize": 106470,
+        "encodedBodySize": 106170,
+        "decodedBodySize": 1214634,
         "protocol": "h2"
       },
       "issues": []
@@ -2693,22 +2819,22 @@
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6840h2",
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
@@ -2718,38 +2844,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 93,
-      "totalSize": 959611,
+      "totalCount": 92,
+      "totalSize": 959474,
       "byType": {
         "link": {
           "count": 13,
           "totalSize": 77184,
-          "totalDuration": 892.2000000001863
+          "totalDuration": 1814.300000000163
         },
         "script": {
           "count": 54,
           "totalSize": 541124,
-          "totalDuration": 3706
+          "totalDuration": 5663.500000000582
         },
         "img": {
           "count": 7,
           "totalSize": 223791,
-          "totalDuration": 519.9999999998836
+          "totalDuration": 1262.7999999999302
         },
         "xmlhttprequest": {
-          "count": 6,
+          "count": 5,
           "totalSize": 300,
-          "totalDuration": 747.5000000001164
+          "totalDuration": 2919.9000000000233
         },
         "fetch": {
           "count": 12,
-          "totalSize": 117212,
-          "totalDuration": 2409.9999999998836
+          "totalSize": 117075,
+          "totalDuration": 4288.79999999993
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 5.799999999930151
+          "totalDuration": 4.199999999953434
         }
       },
       "largeResources": [
@@ -2757,13 +2883,13 @@
           "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
           "type": "img",
           "size": 215958,
-          "duration": 103
+          "duration": 181
         },
         {
           "url": "https://connect.facebook.net/en_US/fbevents.js",
           "type": "script",
           "size": 106474,
-          "duration": 94
+          "duration": 405
         }
       ],
       "issues": []
@@ -2916,7 +3042,7 @@
           ]
         },
         {
-          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=9aea3d05-5a32-4c6b-a486-e357f7195b72&bo=1&sid=b",
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=ff8fa46a-197d-4a34-90b3-ba7b6ee8534d&bo=1&sid=e",
           "naturalWidth": 0,
           "naturalHeight": 0,
           "displayWidth": 0,
@@ -2932,80 +3058,80 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 790175,
+      "firstPartySize": 790038,
       "thirdPartySize": 169436,
       "thirdPartyDomains": [
         {
           "domain": "connect.facebook.net",
           "count": 2,
           "size": 169436,
-          "duration": 119
+          "duration": 508
         },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 35
+          "duration": 29
         },
         {
           "domain": "www.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 47
+          "duration": 426
         },
         {
           "domain": "bat.bing.com",
           "count": 3,
           "size": 0,
-          "duration": 51
+          "duration": 91
         },
         {
           "domain": "scripts.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 16
+          "duration": 13
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 147
+          "duration": 148
         },
         {
-          "domain": "j.clarity.ms",
-          "count": 3,
+          "domain": "l.clarity.ms",
+          "count": 2,
           "size": 0,
-          "duration": 194
+          "duration": 670
         },
         {
           "domain": "www.facebook.com",
           "count": 1,
           "size": 0,
-          "duration": 111
+          "duration": 223
         },
         {
           "domain": "vhr.nyc3.digitaloceanspaces.com",
           "count": 1,
           "size": 0,
-          "duration": 61
+          "duration": 436
         },
         {
           "domain": "ipinfo.io",
           "count": 1,
           "size": 0,
-          "duration": 85
+          "duration": 222
         },
         {
           "domain": "prodmiddleware.vehiclehistory.report",
           "count": 1,
           "size": 0,
-          "duration": 462
+          "duration": 2022
         },
         {
           "domain": "affiliate-middleware.detailedvehiclehistory.com",
           "count": 1,
           "size": 0,
-          "duration": 1321
+          "duration": 1460
         }
       ],
       "totalDomains": 12
@@ -3026,7 +3152,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 16
+          "duration": 13
         }
       ],
       "fontFaces": [
@@ -3179,19 +3305,19 @@
         "failure": "net::ERR_FAILED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940436627&_gaz=1&gc",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012253084&_gaz=1&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=1552510252.1785940440&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd8990825",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=269866828.1786012256&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6840h2v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940436627&gcd=13l3l",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012253084&gcd=13l3l3l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3203,7 +3329,7 @@
     "label": "Window Sticker",
     "url": "https://www.detailedvehiclehistory.com/window-sticker",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-05T14:34:25.489Z",
+    "timestamp": "2026-08-06T10:31:21.520Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3227,15 +3353,15 @@
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 35,
-        "ttfb": 64,
-        "download": 5,
-        "domParsing": 228,
-        "domContentLoaded": 446,
-        "loadEvent": 447,
-        "transferSize": 106499,
-        "encodedBodySize": 106199,
-        "decodedBodySize": 1214674,
+        "serverProcessing": 21,
+        "ttfb": 41,
+        "download": 6,
+        "domParsing": 494,
+        "domContentLoaded": 593,
+        "loadEvent": 593,
+        "transferSize": 106468,
+        "encodedBodySize": 106168,
+        "decodedBodySize": 1214634,
         "protocol": "h2"
       },
       "issues": []
@@ -3268,22 +3394,22 @@
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-11049318834&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=AW-805657048&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
         "type": "JS",
-        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6831",
+        "url": "https://www.googletagmanager.com/gtag/destination?id=G-WRTXS2DFBC&cx=c&gtm=4e6841",
         "suggestion": "Add async or defer attribute"
       },
       {
@@ -3294,37 +3420,37 @@
     ],
     "resourceAnalysis": {
       "totalCount": 93,
-      "totalSize": 884926,
+      "totalSize": 884789,
       "byType": {
         "link": {
           "count": 13,
           "totalSize": 77184,
-          "totalDuration": 742.2999999998137
+          "totalDuration": 1404.4000000001397
         },
         "script": {
           "count": 54,
           "totalSize": 541124,
-          "totalDuration": 2856.1000000002095
+          "totalDuration": 4732.5999999996275
         },
         "img": {
           "count": 7,
           "totalSize": 149106,
-          "totalDuration": 510.0999999999767
+          "totalDuration": 866.4999999997672
         },
         "xmlhttprequest": {
           "count": 6,
           "totalSize": 300,
-          "totalDuration": 724.0000000001164
+          "totalDuration": 2824.29999999993
         },
         "fetch": {
           "count": 12,
-          "totalSize": 117212,
-          "totalDuration": 2239.7999999998137
+          "totalSize": 117075,
+          "totalDuration": 3878.5000000001164
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 9.399999999906868
+          "totalDuration": 4.900000000023283
         }
       },
       "largeResources": [
@@ -3332,13 +3458,13 @@
           "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
           "type": "img",
           "size": 141273,
-          "duration": 84
+          "duration": 137
         },
         {
           "url": "https://connect.facebook.net/en_US/fbevents.js",
           "type": "script",
           "size": 106474,
-          "duration": 102
+          "duration": 432
         }
       ],
       "issues": []
@@ -3477,7 +3603,7 @@
           ]
         },
         {
-          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=fe333f8c-8b09-44a3-831f-ee69b57264ef&bo=1&sid=b",
+          "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=512e0eb4-d225-49e7-86c6-1551923d4477&bo=1&sid=e",
           "naturalWidth": 0,
           "naturalHeight": 0,
           "displayWidth": 0,
@@ -3493,80 +3619,80 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 715490,
+      "firstPartySize": 715353,
       "thirdPartySize": 169436,
       "thirdPartyDomains": [
         {
           "domain": "connect.facebook.net",
           "count": 2,
           "size": 169436,
-          "duration": 132
+          "duration": 536
         },
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 44
+          "duration": 20
         },
         {
           "domain": "www.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 40
+          "duration": 430
         },
         {
           "domain": "bat.bing.com",
           "count": 3,
           "size": 0,
-          "duration": 48
+          "duration": 86
         },
         {
           "domain": "scripts.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 18
+          "duration": 14
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 196
+          "duration": 162
         },
         {
-          "domain": "j.clarity.ms",
+          "domain": "l.clarity.ms",
           "count": 3,
           "size": 0,
-          "duration": 113
+          "duration": 680
         },
         {
           "domain": "www.facebook.com",
           "count": 1,
           "size": 0,
-          "duration": 116
+          "duration": 226
         },
         {
           "domain": "vhr.nyc3.digitaloceanspaces.com",
           "count": 1,
           "size": 0,
-          "duration": 59
+          "duration": 407
         },
         {
           "domain": "ipinfo.io",
           "count": 1,
           "size": 0,
-          "duration": 91
+          "duration": 142
         },
         {
           "domain": "prodmiddleware.vehiclehistory.report",
           "count": 1,
           "size": 0,
-          "duration": 514
+          "duration": 1995
         },
         {
           "domain": "affiliate-middleware.detailedvehiclehistory.com",
           "count": 1,
           "size": 0,
-          "duration": 1168
+          "duration": 1370
         }
       ],
       "totalDomains": 12
@@ -3587,7 +3713,7 @@
         {
           "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "size": 48736,
-          "duration": 27
+          "duration": 15
         }
       ],
       "fontFaces": [
@@ -3740,19 +3866,19 @@
         "failure": "net::ERR_FAILED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940437876&_gaz=1&gcd=",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012253617&_gaz=1&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=1408058540.1785940442&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563",
+        "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-WRTXS2DFBC&cid=2122008870.1786012257&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6831v9224950928z8899082563za20gzb899082563zd899082563&_p=1785940437876&gcd=13l3l3l",
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-WRTXS2DFBC&gtm=45je6841v9224950928z8899082563za20gzb899082563zd899082563&_p=1786012253617&gcd=13l3l3l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
