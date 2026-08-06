@@ -3,7 +3,7 @@
   "label": "Homepage",
   "url": "https://www.detailedvehiclehistory.com",
   "browser": "desktop-chrome",
-  "timestamp": "2026-08-05T14:33:12.195Z",
+  "timestamp": "2026-08-06T10:30:08.444Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -17,7 +17,8 @@
     "totalCLS": 0,
     "shifts": [],
     "issues": [
-      "10 image(s) missing width/height attributes"
+      "10 image(s) missing width/height attributes",
+      "1 iframe(s) missing dimensions"
     ]
   },
   "ttfbAnalysis": {
@@ -26,15 +27,15 @@
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 26,
-      "ttfb": 63,
-      "download": 12,
-      "domParsing": 690,
-      "domContentLoaded": 779,
-      "loadEvent": 902,
-      "transferSize": 89395,
-      "encodedBodySize": 89095,
-      "decodedBodySize": 1012106,
+      "serverProcessing": 16,
+      "ttfb": 43,
+      "download": 6,
+      "domParsing": 80,
+      "domContentLoaded": 558,
+      "loadEvent": 962,
+      "transferSize": 89021,
+      "encodedBodySize": 88721,
+      "decodedBodySize": 1011090,
       "protocol": "h2"
     },
     "issues": []
@@ -52,48 +53,59 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 77,
-    "totalSize": 767985,
+    "totalCount": 89,
+    "totalSize": 942013,
     "byType": {
       "link": {
         "count": 12,
-        "totalSize": 88928,
-        "totalDuration": 1736.1000000000931
+        "totalSize": 89539,
+        "totalDuration": 1445.7000000000698
       },
       "script": {
-        "count": 46,
-        "totalSize": 367707,
-        "totalDuration": 6137
+        "count": 54,
+        "totalSize": 541124,
+        "totalDuration": 5955.899999999907
       },
       "img": {
-        "count": 7,
+        "count": 9,
         "totalSize": 206933,
-        "totalDuration": 498.9999999998836
+        "totalDuration": 2440.6999999999534
       },
       "xmlhttprequest": {
-        "count": 1,
+        "count": 2,
         "totalSize": 300,
-        "totalDuration": 13.599999999976717
+        "totalDuration": 240.5
       },
       "fetch": {
         "count": 11,
         "totalSize": 104117,
-        "totalDuration": 1615.299999999581
+        "totalDuration": 3560.899999999907
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 9
       }
     },
     "largeResources": [
       {
+        "url": "https://connect.facebook.net/en_US/fbevents.js",
+        "type": "script",
+        "size": 106474,
+        "duration": 404
+      },
+      {
         "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
         "type": "img",
         "size": 102925,
-        "duration": 77
+        "duration": 438
       }
     ],
     "issues": []
   },
   "imageAudit": {
-    "totalImages": 22,
-    "issueCount": 13,
+    "totalImages": 23,
+    "issueCount": 14,
     "images": [
       {
         "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
@@ -279,31 +291,87 @@
           "Oversized: 300x150 displayed at 22x25",
           "Missing alt text"
         ]
+      },
+      {
+        "src": "https://bat.bing.com/action/0?ti=295007648&Ver=2&mid=023d9aaf-0c1a-420a-962a-2527e660d227&bo=1&sid=c",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "displayWidth": 0,
+        "displayHeight": 0,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": false,
+        "hasDimensions": true,
+        "issues": [
+          "Missing alt text"
+        ]
       }
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 767985,
-    "thirdPartySize": 0,
+    "firstPartySize": 772577,
+    "thirdPartySize": 169436,
     "thirdPartyDomains": [
+      {
+        "domain": "connect.facebook.net",
+        "count": 2,
+        "size": 169436,
+        "duration": 500
+      },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 98
+        "duration": 140
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 436
+      },
+      {
+        "domain": "bat.bing.com",
+        "count": 3,
+        "size": 0,
+        "duration": 91
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 20
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 190
+      },
+      {
+        "domain": "l.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 581
+      },
+      {
+        "domain": "www.facebook.com",
+        "count": 1,
+        "size": 0,
+        "duration": 221
       }
     ],
-    "totalDomains": 1
+    "totalDomains": 8
   },
   "domAnalysis": {
-    "totalElements": 2509,
+    "totalElements": 2528,
     "maxDepth": 18,
-    "maxChildren": 112,
+    "maxChildren": 122,
     "widestElement": "BODY",
     "deepestElement": "SPAN",
     "issues": [
-      "Large DOM: 2509 elements (recommended < 1500)",
-      "Wide node: BODY has 112 children (recommended < 60)"
+      "Large DOM: 2528 elements (recommended < 1500)",
+      "Wide node: BODY has 122 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -311,7 +379,7 @@
       {
         "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
         "size": 48736,
-        "duration": 21
+        "duration": 63
       }
     ],
     "fontFaces": [
@@ -408,7 +476,9 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "8 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [
     "Error: <svg> attribute width: Expected length, \"full\".",
@@ -433,14 +503,8 @@
     "Error: <svg> attribute height: Expected length, \"full\"."
   ],
   "consoleWarnings": [
+    "@builder.io/partytown package has changed organization and now is\n@qwik.dev/partytown https://www.npmjs.com/package/@qwik.dev/partytown\nWe recommend using the new package to stay up to date on feature releases and bug fixes.",
     "Deprecated API for given entry type."
   ],
-  "failedRequests": [
-    {
-      "url": "https://detailedvehiclehistory.com/_next/static/chunks/45936.036868943e0f2cb0.js",
-      "status": 0,
-      "resourceType": "script",
-      "failure": "net::ERR_ABORTED"
-    }
-  ]
+  "failedRequests": []
 }
