@@ -3,7 +3,7 @@
   "label": "VIN Decoder",
   "url": "https://classicdecoder.com/vin-decoder",
   "browser": "desktop-chrome",
-  "timestamp": "2026-08-06T10:27:03.696Z",
+  "timestamp": "2026-08-06T13:24:37.112Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,22 +16,24 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "4 image(s) missing width/height attributes"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 19,
-      "tls": 13,
-      "serverProcessing": 184,
-      "ttfb": 206,
-      "download": 7,
-      "domParsing": 101,
-      "domContentLoaded": 344,
-      "loadEvent": 1174,
-      "transferSize": 72800,
-      "encodedBodySize": 72500,
+      "connection": 15,
+      "tls": 9,
+      "serverProcessing": 138,
+      "ttfb": 156,
+      "download": 6,
+      "domParsing": 539,
+      "domContentLoaded": 707,
+      "loadEvent": 952,
+      "transferSize": 72725,
+      "encodedBodySize": 72425,
       "decodedBodySize": 479754,
       "protocol": "h2"
     },
@@ -49,44 +51,49 @@
       "suggestion": "Consider async loading or inlining critical CSS"
     },
     {
+      "type": "CSS",
+      "url": "https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
       "type": "JS",
       "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
       "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 112,
-    "totalSize": 1435900,
+    "totalCount": 119,
+    "totalSize": 1443259,
     "byType": {
       "other": {
         "count": 1,
         "totalSize": 451,
-        "totalDuration": 13.700000000011642
+        "totalDuration": 11.10000000000582
       },
       "link": {
-        "count": 45,
-        "totalSize": 417582,
-        "totalDuration": 10902.800000000047
+        "count": 46,
+        "totalSize": 424467,
+        "totalDuration": 8912.400000000081
       },
       "script": {
-        "count": 41,
-        "totalSize": 757105,
-        "totalDuration": 8760.399999999965
+        "count": 40,
+        "totalSize": 750624,
+        "totalDuration": 6221.999999999971
       },
       "img": {
         "count": 21,
         "totalSize": 260462,
-        "totalDuration": 4989.899999999994
+        "totalDuration": 2204.899999999936
       },
       "fetch": {
-        "count": 3,
-        "totalSize": 0,
-        "totalDuration": 232.80000000001746
+        "count": 10,
+        "totalSize": 6955,
+        "totalDuration": 434.79999999998836
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 10.5
+        "totalDuration": 11.900000000023283
       }
     },
     "largeResources": [
@@ -94,99 +101,265 @@
         "url": "https://classicdecoder.com/_next/static/chunks/app/layout-4a008c1e36b354c4.js",
         "type": "script",
         "size": 249746,
-        "duration": 465
+        "duration": 267
       },
       {
         "url": "https://classicdecoder.com/_next/static/media/warning.f40c8662.svg",
         "type": "img",
         "size": 245152,
-        "duration": 370
+        "duration": 131
       },
       {
         "url": "https://classicdecoder.com/0qia/",
         "type": "script",
         "size": 163989,
-        "duration": 436
+        "duration": 313
       },
       {
-        "url": "https://classicdecoder.com/_next/static/chunks/57368.ba7b1d4e95324a1f.js",
+        "url": "https://classicdecoder.com/_next/static/chunks/57368.5590758e8cc1a07b.js",
         "type": "link",
         "size": 136477,
-        "duration": 426
+        "duration": 298
       }
     ],
     "issues": [
-      "High request count: 112 resources"
+      "High request count: 119 resources"
     ]
   },
   "imageAudit": {
-    "totalImages": 0,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 70,
+    "issueCount": 11,
+    "images": [
+      {
+        "src": "https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.digitaloceanspaces.com%2Fpayload%2",
+        "naturalWidth": 107,
+        "naturalHeight": 20,
+        "displayWidth": 107,
+        "displayHeight": 20,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Above-fold image has loading=\"lazy\" — slows LCP"
+        ]
+      },
+      {
+        "src": "https://classicdecoder.com/assets/apple_logo.svg",
+        "naturalWidth": 23,
+        "naturalHeight": 23,
+        "displayWidth": 32,
+        "displayHeight": 32,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Above-fold image has loading=\"lazy\" — slows LCP"
+        ]
+      },
+      {
+        "src": "https://classicdecoder.com/assets/google_play_logo.svg",
+        "naturalWidth": 21,
+        "naturalHeight": 23,
+        "displayWidth": 29,
+        "displayHeight": 32,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Above-fold image has loading=\"lazy\" — slows LCP"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/payload/1965-chevrolet-corvette-stingray-series.webp",
+        "naturalWidth": 2728,
+        "naturalHeight": 2456,
+        "displayWidth": 620,
+        "displayHeight": 620,
+        "loading": "eager",
+        "fetchPriority": "low",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 2728x2456 displayed at 620x620"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/payload/1967-pontiac-catalina-series.webp",
+        "naturalWidth": 2728,
+        "naturalHeight": 2456,
+        "displayWidth": 620,
+        "displayHeight": 620,
+        "loading": "lazy",
+        "fetchPriority": "low",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 2728x2456 displayed at 620x620",
+          "Above-fold image has loading=\"lazy\" — slows LCP"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/payload/1963-dodge-polara-8-500-series.webp",
+        "naturalWidth": 2728,
+        "naturalHeight": 2456,
+        "displayWidth": 620,
+        "displayHeight": 620,
+        "loading": "lazy",
+        "fetchPriority": "low",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 2728x2456 displayed at 620x620",
+          "Above-fold image has loading=\"lazy\" — slows LCP"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.digitaloceanspaces.com/payload/stolen-or-theft-records.svg",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "displayWidth": 80,
+        "displayHeight": 80,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 512x512 displayed at 80x80"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.digitaloceanspaces.com/payload/mileage-discrepancies.svg",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "displayWidth": 80,
+        "displayHeight": 80,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 512x512 displayed at 80x80"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.digitaloceanspaces.com/payload/market-value-estimation1.svg",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "displayWidth": 80,
+        "displayHeight": 80,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 512x512 displayed at 80x80"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.digitaloceanspaces.com/payload/lien-loan-records.svg",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "displayWidth": 80,
+        "displayHeight": 80,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 512x512 displayed at 80x80"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.digitaloceanspaces.com/payload/accident-history.svg",
+        "naturalWidth": 512,
+        "naturalHeight": 512,
+        "displayWidth": 80,
+        "displayHeight": 80,
+        "loading": "lazy",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 512x512 displayed at 80x80"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 1432564,
-    "thirdPartySize": 3336,
+    "firstPartySize": 1439222,
+    "thirdPartySize": 4037,
     "thirdPartyDomains": [
       {
         "domain": "googleads.g.doubleclick.net",
         "count": 1,
-        "size": 2994,
-        "duration": 96
+        "size": 2984,
+        "duration": 68
+      },
+      {
+        "domain": "fonts.googleapis.com",
+        "count": 1,
+        "size": 711,
+        "duration": 41
       },
       {
         "domain": "www.google.com",
         "count": 3,
         "size": 342,
-        "duration": 179
+        "duration": 145
       },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 3,
         "size": 0,
-        "duration": 759
+        "duration": 490
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 43
+        "duration": 44
       },
       {
         "domain": "vhr.nyc3.digitaloceanspaces.com",
         "count": 6,
         "size": 0,
-        "duration": 1696
+        "duration": 552
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 1,
         "size": 0,
-        "duration": 79
+        "duration": 59
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 83
+        "duration": 58
       }
     ],
-    "totalDomains": 7
+    "totalDomains": 8
   },
   "domAnalysis": {
-    "totalElements": 65,
-    "maxDepth": 4,
-    "maxChildren": 42,
+    "totalElements": 1667,
+    "maxDepth": 22,
+    "maxChildren": 97,
     "widestElement": "HEAD",
-    "deepestElement": "H2",
-    "issues": []
+    "deepestElement": "INPUT",
+    "issues": [
+      "Large DOM: 1667 elements (recommended < 1500)",
+      "Wide node: HEAD has 97 children (recommended < 60)"
+    ]
   },
   "fontAnalysis": {
     "fonts": [
       {
         "url": "https://classicdecoder.com/_next/static/media/f04c3881ee3d9785-s.p.woff2",
         "size": 33556,
-        "duration": 20
+        "duration": 14
       }
     ],
     "fontFaces": [
@@ -248,48 +421,216 @@
     ]
   },
   "securityCheck": {
-    "issues": [
-      "Missing viewport meta tag",
-      "Missing charset declaration",
-      "Missing lang attribute on <html>"
-    ]
+    "issues": []
   },
   "preloadCheck": {
-    "preloads": [],
+    "preloads": [
+      {
+        "href": "/_next/static/chunks/webpack-2eecaab661402c7c.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/0e5ce63c-bac20d62a8028a5e.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/52615-c40bbcec9c65eefd.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/68748-b45953513b19a3d4.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/39573-605d0955acb5cc6a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/64234-d079b9087d08d1c2.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/21405-1beadf72dd45fd59.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/23398-ed67019834f58961.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/90232.1f41796af49b4835.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/9940.69b2f622eb697e24.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/62177-5c6d02bd18b91630.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/94206-2c65ff3cbe2848a5.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/47655-9f845abe289b13b8.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/8127-690a8776c1b60c92.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/35412-0f99b71909fe626b.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/12501.3334d537b5caf0f7.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/63218.b96afe52eae0e9b9.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/85005-c5c1c02c32a07bbc.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/91091.1e7da1a24904877a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/80943.693d836bd1a6c8d2.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/b1644e8c.2f37e92ee6bab9f1.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/57368.5590758e8cc1a07b.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/96760.2c90e126d321cd54.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/87648.ddfd71c82854d932.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/13856.05ede3bb02a39e20.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/68300.40409742d43c23aa.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/11905.2e6d4b0107ee0516.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/77346.99795d94a1c791f3.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/17453.b50719e4641f991d.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/63723.130e20e0d9e78550.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/49721.0770d86c68097261.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/94818.b9afd890518dfb26.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/92344.0132f18987bac36a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/74979.6a371c2c98916718.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/13873.d8c71850bd3c148e.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/31059.0415d34d2d6cdf86.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/59998.35ed00adcbf3553a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/18860.374719a550dada8a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/87735.51235e7dd96a231a.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/chunks/21253.70aa5a93e83f8f95.js",
+        "as": "script"
+      },
+      {
+        "href": "/_next/static/media/f04c3881ee3d9785-s.p.woff2",
+        "as": "font"
+      },
+      {
+        "href": "/assets/logo.svg",
+        "as": "image"
+      }
+    ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "7 third-party origins without preconnect hints",
-      "No preload hints found — consider preloading LCP image/font"
+      "8 third-party origins without preconnect hints"
     ]
   },
-  "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 502 ()"
-  ],
+  "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://classicdecoder.com/_next/static/chunks/52615-c40bbcec9c65eefd.js",
-      "status": 0,
-      "resourceType": "script",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=1786444977.1786012021&dt=Classic%20Car%20VIN%20Lookup%20-%20Access%20any%20Pre-1981%20Vehic",
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=1110851802.1786022674&dt=Classic%20Car%20VIN%20Lookup%20-%20Access%20any%20Pre-1981%20Vehic",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1786012020933&cv=11&fst=1786012020933&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1110851802.1786022674&gtm=45892e6841v9212952419za200zd9212952419xec&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1786444977.1786012021&gtm=45892e6841v9212952419za200zd9212952419xec&fmt=8",
+      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1786022673693&cv=11&fst=1786022673693&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://classicdecoder.com/pricing?_rsc=1wypq",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://classicdecoder.com/research?_rsc=1wypq",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
