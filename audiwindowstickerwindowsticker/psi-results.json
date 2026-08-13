@@ -4,41 +4,41 @@
     "label": "Audi – Build Sheet",
     "url": "https://audiwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-12T09:02:18.119Z",
-    "performanceScore": 47,
+    "timestamp": "2026-08-13T09:04:45.170Z",
+    "performanceScore": 58,
     "lcp": {
-      "value": 13351.605964959988,
-      "displayValue": "13.4 s",
+      "value": 13804.836478601284,
+      "displayValue": "13.8 s",
       "score": 0
     },
     "fcp": {
-      "value": 5639.554817028344,
-      "displayValue": "5.6 s",
-      "score": 0.05
+      "value": 5388.311909843805,
+      "displayValue": "5.4 s",
+      "score": 0.07
     },
     "cls": {
-      "value": 0.06706087064256265,
-      "displayValue": "0.067",
-      "score": 0.97
+      "value": null,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 429.5,
-      "displayValue": "430 ms",
-      "score": 0.65
+      "value": 127.5,
+      "displayValue": "130 ms",
+      "score": 0.96
     },
     "si": {
-      "value": 7343.516479130315,
-      "displayValue": "7.3 s",
-      "score": 0.28
+      "value": 6904.6222957927375,
+      "displayValue": "6.9 s",
+      "score": 0.33
     },
     "ttfb": {
-      "value": 14,
-      "displayValue": "Root document took 10 ms",
+      "value": 39,
+      "displayValue": "Root document took 40 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16449.219787518385,
-      "displayValue": "16.4 s",
+      "value": 16599.357810589045,
+      "displayValue": "16.6 s",
       "score": 0.05
     },
     "opportunities": [
@@ -46,8 +46,8 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 600,
-        "savingsBytes": 302298
+        "savingsMs": 750,
+        "savingsBytes": 416734
       },
       {
         "id": "unused-css-rules",
@@ -59,9 +59,9 @@
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
         "score": 0
       },
       {
@@ -71,20 +71,21 @@
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0
       },
       {
         "id": "mainthread-work-breakdown",
         "title": "Minimize main-thread work",
-        "displayValue": "2.7 s",
+        "displayValue": "2.4 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 160 ms",
         "score": 0
       }
     ]
@@ -94,15 +95,112 @@
     "label": "Audi – Build Sheet",
     "url": "https://audiwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-12T09:02:39.780Z",
-    "performanceScore": 83,
+    "timestamp": "2026-08-13T09:05:11.275Z",
+    "performanceScore": 69,
     "lcp": {
-      "value": 1481.2521814209108,
+      "value": 1361.2177030780906,
+      "displayValue": "1.4 s",
+      "score": 0.85
+    },
+    "fcp": {
+      "value": 293.0272128847613,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0002339145157723298,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 861.9999999999991,
+      "displayValue": "860 ms",
+      "score": 0.08
+    },
+    "si": {
+      "value": 840.3668130540862,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 16,
+      "displayValue": "Root document took 20 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 4059.5335963189455,
+      "displayValue": "4.1 s",
+      "score": 0.58
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 421297
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28987
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 41 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.7 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "4.1 s",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 140 ms",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 55 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "AUDIWINDOWSTICKER Window Sticker",
+    "label": "Audi – VIN Decoder",
+    "url": "https://audiwindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-08-13T09:06:35.616Z",
+    "performanceScore": 84,
+    "lcp": {
+      "value": 1482.2306004129805,
       "displayValue": "1.5 s",
       "score": 0.81
     },
     "fcp": {
-      "value": 472.2753229581528,
+      "value": 473.8363183787069,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -112,69 +210,46 @@
       "score": 1
     },
     "tbt": {
-      "value": 290.99999999999955,
-      "displayValue": "290 ms",
-      "score": 0.6
+      "value": 281.00000000000045,
+      "displayValue": "280 ms",
+      "score": 0.63
     },
     "si": {
-      "value": 526.0746092695308,
-      "displayValue": "0.5 s",
-      "score": 1
+      "value": 1018.5271545094292,
+      "displayValue": "1.0 s",
+      "score": 0.97
     },
     "ttfb": {
-      "value": 7,
+      "value": 14,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3283.751338476871,
-      "displayValue": "3.3 s",
-      "score": 0.74
+      "value": 3714.945555196542,
+      "displayValue": "3.7 s",
+      "score": 0.65
     },
     "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 80,
+        "savingsBytes": 28845
+      },
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 297383
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 28989
+        "savingsBytes": 297223
       }
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 55 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.4 s",
-        "score": 0
-      },
-      {
         "id": "mainthread-work-breakdown",
         "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "displayValue": "2.4 s",
         "score": 0
       },
       {
@@ -182,72 +257,6 @@
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
         "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – VIN Decoder",
-    "url": "https://audiwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-08-12T09:02:58.824Z",
-    "performanceScore": 72,
-    "lcp": {
-      "value": 8027.230086596502,
-      "displayValue": "8.0 s",
-      "score": 0.02
-    },
-    "fcp": {
-      "value": 1673.5076429444252,
-      "displayValue": "1.7 s",
-      "score": 0.92
-    },
-    "cls": {
-      "value": 0.06706087064256265,
-      "displayValue": "0.067",
-      "score": 0.97
-    },
-    "tbt": {
-      "value": 110,
-      "displayValue": "110 ms",
-      "score": 0.97
-    },
-    "si": {
-      "value": 3042.662793053237,
-      "displayValue": "3.0 s",
-      "score": 0.93
-    },
-    "ttfb": {
-      "value": 32,
-      "displayValue": "Root document took 30 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 16286.061946626905,
-      "displayValue": "16.3 s",
-      "score": 0.05
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29410
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 13 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.0 s",
-        "score": 0
       },
       {
         "id": "legacy-javascript-insight",
@@ -256,21 +265,21 @@
         "score": 0.5
       },
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.3 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
+        "displayValue": "Est savings of 30 ms",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 74 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.5 s",
         "score": 0
       }
     ]
@@ -280,15 +289,94 @@
     "label": "Audi – Paint Code",
     "url": "https://audiwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-08-12T09:03:38.036Z",
-    "performanceScore": 64,
+    "timestamp": "2026-08-13T09:06:59.918Z",
+    "performanceScore": 56,
     "lcp": {
-      "value": 7846.978786198273,
+      "value": 8996.878159046892,
+      "displayValue": "9.0 s",
+      "score": 0.01
+    },
+    "fcp": {
+      "value": 1560.7173790171696,
+      "displayValue": "1.6 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 592,
+      "displayValue": "590 ms",
+      "score": 0.5
+    },
+    "si": {
+      "value": 4793.947883298284,
+      "displayValue": "4.8 s",
+      "score": 0.67
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 15428.390379088258,
+      "displayValue": "15.4 s",
+      "score": 0.07
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 300,
+        "savingsBytes": 275222
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 130,
+        "savingsBytes": 30818
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.4 s",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "AUDIWINDOWSTICKER Window Sticker",
+    "label": "Audi – Options Check",
+    "url": "https://audiwindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-08-13T09:07:18.709Z",
+    "performanceScore": 66,
+    "lcp": {
+      "value": 7846.970286621855,
       "displayValue": "7.8 s",
       "score": 0.03
     },
     "fcp": {
-      "value": 1529.3020343437934,
+      "value": 1527.6354093946222,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -298,14 +386,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 349.5,
-      "displayValue": "350 ms",
-      "score": 0.73
+      "value": 306,
+      "displayValue": "310 ms",
+      "score": 0.78
     },
     "si": {
-      "value": 4825.690372782236,
-      "displayValue": "4.8 s",
-      "score": 0.66
+      "value": 4238.661468786855,
+      "displayValue": "4.2 s",
+      "score": 0.77
     },
     "ttfb": {
       "value": 2,
@@ -313,9 +401,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 15273.901829308397,
-      "displayValue": "15.3 s",
-      "score": 0.07
+      "value": 14975.667696476019,
+      "displayValue": "15.0 s",
+      "score": 0.08
     },
     "opportunities": [
       {
@@ -323,14 +411,14 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 275343
+        "savingsBytes": 275121
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 130,
-        "savingsBytes": 30815
+        "savingsBytes": 30818
       }
     ],
     "diagnostics": [
@@ -344,6 +432,79 @@
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "AUDIWINDOWSTICKER Window Sticker",
+    "label": "Audi – Options Check",
+    "url": "https://audiwindowsticker.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-08-13T09:07:58.974Z",
+    "performanceScore": 93,
+    "lcp": {
+      "value": 1679.7738412102547,
+      "displayValue": "1.7 s",
+      "score": 0.74
+    },
+    "fcp": {
+      "value": 409.85525542793164,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 64,
+      "displayValue": "60 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 765.8439046511677,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3216.236824811708,
+      "displayValue": "3.2 s",
+      "score": 0.76
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 30791
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 351112
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
