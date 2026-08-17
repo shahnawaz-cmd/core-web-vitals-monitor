@@ -1,19 +1,19 @@
 [
   {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Build Sheet",
-    "url": "https://volkswagenwindowsticker.com/build-sheet-by-vin",
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Build Sheet",
+    "url": "https://volvowindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-17T08:55:50.161Z",
-    "performanceScore": 59,
+    "timestamp": "2026-08-17T08:56:05.183Z",
+    "performanceScore": 58,
     "lcp": {
-      "value": 8701.996417255072,
-      "displayValue": "8.7 s",
-      "score": 0.01
+      "value": 7366.980014039672,
+      "displayValue": "7.4 s",
+      "score": 0.04
     },
     "fcp": {
-      "value": 1533.2111839642128,
-      "displayValue": "1.5 s",
+      "value": 1553.5595388544116,
+      "displayValue": "1.6 s",
       "score": 0.95
     },
     "cls": {
@@ -22,22 +22,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 538.5,
-      "displayValue": "540 ms",
-      "score": 0.55
+      "value": 593.5,
+      "displayValue": "590 ms",
+      "score": 0.5
     },
     "si": {
-      "value": 4413.357532545138,
-      "displayValue": "4.4 s",
-      "score": 0.74
+      "value": 4454.788661210429,
+      "displayValue": "4.5 s",
+      "score": 0.73
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 14880.184543158794,
+      "value": 14913.329479341504,
       "displayValue": "14.9 s",
       "score": 0.08
     },
@@ -46,21 +46,34 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 274314
+        "savingsMs": 300,
+        "savingsBytes": 274423
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 280,
+        "savingsBytes": 30792
       }
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.4 s",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.1 s",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.5 s",
         "score": 0
       },
       {
@@ -72,19 +85,19 @@
     ]
   },
   {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Build Sheet",
-    "url": "https://volkswagenwindowsticker.com/build-sheet-by-vin",
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Build Sheet",
+    "url": "https://volvowindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-17T08:56:03.343Z",
-    "performanceScore": 97,
+    "timestamp": "2026-08-17T08:56:26.301Z",
+    "performanceScore": 67,
     "lcp": {
-      "value": 1147.091611315168,
-      "displayValue": "1.1 s",
-      "score": 0.91
+      "value": 1759.7734264593482,
+      "displayValue": "1.8 s",
+      "score": 0.71
     },
     "fcp": {
-      "value": 419.6136479583845,
+      "value": 436.0445811082936,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -94,14 +107,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 68.34692802938389,
-      "displayValue": "70 ms",
-      "score": 0.99
+      "value": 651.4023798998315,
+      "displayValue": "650 ms",
+      "score": 0.17
     },
     "si": {
-      "value": 836.6282635915481,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 1144.626506730178,
+      "displayValue": "1.1 s",
+      "score": 0.94
     },
     "ttfb": {
       "value": 1,
@@ -109,20 +122,103 @@
       "score": 1
     },
     "interactive": {
-      "value": 2961.405764400907,
-      "displayValue": "3.0 s",
-      "score": 0.81
+      "value": 3328.939499698413,
+      "displayValue": "3.3 s",
+      "score": 0.73
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.1 s",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.4 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – VIN Decoder",
+    "url": "https://volvowindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-08-17T08:56:45.767Z",
+    "performanceScore": 58,
+    "lcp": {
+      "value": 12181.803339181693,
+      "displayValue": "12.2 s",
+      "score": 0
+    },
+    "fcp": {
+      "value": 5285.733385815696,
+      "displayValue": "5.3 s",
+      "score": 0.07
+    },
+    "cls": {
+      "value": 0.06846579031941957,
+      "displayValue": "0.068",
+      "score": 0.96
+    },
+    "tbt": {
+      "value": 179.99999999999818,
+      "displayValue": "180 ms",
+      "score": 0.92
+    },
+    "si": {
+      "value": 5395.037292229981,
+      "displayValue": "5.4 s",
+      "score": 0.56
+    },
+    "ttfb": {
+      "value": 5,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 16127.381638300889,
+      "displayValue": "16.1 s",
+      "score": 0.06
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 880,
+        "savingsBytes": 301995
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30757
+        "savingsMs": 150,
+        "savingsBytes": 29200
       }
     ],
     "diagnostics": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 13 KiB",
+        "score": 0.5
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -134,113 +230,28 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
         "score": 0
-      }
-    ]
-  },
-  {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – VIN Decoder",
-    "url": "https://volkswagenwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-08-17T08:56:21.855Z",
-    "performanceScore": 55,
-    "lcp": {
-      "value": 16139.83536555935,
-      "displayValue": "16.1 s",
-      "score": 0
-    },
-    "fcp": {
-      "value": 5762.737951513414,
-      "displayValue": "5.8 s",
-      "score": 0.05
-    },
-    "cls": {
-      "value": 0.06732488239391832,
-      "displayValue": "0.067",
-      "score": 0.97
-    },
-    "tbt": {
-      "value": 159,
-      "displayValue": "160 ms",
-      "score": 0.94
-    },
-    "si": {
-      "value": 7734.981380501598,
-      "displayValue": "7.7 s",
-      "score": 0.24
-    },
-    "ttfb": {
-      "value": 21,
-      "displayValue": "Root document took 20 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 16311.536577327062,
-      "displayValue": "16.3 s",
-      "score": 0.05
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 1350,
-        "savingsBytes": 302375
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29220
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 122 KiB",
-        "score": 0.5
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
         "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 34 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.1 s",
-        "score": 0
       }
     ]
   },
   {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – VIN Decoder",
-    "url": "https://volkswagenwindowsticker.com/vin-decoder",
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – VIN Decoder",
+    "url": "https://volvowindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-08-17T08:56:42.107Z",
-    "performanceScore": 95,
+    "timestamp": "2026-08-17T08:57:10.488Z",
+    "performanceScore": 84,
     "lcp": {
-      "value": 1402.033769960435,
+      "value": 1441.0599843595724,
       "displayValue": "1.4 s",
-      "score": 0.83
+      "score": 0.82
     },
     "fcp": {
-      "value": 466.9416034215313,
+      "value": 499.17363889562387,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -250,121 +261,57 @@
       "score": 1
     },
     "tbt": {
-      "value": 72.50000000000045,
-      "displayValue": "70 ms",
-      "score": 0.99
+      "value": 280,
+      "displayValue": "280 ms",
+      "score": 0.63
     },
     "si": {
-      "value": 576.99731269319,
-      "displayValue": "0.6 s",
+      "value": 499.17363889562387,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 70,
-      "displayValue": "Root document took 70 ms",
+      "value": 11,
+      "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3517.458371056099,
+      "value": 3463.0341509380296,
       "displayValue": "3.5 s",
-      "score": 0.7
+      "score": 0.71
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 123 KiB",
-        "score": 0.5
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28573
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 50 KiB",
-        "score": 0.5
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 296916
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.6 s",
+        "score": 0
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 40 ms",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.6 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       },
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "2.6 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Paint Code",
-    "url": "https://volkswagenwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-08-17T08:56:55.535Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 8803.485183383666,
-      "displayValue": "8.8 s",
-      "score": 0.01
-    },
-    "fcp": {
-      "value": 1509.47724705177,
-      "displayValue": "1.5 s",
-      "score": 0.96
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 134.5,
-      "displayValue": "130 ms",
-      "score": 0.96
-    },
-    "si": {
-      "value": 5372.807958941559,
-      "displayValue": "5.4 s",
-      "score": 0.57
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 14839.192741170726,
-      "displayValue": "14.8 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 30797
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "displayValue": "1.6 s",
         "score": 0
       },
       {
@@ -372,66 +319,12 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
         "score": 0
-      }
-    ]
-  },
-  {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Paint Code",
-    "url": "https://volkswagenwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-08-17T08:57:13.419Z",
-    "performanceScore": 85,
-    "lcp": {
-      "value": 1699.782596381193,
-      "displayValue": "1.7 s",
-      "score": 0.73
-    },
-    "fcp": {
-      "value": 456.3785044484904,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 237,
-      "displayValue": "240 ms",
-      "score": 0.72
-    },
-    "si": {
-      "value": 1004.4443690251248,
-      "displayValue": "1.0 s",
-      "score": 0.97
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3107.9121429486177,
-      "displayValue": "3.1 s",
-      "score": 0.78
-    },
-    "opportunities": [
+      },
       {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30770
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 19 KiB",
+        "score": 0.5
       },
       {
         "id": "cache-insight",
@@ -442,19 +335,19 @@
     ]
   },
   {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Options Check",
-    "url": "https://volkswagenwindowsticker.com/options-check-by-vin",
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Paint Code",
+    "url": "https://volvowindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-08-17T08:57:29.766Z",
-    "performanceScore": 62,
+    "timestamp": "2026-08-17T08:57:28.339Z",
+    "performanceScore": 54,
     "lcp": {
-      "value": 7846.970280147834,
-      "displayValue": "7.8 s",
-      "score": 0.03
+      "value": 8862.97407329426,
+      "displayValue": "8.9 s",
+      "score": 0.01
     },
     "fcp": {
-      "value": 1536.5902386177393,
+      "value": 1530.1240838789472,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -464,24 +357,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 457.5,
-      "displayValue": "460 ms",
-      "score": 0.62
+      "value": 703,
+      "displayValue": "700 ms",
+      "score": 0.42
     },
     "si": {
-      "value": 4228.824072435328,
-      "displayValue": "4.2 s",
-      "score": 0.77
+      "value": 4604.375307579361,
+      "displayValue": "4.6 s",
+      "score": 0.7
     },
     "ttfb": {
-      "value": 3,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 14978.678146820112,
-      "displayValue": "15.0 s",
-      "score": 0.08
+      "value": 15157.394139369355,
+      "displayValue": "15.2 s",
+      "score": 0.07
     },
     "opportunities": [
       {
@@ -489,21 +382,103 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 274427
+        "savingsBytes": 274458
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 130,
-        "savingsBytes": 30785
+        "savingsBytes": 30797
       }
     ],
     "diagnostics": [
       {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.2 s",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Paint Code",
+    "url": "https://volvowindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-08-17T08:57:55.815Z",
+    "performanceScore": 56,
+    "lcp": {
+      "value": 2088.688200164884,
+      "displayValue": "2.1 s",
+      "score": 0.6
+    },
+    "fcp": {
+      "value": 458.2625283244646,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 1831.9861980607282,
+      "displayValue": "1,830 ms",
+      "score": 0
+    },
+    "si": {
+      "value": 1970.409740757949,
+      "displayValue": "2.0 s",
+      "score": 0.63
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 4106.47434196784,
+      "displayValue": "4.1 s",
+      "score": 0.57
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "3.0 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.9 s",
         "score": 0
       },
       {
@@ -515,19 +490,92 @@
     ]
   },
   {
-    "site": "VOLKSWAGENWINDOWSTICKER Window Sticker",
-    "label": "Volkswagen – Options Check",
-    "url": "https://volkswagenwindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-08-17T08:57:46.096Z",
-    "performanceScore": 87,
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Options Check",
+    "url": "https://volvowindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-08-17T08:58:13.424Z",
+    "performanceScore": 62,
     "lcp": {
-      "value": 1714.785653221891,
-      "displayValue": "1.7 s",
-      "score": 0.73
+      "value": 8861.686539226903,
+      "displayValue": "8.9 s",
+      "score": 0.01
     },
     "fcp": {
-      "value": 426.906988906883,
+      "value": 1534.8876533001724,
+      "displayValue": "1.5 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 394,
+      "displayValue": "390 ms",
+      "score": 0.68
+    },
+    "si": {
+      "value": 4539.036587369594,
+      "displayValue": "4.5 s",
+      "score": 0.72
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 14968.666298154916,
+      "displayValue": "15.0 s",
+      "score": 0.08
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 274450
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 130,
+        "savingsBytes": 30795
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "VOLVOWINDOWSTICKER Window Sticker",
+    "label": "Volvo – Options Check",
+    "url": "https://volvowindowsticker.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-08-17T08:58:26.636Z",
+    "performanceScore": 96,
+    "lcp": {
+      "value": 1390.7836971656018,
+      "displayValue": "1.4 s",
+      "score": 0.84
+    },
+    "fcp": {
+      "value": 410.0917882185504,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -537,46 +585,46 @@
       "score": 1
     },
     "tbt": {
-      "value": 203.99999999999955,
-      "displayValue": "200 ms",
-      "score": 0.79
-    },
-    "si": {
-      "value": 862.4287522258869,
-      "displayValue": "0.9 s",
+      "value": 66.50000000000045,
+      "displayValue": "70 ms",
       "score": 0.99
     },
+    "si": {
+      "value": 635.8832975074467,
+      "displayValue": "0.6 s",
+      "score": 1
+    },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2980.732691516552,
-      "displayValue": "3.0 s",
-      "score": 0.81
+      "value": 2899.0932167740298,
+      "displayValue": "2.9 s",
+      "score": 0.82
     },
     "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 30770
+      },
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 269065
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30770
+        "savingsBytes": 269736
       }
     ],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       },
       {
