@@ -1,44 +1,141 @@
 [
   {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Build Sheet",
-    "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-08-19T10:32:49.979Z",
-    "performanceScore": 51,
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – Build Sheet",
+    "url": "https://kiawindowsticker.com/build-sheet-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-08-19T10:34:17.884Z",
+    "performanceScore": 82,
     "lcp": {
-      "value": 15910.336524338312,
-      "displayValue": "15.9 s",
-      "score": 0
+      "value": 1482.4142784542873,
+      "displayValue": "1.5 s",
+      "score": 0.81
     },
     "fcp": {
-      "value": 5995.247747749803,
-      "displayValue": "6.0 s",
-      "score": 0.04
+      "value": 475.48691566133965,
+      "displayValue": "0.5 s",
+      "score": 1
     },
     "cls": {
-      "value": 0.06724945046495955,
-      "displayValue": "0.067",
-      "score": 0.97
+      "value": 0.0002339145157723298,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 284,
-      "displayValue": "280 ms",
-      "score": 0.8
+      "value": 291.00000000000045,
+      "displayValue": "290 ms",
+      "score": 0.6
     },
     "si": {
-      "value": 7606.04763993612,
-      "displayValue": "7.6 s",
-      "score": 0.25
+      "value": 1231.9234577500392,
+      "displayValue": "1.2 s",
+      "score": 0.92
     },
     "ttfb": {
-      "value": 22,
-      "displayValue": "Root document took 20 ms",
+      "value": 63,
+      "displayValue": "Root document took 60 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16627.89656182306,
-      "displayValue": "16.6 s",
+      "value": 3552.463225115621,
+      "displayValue": "3.6 s",
+      "score": 0.69
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28964
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 295250
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 50 ms",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.6 s",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – VIN Decoder",
+    "url": "https://kiawindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-08-19T10:34:46.843Z",
+    "performanceScore": 51,
+    "lcp": {
+      "value": 8101.23133510072,
+      "displayValue": "8.1 s",
+      "score": 0.02
+    },
+    "fcp": {
+      "value": 1704.2584180721278,
+      "displayValue": "1.7 s",
+      "score": 0.92
+    },
+    "cls": {
+      "value": 0.06767375506535257,
+      "displayValue": "0.068",
+      "score": 0.96
+    },
+    "tbt": {
+      "value": 1002.5000000000009,
+      "displayValue": "1,000 ms",
+      "score": 0.27
+    },
+    "si": {
+      "value": 3096.322718487144,
+      "displayValue": "3.1 s",
+      "score": 0.93
+    },
+    "ttfb": {
+      "value": 27,
+      "displayValue": "Root document took 30 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 16263.37807281446,
+      "displayValue": "16.3 s",
       "score": 0.05
     },
     "opportunities": [
@@ -46,25 +143,17 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 1350,
-        "savingsBytes": 236783
-      },
-      {
-        "id": "redirects",
-        "title": "Avoid multiple page redirects",
-        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 755,
-        "savingsBytes": 0
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 29382
+        "savingsBytes": 301465
       }
     ],
     "diagnostics": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -72,10 +161,16 @@
         "score": 0
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "4.9 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
+        "score": 0
       },
       {
         "id": "render-blocking-insight",
@@ -86,122 +181,25 @@
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.5 s",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "displayValue": "2.9 s",
         "score": 0
       }
     ]
   },
   {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – VIN Decoder",
-    "url": "https://hyundaiwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-08-19T10:33:09.673Z",
-    "performanceScore": 72,
-    "lcp": {
-      "value": 7951.175063334189,
-      "displayValue": "8.0 s",
-      "score": 0.03
-    },
-    "fcp": {
-      "value": 1683.086732469675,
-      "displayValue": "1.7 s",
-      "score": 0.92
-    },
-    "cls": {
-      "value": 0.06754174918967475,
-      "displayValue": "0.068",
-      "score": 0.96
-    },
-    "tbt": {
-      "value": 149.5,
-      "displayValue": "150 ms",
-      "score": 0.94
-    },
-    "si": {
-      "value": 2426.829816650022,
-      "displayValue": "2.4 s",
-      "score": 0.98
-    },
-    "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 15298.462161559508,
-      "displayValue": "15.3 s",
-      "score": 0.07
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29286
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 236879
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – VIN Decoder",
-    "url": "https://hyundaiwindowsticker.com/vin-decoder",
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – VIN Decoder",
+    "url": "https://kiawindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-08-19T10:33:25.466Z",
+    "timestamp": "2026-08-19T10:35:03.735Z",
     "performanceScore": 96,
     "lcp": {
-      "value": 1461.0982956177586,
-      "displayValue": "1.5 s",
+      "value": 1442.0524200421892,
+      "displayValue": "1.4 s",
       "score": 0.82
     },
     "fcp": {
-      "value": 458.30267214714854,
+      "value": 460.745551658129,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -211,24 +209,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 42,
+      "value": 44.999999999999545,
       "displayValue": "40 ms",
       "score": 1
     },
     "si": {
-      "value": 475.03696005553195,
+      "value": 530.2313303402054,
       "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
+      "value": 25,
+      "displayValue": "Root document took 30 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3150.5487011206806,
-      "displayValue": "3.2 s",
-      "score": 0.77
+      "value": 3541.887300632158,
+      "displayValue": "3.5 s",
+      "score": 0.69
     },
     "opportunities": [
       {
@@ -236,7 +234,99 @@
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 40,
-        "savingsBytes": 28721
+        "savingsBytes": 28621
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 410564
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 30 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – Paint Code",
+    "url": "https://kiawindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-08-19T10:35:19.173Z",
+    "performanceScore": 96,
+    "lcp": {
+      "value": 1390.7837827495266,
+      "displayValue": "1.4 s",
+      "score": 0.84
+    },
+    "fcp": {
+      "value": 410.7090242655364,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 71.99999999999977,
+      "displayValue": "70 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 653.0556619268539,
+      "displayValue": "0.7 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2998.2011115577156,
+      "displayValue": "3.0 s",
+      "score": 0.8
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 382023
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 30762
       }
     ],
     "diagnostics": [
@@ -249,30 +339,25 @@
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       }
     ]
   },
   {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Paint Code",
-    "url": "https://hyundaiwindowsticker.com/paint-code-by-vin-lookup",
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – Options Check",
+    "url": "https://kiawindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-19T10:33:38.074Z",
-    "performanceScore": 72,
+    "timestamp": "2026-08-19T10:35:33.810Z",
+    "performanceScore": 71,
     "lcp": {
-      "value": 7436.884422257545,
-      "displayValue": "7.4 s",
-      "score": 0.04
+      "value": 7846.966214307861,
+      "displayValue": "7.8 s",
+      "score": 0.03
     },
     "fcp": {
-      "value": 1510.1241581148258,
+      "value": 1510.739115716944,
       "displayValue": "1.5 s",
       "score": 0.96
     },
@@ -282,14 +367,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 62.5,
-      "displayValue": "60 ms",
-      "score": 1
+      "value": 93.5,
+      "displayValue": "90 ms",
+      "score": 0.98
     },
     "si": {
-      "value": 5052.636074571507,
-      "displayValue": "5.1 s",
-      "score": 0.62
+      "value": 4959.841442286014,
+      "displayValue": "5.0 s",
+      "score": 0.64
     },
     "ttfb": {
       "value": 1,
@@ -297,9 +382,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 13652.964397804419,
-      "displayValue": "13.7 s",
-      "score": 0.11
+      "value": 14774.640037005292,
+      "displayValue": "14.8 s",
+      "score": 0.08
     },
     "opportunities": [
       {
@@ -312,33 +397,33 @@
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
   },
   {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Options Check",
-    "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
+    "site": "KIAWINDOWSTICKER Window Sticker",
+    "label": "Kia – Options Check",
+    "url": "https://kiawindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-19T10:34:19.955Z",
-    "performanceScore": 84,
+    "timestamp": "2026-08-19T10:35:54.463Z",
+    "performanceScore": 81,
     "lcp": {
-      "value": 1737.7830643785603,
+      "value": 1699.7866483571436,
       "displayValue": "1.7 s",
-      "score": 0.72
+      "score": 0.73
     },
     "fcp": {
-      "value": 420.39541504625106,
+      "value": 422.8928478905865,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -348,13 +433,13 @@
       "score": 1
     },
     "tbt": {
-      "value": 248.00000000000045,
-      "displayValue": "250 ms",
-      "score": 0.69
+      "value": 287.5,
+      "displayValue": "290 ms",
+      "score": 0.61
     },
     "si": {
-      "value": 819.2272498363234,
-      "displayValue": "0.8 s",
+      "value": 863.1604043756997,
+      "displayValue": "0.9 s",
       "score": 0.99
     },
     "ttfb": {
@@ -363,9 +448,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 3217.6278294442445,
-      "displayValue": "3.2 s",
-      "score": 0.76
+      "value": 3524.813020897408,
+      "displayValue": "3.5 s",
+      "score": 0.69
     },
     "opportunities": [
       {
@@ -373,21 +458,21 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 443769
+        "savingsBytes": 507683
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 30,
-        "savingsBytes": 30762
+        "savingsBytes": 30770
       }
     ],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
