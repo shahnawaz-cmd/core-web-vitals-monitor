@@ -4,17 +4,17 @@
     "label": "Ford Lookup – Build Sheet",
     "url": "https://fordwindowstickerlookup.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-22T08:25:25.364Z",
-    "performanceScore": 55,
+    "timestamp": "2026-08-23T08:26:43.994Z",
+    "performanceScore": 72,
     "lcp": {
-      "value": 16702.148763545796,
-      "displayValue": "16.7 s",
-      "score": 0
+      "value": 8102.761255242646,
+      "displayValue": "8.1 s",
+      "score": 0.02
     },
     "fcp": {
-      "value": 5882.752103312815,
-      "displayValue": "5.9 s",
-      "score": 0.04
+      "value": 1687.2586178180245,
+      "displayValue": "1.7 s",
+      "score": 0.92
     },
     "cls": {
       "value": 0.06416014118965031,
@@ -22,52 +22,59 @@
       "score": 0.97
     },
     "tbt": {
-      "value": 152,
-      "displayValue": "150 ms",
-      "score": 0.94
+      "value": 140,
+      "displayValue": "140 ms",
+      "score": 0.95
     },
     "si": {
-      "value": 7541.420597371913,
-      "displayValue": "7.5 s",
-      "score": 0.26
+      "value": 2841.882087945506,
+      "displayValue": "2.8 s",
+      "score": 0.95
     },
     "ttfb": {
-      "value": 22,
-      "displayValue": "Root document took 20 ms",
+      "value": 74,
+      "displayValue": "Root document took 70 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16747.163569982753,
-      "displayValue": "16.7 s",
-      "score": 0.05
+      "value": 18214.09473331805,
+      "displayValue": "18.2 s",
+      "score": 0.03
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 1300,
-        "savingsBytes": 303021
+        "savingsMs": 150,
+        "savingsBytes": 452569
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 29371
+        "savingsBytes": 29367
       }
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 83 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.7 s",
         "score": 0
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "score": 0.5
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
       },
       {
         "id": "cache-insight",
@@ -76,10 +83,16 @@
         "score": 0
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 83 KiB",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.7 s",
+        "score": 0
       }
     ]
   },
@@ -88,15 +101,15 @@
     "label": "Ford Lookup – Build Sheet",
     "url": "https://fordwindowstickerlookup.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-22T08:25:42.537Z",
-    "performanceScore": 89,
+    "timestamp": "2026-08-23T08:27:08.513Z",
+    "performanceScore": 81,
     "lcp": {
-      "value": 1522.1741000424672,
-      "displayValue": "1.5��s",
-      "score": 0.8
+      "value": 1481.1957404868153,
+      "displayValue": "1.5 s",
+      "score": 0.81
     },
     "fcp": {
-      "value": 483.5322710094468,
+      "value": 474.9353629457489,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -106,24 +119,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 197.50000000000045,
-      "displayValue": "200 ms",
-      "score": 0.8
+      "value": 328.5,
+      "displayValue": "330 ms",
+      "score": 0.53
     },
     "si": {
-      "value": 676.3736444122324,
-      "displayValue": "0.7 s",
+      "value": 613.1389511506231,
+      "displayValue": "0.6 s",
       "score": 1
     },
     "ttfb": {
-      "value": 19,
+      "value": 17,
       "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3852.790239791124,
-      "displayValue": "3.9 s",
-      "score": 0.62
+      "value": 3678.550215672468,
+      "displayValue": "3.7 s",
+      "score": 0.66
     },
     "opportunities": [
       {
@@ -131,15 +144,22 @@
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 40,
-        "savingsBytes": 28886
+        "savingsBytes": 28876
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 295261
       }
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 76 KiB",
+        "score": 0.5
       },
       {
         "id": "bootup-time",
@@ -150,24 +170,25 @@
       {
         "id": "mainthread-work-breakdown",
         "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
+        "displayValue": "2.5 s",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 76 KiB",
+        "displayValue": "Est savings of 46 KiB",
         "score": 0.5
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
+        "displayValue": "Est savings of 20 ms",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       }
     ]
@@ -177,17 +198,17 @@
     "label": "Ford Lookup – VIN Decoder",
     "url": "https://fordwindowstickerlookup.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-08-22T08:26:04.037Z",
-    "performanceScore": 46,
+    "timestamp": "2026-08-23T08:27:28.540Z",
+    "performanceScore": 51,
     "lcp": {
-      "value": 14249.714437429473,
-      "displayValue": "14.2 s",
+      "value": 15920.815055250892,
+      "displayValue": "15.9 s",
       "score": 0
     },
     "fcp": {
-      "value": 5854.7511872282475,
-      "displayValue": "5.9 s",
-      "score": 0.04
+      "value": 6388.678201887349,
+      "displayValue": "6.4 s",
+      "score": 0.02
     },
     "cls": {
       "value": 0.06370324945842742,
@@ -195,64 +216,52 @@
       "score": 0.97
     },
     "tbt": {
-      "value": 468.5,
-      "displayValue": "470 ms",
-      "score": 0.61
+      "value": 292.5,
+      "displayValue": "290 ms",
+      "score": 0.79
     },
     "si": {
-      "value": 7232.330452585185,
-      "displayValue": "7.2 s",
-      "score": 0.29
+      "value": 7133.2132395699955,
+      "displayValue": "7.1 s",
+      "score": 0.31
     },
     "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
+      "value": 25,
+      "displayValue": "Root document took 30 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16208.669851466853,
-      "displayValue": "16.2 s",
-      "score": 0.05
+      "value": 17102.166259609632,
+      "displayValue": "17.1 s",
+      "score": 0.04
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 750,
-        "savingsBytes": 302395
+        "savingsMs": 2220,
+        "savingsBytes": 427334
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29293
+        "savingsMs": 300,
+        "savingsBytes": 29294
       }
     ],
     "diagnostics": [
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
+        "displayValue": "1.5 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.8 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
         "score": 0
       },
       {
@@ -264,7 +273,18 @@
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 46 KiB",
         "score": 0
       }
     ]
@@ -274,15 +294,15 @@
     "label": "Ford Lookup – VIN Decoder",
     "url": "https://fordwindowstickerlookup.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-08-22T08:26:19.967Z",
-    "performanceScore": 96,
+    "timestamp": "2026-08-23T08:27:49.321Z",
+    "performanceScore": 94,
     "lcp": {
-      "value": 1461.0673640979046,
-      "displayValue": "1.5 s",
-      "score": 0.82
+      "value": 1361.5883991567948,
+      "displayValue": "1.4 s",
+      "score": 0.85
     },
     "fcp": {
-      "value": 458.5420363194154,
+      "value": 467.20029616072134,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -292,24 +312,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 33,
-      "displayValue": "30 ms",
-      "score": 1
+      "value": 138.5,
+      "displayValue": "140 ms",
+      "score": 0.92
     },
     "si": {
-      "value": 458.5420363194154,
+      "value": 480.0231090228166,
       "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 12,
-      "displayValue": "Root document took 10 ms",
+      "value": 16,
+      "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3406.407277886655,
-      "displayValue": "3.4 s",
-      "score": 0.72
+      "value": 3472.9632088114918,
+      "displayValue": "3.5 s",
+      "score": 0.7
     },
     "opportunities": [
       {
@@ -322,20 +342,27 @@
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.3 s",
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.3 s",
+        "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 46 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       },
       {
@@ -343,177 +370,30 @@
         "title": "Improve image delivery",
         "displayValue": "Est savings of 19 KiB",
         "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
-    "label": "Ford Lookup – Paint Code",
-    "url": "https://fordwindowstickerlookup.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-08-22T08:26:34.229Z",
-    "performanceScore": 71,
-    "lcp": {
-      "value": 7845.961788807177,
-      "displayValue": "7.8 s",
-      "score": 0.03
-    },
-    "fcp": {
-      "value": 1508.0230296568611,
-      "displayValue": "1.5 s",
-      "score": 0.96
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 78,
-      "displayValue": "80 ms",
-      "score": 0.99
-    },
-    "si": {
-      "value": 5416.054223303676,
-      "displayValue": "5.4 s",
-      "score": 0.56
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 14850.471331408668,
-      "displayValue": "14.9 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 30797
       },
       {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 275013
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
-    "label": "Ford Lookup – Paint Code",
-    "url": "https://fordwindowstickerlookup.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-08-22T08:26:55.520Z",
-    "performanceScore": 70,
-    "lcp": {
-      "value": 1714.7908824122114,
-      "displayValue": "1.7 s",
-      "score": 0.73
-    },
-    "fcp": {
-      "value": 451.8205124965645,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.1063579301287103,
-      "displayValue": "0.106",
-      "score": 0.88
-    },
-    "tbt": {
-      "value": 464.0000000000002,
-      "displayValue": "460 ms",
-      "score": 0.33
-    },
-    "si": {
-      "value": 969.6232353008031,
-      "displayValue": "1.0 s",
-      "score": 0.97
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3140.0385366306305,
-      "displayValue": "3.1 s",
-      "score": 0.77
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30770
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 10,
-        "savingsBytes": 270371
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "layout-shifts",
-        "title": "Avoid large layout shifts",
-        "displayValue": "2 layout shifts found",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       }
     ]
   },
   {
     "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
-    "label": "Ford Lookup – Options Check",
-    "url": "https://fordwindowstickerlookup.com/options-check-by-vin",
+    "label": "Ford Lookup – Paint Code",
+    "url": "https://fordwindowstickerlookup.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-08-22T08:27:10.062Z",
+    "timestamp": "2026-08-23T08:28:02.865Z",
     "performanceScore": 71,
     "lcp": {
-      "value": 7846.983017241666,
-      "displayValue": "7.8 s",
-      "score": 0.03
+      "value": 8811.981477217198,
+      "displayValue": "8.8 s",
+      "score": 0.01
     },
     "fcp": {
-      "value": 1508.9275670690006,
+      "value": 1527.77558731578,
       "displayValue": "1.5 s",
-      "score": 0.96
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -521,14 +401,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 67,
-      "displayValue": "70 ms",
-      "score": 0.99
+      "value": 204,
+      "displayValue": "200 ms",
+      "score": 0.89
     },
     "si": {
-      "value": 5386.754598086219,
-      "displayValue": "5.4 s",
-      "score": 0.56
+      "value": 2896.468562459898,
+      "displayValue": "2.9 s",
+      "score": 0.95
     },
     "ttfb": {
       "value": 1,
@@ -536,9 +416,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 16112.58314137529,
-      "displayValue": "16.1 s",
-      "score": 0.06
+      "value": 14930.27461223173,
+      "displayValue": "14.9 s",
+      "score": 0.08
     },
     "opportunities": [
       {
@@ -546,45 +426,45 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 399014
+        "savingsBytes": 275054
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 30797
+        "savingsMs": 130,
+        "savingsBytes": 30796
       }
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 46 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0
       }
     ]
   },
   {
     "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
-    "label": "Ford Lookup – Options Check",
-    "url": "https://fordwindowstickerlookup.com/options-check-by-vin",
+    "label": "Ford Lookup – Paint Code",
+    "url": "https://fordwindowstickerlookup.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-08-22T08:27:26.580Z",
-    "performanceScore": 79,
+    "timestamp": "2026-08-23T08:28:21.732Z",
+    "performanceScore": 70,
     "lcp": {
-      "value": 1389.7836961474309,
-      "displayValue": "1.4 s",
-      "score": 0.84
+      "value": 1723.2791213421963,
+      "displayValue": "1.7 s",
+      "score": 0.72
     },
     "fcp": {
-      "value": 428.6659980276431,
+      "value": 434.12664526904746,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -594,14 +474,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 376.34680029121193,
-      "displayValue": "380 ms",
-      "score": 0.45
+      "value": 525.7398023669974,
+      "displayValue": "530 ms",
+      "score": 0.26
     },
     "si": {
-      "value": 937.6113823975898,
-      "displayValue": "0.9 s",
-      "score": 0.98
+      "value": 1043.0346477383657,
+      "displayValue": "1.0 s",
+      "score": 0.96
     },
     "ttfb": {
       "value": 2,
@@ -609,9 +489,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 3138.7816756627526,
-      "displayValue": "3.1 s",
-      "score": 0.77
+      "value": 3306.2800977846987,
+      "displayValue": "3.3 s",
+      "score": 0.74
     },
     "opportunities": [
       {
@@ -619,7 +499,7 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 270280
+        "savingsBytes": 350985
       },
       {
         "id": "unused-css-rules",
@@ -633,7 +513,146 @@
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
+    "label": "Ford Lookup – Options Check",
+    "url": "https://fordwindowstickerlookup.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-08-23T08:28:34.171Z",
+    "performanceScore": 71,
+    "lcp": {
+      "value": 7849.970279625033,
+      "displayValue": "7.8 s",
+      "score": 0.03
+    },
+    "fcp": {
+      "value": 1512.4399035550055,
+      "displayValue": "1.5 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 73.5,
+      "displayValue": "70 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 5105.0347923541485,
+      "displayValue": "5.1 s",
+      "score": 0.61
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 14988.691974185813,
+      "displayValue": "15.0 s",
+      "score": 0.08
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 30794
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "FORDWINDOWSTICKERLOOKUP Window Sticker",
+    "label": "Ford Lookup – Options Check",
+    "url": "https://fordwindowstickerlookup.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-08-23T08:28:52.033Z",
+    "performanceScore": 80,
+    "lcp": {
+      "value": 1705.39874894817,
+      "displayValue": "1.7 s",
+      "score": 0.73
+    },
+    "fcp": {
+      "value": 428.7464003984116,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 306.99715998042075,
+      "displayValue": "310 ms",
+      "score": 0.57
+    },
+    "si": {
+      "value": 854.2230594951766,
+      "displayValue": "0.9 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 2,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3636.849701338998,
+      "displayValue": "3.6 s",
+      "score": 0.67
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 691974
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 30,
+        "savingsBytes": 30770
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       },
       {
