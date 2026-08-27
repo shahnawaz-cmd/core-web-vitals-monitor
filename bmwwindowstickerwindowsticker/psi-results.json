@@ -4,41 +4,41 @@
     "label": "BMW – Build Sheet",
     "url": "https://bmwwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-26T08:32:38.448Z",
-    "performanceScore": 56,
+    "timestamp": "2026-08-27T18:31:13.303Z",
+    "performanceScore": 36,
     "lcp": {
-      "value": 14324.888729679293,
-      "displayValue": "14.3 s",
+      "value": 10230.140092045496,
+      "displayValue": "10.2 s",
       "score": 0
     },
     "fcp": {
-      "value": 5481.758874905288,
-      "displayValue": "5.5 s",
-      "score": 0.06
+      "value": 2251.0292300536717,
+      "displayValue": "2.3 s",
+      "score": 0.76
     },
     "cls": {
-      "value": 0.06670256898000854,
-      "displayValue": "0.067",
-      "score": 0.97
+      "value": null,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 121,
-      "displayValue": "120 ms",
-      "score": 0.97
+      "value": 2326.500000000002,
+      "displayValue": "2,330 ms",
+      "score": 0.05
     },
     "si": {
-      "value": 7747.919915820571,
-      "displayValue": "7.7 s",
-      "score": 0.24
+      "value": 8178.773579235016,
+      "displayValue": "8.2 s",
+      "score": 0.2
     },
     "ttfb": {
-      "value": 16,
+      "value": 15,
       "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16651.451629892857,
-      "displayValue": "16.7 s",
+      "value": 16845.921828307175,
+      "displayValue": "16.8 s",
       "score": 0.05
     },
     "opportunities": [
@@ -46,33 +46,46 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 450,
-        "savingsBytes": 303583
+        "savingsMs": 300,
+        "savingsBytes": 305844
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 29267
+        "savingsBytes": 29259
       }
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "6.8 s",
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "4.5 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 320 ms",
         "score": 0
       }
     ]
@@ -82,15 +95,15 @@
     "label": "BMW – Build Sheet",
     "url": "https://bmwwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-26T08:33:02.898Z",
-    "performanceScore": 81,
+    "timestamp": "2026-08-27T18:31:41.408Z",
+    "performanceScore": 69,
     "lcp": {
-      "value": 1468.091786157926,
+      "value": 1482.0850512181325,
       "displayValue": "1.5 s",
       "score": 0.81
     },
     "fcp": {
-      "value": 496.77933372249834,
+      "value": 487.071398325468,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -100,45 +113,148 @@
       "score": 1
     },
     "tbt": {
-      "value": 329.00000000000045,
-      "displayValue": "330 ms",
-      "score": 0.53
+      "value": 679.9999999999995,
+      "displayValue": "680 ms",
+      "score": 0.15
     },
     "si": {
-      "value": 747.1811963326212,
-      "displayValue": "0.7 s",
-      "score": 0.99
+      "value": 1103.8566762778678,
+      "displayValue": "1.1 s",
+      "score": 0.95
     },
     "ttfb": {
-      "value": 76,
-      "displayValue": "Root document took 80 ms",
+      "value": 95,
+      "displayValue": "Root document took 100 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3561.3332651508363,
-      "displayValue": "3.6 s",
-      "score": 0.69
+      "value": 3677.614786765169,
+      "displayValue": "3.7 s",
+      "score": 0.66
     },
     "opportunities": [
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 10,
+        "savingsMs": 40,
         "savingsBytes": 28723
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 30,
+        "savingsBytes": 300065
       }
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.6 s",
-        "score": 0
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 30 ms",
+        "displayValue": "Est savings of 40 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.5 s",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.2 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "BMWWINDOWSTICKER Window Sticker",
+    "label": "BMW – VIN Decoder",
+    "url": "https://bmwwindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-08-27T18:32:09.885Z",
+    "performanceScore": 46,
+    "lcp": {
+      "value": 10683.307815983557,
+      "displayValue": "10.7 s",
+      "score": 0
+    },
+    "fcp": {
+      "value": 2417.0194285045695,
+      "displayValue": "2.4 s",
+      "score": 0.7
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 1011.5,
+      "displayValue": "1,010 ms",
+      "score": 0.27
+    },
+    "si": {
+      "value": 5359.515644630043,
+      "displayValue": "5.4 s",
+      "score": 0.57
+    },
+    "ttfb": {
+      "value": 41,
+      "displayValue": "Root document took 40 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 16596.19888742372,
+      "displayValue": "16.6 s",
+      "score": 0.05
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 305278
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 29275
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "3.0 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "4.3 s",
         "score": 0
       },
       {
@@ -151,12 +267,6 @@
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.7 s",
         "score": 0
       }
     ]
@@ -165,41 +275,138 @@
     "site": "BMWWINDOWSTICKER Window Sticker",
     "label": "BMW – VIN Decoder",
     "url": "https://bmwwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-08-26T08:33:51.787Z",
-    "performanceScore": 56,
+    "strategy": "desktop",
+    "timestamp": "2026-08-27T18:32:26.983Z",
+    "performanceScore": 95,
     "lcp": {
-      "value": 15027.835896289367,
-      "displayValue": "15.0 s",
-      "score": 0
+      "value": 1442.5653187023954,
+      "displayValue": "1.4 s",
+      "score": 0.82
     },
     "fcp": {
-      "value": 5733.737235472005,
-      "displayValue": "5.7 s",
-      "score": 0.05
+      "value": 465.7404642120721,
+      "displayValue": "0.5 s",
+      "score": 1
     },
     "cls": {
-      "value": 0.06767375506535257,
-      "displayValue": "0.068",
-      "score": 0.96
+      "value": 0.0002339145157723298,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 106.5,
-      "displayValue": "110 ms",
+      "value": 92,
+      "displayValue": "90 ms",
       "score": 0.98
     },
     "si": {
-      "value": 7966.779576879201,
-      "displayValue": "8.0 s",
-      "score": 0.22
+      "value": 636.4003148184349,
+      "displayValue": "0.6 s",
+      "score": 1
     },
     "ttfb": {
-      "value": 27,
-      "displayValue": "Root document took 30 ms",
+      "value": 22,
+      "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16342.536532118378,
+      "value": 3578.356952265705,
+      "displayValue": "3.6 s",
+      "score": 0.68
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 416197
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28641
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.1 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.3 s",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 15 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 80 ms",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "BMWWINDOWSTICKER Window Sticker",
+    "label": "BMW – Paint Code",
+    "url": "https://bmwwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "mobile",
+    "timestamp": "2026-08-27T18:32:53.726Z",
+    "performanceScore": 45,
+    "lcp": {
+      "value": 8942.92757220007,
+      "displayValue": "8.9��s",
+      "score": 0.01
+    },
+    "fcp": {
+      "value": 1563.0150355265882,
+      "displayValue": "1.6 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 1372,
+      "displayValue": "1,370 ms",
+      "score": 0.16
+    },
+    "si": {
+      "value": 5627.438764632441,
+      "displayValue": "5.6 s",
+      "score": 0.52
+    },
+    "ttfb": {
+      "value": 2,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 16338.996872973214,
       "displayValue": "16.3 s",
       "score": 0.05
     },
@@ -208,27 +415,173 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 620,
-        "savingsBytes": 303769
+        "savingsMs": 150,
+        "savingsBytes": 388029
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29264
+        "savingsMs": 100,
+        "savingsBytes": 30797
       }
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
       },
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.5 s",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.3 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "BMWWINDOWSTICKER Window Sticker",
+    "label": "BMW – Paint Code",
+    "url": "https://bmwwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-08-27T18:33:08.355Z",
+    "performanceScore": 92,
+    "lcp": {
+      "value": 1706.781571491884,
+      "displayValue": "1.7 s",
+      "score": 0.73
+    },
+    "fcp": {
+      "value": 426.49978551387113,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 84.5,
+      "displayValue": "80 ms",
+      "score": 0.98
+    },
+    "si": {
+      "value": 1298.709296787063,
+      "displayValue": "1.3 s",
+      "score": 0.9
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3158.832710134804,
+      "displayValue": "3.2 s",
+      "score": 0.77
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 381677
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 30,
+        "savingsBytes": 30768
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "BMWWINDOWSTICKER Window Sticker",
+    "label": "BMW – Options Check",
+    "url": "https://bmwwindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-08-27T18:33:27.297Z",
+    "performanceScore": 54,
+    "lcp": {
+      "value": 8711.05803654504,
+      "displayValue": "8.7 s",
+      "score": 0.01
+    },
+    "fcp": {
+      "value": 1539.9568867311489,
+      "displayValue": "1.5 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 730,
+      "displayValue": "730 ms",
+      "score": 0.4
+    },
+    "si": {
+      "value": 4311.336845812372,
+      "displayValue": "4.3 s",
+      "score": 0.76
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 15195.574814629044,
+      "displayValue": "15.2 s",
+      "score": 0.07
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 278068
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
@@ -244,290 +597,9 @@
         "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "BMWWINDOWSTICKER Window Sticker",
-    "label": "BMW – VIN Decoder",
-    "url": "https://bmwwindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-08-26T08:34:10.417Z",
-    "performanceScore": 94,
-    "lcp": {
-      "value": 1482.089822909225,
-      "displayValue": "1.5 s",
-      "score": 0.81
-    },
-    "fcp": {
-      "value": 485.38742393362764,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.0002339145157723298,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 119,
-      "displayValue": "120 ms",
-      "score": 0.95
-    },
-    "si": {
-      "value": 552.6256749604963,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 91,
-      "displayValue": "Root document took 90 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3425.6241884479773,
-      "displayValue": "3.4 s",
-      "score": 0.71
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 28641
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 15 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "BMWWINDOWSTICKER Window Sticker",
-    "label": "BMW – Paint Code",
-    "url": "https://bmwwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-08-26T08:34:26.014Z",
-    "performanceScore": 70,
-    "lcp": {
-      "value": 7861.902894170265,
-      "displayValue": "7.9 s",
-      "score": 0.03
-    },
-    "fcp": {
-      "value": 1521.9525923004326,
-      "displayValue": "1.5 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 213.5,
-      "displayValue": "210 ms",
-      "score": 0.88
-    },
-    "si": {
-      "value": 3887.386592108077,
-      "displayValue": "3.9 s",
-      "score": 0.82
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 14795.586093597954,
-      "displayValue": "14.8 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 275511
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 140,
-        "savingsBytes": 30786
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "BMWWINDOWSTICKER Window Sticker",
-    "label": "BMW – Paint Code",
-    "url": "https://bmwwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-08-26T08:34:38.297Z",
-    "performanceScore": 94,
-    "lcp": {
-      "value": 1634.8896272960735,
-      "displayValue": "1.6 s",
-      "score": 0.76
-    },
-    "fcp": {
-      "value": 407.39746674215985,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 62,
-      "displayValue": "60 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 735.1175792424757,
-      "displayValue": "0.7 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3201.494563021849,
-      "displayValue": "3.2 s",
-      "score": 0.76
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "BMWWINDOWSTICKER Window Sticker",
-    "label": "BMW – Options Check",
-    "url": "https://bmwwindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-08-26T08:34:52.807Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 8822.966090255286,
-      "displayValue": "8.8 s",
-      "score": 0.01
-    },
-    "fcp": {
-      "value": 1524.395449158334,
-      "displayValue": "1.5 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 252.5,
-      "displayValue": "250 ms",
-      "score": 0.84
-    },
-    "si": {
-      "value": 3374.9512144341907,
-      "displayValue": "3.4 s",
-      "score": 0.9
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 14864.057173926853,
-      "displayValue": "14.9 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 276026
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 130,
-        "savingsBytes": 30797
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
         "score": 0
       }
     ]
@@ -537,15 +609,15 @@
     "label": "BMW – Options Check",
     "url": "https://bmwwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-26T08:35:06.588Z",
-    "performanceScore": 93,
+    "timestamp": "2026-08-27T18:33:52.840Z",
+    "performanceScore": 73,
     "lcp": {
-      "value": 1688.2866513245865,
+      "value": 1737.7130913689214,
       "displayValue": "1.7 s",
-      "score": 0.74
+      "score": 0.72
     },
     "fcp": {
-      "value": 448.8964537719112,
+      "value": 431.9508858022134,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -555,32 +627,47 @@
       "score": 1
     },
     "tbt": {
-      "value": 102,
-      "displayValue": "100 ms",
-      "score": 0.97
+      "value": 425.1523469051002,
+      "displayValue": "430 ms",
+      "score": 0.38
     },
     "si": {
-      "value": 669.1763731615526,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 1487.2152850506814,
+      "displayValue": "1.5 s",
+      "score": 0.83
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2965.812423077735,
-      "displayValue": "3.0 s",
-      "score": 0.81
+      "value": 3269.8315797371115,
+      "displayValue": "3.3 s",
+      "score": 0.75
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 273258
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 20,
+        "savingsBytes": 30759
+      }
+    ],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 46 KiB",
-        "score": 0.5
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
       },
       {
         "id": "legacy-javascript-insight",
