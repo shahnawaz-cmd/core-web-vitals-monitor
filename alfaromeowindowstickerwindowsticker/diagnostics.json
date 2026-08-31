@@ -4,7 +4,7 @@
     "label": "Alfa Romeo – Build Sheet",
     "url": "https://alfaromeowindowsticker.com/build-sheet-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-30T13:26:17.473Z",
+    "timestamp": "2026-08-31T15:38:30.285Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -24,22 +24,24 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 48,
+        "redirect": 281,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 47,
-        "ttfb": 97,
-        "download": 3,
-        "domParsing": 491,
-        "domContentLoaded": 607,
-        "loadEvent": 760,
-        "transferSize": 14668,
-        "encodedBodySize": 14368,
+        "serverProcessing": 127,
+        "ttfb": 410,
+        "download": 5,
+        "domParsing": 236,
+        "domContentLoaded": 655,
+        "loadEvent": 994,
+        "transferSize": 14644,
+        "encodedBodySize": 14344,
         "decodedBodySize": 83342,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 281ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -134,48 +136,48 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 132,
-      "totalSize": 1512538,
+      "totalCount": 133,
+      "totalSize": 1512255,
       "byType": {
         "link": {
           "count": 41,
           "totalSize": 986979,
-          "totalDuration": 12267.600000000064
+          "totalDuration": 15113.500000000116
         },
         "script": {
-          "count": 41,
+          "count": 42,
           "totalSize": 432295,
-          "totalDuration": 5691.999999999884
+          "totalDuration": 12796.400000000023
         },
         "img": {
           "count": 2,
           "totalSize": 2120,
-          "totalDuration": 260.6000000000058
+          "totalDuration": 452.6000000000058
         },
         "xmlhttprequest": {
           "count": 9,
           "totalSize": 6481,
-          "totalDuration": 4654.100000000064
+          "totalDuration": 6293.600000000006
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 13.5
+          "totalDuration": 153.89999999999418
         },
         "fetch": {
           "count": 37,
-          "totalSize": 84363,
-          "totalDuration": 2017.9000000000815
+          "totalSize": 84080,
+          "totalDuration": 9238.899999999936
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 213.10000000000582
+          "totalDuration": 194.79999999998836
         }
       },
       "largeResources": [],
       "issues": [
-        "High request count: 132 resources"
+        "High request count: 133 resources"
       ]
     },
     "imageAudit": {
@@ -213,74 +215,38 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1512538,
+      "firstPartySize": 1512255,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 281
+          "duration": 67
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 28
+          "duration": 64
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 186
+          "duration": 234
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 213
+          "duration": 195
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 212
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 32
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 24
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 211
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 134
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 1,
-          "size": 0,
-          "duration": 26
-        },
-        {
-          "domain": "e.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 44
+          "duration": 210
         },
         {
           "domain": "www.google.com",
@@ -292,19 +258,55 @@
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 26
+          "duration": 52
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 1,
+          "size": 0,
+          "duration": 48
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 150
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 13
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 175
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 104
+        },
+        {
+          "domain": "l.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 217
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 436,
+      "totalElements": 437,
       "maxDepth": 18,
-      "maxChildren": 93,
+      "maxChildren": 94,
       "widestElement": "HEAD",
       "deepestElement": "circle",
       "issues": [
-        "Wide node: HEAD has 93 children (recommended < 60)"
+        "Wide node: HEAD has 94 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -312,182 +314,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 204
+          "duration": 98
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 125
+          "duration": 189
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
           "size": 18813,
-          "duration": 227
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
-          "size": 32744,
-          "duration": 319
+          "duration": 223
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 228
+          "duration": 104
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
-          "size": 18243,
-          "duration": 261
+          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
+          "size": 32744,
+          "duration": 223
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 305
+          "duration": 257
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
+          "size": 18243,
+          "duration": 257
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 269
+          "duration": 257
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 270
+          "duration": 273
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 350
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
-          "size": 18118,
-          "duration": 270
+          "duration": 273
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
           "size": 17864,
-          "duration": 270
+          "duration": 313
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 356
+          "duration": 313
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
+          "size": 18118,
+          "duration": 313
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 361
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
-          "size": 18593,
-          "duration": 291
+          "duration": 328
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 343
+          "duration": 472
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
+          "size": 18593,
+          "duration": 437
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 287
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 359
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
-          "size": 33256,
-          "duration": 351
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
           "size": 34968,
-          "duration": 365
+          "duration": 470
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
-          "size": 17993,
-          "duration": 302
+          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
+          "size": 33256,
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
           "size": 34236,
-          "duration": 365
+          "duration": 472
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
-          "size": 32108,
-          "duration": 355
+          "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
+          "size": 17993,
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
           "size": 34340,
-          "duration": 359
+          "duration": 418
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
+          "size": 32108,
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 303
+          "duration": 471
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 366
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
-          "size": 34900,
-          "duration": 363
+          "duration": 470
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
           "size": 33432,
-          "duration": 354
+          "duration": 419
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
+          "size": 34900,
+          "duration": 438
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
           "size": 17985,
-          "duration": 319
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 300
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 312
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 359
+          "duration": 466
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 323
+          "duration": 469
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 359
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
-          "size": 34968,
-          "duration": 360
+          "duration": 472
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 317
+          "duration": 473
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
+          "size": 34968,
+          "duration": 474
         }
       ],
       "fontFaces": [
@@ -1179,19 +1181,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096374424&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=1&ae=g&auid=532793348.1788190706&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=656431547.1788096375&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=532793348.1788190706&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=656431547.1788096375&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs%",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398z89230719671za20gzb9230719671zd9230719671&_p=1788190706112&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1203,7 +1205,7 @@
     "label": "Alfa Romeo – Build Sheet",
     "url": "https://alfaromeowindowsticker.com/build-sheet-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-30T13:26:17.284Z",
+    "timestamp": "2026-08-31T15:38:30.431Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1223,22 +1225,25 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 67,
+        "redirect": 546,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 45,
-        "ttfb": 114,
-        "download": 6,
-        "domParsing": 634,
-        "domContentLoaded": 763,
-        "loadEvent": 778,
-        "transferSize": 14689,
-        "encodedBodySize": 14389,
+        "serverProcessing": 313,
+        "ttfb": 860,
+        "download": 8,
+        "domParsing": 1369,
+        "domContentLoaded": 2247,
+        "loadEvent": 2248,
+        "transferSize": 14639,
+        "encodedBodySize": 14339,
         "decodedBodySize": 83342,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 546ms",
+        "TTFB exceeds 800ms threshold: 860ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -1309,42 +1314,42 @@
     ],
     "resourceAnalysis": {
       "totalCount": 99,
-      "totalSize": 1392699,
+      "totalSize": 1392416,
       "byType": {
         "link": {
           "count": 41,
           "totalSize": 986979,
-          "totalDuration": 9303.300000000076
+          "totalDuration": 49504.40000000008
         },
         "script": {
           "count": 36,
           "totalSize": 371218,
-          "totalDuration": 4315.900000000052
+          "totalDuration": 23619.99999999994
         },
         "img": {
           "count": 2,
           "totalSize": 4233,
-          "totalDuration": 191.60000000000582
+          "totalDuration": 713.6999999999825
         },
         "xmlhttprequest": {
           "count": 10,
           "totalSize": 6481,
-          "totalDuration": 4031.500000000058
+          "totalDuration": 6000.599999999977
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 11.89999999999418
+          "totalDuration": 151.5
         },
         "fetch": {
           "count": 8,
-          "totalSize": 23488,
-          "totalDuration": 178.5999999999476
+          "totalSize": 23205,
+          "totalDuration": 2131.1999999999825
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 257.29999999998836
+          "totalDuration": 287.1000000000058
         }
       },
       "largeResources": [],
@@ -1385,86 +1390,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1392699,
+      "firstPartySize": 1392416,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 95
+          "duration": 83
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 75
+          "duration": 49
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 145
-        },
-        {
-          "domain": "secure.livechatinc.com",
-          "count": 1,
-          "size": 0,
-          "duration": 257
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 38
+          "duration": 1344
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 2,
           "size": 0,
-          "duration": 215
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 29
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 157
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 126
+          "duration": 330
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 32
+          "duration": 51
         },
         {
-          "domain": "k.clarity.ms",
-          "count": 2,
+          "domain": "www.clarity.ms",
+          "count": 1,
           "size": 0,
-          "duration": 49
+          "duration": 180
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 36
+          "duration": 23
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 36
+          "duration": 52
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 34
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 465
+        },
+        {
+          "domain": "secure.livechatinc.com",
+          "count": 1,
+          "size": 0,
+          "duration": 287
+        },
+        {
+          "domain": "z.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 244
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 108
         }
       ],
       "totalDomains": 13
@@ -1484,182 +1489,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 89
+          "duration": 1206
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 62
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
-          "size": 18813,
-          "duration": 88
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
-          "size": 32744,
-          "duration": 140
+          "duration": 1145
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 110
+          "duration": 1207
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
+          "size": 18813,
+          "duration": 1215
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 53
+          "duration": 1285
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
+          "size": 32744,
+          "duration": 1288
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
           "size": 18243,
-          "duration": 93
+          "duration": 1210
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 232
+          "duration": 1210
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 227
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
-          "size": 33236,
-          "duration": 285
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
-          "size": 17864,
-          "duration": 255
+          "duration": 1196
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 304
+          "duration": 1285
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
+          "size": 33236,
+          "duration": 1288
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
+          "size": 17864,
+          "duration": 1199
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 248
+          "duration": 1211
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 293
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
-          "size": 18593,
-          "duration": 233
+          "duration": 1290
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 285
+          "duration": 1285
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
+          "size": 18593,
+          "duration": 1235
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 292
+          "duration": 1288
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 246
+          "duration": 1220
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
           "size": 33256,
-          "duration": 272
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
-          "size": 34968,
-          "duration": 271
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
-          "size": 34236,
-          "duration": 284
+          "duration": 1289
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 204
+          "duration": 1216
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
-          "size": 34340,
-          "duration": 276
+          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
+          "size": 34236,
+          "duration": 1291
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
+          "size": 34968,
+          "duration": 1294
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 302
+          "duration": 1292
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
+          "size": 34340,
+          "duration": 1293
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 195
+          "duration": 1229
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 295
+          "duration": 1294
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
           "size": 34900,
-          "duration": 298
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
-          "size": 17985,
-          "duration": 242
+          "duration": 1294
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
           "size": 33432,
-          "duration": 274
+          "duration": 1295
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 266
+          "duration": 1226
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 263
+          "duration": 1226
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
-          "size": 34184,
-          "duration": 296
+          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
+          "size": 17985,
+          "duration": 1233
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 238
+          "duration": 1235
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
+          "size": 34184,
+          "duration": 1295
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 296
+          "duration": 1292
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 296
+          "duration": 1295
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 228
+          "duration": 1231
         }
       ],
       "fontFaces": [
@@ -2351,19 +2356,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096374154&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788190706842&gcd=13l3l3l3l1l1&npa=0&dma=0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=614100503.1788096375&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs",
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=1750690462.1788190707&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Spec",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=614100503.1788096375&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1750690462.1788190707&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2375,7 +2380,7 @@
     "label": "Alfa Romeo – Options Check",
     "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-30T13:26:31.724Z",
+    "timestamp": "2026-08-31T15:38:52.349Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2395,22 +2400,24 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 38,
+        "redirect": 260,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 30,
-        "ttfb": 69,
+        "serverProcessing": 106,
+        "ttfb": 368,
         "download": 6,
-        "domParsing": 86,
-        "domContentLoaded": 180,
-        "loadEvent": 382,
-        "transferSize": 14978,
-        "encodedBodySize": 14678,
-        "decodedBodySize": 84447,
+        "domParsing": 764,
+        "domContentLoaded": 1141,
+        "loadEvent": 1204,
+        "transferSize": 14957,
+        "encodedBodySize": 14657,
+        "decodedBodySize": 84458,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 260ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -2511,42 +2518,42 @@
     ],
     "resourceAnalysis": {
       "totalCount": 131,
-      "totalSize": 1508750,
+      "totalSize": 1508439,
       "byType": {
         "link": {
           "count": 41,
           "totalSize": 986979,
-          "totalDuration": 5017.000000000349
+          "totalDuration": 27929.199999999895
         },
         "script": {
           "count": 42,
           "totalSize": 435146,
-          "totalDuration": 2984.399999999965
+          "totalDuration": 13554.5
         },
         "img": {
           "count": 2,
           "totalSize": 2120,
-          "totalDuration": 249.5000000000582
+          "totalDuration": 291.20000000001164
         },
         "xmlhttprequest": {
           "count": 10,
           "totalSize": 6481,
-          "totalDuration": 3337.7000000000116
+          "totalDuration": 4720.999999999942
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 8.799999999988358
+          "totalDuration": 87.10000000003492
         },
         "fetch": {
           "count": 34,
-          "totalSize": 77724,
-          "totalDuration": 1048.1999999999534
+          "totalSize": 77413,
+          "totalDuration": 3651.500000000058
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 219.20000000001164
+          "totalDuration": 151.29999999998836
         }
       },
       "largeResources": [],
@@ -2589,86 +2596,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1508750,
+      "firstPartySize": 1508439,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 73
+          "duration": 79
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 29
+          "duration": 45
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 173
+          "duration": 253
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 219
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 206
+          "duration": 151
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 31
+          "duration": 146
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 185
         },
         {
           "domain": "scripts.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 27
+          "duration": 10
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 218
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 114
+          "duration": 168
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 26
+          "duration": 49
         },
         {
-          "domain": "l.clarity.ms",
+          "domain": "a.clarity.ms",
           "count": 2,
           "size": 0,
-          "duration": 33
+          "duration": 293
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 27
+          "duration": 24
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 40
+          "duration": 53
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 101
         }
       ],
       "totalDomains": 13
@@ -2688,182 +2695,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 42
+          "duration": 694
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 42
+          "duration": 647
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
           "size": 18813,
-          "duration": 43
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
-          "size": 18852,
-          "duration": 46
+          "duration": 682
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
           "size": 32744,
-          "duration": 52
+          "duration": 732
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
-          "size": 33200,
-          "duration": 52
+          "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
+          "size": 18852,
+          "duration": 695
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
           "size": 18243,
-          "duration": 46
+          "duration": 653
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 59
+          "duration": 673
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
+          "size": 33200,
+          "duration": 738
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 111
+          "duration": 651
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 158
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
-          "size": 33204,
-          "duration": 167
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
-          "size": 17864,
-          "duration": 113
+          "duration": 726
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 122
+          "duration": 662
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
+          "size": 17864,
+          "duration": 695
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
+          "size": 33204,
+          "duration": 723
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 162
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
-          "size": 32216,
-          "duration": 166
+          "duration": 731
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 121
+          "duration": 679
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
-          "size": 32417,
-          "duration": 162
+          "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
+          "size": 32216,
+          "duration": 724
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 144
+          "duration": 683
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
           "size": 33256,
-          "duration": 157
+          "duration": 725
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
+          "size": 32417,
+          "duration": 726
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
           "size": 34968,
-          "duration": 162
+          "duration": 732
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 137
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
-          "size": 34236,
-          "duration": 157
+          "duration": 685
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 167
+          "duration": 730
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
-          "size": 34340,
-          "duration": 160
+          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
+          "size": 34236,
+          "duration": 733
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 139
+          "duration": 690
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
+          "size": 34340,
+          "duration": 730
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 164
+          "duration": 737
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
           "size": 34900,
-          "duration": 168
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
-          "size": 17985,
-          "duration": 131
+          "duration": 737
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
           "size": 33432,
-          "duration": 163
+          "duration": 733
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
+          "size": 17985,
+          "duration": 686
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 138
+          "duration": 688
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 137
+          "duration": 689
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 168
+          "duration": 736
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 140
+          "duration": 693
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 167
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
-          "size": 34968,
-          "duration": 167
+          "duration": 728
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 140
+          "duration": 698
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
+          "size": 34968,
+          "duration": 743
         }
       ],
       "fontFaces": [
@@ -3555,19 +3562,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68r0h2v9193982398za200zd9193982398&_p=1788096388534&gcd=13l3l3l3l1l1&npa=0&dma",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788190729327&gcd=13l3l3l3l1l1&npa=0&dma=0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=1510112697.1788096389&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%20",
+        "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1916424701.1788190730&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%2",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1510112697.1788096389&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1916424701.1788190730&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3579,7 +3586,7 @@
     "label": "Alfa Romeo – Options Check",
     "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-30T13:26:32.275Z",
+    "timestamp": "2026-08-31T15:38:51.272Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3599,22 +3606,25 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 42,
+        "redirect": 545,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 28,
-        "ttfb": 72,
-        "download": 1,
-        "domParsing": 123,
-        "domContentLoaded": 204,
-        "loadEvent": 486,
-        "transferSize": 14956,
-        "encodedBodySize": 14656,
-        "decodedBodySize": 84447,
+        "serverProcessing": 293,
+        "ttfb": 840,
+        "download": 20,
+        "domParsing": 689,
+        "domContentLoaded": 1552,
+        "loadEvent": 1556,
+        "transferSize": 14989,
+        "encodedBodySize": 14689,
+        "decodedBodySize": 84458,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 545ms",
+        "TTFB exceeds 800ms threshold: 840ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -3690,42 +3700,42 @@
     ],
     "resourceAnalysis": {
       "totalCount": 100,
-      "totalSize": 1395550,
+      "totalSize": 1395242,
       "byType": {
         "link": {
           "count": 41,
           "totalSize": 986979,
-          "totalDuration": 7076.79999999993
+          "totalDuration": 24814.999999999884
         },
         "script": {
-          "count": 37,
-          "totalSize": 374069,
-          "totalDuration": 3930.999999999942
+          "count": 38,
+          "totalSize": 374072,
+          "totalDuration": 11714.600000000006
+        },
+        "xmlhttprequest": {
+          "count": 9,
+          "totalSize": 6481,
+          "totalDuration": 4380.500000000058
         },
         "img": {
           "count": 2,
           "totalSize": 4233,
-          "totalDuration": 179.80000000004657
-        },
-        "xmlhttprequest": {
-          "count": 10,
-          "totalSize": 6481,
-          "totalDuration": 3392.0999999999185
+          "totalDuration": 371.4000000000233
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 13.599999999976717
+          "totalDuration": 68.09999999997672
         },
         "fetch": {
           "count": 8,
-          "totalSize": 23488,
-          "totalDuration": 149.5999999999185
+          "totalSize": 23177,
+          "totalDuration": 746.1999999999534
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 195.39999999996508
+          "totalDuration": 224.19999999995343
         }
       },
       "largeResources": [],
@@ -3766,74 +3776,44 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1395550,
+      "firstPartySize": 1395242,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 99
+          "duration": 41
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 22
+          "duration": 46
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 179
+          "duration": 212
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 195
+          "duration": 224
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 23
+          "duration": 150
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 213
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 13
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 144
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 106
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 1,
-          "size": 0,
-          "duration": 24
-        },
-        {
-          "domain": "i.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 112
+          "duration": 215
         },
         {
           "domain": "www.google.com",
@@ -3845,19 +3825,49 @@
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 25
+          "duration": 49
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 105
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 1,
+          "size": 0,
+          "duration": 60
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 32
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 169
+        },
+        {
+          "domain": "j.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 208
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 453,
+      "totalElements": 454,
       "maxDepth": 18,
-      "maxChildren": 89,
+      "maxChildren": 90,
       "widestElement": "HEAD",
       "deepestElement": "circle",
       "issues": [
-        "Wide node: HEAD has 89 children (recommended < 60)"
+        "Wide node: HEAD has 90 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -3865,182 +3875,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 58
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
-          "size": 17761,
-          "duration": 62
+          "duration": 603
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
           "size": 18813,
-          "duration": 62
+          "duration": 612
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
-          "size": 32744,
-          "duration": 74
+          "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
+          "size": 17761,
+          "duration": 614
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 57
+          "duration": 577
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
+          "size": 32744,
+          "duration": 641
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
           "size": 18243,
-          "duration": 62
+          "duration": 608
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 73
+          "duration": 641
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 68
+          "duration": 560
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 207
+          "duration": 556
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 238
+          "duration": 646
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 221
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
-          "size": 18118,
-          "duration": 178
+          "duration": 643
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
           "size": 17864,
-          "duration": 175
+          "duration": 619
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
+          "size": 18118,
+          "duration": 630
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 243
+          "duration": 655
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 180
+          "duration": 624
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 200
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
-          "size": 32417,
-          "duration": 238
+          "duration": 652
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 193
+          "duration": 598
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
-          "size": 33256,
-          "duration": 230
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
-          "size": 34968,
-          "duration": 225
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
-          "size": 34236,
-          "duration": 225
+          "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
+          "size": 32417,
+          "duration": 642
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 203
+          "duration": 591
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 210
+          "duration": 642
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
+          "size": 34968,
+          "duration": 645
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
+          "size": 34236,
+          "duration": 646
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
+          "size": 33256,
+          "duration": 652
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
           "size": 34340,
-          "duration": 225
+          "duration": 646
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 192
+          "duration": 604
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 226
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
-          "size": 33432,
-          "duration": 230
+          "duration": 647
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
           "size": 34900,
-          "duration": 227
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
-          "size": 17985,
-          "duration": 196
+          "duration": 651
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 196
+          "duration": 609
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
+          "size": 17985,
+          "duration": 626
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
+          "size": 33432,
+          "duration": 648
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 205
+          "duration": 630
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 235
+          "duration": 653
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 205
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
-          "size": 32812,
-          "duration": 235
+          "duration": 618
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 238
+          "duration": 646
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
+          "size": 32812,
+          "duration": 652
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 203
+          "duration": 624
         }
       ],
       "fontFaces": [
@@ -4732,19 +4742,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096389235&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=286499250.1788190728&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%20",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=938016322.1788096390&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=286499250.1788190728&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=1&ae=g&auid=938016322.1788096390&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%20",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398z89230719671za20gzb9230719671zd9230719671&_p=1788190727945&gcd=",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -4756,7 +4766,7 @@
     "label": "Alfa Romeo – Paint Code",
     "url": "https://alfaromeowindowsticker.com/paint-code-by-vin-lookup",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-30T13:26:27.204Z",
+    "timestamp": "2026-08-31T15:38:46.471Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -4776,22 +4786,25 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 43,
+        "redirect": 526,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 29,
-        "ttfb": 73,
-        "download": 1,
-        "domParsing": 158,
-        "domContentLoaded": 243,
-        "loadEvent": 523,
-        "transferSize": 15374,
-        "encodedBodySize": 15074,
+        "serverProcessing": 295,
+        "ttfb": 823,
+        "download": 19,
+        "domParsing": 1298,
+        "domContentLoaded": 2143,
+        "loadEvent": 2190,
+        "transferSize": 15421,
+        "encodedBodySize": 15121,
         "decodedBodySize": 89192,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 526ms",
+        "TTFB exceeds 800ms threshold: 823ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -4901,48 +4914,48 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 135,
-      "totalSize": 1597002,
+      "totalCount": 134,
+      "totalSize": 1596691,
       "byType": {
         "link": {
           "count": 44,
           "totalSize": 1005112,
-          "totalDuration": 7252.399999999936
+          "totalDuration": 51311.399999999936
         },
         "script": {
           "count": 41,
           "totalSize": 432295,
-          "totalDuration": 3702.199999999895
+          "totalDuration": 22650.09999999989
         },
         "img": {
           "count": 4,
           "totalSize": 75090,
-          "totalDuration": 339.3999999999942
+          "totalDuration": 1690.499999999971
         },
         "xmlhttprequest": {
-          "count": 10,
+          "count": 9,
           "totalSize": 6481,
-          "totalDuration": 4006.3000000000466
+          "totalDuration": 8013.199999999953
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 7.399999999994179
+          "totalDuration": 149.69999999998254
         },
         "fetch": {
           "count": 34,
-          "totalSize": 77724,
-          "totalDuration": 937.5000000000291
+          "totalSize": 77413,
+          "totalDuration": 7423.200000000012
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 198.60000000000582
+          "totalDuration": 223
         }
       },
       "largeResources": [],
       "issues": [
-        "High request count: 135 resources"
+        "High request count: 134 resources"
       ]
     },
     "imageAudit": {
@@ -4980,86 +4993,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1597002,
+      "firstPartySize": 1596691,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 80
+          "duration": 50
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 21
+          "duration": 78
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 315
+          "duration": 310
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 199
+          "duration": 223
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 2,
           "size": 0,
-          "duration": 207
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 30
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 19
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 144
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 113
+          "duration": 178
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 27
+          "duration": 56
         },
         {
-          "domain": "z.clarity.ms",
-          "count": 2,
+          "domain": "ipapi.co",
+          "count": 1,
           "size": 0,
-          "duration": 45
+          "duration": 94
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 29
+          "duration": 24
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 27
+          "duration": 48
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 141
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 15
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 166
+        },
+        {
+          "domain": "t.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 228
         }
       ],
       "totalDomains": 13
@@ -5079,182 +5092,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 49
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
-          "size": 18813,
-          "duration": 40
+          "duration": 1205
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 47
+          "duration": 1189
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
-          "size": 32744,
-          "duration": 137
+          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
+          "size": 18813,
+          "duration": 1162
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 45
+          "duration": 1169
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
-          "size": 18243,
-          "duration": 47
+          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
+          "size": 32744,
+          "duration": 1249
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 143
+          "duration": 1251
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
+          "size": 18243,
+          "duration": 1122
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 207
+          "duration": 1122
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 61
+          "duration": 1157
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 233
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
-          "size": 17864,
-          "duration": 171
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
-          "size": 18118,
-          "duration": 188
+          "duration": 1245
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 213
+          "duration": 1251
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
-          "size": 34216,
-          "duration": 195
+          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
+          "size": 17864,
+          "duration": 1195
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
+          "size": 18118,
+          "duration": 1205
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 214
+          "duration": 1259
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
+          "size": 34216,
+          "duration": 1263
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 150
+          "duration": 1184
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 208
+          "duration": 1246
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 195
+          "duration": 1174
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
           "size": 33256,
-          "duration": 213
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
-          "size": 34968,
-          "duration": 219
+          "duration": 1247
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
           "size": 34236,
-          "duration": 213
+          "duration": 1250
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
+          "size": 34968,
+          "duration": 1251
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 188
+          "duration": 1169
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 213
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
-          "size": 34340,
-          "duration": 219
+          "duration": 1242
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 162
+          "duration": 1166
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
-          "size": 34884,
-          "duration": 228
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
-          "size": 34900,
-          "duration": 223
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
-          "size": 33432,
-          "duration": 230
+          "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
+          "size": 34340,
+          "duration": 1253
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
           "size": 17985,
-          "duration": 184
+          "duration": 1164
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
+          "size": 34884,
+          "duration": 1251
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
+          "size": 34900,
+          "duration": 1255
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
+          "size": 33432,
+          "duration": 1253
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 189
+          "duration": 1194
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 193
+          "duration": 1201
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 223
+          "duration": 1258
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 202
+          "duration": 1213
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 226
+          "duration": 1255
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 226
+          "duration": 1257
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 194
+          "duration": 1191
         }
       ],
       "fontFaces": [
@@ -5958,19 +5971,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096384144&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788190721737&gcd=13l3l3l3l1l1&npa=0&dma=0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=66850211.1788096385&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=169907174.1788190722&dt=Alfa%20Romeo%20Paint%20Code%20by%20VIN%3A%20Find%20Original%20",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=66850211.1788096385&dt=Alfa%20Romeo%20Paint%20Code%20by%20VIN%3A%20Find%20Original%20",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=169907174.1788190722&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -5982,7 +5995,7 @@
     "label": "Alfa Romeo – Paint Code",
     "url": "https://alfaromeowindowsticker.com/paint-code-by-vin-lookup",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-30T13:26:27.515Z",
+    "timestamp": "2026-08-31T15:38:44.895Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -6002,22 +6015,25 @@
     },
     "ttfbAnalysis": {
       "breakdown": {
-        "redirect": 61,
+        "redirect": 558,
         "dns": 0,
         "connection": 0,
         "tls": 0,
-        "serverProcessing": 45,
-        "ttfb": 107,
-        "download": 8,
-        "domParsing": 452,
-        "domContentLoaded": 572,
-        "loadEvent": 579,
-        "transferSize": 15483,
-        "encodedBodySize": 15183,
+        "serverProcessing": 271,
+        "ttfb": 830,
+        "download": 11,
+        "domParsing": 1345,
+        "domContentLoaded": 2193,
+        "loadEvent": 2260,
+        "transferSize": 15475,
+        "encodedBodySize": 15175,
         "decodedBodySize": 89192,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Redirect chain taking 558ms",
+        "TTFB exceeds 800ms threshold: 830ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -6103,42 +6119,42 @@
     ],
     "resourceAnalysis": {
       "totalCount": 103,
-      "totalSize": 1483802,
+      "totalSize": 1483491,
       "byType": {
         "link": {
           "count": 44,
           "totalSize": 1005112,
-          "totalDuration": 11167
+          "totalDuration": 51003.99999999991
         },
         "script": {
           "count": 36,
           "totalSize": 371218,
-          "totalDuration": 5030.999999999971
+          "totalDuration": 22052
         },
         "img": {
           "count": 4,
           "totalSize": 77203,
-          "totalDuration": 329.0999999999476
+          "totalDuration": 1298.8000000000466
         },
         "xmlhttprequest": {
           "count": 9,
           "totalSize": 6481,
-          "totalDuration": 4135.600000000093
+          "totalDuration": 5560.000000000029
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 21.10000000000582
+          "totalDuration": 149.5
         },
         "fetch": {
           "count": 8,
-          "totalSize": 23488,
-          "totalDuration": 222.29999999995925
+          "totalSize": 23177,
+          "totalDuration": 884.6000000000058
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 208.5
+          "totalDuration": 186.40000000002328
         }
       },
       "largeResources": [],
@@ -6181,86 +6197,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1483802,
+      "firstPartySize": 1483491,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 39
+          "duration": 63
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 29
+          "duration": 87
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 142
+          "duration": 364
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 209
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 24
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 19
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 111
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 102
+          "duration": 186
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 2,
           "size": 0,
-          "duration": 230
+          "duration": 163
         },
         {
-          "domain": "f.clarity.ms",
+          "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 28
+          "duration": 151
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 21
+          "duration": 53
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 29
+          "duration": 26
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 26
+          "duration": 46
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 231
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 420
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 93
+        },
+        {
+          "domain": "g.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 192
         }
       ],
       "totalDomains": 13
@@ -6280,182 +6296,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 310
+          "duration": 1151
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 287
+          "duration": 1119
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
           "size": 18813,
-          "duration": 287
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
-          "size": 32744,
-          "duration": 180
+          "duration": 1133
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 265
+          "duration": 1136
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
+          "size": 32744,
+          "duration": 1222
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
           "size": 18243,
-          "duration": 114
+          "duration": 1204
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 288
+          "duration": 1231
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 160
+          "duration": 1142
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 148
+          "duration": 1209
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 100
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
-          "size": 33204,
-          "duration": 326
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
-          "size": 17864,
-          "duration": 263
+          "duration": 1255
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 259
+          "duration": 1152
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
+          "size": 17864,
+          "duration": 1162
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
+          "size": 33204,
+          "duration": 1243
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 325
+          "duration": 1246
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 341
+          "duration": 1238
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 140
+          "duration": 1174
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 336
+          "duration": 1249
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 158
+          "duration": 1196
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
           "size": 33256,
-          "duration": 340
+          "duration": 1259
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
           "size": 34968,
-          "duration": 283
+          "duration": 1261
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
           "size": 34236,
-          "duration": 292
+          "duration": 1262
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 140
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
-          "size": 32108,
-          "duration": 339
+          "duration": 1187
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 226
+          "duration": 1191
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
           "size": 34340,
-          "duration": 302
+          "duration": 1254
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
+          "size": 32108,
+          "duration": 1252
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 309
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
-          "size": 34900,
-          "duration": 330
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
-          "size": 33432,
-          "duration": 335
+          "duration": 1259
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
           "size": 17985,
-          "duration": 267
+          "duration": 1184
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
-          "size": 17983,
-          "duration": 140
+          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
+          "size": 34900,
+          "duration": 1259
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
+          "size": 33432,
+          "duration": 1261
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 267
+          "duration": 1188
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
+          "size": 17983,
+          "duration": 1186
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 338
+          "duration": 1258
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 286
+          "duration": 1217
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 213
+          "duration": 1206
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 328
+          "duration": 1259
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 337
+          "duration": 1260
         }
       ],
       "fontFaces": [
@@ -7159,19 +7175,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096384535&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788190721497&gcd=13l3l3l3l1l1&npa=0&dma=0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1574021365.1788096385&gtm=45He68q1h1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=1282476579.1788190722&dt=Alfa%20Romeo%20Paint%20Code%20by%20VIN%3A%20Find%20Original%",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=1&ae=g&auid=1574021365.1788096385&dt=Alfa%20Romeo%20Paint%20Code%20by%20VIN%3A%20Find%20Original%",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1282476579.1788190722&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -7183,7 +7199,7 @@
     "label": "Alfa Romeo – VIN Decoder",
     "url": "https://alfaromeowindowsticker.com/vin-decoder",
     "browser": "desktop-chrome",
-    "timestamp": "2026-08-30T13:26:22.521Z",
+    "timestamp": "2026-08-31T15:38:37.464Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -7205,16 +7221,16 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 14,
-        "tls": 12,
-        "serverProcessing": 58,
-        "ttfb": 75,
-        "download": 8,
-        "domParsing": 246,
-        "domContentLoaded": 340,
-        "loadEvent": 529,
-        "transferSize": 21514,
-        "encodedBodySize": 21214,
+        "connection": 294,
+        "tls": 149,
+        "serverProcessing": 259,
+        "ttfb": 554,
+        "download": 12,
+        "domParsing": 203,
+        "domContentLoaded": 773,
+        "loadEvent": 1623,
+        "transferSize": 21495,
+        "encodedBodySize": 21195,
         "decodedBodySize": 160659,
         "protocol": "h2"
       },
@@ -7343,48 +7359,48 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 136,
-      "totalSize": 1538249,
+      "totalCount": 135,
+      "totalSize": 1537938,
       "byType": {
         "link": {
           "count": 42,
           "totalSize": 1008233,
-          "totalDuration": 8014.499999999942
+          "totalDuration": 32540.300000000076
         },
         "script": {
           "count": 47,
           "totalSize": 444800,
-          "totalDuration": 4735.499999999913
+          "totalDuration": 19299.800000000017
         },
         "img": {
           "count": 2,
           "totalSize": 2120,
-          "totalDuration": 140.80000000001746
+          "totalDuration": 273.5
         },
         "xmlhttprequest": {
-          "count": 10,
+          "count": 9,
           "totalSize": 6481,
-          "totalDuration": 4191.099999999977
+          "totalDuration": 6259.600000000064
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 16.39999999999418
+          "totalDuration": 77.10000000000582
         },
         "fetch": {
           "count": 33,
-          "totalSize": 76315,
-          "totalDuration": 917.3000000001048
+          "totalSize": 76004,
+          "totalDuration": 3102.600000000006
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 237.19999999998254
+          "totalDuration": 217.89999999999418
         }
       },
       "largeResources": [],
       "issues": [
-        "High request count: 136 resources"
+        "High request count: 135 resources"
       ]
     },
     "imageAudit": {
@@ -7422,86 +7438,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1538249,
+      "firstPartySize": 1537938,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 158
+          "duration": 63
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 35
+          "duration": 57
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 167
+          "duration": 231
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 237
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 32
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 29
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 113
+          "duration": 218
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 2,
           "size": 0,
-          "duration": 240
+          "duration": 179
         },
         {
-          "domain": "x.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 33
-        },
-        {
-          "domain": "ipapi.co",
+          "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 103
+          "duration": 146
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 22
+          "duration": 49
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 87
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 27
+          "duration": 22
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 25
+          "duration": 47
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 10
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 159
+        },
+        {
+          "domain": "a.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 218
         }
       ],
       "totalDomains": 13
@@ -7521,182 +7537,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 31
+          "duration": 345
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 80
+          "duration": 361
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
           "size": 18813,
-          "duration": 80
+          "duration": 454
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
           "size": 32744,
-          "duration": 103
+          "duration": 454
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 100
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
-          "size": 18243,
-          "duration": 81
+          "duration": 454
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 101
+          "duration": 894
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
+          "size": 18243,
+          "duration": 808
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 103
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
-          "size": 18042,
-          "duration": 111
+          "duration": 890
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 136
+          "duration": 892
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
+          "size": 18042,
+          "duration": 893
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
           "size": 17864,
-          "duration": 162
+          "duration": 891
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 168
+          "duration": 892
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 105
+          "duration": 892
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
           "size": 34216,
-          "duration": 171
+          "duration": 831
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
           "size": 32216,
-          "duration": 164
+          "duration": 894
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 165
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
-          "size": 18457,
-          "duration": 218
+          "duration": 831
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 257
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
-          "size": 33256,
-          "duration": 261
+          "duration": 891
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
           "size": 34968,
-          "duration": 273
+          "duration": 889
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
+          "size": 18457,
+          "duration": 890
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
+          "size": 33256,
+          "duration": 891
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
           "size": 34236,
-          "duration": 267
+          "duration": 890
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
           "size": 17993,
-          "duration": 234
+          "duration": 893
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 266
+          "duration": 890
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
           "size": 34340,
-          "duration": 275
+          "duration": 807
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 245
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
-          "size": 34884,
-          "duration": 271
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
-          "size": 34900,
-          "duration": 272
+          "duration": 889
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
           "size": 33432,
-          "duration": 275
+          "duration": 820
         },
         {
-          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
-          "size": 17985,
-          "duration": 241
+          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
+          "size": 34900,
+          "duration": 831
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
+          "size": 34884,
+          "duration": 889
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 233
+          "duration": 890
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
+          "size": 17985,
+          "duration": 890
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 236
+          "duration": 891
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 275
+          "duration": 841
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 251
+          "duration": 889
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 270
+          "duration": 904
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 273
+          "duration": 904
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
           "size": 17557,
-          "duration": 246
+          "duration": 924
         }
       ],
       "fontFaces": [
@@ -8230,28 +8246,35 @@
         "13 third-party origins without preconnect hints"
       ]
     },
-    "consoleErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 429 ()"
+    ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788096379409&gcd=13l3l3l3l1l1&npa=0&dma=0",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68r0h2v9193982398za200zd9193982398&_p=1788190714205&gcd=13l3l3l3l1l1&npa=0&dma",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1947021308.1788096380&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=1600415564.1788190714&dt=Alfa%20Romeo%20VIN%20Decoder%3A%20Check%20Specs%20%26%20Vehic",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=1&ae=g&auid=1947021308.1788096380&dt=Alfa%20Romeo%20VIN%20Decoder%3A%20Check%20Specs%20%26%20Vehi",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1600415564.1788190714&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://ipapi.co/json",
+        "status": 429,
+        "resourceType": "xhr"
       }
     ]
   },
@@ -8260,7 +8283,7 @@
     "label": "Alfa Romeo – VIN Decoder",
     "url": "https://alfaromeowindowsticker.com/vin-decoder",
     "browser": "mobile-chrome",
-    "timestamp": "2026-08-30T13:26:22.335Z",
+    "timestamp": "2026-08-31T15:38:37.275Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -8282,16 +8305,16 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 8,
-        "tls": 6,
-        "serverProcessing": 34,
-        "ttfb": 44,
-        "download": 7,
-        "domParsing": 103,
-        "domContentLoaded": 193,
-        "loadEvent": 417,
-        "transferSize": 21468,
-        "encodedBodySize": 21168,
+        "connection": 233,
+        "tls": 119,
+        "serverProcessing": 292,
+        "ttfb": 527,
+        "download": 36,
+        "domParsing": 257,
+        "domContentLoaded": 823,
+        "loadEvent": 1705,
+        "transferSize": 21385,
+        "encodedBodySize": 21085,
         "decodedBodySize": 160659,
         "protocol": "h2"
       },
@@ -8395,48 +8418,48 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 106,
-      "totalSize": 1426458,
+      "totalCount": 105,
+      "totalSize": 1426147,
       "byType": {
         "link": {
           "count": 42,
           "totalSize": 1008233,
-          "totalDuration": 6158.1999999999825
+          "totalDuration": 25944.199999999924
         },
         "script": {
           "count": 42,
           "totalSize": 383723,
-          "totalDuration": 3658.7999999999884
+          "totalDuration": 19990.300000000017
         },
         "img": {
           "count": 2,
           "totalSize": 4233,
-          "totalDuration": 217.5
+          "totalDuration": 346.30000000001746
         },
         "xmlhttprequest": {
-          "count": 10,
+          "count": 9,
           "totalSize": 6481,
-          "totalDuration": 3489.3000000000466
+          "totalDuration": 4946.900000000023
         },
         "beacon": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 12.5
+          "totalDuration": 63.90000000002328
         },
         "fetch": {
           "count": 8,
-          "totalSize": 23488,
-          "totalDuration": 160.10000000003492
+          "totalSize": 23177,
+          "totalDuration": 660.5999999999767
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 292.3999999999942
+          "totalDuration": 218.5
         }
       },
       "largeResources": [],
       "issues": [
-        "High request count: 106 resources"
+        "High request count: 105 resources"
       ]
     },
     "imageAudit": {
@@ -8474,86 +8497,86 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 1426458,
+      "firstPartySize": 1426147,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 120
+          "duration": 45
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 28
+          "duration": 48
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 137
+          "duration": 274
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 292
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 24
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 26
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 181
+          "duration": 219
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 2,
           "size": 0,
-          "duration": 206
+          "duration": 174
         },
         {
-          "domain": "j.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 44
-        },
-        {
-          "domain": "ipapi.co",
+          "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 118
+          "duration": 144
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 30
+          "duration": 56
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 103
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 28
+          "duration": 36
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
+          "duration": 55
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
           "duration": 27
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 176
+        },
+        {
+          "domain": "a.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 239
         }
       ],
       "totalDomains": 13
@@ -8571,182 +8594,182 @@
         {
           "url": "...meowindowsticker.com/_next/static/media/00d26b2bfd9c613e-s.p.0i3~tw.j~y7d5.woff2",
           "size": 18755,
-          "duration": 17
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
-          "size": 17761,
-          "duration": 20
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
-          "size": 18813,
-          "duration": 46
+          "duration": 276
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/1fc72bd212331570-s.p.17nrt~sxsj_4-.woff2",
           "size": 32744,
-          "duration": 65
+          "duration": 146
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.p.0uyeu33xj2.w_.woff2",
+          "size": 17761,
+          "duration": 155
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/1a65eaca1af83d2d-s.p.17e1nvd.wd~.r.woff2",
+          "size": 18813,
+          "duration": 370
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/47164f41cd1aeec0-s.p.066z0-u6ir04e.woff2",
           "size": 18852,
-          "duration": 94
+          "duration": 370
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/52c9a15a5ea59f04-s.p.0ayt4s0ao_01x.woff2",
           "size": 33200,
-          "duration": 95
+          "duration": 395
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/5b13a4f4db5882bf-s.p.02zh6iw52m18x.woff2",
           "size": 18243,
-          "duration": 95
+          "duration": 395
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6ae4ae507e241e26-s.p.02uqh1tpk-v.5.woff2",
           "size": 18825,
-          "duration": 109
+          "duration": 419
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.p.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 109
+          "duration": 419
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/6faa3045a94be73b-s.p.0gt5crbxx0pus.woff2",
           "size": 33236,
-          "duration": 113
+          "duration": 488
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/70a1923cc78dd0cb-s.p.09z_wx4lj_ww6.woff2",
           "size": 33204,
-          "duration": 126
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
-          "size": 18118,
-          "duration": 136
+          "duration": 488
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/74c122055677b11b-s.p.0zbsah4ceyfsg.woff2",
           "size": 17864,
-          "duration": 136
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
-          "size": 34216,
-          "duration": 141
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
-          "size": 32216,
-          "duration": 146
+          "duration": 488
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/8f91dfeb76de9ed8-s.p.0yrjd92iahiot.woff2",
           "size": 18593,
-          "duration": 146
+          "duration": 720
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/8b20543b8a22cd93-s.p.0bivqdgq68eq5.woff2",
+          "size": 34216,
+          "duration": 720
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.p.0fsiao4di78_e.woff2",
+          "size": 18118,
+          "duration": 750
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/8ceaebe5e918032e-s.p.0mviyf-5crp_~.woff2",
+          "size": 32216,
+          "duration": 751
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9106bdef11d9f452-s.p.0rls80ygff3u..woff2",
           "size": 32417,
-          "duration": 151
+          "duration": 746
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9a31f1ddcbf50bbb-s.p.1255f9jhe-0wl.woff2",
           "size": 18457,
-          "duration": 151
+          "duration": 746
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/9e80a34bd088ce0f-s.p.053ypffl45v-z.woff2",
           "size": 33256,
-          "duration": 152
+          "duration": 747
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/a0765b6f60f1d969-s.p.0-gh_dsbc-0w8.woff2",
           "size": 34968,
-          "duration": 201
+          "duration": 742
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ac2b4b8b55b8ba09-s.p.0um5kcczu9ydj.woff2",
           "size": 34236,
-          "duration": 200
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
-          "size": 17993,
-          "duration": 136
+          "duration": 745
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ae0d99beb38a9fb0-s.p.1602y0wcie8vj.woff2",
           "size": 32108,
-          "duration": 179
+          "duration": 746
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ace73785f4a851d5-s.p.0an35kc0p5h.t.woff2",
+          "size": 17993,
+          "duration": 751
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/afc107d7a2648229-s.p.0utjrop6b1yea.woff2",
           "size": 34340,
-          "duration": 219
+          "duration": 701
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/b2ec9b0205f3dc98-s.p.0t905v7esn.hz.woff2",
           "size": 18881,
-          "duration": 185
+          "duration": 745
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/ba376b23a68e6091-s.p.1669o72rkl7t5.woff2",
           "size": 34884,
-          "duration": 216
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
-          "size": 34900,
-          "duration": 213
+          "duration": 745
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c22637ffef8237b1-s.p.0f693dy7w_uid.woff2",
           "size": 33432,
-          "duration": 213
+          "duration": 708
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/c2180619faa03ebd-s.p.07hhc2j4n04s_.woff2",
+          "size": 34900,
+          "duration": 720
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/c76157874a2922f6-s.p.0q7com.c-bjxa.woff2",
           "size": 17985,
-          "duration": 205
+          "duration": 746
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.p.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 165
+          "duration": 750
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/d03dd34c0ad8ced2-s.p.09k61-23v5b8~.woff2",
           "size": 17248,
-          "duration": 186
+          "duration": 745
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/da1a47fcd5dd51c2-s.p.0evga.vf9z0op.woff2",
           "size": 34184,
-          "duration": 218
+          "duration": 723
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/dd3c837a83e83036-s.p.0gsbeblw0j9nq.woff2",
           "size": 19005,
-          "duration": 197
+          "duration": 742
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/e1e0f9a8d87bd4c8-s.p.17s.33wz60na-.woff2",
           "size": 32812,
-          "duration": 217
-        },
-        {
-          "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
-          "size": 17557,
-          "duration": 166
+          "duration": 745
         },
         {
           "url": "...meowindowsticker.com/_next/static/media/f69abbf4ee49986d-s.p.11.5-z2zi_1ir.woff2",
           "size": 34968,
-          "duration": 217
+          "duration": 751
+        },
+        {
+          "url": "...meowindowsticker.com/_next/static/media/ffa7ca14c228762d-s.p.0v2jf9z_pp_zk.woff2",
+          "size": 17557,
+          "duration": 751
         }
       ],
       "fontFaces": [
@@ -9286,19 +9309,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1h1v9193982398za200zd9193982398&_p=1788096379168&gcd=13l3l3l3l1l1&npa=0&dma",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je68q1v9193982398za200zd9193982398&_p=1788190714015&gcd=13l3l3l3l1l1&npa=0&dma=0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=173901308.1788096380&gtm=45He68q1v9230719671za200zd9230719671xea&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&auid=1227159964.1788190714&dt=Alfa%20Romeo%20VIN%20Decoder%3A%20Check%20Specs%20%26%20Vehic",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=173901308.1788096380&dt=Alfa%20Romeo%20VIN%20Decoder%3A%20Check%20Specs%20%26%20Vehicl",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1227159964.1788190714&gtm=45He68q1h1v9230719671za200zd9230719671xea&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
