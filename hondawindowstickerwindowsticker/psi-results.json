@@ -4,16 +4,16 @@
     "label": "Honda – Build Sheet",
     "url": "https://hondawindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-08-30T13:37:48.676Z",
-    "performanceScore": 57,
+    "timestamp": "2026-08-31T15:49:45.395Z",
+    "performanceScore": 54,
     "lcp": {
-      "value": 16247.38907577182,
-      "displayValue": "16.2 s",
+      "value": 15903.843270498382,
+      "displayValue": "15.9 s",
       "score": 0
     },
     "fcp": {
-      "value": 5645.299071249443,
-      "displayValue": "5.6 s",
+      "value": 5740.324068485238,
+      "displayValue": "5.7 s",
       "score": 0.05
     },
     "cls": {
@@ -22,22 +22,22 @@
       "score": 0.96
     },
     "tbt": {
-      "value": 53.49999999999909,
-      "displayValue": "50 ms",
-      "score": 1
+      "value": 202,
+      "displayValue": "200 ms",
+      "score": 0.89
     },
     "si": {
-      "value": 7470.0875195899935,
-      "displayValue": "7.5 s",
-      "score": 0.27
+      "value": 7372.300848094839,
+      "displayValue": "7.4 s",
+      "score": 0.28
     },
     "ttfb": {
-      "value": 16,
+      "value": 22,
       "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16301.768961001584,
+      "value": 16325.004430154597,
       "displayValue": "16.3 s",
       "score": 0.05
     },
@@ -46,15 +46,28 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 1480,
-        "savingsBytes": 306192
+        "savingsMs": 1500,
+        "savingsBytes": 306528
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 29183
       }
     ],
     "diagnostics": [
       {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.0 s",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
@@ -75,203 +88,15 @@
     "label": "Honda – Build Sheet",
     "url": "https://hondawindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-08-30T13:38:09.732Z",
+    "timestamp": "2026-08-31T15:50:02.335Z",
     "performanceScore": 93,
     "lcp": {
-      "value": 1452.5,
+      "value": 1481.0616379616276,
       "displayValue": "1.5 s",
-      "score": 0.82
+      "score": 0.81
     },
     "fcp": {
-      "value": 554.3022307496029,
-      "displayValue": "0.6 s",
-      "score": 0.99
-    },
-    "cls": {
-      "value": 0.0002944114501864303,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 1761.00888619197,
-      "displayValue": "1.8 s",
-      "score": 0.72
-    },
-    "ttfb": {
-      "value": 216,
-      "displayValue": "Root document took 220 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1452.5,
-      "displayValue": "1.5 s",
-      "score": 0.99
-    },
-    "opportunities": [
-      {
-        "id": "server-response-time",
-        "title": "Initial server response time was short",
-        "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
-        "savingsMs": 116,
-        "savingsBytes": 0
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 28542
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 16 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "4.5 s",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 80 ms",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "3.4 s",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – VIN Decoder",
-    "url": "https://hondawindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-08-30T13:38:28.358Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 8102.106278133822,
-      "displayValue": "8.1 s",
-      "score": 0.02
-    },
-    "fcp": {
-      "value": 1690.1142248675492,
-      "displayValue": "1.7 s",
-      "score": 0.92
-    },
-    "cls": {
-      "value": 0.06718344752712063,
-      "displayValue": "0.067",
-      "score": 0.97
-    },
-    "tbt": {
-      "value": 218.50000000000182,
-      "displayValue": "220 ms",
-      "score": 0.88
-    },
-    "si": {
-      "value": 3324.4480947770344,
-      "displayValue": "3.3 s",
-      "score": 0.9
-    },
-    "ttfb": {
-      "value": 22,
-      "displayValue": "Root document took 20 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 17357.78672871577,
-      "displayValue": "17.4 s",
-      "score": 0.04
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29241
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 417112
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 100 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.4 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – VIN Decoder",
-    "url": "https://hondawindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-08-30T13:38:51.547Z",
-    "performanceScore": 87,
-    "lcp": {
-      "value": 1462.1069122978672,
-      "displayValue": "1.5 s",
-      "score": 0.82
-    },
-    "fcp": {
-      "value": 470.9248110977543,
+      "value": 491.47132339899224,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -281,55 +106,58 @@
       "score": 1
     },
     "tbt": {
-      "value": 246.5,
-      "displayValue": "250 ms",
-      "score": 0.7
+      "value": 141.5,
+      "displayValue": "140 ms",
+      "score": 0.91
     },
     "si": {
-      "value": 561.1763148728048,
-      "displayValue": "0.6 s",
+      "value": 537.9569908215077,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
+      "value": 25,
+      "displayValue": "Root document took 30 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3684.2213496525983,
-      "displayValue": "3.7 s",
-      "score": 0.66
+      "value": 3481.2924046727912,
+      "displayValue": "3.5 s",
+      "score": 0.7
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 299873
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28558
+      }
+    ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.3 s",
-        "score": 0
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 31 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
+        "displayValue": "Est savings of 16 KiB",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
         "score": 0
       },
       {
@@ -341,121 +169,171 @@
   },
   {
     "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Paint Code",
-    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
+    "label": "Honda – VIN Decoder",
+    "url": "https://hondawindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-08-30T13:39:05.654Z",
-    "performanceScore": 70,
+    "timestamp": "2026-08-31T15:50:24.309Z",
+    "performanceScore": 50,
     "lcp": {
-      "value": 7886.970426423515,
-      "displayValue": "7.9 s",
-      "score": 0.03
+      "value": 13041.641088787903,
+      "displayValue": "13.0 s",
+      "score": 0
     },
     "fcp": {
-      "value": 1521.3964511708218,
-      "displayValue": "1.5 s",
-      "score": 0.95
+      "value": 4984.750722064879,
+      "displayValue": "5.0 s",
+      "score": 0.1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 212,
-      "displayValue": "210 ms",
-      "score": 0.88
-    },
-    "si": {
-      "value": 3774.059223220219,
-      "displayValue": "3.8 s",
-      "score": 0.84
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 14931.11967114687,
-      "displayValue": "14.9 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 278128
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 140,
-        "savingsBytes": 30797
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Paint Code",
-    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-08-30T13:39:24.347Z",
-    "performanceScore": 74,
-    "lcp": {
-      "value": 1739.1142226397976,
-      "displayValue": "1.7 s",
-      "score": 0.72
-    },
-    "fcp": {
-      "value": 428.72607415530507,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 438.50000000000034,
-      "displayValue": "440 ms",
-      "score": 0.36
-    },
-    "si": {
-      "value": 1005.8063189709577,
-      "displayValue": "1.0 s",
+      "value": 0.06718344752712063,
+      "displayValue": "0.067",
       "score": 0.97
     },
+    "tbt": {
+      "value": 362.5,
+      "displayValue": "360 ms",
+      "score": 0.72
+    },
+    "si": {
+      "value": 7270.07529401424,
+      "displayValue": "7.3 s",
+      "score": 0.29
+    },
     "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
+      "value": 51,
+      "displayValue": "Root document took 50 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3287.9021701924157,
-      "displayValue": "3.3 s",
-      "score": 0.74
+      "value": 17220.036612840555,
+      "displayValue": "17.2 s",
+      "score": 0.04
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 520,
+        "savingsBytes": 416881
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 29239
+      }
+    ],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.6 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – VIN Decoder",
+    "url": "https://hondawindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-08-31T15:50:50.684Z",
+    "performanceScore": 71,
+    "lcp": {
+      "value": 1483.1188015119812,
+      "displayValue": "1.5 s",
+      "score": 0.81
+    },
+    "fcp": {
+      "value": 488.1025149965096,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0002339145157723298,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 572.9999999999994,
+      "displayValue": "570 ms",
+      "score": 0.22
+    },
+    "si": {
+      "value": 1194.1434585852735,
+      "displayValue": "1.2 s",
+      "score": 0.93
+    },
+    "ttfb": {
+      "value": 43,
+      "displayValue": "Root document took 40 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3793.3559851874693,
+      "displayValue": "3.8 s",
+      "score": 0.64
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 28648
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.1 s",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 31 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 100 ms",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -463,29 +341,29 @@
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.6 s",
         "score": 0
       }
     ]
   },
   {
     "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Options Check",
-    "url": "https://hondawindowsticker.com/options-check-by-vin",
+    "label": "Honda – Paint Code",
+    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-08-30T13:39:38.096Z",
-    "performanceScore": 72,
+    "timestamp": "2026-08-31T15:51:05.536Z",
+    "performanceScore": 68,
     "lcp": {
-      "value": 7890.97887429184,
-      "displayValue": "7.9 s",
-      "score": 0.03
+      "value": 8975.344871275876,
+      "displayValue": "9.0 s",
+      "score": 0.01
     },
     "fcp": {
-      "value": 1508.6343349150218,
+      "value": 1524.8843493235381,
       "displayValue": "1.5 s",
-      "score": 0.96
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -493,14 +371,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 140.5,
-      "displayValue": "140 ms",
-      "score": 0.95
+      "value": 188.5,
+      "displayValue": "190 ms",
+      "score": 0.91
     },
     "si": {
-      "value": 3915.5190568009366,
-      "displayValue": "3.9 s",
-      "score": 0.82
+      "value": 5410.3839516305,
+      "displayValue": "5.4 s",
+      "score": 0.56
     },
     "ttfb": {
       "value": 1,
@@ -508,23 +386,23 @@
       "score": 1
     },
     "interactive": {
-      "value": 15698.218743280224,
-      "displayValue": "15.7 s",
-      "score": 0.06
+      "value": 15208.232679461267,
+      "displayValue": "15.2 s",
+      "score": 0.07
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 388957
+        "savingsMs": 300,
+        "savingsBytes": 278155
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
+        "savingsMs": 290,
         "savingsBytes": 30797
       }
     ],
@@ -545,18 +423,18 @@
   },
   {
     "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Options Check",
-    "url": "https://hondawindowsticker.com/options-check-by-vin",
+    "label": "Honda – Paint Code",
+    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-08-30T13:39:55.112Z",
-    "performanceScore": 94,
+    "timestamp": "2026-08-31T15:51:23.303Z",
+    "performanceScore": 84,
     "lcp": {
-      "value": 1685.7831112573904,
-      "displayValue": "1.7 s",
-      "score": 0.74
+      "value": 1461.8527844468044,
+      "displayValue": "1.5 s",
+      "score": 0.82
     },
     "fcp": {
-      "value": 437.34622614846023,
+      "value": 430.5353120837758,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -566,14 +444,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 63,
-      "displayValue": "60 ms",
-      "score": 1
+      "value": 282.99927873364686,
+      "displayValue": "280 ms",
+      "score": 0.62
     },
     "si": {
-      "value": 699.5717231878718,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 1075.6846368337463,
+      "displayValue": "1.1 s",
+      "score": 0.96
     },
     "ttfb": {
       "value": 2,
@@ -581,24 +459,97 @@
       "score": 1
     },
     "interactive": {
-      "value": 2929.5682961153007,
-      "displayValue": "2.9 s",
-      "score": 0.82
+      "value": 3220.5638941522893,
+      "displayValue": "3.2 s",
+      "score": 0.76
     },
     "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 30770
-      },
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 272914
+        "savingsBytes": 383235
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 20,
+        "savingsBytes": 30759
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – Options Check",
+    "url": "https://hondawindowsticker.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-08-31T15:51:59.355Z",
+    "performanceScore": 80,
+    "lcp": {
+      "value": 1445.786477649276,
+      "displayValue": "1.4 s",
+      "score": 0.82
+    },
+    "fcp": {
+      "value": 425.47046955923906,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 343,
+      "displayValue": "340 ms",
+      "score": 0.51
+    },
+    "si": {
+      "value": 1112.418047543163,
+      "displayValue": "1.1 s",
+      "score": 0.95
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3492.1605627949,
+      "displayValue": "3.5 s",
+      "score": 0.7
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 500013
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 30,
+        "savingsBytes": 30770
       }
     ],
     "diagnostics": [
