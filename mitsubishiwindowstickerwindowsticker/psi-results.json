@@ -4,17 +4,17 @@
     "label": "Mitsubishi – Build Sheet",
     "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-09-03T12:45:56.468Z",
-    "performanceScore": 65,
+    "timestamp": "2026-09-04T12:47:42.225Z",
+    "performanceScore": 52,
     "lcp": {
-      "value": 9175.281151839597,
-      "displayValue": "9.2 s",
-      "score": 0.01
+      "value": 13691.916748673602,
+      "displayValue": "13.7 s",
+      "score": 0
     },
     "fcp": {
-      "value": 1201.0321403904031,
-      "displayValue": "1.2 s",
-      "score": 0.99
+      "value": 5692.859569135773,
+      "displayValue": "5.7 s",
+      "score": 0.05
     },
     "cls": {
       "value": 0.06729659542055878,
@@ -22,22 +22,22 @@
       "score": 0.97
     },
     "tbt": {
-      "value": 391.5,
-      "displayValue": "390 ms",
-      "score": 0.69
+      "value": 274,
+      "displayValue": "270 ms",
+      "score": 0.81
     },
     "si": {
-      "value": 2177.600768397973,
-      "displayValue": "2.2 s",
-      "score": 0.99
+      "value": 7432.199220720791,
+      "displayValue": "7.4 s",
+      "score": 0.27
     },
     "ttfb": {
-      "value": 11,
-      "displayValue": "Root document took 10 ms",
+      "value": 68,
+      "displayValue": "Root document took 70 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16346.778697252343,
+      "value": 16321.346090296625,
       "displayValue": "16.3 s",
       "score": 0.05
     },
@@ -46,39 +46,45 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 120,
-        "savingsBytes": 307318
+        "savingsMs": 900,
+        "savingsBytes": 307735
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 29406
       }
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 40 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.4 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 590 ms",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.3 s",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
         "score": 0
       }
     ]
@@ -88,203 +94,16 @@
     "label": "Mitsubishi – Build Sheet",
     "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-09-03T12:46:57.141Z",
-    "performanceScore": 70,
+    "timestamp": "2026-09-04T12:48:10.433Z",
+    "performanceScore": 68,
     "lcp": {
-      "value": 1380.1478425944492,
-      "displayValue": "1.4 s",
-      "score": 0.84
+      "value": 1497.208220324739,
+      "displayValue": "1.5 s",
+      "score": 0.8
     },
     "fcp": {
-      "value": 466.3539420651751,
+      "value": 474.9976744939876,
       "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.003129476273233644,
-      "displayValue": "0.003",
-      "score": 1
-    },
-    "tbt": {
-      "value": 679.9999999999995,
-      "displayValue": "680 ms",
-      "score": 0.15
-    },
-    "si": {
-      "value": 1161.9054687164175,
-      "displayValue": "1.2 s",
-      "score": 0.94
-    },
-    "ttfb": {
-      "value": 14,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3853.072118512946,
-      "displayValue": "3.9 s",
-      "score": 0.62
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 20,
-        "savingsBytes": 301264
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.9 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.5 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 125 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 40 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
-    "label": "Mitsubishi – VIN Decoder",
-    "url": "https://mitsubishiwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-09-03T12:47:19.202Z",
-    "performanceScore": 62,
-    "lcp": {
-      "value": 7651.242460524929,
-      "displayValue": "7.7 s",
-      "score": 0.03
-    },
-    "fcp": {
-      "value": 1201.0296890438694,
-      "displayValue": "1.2 s",
-      "score": 0.99
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 533.9901036520437,
-      "displayValue": "530 ms",
-      "score": 0.55
-    },
-    "si": {
-      "value": 2833.7750596914684,
-      "displayValue": "2.8 s",
-      "score": 0.95
-    },
-    "ttfb": {
-      "value": 78,
-      "displayValue": "Root document took 80 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 16355.230118833779,
-      "displayValue": "16.4 s",
-      "score": 0.05
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 307379
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29446
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 29 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.5 s",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 630 ms",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.7 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 41 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
-    "label": "Mitsubishi – VIN Decoder",
-    "url": "https://mitsubishiwindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-09-03T12:47:44.496Z",
-    "performanceScore": 77,
-    "lcp": {
-      "value": 1361.2871157564296,
-      "displayValue": "1.4 s",
-      "score": 0.85
-    },
-    "fcp": {
-      "value": 321.05383420433054,
-      "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
@@ -293,42 +112,227 @@
       "score": 1
     },
     "tbt": {
-      "value": 451.4999999999982,
-      "displayValue": "450 ms",
-      "score": 0.35
+      "value": 795.0000000000008,
+      "displayValue": "800 ms",
+      "score": 0.1
     },
     "si": {
-      "value": 500.9156587072211,
-      "displayValue": "0.5 s",
-      "score": 1
+      "value": 785.1530365472552,
+      "displayValue": "0.8 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 17,
+      "value": 3,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3879.404693453028,
+      "displayValue": "3.9 s",
+      "score": 0.62
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 60,
+        "savingsBytes": 28947
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 20,
+        "savingsBytes": 419111
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 125 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.6 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "total-byte-weight",
+        "title": "Avoid enormous network payloads",
+        "displayValue": "Total size was 2,671 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.2 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
+    "label": "Mitsubishi – VIN Decoder",
+    "url": "https://mitsubishiwindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-09-04T12:48:28.829Z",
+    "performanceScore": 68,
+    "lcp": {
+      "value": 10241.445834127948,
+      "displayValue": "10.2 s",
+      "score": 0
+    },
+    "fcp": {
+      "value": 2415.0658229031606,
+      "displayValue": "2.4 s",
+      "score": 0.7
+    },
+    "cls": {
+      "value": 0.06729659542055878,
+      "displayValue": "0.067",
+      "score": 0.97
+    },
+    "tbt": {
+      "value": 61,
+      "displayValue": "60 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 4878.270595865254,
+      "displayValue": "4.9 s",
+      "score": 0.65
+    },
+    "ttfb": {
+      "value": 21,
       "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3540.7339915441944,
-      "displayValue": "3.5 s",
-      "score": 0.69
+      "value": 13395.735551960603,
+      "displayValue": "13.4 s",
+      "score": 0.11
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 301040
+        "savingsMs": 150,
+        "savingsBytes": 307861
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
       },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 170 ms",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
+    "label": "Mitsubishi – VIN Decoder",
+    "url": "https://mitsubishiwindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-09-04T12:49:03.610Z",
+    "performanceScore": 95,
+    "lcp": {
+      "value": 1482.1712864009326,
+      "displayValue": "1.5 s",
+      "score": 0.81
+    },
+    "fcp": {
+      "value": 461.8021142192613,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.010376348832427069,
+      "displayValue": "0.01",
+      "score": 1
+    },
+    "tbt": {
+      "value": 37,
+      "displayValue": "40 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 489.47416741526126,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 13,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3533.491388524134,
+      "displayValue": "3.5 s",
+      "score": 0.69
+    },
+    "opportunities": [
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
+        "savingsMs": 80,
         "savingsBytes": 28815
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 419225
       }
     ],
     "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
@@ -336,33 +340,9 @@
         "score": 0.5
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.7 s",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 41 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       }
     ]
@@ -371,102 +351,17 @@
     "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
     "label": "Mitsubishi – Paint Code",
     "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-09-03T12:48:12.047Z",
-    "performanceScore": 43,
-    "lcp": {
-      "value": 9137.091009903965,
-      "displayValue": "9.1 s",
-      "score": 0.01
-    },
-    "fcp": {
-      "value": 1576.6688665804659,
-      "displayValue": "1.6 s",
-      "score": 0.94
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 1674.5000000000018,
-      "displayValue": "1,670 ms",
-      "score": 0.11
-    },
-    "si": {
-      "value": 5454.529641564621,
-      "displayValue": "5.5 s",
-      "score": 0.55
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 16403.782528316748,
-      "displayValue": "16.4 s",
-      "score": 0.05
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 390598
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 100,
-        "savingsBytes": 30783
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "4.2 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.9 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "MITSUBISHIWINDOWSTICKER Window Sticker",
-    "label": "Mitsubishi – Paint Code",
-    "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-09-03T12:48:27.980Z",
-    "performanceScore": 96,
+    "timestamp": "2026-09-04T12:49:50.212Z",
+    "performanceScore": 71,
     "lcp": {
-      "value": 1330.7036469621378,
-      "displayValue": "1.3 s",
-      "score": 0.86
+      "value": 1727.273416534606,
+      "displayValue": "1.7 s",
+      "score": 0.72
     },
     "fcp": {
-      "value": 298.75008459691594,
-      "displayValue": "0.3 s",
+      "value": 430.7907995953605,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "cls": {
@@ -475,14 +370,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 84.00000000000006,
-      "displayValue": "80 ms",
-      "score": 0.98
+      "value": 482.5000000000001,
+      "displayValue": "480 ms",
+      "score": 0.31
     },
     "si": {
-      "value": 987.2779042474941,
-      "displayValue": "1.0 s",
-      "score": 0.97
+      "value": 1272.404637439599,
+      "displayValue": "1.3 s",
+      "score": 0.91
     },
     "ttfb": {
       "value": 1,
@@ -490,22 +385,22 @@
       "score": 1
     },
     "interactive": {
-      "value": 2906.1091758215207,
-      "displayValue": "2.9 s",
-      "score": 0.82
+      "value": 3040.332035705921,
+      "displayValue": "3.0 s",
+      "score": 0.79
     },
     "opportunities": [],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 41 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       }
     ]
@@ -515,17 +410,17 @@
     "label": "Mitsubishi – Options Check",
     "url": "https://mitsubishiwindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-09-03T12:48:53.861Z",
-    "performanceScore": 44,
+    "timestamp": "2026-09-04T12:50:05.044Z",
+    "performanceScore": 66,
     "lcp": {
-      "value": 8765.69868331481,
+      "value": 8823.959944356993,
       "displayValue": "8.8 s",
       "score": 0.01
     },
     "fcp": {
-      "value": 1064.0928830593546,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 1523.4149671684056,
+      "displayValue": "1.5 s",
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -533,24 +428,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 1710.2628467762581,
-      "displayValue": "1,710 ms",
-      "score": 0.11
+      "value": 305.5,
+      "displayValue": "310 ms",
+      "score": 0.78
     },
     "si": {
-      "value": 5300.421793775795,
-      "displayValue": "5.3 s",
-      "score": 0.58
+      "value": 4285.183099210544,
+      "displayValue": "4.3 s",
+      "score": 0.76
     },
     "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
+      "value": 2,
+      "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 16493.74049198997,
-      "displayValue": "16.5 s",
-      "score": 0.05
+      "value": 15159.723623054364,
+      "displayValue": "15.2 s",
+      "score": 0.07
     },
     "opportunities": [
       {
@@ -558,40 +453,28 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 391135
+        "savingsBytes": 279741
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 130,
+        "savingsMs": 140,
         "savingsBytes": 30797
       }
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.7 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.7 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 41 KiB",
-        "score": 0.5
       }
     ]
   },
@@ -600,16 +483,16 @@
     "label": "Mitsubishi – Options Check",
     "url": "https://mitsubishiwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-09-03T12:49:11.705Z",
-    "performanceScore": 94,
+    "timestamp": "2026-09-04T12:50:23.745Z",
+    "performanceScore": 72,
     "lcp": {
-      "value": 1272.89845623566,
-      "displayValue": "1.3 s",
-      "score": 0.87
+      "value": 1741.7798422717358,
+      "displayValue": "1.7 s",
+      "score": 0.72
     },
     "fcp": {
-      "value": 286.4997338337345,
-      "displayValue": "0.3 s",
+      "value": 433.0326359551684,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "cls": {
@@ -618,14 +501,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 136.49999999999977,
-      "displayValue": "140 ms",
-      "score": 0.92
+      "value": 471.00000000000034,
+      "displayValue": "470 ms",
+      "score": 0.32
     },
     "si": {
-      "value": 948.7948231108354,
-      "displayValue": "0.9 s",
-      "score": 0.98
+      "value": 1100.6336986725946,
+      "displayValue": "1.1 s",
+      "score": 0.95
     },
     "ttfb": {
       "value": 2,
@@ -633,16 +516,23 @@
       "score": 1
     },
     "interactive": {
-      "value": 2988.2337043707407,
-      "displayValue": "3.0 s",
-      "score": 0.8
+      "value": 3183.460275117486,
+      "displayValue": "3.2 s",
+      "score": 0.76
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 274985
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
+        "savingsMs": 20,
         "savingsBytes": 30770
       }
     ],
@@ -650,13 +540,13 @@
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 40 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 14 KiB",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       }
     ]
