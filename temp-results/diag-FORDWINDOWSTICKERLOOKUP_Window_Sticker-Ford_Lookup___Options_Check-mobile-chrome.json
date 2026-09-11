@@ -3,7 +3,7 @@
   "label": "Ford Lookup – Options Check",
   "url": "https://fordwindowstickerlookup.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-10T12:38:01.704Z",
+  "timestamp": "2026-09-11T12:34:52.395Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,17 +25,17 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 41,
-      "tls": 22,
-      "serverProcessing": 30,
-      "ttfb": 73,
+      "connection": 8,
+      "tls": 6,
+      "serverProcessing": 12,
+      "ttfb": 22,
       "download": 1,
-      "domParsing": 29,
-      "domContentLoaded": 272,
-      "loadEvent": 1005,
-      "transferSize": 4436,
-      "encodedBodySize": 4136,
-      "decodedBodySize": 17976,
+      "domParsing": 12,
+      "domContentLoaded": 139,
+      "loadEvent": 139,
+      "transferSize": 4517,
+      "encodedBodySize": 4217,
+      "decodedBodySize": 18095,
       "protocol": "h2"
     },
     "issues": []
@@ -64,32 +64,32 @@
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 254.80000000004657
+        "totalDuration": 162.5
       },
       "script": {
         "count": 26,
         "totalSize": 282161,
-        "totalDuration": 2348.0999999999767
+        "totalDuration": 1110.5000000000873
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6178,
-        "totalDuration": 5077.1999999999825
+        "totalDuration": 3309.1999999999534
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 368.4000000000233
+        "totalDuration": 105.29999999998836
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 245.29999999998836
+        "totalDuration": 135.39999999999418
       },
       "fetch": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 192.10000000003492
+        "totalDuration": 89.70000000001164
       }
     },
     "largeResources": [],
@@ -108,79 +108,79 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 131
+        "duration": 51
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 93
+        "duration": 14
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 180
+        "duration": 324
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 368
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 146
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 13
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 245
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 111
+        "duration": 105
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 2,
         "size": 0,
-        "duration": 216
+        "duration": 239
       },
       {
-        "domain": "f.clarity.ms",
+        "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 336
+        "duration": 25
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 11
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 135
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 81
+        "duration": 41
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 20
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 56
+        "duration": 25
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 55
+        "duration": 24
+      },
+      {
+        "domain": "z.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 26
       }
     ],
     "totalDomains": 13
@@ -188,7 +188,7 @@
   "domAnalysis": {
     "totalElements": 73,
     "maxDepth": 6,
-    "maxChildren": 37,
+    "maxChildren": 36,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -615,7 +615,8 @@
   },
   "consoleErrors": [
     "Failed to load resource: the server responded with a status of 404 ()",
-    "Failed to load resource: the server responded with a status of 429 ()"
+    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://fordwindowstickerlookup.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -628,29 +629,30 @@
     },
     {
       "url": "https://ipapi.co/json",
-      "status": 429,
-      "resourceType": "xhr"
+      "status": 0,
+      "resourceType": "xhr",
+      "failure": "net::ERR_FAILED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je6980v9190396452za200zd9190396452xf1&_p=1789043878665&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je6992v9190396452za200zd9190396452&_p=1789130089386&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je6980v9190396452za200zd9190396452xf1&_p=1789043878665&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je6992v9190396452za200zd9190396452&_p=1789130089386&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=757810693.1789043879&gtm=45He6980v9230124253za200zd9230124253xea&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1606257031.1789130090&gtm=45He6992v9230124253za200zd9230124253xea&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=757810693.1789043879&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1606257031.1789130090&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
