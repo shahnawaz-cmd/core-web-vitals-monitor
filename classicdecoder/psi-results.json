@@ -4,15 +4,15 @@
     "label": "Homepage",
     "url": "https://classicdecoder.com/",
     "strategy": "mobile",
-    "timestamp": "2026-09-10T12:28:47.187Z",
-    "performanceScore": 64,
+    "timestamp": "2026-09-11T12:27:12.789Z",
+    "performanceScore": 61,
     "lcp": {
-      "value": 9226,
-      "displayValue": "9.2 s",
+      "value": 9376,
+      "displayValue": "9.4 s",
       "score": 0.01
     },
     "fcp": {
-      "value": 3181.304319870943,
+      "value": 3170.8966001079248,
       "displayValue": "3.2 s",
       "score": 0.44
     },
@@ -22,14 +22,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 66.5,
-      "displayValue": "70 ms",
-      "score": 0.99
+      "value": 178.5,
+      "displayValue": "180 ms",
+      "score": 0.92
     },
     "si": {
-      "value": 5787.06416155533,
-      "displayValue": "5.8 s",
-      "score": 0.5
+      "value": 6392.52417009048,
+      "displayValue": "6.4 s",
+      "score": 0.4
     },
     "ttfb": {
       "value": 11,
@@ -37,43 +37,49 @@
       "score": 1
     },
     "interactive": {
-      "value": 9248.5,
-      "displayValue": "9.2 s",
-      "score": 0.32
+      "value": 9398.5,
+      "displayValue": "9.4 s",
+      "score": 0.31
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 366069
+        "savingsMs": 450,
+        "savingsBytes": 359719
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 26198
+        "savingsBytes": 26201
       }
     ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.1 s",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.3 s",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 190 ms",
         "score": 0
       },
       {
@@ -81,6 +87,12 @@
         "title": "Improve image delivery",
         "displayValue": "Est savings of 38 KiB",
         "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0
       }
     ]
   },
@@ -89,15 +101,15 @@
     "label": "Homepage",
     "url": "https://classicdecoder.com/",
     "strategy": "desktop",
-    "timestamp": "2026-09-10T12:29:12.627Z",
-    "performanceScore": 87,
+    "timestamp": "2026-09-11T12:27:41.220Z",
+    "performanceScore": 82,
     "lcp": {
-      "value": 1681.0000000000002,
-      "displayValue": "1.7 s",
-      "score": 0.74
+      "value": 1501,
+      "displayValue": "1.5 s",
+      "score": 0.8
     },
     "fcp": {
-      "value": 516.5172925530547,
+      "value": 520.4755198351146,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -107,13 +119,13 @@
       "score": 1
     },
     "tbt": {
-      "value": 196.5,
-      "displayValue": "200 ms",
-      "score": 0.8
+      "value": 309,
+      "displayValue": "310 ms",
+      "score": 0.57
     },
     "si": {
-      "value": 752.6588969952714,
-      "displayValue": "0.8 s",
+      "value": 877.7103341037864,
+      "displayValue": "0.9 s",
       "score": 0.99
     },
     "ttfb": {
@@ -122,31 +134,36 @@
       "score": 1
     },
     "interactive": {
-      "value": 1939.0000000000002,
+      "value": 1915.25,
       "displayValue": "1.9 s",
       "score": 0.96
     },
     "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 120,
-        "savingsBytes": 361976
-      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 80,
         "savingsBytes": 25411
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 80,
+        "savingsBytes": 363318
       }
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
         "score": 0.5
       },
       {
@@ -156,15 +173,16 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.1 s",
+        "score": 0
       }
     ]
   },
@@ -173,17 +191,17 @@
     "label": "History Report",
     "url": "https://classicdecoder.com/history-report",
     "strategy": "mobile",
-    "timestamp": "2026-09-10T12:30:13.875Z",
-    "performanceScore": 59,
+    "timestamp": "2026-09-11T12:28:10.138Z",
+    "performanceScore": 64,
     "lcp": {
-      "value": 8801.696518567043,
-      "displayValue": "8.8 s",
-      "score": 0.01
+      "value": 7426,
+      "displayValue": "7.4 s",
+      "score": 0.04
     },
     "fcp": {
-      "value": 3177.056671067044,
-      "displayValue": "3.2 s",
-      "score": 0.44
+      "value": 1848.896643488807,
+      "displayValue": "1.8 s",
+      "score": 0.88
     },
     "cls": {
       "value": null,
@@ -191,24 +209,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 298.5,
-      "displayValue": "300 ms",
-      "score": 0.79
+      "value": 419,
+      "displayValue": "420 ms",
+      "score": 0.66
     },
     "si": {
-      "value": 5405.261743588751,
-      "displayValue": "5.4 s",
-      "score": 0.56
+      "value": 3135.4822708740903,
+      "displayValue": "3.1 s",
+      "score": 0.93
     },
     "ttfb": {
-      "value": 10,
+      "value": 11,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 8809.196518567045,
-      "displayValue": "8.8 s",
-      "score": 0.35
+      "value": 7937.5,
+      "displayValue": "7.9 s",
+      "score": 0.43
     },
     "opportunities": [
       {
@@ -216,27 +234,32 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 450,
-        "savingsBytes": 365246
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 26144
+        "savingsBytes": 365769
       }
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 4 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.5 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
         "score": 0
       },
       {
@@ -252,42 +275,42 @@
     "label": "History Report",
     "url": "https://classicdecoder.com/history-report",
     "strategy": "desktop",
-    "timestamp": "2026-09-10T12:30:35.142Z",
-    "performanceScore": 96,
+    "timestamp": "2026-09-11T12:28:37.601Z",
+    "performanceScore": 82,
     "lcp": {
-      "value": 641,
-      "displayValue": "0.6 s",
+      "value": 721,
+      "displayValue": "0.7 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 510.18545250892385,
+      "value": 515.5749204661372,
       "displayValue": "0.5 s",
       "score": 1
     },
     "cls": {
-      "value": 0.001282833465101447,
-      "displayValue": "0.001",
+      "value": null,
+      "displayValue": "0",
       "score": 1
     },
     "tbt": {
-      "value": 151.5,
-      "displayValue": "150 ms",
-      "score": 0.89
+      "value": 400,
+      "displayValue": "400 ms",
+      "score": 0.41
     },
     "si": {
-      "value": 878.845768966866,
-      "displayValue": "0.9 s",
-      "score": 0.99
+      "value": 983.2178005994047,
+      "displayValue": "1.0 s",
+      "score": 0.97
     },
     "ttfb": {
-      "value": 9,
+      "value": 13,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1646,
-      "displayValue": "1.6 s",
-      "score": 0.98
+      "value": 1834.6,
+      "displayValue": "1.8 s",
+      "score": 0.97
     },
     "opportunities": [
       {
@@ -295,15 +318,27 @@
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 40,
-        "savingsBytes": 25381
+        "savingsBytes": 25384
       }
     ],
     "diagnostics": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 4 KiB",
         "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.5 s",
+        "score": 0
       },
       {
         "id": "render-blocking-insight",
@@ -323,15 +358,15 @@
     "label": "VIN Decoder",
     "url": "https://classicdecoder.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-09-10T12:30:57.269Z",
-    "performanceScore": 67,
+    "timestamp": "2026-09-11T12:29:11.145Z",
+    "performanceScore": 61,
     "lcp": {
-      "value": 11851.045897498978,
-      "displayValue": "11.9 s",
+      "value": 11026.044889676132,
+      "displayValue": "11.0 s",
       "score": 0
     },
     "fcp": {
-      "value": 2009.2811491954153,
+      "value": 2002.7381113991105,
       "displayValue": "2.0 s",
       "score": 0.84
     },
@@ -341,22 +376,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 198.5,
-      "displayValue": "200 ms",
-      "score": 0.9
-    },
-    "si": {
-      "value": 4742.273306847261,
-      "displayValue": "4.7 s",
+      "value": 393.5000000000009,
+      "displayValue": "390 ms",
       "score": 0.68
     },
+    "si": {
+      "value": 4679.994805855363,
+      "displayValue": "4.7 s",
+      "score": 0.69
+    },
     "ttfb": {
-      "value": 9,
+      "value": 12,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12440.998043356074,
+      "value": 12434.04978673171,
       "displayValue": "12.4 s",
       "score": 0.14
     },
@@ -365,15 +400,15 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 94056
+        "savingsMs": 450,
+        "savingsBytes": 168864
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 27111
+        "savingsBytes": 27089
       }
     ],
     "diagnostics": [
@@ -384,27 +419,188 @@
         "score": 0
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 684 KiB",
-        "score": 0.5
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 74 KiB",
+        "score": 0
       },
       {
         "id": "mainthread-work-breakdown",
         "title": "Minimize main-thread work",
-        "displayValue": "2.8 s",
+        "displayValue": "3.4 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
         "score": 0
       },
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
+        "displayValue": "2.2 s",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 684 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "VIN Decoder",
+    "url": "https://classicdecoder.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-09-11T12:29:48.258Z",
+    "performanceScore": 72,
+    "lcp": {
+      "value": 1321.0224005051502,
+      "displayValue": "1.3 s",
+      "score": 0.86
+    },
+    "fcp": {
+      "value": 527.0246051904016,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0017053300873310709,
+      "displayValue": "0.002",
+      "score": 1
+    },
+    "tbt": {
+      "value": 609.9999999999998,
+      "displayValue": "610 ms",
+      "score": 0.2
+    },
+    "si": {
+      "value": 862.7987211654543,
+      "displayValue": "0.9 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 10,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2462.428325800061,
+      "displayValue": "2.5 s",
+      "score": 0.9
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 26408
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.2 s",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 75 KiB",
+        "displayValue": "Est savings of 106 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 666 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.8 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "Build Sheet",
+    "url": "https://classicdecoder.com/build-sheet",
+    "strategy": "mobile",
+    "timestamp": "2026-09-11T12:30:07.433Z",
+    "performanceScore": 81,
+    "lcp": {
+      "value": 3901,
+      "displayValue": "3.9 s",
+      "score": 0.52
+    },
+    "fcp": {
+      "value": 1988.701354354267,
+      "displayValue": "2.0 s",
+      "score": 0.84
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 277,
+      "displayValue": "280 ms",
+      "score": 0.81
+    },
+    "si": {
+      "value": 2050.774290809197,
+      "displayValue": "2.1 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 12,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 8237,
+      "displayValue": "8.2 s",
+      "score": 0.4
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 26328
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
         "score": 0
       },
       {
@@ -417,101 +613,18 @@
   },
   {
     "site": "Classic Decoder",
-    "label": "VIN Decoder",
-    "url": "https://classicdecoder.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-09-10T12:31:25.313Z",
-    "performanceScore": 87,
-    "lcp": {
-      "value": 1381.0097927887368,
-      "displayValue": "1.4 s",
-      "score": 0.84
-    },
-    "fcp": {
-      "value": 511.4873649001504,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.0006202365379398152,
-      "displayValue": "0.001",
-      "score": 1
-    },
-    "tbt": {
-      "value": 243.5,
-      "displayValue": "240 ms",
-      "score": 0.7
-    },
-    "si": {
-      "value": 994.4097308007501,
-      "displayValue": "1.0 s",
-      "score": 0.97
-    },
-    "ttfb": {
-      "value": 9,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2366.016406687592,
-      "displayValue": "2.4 s",
-      "score": 0.91
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 80,
-        "savingsBytes": 26408
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 106 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 666 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "Classic Decoder",
     "label": "Build Sheet",
     "url": "https://classicdecoder.com/build-sheet",
     "strategy": "desktop",
-    "timestamp": "2026-09-10T12:32:50.758Z",
-    "performanceScore": 88,
+    "timestamp": "2026-09-11T12:30:23.522Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 841,
-      "displayValue": "0.8 s",
+      "value": 861,
+      "displayValue": "0.9 s",
       "score": 0.97
     },
     "fcp": {
-      "value": 524.366963342256,
+      "value": 509.3416342388675,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -521,40 +634,27 @@
       "score": 1
     },
     "tbt": {
-      "value": 286,
-      "displayValue": "290 ms",
-      "score": 0.61
+      "value": 68,
+      "displayValue": "70 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 693.7669662337318,
-      "displayValue": "0.7 s",
+      "value": 649.6887551268327,
+      "displayValue": "0.6 s",
       "score": 1
     },
     "ttfb": {
-      "value": 11,
+      "value": 14,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1775,
-      "displayValue": "1.8 s",
+      "value": 1638,
+      "displayValue": "1.6 s",
       "score": 0.98
     },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 25536
-      }
-    ],
+    "opportunities": [],
     "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -562,10 +662,15 @@
         "score": 0.5
       },
       {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
+        "score": 0
       }
     ]
   }
