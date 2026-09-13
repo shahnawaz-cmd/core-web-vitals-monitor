@@ -3,7 +3,7 @@
   "label": "Subaru – VIN Decoder",
   "url": "https://subaruwindowstickers.com/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-12T12:10:05.542Z",
+  "timestamp": "2026-09-13T13:20:52.689Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,15 +24,15 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 22,
-      "tls": 16,
-      "serverProcessing": 20,
-      "ttfb": 47,
+      "dns": 1,
+      "connection": 38,
+      "tls": 22,
+      "serverProcessing": 26,
+      "ttfb": 65,
       "download": 1,
-      "domParsing": 20,
-      "domContentLoaded": 203,
-      "loadEvent": 872,
+      "domParsing": 8,
+      "domContentLoaded": 122,
+      "loadEvent": 983,
       "transferSize": 4683,
       "encodedBodySize": 4383,
       "decodedBodySize": 19407,
@@ -64,32 +64,32 @@
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 206.70000000001164
+        "totalDuration": 278.29999999981374
       },
       "script": {
-        "count": 27,
+        "count": 26,
         "totalSize": 282161,
-        "totalDuration": 1386.8000000000466
+        "totalDuration": 1804.4999999995343
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6179,
-        "totalDuration": 6878.700000000012
+        "totalDuration": 4754.199999999721
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 234.60000000000582
+        "totalDuration": 403.5
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 145.20000000001164
+        "totalDuration": 98.5
       },
       "fetch": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 137
+        "totalDuration": 290.39999999990687
       }
     },
     "largeResources": [],
@@ -108,87 +108,87 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 62
+        "duration": 46
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 59
+        "duration": 125
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 215
+        "duration": 236
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 235
+        "duration": 404
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 3,
+        "count": 2,
         "size": 0,
-        "duration": 294
+        "duration": 381
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 11
+        "duration": 89
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 19
+        "duration": 11
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 145
+        "duration": 99
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 125
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 39
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 39
+        "duration": 115
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 60
+        "duration": 128
       },
       {
-        "domain": "r.clarity.ms",
+        "domain": "f.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 124
+      },
+      {
+        "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 82
+        "duration": 67
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 96
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 76,
+    "totalElements": 75,
     "maxDepth": 6,
-    "maxChildren": 38,
+    "maxChildren": 37,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,7 +614,8 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 429 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -626,25 +627,30 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&auid=1818378355.1789215003&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+      "url": "https://ipapi.co/json",
+      "status": 429,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-DKH8K33HNX&gtm=45je6992v9189429603za200zd9189429603&_p=1789305649635&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1818378355.1789215003&gtm=45He6992v9230902605za200zd9230902605xeaxf1&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-DKH8K33HNX&gtm=45je6992v9189429603za200zd9189429603&_p=1789305649635&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-DKH8K33HNX&gtm=45je6992v9189429603z89230902605za20gzb9230902605zd9230902605&_p=1789215002562&gcd=",
+      "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=1878708418.1789305650&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-DKH8K33HNX&gtm=45je6992v9189429603z89230902605za20gzb9230902605zd9230902605&_p=1789215002562&gcd=",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1878708418.1789305650&gtm=45He69a0h2v9230902605za200zd9230902605xea&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
