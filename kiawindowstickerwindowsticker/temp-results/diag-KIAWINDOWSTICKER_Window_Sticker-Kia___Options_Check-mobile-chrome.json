@@ -3,7 +3,7 @@
   "label": "Kia – Options Check",
   "url": "https://kiawindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-11T12:41:06.311Z",
+  "timestamp": "2026-09-13T13:13:10.965Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,18 +24,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 1,
-      "connection": 16,
-      "tls": 11,
-      "serverProcessing": 18,
-      "ttfb": 36,
+      "dns": 3,
+      "connection": 40,
+      "tls": 22,
+      "serverProcessing": 25,
+      "ttfb": 70,
       "download": 1,
-      "domParsing": 12,
-      "domContentLoaded": 98,
-      "loadEvent": 769,
-      "transferSize": 4538,
-      "encodedBodySize": 4238,
-      "decodedBodySize": 18566,
+      "domParsing": 16,
+      "domContentLoaded": 213,
+      "loadEvent": 897,
+      "transferSize": 4446,
+      "encodedBodySize": 4146,
+      "decodedBodySize": 18447,
       "protocol": "h2"
     },
     "issues": []
@@ -64,32 +64,32 @@
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 192.9000000000815
+        "totalDuration": 242.80000000001746
       },
       "script": {
         "count": 26,
         "totalSize": 282160,
-        "totalDuration": 1253.7999999999884
+        "totalDuration": 1769.0999999999476
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6186,
-        "totalDuration": 4842.79999999993
+        "totalDuration": 4704.499999999942
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 212.20000000001164
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 177.80000000004657
+        "totalDuration": 299.6000000000058
       },
       "fetch": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 125.10000000009313
+        "totalDuration": 196.70000000001164
+      },
+      "img": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 115.89999999999418
       }
     },
     "largeResources": [],
@@ -108,79 +108,79 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 42
+        "duration": 75
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 31
+        "duration": 84
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 278
+        "duration": 208
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 212
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 17
+        "duration": 300
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 2,
         "size": 0,
-        "duration": 205
+        "duration": 220
       },
       {
-        "domain": "ipapi.co",
+        "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 111
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 15
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 178
+        "duration": 143
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 49
+        "duration": 80
       },
       {
-        "domain": "u.clarity.ms",
+        "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 13
+        "duration": 121
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 37
+        "duration": 58
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 38
+        "duration": 59
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 13
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 116
+      },
+      {
+        "domain": "g.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 148
       }
     ],
     "totalDomains": 13
@@ -188,7 +188,7 @@
   "domAnalysis": {
     "totalElements": 74,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 37,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,7 +614,8 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 429 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -626,25 +627,30 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XG1G04P54D&gtm=45je6992v9193688606za200zd9193688606&_p=1789130463379&gcd=13l3l3l3l1l1&npa=0&dma=0",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XG1G04P54D&gtm=45je6992v9193688606za200zd9193688606&_p=1789305187753&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XG1G04P54D&gtm=45je6992v9193688606za200zd9193688606&_p=1789130463379&gcd=13l3l3l3l1l1&npa=0&dma=0",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-XG1G04P54D&gtm=45je6992v9193688606za200zd9193688606&_p=1789305187753&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=1&ae=g&auid=948572899.1789130464&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
+      "url": "https://ipapi.co/json",
+      "status": 429,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1155454312.1789305188&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=948572899.1789130464&gtm=45He69a0h2v9230630248za200zd9230630248xea&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1155454312.1789305188&gtm=45He6992v9230630248za200zd9230630248xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
