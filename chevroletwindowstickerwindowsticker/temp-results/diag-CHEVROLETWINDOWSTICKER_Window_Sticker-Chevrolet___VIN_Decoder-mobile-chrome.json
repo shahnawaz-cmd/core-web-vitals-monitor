@@ -3,7 +3,7 @@
   "label": "Chevrolet – VIN Decoder",
   "url": "https://chevroletwindowsticker.com/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-14T14:40:44.574Z",
+  "timestamp": "2026-09-15T13:06:33.676Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 40,
-      "tls": 24,
-      "serverProcessing": 39,
-      "ttfb": 82,
-      "download": 1,
-      "domParsing": 157,
-      "domContentLoaded": 247,
-      "loadEvent": 335,
-      "transferSize": 16974,
-      "encodedBodySize": 16674,
+      "connection": 381,
+      "tls": 192,
+      "serverProcessing": 716,
+      "ttfb": 1100,
+      "download": 33,
+      "domParsing": 330,
+      "domContentLoaded": 1469,
+      "loadEvent": 4186,
+      "transferSize": 16983,
+      "encodedBodySize": 16683,
       "decodedBodySize": 107223,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 716ms",
+      "TTFB exceeds 800ms threshold: 1100ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -129,42 +132,42 @@
   ],
   "resourceAnalysis": {
     "totalCount": 70,
-    "totalSize": 556679,
+    "totalSize": 556650,
     "byType": {
       "link": {
         "count": 6,
         "totalSize": 71301,
-        "totalDuration": 411.4000000000233
+        "totalDuration": 6195.700000000012
       },
       "script": {
-        "count": 41,
+        "count": 40,
         "totalSize": 380703,
-        "totalDuration": 2423.8000000000175
+        "totalDuration": 11515.399999999994
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 406.9999999999709
+        "totalDuration": 495.1000000000058
       },
       "img": {
         "count": 2,
         "totalSize": 9926,
-        "totalDuration": 174.5
+        "totalDuration": 303.80000000001746
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6191,
-        "totalDuration": 3876.399999999994
+        "totalDuration": 5993.300000000047
       },
       "fetch": {
         "count": 8,
-        "totalSize": 16654,
-        "totalDuration": 409.30000000004657
+        "totalSize": 16625,
+        "totalDuration": 782.8999999999942
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 166.69999999998254
+        "totalDuration": 310.8999999999942
       }
     },
     "largeResources": [],
@@ -205,94 +208,94 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 556679,
+    "firstPartySize": 556650,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 57
+        "duration": 59
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 21
+        "duration": 73
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 213
+        "duration": 326
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 167
+        "duration": 311
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 3,
+        "count": 2,
         "size": 0,
-        "duration": 238
+        "duration": 300
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 94
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 34
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 33
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 44
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 118
+        "duration": 112
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 34
+        "duration": 58
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 106
+        "duration": 189
       },
       {
-        "domain": "a.clarity.ms",
+        "domain": "www.google-analytics.com",
         "count": 1,
         "size": 0,
-        "duration": 78
+        "duration": 90
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 164
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 86
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 71
+      },
+      {
+        "domain": "f.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 162
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 544,
+    "totalElements": 543,
     "maxDepth": 17,
-    "maxChildren": 56,
+    "maxChildren": 55,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -302,22 +305,22 @@
       {
         "url": "...roletwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 97
+        "duration": 144
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 108
+        "duration": 113
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 95
+        "duration": 94
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 107
+        "duration": 144
       }
     ],
     "fontFaces": [
@@ -738,35 +741,28 @@
       "13 third-party origins without preconnect hints"
     ]
   },
-  "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 429 ()"
-  ],
+  "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=731455456.1789396842&gtm=45He6992v9230802869za200zd9230802869xea&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-HERH4MPTZZ&gtm=45je69b1v9189134625za200zd9189134625&_p=1789477590436&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=731455456.1789396842&dt=Chevrolet%20VIN%20Decoder%3A%20Instantly%20Decode%20Any%20Chev",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1965499283.1789477591&gtm=45He69b1v9230802869za200zd9230802869xea&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-HERH4MPTZZ&gtm=45je6992v9189134625z89230802869za20gzb9230802869zd9230802869&_p=1789396841359&gcd=",
+      "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=1965499283.1789477591&dt=Chevrolet%20VIN%20Decoder%3A%20Instantly%20Decode%20Any%20Che",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ipapi.co/json",
-      "status": 429,
-      "resourceType": "xhr"
     }
   ]
 }

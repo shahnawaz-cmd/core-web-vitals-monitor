@@ -3,7 +3,7 @@
   "label": "Chevrolet – VIN Decoder",
   "url": "https://chevroletwindowsticker.com/vin-decoder",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-14T14:40:43.886Z",
+  "timestamp": "2026-09-15T13:06:33.415Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 46,
-      "tls": 26,
-      "serverProcessing": 33,
-      "ttfb": 81,
-      "download": 2,
-      "domParsing": 66,
-      "domContentLoaded": 154,
-      "loadEvent": 281,
-      "transferSize": 16974,
-      "encodedBodySize": 16674,
+      "connection": 376,
+      "tls": 189,
+      "serverProcessing": 1090,
+      "ttfb": 1468,
+      "download": 33,
+      "domParsing": 230,
+      "domContentLoaded": 1736,
+      "loadEvent": 4120,
+      "transferSize": 16983,
+      "encodedBodySize": 16683,
       "decodedBodySize": 107223,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 1090ms",
+      "TTFB exceeds 800ms threshold: 1468ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -123,6 +126,11 @@
     },
     {
       "type": "JS",
+      "url": "/_next/static/chunks/0vuygg09o13sf.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
       "url": "/_next/static/chunks/0c_u_4-~3wo9f.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -138,11 +146,6 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/0vuygg09o13sf.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
       "url": "/_next/static/chunks/0qnszwvw1pwbd.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -153,43 +156,43 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 96,
-    "totalSize": 660935,
+    "totalCount": 97,
+    "totalSize": 660906,
     "byType": {
       "link": {
         "count": 6,
         "totalSize": 71301,
-        "totalDuration": 375.79999999998836
+        "totalDuration": 4710.899999999965
       },
       "script": {
         "count": 45,
         "totalSize": 441780,
-        "totalDuration": 2262.899999999965
+        "totalDuration": 11958.199999999953
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 262.30000000004657
+        "totalDuration": 246.30000000001746
       },
       "img": {
         "count": 3,
         "totalSize": 18006,
-        "totalDuration": 286.70000000001164
+        "totalDuration": 542.4000000000233
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6191,
-        "totalDuration": 3879.2999999999884
+        "totalDuration": 5284.600000000006
       },
       "fetch": {
         "count": 29,
-        "totalSize": 51753,
-        "totalDuration": 1607.500000000029
+        "totalSize": 51724,
+        "totalDuration": 2431.499999999971
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 234.80000000001746
+        "totalDuration": 312.69999999998254
       }
     },
     "largeResources": [],
@@ -230,86 +233,86 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 660935,
+    "firstPartySize": 660906,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 38
+        "duration": 68
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 65
+        "duration": 129
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 147
+        "duration": 280
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 235
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 70
+        "duration": 313
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 2,
         "size": 0,
-        "duration": 142
+        "duration": 412
       },
       {
-        "domain": "ipapi.co",
+        "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 166
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 36
+        "duration": 107
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 20
+        "duration": 87
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 145
+        "duration": 173
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 143
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 99
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 50
+        "duration": 83
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 38
+        "duration": 103
       },
       {
-        "domain": "o.clarity.ms",
-        "count": 1,
+        "domain": "b.clarity.ms",
+        "count": 2,
         "size": 0,
-        "duration": 108
+        "duration": 173
       }
     ],
     "totalDomains": 13
@@ -327,22 +330,22 @@
       {
         "url": "...roletwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 65
+        "duration": 49
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 67
+        "duration": 71
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 63
+        "duration": 69
       },
       {
         "url": "...roletwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 67
+        "duration": 57
       }
     ],
     "fontFaces": [
@@ -769,19 +772,19 @@
   ],
   "failedRequests": [
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-HERH4MPTZZ&gtm=45je69a0h2v9189134625za200zd9189134625&_p=1789396840689&gcd=13l3l3l3l1l1&npa=0&dma",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-HERH4MPTZZ&gtm=45je69b1v9189134625za200zd9189134625&_p=1789477590130&gcd=13l3l3l3l1l1&npa=0&dma=0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1808629183.1789396841&gtm=45He6992v9230802869za200zd9230802869xea&fmt=8",
+      "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=687677098.1789477591&dt=Chevrolet%20VIN%20Decoder%3A%20Instantly%20Decode%20Any%20Che",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&ae=g&auid=1808629183.1789396841&dt=Chevrolet%20VIN%20Decoder%3A%20Instantly%20Decode%20Any%20Che",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=687677098.1789477591&gtm=45He69b1v9230802869za200zd9230802869xea&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
