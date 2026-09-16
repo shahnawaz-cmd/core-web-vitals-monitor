@@ -3,7 +3,7 @@
   "label": "Porsche – Options Check",
   "url": "https://porschewindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-13T13:17:50.822Z",
+  "timestamp": "2026-09-16T13:19:22.932Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,18 +24,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 28,
-      "tls": 16,
-      "serverProcessing": 18,
-      "ttfb": 50,
+      "dns": 1,
+      "connection": 7,
+      "tls": 5,
+      "serverProcessing": 12,
+      "ttfb": 23,
       "download": 1,
       "domParsing": 17,
-      "domContentLoaded": 217,
-      "loadEvent": 995,
-      "transferSize": 4482,
-      "encodedBodySize": 4182,
-      "decodedBodySize": 18262,
+      "domContentLoaded": 87,
+      "loadEvent": 1738,
+      "transferSize": 4579,
+      "encodedBodySize": 4279,
+      "decodedBodySize": 18381,
       "protocol": "h2"
     },
     "issues": []
@@ -58,33 +58,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 41,
-    "totalSize": 328111,
+    "totalCount": 46,
+    "totalSize": 328121,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 258.3999999999651
+        "totalDuration": 171.70000000001164
       },
       "script": {
-        "count": 26,
-        "totalSize": 282156,
-        "totalDuration": 1735.4999999998254
+        "count": 29,
+        "totalSize": 282166,
+        "totalDuration": 2661.5999999999767
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6194,
-        "totalDuration": 3982.5999999999767
-      },
-      "iframe": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 290.80000000004657
+        "totalDuration": 4461.199999999895
       },
       "fetch": {
         "count": 2,
         "totalSize": 0,
-        "totalDuration": 121.69999999995343
+        "totalDuration": 60.40000000002328
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 180.29999999998836
+      },
+      "img": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 127.79999999998836
       }
     },
     "largeResources": [],
@@ -96,76 +101,82 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 328111,
+    "firstPartySize": 328121,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 80
+        "duration": 39
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 118
+        "duration": 28
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 284
-      },
-      {
-        "domain": "secure.livechatinc.com",
-        "count": 1,
-        "size": 0,
-        "duration": 291
+        "duration": 1253
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 2,
+        "count": 4,
         "size": 0,
-        "duration": 306
+        "duration": 261
       },
       {
         "domain": "www.clarity.ms",
-        "count": 1,
+        "count": 2,
         "size": 0,
-        "duration": 121
+        "duration": 252
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 122
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 112
+        "duration": 60
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 48
+        "duration": 12
       },
       {
-        "domain": "u.clarity.ms",
+        "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 110
+        "duration": 56
+      },
+      {
+        "domain": "p.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 216
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 180
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 128
       }
     ],
-    "totalDomains": 10
+    "totalDomains": 11
   },
   "domAnalysis": {
-    "totalElements": 74,
+    "totalElements": 80,
     "maxDepth": 6,
-    "maxChildren": 37,
+    "maxChildren": 41,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -587,11 +598,12 @@
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "10 third-party origins without preconnect hints"
+      "11 third-party origins without preconnect hints"
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 429 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -603,16 +615,21 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je6992v9193685493za200zd9193685493&_p=1789305467606&gcd=13l3l3l3l1l1&npa=0&dma=0",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je69e1v9193685493z89230902571za20gzb9230902571zd9230902571&_p=1789564759282&gcd=",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je6992v9193685493za200zd9193685493&_p=1789305467606&gcd=13l3l3l3l1l1&npa=0&dma=0",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je69e1v9193685493z89230902571za20gzb9230902571zd9230902571&_p=1789564759282&gcd=",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipapi.co/json",
+      "status": 429,
+      "resourceType": "xhr"
     }
   ]
 }
