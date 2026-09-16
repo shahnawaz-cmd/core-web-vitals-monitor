@@ -3,7 +3,7 @@
   "label": "GMC – Paint Code",
   "url": "https://gmcwindowsticker.com/paint-code-by-vin-lookup",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-15T13:12:12.437Z",
+  "timestamp": "2026-09-16T13:07:10.285Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,17 +25,17 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 61,
-      "tls": 37,
-      "serverProcessing": 43,
-      "ttfb": 107,
+      "connection": 23,
+      "tls": 13,
+      "serverProcessing": 22,
+      "ttfb": 47,
       "download": 1,
-      "domParsing": 20,
-      "domContentLoaded": 173,
-      "loadEvent": 929,
-      "transferSize": 4645,
-      "encodedBodySize": 4345,
-      "decodedBodySize": 19228,
+      "domParsing": 13,
+      "domContentLoaded": 100,
+      "loadEvent": 502,
+      "transferSize": 4642,
+      "encodedBodySize": 4342,
+      "decodedBodySize": 19355,
       "protocol": "h2"
     },
     "issues": []
@@ -64,32 +64,32 @@
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 275.5999999999767
+        "totalDuration": 263.79999999998836
       },
       "script": {
         "count": 27,
         "totalSize": 282166,
-        "totalDuration": 2436.7999999999884
+        "totalDuration": 1310.2000000002445
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6188,
-        "totalDuration": 5385.200000000012
+        "totalDuration": 4070.3000000000466
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 179.79999999998836
-      },
-      "fetch": {
-        "count": 4,
-        "totalSize": 0,
-        "totalDuration": 122.4999999999709
+        "totalDuration": 137
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 115.10000000000582
+        "totalDuration": 124.79999999998836
+      },
+      "fetch": {
+        "count": 4,
+        "totalSize": 0,
+        "totalDuration": 89.89999999996508
       }
     },
     "largeResources": [],
@@ -108,61 +108,43 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 46
+        "duration": 38
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 95
+        "duration": 19
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 268
+        "duration": 116
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 180
+        "duration": 137
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 3,
         "size": 0,
-        "duration": 155
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 36
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 37
+        "duration": 347
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 62
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 2,
-        "size": 0,
-        "duration": 49
+        "duration": 100
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 209
+        "duration": 23
       },
       {
         "domain": "scripts.clarity.ms",
@@ -174,21 +156,39 @@
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 115
+        "duration": 125
       },
       {
-        "domain": "z.clarity.ms",
+        "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 221
+        "duration": 27
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 26
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 2,
+        "size": 0,
+        "duration": 37
+      },
+      {
+        "domain": "a.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 10
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 75,
+    "totalElements": 76,
     "maxDepth": 6,
-    "maxChildren": 37,
+    "maxChildren": 38,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,7 +614,8 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 429 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -626,25 +627,30 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=1&ae=g&auid=1157221333.1789477929&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+      "url": "https://ipapi.co/json",
+      "status": 429,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=236691426.1789564028&gtm=45He69e1v9230898341za200zd9230898341xea&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1157221333.1789477929&gtm=45He69b1v9230898341za200zd9230898341xea&fmt=8",
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&ae=g&auid=236691426.1789564028&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WF4WJ0DVMB&gtm=45je69b1v9194024527z89230898341za20gzb9230898341zd9230898341&_p=1789477928972&gcd=",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WF4WJ0DVMB&gtm=45je69e1v9194024527z89230898341za20gzb9230898341zd9230898341&_p=1789564027396&gcd=",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WF4WJ0DVMB&gtm=45je69b1v9194024527z89230898341za20gzb9230898341zd9230898341&_p=1789477928972&gcd=",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WF4WJ0DVMB&gtm=45je69e1v9194024527z89230898341za20gzb9230898341zd9230898341&_p=1789564027396&gcd=",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
