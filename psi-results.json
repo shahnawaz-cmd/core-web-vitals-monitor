@@ -1,75 +1,70 @@
 [
   {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Build Sheet",
-    "url": "https://chevroletwindowsticker.com/build-sheet-by-vin",
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – Build Sheet",
+    "url": "https://dodgewindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-09-17T13:01:01.569Z",
-    "performanceScore": 82,
+    "timestamp": "2026-09-17T13:00:42.735Z",
+    "performanceScore": 74,
     "lcp": {
-      "value": 3601.20062740586,
-      "displayValue": "3.6 s",
-      "score": 0.61
+      "value": 4557.393715897366,
+      "displayValue": "4.6 s",
+      "score": 0.36
     },
     "fcp": {
-      "value": 1951.1003137029295,
-      "displayValue": "2.0 s",
-      "score": 0.85
+      "value": 1842.6277847805213,
+      "displayValue": "1.8 s",
+      "score": 0.88
     },
     "cls": {
-      "value": 0.06358678686027257,
-      "displayValue": "0.064",
-      "score": 0.97
+      "value": null,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 297.5,
-      "displayValue": "300 ms",
-      "score": 0.79
+      "value": 285,
+      "displayValue": "290 ms",
+      "score": 0.8
     },
     "si": {
-      "value": 2047.9400607730809,
-      "displayValue": "2.0 s",
-      "score": 0.99
+      "value": 4533.677547667315,
+      "displayValue": "4.5 s",
+      "score": 0.72
     },
     "ttfb": {
-      "value": 3,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 11836.98376340128,
-      "displayValue": "11.8 s",
-      "score": 0.17
+      "value": 10478.033626471824,
+      "displayValue": "10.5 s",
+      "score": 0.24
     },
     "opportunities": [
       {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 283401
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 754,
+        "savingsBytes": 0
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29395
+        "savingsMs": 170,
+        "savingsBytes": 30804
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 90,
+        "savingsBytes": 256577
       }
     ],
     "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 490 ms",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 6 KiB",
-        "score": 0.5
-      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -80,6 +75,64 @@
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – VIN Decoder",
+    "url": "https://dodgewindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-09-17T13:02:40.939Z",
+    "performanceScore": 96,
+    "lcp": {
+      "value": 681.0605426044314,
+      "displayValue": "0.7 s",
+      "score": 0.99
+    },
+    "fcp": {
+      "value": 463.53170304871725,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.000554452165488812,
+      "displayValue": "0.001",
+      "score": 1
+    },
+    "tbt": {
+      "value": 151.49999999999977,
+      "displayValue": "150 ms",
+      "score": 0.89
+    },
+    "si": {
+      "value": 522.2989415941909,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2896.589695317017,
+      "displayValue": "2.9 s",
+      "score": 0.82
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
@@ -89,79 +142,15 @@
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Build Sheet",
-    "url": "https://chevroletwindowsticker.com/build-sheet-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-09-17T13:01:55.942Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 662.1279866134698,
-      "displayValue": "0.7 s",
-      "score": 0.99
-    },
-    "fcp": {
-      "value": 531.4634955555728,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.002956801249215435,
-      "displayValue": "0.003",
-      "score": 1
-    },
-    "tbt": {
-      "value": 2329.499999999999,
-      "displayValue": "2,330 ms",
-      "score": 0
-    },
-    "si": {
-      "value": 1253.6607540672128,
-      "displayValue": "1.3 s",
-      "score": 0.91
-    },
-    "ttfb": {
-      "value": 3,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 5355.386567603848,
-      "displayValue": "5.4 s",
-      "score": 0.35
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "4.4 s",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "6.9 s",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 33 KiB",
         "score": 0
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 40 ms",
+        "displayValue": "Est savings of 170 ms",
         "score": 0
       },
       {
@@ -169,31 +158,25 @@
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 77 KiB",
-        "score": 0.5
       }
     ]
   },
   {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – VIN Decoder",
-    "url": "https://chevroletwindowsticker.com/vin-decoder",
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – Paint Code",
+    "url": "https://dodgewindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-09-17T13:02:34.528Z",
-    "performanceScore": 55,
+    "timestamp": "2026-09-17T13:03:02.234Z",
+    "performanceScore": 66,
     "lcp": {
-      "value": 6117.925006871449,
-      "displayValue": "6.1 s",
-      "score": 0.12
+      "value": 4579.889820324604,
+      "displayValue": "4.6 s",
+      "score": 0.35
     },
     "fcp": {
-      "value": 3020.125555734034,
-      "displayValue": "3.0 s",
-      "score": 0.49
+      "value": 1834.605106580399,
+      "displayValue": "1.8 s",
+      "score": 0.89
     },
     "cls": {
       "value": null,
@@ -201,167 +184,59 @@
       "score": 1
     },
     "tbt": {
-      "value": 493.5000000000009,
-      "displayValue": "490 ms",
-      "score": 0.59
+      "value": 557,
+      "displayValue": "560 ms",
+      "score": 0.53
     },
     "si": {
-      "value": 5882.867985988094,
-      "displayValue": "5.9 s",
-      "score": 0.48
+      "value": 4075.321154637975,
+      "displayValue": "4.1 s",
+      "score": 0.79
     },
     "ttfb": {
-      "value": 33,
-      "displayValue": "Root document took 30 ms",
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 13013.654245524502,
-      "displayValue": "13.0 s",
-      "score": 0.12
+      "value": 10739.954935597401,
+      "displayValue": "10.7 s",
+      "score": 0.22
     },
     "opportunities": [
       {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 330,
-        "savingsBytes": 401734
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 754,
+        "savingsBytes": 0
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 29406
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.2 s",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 20 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.1 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 660 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – VIN Decoder",
-    "url": "https://chevroletwindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-09-17T13:02:55.202Z",
-    "performanceScore": 91,
-    "lcp": {
-      "value": 1267.6618703619104,
-      "displayValue": "1.3 s",
-      "score": 0.88
-    },
-    "fcp": {
-      "value": 462.0042231913635,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.0029925956169418867,
-      "displayValue": "0.003",
-      "score": 1
-    },
-    "tbt": {
-      "value": 193.50000000000023,
-      "displayValue": "190 ms",
-      "score": 0.81
-    },
-    "si": {
-      "value": 462.0042231913635,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2877.0164032003954,
-      "displayValue": "2.9 s",
-      "score": 0.83
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 28844
+        "savingsBytes": 30805
       },
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 395383
+        "savingsMs": 110,
+        "savingsBytes": 257037
       }
     ],
     "diagnostics": [
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.2 s",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 20 ms",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
@@ -373,19 +248,92 @@
     ]
   },
   {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Paint Code",
-    "url": "https://chevroletwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-09-17T13:03:35.509Z",
-    "performanceScore": 68,
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – Paint Code",
+    "url": "https://dodgewindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-09-17T13:03:18.281Z",
+    "performanceScore": 95,
     "lcp": {
-      "value": 4036.757990426564,
-      "displayValue": "4.0 s",
-      "score": 0.49
+      "value": 1058.9910649331603,
+      "displayValue": "1.1 s",
+      "score": 0.93
     },
     "fcp": {
-      "value": 1532.714252914986,
+      "value": 461.2947300995419,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 152,
+      "displayValue": "150 ms",
+      "score": 0.89
+    },
+    "si": {
+      "value": 808.451530294697,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 2,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2359.1081611719956,
+      "displayValue": "2.4 s",
+      "score": 0.91
+    },
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 204,
+        "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 50,
+        "savingsBytes": 250718
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – Options Check",
+    "url": "https://dodgewindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-09-17T13:03:49.061Z",
+    "performanceScore": 80,
+    "lcp": {
+      "value": 3030.1864484490243,
+      "displayValue": "3.0 s",
+      "score": 0.77
+    },
+    "fcp": {
+      "value": 1531.117137816341,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -395,24 +343,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 664,
-      "displayValue": "660 ms",
-      "score": 0.45
+      "value": 510,
+      "displayValue": "510 ms",
+      "score": 0.57
     },
     "si": {
-      "value": 4454.828483506943,
-      "displayValue": "4.5 s",
-      "score": 0.73
+      "value": 3096.2696832406327,
+      "displayValue": "3.1 s",
+      "score": 0.93
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12449.335954439963,
-      "displayValue": "12.4 s",
-      "score": 0.14
+      "value": 10091.128870454031,
+      "displayValue": "10.1 s",
+      "score": 0.26
     },
     "opportunities": [
       {
@@ -420,7 +368,7 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 486078
+        "savingsBytes": 255578
       },
       {
         "id": "unused-css-rules",
@@ -432,18 +380,6 @@
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.6 s",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.2 s",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
@@ -458,19 +394,19 @@
     ]
   },
   {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Paint Code",
-    "url": "https://chevroletwindowsticker.com/paint-code-by-vin-lookup",
+    "site": "DODGEWINDOWSTICKER Window Sticker",
+    "label": "Dodge – Options Check",
+    "url": "https://dodgewindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-09-17T13:04:02.672Z",
-    "performanceScore": 70,
+    "timestamp": "2026-09-17T13:04:48.614Z",
+    "performanceScore": 91,
     "lcp": {
-      "value": 971.1979391825166,
-      "displayValue": "1.0 s",
-      "score": 0.95
+      "value": 938.3806446407934,
+      "displayValue": "0.9 s",
+      "score": 0.96
     },
     "fcp": {
-      "value": 436.6246679379608,
+      "value": 425.251296720131,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -480,157 +416,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 834.6234499528566,
-      "displayValue": "830 ms",
-      "score": 0.09
+      "value": 236.5,
+      "displayValue": "240 ms",
+      "score": 0.72
     },
     "si": {
-      "value": 1342.1005738355004,
-      "displayValue": "1.3 s",
-      "score": 0.89
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2510.944129662611,
-      "displayValue": "2.5 s",
-      "score": 0.89
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.5 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Options Check",
-    "url": "https://chevroletwindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-09-17T13:04:22.088Z",
-    "performanceScore": 78,
-    "lcp": {
-      "value": 3992.1960150126206,
-      "displayValue": "4.0 s",
-      "score": 0.5
-    },
-    "fcp": {
-      "value": 1525.643329836161,
-      "displayValue": "1.5 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 365,
-      "displayValue": "370 ms",
-      "score": 0.71
-    },
-    "si": {
-      "value": 3140.141391851549,
-      "displayValue": "3.1 s",
-      "score": 0.92
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 10919.389292896432,
-      "displayValue": "10.9 s",
-      "score": 0.21
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 368339
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 140,
-        "savingsBytes": 30796
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CHEVROLETWINDOWSTICKER Window Sticker",
-    "label": "Chevrolet – Options Check",
-    "url": "https://chevroletwindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-09-17T13:04:41.610Z",
-    "performanceScore": 70,
-    "lcp": {
-      "value": 1072.998065988999,
-      "displayValue": "1.1 s",
-      "score": 0.93
-    },
-    "fcp": {
-      "value": 448.6004918179149,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 787.4999999999999,
-      "displayValue": "790 ms",
-      "score": 0.1
-    },
-    "si": {
-      "value": 1216.4555604108114,
-      "displayValue": "1.2 s",
-      "score": 0.92
+      "value": 821.5984065485148,
+      "displayValue": "0.8 s",
+      "score": 0.99
     },
     "ttfb": {
       "value": 2,
@@ -638,42 +431,22 @@
       "score": 1
     },
     "interactive": {
-      "value": 2601.472791498736,
-      "displayValue": "2.6 s",
-      "score": 0.87
+      "value": 2391.122772378956,
+      "displayValue": "2.4 s",
+      "score": 0.91
     },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 10,
-        "savingsBytes": 30762
-      }
-    ],
+    "opportunities": [],
     "diagnostics": [
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "displayValue": "Est savings of 44 KiB",
         "score": 0
       }
     ]
