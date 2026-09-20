@@ -3,7 +3,7 @@
   "label": "Ford (by VIN) – Options Check",
   "url": "https://fordwindowstickerbyvin.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-19T12:16:27.719Z",
+  "timestamp": "2026-09-20T12:53:23.334Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,18 +24,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 1,
-      "connection": 9,
-      "tls": 6,
+      "dns": 2,
+      "connection": 13,
+      "tls": 10,
       "serverProcessing": 11,
-      "ttfb": 21,
+      "ttfb": 27,
       "download": 1,
-      "domParsing": 9,
-      "domContentLoaded": 101,
-      "loadEvent": 567,
-      "transferSize": 4456,
-      "encodedBodySize": 4156,
-      "decodedBodySize": 17680,
+      "domParsing": 19,
+      "domContentLoaded": 290,
+      "loadEvent": 639,
+      "transferSize": 4460,
+      "encodedBodySize": 4160,
+      "decodedBodySize": 17807,
       "protocol": "h2"
     },
     "issues": []
@@ -64,27 +64,27 @@
       "link": {
         "count": 3,
         "totalSize": 39761,
-        "totalDuration": 56.799999999959255
+        "totalDuration": 61.70000000001164
       },
       "script": {
         "count": 25,
         "totalSize": 282168,
-        "totalDuration": 871.3999999999651
+        "totalDuration": 1403.1000000002678
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6188,
-        "totalDuration": 4214.299999999988
+        "totalDuration": 3699
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 123.59999999997672
+        "totalDuration": 153
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 74.70000000001164
+        "totalDuration": 70.5
       }
     },
     "largeResources": [],
@@ -103,63 +103,63 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 37
+        "duration": 90
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 40
+        "duration": 18
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 224
+        "duration": 152
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 124
+        "duration": 153
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 69
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 88
+        "duration": 66
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 17
+        "duration": 26
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 75
+        "duration": 71
       },
       {
-        "domain": "u.clarity.ms",
+        "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 70
+        "duration": 19
+      },
+      {
+        "domain": "h.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 56
       }
     ],
     "totalDomains": 9
   },
   "domAnalysis": {
-    "totalElements": 67,
+    "totalElements": 68,
     "maxDepth": 6,
-    "maxChildren": 35,
+    "maxChildren": 36,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -581,7 +581,9 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://fordwindowstickerbyvin.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -591,6 +593,12 @@
       "url": "https://fordwindowstickerbyvin.com/options-check-by-vin",
       "status": 404,
       "resourceType": "document"
+    },
+    {
+      "url": "https://ipapi.co/json",
+      "status": 0,
+      "resourceType": "xhr",
+      "failure": "net::ERR_FAILED"
     }
   ]
 }
