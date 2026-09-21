@@ -3,7 +3,7 @@
   "label": "BMW – Options Check",
   "url": "https://bmwwindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-20T12:46:36.427Z",
+  "timestamp": "2026-09-21T14:41:29.654Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,22 +23,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 25,
+      "redirect": 125,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 10,
-      "ttfb": 36,
-      "download": 6,
-      "domParsing": 149,
-      "domContentLoaded": 196,
-      "loadEvent": 351,
+      "serverProcessing": 45,
+      "ttfb": 171,
+      "download": 3,
+      "domParsing": 82,
+      "domContentLoaded": 289,
+      "loadEvent": 498,
       "transferSize": 16793,
       "encodedBodySize": 16493,
       "decodedBodySize": 100602,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 125ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -138,43 +140,43 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 71,
-    "totalSize": 594948,
+    "totalCount": 72,
+    "totalSize": 594930,
     "byType": {
       "link": {
         "count": 8,
         "totalSize": 70049,
-        "totalDuration": 535.0000000001164
+        "totalDuration": 1023.2000000000116
       },
       "script": {
         "count": 39,
         "totalSize": 374037,
-        "totalDuration": 1899.8000000000466
+        "totalDuration": 4644.799999999872
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 284.0999999999767
+        "totalDuration": 607.5000000000291
       },
       "img": {
         "count": 3,
         "totalSize": 48715,
-        "totalDuration": 254.90000000002328
+        "totalDuration": 474.5
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6190,
-        "totalDuration": 4210.899999999965
+        "totalDuration": 5754.600000000006
       },
       "fetch": {
         "count": 8,
-        "totalSize": 24053,
-        "totalDuration": 254.9999999999418
+        "totalSize": 24035,
+        "totalDuration": 635.7000000000116
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 174.59999999997672
+        "totalDuration": 211.80000000001746
       }
     },
     "largeResources": [],
@@ -215,38 +217,62 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 594948,
+    "firstPartySize": 594930,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 30
+        "duration": 67
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 19
+        "duration": 53
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 205
+        "duration": 284
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 175
+        "duration": 212
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 169
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 48
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 29
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 49
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 29
+        "duration": 146
       },
       {
         "domain": "scripts.clarity.ms",
@@ -258,43 +284,19 @@
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 126
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 147
+        "duration": 159
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 20
+        "duration": 77
       },
       {
-        "domain": "i.clarity.ms",
-        "count": 1,
+        "domain": "e.clarity.ms",
+        "count": 2,
         "size": 0,
-        "duration": 36
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 25
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 26
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 26
+        "duration": 243
       }
     ],
     "totalDomains": 13
@@ -312,22 +314,22 @@
       {
         "url": "...//bmwwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 72
+        "duration": 152
       },
       {
         "url": "...//bmwwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 72
+        "duration": 152
       },
       {
         "url": "...//bmwwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 71
+        "duration": 152
       },
       {
         "url": "...//bmwwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 69
+        "duration": 152
       }
     ],
     "fontFaces": [
@@ -748,34 +750,25 @@
       "13 third-party origins without preconnect hints"
     ]
   },
-  "consoleErrors": [
-    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://bmwwindowsticker.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED"
-  ],
+  "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://ipapi.co/json",
-      "status": 0,
-      "resourceType": "xhr",
-      "failure": "net::ERR_FAILED"
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je69h0h2v9189106543za200zd9189106543xf1&_p=1789908393279&gcd=13l3l3l3l1l1&npa=0&",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je69g1v9189106543za200zd9189106543xf1&_p=1790001685876&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=717491209.1789908394&dt=Check%20BMW%20Options%20by%20VIN%20-%20Find%20Packages%20%26%",
+      "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&ae=g&auid=1803493640.1790001686&dt=Check%20BMW%20Options%20by%20VIN%20-%20Find%20Packages%20%26%",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=717491209.1789908394&gtm=45He69g1v9230719683za200zd9230719683xeaxf1&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1803493640.1790001686&gtm=45He69g1v9230719683za200zd9230719683xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
