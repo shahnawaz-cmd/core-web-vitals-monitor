@@ -3,7 +3,7 @@
   "label": "Mitsubishi – Build Sheet",
   "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-20T13:05:02.961Z",
+  "timestamp": "2026-09-21T15:02:20.728Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,21 +24,25 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 7,
-      "connection": 17,
-      "tls": 13,
-      "serverProcessing": 26,
-      "ttfb": 53,
-      "download": 5,
-      "domParsing": 166,
-      "domContentLoaded": 229,
-      "loadEvent": 484,
-      "transferSize": 16028,
-      "encodedBodySize": 15728,
-      "decodedBodySize": 100645,
+      "dns": 2,
+      "connection": 596,
+      "tls": 310,
+      "serverProcessing": 1542,
+      "ttfb": 2142,
+      "download": 1820,
+      "domParsing": 2,
+      "domContentLoaded": 3995,
+      "loadEvent": 10040,
+      "transferSize": 16077,
+      "encodedBodySize": 15777,
+      "decodedBodySize": 100908,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 1542ms",
+      "TTFB exceeds 800ms threshold: 2142ms",
+      "Slow document download: 1820ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -148,48 +152,48 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 105,
-    "totalSize": 802390,
+    "totalCount": 104,
+    "totalSize": 802311,
     "byType": {
       "link": {
         "count": 5,
         "totalSize": 51917,
-        "totalDuration": 255.69999999995343
+        "totalDuration": 2014.399999999965
       },
       "script": {
-        "count": 44,
+        "count": 45,
         "totalSize": 433782,
-        "totalDuration": 2427.6999999999534
+        "totalDuration": 18712.800000000047
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 101.5
+        "totalDuration": 507.3999999999942
       },
       "img": {
         "count": 4,
         "totalSize": 165561,
-        "totalDuration": 372.3999999999942
+        "totalDuration": 1201.6999999999825
       },
       "xmlhttprequest": {
-        "count": 10,
+        "count": 8,
         "totalSize": 6179,
-        "totalDuration": 6598.600000000006
+        "totalDuration": 5987.600000000035
       },
       "fetch": {
         "count": 37,
-        "totalSize": 73047,
-        "totalDuration": 2164.999999999971
+        "totalSize": 72968,
+        "totalDuration": 3540.499999999942
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 287.20000000001164
+        "totalDuration": 211
       }
     },
     "largeResources": [],
     "issues": [
-      "High request count: 105 resources"
+      "High request count: 104 resources"
     ]
   },
   "imageAudit": {
@@ -227,94 +231,94 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 802390,
+    "firstPartySize": 802311,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 58
+        "duration": 27
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 34
+        "duration": 22
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 367
+        "duration": 386
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 287
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 26
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 22
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 142
+        "duration": 211
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 188
-      },
-      {
-        "domain": "z.clarity.ms",
         "count": 3,
         "size": 0,
-        "duration": 60
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 28
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 38
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 26
+        "duration": 590
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 109
+        "duration": 155
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 33
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 34
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 36
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 102
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 15
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 295
+      },
+      {
+        "domain": "l.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 80
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 512,
+    "totalElements": 514,
     "maxDepth": 18,
-    "maxChildren": 59,
+    "maxChildren": 60,
     "widestElement": "HEAD",
     "deepestElement": "circle",
     "issues": []
@@ -324,22 +328,22 @@
       {
         "url": "...bishiwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 29
+        "duration": 116
       },
       {
         "url": "...bishiwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 19
+        "duration": 133
       },
       {
         "url": "...bishiwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 23
+        "duration": 123
       },
       {
         "url": "...bishiwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 31
+        "duration": 136
       }
     ],
     "fontFaces": [
@@ -766,19 +770,19 @@
   ],
   "failedRequests": [
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WMGL47713R&gtm=45je69g1v9193974242za200zd9193974242xf1&_p=1789909498379&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=482549857.1790002938&dt=Mitsubishi%20Build%20Sheet%20by%20VIN%3A%20Verify%20Trim%20Lev",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=2004234280.1789909499&gtm=45He69g1v9230899693za200zd9230899693xeaxf1&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=482549857.1790002938&gtm=45He69g1v9230899693za200zd9230899693xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=2004234280.1789909499&dt=Mitsubishi%20Build%20Sheet%20by%20VIN%3A%20Verify%20Trim%20L",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-WMGL47713R&gtm=45je69g1v9193974242z89230899693za20gzb9230899693zd9230899693xf1&_p=1790002937254&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
