@@ -3,7 +3,7 @@
   "label": "VIN Check",
   "url": "https://www.detailedvehiclehistory.com/vin-check",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-20T12:45:42.198Z",
+  "timestamp": "2026-09-21T14:40:53.737Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -26,25 +26,20 @@
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 32,
-      "ttfb": 101,
-      "download": 20,
-      "domParsing": 220,
-      "domContentLoaded": 435,
-      "loadEvent": 524,
-      "transferSize": 89054,
-      "encodedBodySize": 88754,
-      "decodedBodySize": 1124192,
-      "protocol": "h2"
+      "serverProcessing": 435,
+      "ttfb": 441,
+      "download": 326,
+      "domParsing": 111,
+      "domContentLoaded": 964,
+      "loadEvent": 966,
+      "transferSize": 89239,
+      "encodedBodySize": 88939,
+      "decodedBodySize": 1124156,
+      "protocol": "h3"
     },
     "issues": []
   },
   "renderBlocking": [
-    {
-      "type": "CSS",
-      "url": "/_next/static/css/c0052ec527bf5b7f.css",
-      "suggestion": "Consider async loading or inlining critical CSS"
-    },
     {
       "type": "JS",
       "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
@@ -52,33 +47,28 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 63,
-    "totalSize": 468053,
+    "totalCount": 51,
+    "totalSize": 900,
     "byType": {
       "link": {
-        "count": 10,
-        "totalSize": 75151,
-        "totalDuration": 765.8999999999651
+        "count": 9,
+        "totalSize": 600,
+        "totalDuration": 543
       },
       "script": {
-        "count": 47,
-        "totalSize": 362949,
-        "totalDuration": 3502.4000000000524
+        "count": 37,
+        "totalSize": 0,
+        "totalDuration": 101.5
       },
       "img": {
         "count": 4,
-        "totalSize": 27281,
-        "totalDuration": 340.70000000001164
+        "totalSize": 0,
+        "totalDuration": 0
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 23.79999999998836
-      },
-      "fetch": {
-        "count": 1,
-        "totalSize": 2372,
-        "totalDuration": 970
+        "totalDuration": 112.79999999998836
       }
     },
     "largeResources": [],
@@ -220,26 +210,26 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 468053,
+    "firstPartySize": 900,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 96
+        "duration": 64
       }
     ],
     "totalDomains": 1
   },
   "domAnalysis": {
-    "totalElements": 2876,
+    "totalElements": 2871,
     "maxDepth": 17,
     "maxChildren": 133,
     "widestElement": "BODY",
     "deepestElement": "SPAN",
     "issues": [
-      "Large DOM: 2876 elements (recommended < 1500)",
+      "Large DOM: 2871 elements (recommended < 1500)",
       "Wide node: BODY has 133 children (recommended < 60)"
     ]
   },
@@ -247,8 +237,8 @@
     "fonts": [
       {
         "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
-        "size": 48736,
-        "duration": 35
+        "size": 0,
+        "duration": 0
       }
     ],
     "fontFaces": [
@@ -307,7 +297,7 @@
         "as": "image"
       },
       {
-        "href": "/_next/static/chunks/webpack-b2129af27b30bbf5.js",
+        "href": "/_next/static/chunks/webpack-55b0c62247cb566b.js",
         "as": "script"
       },
       {
@@ -329,19 +319,33 @@
       {
         "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
         "as": "script"
-      },
-      {
-        "href": "/_next/static/css/c0052ec527bf5b7f.css",
-        "as": "style"
       }
     ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": []
   },
-  "consoleErrors": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Refused to execute script from 'https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Refused to execute script from 'https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+  ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
-  "failedRequests": []
+  "failedRequests": [
+    {
+      "url": "https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js",
+      "status": 0,
+      "resourceType": "script",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js",
+      "status": 0,
+      "resourceType": "script",
+      "failure": "net::ERR_ABORTED"
+    }
+  ]
 }
