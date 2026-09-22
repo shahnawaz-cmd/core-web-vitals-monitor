@@ -3,7 +3,7 @@
   "label": "Homepage",
   "url": "https://www.detailedvehiclehistory.com",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-21T14:40:48.869Z",
+  "timestamp": "2026-09-22T12:55:51.427Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -26,20 +26,25 @@
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 64,
-      "ttfb": 71,
-      "download": 33,
-      "domParsing": 405,
-      "domContentLoaded": 525,
-      "loadEvent": 526,
-      "transferSize": 91161,
-      "encodedBodySize": 90861,
-      "decodedBodySize": 1017160,
-      "protocol": "h3"
+      "serverProcessing": 48,
+      "ttfb": 132,
+      "download": 21,
+      "domParsing": 270,
+      "domContentLoaded": 751,
+      "loadEvent": 752,
+      "transferSize": 90714,
+      "encodedBodySize": 90414,
+      "decodedBodySize": 1015507,
+      "protocol": "h2"
     },
     "issues": []
   },
   "renderBlocking": [
+    {
+      "type": "CSS",
+      "url": "/_next/static/css/c0052ec527bf5b7f.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
     {
       "type": "JS",
       "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
@@ -47,31 +52,43 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 56,
-    "totalSize": 900,
+    "totalCount": 68,
+    "totalSize": 662227,
     "byType": {
       "link": {
-        "count": 11,
-        "totalSize": 600,
-        "totalDuration": 396.8999999999942
+        "count": 12,
+        "totalSize": 89669,
+        "totalDuration": 1541.4000000000524
       },
       "script": {
-        "count": 37,
-        "totalSize": 0,
-        "totalDuration": 231.9999999999709
+        "count": 47,
+        "totalSize": 362953,
+        "totalDuration": 5627.500000000087
       },
       "img": {
         "count": 7,
-        "totalSize": 0,
-        "totalDuration": 0
+        "totalSize": 206933,
+        "totalDuration": 773.8000000000466
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 20.800000000017462
+        "totalDuration": 28.39999999999418
+      },
+      "fetch": {
+        "count": 1,
+        "totalSize": 2372,
+        "totalDuration": 1189.2999999999884
       }
     },
-    "largeResources": [],
+    "largeResources": [
+      {
+        "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
+        "type": "img",
+        "size": 102925,
+        "duration": 149
+      }
+    ],
     "issues": []
   },
   "imageAudit": {
@@ -266,35 +283,35 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 900,
+    "firstPartySize": 662227,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 55
+        "duration": 100
       }
     ],
     "totalDomains": 1
   },
   "domAnalysis": {
-    "totalElements": 2565,
+    "totalElements": 2566,
     "maxDepth": 18,
-    "maxChildren": 117,
+    "maxChildren": 113,
     "widestElement": "BODY",
     "deepestElement": "SPAN",
     "issues": [
-      "Large DOM: 2565 elements (recommended < 1500)",
-      "Wide node: BODY has 117 children (recommended < 60)"
+      "Large DOM: 2566 elements (recommended < 1500)",
+      "Wide node: BODY has 113 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
     "fonts": [
       {
         "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
-        "size": 0,
-        "duration": 0
+        "size": 48736,
+        "duration": 50
       }
     ],
     "fontFaces": [
@@ -353,7 +370,7 @@
         "as": "image"
       },
       {
-        "href": "/_next/static/chunks/webpack-55b0c62247cb566b.js",
+        "href": "/_next/static/chunks/webpack-9657f5d70d29c41b.js",
         "as": "script"
       },
       {
@@ -383,33 +400,19 @@
       {
         "href": "/_next/static/chunks/2152.655e89fa1bd52077.js",
         "as": "script"
+      },
+      {
+        "href": "/_next/static/css/c0052ec527bf5b7f.css",
+        "as": "style"
       }
     ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": []
   },
-  "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Refused to execute script from 'https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Refused to execute script from 'https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
-  ],
+  "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
-  "failedRequests": [
-    {
-      "url": "https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js",
-      "status": 0,
-      "resourceType": "script",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://detailedvehiclehistory.com/_next/static/chunks/app/(public)/%5B...slug%5D/page-e6eab5afe1986c95.js",
-      "status": 0,
-      "resourceType": "script",
-      "failure": "net::ERR_ABORTED"
-    }
-  ]
+  "failedRequests": []
 }
