@@ -3,7 +3,7 @@
   "label": "Hyundai – Options Check",
   "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-20T12:59:28.109Z",
+  "timestamp": "2026-09-23T13:22:21.938Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,17 +25,17 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 8,
-      "tls": 6,
-      "serverProcessing": 10,
-      "ttfb": 20,
+      "connection": 15,
+      "tls": 9,
+      "serverProcessing": 19,
+      "ttfb": 37,
       "download": 1,
-      "domParsing": 15,
-      "domContentLoaded": 96,
-      "loadEvent": 942,
-      "transferSize": 4662,
-      "encodedBodySize": 4362,
-      "decodedBodySize": 19560,
+      "domParsing": 12,
+      "domContentLoaded": 141,
+      "loadEvent": 677,
+      "transferSize": 4651,
+      "encodedBodySize": 4351,
+      "decodedBodySize": 19363,
       "protocol": "h2"
     },
     "issues": []
@@ -58,38 +58,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 42,
-    "totalSize": 328122,
+    "totalCount": 40,
+    "totalSize": 327202,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 151.90000000002328
+        "totalDuration": 186.4999999999418
       },
       "script": {
-        "count": 26,
-        "totalSize": 282171,
-        "totalDuration": 1284.2999999999884
+        "count": 25,
+        "totalSize": 281251,
+        "totalDuration": 1388.4999999997672
       },
       "xmlhttprequest": {
-        "count": 9,
+        "count": 8,
         "totalSize": 6190,
-        "totalDuration": 4173.20000000007
+        "totalDuration": 4597.500000000058
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 159.90000000002328
-      },
-      "fetch": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 21.899999999965075
+        "totalDuration": 151
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 78.29999999998836
+        "totalDuration": 75.90000000002328
+      },
+      "fetch": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 34.70000000001164
       }
     },
     "largeResources": [],
@@ -101,82 +101,82 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 328122,
+    "firstPartySize": 327202,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 47
+        "duration": 49
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 151
+        "duration": 41
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 409
+        "duration": 246
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 160
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 115
+        "duration": 151
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 25
+        "duration": 18
       },
       {
-        "domain": "www.google-analytics.com",
-        "count": 1,
+        "domain": "www.googletagmanager.com",
+        "count": 2,
         "size": 0,
-        "duration": 22
+        "duration": 133
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 11
+        "duration": 260
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 78
+        "duration": 76
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 95
+        "duration": 105
       },
       {
-        "domain": "f.clarity.ms",
-        "count": 2,
+        "domain": "www.google-analytics.com",
+        "count": 1,
         "size": 0,
-        "duration": 27
+        "duration": 35
+      },
+      {
+        "domain": "t.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 97
       }
     ],
     "totalDomains": 11
   },
   "domAnalysis": {
-    "totalElements": 75,
+    "totalElements": 73,
     "maxDepth": 6,
-    "maxChildren": 37,
+    "maxChildren": 35,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -602,7 +602,8 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 429 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -620,7 +621,12 @@
       "failure": "net::ERR_BLOCKED_BY_ORB"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je69g1v9193688199za200zd9193688199xf1&_p=1789909165086&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://ipapi.co/json",
+      "status": 429,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je69m0h2v9193688199za200zd9193688199xf1&_p=1790169738820&gcd=13l3l3l3l1l1&npa=0&",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
