@@ -3,7 +3,7 @@
   "label": "VIN Check",
   "url": "https://vehiclehistory.eu/vin-check",
   "browser": "mobile-chrome",
-  "timestamp": "2026-09-23T13:07:14.118Z",
+  "timestamp": "2026-09-24T12:59:36.184Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -21,18 +21,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 1,
-      "connection": 15,
-      "tls": 12,
-      "serverProcessing": 12,
-      "ttfb": 29,
-      "download": 8,
-      "domParsing": 193,
-      "domContentLoaded": 350,
-      "loadEvent": 480,
-      "transferSize": 54762,
-      "encodedBodySize": 54462,
-      "decodedBodySize": 504542,
+      "dns": 2,
+      "connection": 27,
+      "tls": 17,
+      "serverProcessing": 30,
+      "ttfb": 60,
+      "download": 4,
+      "domParsing": 128,
+      "domContentLoaded": 287,
+      "loadEvent": 287,
+      "transferSize": 54964,
+      "encodedBodySize": 54664,
+      "decodedBodySize": 503818,
       "protocol": "h2"
     },
     "issues": []
@@ -50,38 +50,43 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/82c2919e225a1158.js",
+      "url": "/_next/static/chunks/8a11d6e7b67756a6.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/fe30ba54890f457e.js",
       "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 24,
-    "totalSize": 222433,
+    "totalCount": 27,
+    "totalSize": 256882,
     "byType": {
       "link": {
         "count": 4,
-        "totalSize": 28286,
-        "totalDuration": 128.10000000000582
+        "totalSize": 28249,
+        "totalDuration": 196.60000000009313
       },
       "script": {
-        "count": 16,
-        "totalSize": 168231,
-        "totalDuration": 855.2999999999593
+        "count": 15,
+        "totalSize": 174464,
+        "totalDuration": 675.3000000002212
       },
       "css": {
         "count": 1,
         "totalSize": 23408,
-        "totalDuration": 66.5
+        "totalDuration": 62.59999999997672
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 11.39999999999418
+        "totalDuration": 17.300000000046566
       },
       "fetch": {
-        "count": 2,
-        "totalSize": 2208,
-        "totalDuration": 195.60000000000582
+        "count": 6,
+        "totalSize": 30461,
+        "totalDuration": 633.9000000000233
       }
     },
     "largeResources": [],
@@ -108,32 +113,32 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 222433,
+    "firstPartySize": 256882,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 38
+        "duration": 88
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 42
+        "duration": 83
       }
     ],
     "totalDomains": 2
   },
   "domAnalysis": {
-    "totalElements": 1351,
+    "totalElements": 1353,
     "maxDepth": 16,
-    "maxChildren": 81,
+    "maxChildren": 84,
     "widestElement": "BODY",
     "deepestElement": "A",
     "issues": [
-      "Wide node: BODY has 81 children (recommended < 60)"
+      "Wide node: BODY has 84 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -141,12 +146,12 @@
       {
         "url": "https://vehiclehistory.eu/_next/static/media/f7aa21714c1c53f8-s.p.e3544bb0.woff2",
         "size": 20484,
-        "duration": 24
+        "duration": 42
       },
       {
         "url": "https://vehiclehistory.eu/_next/static/media/797e433ab948586e-s.29207c2f.woff2",
         "size": 23408,
-        "duration": 67
+        "duration": 63
       }
     ],
     "fontFaces": [
@@ -201,16 +206,16 @@
   "preloadCheck": {
     "preloads": [
       {
-        "href": "/_next/static/chunks/06a4d47cd8b02e7c.js",
-        "as": "script"
-      },
-      {
         "href": "/_next/static/media/f7aa21714c1c53f8-s.p.e3544bb0.woff2",
         "as": "font"
       },
       {
         "href": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/logo.sv",
         "as": "image"
+      },
+      {
+        "href": "/_next/static/chunks/b84fc83e084547a7.js",
+        "as": "script"
       }
     ],
     "preconnects": [],
@@ -221,5 +226,18 @@
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
-  "failedRequests": []
+  "failedRequests": [
+    {
+      "url": "https://vehiclehistory.eu/?_rsc=1fmwp",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://vehiclehistory.eu/?_rsc=ppnmh",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    }
+  ]
 }
