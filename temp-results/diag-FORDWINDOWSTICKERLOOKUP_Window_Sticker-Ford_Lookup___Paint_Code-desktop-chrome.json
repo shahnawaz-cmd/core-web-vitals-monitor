@@ -3,7 +3,7 @@
   "label": "Ford Lookup – Paint Code",
   "url": "https://fordwindowstickerlookup.com/paint-code-by-vin-lookup",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-25T13:14:24.266Z",
+  "timestamp": "2026-09-26T12:41:30.858Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,28 +16,41 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 67,
-      "tls": 36,
+      "connection": 10,
+      "tls": 7,
       "serverProcessing": 38,
-      "ttfb": 107,
+      "ttfb": 50,
       "download": 1,
-      "domParsing": 21,
-      "domContentLoaded": 186,
-      "loadEvent": 252,
-      "transferSize": 4420,
-      "encodedBodySize": 4120,
-      "decodedBodySize": 17984,
+      "domParsing": 13,
+      "domContentLoaded": 156,
+      "loadEvent": 647,
+      "transferSize": 4504,
+      "encodedBodySize": 4204,
+      "decodedBodySize": 18230,
       "protocol": "h2"
     },
     "issues": []
   },
   "renderBlocking": [
+    {
+      "type": "CSS",
+      "url": "/_next/static/chunks/0uri4l3yk.eh2.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
+      "url": "/_next/static/chunks/0jr9ko5e-4m1j.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
     {
       "type": "JS",
       "url": "/_next/static/chunks/03~yq9q893hmn.js",
@@ -45,23 +58,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 21,
-    "totalSize": 318047,
+    "totalCount": 44,
+    "totalSize": 328143,
     "byType": {
       "link": {
-        "count": 3,
+        "count": 4,
         "totalSize": 39761,
-        "totalDuration": 152.19999999995343
+        "totalDuration": 134.29999999998836
       },
       "script": {
-        "count": 17,
-        "totalSize": 277986,
-        "totalDuration": 1724.9999999999418
+        "count": 26,
+        "totalSize": 282168,
+        "totalDuration": 950.399999999936
       },
       "xmlhttprequest": {
+        "count": 8,
+        "totalSize": 6214,
+        "totalDuration": 3445.100000000006
+      },
+      "iframe": {
         "count": 1,
-        "totalSize": 300,
-        "totalDuration": 33.20000000001164
+        "totalSize": 0,
+        "totalDuration": 138
+      },
+      "img": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 117.5
+      },
+      "fetch": {
+        "count": 4,
+        "totalSize": 0,
+        "totalDuration": 90.39999999999418
       }
     },
     "largeResources": [],
@@ -73,59 +101,520 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 318047,
+    "firstPartySize": 328143,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 63
+        "duration": 42
+      },
+      {
+        "domain": "cdn.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 21
+      },
+      {
+        "domain": "api.livechatinc.com",
+        "count": 4,
+        "size": 0,
+        "duration": 195
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 138
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 176
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 25
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 19
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 118
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 2,
+        "size": 0,
+        "duration": 36
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 92
+      },
+      {
+        "domain": "j.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 31
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 28
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 27
       }
     ],
-    "totalDomains": 1
+    "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 40,
-    "maxDepth": 2,
-    "maxChildren": 25,
+    "totalElements": 74,
+    "maxDepth": 6,
+    "maxChildren": 37,
     "widestElement": "HEAD",
-    "deepestElement": "META",
+    "deepestElement": "H2",
     "issues": []
   },
   "fontAnalysis": {
     "fonts": [],
-    "fontFaces": [],
-    "issues": []
+    "fontFaces": [
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fira Sans Fallback\"",
+        "display": "auto"
+      }
+    ],
+    "issues": [
+      "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+    ]
   },
   "securityCheck": {
-    "issues": [
-      "Missing lang attribute on <html>"
-    ]
+    "issues": []
   },
   "preloadCheck": {
     "preloads": [
       {
-        "href": "/_next/static/chunks/0gvzwn87c-85b.js",
+        "href": "https://www.googletagmanager.com/gtag/js?id=G-5LXK9N58PH",
         "as": "script"
-      },
-      {
-        "href": "/_next/static/chunks/0uri4l3yk.eh2.css",
-        "as": "style"
-      },
-      {
-        "href": "/_next/static/chunks/0jr9ko5e-4m1j.css",
-        "as": "style"
       }
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "13 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Refused to execute script from 'https://fordwindowstickerlookup.com/_next/static/chunks/turbopack-186..yd3~gy22.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+    "Failed to load resource: the server responded with a status of 404 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -137,9 +626,27 @@
       "resourceType": "document"
     },
     {
-      "url": "https://fordwindowstickerlookup.com/_next/static/chunks/turbopack-186..yd3~gy22.js",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je69n1v9190396452za200zd9190396452xf1&_p=1790426487835&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
-      "resourceType": "script",
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5LXK9N58PH&gtm=45je69n1v9190396452za200zd9190396452xf1&_p=1790426487835&gcd=13l3l3l3l1l1&npa=0&dm",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1710608078.1790426488&gtm=45He69n1v9230124253za200zd9230124253xeaxf1&fmt=8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1710608078.1790426488&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+      "status": 0,
+      "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     }
   ]
