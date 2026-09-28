@@ -4,16 +4,16 @@
     "label": "Lincoln – Build Sheet",
     "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-09-27T13:42:39.444Z",
-    "performanceScore": 37,
+    "timestamp": "2026-09-28T16:30:17.604Z",
+    "performanceScore": 62,
     "lcp": {
-      "value": 9434.907008328104,
-      "displayValue": "9.4 s",
-      "score": 0
+      "value": 8852.258832027443,
+      "displayValue": "8.9 s",
+      "score": 0.01
     },
     "fcp": {
-      "value": 1568.6854087665427,
-      "displayValue": "1.6 s",
+      "value": 1532.5582493958452,
+      "displayValue": "1.5 s",
       "score": 0.95
     },
     "cls": {
@@ -22,14 +22,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 3556.8945496489923,
-      "displayValue": "3,560 ms",
-      "score": 0.01
+      "value": 396.5574050827263,
+      "displayValue": "400 ms",
+      "score": 0.68
     },
     "si": {
-      "value": 8144.853940924601,
-      "displayValue": "8.1 s",
-      "score": 0.2
+      "value": 4615.251053910889,
+      "displayValue": "4.6 s",
+      "score": 0.7
     },
     "ttfb": {
       "value": 1,
@@ -37,9 +37,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 17157.679796699707,
-      "displayValue": "17.2 s",
-      "score": 0.04
+      "value": 15661.382835166762,
+      "displayValue": "15.7 s",
+      "score": 0.06
     },
     "opportunities": [
       {
@@ -47,20 +47,21 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 370544
+        "savingsBytes": 370362
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 130,
+        "savingsBytes": 29965
       }
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "5.6 s",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "7.7 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
         "score": 0
       },
       {
@@ -68,29 +69,198 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
+      }
+    ]
+  },
+  {
+    "site": "LINCOLNWINDOWSTICKER Window Sticker",
+    "label": "Lincoln – VIN Decoder",
+    "url": "https://lincolnwindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-09-28T16:31:40.507Z",
+    "performanceScore": 71,
+    "lcp": {
+      "value": 7280.069541610195,
+      "displayValue": "7.3 s",
+      "score": 0.05
+    },
+    "fcp": {
+      "value": 1205.0089731109929,
+      "displayValue": "1.2 s",
+      "score": 0.99
+    },
+    "cls": {
+      "value": 0.0674474592784763,
+      "displayValue": "0.067",
+      "score": 0.96
+    },
+    "tbt": {
+      "value": 217.9999999999991,
+      "displayValue": "220 ms",
+      "score": 0.88
+    },
+    "si": {
+      "value": 2850.8711323830557,
+      "displayValue": "2.9 s",
+      "score": 0.95
+    },
+    "ttfb": {
+      "value": 88,
+      "displayValue": "Root document took 90 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 16052.411243140972,
+      "displayValue": "16.1 s",
+      "score": 0.06
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 286184
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 28466
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "4.5 s",
+        "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "displayValue": "Est savings of 41 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 650 ms",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "6.1 s",
         "score": 0
       }
     ]
   },
   {
     "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – Build Sheet",
-    "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
+    "label": "Lincoln – VIN Decoder",
+    "url": "https://lincolnwindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-09-27T13:42:53.598Z",
-    "performanceScore": 94,
+    "timestamp": "2026-09-28T16:31:57.373Z",
+    "performanceScore": 96,
     "lcp": {
-      "value": 1635.8880079036317,
-      "displayValue": "1.6 s",
-      "score": 0.76
+      "value": 1401.144330862699,
+      "displayValue": "1.4 s",
+      "score": 0.84
     },
     "fcp": {
-      "value": 408.1275086834025,
+      "value": 457.9109260138197,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0002339145157723298,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 46.5,
+      "displayValue": "50 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 817.9432122402151,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 3,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3443.5200172430204,
+      "displayValue": "3.4 s",
+      "score": 0.71
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 279501
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 27821
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "LINCOLNWINDOWSTICKER Window Sticker",
+    "label": "Lincoln – Paint Code",
+    "url": "https://lincolnwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-09-28T16:33:16.561Z",
+    "performanceScore": 96,
+    "lcp": {
+      "value": 1186.2777041346794,
+      "displayValue": "1.2 s",
+      "score": 0.9
+    },
+    "fcp": {
+      "value": 429.04031536326215,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -100,14 +270,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 74,
-      "displayValue": "70 ms",
-      "score": 0.99
+      "value": 112.5,
+      "displayValue": "110 ms",
+      "score": 0.95
     },
     "si": {
-      "value": 640.3100607566614,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 1101.5720967178029,
+      "displayValue": "1.1 s",
+      "score": 0.95
     },
     "ttfb": {
       "value": 1,
@@ -115,9 +285,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 3014.1630969065945,
-      "displayValue": "3.0 s",
-      "score": 0.8
+      "value": 3457.6325757802488,
+      "displayValue": "3.5 s",
+      "score": 0.71
     },
     "opportunities": [],
     "diagnostics": [
@@ -137,360 +307,35 @@
   },
   {
     "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – VIN Decoder",
-    "url": "https://lincolnwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-09-27T13:43:26.175Z",
-    "performanceScore": 36,
-    "lcp": {
-      "value": 10253.205570216996,
-      "displayValue": "10.3 s",
-      "score": 0
-    },
-    "fcp": {
-      "value": 2170.0434710520185,
-      "displayValue": "2.2 s",
-      "score": 0.79
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 2448.999999999998,
-      "displayValue": "2,450 ms",
-      "score": 0.05
-    },
-    "si": {
-      "value": 8209.081616466123,
-      "displayValue": "8.2 s",
-      "score": 0.2
-    },
-    "ttfb": {
-      "value": 3,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 16889.520720483564,
-      "displayValue": "16.9 s",
-      "score": 0.05
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 285561
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "6.2 s",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "4.4 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – VIN Decoder",
-    "url": "https://lincolnwindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-09-27T13:44:15.741Z",
-    "performanceScore": 59,
-    "lcp": {
-      "value": 1590.0867605137078,
-      "displayValue": "1.6 s",
-      "score": 0.77
-    },
-    "fcp": {
-      "value": 666.9681669509737,
-      "displayValue": "0.7 s",
-      "score": 0.98
-    },
-    "cls": {
-      "value": 0.0002339145157723298,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 3670.000000000001,
-      "displayValue": "3,670 ms",
-      "score": 0
-    },
-    "si": {
-      "value": 2236.2412935923667,
-      "displayValue": "2.2 s",
-      "score": 0.52
-    },
-    "ttfb": {
-      "value": 5,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 8603.260845064215,
-      "displayValue": "8.6 s",
-      "score": 0.08
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 50,
-        "savingsBytes": 402234
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "10.4 s",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "6.5 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – Paint Code",
-    "url": "https://lincolnwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-09-27T13:44:29.919Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 8818.966980445592,
-      "displayValue": "8.8 s",
-      "score": 0.01
-    },
-    "fcp": {
-      "value": 1536.3955356386377,
-      "displayValue": "1.5 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 140.5,
-      "displayValue": "140 ms",
-      "score": 0.95
-    },
-    "si": {
-      "value": 5570.731838185918,
-      "displayValue": "5.6 s",
-      "score": 0.53
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 15507.158838697947,
-      "displayValue": "15.5 s",
-      "score": 0.07
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29969
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 370633
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – Options Check",
-    "url": "https://lincolnwindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-09-27T13:45:47.206Z",
-    "performanceScore": 69,
-    "lcp": {
-      "value": 8843.474119843959,
-      "displayValue": "8.8 s",
-      "score": 0.01
-    },
-    "fcp": {
-      "value": 1507.3965277879538,
-      "displayValue": "1.5 s",
-      "score": 0.96
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 134,
-      "displayValue": "130 ms",
-      "score": 0.96
-    },
-    "si": {
-      "value": 5686.500005548663,
-      "displayValue": "5.7 s",
-      "score": 0.51
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 15176.687160397949,
-      "displayValue": "15.2 s",
-      "score": 0.07
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 258103
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 150,
-        "savingsBytes": 29969
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "LINCOLNWINDOWSTICKER Window Sticker",
     "label": "Lincoln – Options Check",
     "url": "https://lincolnwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-09-27T13:46:04.170Z",
-    "performanceScore": 90,
+    "timestamp": "2026-09-28T16:34:36.183Z",
+    "performanceScore": 89,
     "lcp": {
-      "value": 1403.7814819556957,
+      "value": 1390.7762183912105,
       "displayValue": "1.4 s",
-      "score": 0.83
+      "score": 0.84
     },
     "fcp": {
-      "value": 420.86443786669304,
+      "value": 423.7219159483519,
       "displayValue": "0.4 s",
       "score": 1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
+      "value": 0.1063579301287103,
+      "displayValue": "0.106",
+      "score": 0.88
     },
     "tbt": {
-      "value": 195.5,
-      "displayValue": "200 ms",
-      "score": 0.81
+      "value": 157.5,
+      "displayValue": "160 ms",
+      "score": 0.88
     },
     "si": {
-      "value": 877.3312002138283,
-      "displayValue": "0.9 s",
-      "score": 0.99
+      "value": 1098.0938544994399,
+      "displayValue": "1.1 s",
+      "score": 0.95
     },
     "ttfb": {
       "value": 1,
@@ -498,38 +343,44 @@
       "score": 1
     },
     "interactive": {
-      "value": 3196.211057111895,
-      "displayValue": "3.2 s",
-      "score": 0.76
+      "value": 2981.1013882086972,
+      "displayValue": "3.0 s",
+      "score": 0.81
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 365399
+        "savingsMs": 30,
+        "savingsBytes": 366026
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
+        "savingsMs": 20,
         "savingsBytes": 29942
       }
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
+      },
+      {
+        "id": "layout-shifts",
+        "title": "Avoid large layout shifts",
+        "displayValue": "2 layout shifts found",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
       }
     ]
   }
