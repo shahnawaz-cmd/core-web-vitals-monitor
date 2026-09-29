@@ -4,7 +4,7 @@
     "label": "Mini‑Cooper – Build Sheet",
     "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-09-28T16:32:14.392Z",
+    "timestamp": "2026-09-29T14:46:28.236Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -26,20 +26,23 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 152,
-        "tls": 72,
-        "serverProcessing": 166,
-        "ttfb": 323,
-        "download": 1,
-        "domParsing": 32,
-        "domContentLoaded": 536,
-        "loadEvent": 1143,
-        "transferSize": 4419,
-        "encodedBodySize": 4119,
-        "decodedBodySize": 17360,
+        "connection": 135,
+        "tls": 71,
+        "serverProcessing": 1237,
+        "ttfb": 1377,
+        "download": 2,
+        "domParsing": 20,
+        "domContentLoaded": 1454,
+        "loadEvent": 2309,
+        "transferSize": 4412,
+        "encodedBodySize": 4112,
+        "decodedBodySize": 17487,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Slow server response: 1237ms",
+        "TTFB exceeds 800ms threshold: 1377ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -65,32 +68,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 426.4999999999709
+          "totalDuration": 441.29999999998836
         },
         "script": {
           "count": 25,
           "totalSize": 281251,
-          "totalDuration": 3838.1999999999825
+          "totalDuration": 4087.399999999965
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6220,
-          "totalDuration": 17735.900000000023
+          "totalDuration": 5675.399999999994
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 227.29999999998836
-        },
-        "fetch": {
-          "count": 4,
-          "totalSize": 0,
-          "totalDuration": 150.30000000001746
+          "totalDuration": 215.79999999998836
         },
         "img": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 187.89999999999418
+          "totalDuration": 185.80000000001746
+        },
+        "fetch": {
+          "count": 4,
+          "totalSize": 0,
+          "totalDuration": 142.89999999999418
         }
       },
       "largeResources": [],
@@ -109,7 +112,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 166
+          "duration": 61
         },
         {
           "domain": "cdn.livechatinc.com",
@@ -121,47 +124,29 @@
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 147
+          "duration": 283
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 227
+          "duration": 216
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 149
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 3,
-          "size": 0,
-          "duration": 206
+          "duration": 140
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 640
-        },
-        {
-          "domain": "www.google.com",
-          "count": 1,
-          "size": 0,
-          "duration": 29
-        },
-        {
-          "domain": "ad.doubleclick.net",
-          "count": 1,
-          "size": 0,
-          "duration": 55
+          "duration": 181
         },
         {
           "domain": "scripts.clarity.ms",
-          "count": 1,
+          "count": 2,
           "size": 0,
           "duration": 14
         },
@@ -169,27 +154,45 @@
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 188
+          "duration": 186
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 168
         },
         {
           "domain": "www.google-analytics.com",
           "count": 2,
           "size": 0,
-          "duration": 66
+          "duration": 73
         },
         {
-          "domain": "i.clarity.ms",
+          "domain": "u.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 156
+          "duration": 148
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 22
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 47
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 72,
+      "totalElements": 73,
       "maxDepth": 6,
-      "maxChildren": 35,
+      "maxChildren": 36,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -627,25 +630,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=1496682078.1790613131&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693185228&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1496682078.1790613131&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693185228&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613130957&g",
+        "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&auid=1651739008.1790693185&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613130957&g",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1651739008.1790693185&gtm=45He69s0h2v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -657,7 +660,7 @@
     "label": "Mini‑Cooper – Build Sheet",
     "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-09-28T16:32:12.773Z",
+    "timestamp": "2026-09-29T14:46:27.184Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -679,670 +682,17 @@
       "breakdown": {
         "redirect": 0,
         "dns": 3,
-        "connection": 106,
-        "tls": 58,
-        "serverProcessing": 175,
-        "ttfb": 286,
-        "download": 1,
-        "domParsing": 17,
-        "domContentLoaded": 452,
-        "loadEvent": 1138,
-        "transferSize": 4419,
-        "encodedBodySize": 4119,
-        "decodedBodySize": 17360,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/0uri4l3yk.eh2.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/0jr9ko5e-4m1j.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/03~yq9q893hmn.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 43,
-      "totalSize": 327232,
-      "byType": {
-        "link": {
-          "count": 4,
-          "totalSize": 39761,
-          "totalDuration": 356.79999999995925
-        },
-        "script": {
-          "count": 24,
-          "totalSize": 281251,
-          "totalDuration": 3326.0999999999767
-        },
-        "xmlhttprequest": {
-          "count": 9,
-          "totalSize": 6220,
-          "totalDuration": 11524.000000000058
-        },
-        "iframe": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 208.79999999998836
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 179.79999999998836
-        },
-        "fetch": {
-          "count": 4,
-          "totalSize": 0,
-          "totalDuration": 143.70000000001164
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 0,
-      "issueCount": 0,
-      "images": []
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 327232,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 144
-        },
-        {
-          "domain": "cdn.livechatinc.com",
-          "count": 1,
-          "size": 0,
-          "duration": 55
-        },
-        {
-          "domain": "api.livechatinc.com",
-          "count": 4,
-          "size": 0,
-          "duration": 159
-        },
-        {
-          "domain": "secure.livechatinc.com",
-          "count": 1,
-          "size": 0,
-          "duration": 209
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 670
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 155
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 17
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 180
-        },
-        {
-          "domain": "a.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 213
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 174
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 75
-        },
-        {
-          "domain": "www.google.com",
-          "count": 1,
-          "size": 0,
-          "duration": 23
-        },
-        {
-          "domain": "ad.doubleclick.net",
-          "count": 1,
-          "size": 0,
-          "duration": 46
-        }
-      ],
-      "totalDomains": 13
-    },
-    "domAnalysis": {
-      "totalElements": 71,
-      "maxDepth": 6,
-      "maxChildren": 34,
-      "widestElement": "HEAD",
-      "deepestElement": "H2",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [],
-      "fontFaces": [
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [
-        {
-          "href": "https://www.googletagmanager.com/gtag/js?id=G-TTTNVFP93F",
-          "as": "script"
-        }
-      ],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "13 third-party origins without preconnect hints"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613129869&gcd=13l3l3l3l1l1&npa=0&dm",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613129869&gcd=13l3l3l3l1l1&npa=0&dm",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=979957147.1790613130&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=979957147.1790613130&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "MINICOOPERWINDOWSTICKER Window Sticker",
-    "label": "Mini‑Cooper – Options Check",
-    "url": "https://minicooperwindowsticker.com/options-check-by-vin",
-    "browser": "desktop-chrome",
-    "timestamp": "2026-09-28T16:32:33.862Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": [
-        "2 iframe(s) missing dimensions",
-        "1 fixed/sticky element(s) found that may push content"
-      ]
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 98,
-        "tls": 51,
-        "serverProcessing": 101,
-        "ttfb": 201,
-        "download": 1,
-        "domParsing": 12,
-        "domContentLoaded": 344,
-        "loadEvent": 811,
-        "transferSize": 4417,
-        "encodedBodySize": 4117,
-        "decodedBodySize": 17491,
+        "connection": 49,
+        "tls": 29,
+        "serverProcessing": 235,
+        "ttfb": 289,
+        "download": 2,
+        "domParsing": 15,
+        "domContentLoaded": 363,
+        "loadEvent": 1105,
+        "transferSize": 4414,
+        "encodedBodySize": 4114,
+        "decodedBodySize": 17487,
         "protocol": "h2"
       },
       "issues": []
@@ -1371,32 +721,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 342.70000000001164
+          "totalDuration": 255.60000000000582
         },
         "script": {
-          "count": 25,
+          "count": 26,
           "totalSize": 281251,
-          "totalDuration": 4955.400000000052
+          "totalDuration": 1980.0000000000873
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6220,
-          "totalDuration": 7671.799999999988
+          "totalDuration": 5791.600000000006
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 163.19999999998254
+          "totalDuration": 241.89999999999418
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 199.19999999998254
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 150.89999999996508
-        },
-        "img": {
-          "count": 2,
-          "totalSize": 0,
-          "totalDuration": 450.19999999998254
+          "totalDuration": 193.19999999998254
         }
       },
       "largeResources": [],
@@ -1415,43 +765,720 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 129
+          "duration": 55
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 55
+          "duration": 49
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 85
+          "duration": 268
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 163
+          "duration": 242
         },
         {
-          "domain": "www.googletagmanager.com",
-          "count": 4,
+          "domain": "ipapi.co",
+          "count": 1,
           "size": 0,
-          "duration": 240
+          "duration": 192
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 2285
+          "duration": 146
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 3,
+          "size": 0,
+          "duration": 236
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 25
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 199
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 26
+          "duration": 25
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 46
+        },
+        {
+          "domain": "f.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 165
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 122
+        }
+      ],
+      "totalDomains": 13
+    },
+    "domAnalysis": {
+      "totalElements": 74,
+      "maxDepth": 6,
+      "maxChildren": 37,
+      "widestElement": "HEAD",
+      "deepestElement": "H2",
+      "issues": []
+    },
+    "fontAnalysis": {
+      "fonts": [],
+      "fontFaces": [
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "https://www.googletagmanager.com/gtag/js?id=G-TTTNVFP93F",
+          "as": "script"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": [
+        "13 third-party origins without preconnect hints"
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": [
+      {
+        "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
+        "status": 404,
+        "resourceType": "document"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=1&ae=g&auid=1958185090.1790693184&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?_gsid=9x__lMd8LNjr89gCyo2PiWpiEkUg9BSGQQ&auid=1958185090.1790693184&gtm=45He69s0h2v9230898845za200zd923089884",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693184162",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693184162",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "site": "MINICOOPERWINDOWSTICKER Window Sticker",
+    "label": "Mini‑Cooper – Options Check",
+    "url": "https://minicooperwindowsticker.com/options-check-by-vin",
+    "browser": "desktop-chrome",
+    "timestamp": "2026-09-29T14:46:43.464Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "2 iframe(s) missing dimensions",
+        "1 fixed/sticky element(s) found that may push content"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 2,
+        "connection": 132,
+        "tls": 68,
+        "serverProcessing": 135,
+        "ttfb": 271,
+        "download": 1,
+        "domParsing": 11,
+        "domContentLoaded": 335,
+        "loadEvent": 1325,
+        "transferSize": 4417,
+        "encodedBodySize": 4117,
+        "decodedBodySize": 17491,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/chunks/0uri4l3yk.eh2.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "CSS",
+        "url": "/_next/static/chunks/0jr9ko5e-4m1j.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/03~yq9q893hmn.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 43,
+      "totalSize": 327232,
+      "byType": {
+        "link": {
+          "count": 4,
+          "totalSize": 39761,
+          "totalDuration": 443.4999999999709
+        },
+        "script": {
+          "count": 25,
+          "totalSize": 281251,
+          "totalDuration": 3715.899999999965
+        },
+        "xmlhttprequest": {
+          "count": 8,
+          "totalSize": 6220,
+          "totalDuration": 5679.399999999994
+        },
+        "iframe": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 201.29999999998836
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 159.30000000001746
+        },
+        "fetch": {
+          "count": 4,
+          "totalSize": 0,
+          "totalDuration": 144.10000000000582
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 0,
+      "issueCount": 0,
+      "images": []
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 327232,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 52
+        },
+        {
+          "domain": "cdn.livechatinc.com",
+          "count": 1,
+          "size": 0,
+          "duration": 52
+        },
+        {
+          "domain": "api.livechatinc.com",
+          "count": 4,
+          "size": 0,
+          "duration": 444
+        },
+        {
+          "domain": "secure.livechatinc.com",
+          "count": 1,
+          "size": 0,
+          "duration": 201
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 141
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 14
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 159
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 190
+        },
+        {
+          "domain": "b.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 152
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 69
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 27
         },
         {
           "domain": "ad.doubleclick.net",
@@ -1460,34 +1487,10 @@
           "duration": 48
         },
         {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 76
-        },
-        {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 683
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 17
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 432
-        },
-        {
-          "domain": "n.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 144
+          "duration": 269
         }
       ],
       "totalDomains": 13
@@ -1933,25 +1936,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=1580028582.1790613149&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583za208zd9194023583xf1&_p=1790693200154&gcd=13l3l3l3l1l1&npa=0&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1580028582.1790613149&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583za200zd9194023583xf1&_p=1790693200154&gcd=13l3l3l3l1l1&npa=0&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h2v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613148552",
+        "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=505688369.1790693200&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h2v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613148552",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=505688369.1790693200&gtm=45He69p1h1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1963,7 +1966,7 @@
     "label": "Mini‑Cooper – Options Check",
     "url": "https://minicooperwindowsticker.com/options-check-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-09-28T16:32:28.865Z",
+    "timestamp": "2026-09-29T14:46:43.112Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1985,17 +1988,17 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 147,
-        "tls": 79,
-        "serverProcessing": 150,
-        "ttfb": 299,
+        "connection": 39,
+        "tls": 23,
+        "serverProcessing": 141,
+        "ttfb": 182,
         "download": 1,
-        "domParsing": 12,
-        "domContentLoaded": 447,
-        "loadEvent": 1038,
-        "transferSize": 4426,
-        "encodedBodySize": 4126,
-        "decodedBodySize": 17364,
+        "domParsing": 16,
+        "domContentLoaded": 254,
+        "loadEvent": 943,
+        "transferSize": 4419,
+        "encodedBodySize": 4119,
+        "decodedBodySize": 17491,
         "protocol": "h2"
       },
       "issues": []
@@ -2018,38 +2021,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 42,
+      "totalCount": 44,
       "totalSize": 327232,
       "byType": {
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 480.30000000001746
+          "totalDuration": 301.70000000001164
         },
         "script": {
-          "count": 24,
+          "count": 25,
           "totalSize": 281251,
-          "totalDuration": 3847.4000000000524
+          "totalDuration": 1968.799999999901
         },
         "xmlhttprequest": {
-          "count": 8,
+          "count": 9,
           "totalSize": 6220,
-          "totalDuration": 5162.299999999959
+          "totalDuration": 6741.600000000006
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 164.79999999998836
+          "totalDuration": 260.69999999998254
         },
         "img": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 195.69999999998254
+          "totalDuration": 155.40000000002328
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 138.80000000001746
+          "totalDuration": 146.19999999998254
         }
       },
       "largeResources": [],
@@ -2068,87 +2071,87 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 133
+          "duration": 52
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 51
+          "duration": 44
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 129
+          "duration": 219
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 165
+          "duration": 261
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 149
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 671
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 174
+          "duration": 141
         },
         {
           "domain": "scripts.clarity.ms",
-          "count": 1,
+          "count": 2,
           "size": 0,
-          "duration": 17
+          "duration": 25
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 196
+          "duration": 155
+        },
+        {
+          "domain": "z.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 203
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 190
         },
         {
           "domain": "www.google-analytics.com",
           "count": 2,
           "size": 0,
-          "duration": 71
-        },
-        {
-          "domain": "n.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 146
+          "duration": 69
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 22
+          "duration": 26
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 46
+          "duration": 51
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 180
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 71,
+      "totalElements": 73,
       "maxDepth": 6,
-      "maxChildren": 34,
+      "maxChildren": 36,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -2586,25 +2589,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613145639&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583za200zd9194023583xf1&_p=1790693200032&gcd=13l3l3l3l1l1&npa=0&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613145639&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1h1v9194023583za200zd9194023583xf1&_p=1790693200032&gcd=13l3l3l3l1l1&npa=0&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=1806533850.1790613146&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+        "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=1172758246.1790693200&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1806533850.1790613146&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1172758246.1790693200&gtm=45He69p1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2616,7 +2619,7 @@
     "label": "Mini‑Cooper – Paint Code",
     "url": "https://minicooperwindowsticker.com/paint-code-by-vin-lookup",
     "browser": "desktop-chrome",
-    "timestamp": "2026-09-28T16:32:26.857Z",
+    "timestamp": "2026-09-29T14:46:38.420Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2638,14 +2641,14 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 138,
-        "tls": 70,
-        "serverProcessing": 109,
-        "ttfb": 249,
+        "connection": 40,
+        "tls": 23,
+        "serverProcessing": 170,
+        "ttfb": 213,
         "download": 1,
-        "domParsing": 12,
-        "domContentLoaded": 429,
-        "loadEvent": 948,
+        "domParsing": 14,
+        "domContentLoaded": 287,
+        "loadEvent": 1001,
         "transferSize": 4414,
         "encodedBodySize": 4114,
         "decodedBodySize": 17499,
@@ -2671,38 +2674,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 42,
+      "totalCount": 44,
       "totalSize": 327232,
       "byType": {
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 434.30000000001746
+          "totalDuration": 261.0000000000291
         },
         "script": {
-          "count": 24,
+          "count": 26,
           "totalSize": 281251,
-          "totalDuration": 3844.000000000029
+          "totalDuration": 1916.399999999936
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6220,
-          "totalDuration": 5051.999999999942
+          "totalDuration": 5756.1999999999825
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 162.5
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 168.29999999998836
+          "totalDuration": 211.69999999998254
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 143.29999999998836
+          "totalDuration": 189.10000000003492
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 164.20000000001164
         }
       },
       "largeResources": [],
@@ -2721,25 +2724,43 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 162
+          "duration": 52
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 54
+          "duration": 46
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 114
+          "duration": 286
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 163
+          "duration": 212
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 3,
+          "size": 0,
+          "duration": 230
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 21
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 51
         },
         {
           "domain": "www.clarity.ms",
@@ -2748,60 +2769,42 @@
           "duration": 141
         },
         {
-          "domain": "scripts.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 23
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 168
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 176
-        },
-        {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 619
-        },
-        {
-          "domain": "a.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 164
+          "duration": 186
         },
         {
           "domain": "www.google-analytics.com",
           "count": 2,
           "size": 0,
-          "duration": 70
+          "duration": 117
         },
         {
-          "domain": "www.google.com",
-          "count": 1,
+          "domain": "scripts.clarity.ms",
+          "count": 2,
           "size": 0,
-          "duration": 26
+          "duration": 15
         },
         {
-          "domain": "ad.doubleclick.net",
+          "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 48
+          "duration": 164
+        },
+        {
+          "domain": "j.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 145
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 72,
+      "totalElements": 74,
       "maxDepth": 6,
-      "maxChildren": 35,
+      "maxChildren": 37,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -3239,25 +3242,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613143632&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=492688615.1790693195&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613143632&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=492688615.1790693195&gtm=45He69p1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=140173312.1790613144&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69s0h2v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693195120",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=140173312.1790613144&gtm=45He69p1h2v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69s0h2v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693195120",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3269,7 +3272,7 @@
     "label": "Mini‑Cooper – Paint Code",
     "url": "https://minicooperwindowsticker.com/paint-code-by-vin-lookup",
     "browser": "mobile-chrome",
-    "timestamp": "2026-09-28T16:32:23.884Z",
+    "timestamp": "2026-09-29T14:46:38.104Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3290,18 +3293,18 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 170,
-        "tls": 85,
-        "serverProcessing": 159,
-        "ttfb": 331,
+        "dns": 1,
+        "connection": 80,
+        "tls": 40,
+        "serverProcessing": 227,
+        "ttfb": 309,
         "download": 1,
         "domParsing": 12,
-        "domContentLoaded": 504,
-        "loadEvent": 1140,
-        "transferSize": 4423,
-        "encodedBodySize": 4123,
-        "decodedBodySize": 17372,
+        "domContentLoaded": 377,
+        "loadEvent": 1083,
+        "transferSize": 4414,
+        "encodedBodySize": 4114,
+        "decodedBodySize": 17499,
         "protocol": "h2"
       },
       "issues": []
@@ -3324,38 +3327,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 42,
+      "totalCount": 43,
       "totalSize": 327232,
       "byType": {
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 344.3999999999651
+          "totalDuration": 276.29999999995925
         },
         "script": {
-          "count": 24,
+          "count": 25,
           "totalSize": 281251,
-          "totalDuration": 4751.100000000006
+          "totalDuration": 2499.500000000029
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6220,
-          "totalDuration": 6111.000000000029
+          "totalDuration": 6165.299999999988
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 163.89999999999418
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 237.20000000001164
+          "totalDuration": 210.39999999999418
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 141.30000000004657
+          "totalDuration": 152.40000000002328
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 181.10000000000582
         }
       },
       "largeResources": [],
@@ -3374,31 +3377,43 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 157
+          "duration": 51
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 46
+          "duration": 52
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 143
+          "duration": 246
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 164
+          "duration": 210
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 630
+          "duration": 207
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 184
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 77
         },
         {
           "domain": "www.clarity.ms",
@@ -3407,54 +3422,42 @@
           "duration": 142
         },
         {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 163
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 10
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 237
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 69
-        },
-        {
-          "domain": "a.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 167
-        },
-        {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 23
+          "duration": 24
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 49
+          "duration": 51
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 31
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 181
+        },
+        {
+          "domain": "z.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 163
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 71,
+      "totalElements": 73,
       "maxDepth": 6,
-      "maxChildren": 34,
+      "maxChildren": 36,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -3892,25 +3895,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613140814&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693194842&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613140814&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693194842&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=2127646530.1790613141&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+        "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&auid=972083975.1790693195&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=2127646530.1790613141&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=972083975.1790693195&gtm=45He69p1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3922,7 +3925,7 @@
     "label": "Mini‑Cooper – VIN Decoder",
     "url": "https://minicooperwindowsticker.com/vin-decoder",
     "browser": "desktop-chrome",
-    "timestamp": "2026-09-28T16:32:21.953Z",
+    "timestamp": "2026-09-29T14:46:33.507Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3943,24 +3946,21 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 178,
-        "tls": 89,
-        "serverProcessing": 670,
-        "ttfb": 859,
-        "download": 8,
-        "domParsing": 147,
-        "domContentLoaded": 1019,
-        "loadEvent": 1369,
-        "transferSize": 23592,
-        "encodedBodySize": 23292,
-        "decodedBodySize": 197952,
+        "dns": 2,
+        "connection": 44,
+        "tls": 26,
+        "serverProcessing": 34,
+        "ttfb": 83,
+        "download": 2,
+        "domParsing": 212,
+        "domContentLoaded": 301,
+        "loadEvent": 342,
+        "transferSize": 23581,
+        "encodedBodySize": 23281,
+        "decodedBodySize": 197941,
         "protocol": "h2"
       },
-      "issues": [
-        "Slow server response: 670ms",
-        "TTFB exceeds 800ms threshold: 859ms"
-      ]
+      "issues": []
     },
     "renderBlocking": [
       {
@@ -4065,6 +4065,11 @@
       },
       {
         "type": "JS",
+        "url": "/_next/static/chunks/0~497zji~tmtp.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
         "url": "/_next/static/chunks/0c_u_4-~3wo9f.js",
         "suggestion": "Add async or defer attribute"
       },
@@ -4080,11 +4085,6 @@
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/0~497zji~tmtp.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
         "url": "/_next/static/chunks/0qnszwvw1pwbd.js",
         "suggestion": "Add async or defer attribute"
       },
@@ -4095,47 +4095,49 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 100,
-      "totalSize": 701713,
+      "totalCount": 101,
+      "totalSize": 701736,
       "byType": {
         "link": {
           "count": 9,
           "totalSize": 89569,
-          "totalDuration": 2538.399999999994
+          "totalDuration": 916.7999999998719
         },
         "script": {
-          "count": 45,
+          "count": 46,
           "totalSize": 439618,
-          "totalDuration": 9471.199999999983
+          "totalDuration": 3175.799999999872
         },
         "css": {
           "count": 4,
           "totalSize": 71904,
-          "totalDuration": 638.7000000000116
+          "totalDuration": 335.30000000001746
         },
         "img": {
           "count": 4,
           "totalSize": 34075,
-          "totalDuration": 898.1000000000349
+          "totalDuration": 733
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6220,
-          "totalDuration": 5544.499999999971
+          "totalDuration": 6022.5
         },
         "fetch": {
           "count": 29,
-          "totalSize": 60327,
-          "totalDuration": 6899.399999999965
+          "totalSize": 60350,
+          "totalDuration": 3615.199999999866
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 163.89999999999418
+          "totalDuration": 223.5
         }
       },
       "largeResources": [],
-      "issues": []
+      "issues": [
+        "High request count: 101 resources"
+      ]
     },
     "imageAudit": {
       "totalImages": 12,
@@ -4172,98 +4174,98 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 701713,
+      "firstPartySize": 701736,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 135
+          "duration": 56
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 58
+          "duration": 54
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 84
+          "duration": 324
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 164
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 149
+          "duration": 224
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 3,
           "size": 0,
-          "duration": 209
+          "duration": 216
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 143
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 26
+          "duration": 24
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 48
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 612
+          "duration": 49
         },
         {
           "domain": "www.google-analytics.com",
           "count": 1,
           "size": 0,
-          "duration": 50
+          "duration": 58
         },
         {
           "domain": "scripts.clarity.ms",
-          "count": 1,
+          "count": 2,
           "size": 0,
-          "duration": 15
+          "duration": 22
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 189
+          "duration": 195
         },
         {
-          "domain": "n.clarity.ms",
+          "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 190
+          "duration": 199
+        },
+        {
+          "domain": "b.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 199
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 1027,
+      "totalElements": 1028,
       "maxDepth": 18,
-      "maxChildren": 69,
+      "maxChildren": 70,
       "widestElement": "HEAD",
       "deepestElement": "P",
       "issues": [
-        "Wide node: HEAD has 69 children (recommended < 60)"
+        "Wide node: HEAD has 70 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -4271,22 +4273,22 @@
         {
           "url": "...ooperwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 164
-        },
-        {
-          "url": "...ooperwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
-          "size": 17761,
-          "duration": 152
+          "duration": 77
         },
         {
           "url": "...ooperwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 159
+          "duration": 83
         },
         {
           "url": "...ooperwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 164
+          "duration": 81
+        },
+        {
+          "url": "...ooperwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
+          "size": 17761,
+          "duration": 94
         }
       ],
       "fontFaces": [
@@ -4734,28 +4736,35 @@
         "13 third-party origins without preconnect hints"
       ]
     },
-    "consoleErrors": [],
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 429 ()"
+    ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
     "failedRequests": [
       {
-        "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&ae=g&auid=82479683.1790613138&dt=MINI%20VIN%20Decoder%20%7C%20Free%20MINI%20Cooper%20VIN%20Looku",
+        "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=1061748760.1790693190&dt=MINI%20VIN%20Decoder%20%7C%20Free%20MINI%20Cooper%20VIN%20Loo",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=82479683.1790613138&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1061748760.1790693190&gtm=45He69p1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613138205&g",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693189976&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://ipapi.co/json",
+        "status": 429,
+        "resourceType": "xhr"
       }
     ]
   },
@@ -4764,7 +4773,7 @@
     "label": "Mini‑Cooper – VIN Decoder",
     "url": "https://minicooperwindowsticker.com/vin-decoder",
     "browser": "mobile-chrome",
-    "timestamp": "2026-09-28T16:32:18.701Z",
+    "timestamp": "2026-09-29T14:46:32.715Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -4786,14 +4795,14 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 272,
-        "tls": 137,
-        "serverProcessing": 144,
-        "ttfb": 417,
-        "download": 11,
-        "domParsing": 223,
-        "domContentLoaded": 656,
-        "loadEvent": 1154,
+        "connection": 41,
+        "tls": 25,
+        "serverProcessing": 35,
+        "ttfb": 78,
+        "download": 3,
+        "domParsing": 93,
+        "domContentLoaded": 178,
+        "loadEvent": 563,
         "transferSize": 23581,
         "encodedBodySize": 23281,
         "decodedBodySize": 197941,
@@ -4909,43 +4918,43 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 71,
-      "totalSize": 565846,
+      "totalCount": 74,
+      "totalSize": 565870,
       "byType": {
         "link": {
           "count": 9,
           "totalSize": 89569,
-          "totalDuration": 3282.000000000058
+          "totalDuration": 948.5999999999767
         },
         "script": {
-          "count": 39,
+          "count": 41,
           "totalSize": 378546,
-          "totalDuration": 8166.099999999948
+          "totalDuration": 3043.2999999999884
         },
         "css": {
           "count": 4,
           "totalSize": 71904,
-          "totalDuration": 647.3000000000175
+          "totalDuration": 537.2000000000407
         },
         "img": {
           "count": 2,
           "totalSize": 2991,
-          "totalDuration": 437.30000000001746
+          "totalDuration": 309.1000000000058
         },
         "xmlhttprequest": {
-          "count": 8,
+          "count": 9,
           "totalSize": 6220,
-          "totalDuration": 4745.5
+          "totalDuration": 4808.600000000006
         },
         "fetch": {
           "count": 8,
-          "totalSize": 16616,
-          "totalDuration": 601.8999999999651
+          "totalSize": 16640,
+          "totalDuration": 885.5999999999767
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 250.60000000000582
+          "totalDuration": 276.79999999998836
         }
       },
       "largeResources": [],
@@ -4986,56 +4995,44 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 565846,
+      "firstPartySize": 565870,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 133
+          "duration": 50
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 75
+          "duration": 89
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 113
+          "duration": 365
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 251
+          "duration": 277
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 168
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 1,
-          "size": 0,
-          "duration": 52
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 629
+          "duration": 225
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 162
+          "duration": 148
         },
         {
           "domain": "www.google.com",
@@ -5047,60 +5044,72 @@
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 48
+          "duration": 50
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 201
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 1,
+          "size": 0,
+          "duration": 60
         },
         {
           "domain": "scripts.clarity.ms",
-          "count": 1,
+          "count": 2,
           "size": 0,
-          "duration": 16
+          "duration": 15
         },
         {
           "domain": "c.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 283
+          "duration": 186
         },
         {
-          "domain": "u.clarity.ms",
-          "count": 1,
+          "domain": "a.clarity.ms",
+          "count": 2,
           "size": 0,
-          "duration": 197
+          "duration": 357
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 1021,
+      "totalElements": 1023,
       "maxDepth": 18,
-      "maxChildren": 63,
+      "maxChildren": 65,
       "widestElement": "HEAD",
       "deepestElement": "P",
       "issues": [
-        "Wide node: HEAD has 63 children (recommended < 60)"
+        "Wide node: HEAD has 65 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
       "fonts": [
         {
-          "url": "...ooperwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
-          "size": 18042,
-          "duration": 178
-        },
-        {
-          "url": "...ooperwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
-          "size": 17983,
-          "duration": 115
-        },
-        {
           "url": "...ooperwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 177
+          "duration": 148
+        },
+        {
+          "url": "...ooperwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
+          "size": 18042,
+          "duration": 150
         },
         {
           "url": "...ooperwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 177
+          "duration": 91
+        },
+        {
+          "url": "...ooperwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
+          "size": 17983,
+          "duration": 149
         }
       ],
       "fontFaces": [
@@ -5554,19 +5563,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583za200zd9194023583xf1&_p=1790613135196&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1682845922.1790693189&dt=MINI%20VIN%20Decoder%20%7C%20Free%20MINI%20Cooper%20VIN%20Loo",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=911200022.1790613135&dt=MINI%20VIN%20Decoder%20%7C%20Free%20MINI%20Cooper%20VIN%20Look",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1682845922.1790693189&gtm=45He69p1v9230898845za200zd9230898845xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=911200022.1790613135&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790693189218&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
