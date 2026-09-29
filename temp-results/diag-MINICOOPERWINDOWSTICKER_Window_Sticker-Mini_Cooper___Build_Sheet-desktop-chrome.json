@@ -3,7 +3,7 @@
   "label": "Mini‑Cooper – Build Sheet",
   "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-09-28T16:32:14.392Z",
+  "timestamp": "2026-09-29T14:46:28.236Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 152,
-      "tls": 72,
-      "serverProcessing": 166,
-      "ttfb": 323,
-      "download": 1,
-      "domParsing": 32,
-      "domContentLoaded": 536,
-      "loadEvent": 1143,
-      "transferSize": 4419,
-      "encodedBodySize": 4119,
-      "decodedBodySize": 17360,
+      "connection": 135,
+      "tls": 71,
+      "serverProcessing": 1237,
+      "ttfb": 1377,
+      "download": 2,
+      "domParsing": 20,
+      "domContentLoaded": 1454,
+      "loadEvent": 2309,
+      "transferSize": 4412,
+      "encodedBodySize": 4112,
+      "decodedBodySize": 17487,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 1237ms",
+      "TTFB exceeds 800ms threshold: 1377ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -64,32 +67,32 @@
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 426.4999999999709
+        "totalDuration": 441.29999999998836
       },
       "script": {
         "count": 25,
         "totalSize": 281251,
-        "totalDuration": 3838.1999999999825
+        "totalDuration": 4087.399999999965
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6220,
-        "totalDuration": 17735.900000000023
+        "totalDuration": 5675.399999999994
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 227.29999999998836
-      },
-      "fetch": {
-        "count": 4,
-        "totalSize": 0,
-        "totalDuration": 150.30000000001746
+        "totalDuration": 215.79999999998836
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 187.89999999999418
+        "totalDuration": 185.80000000001746
+      },
+      "fetch": {
+        "count": 4,
+        "totalSize": 0,
+        "totalDuration": 142.89999999999418
       }
     },
     "largeResources": [],
@@ -108,7 +111,7 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 166
+        "duration": 61
       },
       {
         "domain": "cdn.livechatinc.com",
@@ -120,47 +123,29 @@
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 147
+        "duration": 283
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 227
+        "duration": 216
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 149
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 3,
-        "size": 0,
-        "duration": 206
+        "duration": 140
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 640
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 29
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 55
+        "duration": 181
       },
       {
         "domain": "scripts.clarity.ms",
-        "count": 1,
+        "count": 2,
         "size": 0,
         "duration": 14
       },
@@ -168,27 +153,45 @@
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 188
+        "duration": 186
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 168
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 66
+        "duration": 73
       },
       {
-        "domain": "i.clarity.ms",
+        "domain": "u.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 156
+        "duration": 148
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 22
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 47
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 72,
+    "totalElements": 73,
     "maxDepth": 6,
-    "maxChildren": 35,
+    "maxChildren": 36,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -626,25 +629,25 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=1496682078.1790613131&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693185228&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1496682078.1790613131&gtm=45He69o0v9230898845za200zd9230898845xeaxf1&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69p1v9194023583za200zd9194023583xf1&_p=1790693185228&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613130957&g",
+      "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&auid=1651739008.1790693185&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TTTNVFP93F&gtm=45je69o0v9194023583z89230898845za20gzb9230898845zd9230898845xf1&_p=1790613130957&g",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1651739008.1790693185&gtm=45He69s0h2v9230898845za200zd9230898845xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
