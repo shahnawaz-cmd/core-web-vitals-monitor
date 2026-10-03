@@ -4,15 +4,15 @@
     "label": "Subaru – Build Sheet",
     "url": "https://subaruwindowstickers.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:37:06.987Z",
-    "performanceScore": 69,
+    "timestamp": "2026-10-03T13:10:36.240Z",
+    "performanceScore": 64,
     "lcp": {
-      "value": 4019.191742274219,
-      "displayValue": "4.0 s",
-      "score": 0.49
+      "value": 4070.703768644981,
+      "displayValue": "4.1 s",
+      "score": 0.48
     },
     "fcp": {
-      "value": 1533.9056330242415,
+      "value": 1536.8033506493978,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -22,31 +22,46 @@
       "score": 1
     },
     "tbt": {
-      "value": 658,
-      "displayValue": "660 ms",
-      "score": 0.45
+      "value": 898.4999999999995,
+      "displayValue": "900 ms",
+      "score": 0.31
     },
     "si": {
-      "value": 3261.5065817515715,
-      "displayValue": "3.3 s",
-      "score": 0.91
+      "value": 3905.602920635766,
+      "displayValue": "3.9 s",
+      "score": 0.82
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 10718.28272182253,
-      "displayValue": "10.7 s",
-      "score": 0.22
+      "value": 11204.572604648562,
+      "displayValue": "11.2 s",
+      "score": 0.2
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 373273
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 120,
+        "savingsBytes": 30797
+      }
+    ],
     "diagnostics": [
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.6 s",
+        "displayValue": "1.8 s",
         "score": 0
       },
       {
@@ -56,15 +71,15 @@
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.7 s",
         "score": 0
       }
     ]
@@ -74,15 +89,15 @@
     "label": "Subaru – Build Sheet",
     "url": "https://subaruwindowstickers.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:37:23.458Z",
-    "performanceScore": 84,
+    "timestamp": "2026-10-03T13:10:50.566Z",
+    "performanceScore": 91,
     "lcp": {
-      "value": 935.8426689335265,
+      "value": 919.1709257015733,
       "displayValue": "0.9 s",
       "score": 0.96
     },
     "fcp": {
-      "value": 426.9365367327292,
+      "value": 420.3865810930338,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -92,14 +107,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 343.01107014967374,
-      "displayValue": "340 ms",
-      "score": 0.51
+      "value": 231,
+      "displayValue": "230 ms",
+      "score": 0.73
     },
     "si": {
-      "value": 977.4496048906143,
-      "displayValue": "1.0 s",
-      "score": 0.97
+      "value": 874.6129440312392,
+      "displayValue": "0.9 s",
+      "score": 0.99
     },
     "ttfb": {
       "value": 1,
@@ -107,22 +122,30 @@
       "score": 1
     },
     "interactive": {
-      "value": 2457.1568920075215,
-      "displayValue": "2.5 s",
-      "score": 0.9
+      "value": 2269.4594548166447,
+      "displayValue": "2.3 s",
+      "score": 0.92
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 30,
+        "savingsBytes": 30762
+      }
+    ],
+    "diagnostics": [
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
@@ -132,17 +155,17 @@
     "label": "Subaru – VIN Decoder",
     "url": "https://subaruwindowstickers.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:37:58.309Z",
-    "performanceScore": 49,
+    "timestamp": "2026-10-03T13:11:08.525Z",
+    "performanceScore": 67,
     "lcp": {
-      "value": 4347.397010298129,
-      "displayValue": "4.3 s",
-      "score": 0.41
+      "value": 3873.7933951268874,
+      "displayValue": "3.9 s",
+      "score": 0.53
     },
     "fcp": {
-      "value": 1591.2386815415146,
+      "value": 1555.727656921964,
       "displayValue": "1.6 s",
-      "score": 0.94
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -150,14 +173,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 2709.300012440184,
-      "displayValue": "2,710 ms",
-      "score": 0.03
+      "value": 782.2260272680833,
+      "displayValue": "780 ms",
+      "score": 0.37
     },
     "si": {
-      "value": 6520.339013697559,
-      "displayValue": "6.5 s",
-      "score": 0.39
+      "value": 3834.054261824643,
+      "displayValue": "3.8 s",
+      "score": 0.83
     },
     "ttfb": {
       "value": 2,
@@ -165,20 +188,24 @@
       "score": 1
     },
     "interactive": {
-      "value": 12578.132475567007,
-      "displayValue": "12.6 s",
-      "score": 0.14
+      "value": 11145.7874112789,
+      "displayValue": "11.1 s",
+      "score": 0.2
     },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 70,
-        "savingsBytes": 30795
-      }
-    ],
+    "opportunities": [],
     "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.7 s",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -186,15 +213,82 @@
         "score": 0
       },
       {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.2 s",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "SUBARUWINDOWSTICKERS Window Sticker",
+    "label": "Subaru – VIN Decoder",
+    "url": "https://subaruwindowstickers.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-10-03T13:11:26.063Z",
+    "performanceScore": 78,
+    "lcp": {
+      "value": 997.8792048177515,
+      "displayValue": "1.0 s",
+      "score": 0.95
+    },
+    "fcp": {
+      "value": 455.655974375924,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 479,
+      "displayValue": "480 ms",
+      "score": 0.31
+    },
+    "si": {
+      "value": 1004.297229076388,
+      "displayValue": "1.0 s",
+      "score": 0.97
+    },
+    "ttfb": {
+      "value": 2,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2405.5340993195823,
+      "displayValue": "2.4 s",
+      "score": 0.9
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 255144
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 20,
+        "savingsBytes": 30770
+      }
+    ],
+    "diagnostics": [
+      {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "4.6 s",
+        "displayValue": "1.3 s",
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "5.9 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       },
       {
@@ -207,20 +301,20 @@
   },
   {
     "site": "SUBARUWINDOWSTICKERS Window Sticker",
-    "label": "Subaru – VIN Decoder",
-    "url": "https://subaruwindowstickers.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-10-02T14:38:16.045Z",
-    "performanceScore": 89,
+    "label": "Subaru – Paint Code",
+    "url": "https://subaruwindowstickers.com/paint-code-by-vin-lookup",
+    "strategy": "mobile",
+    "timestamp": "2026-10-03T13:11:39.294Z",
+    "performanceScore": 85,
     "lcp": {
-      "value": 996.5967907566848,
-      "displayValue": "1.0 s",
-      "score": 0.95
+      "value": 3956.192717073457,
+      "displayValue": "4.0 s",
+      "score": 0.51
     },
     "fcp": {
-      "value": 454.68295918276374,
-      "displayValue": "0.5 s",
-      "score": 1
+      "value": 1523.2451878332913,
+      "displayValue": "1.5 s",
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -228,14 +322,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 260.0000000000002,
-      "displayValue": "260 ms",
-      "score": 0.67
+      "value": 107.5,
+      "displayValue": "110 ms",
+      "score": 0.98
     },
     "si": {
-      "value": 991.1365839271824,
-      "displayValue": "1.0 s",
-      "score": 0.97
+      "value": 3825.4298641602572,
+      "displayValue": "3.8 s",
+      "score": 0.83
     },
     "ttfb": {
       "value": 1,
@@ -243,24 +337,24 @@
       "score": 1
     },
     "interactive": {
-      "value": 2350.475098572844,
-      "displayValue": "2.4 s",
-      "score": 0.91
+      "value": 10623.024320480932,
+      "displayValue": "10.6 s",
+      "score": 0.23
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 255097
+        "savingsMs": 150,
+        "savingsBytes": 259392
       },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 20,
-        "savingsBytes": 30767
+        "savingsMs": 140,
+        "savingsBytes": 30797
       }
     ],
     "diagnostics": [
@@ -282,16 +376,74 @@
     "site": "SUBARUWINDOWSTICKERS Window Sticker",
     "label": "Subaru – Paint Code",
     "url": "https://subaruwindowstickers.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-10-02T14:38:30.875Z",
-    "performanceScore": 84,
+    "strategy": "desktop",
+    "timestamp": "2026-10-03T13:11:56.532Z",
+    "performanceScore": 79,
     "lcp": {
-      "value": 3019.3644100279225,
+      "value": 962.1930589851045,
+      "displayValue": "1.0 s",
+      "score": 0.95
+    },
+    "fcp": {
+      "value": 425.4766956807075,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 444.50000000000034,
+      "displayValue": "440 ms",
+      "score": 0.35
+    },
+    "si": {
+      "value": 931.240046221608,
+      "displayValue": "0.9 s",
+      "score": 0.98
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2392.7249649563573,
+      "displayValue": "2.4 s",
+      "score": 0.91
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "SUBARUWINDOWSTICKERS Window Sticker",
+    "label": "Subaru – Options Check",
+    "url": "https://subaruwindowstickers.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-10-03T13:12:11.121Z",
+    "performanceScore": 82,
+    "lcp": {
+      "value": 3017.1851891629267,
       "displayValue": "3.0 s",
       "score": 0.77
     },
     "fcp": {
-      "value": 1538.5342816759744,
+      "value": 1549.3950630543086,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -301,31 +453,31 @@
       "score": 1
     },
     "tbt": {
-      "value": 383.00000000000136,
+      "value": 383.5,
       "displayValue": "380 ms",
       "score": 0.69
     },
     "si": {
-      "value": 3075.7506942830532,
-      "displayValue": "3.1 s",
-      "score": 0.93
+      "value": 4358.935549388573,
+      "displayValue": "4.4 s",
+      "score": 0.75
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 10283.899854921508,
-      "displayValue": "10.3 s",
-      "score": 0.25
+      "value": 11138.78601198721,
+      "displayValue": "11.1 s",
+      "score": 0.2
     },
     "opportunities": [
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 120,
+        "savingsMs": 110,
         "savingsBytes": 30797
       }
     ],
@@ -346,161 +498,18 @@
   },
   {
     "site": "SUBARUWINDOWSTICKERS Window Sticker",
-    "label": "Subaru – Paint Code",
-    "url": "https://subaruwindowstickers.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-10-02T14:38:55.374Z",
-    "performanceScore": 70,
-    "lcp": {
-      "value": 1030.205457091304,
-      "displayValue": "1.0 s",
-      "score": 0.94
-    },
-    "fcp": {
-      "value": 453.9341408147636,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 784.5000000000001,
-      "displayValue": "780 ms",
-      "score": 0.11
-    },
-    "si": {
-      "value": 1442.2031229158038,
-      "displayValue": "1.4 s",
-      "score": 0.85
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2660.477878078042,
-      "displayValue": "2.7 s",
-      "score": 0.86
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 368429
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30770
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.5 s",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.8 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "SUBARUWINDOWSTICKERS Window Sticker",
-    "label": "Subaru – Options Check",
-    "url": "https://subaruwindowstickers.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-10-02T14:39:11.524Z",
-    "performanceScore": 75,
-    "lcp": {
-      "value": 4001.1918026605517,
-      "displayValue": "4.0 s",
-      "score": 0.49
-    },
-    "fcp": {
-      "value": 1555.9459942185051,
-      "displayValue": "1.6 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 375,
-      "displayValue": "380 ms",
-      "score": 0.7
-    },
-    "si": {
-      "value": 4210.97865236387,
-      "displayValue": "4.2 s",
-      "score": 0.77
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 10349.611643282155,
-      "displayValue": "10.3 s",
-      "score": 0.24
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "SUBARUWINDOWSTICKERS Window Sticker",
     "label": "Subaru – Options Check",
     "url": "https://subaruwindowstickers.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:39:25.688Z",
-    "performanceScore": 95,
+    "timestamp": "2026-10-03T13:12:23.076Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 904.6921638774834,
+      "value": 901.694681541696,
       "displayValue": "0.9 s",
       "score": 0.96
     },
     "fcp": {
-      "value": 446.3940756353994,
+      "value": 407.7772442131225,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -510,26 +519,41 @@
       "score": 1
     },
     "tbt": {
-      "value": 158,
-      "displayValue": "160 ms",
-      "score": 0.88
-    },
-    "si": {
-      "value": 764.6730661841584,
-      "displayValue": "0.8 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
+      "value": 43,
+      "displayValue": "40 ms",
       "score": 1
     },
-    "interactive": {
-      "value": 2357.9971618727786,
-      "displayValue": "2.4 s",
-      "score": 0.91
+    "si": {
+      "value": 685.4129909152041,
+      "displayValue": "0.7 s",
+      "score": 1
     },
-    "opportunities": [],
+    "ttfb": {
+      "value": null,
+      "displayValue": "N/A",
+      "score": 0
+    },
+    "interactive": {
+      "value": 2248.2603035706234,
+      "displayValue": "2.2 s",
+      "score": 0.93
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 40,
+        "savingsBytes": 30770
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 255061
+      }
+    ],
     "diagnostics": [
       {
         "id": "legacy-javascript-insight",
