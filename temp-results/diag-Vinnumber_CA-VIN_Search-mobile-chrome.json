@@ -3,7 +3,7 @@
   "label": "VIN Search",
   "url": "https://vinnumber.ca/vin-search",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-02T14:23:46.229Z",
+  "timestamp": "2026-10-03T12:57:14.142Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,18 +23,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 3,
-      "connection": 44,
-      "tls": 25,
-      "serverProcessing": 31,
-      "ttfb": 80,
-      "download": 6,
-      "domParsing": 165,
-      "domContentLoaded": 335,
-      "loadEvent": 555,
-      "transferSize": 50802,
-      "encodedBodySize": 50502,
-      "decodedBodySize": 373835,
+      "dns": 1,
+      "connection": 20,
+      "tls": 14,
+      "serverProcessing": 18,
+      "ttfb": 41,
+      "download": 3,
+      "domParsing": 222,
+      "domContentLoaded": 271,
+      "loadEvent": 394,
+      "transferSize": 51423,
+      "encodedBodySize": 51123,
+      "decodedBodySize": 378606,
       "protocol": "h2"
     },
     "issues": []
@@ -72,12 +72,12 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/72de017515704c5f.js",
+      "url": "/_next/static/chunks/b2a96b609c88394f.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/28b43daf7f4cae1f.js",
+      "url": "/_next/static/chunks/72de017515704c5f.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -93,37 +93,37 @@
   ],
   "resourceAnalysis": {
     "totalCount": 49,
-    "totalSize": 371741,
+    "totalSize": 372149,
     "byType": {
       "link": {
         "count": 6,
         "totalSize": 84425,
-        "totalDuration": 293.4000000000233
+        "totalDuration": 285.19999999995343
       },
       "script": {
         "count": 23,
-        "totalSize": 232129,
-        "totalDuration": 1575.3000000002794
+        "totalSize": 232265,
+        "totalDuration": 1206.8000000000466
       },
       "css": {
         "count": 1,
         "totalSize": 23406,
-        "totalDuration": 109.30000000004657
+        "totalDuration": 68
       },
       "img": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 361.800000000163
+        "totalDuration": 184
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 31.599999999976717
+        "totalDuration": 15.900000000023283
       },
       "fetch": {
         "count": 14,
-        "totalSize": 31481,
-        "totalDuration": 1048.699999999837
+        "totalSize": 31753,
+        "totalDuration": 569.4000000001397
       }
     },
     "largeResources": [],
@@ -195,66 +195,68 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 371741,
+    "firstPartySize": 372149,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 93
+        "duration": 85
       },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 4,
         "size": 0,
-        "duration": 362
+        "duration": 184
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 3,
         "size": 0,
-        "duration": 211
+        "duration": 303
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 169
+        "duration": 16
       },
       {
         "domain": "www.google-analytics.com",
         "count": 4,
         "size": 0,
-        "duration": 212
+        "duration": 133
       }
     ],
     "totalDomains": 5
   },
   "domAnalysis": {
-    "totalElements": 895,
+    "totalElements": 930,
     "maxDepth": 17,
-    "maxChildren": 59,
-    "widestElement": "BODY",
+    "maxChildren": 64,
+    "widestElement": "HEAD",
     "deepestElement": "EM",
-    "issues": []
+    "issues": [
+      "Wide node: HEAD has 64 children (recommended < 60)"
+    ]
   },
   "fontAnalysis": {
     "fonts": [
       {
         "url": "https://vinnumber.ca/_next/static/media/017d9bea37084d9b-s.p.a6d6de71.woff2",
         "size": 41540,
-        "duration": 36
+        "duration": 31
       },
       {
         "url": "https://vinnumber.ca/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 40
+        "duration": 34
       },
       {
         "url": "https://vinnumber.ca/_next/static/media/797e433ab948586e-s.29207c2f.woff2",
         "size": 23406,
-        "duration": 109
+        "duration": 68
       }
     ],
     "fontFaces": [
@@ -370,13 +372,19 @@
   ],
   "failedRequests": [
     {
+      "url": "https://vinnumber.ca/pricing?_rsc=hucnw",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://vinnumber.ca/pricing?_rsc=9jw05",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/pricing?_rsc=lpsy2",
+      "url": "https://vinnumber.ca/?_rsc=9jw05",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -394,25 +402,25 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1790951001321&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2h1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791032209280",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1790951001321&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2h1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791032209280",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1790951001321&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2h1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791032209280",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1790951001321&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je69u2h1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791032209280",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
