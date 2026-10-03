@@ -4,44 +4,51 @@
     "label": "Kia – Build Sheet",
     "url": "https://kiawindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:31:02.393Z",
-    "performanceScore": 72,
+    "timestamp": "2026-10-03T13:04:35.415Z",
+    "performanceScore": 54,
     "lcp": {
-      "value": 3752.0521440659522,
-      "displayValue": "3.8 s",
-      "score": 0.56
+      "value": 10587.687007700657,
+      "displayValue": "10.6 s",
+      "score": 0
     },
     "fcp": {
-      "value": 1951.5031993358905,
-      "displayValue": "2.0 s",
-      "score": 0.85
+      "value": 6325.447629792437,
+      "displayValue": "6.3 s",
+      "score": 0.03
     },
     "cls": {
-      "value": 0.2740037567179031,
-      "displayValue": "0.274",
-      "score": 0.44
+      "value": 0.06740974331399692,
+      "displayValue": "0.067",
+      "score": 0.96
     },
     "tbt": {
-      "value": 147,
-      "displayValue": "150 ms",
-      "score": 0.95
+      "value": 253.5,
+      "displayValue": "250 ms",
+      "score": 0.84
     },
     "si": {
-      "value": 2470.083894540218,
-      "displayValue": "2.5 s",
-      "score": 0.98
+      "value": 6331.733558721004,
+      "displayValue": "6.3 s",
+      "score": 0.41
     },
     "ttfb": {
-      "value": 2,
+      "value": 3,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12261.509294419633,
-      "displayValue": "12.3 s",
-      "score": 0.15
+      "value": 12421.967287996995,
+      "displayValue": "12.4 s",
+      "score": 0.14
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 990,
+        "savingsBytes": 286625
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
@@ -52,9 +59,15 @@
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 500 ms",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.4 s",
         "score": 0
       },
       {
@@ -64,22 +77,22 @@
         "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
-        "score": 0
-      },
-      {
-        "id": "layout-shifts",
-        "title": "Avoid large layout shifts",
-        "displayValue": "2 layout shifts found",
-        "score": 0
-      },
-      {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 99 KiB",
         "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 660 ms",
+        "score": 0
       }
     ]
   },
@@ -88,15 +101,15 @@
     "label": "Kia – Build Sheet",
     "url": "https://kiawindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:31:20.275Z",
-    "performanceScore": 97,
+    "timestamp": "2026-10-03T13:04:50.067Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 781.9712096774714,
+      "value": 761.4635515836933,
       "displayValue": "0.8 s",
       "score": 0.98
     },
     "fcp": {
-      "value": 481.55497695855524,
+      "value": 484.8073430233028,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -106,14 +119,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 127.00000000000011,
-      "displayValue": "130 ms",
-      "score": 0.93
+      "value": 46,
+      "displayValue": "50 ms",
+      "score": 1
     },
     "si": {
-      "value": 800.5110742199165,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 677.8920205198835,
+      "displayValue": "0.7 s",
+      "score": 1
     },
     "ttfb": {
       "value": 3,
@@ -121,9 +134,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 2905.1385508294843,
-      "displayValue": "2.9 s",
-      "score": 0.82
+      "value": 2724.421573645874,
+      "displayValue": "2.7 s",
+      "score": 0.85
     },
     "opportunities": [
       {
@@ -131,7 +144,7 @@
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 80,
-        "savingsBytes": 28966
+        "savingsBytes": 28956
       }
     ],
     "diagnostics": [
@@ -139,6 +152,12 @@
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
@@ -148,16 +167,9 @@
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 120 ms",
-        "score": 0
+        "score": 0.5
       }
     ]
   },
@@ -166,45 +178,65 @@
     "label": "Kia – VIN Decoder",
     "url": "https://kiawindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:31:42.113Z",
-    "performanceScore": 84,
+    "timestamp": "2026-10-03T13:05:26.512Z",
+    "performanceScore": 57,
     "lcp": {
-      "value": 3152.09331248696,
-      "displayValue": "3.2 s",
-      "score": 0.74
+      "value": 4457.60114549677,
+      "displayValue": "4.5 s",
+      "score": 0.38
     },
     "fcp": {
-      "value": 1952.0540230187662,
-      "displayValue": "2.0 s",
-      "score": 0.85
+      "value": 2101.044136216772,
+      "displayValue": "2.1 s",
+      "score": 0.81
     },
     "cls": {
-      "value": 0.07051347872175297,
-      "displayValue": "0.071",
+      "value": 0.06767375506535257,
+      "displayValue": "0.068",
       "score": 0.96
     },
     "tbt": {
-      "value": 313.5,
-      "displayValue": "310 ms",
-      "score": 0.77
+      "value": 1060,
+      "displayValue": "1,060 ms",
+      "score": 0.25
     },
     "si": {
-      "value": 1952.0540230187662,
-      "displayValue": "2.0 s",
-      "score": 1
+      "value": 3896.7642567401,
+      "displayValue": "3.9 s",
+      "score": 0.82
     },
     "ttfb": {
-      "value": 5,
-      "displayValue": "Root document took 10 ms",
+      "value": 4,
+      "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12462.69967673102,
-      "displayValue": "12.5 s",
-      "score": 0.14
+      "value": 12767.143446373771,
+      "displayValue": "12.8 s",
+      "score": 0.13
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 285934
+      }
+    ],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
@@ -214,31 +246,19 @@
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.7 s",
+        "displayValue": "3.4 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 570 ms",
         "score": 0
       },
       {
         "id": "mainthread-work-breakdown",
         "title": "Minimize main-thread work",
-        "displayValue": "2.7 s",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 430 ms",
+        "displayValue": "5.1 s",
         "score": 0
       }
     ]
@@ -248,50 +268,57 @@
     "label": "Kia – VIN Decoder",
     "url": "https://kiawindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:31:59.091Z",
-    "performanceScore": 98,
+    "timestamp": "2026-10-03T13:05:44.573Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 761.0535623725411,
-      "displayValue": "0.8 s",
-      "score": 0.98
+      "value": 681.0303282487257,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 521.0346580057619,
-      "displayValue": "0.5 s",
+      "value": 445.2064227393592,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "cls": {
-      "value": 0.07372581010528616,
-      "displayValue": "0.074",
-      "score": 0.95
+      "value": 0.04569766632777042,
+      "displayValue": "0.046",
+      "score": 0.99
     },
     "tbt": {
-      "value": 22.5,
-      "displayValue": "20 ms",
-      "score": 1
+      "value": 81,
+      "displayValue": "80 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 668.3238378628602,
-      "displayValue": "0.7 s",
+      "value": 629.9600943542779,
+      "displayValue": "0.6 s",
       "score": 1
     },
     "ttfb": {
-      "value": 79,
-      "displayValue": "Root document took 80 ms",
+      "value": 85,
+      "displayValue": "Root document took 90 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2630.5022043122763,
-      "displayValue": "2.6 s",
-      "score": 0.87
+      "value": 2701.156565979651,
+      "displayValue": "2.7 s",
+      "score": 0.86
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 280829
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 40,
-        "savingsBytes": 28622
+        "savingsBytes": 28620
       }
     ],
     "diagnostics": [
@@ -302,6 +329,18 @@
         "score": 0.5
       },
       {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 14 KiB",
@@ -310,13 +349,12 @@
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 130 ms",
-        "score": 0
+        "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.7 s",
         "score": 0
       }
     ]
@@ -326,15 +364,15 @@
     "label": "Kia – Paint Code",
     "url": "https://kiawindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:32:20.003Z",
-    "performanceScore": 62,
+    "timestamp": "2026-10-03T13:06:06.342Z",
+    "performanceScore": 69,
     "lcp": {
-      "value": 4234.590022745488,
-      "displayValue": "4.2 s",
-      "score": 0.43
+      "value": 4053.1881204790243,
+      "displayValue": "4.1 s",
+      "score": 0.48
     },
     "fcp": {
-      "value": 1539.3197580458389,
+      "value": 1541.4785309351555,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -344,22 +382,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 917,
-      "displayValue": "920 ms",
-      "score": 0.31
+      "value": 666.8968029032762,
+      "displayValue": "670 ms",
+      "score": 0.45
     },
     "si": {
-      "value": 4454.224025599311,
-      "displayValue": "4.5 s",
-      "score": 0.73
+      "value": 3504.043178913656,
+      "displayValue": "3.5 s",
+      "score": 0.88
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 11341.010618181626,
+      "value": 11319.029117888338,
       "displayValue": "11.3 s",
       "score": 0.19
     },
@@ -369,7 +407,7 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 150,
-        "savingsBytes": 373262
+        "savingsBytes": 372831
       },
       {
         "id": "unused-css-rules",
@@ -381,27 +419,27 @@
     ],
     "diagnostics": [
       {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.5 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.2 s",
+        "score": 0
+      },
+      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.7 s",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.0 s",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
@@ -411,15 +449,15 @@
     "label": "Kia – Paint Code",
     "url": "https://kiawindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:32:33.909Z",
-    "performanceScore": 95,
+    "timestamp": "2026-10-03T13:06:20.992Z",
+    "performanceScore": 90,
     "lcp": {
-      "value": 626.694651649314,
+      "value": 612.6850252217923,
       "displayValue": "0.6 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 418.8099565304526,
+      "value": 420.6562035639041,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -429,46 +467,38 @@
       "score": 1
     },
     "tbt": {
-      "value": 174,
-      "displayValue": "170 ms",
-      "score": 0.85
+      "value": 234.99846757874866,
+      "displayValue": "230 ms",
+      "score": 0.72
     },
     "si": {
-      "value": 889.7587612854038,
-      "displayValue": "0.9 s",
-      "score": 0.98
+      "value": 1351.8915352262006,
+      "displayValue": "1.4 s",
+      "score": 0.88
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2439.216390121612,
+      "value": 2351.5138932318437,
       "displayValue": "2.4 s",
-      "score": 0.9
+      "score": 0.91
     },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30770
-      }
-    ],
+    "opportunities": [],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0.5
+      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
-        "score": 0.5
       }
     ]
   },
@@ -477,55 +507,57 @@
     "label": "Kia – Options Check",
     "url": "https://kiawindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-02T14:33:21.238Z",
-    "performanceScore": 22,
+    "timestamp": "2026-10-03T13:06:40.731Z",
+    "performanceScore": 72,
     "lcp": {
-      "value": 4431.682287132598,
-      "displayValue": "4.4 s",
-      "score": 0.38
+      "value": 3860.785526865549,
+      "displayValue": "3.9 s",
+      "score": 0.53
     },
     "fcp": {
-      "value": 1598.107250546898,
-      "displayValue": "1.6 s",
-      "score": 0.94
+      "value": 1525.394075649524,
+      "displayValue": "1.5 s",
+      "score": 0.95
     },
     "cls": {
-      "value": 0.8979343863912516,
-      "displayValue": "0.898",
-      "score": 0.03
+      "value": null,
+      "displayValue": "0",
+      "score": 1
     },
     "tbt": {
-      "value": 3877.687195906582,
-      "displayValue": "3,880 ms",
-      "score": 0.01
+      "value": 567.5,
+      "displayValue": "570 ms",
+      "score": 0.52
     },
     "si": {
-      "value": 7816.075503600309,
-      "displayValue": "7.8 s",
-      "score": 0.23
+      "value": 3405.035398554602,
+      "displayValue": "3.4 s",
+      "score": 0.89
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12039.43049069302,
-      "displayValue": "12.0 s",
-      "score": 0.16
+      "value": 10970.384201732066,
+      "displayValue": "11.0 s",
+      "score": 0.21
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 130,
+        "savingsBytes": 30797
+      }
+    ],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "7.6 s",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.4 s",
         "score": 0
       },
       {
@@ -535,15 +567,9 @@
         "score": 0
       },
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "5.9 s",
-        "score": 0
-      },
-      {
-        "id": "layout-shifts",
-        "title": "Avoid large layout shifts",
-        "displayValue": "2 layout shifts found",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
       }
     ]
@@ -553,15 +579,15 @@
     "label": "Kia – Options Check",
     "url": "https://kiawindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-02T14:33:36.017Z",
-    "performanceScore": 96,
+    "timestamp": "2026-10-03T13:06:56.782Z",
+    "performanceScore": 84,
     "lcp": {
-      "value": 898.6968630772635,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 979.5976853864709,
+      "displayValue": "1.0 s",
+      "score": 0.95
     },
     "fcp": {
-      "value": 433.7653956204215,
+      "value": 423.8937491289872,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -571,26 +597,41 @@
       "score": 1
     },
     "tbt": {
-      "value": 153,
-      "displayValue": "150 ms",
-      "score": 0.89
+      "value": 342.0000000000001,
+      "displayValue": "340 ms",
+      "score": 0.51
     },
     "si": {
-      "value": 829.7141011689637,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 962.3941016686573,
+      "displayValue": "1.0 s",
+      "score": 0.98
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2325.9883940083155,
-      "displayValue": "2.3 s",
-      "score": 0.92
+      "value": 2548.759866623307,
+      "displayValue": "2.5 s",
+      "score": 0.88
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 368619
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 20,
+        "savingsBytes": 30770
+      }
+    ],
     "diagnostics": [
       {
         "id": "cache-insight",
