@@ -1,10 +1,10 @@
 [
   {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Build Sheet",
-    "url": "https://audiwindowsticker.com/build-sheet-by-vin",
+    "site": "Detailed Vehicle History",
+    "label": "Homepage",
+    "url": "https://www.detailedvehiclehistory.com",
     "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T12:50:22.200Z",
+    "timestamp": "2026-10-03T12:50:41.291Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -17,23 +17,25 @@
     "clsAnalysis": {
       "totalCLS": 0,
       "shifts": [],
-      "issues": []
+      "issues": [
+        "10 image(s) missing width/height attributes"
+      ]
     },
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 13,
-        "tls": 11,
-        "serverProcessing": 21,
-        "ttfb": 40,
-        "download": 9,
-        "domParsing": 321,
-        "domContentLoaded": 546,
-        "loadEvent": 546,
-        "transferSize": 41235,
-        "encodedBodySize": 40935,
-        "decodedBodySize": 277472,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 22,
+        "ttfb": 57,
+        "download": 10,
+        "domParsing": 749,
+        "domContentLoaded": 891,
+        "loadEvent": 891,
+        "transferSize": 90741,
+        "encodedBodySize": 90441,
+        "decodedBodySize": 1015770,
         "protocol": "h2"
       },
       "issues": []
@@ -41,272 +43,314 @@
     "renderBlocking": [
       {
         "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
         "suggestion": "Consider async loading or inlining critical CSS"
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/cc0642bf989033db.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/6518a0a331a01de8.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "suggestion": "Add async or defer attribute"
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 54,
-      "totalSize": 412883,
+      "totalCount": 68,
+      "totalSize": 662318,
       "byType": {
         "link": {
           "count": 12,
-          "totalSize": 159087,
-          "totalDuration": 694.2000000001863
+          "totalSize": 89669,
+          "totalDuration": 1444.0000000000582
         },
         "script": {
-          "count": 14,
-          "totalSize": 174027,
-          "totalDuration": 1032.3000000000466
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 4912.399999999965
+        },
+        "img": {
+          "count": 7,
+          "totalSize": 206933,
+          "totalDuration": 337.9000000000233
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 11.800000000046566
+          "totalDuration": 11.89999999999418
         },
         "fetch": {
-          "count": 27,
-          "totalSize": 79469,
-          "totalDuration": 3081
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 652.1000000000058
         }
       },
-      "largeResources": [],
+      "largeResources": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
+          "type": "img",
+          "size": 102925,
+          "duration": 58
+        }
+      ],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 4,
-      "issueCount": 2,
+      "totalImages": 22,
+      "issueCount": 13,
       "images": [
         {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 350x100 displayed at 126x36"
-          ]
-        },
-        {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 110,
+          "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
           "hasAlt": true,
           "hasDimensions": true,
           "issues": [
-            "Oversized: 350x100 displayed at 126x36"
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 937,
+          "naturalHeight": 838,
+          "displayWidth": 524,
+          "displayHeight": 469,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=%2Fimages%2Ffox.png&w=375&q=75",
+          "naturalWidth": 95,
+          "naturalHeight": 130,
+          "displayWidth": 80,
+          "displayHeight": 109,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 1920,
+          "naturalHeight": 1077,
+          "displayWidth": 548,
+          "displayHeight": 307,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 1920x1077 displayed at 548x307"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 1920,
+          "naturalHeight": 1079,
+          "displayWidth": 548,
+          "displayHeight": 308,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 1920x1079 displayed at 548x308"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
           ]
         }
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 412883,
+      "firstPartySize": 662318,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 106
+          "duration": 34
         }
       ],
       "totalDomains": 1
     },
     "domAnalysis": {
-      "totalElements": 553,
-      "maxDepth": 16,
-      "maxChildren": 52,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
+      "totalElements": 2567,
+      "maxDepth": 18,
+      "maxChildren": 114,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 2567 elements (recommended < 1500)",
+        "Wide node: BODY has 114 children (recommended < 60)"
+      ]
     },
     "fontAnalysis": {
       "fonts": [
         {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 47
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 27
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 37
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 40
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 44
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 45
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 20
         }
       ],
       "fontFaces": [
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
+          "family": "\"Inter Fallback\"",
           "display": "auto"
         }
       ],
       "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
       ]
     },
     "securityCheck": {
@@ -315,46 +359,52 @@
     "preloadCheck": {
       "preloads": [
         {
-          "href": "/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "as": "font"
         },
         {
-          "href": "/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "as": "font"
-        },
-        {
+          "href": "/dvh-assets/DVH_Logo.svg",
           "as": "image"
         },
         {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
           "as": "image"
         },
         {
-          "href": "/_next/static/chunks/b84fc83e084547a7.js",
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
           "as": "script"
         },
         {
-          "href": "/_next/static/chunks/cc0642bf989033db.js",
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
           "as": "script"
         },
         {
-          "href": "/_next/static/chunks/6518a0a331a01de8.js",
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
           "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/79132.c4ddf8f37506b2c8.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/63717.2e987a81536bcf4f.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/9317.d14210498ae8fbfd.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/2152.655e89fa1bd52077.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
         }
       ],
       "preconnects": [],
@@ -365,135 +415,14 @@
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/signup?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/login?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=b1sp8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=x6y86",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=pw767",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1ci32",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/login?_rsc=13riu",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=1m6c8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=b1sp8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=1m6c8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=b1sp8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=1m6c8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
+    "failedRequests": []
   },
   {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Build Sheet",
-    "url": "https://audiwindowsticker.com/build-sheet-by-vin",
+    "site": "Detailed Vehicle History",
+    "label": "Homepage",
+    "url": "https://www.detailedvehiclehistory.com",
     "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T12:50:21.922Z",
+    "timestamp": "2026-10-03T12:50:41.133Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -506,23 +435,25 @@
     "clsAnalysis": {
       "totalCLS": 0,
       "shifts": [],
-      "issues": []
+      "issues": [
+        "10 image(s) missing width/height attributes"
+      ]
     },
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 13,
-        "tls": 10,
-        "serverProcessing": 15,
-        "ttfb": 32,
-        "download": 9,
-        "domParsing": 260,
-        "domContentLoaded": 424,
-        "loadEvent": 425,
-        "transferSize": 41235,
-        "encodedBodySize": 40935,
-        "decodedBodySize": 277472,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 23,
+        "ttfb": 56,
+        "download": 8,
+        "domParsing": 688,
+        "domContentLoaded": 767,
+        "loadEvent": 768,
+        "transferSize": 90770,
+        "encodedBodySize": 90470,
+        "decodedBodySize": 1015770,
         "protocol": "h2"
       },
       "issues": []
@@ -530,248 +461,633 @@
     "renderBlocking": [
       {
         "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
         "suggestion": "Consider async loading or inlining critical CSS"
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/cc0642bf989033db.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/6518a0a331a01de8.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "suggestion": "Add async or defer attribute"
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 34,
-      "totalSize": 385410,
+      "totalCount": 66,
+      "totalSize": 506848,
+      "byType": {
+        "link": {
+          "count": 12,
+          "totalSize": 89669,
+          "totalDuration": 1431.500000000029
+        },
+        "script": {
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 5700.799999999959
+        },
+        "img": {
+          "count": 5,
+          "totalSize": 51463,
+          "totalDuration": 283.6000000000058
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 15
+        },
+        "fetch": {
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 628.5
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 22,
+      "issueCount": 11,
+      "images": [
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 0,
+          "naturalHeight": 0,
+          "displayWidth": 0,
+          "displayHeight": 0,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 1920,
+          "naturalHeight": 1077,
+          "displayWidth": 319,
+          "displayHeight": 179,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 1920x1077 displayed at 319x179"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
+        }
+      ]
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 506848,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 82
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 2579,
+      "maxDepth": 18,
+      "maxChildren": 114,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 2579 elements (recommended < 1500)",
+        "Wide node: BODY has 114 children (recommended < 60)"
+      ]
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 63
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "\"Inter Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/79132.c4ddf8f37506b2c8.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/63717.2e987a81536bcf4f.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/9317.d14210498ae8fbfd.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/2152.655e89fa1bd52077.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": []
+    },
+    "consoleErrors": [],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": []
+  },
+  {
+    "site": "Detailed Vehicle History",
+    "label": "License Plate Lookup",
+    "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
+    "browser": "desktop-chrome",
+    "timestamp": "2026-10-03T12:50:50.265Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "8 image(s) missing width/height attributes"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 22,
+        "ttfb": 56,
+        "download": 7,
+        "domParsing": 263,
+        "domContentLoaded": 437,
+        "loadEvent": 499,
+        "transferSize": 81370,
+        "encodedBodySize": 81070,
+        "decodedBodySize": 883541,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 66,
+      "totalSize": 759063,
       "byType": {
         "link": {
           "count": 11,
-          "totalSize": 133493,
-          "totalDuration": 837.8999999992084
+          "totalSize": 77299,
+          "totalDuration": 931.2999999999884
         },
         "script": {
-          "count": 14,
-          "totalSize": 174027,
-          "totalDuration": 1169.0000000002328
+          "count": 50,
+          "totalSize": 475092,
+          "totalDuration": 4021.0999999999476
         },
         "img": {
-          "count": 1,
-          "totalSize": 53932,
-          "totalDuration": 115.70000000018626
+          "count": 3,
+          "totalSize": 203982,
+          "totalDuration": 221.80000000001746
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 9.399999999906868
+          "totalDuration": 9.5
         },
         "fetch": {
-          "count": 7,
-          "totalSize": 23658,
-          "totalDuration": 1897.5999999998603
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 611.6000000000058
         }
       },
-      "largeResources": [],
+      "largeResources": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
+          "type": "img",
+          "size": 112066,
+          "duration": 94
+        },
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/chunks/67974.5a934698884beeef.js",
+          "type": "script",
+          "size": 108648,
+          "duration": 31
+        }
+      ],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 4,
-      "issueCount": 0,
-      "images": []
+      "totalImages": 17,
+      "issueCount": 8,
+      "images": [
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 1350,
+          "naturalHeight": 1350,
+          "displayWidth": 524,
+          "displayHeight": 524,
+          "loading": "eager",
+          "fetchPriority": "high",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 1350x1350 displayed at 524x524"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 375,
+          "naturalHeight": 211,
+          "displayWidth": 119,
+          "displayHeight": 67,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 375x211 displayed at 119x67"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
+        }
+      ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 385410,
+      "firstPartySize": 759063,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 127
+          "duration": 71
         }
       ],
       "totalDomains": 1
     },
     "domAnalysis": {
-      "totalElements": 553,
-      "maxDepth": 16,
-      "maxChildren": 52,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
+      "totalElements": 1989,
+      "maxDepth": 20,
+      "maxChildren": 98,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 1989 elements (recommended < 1500)",
+        "Wide node: BODY has 98 children (recommended < 60)"
+      ]
     },
     "fontAnalysis": {
       "fonts": [
         {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 31
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 55
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 63
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 86
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 80
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 83
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 14
         }
       ],
       "fontFaces": [
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
+          "family": "\"Inter Fallback\"",
           "display": "auto"
         }
       ],
       "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
       ]
     },
     "securityCheck": {
@@ -780,46 +1096,48 @@
     "preloadCheck": {
       "preloads": [
         {
-          "href": "/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "as": "font"
         },
         {
-          "href": "/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "as": "font"
-        },
-        {
+          "href": "/dvh-assets/DVH_Logo.svg",
           "as": "image"
         },
         {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
           "as": "image"
         },
         {
-          "href": "/_next/static/chunks/b84fc83e084547a7.js",
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
           "as": "script"
         },
         {
-          "href": "/_next/static/chunks/cc0642bf989033db.js",
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
           "as": "script"
         },
         {
-          "href": "/_next/static/chunks/6518a0a331a01de8.js",
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
           "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/95131.0c924a48ed60b7f0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
         }
       ],
       "preconnects": [],
@@ -830,45 +1148,14 @@
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=b1sp8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=pw767",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=x6y86",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1ci32",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
+    "failedRequests": []
   },
   {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Options Check",
-    "url": "https://audiwindowsticker.com/options-check-by-vin",
-    "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T12:50:34.301Z",
+    "site": "Detailed Vehicle History",
+    "label": "License Plate Lookup",
+    "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
+    "browser": "mobile-chrome",
+    "timestamp": "2026-10-03T12:50:50.636Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -881,23 +1168,25 @@
     "clsAnalysis": {
       "totalCLS": 0,
       "shifts": [],
-      "issues": []
+      "issues": [
+        "8 image(s) missing width/height attributes"
+      ]
     },
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 4,
-        "connection": 10,
-        "tls": 8,
-        "serverProcessing": 42,
-        "ttfb": 60,
-        "download": 1,
-        "domParsing": 20,
-        "domContentLoaded": 233,
-        "loadEvent": 249,
-        "transferSize": 9810,
-        "encodedBodySize": 9510,
-        "decodedBodySize": 42159,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 21,
+        "ttfb": 54,
+        "download": 6,
+        "domParsing": 266,
+        "domContentLoaded": 465,
+        "loadEvent": 465,
+        "transferSize": 81370,
+        "encodedBodySize": 81070,
+        "decodedBodySize": 883541,
         "protocol": "h2"
       },
       "issues": []
@@ -905,440 +1194,284 @@
     "renderBlocking": [
       {
         "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/public-stylesheet.css",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
         "suggestion": "Consider async loading or inlining critical CSS"
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/b59d47f80b161124.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/e8969c9285319b2c.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/45bb9fb280e43468.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/2aa843545a35b54b.js",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "suggestion": "Add async or defer attribute"
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 84,
-      "totalSize": 462940,
+      "totalCount": 64,
+      "totalSize": 635148,
       "byType": {
         "link": {
-          "count": 10,
-          "totalSize": 142157,
-          "totalDuration": 301.6999999997206
+          "count": 11,
+          "totalSize": 77299,
+          "totalDuration": 797.0000000000582
         },
         "script": {
-          "count": 15,
-          "totalSize": 177949,
-          "totalDuration": 516.0000000004657
+          "count": 50,
+          "totalSize": 475092,
+          "totalDuration": 3802.6999999999825
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 80067,
+          "totalDuration": 83.89999999999418
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 9.300000000046566
+          "totalDuration": 15.89999999999418
         },
         "fetch": {
-          "count": 58,
-          "totalSize": 142534,
-          "totalDuration": 2135.5999999998603
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 590.7999999999884
         }
       },
-      "largeResources": [],
+      "largeResources": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/chunks/67974.5a934698884beeef.js",
+          "type": "script",
+          "size": 108648,
+          "duration": 24
+        }
+      ],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 2,
-      "issueCount": 2,
+      "totalImages": 17,
+      "issueCount": 6,
       "images": [
         {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
           "loading": "auto",
           "fetchPriority": "auto",
           "hasAlt": true,
           "hasDimensions": true,
           "issues": [
-            "Oversized: 350x100 displayed at 126x36"
+            "Oversized: 300x150 displayed at 96x28"
           ]
         },
         {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
-          "loading": "lazy",
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
           "fetchPriority": "auto",
           "hasAlt": true,
           "hasDimensions": true,
           "issues": [
-            "Oversized: 350x100 displayed at 126x36",
-            "Above-fold image has loading=\"lazy\" — slows LCP"
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
           ]
         }
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 462940,
+      "firstPartySize": 635148,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 66
+          "duration": 65
         }
       ],
       "totalDomains": 1
     },
     "domAnalysis": {
-      "totalElements": 224,
-      "maxDepth": 10,
-      "maxChildren": 42,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
+      "totalElements": 1988,
+      "maxDepth": 20,
+      "maxChildren": 98,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 1988 elements (recommended < 1500)",
+        "Wide node: BODY has 98 children (recommended < 60)"
+      ]
     },
     "fontAnalysis": {
       "fonts": [
         {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 44
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 43
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 26
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 34
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 42
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 36
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 52
         }
       ],
       "fontFaces": [
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
+          "family": "\"Inter Fallback\"",
           "display": "auto"
         }
       ],
       "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
       ]
     },
     "securityCheck": {
       "issues": []
     },
     "preloadCheck": {
-      "preloads": [],
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/95131.0c924a48ed60b7f0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
       "preconnects": [],
       "dnsPrefetch": [],
-      "issues": [
-        "No preload hints found — consider preloading LCP image/font"
-      ]
+      "issues": []
     },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
+    "consoleErrors": [],
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/options-check-by-vin",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/specs-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/recalls-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/options-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/login?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=wjd54",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/privacy-policy?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/specs-by-vin?_rsc=1bvp5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/specs-by-vin?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
+    "failedRequests": []
   },
   {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Options Check",
-    "url": "https://audiwindowsticker.com/options-check-by-vin",
-    "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T12:50:33.897Z",
+    "site": "Detailed Vehicle History",
+    "label": "VIN Check",
+    "url": "https://www.detailedvehiclehistory.com/vin-check",
+    "browser": "desktop-chrome",
+    "timestamp": "2026-10-03T12:50:45.844Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1351,23 +1484,25 @@
     "clsAnalysis": {
       "totalCLS": 0,
       "shifts": [],
-      "issues": []
+      "issues": [
+        "7 image(s) missing width/height attributes"
+      ]
     },
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 9,
-        "tls": 7,
-        "serverProcessing": 39,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 22,
         "ttfb": 50,
-        "download": 1,
-        "domParsing": 35,
-        "domContentLoaded": 212,
-        "loadEvent": 238,
-        "transferSize": 9810,
-        "encodedBodySize": 9510,
-        "decodedBodySize": 42159,
+        "download": 9,
+        "domParsing": 447,
+        "domContentLoaded": 594,
+        "loadEvent": 595,
+        "transferSize": 89013,
+        "encodedBodySize": 88713,
+        "decodedBodySize": 1124192,
         "protocol": "h2"
       },
       "issues": []
@@ -1375,93 +1510,58 @@
     "renderBlocking": [
       {
         "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/public-stylesheet.css",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
         "suggestion": "Consider async loading or inlining critical CSS"
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/b59d47f80b161124.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/e8969c9285319b2c.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/45bb9fb280e43468.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/2aa843545a35b54b.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
         "suggestion": "Add async or defer attribute"
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 44,
-      "totalSize": 361382,
+      "totalCount": 63,
+      "totalSize": 468138,
       "byType": {
         "link": {
           "count": 10,
-          "totalSize": 142157,
-          "totalDuration": 359.50000000023283
+          "totalSize": 75141,
+          "totalDuration": 656.8999999999942
         },
         "script": {
-          "count": 15,
-          "totalSize": 177949,
-          "totalDuration": 455.09999999962747
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 3498.899999999907
+        },
+        "img": {
+          "count": 4,
+          "totalSize": 27281,
+          "totalDuration": 168
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 8.699999999953434
+          "totalDuration": 9.60000000000582
         },
         "fetch": {
-          "count": 18,
-          "totalSize": 40976,
-          "totalDuration": 747.7000000004191
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 647.6999999999825
         }
       },
       "largeResources": [],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 2,
-      "issueCount": 1,
+      "totalImages": 13,
+      "issueCount": 9,
       "images": [
         {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 175,
-          "naturalHeight": 50,
-          "displayWidth": 126,
-          "displayHeight": 36,
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 110,
+          "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
           "hasAlt": true,
@@ -1469,888 +1569,1076 @@
           "issues": [
             "Above-fold image has loading=\"lazy\" — slows LCP"
           ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
         }
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 361382,
+      "firstPartySize": 468138,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
+          "duration": 46
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 2876,
+      "maxDepth": 17,
+      "maxChildren": 133,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 2876 elements (recommended < 1500)",
+        "Wide node: BODY has 133 children (recommended < 60)"
+      ]
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 30
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "\"Inter Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": []
+    },
+    "consoleErrors": [],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": []
+  },
+  {
+    "site": "Detailed Vehicle History",
+    "label": "VIN Check",
+    "url": "https://www.detailedvehiclehistory.com/vin-check",
+    "browser": "mobile-chrome",
+    "timestamp": "2026-10-03T12:50:45.965Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "7 image(s) missing width/height attributes"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 22,
+        "ttfb": 54,
+        "download": 8,
+        "domParsing": 447,
+        "domContentLoaded": 523,
+        "loadEvent": 523,
+        "transferSize": 89014,
+        "encodedBodySize": 88714,
+        "decodedBodySize": 1124192,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 63,
+      "totalSize": 468138,
+      "byType": {
+        "link": {
+          "count": 10,
+          "totalSize": 75141,
+          "totalDuration": 886.0000000000291
+        },
+        "script": {
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 4301.099999999948
+        },
+        "img": {
+          "count": 4,
+          "totalSize": 27281,
+          "totalDuration": 170.29999999993015
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 14.5
+        },
+        "fetch": {
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 611.7000000000116
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 13,
+      "issueCount": 9,
+      "images": [
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
+        }
+      ]
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 468138,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 33
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 2876,
+      "maxDepth": 17,
+      "maxChildren": 133,
+      "widestElement": "BODY",
+      "deepestElement": "SPAN",
+      "issues": [
+        "Large DOM: 2876 elements (recommended < 1500)",
+        "Wide node: BODY has 133 children (recommended < 60)"
+      ]
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 57
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "\"Inter Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": []
+    },
+    "consoleErrors": [],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": []
+  },
+  {
+    "site": "Detailed Vehicle History",
+    "label": "Window Sticker",
+    "url": "https://www.detailedvehiclehistory.com/window-sticker",
+    "browser": "desktop-chrome",
+    "timestamp": "2026-10-03T12:50:55.043Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "9 image(s) missing width/height attributes"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 27,
+        "ttfb": 59,
+        "download": 11,
+        "domParsing": 511,
+        "domContentLoaded": 630,
+        "loadEvent": 630,
+        "transferSize": 109474,
+        "encodedBodySize": 109174,
+        "decodedBodySize": 1280988,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 65,
+      "totalSize": 666820,
+      "byType": {
+        "link": {
+          "count": 12,
+          "totalSize": 77313,
+          "totalDuration": 866.399999999936
+        },
+        "script": {
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 3514.499999999971
+        },
+        "img": {
+          "count": 4,
+          "totalSize": 223791,
+          "totalDuration": 232.80000000001746
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 9.60000000000582
+        },
+        "fetch": {
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 633.2999999999884
+        }
+      },
+      "largeResources": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
+          "type": "img",
+          "size": 215958,
+          "duration": 113
+        }
+      ],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 18,
+      "issueCount": 10,
+      "images": [
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 110,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 1440,
+          "naturalHeight": 1509,
+          "displayWidth": 524,
+          "displayHeight": 549,
+          "loading": "eager",
+          "fetchPriority": "high",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 1440x1509 displayed at 524x549"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
+          ]
+        }
+      ]
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 666820,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 30
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 3858,
+      "maxDepth": 20,
+      "maxChildren": 128,
+      "widestElement": "BODY",
+      "deepestElement": "circle",
+      "issues": [
+        "Large DOM: 3858 elements (recommended < 1500)",
+        "Wide node: BODY has 128 children (recommended < 60)"
+      ]
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 17
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "Inter",
+          "display": "swap"
+        },
+        {
+          "family": "\"Inter Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "as": "font"
+        },
+        {
+          "href": "/dvh-assets/DVH_Logo.svg",
+          "as": "image"
+        },
+        {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
+          "as": "image"
+        },
+        {
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/57172.c752413614ac3263.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": []
+    },
+    "consoleErrors": [],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": []
+  },
+  {
+    "site": "Detailed Vehicle History",
+    "label": "Window Sticker",
+    "url": "https://www.detailedvehiclehistory.com/window-sticker",
+    "browser": "mobile-chrome",
+    "timestamp": "2026-10-03T12:51:00.751Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "9 image(s) missing width/height attributes"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 0,
+        "connection": 0,
+        "tls": 0,
+        "serverProcessing": 20,
+        "ttfb": 51,
+        "download": 8,
+        "domParsing": 443,
+        "domContentLoaded": 549,
+        "loadEvent": 549,
+        "transferSize": 109474,
+        "encodedBodySize": 109174,
+        "decodedBodySize": 1280988,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/css/c0052ec527bf5b7f.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 65,
+      "totalSize": 592135,
+      "byType": {
+        "link": {
+          "count": 12,
+          "totalSize": 77313,
+          "totalDuration": 1074.2999999999884
+        },
+        "script": {
+          "count": 47,
+          "totalSize": 363026,
+          "totalDuration": 3786.6999999999825
+        },
+        "img": {
+          "count": 4,
+          "totalSize": 149106,
+          "totalDuration": 234.20000000001164
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 11.299999999988358
+        },
+        "fetch": {
+          "count": 1,
+          "totalSize": 2390,
+          "totalDuration": 5750.5
+        }
+      },
+      "largeResources": [
+        {
+          "url": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2...",
+          "type": "img",
+          "size": 141273,
           "duration": 59
         }
       ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 224,
-      "maxDepth": 10,
-      "maxChildren": 42,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 41
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 43
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 40
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 37
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 42
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 39
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "No preload hints found — consider preloading LCP image/font"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/options-check-by-vin",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=wjd54",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=13rkf",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=1bvp5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=1bvp5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=8y9wr",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Paint Code",
-    "url": "https://audiwindowsticker.com/paint-code-by-vin-lookup",
-    "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T12:50:30.482Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": []
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 12,
-        "tls": 10,
-        "serverProcessing": 39,
-        "ttfb": 55,
-        "download": 1,
-        "domParsing": 20,
-        "domContentLoaded": 122,
-        "loadEvent": 367,
-        "transferSize": 9818,
-        "encodedBodySize": 9518,
-        "decodedBodySize": 42171,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/public-stylesheet.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/b59d47f80b161124.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/e8969c9285319b2c.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/45bb9fb280e43468.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/2aa843545a35b54b.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 84,
-      "totalSize": 462941,
-      "byType": {
-        "link": {
-          "count": 10,
-          "totalSize": 142157,
-          "totalDuration": 411.3000000002794
-        },
-        "script": {
-          "count": 15,
-          "totalSize": 177949,
-          "totalDuration": 475.0999999991618
-        },
-        "fetch": {
-          "count": 58,
-          "totalSize": 142535,
-          "totalDuration": 3172.1999999997206
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 9.800000000046566
-        }
-      },
-      "largeResources": [],
       "issues": []
     },
     "imageAudit": {
-      "totalImages": 2,
-      "issueCount": 2,
+      "totalImages": 18,
+      "issueCount": 9,
       "images": [
         {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 350x100 displayed at 126x36"
-          ]
-        },
-        {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
-          "loading": "lazy",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 350x100 displayed at 126x36",
-            "Above-fold image has loading=\"lazy\" — slows LCP"
-          ]
-        }
-      ]
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 462941,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 31
-        }
-      ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 224,
-      "maxDepth": 10,
-      "maxChildren": 42,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 46
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 33
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 41
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 31
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 45
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 45
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "No preload hints found — consider preloading LCP image/font"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/paint-code-by-vin-lookup",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://audiwindowsticker.com/specs-by-vin?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/privacy-policy?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/options-by-vin?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/recalls-by-vin?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/signup?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/login?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=m29he",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/request-a-refund?_rsc=1ntf6",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/privacy-policy?_rsc=kbg1s",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/privacy-policy?_rsc=1x9bk",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – Paint Code",
-    "url": "https://audiwindowsticker.com/paint-code-by-vin-lookup",
-    "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T12:50:30.244Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": []
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 9,
-        "tls": 7,
-        "serverProcessing": 33,
-        "ttfb": 46,
-        "download": 1,
-        "domParsing": 23,
-        "domContentLoaded": 196,
-        "loadEvent": 215,
-        "transferSize": 9836,
-        "encodedBodySize": 9536,
-        "decodedBodySize": 42234,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/public-stylesheet.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/b59d47f80b161124.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/e8969c9285319b2c.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/45bb9fb280e43468.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/2aa843545a35b54b.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 44,
-      "totalSize": 361382,
-      "byType": {
-        "link": {
-          "count": 10,
-          "totalSize": 142157,
-          "totalDuration": 311.20000000018626
-        },
-        "script": {
-          "count": 15,
-          "totalSize": 177949,
-          "totalDuration": 416.9000000001397
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 8.100000000093132
-        },
-        "fetch": {
-          "count": 18,
-          "totalSize": 40976,
-          "totalDuration": 1239.3000000002794
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 2,
-      "issueCount": 1,
-      "images": [
-        {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 175,
-          "naturalHeight": 50,
-          "displayWidth": 126,
-          "displayHeight": 36,
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 38,
+          "displayWidth": 85,
+          "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
           "hasAlt": true,
@@ -2358,637 +2646,192 @@
           "issues": [
             "Above-fold image has loading=\"lazy\" — slows LCP"
           ]
-        }
-      ]
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 361382,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 49
-        }
-      ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 225,
-      "maxDepth": 10,
-      "maxChildren": 43,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 38
         },
         {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 34
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 26
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 31
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 34
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 25
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "No preload hints found — consider preloading LCP image/font"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/paint-code-by-vin-lookup",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=1x9bk",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=y2gn3",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=m29he",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=1ntf6",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=matx5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/blog?_rsc=1pg5l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=1x9bk",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=kbg1s",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/contact-us?_rsc=1p208",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=1x9bk",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=1p208",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/about-us?_rsc=kbg1s",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1x9bk",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=bedo0",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – VIN Decoder",
-    "url": "https://audiwindowsticker.com/vin-decoder",
-    "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T12:50:26.306Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": []
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 3,
-        "connection": 18,
-        "tls": 15,
-        "serverProcessing": 14,
-        "ttfb": 38,
-        "download": 5,
-        "domParsing": 297,
-        "domContentLoaded": 352,
-        "loadEvent": 495,
-        "transferSize": 45974,
-        "encodedBodySize": 45674,
-        "decodedBodySize": 357481,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/cc0642bf989033db.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 54,
-      "totalSize": 435197,
-      "byType": {
-        "link": {
-          "count": 11,
-          "totalSize": 153985,
-          "totalDuration": 466.2999999995809
-        },
-        "script": {
-          "count": 14,
-          "totalSize": 174027,
-          "totalDuration": 841.6000000000931
-        },
-        "css": {
-          "count": 1,
-          "totalSize": 9936,
-          "totalDuration": 40.800000000046566
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 17944,
-          "totalDuration": 56.10000000009313
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 12.800000000046566
-        },
-        "fetch": {
-          "count": 26,
-          "totalSize": 79005,
-          "totalDuration": 1091.800000000745
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 5,
-      "issueCount": 2,
-      "images": [
-        {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 350x100 displayed at 126x36"
-          ]
-        },
-        {
-          "src": "https://audiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2Fve",
-          "naturalWidth": 350,
-          "naturalHeight": 100,
-          "displayWidth": 126,
-          "displayHeight": 36,
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
           "loading": "lazy",
           "fetchPriority": "auto",
           "hasAlt": true,
           "hasDimensions": true,
           "issues": [
-            "Oversized: 350x100 displayed at 126x36"
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "https://detailedvehiclehistory.com/_next/image?url=https%3A%2F%2Fnyc3.digitaloceanspaces.com%2Fvhr%2",
+          "naturalWidth": 145,
+          "naturalHeight": 40,
+          "displayWidth": 85,
+          "displayHeight": 32,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 96,
+          "displayHeight": 28,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 96x28"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 19,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 19x25"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 69,
+          "displayHeight": 16,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 69x16",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 6,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x6",
+            "Missing alt text"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 67,
+          "displayHeight": 22,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 67x22"
+          ]
+        },
+        {
+          "src": "data:image/svg+xml,%3Csvg%20preserveAspectRatio%3D%22none%22%20width%3D%22100%25%22%20height%3D%2210",
+          "naturalWidth": 300,
+          "naturalHeight": 150,
+          "displayWidth": 22,
+          "displayHeight": 25,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": false,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 300x150 displayed at 22x25",
+            "Missing alt text"
           ]
         }
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 435197,
+      "firstPartySize": 592135,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 53
+          "duration": 30
         }
       ],
       "totalDomains": 1
     },
     "domAnalysis": {
-      "totalElements": 870,
-      "maxDepth": 16,
-      "maxChildren": 53,
+      "totalElements": 3887,
+      "maxDepth": 22,
+      "maxChildren": 128,
       "widestElement": "BODY",
-      "deepestElement": "path",
-      "issues": []
+      "deepestElement": "circle",
+      "issues": [
+        "Large DOM: 3887 elements (recommended < 1500)",
+        "Wide node: BODY has 128 children (recommended < 60)"
+      ]
     },
     "fontAnalysis": {
       "fonts": [
         {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 40
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 27
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 32
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 34
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 36
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 38
-        },
-        {
-          "url": "...tps://audiwindowsticker.com/_next/static/media/9a8b04342f903b9d-s.b6a2e261.woff2",
-          "size": 9936,
-          "duration": 41
+          "url": "https://detailedvehiclehistory.com/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "size": 48736,
+          "duration": 16
         }
       ],
       "fontFaces": [
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
+          "family": "Inter",
           "display": "swap"
         },
         {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
+          "family": "\"Inter Fallback\"",
           "display": "auto"
         }
       ],
       "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "7 font files loaded — consider reducing"
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
       ]
     },
     "securityCheck": {
@@ -2997,42 +2840,52 @@
     "preloadCheck": {
       "preloads": [
         {
-          "href": "/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
+          "href": "/_next/static/media/e4af272ccee01ff0-s.p.woff2",
           "as": "font"
         },
         {
-          "href": "/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "as": "font"
-        },
-        {
+          "href": "/dvh-assets/DVH_Logo.svg",
           "as": "image"
         },
         {
+          "href": "/dvh-assets/DVH-Logo-Footer.svg",
           "as": "image"
         },
         {
-          "href": "/_next/static/chunks/b84fc83e084547a7.js",
+          "href": "/_next/static/chunks/webpack-4c15aa0ecabe8b23.js",
           "as": "script"
         },
         {
-          "href": "/_next/static/chunks/cc0642bf989033db.js",
+          "href": "/_next/static/chunks/85166.038bf892f5a875a5.js",
           "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/45936.036868943e0f2cb0.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/73978.41a1aa013ff6ae01.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/12149.ea02734eb7fa0e5d.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/51212.255f85e66f34538a.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/57172.c752413614ac3263.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/chunks/74085.686d8ee5d401a3d4.js",
+          "as": "script"
+        },
+        {
+          "href": "/_next/static/css/c0052ec527bf5b7f.css",
+          "as": "style"
         }
       ],
       "preconnects": [],
@@ -3041,457 +2894,13 @@
     },
     "consoleErrors": [],
     "consoleWarnings": [
+      "The resource https://detailedvehiclehistory.com/_next/static/chunks/51212.255f85e66f34538a.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+      "The resource https://detailedvehiclehistory.com/_next/static/chunks/85166.038bf892f5a875a5.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+      "The resource https://detailedvehiclehistory.com/_next/static/chunks/45936.036868943e0f2cb0.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+      "The resource https://detailedvehiclehistory.com/_next/static/chunks/57172.c752413614ac3263.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+      "The resource https://detailedvehiclehistory.com/_next/static/chunks/74085.686d8ee5d401a3d4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
       "Deprecated API for given entry type."
     ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=lb0mp",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1tx74",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1je0p",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/vin-decoder?_rsc=lb0mp",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1upwa",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=yb46w",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/signup?_rsc=jlxpl",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/login?_rsc=jlxpl",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=xqvg2",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/warranty-check-by-vin?_rsc=1y3a3",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=xqvg2",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/build-sheet-by-vin?_rsc=1tx74",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=1tx74",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/msrp-lookup?_rsc=1y3a3",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "AUDIWINDOWSTICKER Window Sticker",
-    "label": "Audi – VIN Decoder",
-    "url": "https://audiwindowsticker.com/vin-decoder",
-    "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T12:50:26.243Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": []
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 13,
-        "tls": 11,
-        "serverProcessing": 15,
-        "ttfb": 31,
-        "download": 8,
-        "domParsing": 415,
-        "domContentLoaded": 466,
-        "loadEvent": 493,
-        "transferSize": 45974,
-        "encodedBodySize": 45674,
-        "decodedBodySize": 357481,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/d105f89fadbf860e.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/cc0642bf989033db.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/37a9cc2fa096abbb.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/622bf52d1e820ebc.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 34,
-      "totalSize": 408872,
-      "byType": {
-        "link": {
-          "count": 10,
-          "totalSize": 129149,
-          "totalDuration": 450.8000000002794
-        },
-        "script": {
-          "count": 14,
-          "totalSize": 174027,
-          "totalDuration": 943.4999999995343
-        },
-        "img": {
-          "count": 2,
-          "totalSize": 72266,
-          "totalDuration": 137.69999999995343
-        },
-        "css": {
-          "count": 1,
-          "totalSize": 9936,
-          "totalDuration": 37.4000000001397
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 8.299999999813735
-        },
-        "fetch": {
-          "count": 6,
-          "totalSize": 23194,
-          "totalDuration": 258
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 5,
-      "issueCount": 0,
-      "images": []
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 408872,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 75
-        }
-      ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 870,
-      "maxDepth": 16,
-      "maxChildren": 53,
-      "widestElement": "BODY",
-      "deepestElement": "path",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 18
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 43
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 29
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 33
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 34
-        },
-        {
-          "url": "...s://audiwindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 41
-        },
-        {
-          "url": "...tps://audiwindowsticker.com/_next/static/media/9a8b04342f903b9d-s.b6a2e261.woff2",
-          "size": 9936,
-          "duration": 37
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "7 font files loaded — consider reducing"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [
-        {
-          "href": "/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "as": "font"
-        },
-        {
-          "href": "/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "as": "font"
-        },
-        {
-          "as": "image"
-        },
-        {
-          "as": "image"
-        },
-        {
-          "href": "/_next/static/chunks/b84fc83e084547a7.js",
-          "as": "script"
-        },
-        {
-          "href": "/_next/static/chunks/cc0642bf989033db.js",
-          "as": "script"
-        }
-      ],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": []
-    },
-    "consoleErrors": [],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1je0p",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=1upwa",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://audiwindowsticker.com/?_rsc=yb46w",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
+    "failedRequests": []
   }
 ]
