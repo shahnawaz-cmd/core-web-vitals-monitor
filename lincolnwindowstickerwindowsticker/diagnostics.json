@@ -4,7 +4,7 @@
     "label": "Lincoln – Build Sheet",
     "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T13:06:59.159Z",
+    "timestamp": "2026-10-05T16:50:47.712Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -25,21 +25,23 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 3,
-        "connection": 22,
-        "tls": 16,
-        "serverProcessing": 67,
-        "ttfb": 94,
-        "download": 1,
-        "domParsing": 33,
-        "domContentLoaded": 238,
-        "loadEvent": 1072,
+        "dns": 2,
+        "connection": 14,
+        "tls": 12,
+        "serverProcessing": 598,
+        "ttfb": 616,
+        "download": 2,
+        "domParsing": 27,
+        "domContentLoaded": 700,
+        "loadEvent": 1546,
         "transferSize": 4640,
         "encodedBodySize": 4340,
         "decodedBodySize": 19278,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -65,32 +67,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 246.5
+          "totalDuration": 210.69999999998254
         },
         "script": {
           "count": 26,
           "totalSize": 281252,
-          "totalDuration": 1872.2999999999302
+          "totalDuration": 2499.6999999999534
         },
         "xmlhttprequest": {
-          "count": 9,
+          "count": 8,
           "totalSize": 6229,
-          "totalDuration": 3929.6999999999534
+          "totalDuration": 4248
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 277.0999999999767
+          "totalDuration": 155.39999999999418
+        },
+        "fetch": {
+          "count": 5,
+          "totalSize": 0,
+          "totalDuration": 179.80000000001746
         },
         "img": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 77.79999999998836
-        },
-        "fetch": {
-          "count": 4,
-          "totalSize": 0,
-          "totalDuration": 155.20000000001164
+          "totalDuration": 115.30000000001746
         }
       },
       "largeResources": [],
@@ -109,79 +111,79 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 97
+          "duration": 53
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 40
+          "duration": 54
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 244
+          "duration": 458
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 277
+          "duration": 155
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 13
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 40
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 78
+          "duration": 200
         },
         {
           "domain": "www.googletagmanager.com",
           "count": 3,
           "size": 0,
-          "duration": 277
+          "duration": 220
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 102
+          "duration": 50
         },
         {
           "domain": "www.google.com",
-          "count": 1,
+          "count": 2,
           "size": 0,
-          "duration": 49
+          "duration": 67
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 47
-        },
-        {
-          "domain": "o.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 50
+          "duration": 43
         },
         {
           "domain": "www.google-analytics.com",
           "count": 2,
           "size": 0,
-          "duration": 60
+          "duration": 70
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 15
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 115
+        },
+        {
+          "domain": "a.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 209
         }
       ],
       "totalDomains": 13
@@ -615,7 +617,7 @@
       ]
     },
     "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
     ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
@@ -627,25 +629,31 @@
         "resourceType": "document"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1421511411.1791032816&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1921601.1791219045&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1421511411.1791032816&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=1921601.1791219045&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&d",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791032815991&g",
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=1921601.1791219045&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=source_upda",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791032815991&g",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za20ozb9230624745zd9230624745xf1&_p=1791219044275&gcd=13l3l3l3l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219044275&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -657,7 +665,662 @@
     "label": "Lincoln – Build Sheet",
     "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T13:06:59.533Z",
+    "timestamp": "2026-10-05T16:50:47.369Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": [
+        "2 iframe(s) missing dimensions",
+        "1 fixed/sticky element(s) found that may push content"
+      ]
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 1,
+        "connection": 28,
+        "tls": 25,
+        "serverProcessing": 372,
+        "ttfb": 404,
+        "download": 2,
+        "domParsing": 21,
+        "domContentLoaded": 470,
+        "loadEvent": 1243,
+        "transferSize": 4641,
+        "encodedBodySize": 4341,
+        "decodedBodySize": 19278,
+        "protocol": "http/1.1"
+      },
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/chunks/0uri4l3yk.eh2.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "CSS",
+        "url": "/_next/static/chunks/0jr9ko5e-4m1j.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/03~yq9q893hmn.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 43,
+      "totalSize": 327242,
+      "byType": {
+        "link": {
+          "count": 4,
+          "totalSize": 39761,
+          "totalDuration": 295
+        },
+        "script": {
+          "count": 25,
+          "totalSize": 281252,
+          "totalDuration": 2361.7999999999884
+        },
+        "xmlhttprequest": {
+          "count": 8,
+          "totalSize": 6229,
+          "totalDuration": 4133.899999999965
+        },
+        "iframe": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 151.20000000001164
+        },
+        "fetch": {
+          "count": 4,
+          "totalSize": 0,
+          "totalDuration": 174.80000000001746
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 121.60000000000582
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 0,
+      "issueCount": 0,
+      "images": []
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 327242,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 39
+        },
+        {
+          "domain": "cdn.livechatinc.com",
+          "count": 1,
+          "size": 0,
+          "duration": 31
+        },
+        {
+          "domain": "api.livechatinc.com",
+          "count": 4,
+          "size": 0,
+          "duration": 353
+        },
+        {
+          "domain": "secure.livechatinc.com",
+          "count": 1,
+          "size": 0,
+          "duration": 151
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 195
+        },
+        {
+          "domain": "www.googletagmanager.com",
+          "count": 2,
+          "size": 0,
+          "duration": 181
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 51
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 83
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 46
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 46
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 17
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 122
+        },
+        {
+          "domain": "z.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 204
+        }
+      ],
+      "totalDomains": 13
+    },
+    "domAnalysis": {
+      "totalElements": 74,
+      "maxDepth": 6,
+      "maxChildren": 36,
+      "widestElement": "HEAD",
+      "deepestElement": "H2",
+      "issues": []
+    },
+    "fontAnalysis": {
+      "fonts": [],
+      "fontFaces": [
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Fira Sans Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [
+        {
+          "href": "https://www.googletagmanager.com/gtag/js?id=G-9THEV91BRL",
+          "as": "script"
+        }
+      ],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": [
+        "13 third-party origins without preconnect hints"
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    ],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": [
+      {
+        "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
+        "status": 404,
+        "resourceType": "document"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791219043937&gcd=13l3l3l3l1l1&npa=0&dm",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791219043937&gcd=13l3l3l3l1l1&npa=0&dm",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=609392510.1791219044&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=609392510.1791219044&gtm=45He6a10h2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "site": "LINCOLNWINDOWSTICKER Window Sticker",
+    "label": "Lincoln – Options Check",
+    "url": "https://lincolnwindowsticker.com/options-check-by-vin",
+    "browser": "desktop-chrome",
+    "timestamp": "2026-10-05T16:51:02.925Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -679,673 +1342,22 @@
       "breakdown": {
         "redirect": 0,
         "dns": 3,
-        "connection": 28,
-        "tls": 21,
-        "serverProcessing": 33,
-        "ttfb": 65,
+        "connection": 7,
+        "tls": 5,
+        "serverProcessing": 113,
+        "ttfb": 125,
         "download": 1,
-        "domParsing": 30,
-        "domContentLoaded": 295,
-        "loadEvent": 1032,
-        "transferSize": 4640,
-        "encodedBodySize": 4340,
-        "decodedBodySize": 19278,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/0uri4l3yk.eh2.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/0jr9ko5e-4m1j.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/03~yq9q893hmn.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 43,
-      "totalSize": 327242,
-      "byType": {
-        "link": {
-          "count": 4,
-          "totalSize": 39761,
-          "totalDuration": 380.29999999998836
-        },
-        "script": {
-          "count": 25,
-          "totalSize": 281252,
-          "totalDuration": 2927.5
-        },
-        "xmlhttprequest": {
-          "count": 8,
-          "totalSize": 6229,
-          "totalDuration": 4592.000000000058
-        },
-        "iframe": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 258.5
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 222.79999999998836
-        },
-        "fetch": {
-          "count": 4,
-          "totalSize": 0,
-          "totalDuration": 144.30000000004657
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 0,
-      "issueCount": 0,
-      "images": []
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 327242,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 166
-        },
-        {
-          "domain": "cdn.livechatinc.com",
-          "count": 1,
-          "size": 0,
-          "duration": 39
-        },
-        {
-          "domain": "api.livechatinc.com",
-          "count": 4,
-          "size": 0,
-          "duration": 194
-        },
-        {
-          "domain": "secure.livechatinc.com",
-          "count": 1,
-          "size": 0,
-          "duration": 259
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 209
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 23
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 38
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 223
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 111
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 67
-        },
-        {
-          "domain": "www.google.com",
-          "count": 1,
-          "size": 0,
-          "duration": 40
-        },
-        {
-          "domain": "ad.doubleclick.net",
-          "count": 1,
-          "size": 0,
-          "duration": 37
-        },
-        {
-          "domain": "l.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 28
-        }
-      ],
-      "totalDomains": 13
-    },
-    "domAnalysis": {
-      "totalElements": 74,
-      "maxDepth": 6,
-      "maxChildren": 36,
-      "widestElement": "HEAD",
-      "deepestElement": "H2",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [],
-      "fontFaces": [
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Fira Sans Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "1 font(s) using font-display: auto/block — causes invisible text (FOIT)"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [
-        {
-          "href": "https://www.googletagmanager.com/gtag/js?id=G-9THEV91BRL",
-          "as": "script"
-        }
-      ],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "13 third-party origins without preconnect hints"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://lincolnwindowsticker.com/build-sheet-by-vin",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za208zd9193693127xf1&_p=1791032816123&gcd=13l3l3l3l1l1&npa=0&dm",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032816123&gcd=13l3l3l3l1l1&npa=0&dm",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?_gsid=GjhlH05RFkqT82PGU9e5RJ_fpMXS4z3Zrg&auid=54378363.1791032817&gtm=45He6a10h2v9230624745za200zd9230624745x",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&ae=g&auid=54378363.1791032817&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&d",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "LINCOLNWINDOWSTICKER Window Sticker",
-    "label": "Lincoln – Options Check",
-    "url": "https://lincolnwindowsticker.com/options-check-by-vin",
-    "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T13:07:13.351Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": [
-        "2 iframe(s) missing dimensions",
-        "1 fixed/sticky element(s) found that may push content"
-      ]
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 15,
-        "tls": 9,
-        "serverProcessing": 40,
-        "ttfb": 58,
-        "download": 1,
-        "domParsing": 12,
-        "domContentLoaded": 182,
-        "loadEvent": 1069,
-        "transferSize": 4643,
-        "encodedBodySize": 4343,
+        "domParsing": 19,
+        "domContentLoaded": 216,
+        "loadEvent": 983,
+        "transferSize": 4647,
+        "encodedBodySize": 4347,
         "decodedBodySize": 19282,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -1371,32 +1383,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 180.60000000009313
+          "totalDuration": 220.10000000000582
         },
         "script": {
-          "count": 25,
+          "count": 26,
           "totalSize": 281252,
-          "totalDuration": 1417.9000000000233
+          "totalDuration": 2318.0999999999185
         },
         "xmlhttprequest": {
-          "count": 9,
+          "count": 8,
           "totalSize": 6229,
-          "totalDuration": 4258
+          "totalDuration": 4727.499999999942
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 210.29999999993015
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 98.29999999993015
+          "totalDuration": 168.10000000000582
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 125.60000000009313
+          "totalDuration": 169.70000000001164
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 116.20000000001164
         }
       },
       "largeResources": [],
@@ -1415,87 +1427,87 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 55
+          "duration": 48
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 35
+          "duration": 20
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 587
+          "duration": 192
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 210
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 10
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 15
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 98
-        },
-        {
-          "domain": "j.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 16
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 117
+          "duration": 168
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 208
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 52
+          "duration": 256
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 38
+          "duration": 51
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 35
+          "duration": 46
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 73
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 189
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 45
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 12
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 116
+        },
+        {
+          "domain": "g.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 186
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 74,
+      "totalElements": 75,
       "maxDepth": 6,
-      "maxChildren": 36,
+      "maxChildren": 37,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -1921,7 +1933,8 @@
       ]
     },
     "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
+      "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
     ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
@@ -1933,25 +1946,30 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032829879&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1474907914.1791219060&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032829879&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=1&ae=g&auid=1474907914.1791219060&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=631234699.1791032830&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219059478&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=631234699.1791032830&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
+        "url": "https://ipapi.co/json",
+        "status": 429,
+        "resourceType": "xhr"
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219059478&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1963,7 +1981,7 @@
     "label": "Lincoln – Options Check",
     "url": "https://lincolnwindowsticker.com/options-check-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T13:07:13.390Z",
+    "timestamp": "2026-10-05T16:51:02.585Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1985,20 +2003,22 @@
       "breakdown": {
         "redirect": 0,
         "dns": 2,
-        "connection": 16,
-        "tls": 10,
-        "serverProcessing": 35,
-        "ttfb": 53,
+        "connection": 7,
+        "tls": 6,
+        "serverProcessing": 102,
+        "ttfb": 112,
         "download": 1,
-        "domParsing": 13,
-        "domContentLoaded": 124,
-        "loadEvent": 773,
-        "transferSize": 4643,
-        "encodedBodySize": 4343,
+        "domParsing": 12,
+        "domContentLoaded": 177,
+        "loadEvent": 763,
+        "transferSize": 4647,
+        "encodedBodySize": 4347,
         "decodedBodySize": 19282,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -2018,38 +2038,38 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 43,
+      "totalCount": 44,
       "totalSize": 327242,
       "byType": {
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 177.69999999995343
+          "totalDuration": 190.69999999998254
         },
         "script": {
-          "count": 25,
+          "count": 26,
           "totalSize": 281252,
-          "totalDuration": 1125.2000000000698
+          "totalDuration": 2009.2999999999884
         },
         "xmlhttprequest": {
           "count": 8,
           "totalSize": 6229,
-          "totalDuration": 3945.6999999999534
+          "totalDuration": 4204.399999999994
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 187.09999999997672
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 75.90000000002328
+          "totalDuration": 174.60000000000582
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 126.90000000002328
+          "totalDuration": 170.59999999997672
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 134.5
         }
       },
       "largeResources": [],
@@ -2068,87 +2088,87 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 42
+          "duration": 34
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 41
+          "duration": 17
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 287
+          "duration": 129
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 187
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 100
-        },
-        {
-          "domain": "www.googletagmanager.com",
-          "count": 2,
-          "size": 0,
-          "duration": 194
+          "duration": 175
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 8
+          "duration": 193
         },
         {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
+          "domain": "www.googletagmanager.com",
+          "count": 3,
           "size": 0,
-          "duration": 16
+          "duration": 250
         },
         {
-          "domain": "c.clarity.ms",
+          "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 76
-        },
-        {
-          "domain": "z.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 30
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 53
+          "duration": 59
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 38
+          "duration": 39
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 36
+          "duration": 47
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 84
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 20
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 135
+        },
+        {
+          "domain": "i.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 192
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 74,
+      "totalElements": 75,
       "maxDepth": 6,
-      "maxChildren": 36,
+      "maxChildren": 37,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -2574,7 +2594,7 @@
       ]
     },
     "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
     ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
@@ -2586,25 +2606,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032830369&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=657076068.1791219059&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032830369&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=657076068.1791219059&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1484329631.1791032831&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219059258&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1484329631.1791032831&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219059258&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2616,7 +2636,7 @@
     "label": "Lincoln – Paint Code",
     "url": "https://lincolnwindowsticker.com/paint-code-by-vin-lookup",
     "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T13:07:08.527Z",
+    "timestamp": "2026-10-05T16:50:57.985Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2637,21 +2657,23 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 16,
-        "tls": 10,
-        "serverProcessing": 39,
-        "ttfb": 58,
+        "dns": 3,
+        "connection": 21,
+        "tls": 19,
+        "serverProcessing": 100,
+        "ttfb": 127,
         "download": 1,
         "domParsing": 17,
-        "domContentLoaded": 135,
-        "loadEvent": 810,
-        "transferSize": 4651,
-        "encodedBodySize": 4351,
+        "domContentLoaded": 178,
+        "loadEvent": 767,
+        "transferSize": 4647,
+        "encodedBodySize": 4347,
         "decodedBodySize": 19290,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -2677,32 +2699,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 217.89999999996508
+          "totalDuration": 185.60000000000582
         },
         "script": {
           "count": 25,
           "totalSize": 281252,
-          "totalDuration": 1312.7999999999884
+          "totalDuration": 1976.7000000000116
         },
         "xmlhttprequest": {
-          "count": 9,
+          "count": 8,
           "totalSize": 6229,
-          "totalDuration": 4244.000000000116
+          "totalDuration": 4076.999999999971
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 233.90000000002328
+          "totalDuration": 180.29999999998836
         },
         "img": {
-          "count": 1,
+          "count": 2,
           "totalSize": 0,
-          "totalDuration": 80.70000000001164
+          "totalDuration": 157.10000000000582
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 128.90000000002328
+          "totalDuration": 162.60000000000582
         }
       },
       "largeResources": [],
@@ -2721,79 +2743,79 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 47
+          "duration": 32
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 41
+          "duration": 22
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 256
+          "duration": 164
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 234
+          "duration": 180
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 15
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 16
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 81
+          "duration": 188
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 206
-        },
-        {
-          "domain": "r.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 170
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 55
-        },
-        {
-          "domain": "www.google.com",
-          "count": 1,
-          "size": 0,
-          "duration": 38
-        },
-        {
-          "domain": "ad.doubleclick.net",
-          "count": 1,
-          "size": 0,
-          "duration": 36
+          "duration": 238
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 102
+          "duration": 45
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 14
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 135
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 70
+        },
+        {
+          "domain": "g.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 191
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 48
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 45
         }
       ],
       "totalDomains": 13
@@ -3227,7 +3249,7 @@
       ]
     },
     "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
     ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
@@ -3239,25 +3261,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032825519&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791219054934&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032825519&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791219054934&gcd=13l3l3l3l1l1&npa=0&dm",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=243854044.1791032826&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=452176734.1791219055&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=243854044.1791032826&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+        "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=452176734.1791219055&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3269,7 +3291,7 @@
     "label": "Lincoln – Paint Code",
     "url": "https://lincolnwindowsticker.com/paint-code-by-vin-lookup",
     "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T13:07:09.103Z",
+    "timestamp": "2026-10-05T16:50:57.932Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3290,21 +3312,23 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 15,
-        "tls": 10,
-        "serverProcessing": 38,
-        "ttfb": 55,
+        "dns": 2,
+        "connection": 11,
+        "tls": 8,
+        "serverProcessing": 204,
+        "ttfb": 218,
         "download": 1,
-        "domParsing": 14,
-        "domContentLoaded": 198,
-        "loadEvent": 198,
-        "transferSize": 4651,
-        "encodedBodySize": 4351,
+        "domParsing": 21,
+        "domContentLoaded": 303,
+        "loadEvent": 868,
+        "transferSize": 4647,
+        "encodedBodySize": 4347,
         "decodedBodySize": 19290,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -3330,32 +3354,32 @@
         "link": {
           "count": 4,
           "totalSize": 39761,
-          "totalDuration": 161.10000000003492
+          "totalDuration": 237.80000000004657
         },
         "script": {
-          "count": 25,
+          "count": 26,
           "totalSize": 281252,
-          "totalDuration": 1125.4999999998254
+          "totalDuration": 2300.0999999999185
         },
         "xmlhttprequest": {
-          "count": 9,
+          "count": 8,
           "totalSize": 6229,
-          "totalDuration": 4889.699999999953
+          "totalDuration": 4029.8000000000175
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 194.80000000004657
-        },
-        "img": {
-          "count": 1,
-          "totalSize": 0,
-          "totalDuration": 72.10000000003492
+          "totalDuration": 126.09999999997672
         },
         "fetch": {
           "count": 4,
           "totalSize": 0,
-          "totalDuration": 126.89999999996508
+          "totalDuration": 169.10000000003492
+        },
+        "img": {
+          "count": 1,
+          "totalSize": 0,
+          "totalDuration": 131.39999999999418
         }
       },
       "largeResources": [],
@@ -3374,7 +3398,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 61
+          "duration": 44
         },
         {
           "domain": "cdn.livechatinc.com",
@@ -3386,75 +3410,75 @@
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 204
+          "duration": 200
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 195
+          "duration": 126
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 10
+          "duration": 191
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 179
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 21
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 72
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 2,
-          "size": 0,
-          "duration": 55
-        },
-        {
-          "domain": "z.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 27
-        },
-        {
-          "domain": "www.google.com",
-          "count": 1,
-          "size": 0,
-          "duration": 38
-        },
-        {
-          "domain": "ad.doubleclick.net",
-          "count": 1,
-          "size": 0,
-          "duration": 34
+          "duration": 275
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 119
+          "duration": 50
+        },
+        {
+          "domain": "www.google.com",
+          "count": 1,
+          "size": 0,
+          "duration": 42
+        },
+        {
+          "domain": "ad.doubleclick.net",
+          "count": 1,
+          "size": 0,
+          "duration": 46
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 2,
+          "size": 0,
+          "duration": 81
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 19
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 131
+        },
+        {
+          "domain": "z.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 219
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 74,
+      "totalElements": 75,
       "maxDepth": 6,
-      "maxChildren": 36,
+      "maxChildren": 37,
       "widestElement": "HEAD",
       "deepestElement": "H2",
       "issues": []
@@ -3880,7 +3904,7 @@
       ]
     },
     "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
+      "Failed to load resource: the server responded with a status of 404 (Not Found)"
     ],
     "consoleWarnings": [
       "Deprecated API for given entry type."
@@ -3892,25 +3916,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032825964&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&auid=348778753.1791219055&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032825964&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=348778753.1791219055&gtm=45He69u2h1v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=518558205.1791032826&gtm=45He69u2h1v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219054609&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=1&ae=g&auid=518558205.1791032826&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219054609&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3922,7 +3946,7 @@
     "label": "Lincoln – VIN Decoder",
     "url": "https://lincolnwindowsticker.com/vin-decoder",
     "browser": "desktop-chrome",
-    "timestamp": "2026-10-03T13:07:04.223Z",
+    "timestamp": "2026-10-05T16:50:53.476Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3943,21 +3967,23 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 22,
-        "tls": 16,
-        "serverProcessing": 15,
-        "ttfb": 39,
-        "download": 2,
-        "domParsing": 192,
-        "domContentLoaded": 240,
-        "loadEvent": 295,
+        "dns": 3,
+        "connection": 21,
+        "tls": 19,
+        "serverProcessing": 33,
+        "ttfb": 63,
+        "download": 3,
+        "domParsing": 146,
+        "domContentLoaded": 241,
+        "loadEvent": 397,
         "transferSize": 19983,
         "encodedBodySize": 19683,
         "decodedBodySize": 144787,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -4087,43 +4113,43 @@
       }
     ],
     "resourceAnalysis": {
-      "totalCount": 99,
-      "totalSize": 669437,
+      "totalCount": 100,
+      "totalSize": 669333,
       "byType": {
         "link": {
           "count": 6,
           "totalSize": 72383,
-          "totalDuration": 375.9000000000233
+          "totalDuration": 558.9999999999418
         },
         "script": {
-          "count": 47,
+          "count": 48,
           "totalSize": 442357,
-          "totalDuration": 1870.1000000000931
+          "totalDuration": 3590.6999999999534
         },
         "css": {
           "count": 4,
           "totalSize": 71904,
-          "totalDuration": 227.19999999995343
+          "totalDuration": 446.8999999999942
         },
         "img": {
           "count": 3,
           "totalSize": 22318,
-          "totalDuration": 214.29999999998836
+          "totalDuration": 506.6000000000349
         },
         "xmlhttprequest": {
           "count": 9,
           "totalSize": 6229,
-          "totalDuration": 4551.599999999977
+          "totalDuration": 6925
         },
         "fetch": {
           "count": 29,
-          "totalSize": 54246,
-          "totalDuration": 1814.7000000000116
+          "totalSize": 54142,
+          "totalDuration": 6838.899999999994
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 324.29999999998836
+          "totalDuration": 228.70000000001164
         }
       },
       "largeResources": [],
@@ -4164,98 +4190,98 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 669437,
+      "firstPartySize": 669333,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 43
+          "duration": 52
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 51
+          "duration": 16
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 325
+          "duration": 274
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 324
-        },
-        {
-          "domain": "www.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 24
+          "duration": 229
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 188
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 38
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 101
-        },
-        {
-          "domain": "ipapi.co",
-          "count": 1,
-          "size": 0,
-          "duration": 102
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 1,
-          "size": 0,
-          "duration": 37
-        },
-        {
-          "domain": "l.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 47
+          "duration": 225
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 40
+          "duration": 45
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 39
+          "duration": 41
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 1,
+          "size": 0,
+          "duration": 52
+        },
+        {
+          "domain": "www.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 190
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 14
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 146
+        },
+        {
+          "domain": "r.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 236
+        },
+        {
+          "domain": "ipapi.co",
+          "count": 1,
+          "size": 0,
+          "duration": 53
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 886,
+      "totalElements": 887,
       "maxDepth": 18,
-      "maxChildren": 62,
+      "maxChildren": 63,
       "widestElement": "HEAD",
       "deepestElement": "STRONG",
       "issues": [
-        "Wide node: HEAD has 62 children (recommended < 60)"
+        "Wide node: HEAD has 63 children (recommended < 60)"
       ]
     },
     "fontAnalysis": {
@@ -4263,22 +4289,22 @@
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 61
+          "duration": 127
         },
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 60
+          "duration": 98
         },
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
           "size": 17761,
-          "duration": 55
+          "duration": 107
         },
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 52
+          "duration": 115
         }
       ],
       "fontFaces": [
@@ -4705,19 +4731,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032820967&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=742760856.1791219050&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=693802173.1791032821&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=742760856.1791219050&dt=Lincoln%20VIN%20Decoder%3A%20View%20Specs%2C%20Features%20%26%",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=1&ae=g&auid=693802173.1791032821&dt=Lincoln%20VIN%20Decoder%3A%20View%20Specs%2C%20Features%20%26%",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219049987&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -4729,7 +4755,7 @@
     "label": "Lincoln – VIN Decoder",
     "url": "https://lincolnwindowsticker.com/vin-decoder",
     "browser": "mobile-chrome",
-    "timestamp": "2026-10-03T13:07:04.532Z",
+    "timestamp": "2026-10-05T16:50:53.051Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -4751,20 +4777,22 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 14,
-        "tls": 8,
-        "serverProcessing": 18,
-        "ttfb": 34,
+        "connection": 79,
+        "tls": 77,
+        "serverProcessing": 60,
+        "ttfb": 141,
         "download": 2,
-        "domParsing": 173,
-        "domContentLoaded": 253,
-        "loadEvent": 342,
+        "domParsing": 225,
+        "domContentLoaded": 378,
+        "loadEvent": 524,
         "transferSize": 19983,
         "encodedBodySize": 19683,
         "decodedBodySize": 144787,
-        "protocol": "h2"
+        "protocol": "http/1.1"
       },
-      "issues": []
+      "issues": [
+        "Not using HTTP/2 or HTTP/3 — upgrade recommended"
+      ]
     },
     "renderBlocking": [
       {
@@ -4870,42 +4898,42 @@
     ],
     "resourceAnalysis": {
       "totalCount": 72,
-      "totalSize": 550909,
+      "totalSize": 550805,
       "byType": {
         "link": {
           "count": 6,
           "totalSize": 72383,
-          "totalDuration": 408.5
+          "totalDuration": 714.5999999999767
         },
         "script": {
-          "count": 42,
+          "count": 43,
           "totalSize": 381285,
-          "totalDuration": 1973.0999999998603
+          "totalDuration": 4018.6999999999534
         },
         "css": {
           "count": 4,
           "totalSize": 71904,
-          "totalDuration": 224.79999999998836
+          "totalDuration": 465.29999999995925
         },
         "img": {
           "count": 2,
           "totalSize": 2773,
-          "totalDuration": 140.70000000001164
+          "totalDuration": 272.4999999999709
         },
         "xmlhttprequest": {
-          "count": 9,
+          "count": 8,
           "totalSize": 6229,
-          "totalDuration": 4783.799999999872
+          "totalDuration": 4180.999999999971
         },
         "fetch": {
           "count": 8,
-          "totalSize": 16335,
-          "totalDuration": 299.5
+          "totalSize": 16231,
+          "totalDuration": 1412
         },
         "iframe": {
           "count": 1,
           "totalSize": 0,
-          "totalDuration": 173.29999999998836
+          "totalDuration": 235.20000000001164
         }
       },
       "largeResources": [],
@@ -4946,94 +4974,94 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 550909,
+      "firstPartySize": 550805,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 100
+          "duration": 38
         },
         {
           "domain": "cdn.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 40
+          "duration": 20
         },
         {
           "domain": "api.livechatinc.com",
           "count": 4,
           "size": 0,
-          "duration": 178
+          "duration": 426
         },
         {
           "domain": "secure.livechatinc.com",
           "count": 1,
           "size": 0,
-          "duration": 173
+          "duration": 235
         },
         {
           "domain": "www.googletagmanager.com",
-          "count": 2,
+          "count": 3,
           "size": 0,
-          "duration": 194
+          "duration": 222
         },
         {
           "domain": "www.clarity.ms",
           "count": 1,
           "size": 0,
-          "duration": 13
-        },
-        {
-          "domain": "scripts.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 41
-        },
-        {
-          "domain": "c.clarity.ms",
-          "count": 1,
-          "size": 0,
-          "duration": 106
-        },
-        {
-          "domain": "www.google-analytics.com",
-          "count": 1,
-          "size": 0,
-          "duration": 35
-        },
-        {
-          "domain": "b.clarity.ms",
-          "count": 2,
-          "size": 0,
-          "duration": 20
+          "duration": 188
         },
         {
           "domain": "www.google.com",
           "count": 1,
           "size": 0,
-          "duration": 38
+          "duration": 48
         },
         {
           "domain": "ad.doubleclick.net",
           "count": 1,
           "size": 0,
-          "duration": 37
+          "duration": 46
         },
         {
           "domain": "ipapi.co",
           "count": 1,
           "size": 0,
-          "duration": 106
+          "duration": 52
+        },
+        {
+          "domain": "www.google-analytics.com",
+          "count": 1,
+          "size": 0,
+          "duration": 43
+        },
+        {
+          "domain": "scripts.clarity.ms",
+          "count": 2,
+          "size": 0,
+          "duration": 19
+        },
+        {
+          "domain": "c.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 128
+        },
+        {
+          "domain": "g.clarity.ms",
+          "count": 1,
+          "size": 0,
+          "duration": 253
         }
       ],
       "totalDomains": 13
     },
     "domAnalysis": {
-      "totalElements": 881,
+      "totalElements": 882,
       "maxDepth": 18,
-      "maxChildren": 57,
+      "maxChildren": 58,
       "widestElement": "HEAD",
       "deepestElement": "STRONG",
       "issues": []
@@ -5043,22 +5071,22 @@
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
           "size": 18042,
-          "duration": 53
-        },
-        {
-          "url": "...ncolnwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
-          "size": 17761,
-          "duration": 56
+          "duration": 101
         },
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
           "size": 18118,
-          "duration": 57
+          "duration": 100
+        },
+        {
+          "url": "...ncolnwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
+          "size": 17761,
+          "duration": 164
         },
         {
           "url": "...ncolnwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
           "size": 17983,
-          "duration": 59
+          "duration": 100
         }
       ],
       "fontFaces": [
@@ -5479,35 +5507,28 @@
         "13 third-party origins without preconnect hints"
       ]
     },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 429 ()"
-    ],
+    "consoleErrors": [],
     "consoleWarnings": [
       "Deprecated API for given entry type."
     ],
     "failedRequests": [
       {
-        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127za200zd9193693127xf1&_p=1791032821203&gcd=13l3l3l3l1l1&npa=0&dm",
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=201223315.1791219050&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1146179915.1791032822&gtm=45He69u2v9230624745za200zd9230624745xeaxf1&fmt=8",
+        "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=1&ae=g&auid=201223315.1791219050&dt=Lincoln%20VIN%20Decoder%3A%20View%20Specs%2C%20Features%20%26",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=1&ae=g&auid=1146179915.1791032822&dt=Lincoln%20VIN%20Decoder%3A%20View%20Specs%2C%20Features%20%2",
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9THEV91BRL&gtm=45je69u2v9193693127z89230624745za20gzb9230624745zd9230624745xf1&_p=1791219049542&g",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://ipapi.co/json",
-        "status": 429,
-        "resourceType": "xhr"
       }
     ]
   }
