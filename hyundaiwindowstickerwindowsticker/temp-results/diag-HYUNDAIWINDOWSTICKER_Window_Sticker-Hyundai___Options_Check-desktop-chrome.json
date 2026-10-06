@@ -3,7 +3,7 @@
   "label": "Hyundai – Options Check",
   "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-05T16:46:18.309Z",
+  "timestamp": "2026-10-06T14:47:12.603Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 25,
-      "tls": 19,
-      "serverProcessing": 159,
-      "ttfb": 186,
-      "download": 1,
-      "domParsing": 13,
-      "domContentLoaded": 257,
-      "loadEvent": 816,
-      "transferSize": 4653,
-      "encodedBodySize": 4353,
+      "connection": 122,
+      "tls": 70,
+      "serverProcessing": 1666,
+      "ttfb": 1790,
+      "download": 3,
+      "domParsing": 9,
+      "domContentLoaded": 1941,
+      "loadEvent": 4721,
+      "transferSize": 4654,
+      "encodedBodySize": 4354,
       "decodedBodySize": 19490,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 1666ms",
+      "TTFB exceeds 800ms threshold: 1790ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -58,38 +61,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 40,
+    "totalCount": 44,
     "totalSize": 327238,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 307.20000000006985
+        "totalDuration": 4369.900000000023
       },
       "script": {
-        "count": 25,
+        "count": 28,
         "totalSize": 281255,
-        "totalDuration": 1766.7000000000116
+        "totalDuration": 22182.699999999953
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6222,
-        "totalDuration": 6666.599999999977
+        "totalDuration": 4519.100000000006
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 181.29999999998836
+        "totalDuration": 318.80000000001746
       },
       "fetch": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 40.29999999998836
+        "totalDuration": 56.79999999998836
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 118.70000000001164
+        "totalDuration": 109.79999999998836
       }
     },
     "largeResources": [],
@@ -108,75 +111,75 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 58
+        "duration": 139
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 37
+        "duration": 49
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 220
+        "duration": 639
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 181
+        "duration": 319
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 55
+        "duration": 167
       },
       {
         "domain": "www.googletagmanager.com",
+        "count": 4,
+        "size": 0,
+        "duration": 613
+      },
+      {
+        "domain": "www.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 231
+        "duration": 164
       },
       {
         "domain": "www.google-analytics.com",
         "count": 1,
         "size": 0,
-        "duration": 40
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 207
+        "duration": 57
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 22
+        "duration": 27
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 119
+        "duration": 110
       },
       {
-        "domain": "b.clarity.ms",
-        "count": 1,
+        "domain": "y.clarity.ms",
+        "count": 2,
         "size": 0,
-        "duration": 212
+        "duration": 359
       }
     ],
     "totalDomains": 11
   },
   "domAnalysis": {
-    "totalElements": 74,
+    "totalElements": 80,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 41,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,16 +617,16 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.googletagmanager.com/gtm.js?id=%20GTM-T48NDGVD",
-      "status": 0,
-      "resourceType": "script",
-      "failure": "net::ERR_BLOCKED_BY_ORB"
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je69u2v9193688199za200zd9193688199xf1&_p=1791218774745&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je6a50h2v9193688199za200xf1&_p=1791298029121&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=%20GTM-T48NDGVD&gtm_auth=&gtm_preview=&gtm_cookies_win=x",
+      "status": 0,
+      "resourceType": "script",
+      "failure": "net::ERR_BLOCKED_BY_ORB"
     }
   ]
 }
