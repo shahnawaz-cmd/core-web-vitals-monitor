@@ -3,7 +3,7 @@
   "label": "Alfa Romeo – Build Sheet",
   "url": "https://alfaromeowindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-06T14:35:54.480Z",
+  "timestamp": "2026-10-07T14:53:55.605Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,22 +23,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 76,
+      "redirect": 173,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 28,
-      "ttfb": 105,
-      "download": 1,
-      "domParsing": 170,
-      "domContentLoaded": 281,
-      "loadEvent": 365,
-      "transferSize": 13531,
-      "encodedBodySize": 13231,
-      "decodedBodySize": 74288,
+      "serverProcessing": 57,
+      "ttfb": 233,
+      "download": 4,
+      "domParsing": 252,
+      "domContentLoaded": 495,
+      "loadEvent": 612,
+      "transferSize": 13536,
+      "encodedBodySize": 13236,
+      "decodedBodySize": 74299,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 173ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -108,6 +110,11 @@
     },
     {
       "type": "JS",
+      "url": "/_next/static/chunks/0fgfi-4_k-6x1.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
       "url": "/_next/static/chunks/0c_u_4-~3wo9f.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -123,11 +130,6 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/0fgfi-4_k-6x1.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
       "url": "/_next/static/chunks/0qnszwvw1pwbd.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -138,43 +140,43 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 98,
-    "totalSize": 640259,
+    "totalCount": 99,
+    "totalSize": 640426,
     "byType": {
       "link": {
         "count": 5,
         "totalSize": 51915,
-        "totalDuration": 471.4999999999709
+        "totalDuration": 500.29999999998836
       },
       "script": {
-        "count": 41,
+        "count": 42,
         "totalSize": 429845,
-        "totalDuration": 2590.5999999999767
+        "totalDuration": 4314.100000000268
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 253.30000000001746
+        "totalDuration": 737.1000000000349
       },
       "img": {
         "count": 2,
         "totalSize": 2120,
-        "totalDuration": 175.69999999998254
+        "totalDuration": 571.5
       },
       "xmlhttprequest": {
         "count": 8,
-        "totalSize": 6217,
-        "totalDuration": 5424.099999999977
+        "totalSize": 6359,
+        "totalDuration": 5839.999999999942
       },
       "fetch": {
         "count": 37,
-        "totalSize": 78258,
-        "totalDuration": 1674.100000000035
+        "totalSize": 78283,
+        "totalDuration": 7111.199999999837
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 265
+        "totalDuration": 181.20000000001164
       }
     },
     "largeResources": [],
@@ -215,94 +217,94 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 640259,
+    "firstPartySize": 640426,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 46
+        "duration": 28
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 56
+        "duration": 28
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 154
+        "duration": 310
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 265
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 160
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 23
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 28
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 29
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 117
+        "duration": 181
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 23
+        "duration": 207
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 3,
+        "size": 0,
+        "duration": 57
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 12
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 15
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 13
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 375
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 18
+        "duration": 17
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 122
+        "duration": 377
       },
       {
-        "domain": "a.clarity.ms",
+        "domain": "q.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 79
+        "duration": 521
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 402,
+    "totalElements": 403,
     "maxDepth": 18,
-    "maxChildren": 58,
+    "maxChildren": 59,
     "widestElement": "HEAD",
     "deepestElement": "circle",
     "issues": []
@@ -312,22 +314,22 @@
       {
         "url": "...romeowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 63
+        "duration": 179
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 64
+        "duration": 179
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 68
+        "duration": 190
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 58
+        "duration": 189
       }
     ],
     "fontFaces": [
@@ -766,19 +768,19 @@
   ],
   "failedRequests": [
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6a21v9193982398za200zd9193982398xf1&_p=1791297351028&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=1040152133.1791384832&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=18797155.1791297351&dt=Alfa%20Romeo%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs%2",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1040152133.1791384832&gtm=45He6a51v9230719671za200zd9230719671xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=18797155.1791297351&gtm=45He6a21v9230719671za200zd9230719671xeaxf1&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6a51v9193982398z89230719671za20gzb9230719671zd9230719671xf1&_p=1791384831747&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
