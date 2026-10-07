@@ -3,7 +3,7 @@
   "label": "Alfa Romeo – Options Check",
   "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-06T14:36:08.131Z",
+  "timestamp": "2026-10-07T14:54:25.868Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,22 +23,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 54,
+      "redirect": 164,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 19,
-      "ttfb": 74,
-      "download": 1,
-      "domParsing": 137,
-      "domContentLoaded": 216,
-      "loadEvent": 294,
-      "transferSize": 13872,
-      "encodedBodySize": 13572,
+      "serverProcessing": 66,
+      "ttfb": 231,
+      "download": 4,
+      "domParsing": 148,
+      "domContentLoaded": 387,
+      "loadEvent": 526,
+      "transferSize": 13855,
+      "encodedBodySize": 13555,
       "decodedBodySize": 75415,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 164ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -113,6 +115,11 @@
     },
     {
       "type": "JS",
+      "url": "/_next/static/chunks/0fgfi-4_k-6x1.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
       "url": "/_next/static/chunks/0c_u_4-~3wo9f.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -128,11 +135,6 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/0fgfi-4_k-6x1.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
       "url": "/_next/static/chunks/0qnszwvw1pwbd.js",
       "suggestion": "Add async or defer attribute"
     },
@@ -144,42 +146,42 @@
   ],
   "resourceAnalysis": {
     "totalCount": 98,
-    "totalSize": 636458,
+    "totalSize": 636625,
     "byType": {
       "link": {
         "count": 5,
         "totalSize": 51915,
-        "totalDuration": 341.5000000000291
+        "totalDuration": 327.5999999999767
       },
       "script": {
-        "count": 43,
+        "count": 42,
         "totalSize": 432696,
-        "totalDuration": 1861.899999999965
+        "totalDuration": 3326.999999999942
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 114.30000000001746
+        "totalDuration": 380.29999999998836
       },
       "img": {
         "count": 2,
         "totalSize": 2120,
-        "totalDuration": 153.39999999999418
+        "totalDuration": 596.9999999999418
       },
       "xmlhttprequest": {
         "count": 9,
-        "totalSize": 6217,
-        "totalDuration": 4478.199999999953
+        "totalSize": 6359,
+        "totalDuration": 22299.79999999993
       },
       "fetch": {
-        "count": 34,
-        "totalSize": 71606,
-        "totalDuration": 1275.9000000000233
+        "count": 35,
+        "totalSize": 71631,
+        "totalDuration": 6398.299999999872
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 194.60000000000582
+        "totalDuration": 145.79999999998836
       }
     },
     "largeResources": [],
@@ -220,7 +222,7 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 636458,
+    "firstPartySize": 636625,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
@@ -233,31 +235,55 @@
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 26
+        "duration": 18
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 132
+        "duration": 446
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 195
+        "duration": 146
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 3,
+        "count": 2,
         "size": 0,
-        "duration": 249
+        "duration": 35
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 2,
+        "size": 0,
+        "duration": 16
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 14
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 11
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 33
+        "duration": 162
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 1,
+        "size": 0,
+        "duration": 376
       },
       {
         "domain": "scripts.clarity.ms",
@@ -269,45 +295,21 @@
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 120
+        "duration": 369
       },
       {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 56
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 28
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 101
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 24
-      },
-      {
-        "domain": "l.clarity.ms",
+        "domain": "e.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 382
+        "duration": 611
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 425,
+    "totalElements": 424,
     "maxDepth": 18,
-    "maxChildren": 60,
+    "maxChildren": 59,
     "widestElement": "HEAD",
     "deepestElement": "circle",
     "issues": []
@@ -317,22 +319,22 @@
       {
         "url": "...romeowindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 27
+        "duration": 79
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 27
+        "duration": 89
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 35
+        "duration": 75
       },
       {
         "url": "...romeowindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 25
+        "duration": 138
       }
     ],
     "fontFaces": [
@@ -771,19 +773,25 @@
   ],
   "failedRequests": [
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1689261458.1791297365&gtm=45He6a21h1v9230719671za200zd9230719671xeaxf1&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6a51v9193982398za200zd9193982398xf1&_p=1791384856757&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=19&frm=0&apvc=1&ae=g&auid=1689261458.1791297365&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%2",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1597381135.1791384857&gtm=45He6a51v9230719671za200zd9230719671xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6a21h1v9193982398z89230719671za20gzb9230719671zd9230719671xf1&_p=1791297365076",
+      "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=1597381135.1791384857&dt=Alfa%20Romeo%20Options%20by%20VIN%3A%20Factory%20Equipment%2",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6a51v9193982398z89230719671za200zd9193982398xf1&_p=1791384856757&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
