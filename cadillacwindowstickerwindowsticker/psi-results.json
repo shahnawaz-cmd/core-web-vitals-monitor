@@ -4,15 +4,15 @@
     "label": "Cadillac – Build Sheet",
     "url": "https://cadillacwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-07T14:58:26.315Z",
-    "performanceScore": 80,
+    "timestamp": "2026-10-08T15:08:39.784Z",
+    "performanceScore": 81,
     "lcp": {
-      "value": 3017.188161210074,
-      "displayValue": "3.0 s",
-      "score": 0.77
+      "value": 3991.1971852871293,
+      "displayValue": "4.0 s",
+      "score": 0.5
     },
     "fcp": {
-      "value": 1534.315268736691,
+      "value": 1522.9619281865462,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -22,14 +22,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 493,
-      "displayValue": "490 ms",
-      "score": 0.59
+      "value": 232,
+      "displayValue": "230 ms",
+      "score": 0.86
     },
     "si": {
-      "value": 3863.0375334905266,
-      "displayValue": "3.9 s",
-      "score": 0.83
+      "value": 3647.7272773961818,
+      "displayValue": "3.6 s",
+      "score": 0.86
     },
     "ttfb": {
       "value": 1,
@@ -37,22 +37,37 @@
       "score": 1
     },
     "interactive": {
-      "value": 10323.719277789347,
-      "displayValue": "10.3 s",
-      "score": 0.24
+      "value": 10111.546967145807,
+      "displayValue": "10.1 s",
+      "score": 0.26
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 260098
       },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 140,
+        "savingsBytes": 30797
+      }
+    ],
+    "diagnostics": [
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
         "score": 0
       }
     ]
@@ -62,16 +77,16 @@
     "label": "Cadillac – Build Sheet",
     "url": "https://cadillacwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-07T14:58:42.301Z",
-    "performanceScore": 96,
+    "timestamp": "2026-10-08T15:09:15.682Z",
+    "performanceScore": 53,
     "lcp": {
-      "value": 915.6964826361141,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 1774.2999078370826,
+      "displayValue": "1.8 s",
+      "score": 0.71
     },
     "fcp": {
-      "value": 419.49374818319865,
-      "displayValue": "0.4 s",
+      "value": 515.9758887589833,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "cls": {
@@ -80,45 +95,57 @@
       "score": 1
     },
     "tbt": {
-      "value": 142,
-      "displayValue": "140 ms",
-      "score": 0.91
+      "value": 3788.2216456205097,
+      "displayValue": "3,790 ms",
+      "score": 0
     },
     "si": {
-      "value": 841.027103873585,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 5163.998476345638,
+      "displayValue": "5.2 s",
+      "score": 0.03
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2354.2203113443766,
-      "displayValue": "2.4 s",
-      "score": 0.91
+      "value": 6005.747534379494,
+      "displayValue": "6.0 s",
+      "score": 0.26
     },
     "opportunities": [
       {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 30,
-        "savingsBytes": 30762
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 367955
       }
     ],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "6.8 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "5.2 s",
         "score": 0
       }
     ]
@@ -128,74 +155,74 @@
     "label": "Cadillac – VIN Decoder",
     "url": "https://cadillacwindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-07T14:59:00.394Z",
-    "performanceScore": 92,
+    "timestamp": "2026-10-08T15:09:36.373Z",
+    "performanceScore": 81,
     "lcp": {
-      "value": 3001.062966497602,
-      "displayValue": "3.0 s",
-      "score": 0.78
+      "value": 3676.0500589848466,
+      "displayValue": "3.7 s",
+      "score": 0.59
     },
     "fcp": {
-      "value": 1669.7117727371315,
-      "displayValue": "1.7 s",
-      "score": 0.93
+      "value": 1951.0244732814813,
+      "displayValue": "2.0 s",
+      "score": 0.85
     },
     "cls": {
-      "value": 0.06895813595311923,
+      "value": 0.0694089357945925,
       "displayValue": "0.069",
       "score": 0.96
     },
     "tbt": {
-      "value": 124,
-      "displayValue": "120 ms",
-      "score": 0.97
+      "value": 275.5,
+      "displayValue": "280 ms",
+      "score": 0.81
     },
     "si": {
-      "value": 1669.7117727371315,
-      "displayValue": "1.7 s",
-      "score": 1
+      "value": 2621.7886199346067,
+      "displayValue": "2.6 s",
+      "score": 0.97
     },
     "ttfb": {
-      "value": 3,
-      "displayValue": "Root document took 0 ms",
+      "value": 48,
+      "displayValue": "Root document took 50 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12287.194035476361,
-      "displayValue": "12.3 s",
-      "score": 0.15
+      "value": 12054.551198546564,
+      "displayValue": "12.1 s",
+      "score": 0.16
     },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.9 s",
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 370 ms",
         "score": 0
       },
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.4 s",
+        "displayValue": "1.8 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
+        "score": 0.5
       }
     ]
   },
@@ -204,15 +231,15 @@
     "label": "Cadillac – VIN Decoder",
     "url": "https://cadillacwindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-10-07T14:59:17.279Z",
-    "performanceScore": 98,
+    "timestamp": "2026-10-08T15:09:55.360Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 781.0228548953654,
-      "displayValue": "0.8 s",
-      "score": 0.98
+      "value": 721.111786323883,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 487.6525474835583,
+      "value": 487.78559722347944,
       "displayValue": "0.5 s",
       "score": 1
     },
@@ -222,24 +249,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 120.5,
-      "displayValue": "120 ms",
-      "score": 0.94
+      "value": 78,
+      "displayValue": "80 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 509.85497554206495,
+      "value": 487.78559722347944,
       "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 5,
-      "displayValue": "Root document took 10 ms",
+      "value": 4,
+      "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2855.6740621911495,
-      "displayValue": "2.9 s",
-      "score": 0.83
+      "value": 2723.3709699836036,
+      "displayValue": "2.7 s",
+      "score": 0.85
     },
     "opportunities": [
       {
@@ -258,16 +285,9 @@
         "score": 0.5
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.1 s",
-        "score": 0
       },
       {
         "id": "cache-insight",
@@ -276,8 +296,9 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       }
     ]
@@ -287,15 +308,15 @@
     "label": "Cadillac – Paint Code",
     "url": "https://cadillacwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-10-07T14:59:34.285Z",
-    "performanceScore": 74,
+    "timestamp": "2026-10-08T15:10:10.873Z",
+    "performanceScore": 80,
     "lcp": {
-      "value": 3054.1837214046973,
-      "displayValue": "3.1 s",
-      "score": 0.76
+      "value": 3991.185460509749,
+      "displayValue": "4.0 s",
+      "score": 0.5
     },
     "fcp": {
-      "value": 1529.394573801566,
+      "value": 1521.4397125563967,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -305,24 +326,163 @@
       "score": 1
     },
     "tbt": {
-      "value": 710.5,
-      "displayValue": "710 ms",
-      "score": 0.42
+      "value": 251.5,
+      "displayValue": "250 ms",
+      "score": 0.84
     },
     "si": {
-      "value": 3822.376237788573,
-      "displayValue": "3.8 s",
-      "score": 0.83
+      "value": 4289.1814360694225,
+      "displayValue": "4.3 s",
+      "score": 0.76
     },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 11433.522238435875,
-      "displayValue": "11.4 s",
-      "score": 0.19
+      "value": 10204.611016043005,
+      "displayValue": "10.2 s",
+      "score": 0.25
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 140,
+        "savingsBytes": 30797
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "CADILLACWINDOWSTICKER Window Sticker",
+    "label": "Cadillac – Paint Code",
+    "url": "https://cadillacwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-10-08T15:10:26.334Z",
+    "performanceScore": 92,
+    "lcp": {
+      "value": 938.6687111907648,
+      "displayValue": "0.9 s",
+      "score": 0.96
+    },
+    "fcp": {
+      "value": 423.56444510352054,
+      "displayValue": "0.4 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 212.5,
+      "displayValue": "210 ms",
+      "score": 0.77
+    },
+    "si": {
+      "value": 904.7491563091141,
+      "displayValue": "0.9 s",
+      "score": 0.98
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2196.3794454354575,
+      "displayValue": "2.2 s",
+      "score": 0.93
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 30,
+        "savingsBytes": 30770
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 255344
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "CADILLACWINDOWSTICKER Window Sticker",
+    "label": "Cadillac – Options Check",
+    "url": "https://cadillacwindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-10-08T15:10:43.864Z",
+    "performanceScore": 81,
+    "lcp": {
+      "value": 3017.186686043178,
+      "displayValue": "3.0 s",
+      "score": 0.77
+    },
+    "fcp": {
+      "value": 1526.395562014393,
+      "displayValue": "1.5 s",
+      "score": 0.95
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 473,
+      "displayValue": "470 ms",
+      "score": 0.6
+    },
+    "si": {
+      "value": 3061.573380602792,
+      "displayValue": "3.1 s",
+      "score": 0.93
+    },
+    "ttfb": {
+      "value": 1,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 9999.9727209835,
+      "displayValue": "10.0 s",
+      "score": 0.26
     },
     "opportunities": [
       {
@@ -341,15 +501,9 @@
         "score": 0
       },
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.4 s",
-        "score": 0
-      },
-      {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.8 s",
+        "displayValue": "1.3 s",
         "score": 0
       },
       {
@@ -362,18 +516,18 @@
   },
   {
     "site": "CADILLACWINDOWSTICKER Window Sticker",
-    "label": "Cadillac – Paint Code",
-    "url": "https://cadillacwindowsticker.com/paint-code-by-vin-lookup",
+    "label": "Cadillac – Options Check",
+    "url": "https://cadillacwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-07T14:59:46.398Z",
-    "performanceScore": 99,
+    "timestamp": "2026-10-08T15:10:56.986Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 895.1941869597549,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 618.8864394302267,
+      "displayValue": "0.6 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 408.0093587446887,
+      "value": 420.06573127548927,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -383,14 +537,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 27,
-      "displayValue": "30 ms",
+      "value": 55,
+      "displayValue": "60 ms",
       "score": 1
     },
     "si": {
-      "value": 713.6324584078325,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 881.2281178790348,
+      "displayValue": "0.9 s",
+      "score": 0.98
     },
     "ttfb": {
       "value": 1,
@@ -398,157 +552,11 @@
       "score": 1
     },
     "interactive": {
-      "value": 2112.704652741132,
-      "displayValue": "2.1 s",
+      "value": 2176.7622838094753,
+      "displayValue": "2.2 s",
       "score": 0.94
     },
     "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 254657
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 30768
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CADILLACWINDOWSTICKER Window Sticker",
-    "label": "Cadillac – Options Check",
-    "url": "https://cadillacwindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-10-07T15:00:05.987Z",
-    "performanceScore": 77,
-    "lcp": {
-      "value": 3868.293282324924,
-      "displayValue": "3.9 s",
-      "score": 0.53
-    },
-    "fcp": {
-      "value": 1534.7491669503913,
-      "displayValue": "1.5 s",
-      "score": 0.95
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 304,
-      "displayValue": "300 ms",
-      "score": 0.78
-    },
-    "si": {
-      "value": 5323.60758992886,
-      "displayValue": "5.3 s",
-      "score": 0.58
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 9943.713667156922,
-      "displayValue": "9.9 s",
-      "score": 0.27
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 120,
-        "savingsBytes": 30796
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "CADILLACWINDOWSTICKER Window Sticker",
-    "label": "Cadillac – Options Check",
-    "url": "https://cadillacwindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-10-07T15:00:29.390Z",
-    "performanceScore": 68,
-    "lcp": {
-      "value": 1116.4841837059732,
-      "displayValue": "1.1 s",
-      "score": 0.92
-    },
-    "fcp": {
-      "value": 453.65610434871417,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 1023.340915544441,
-      "displayValue": "1,020 ms",
-      "score": 0.05
-    },
-    "si": {
-      "value": 1431.470298633336,
-      "displayValue": "1.4 s",
-      "score": 0.86
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2576.798438338711,
-      "displayValue": "2.6 s",
-      "score": 0.88
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 254629
-      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
@@ -559,22 +567,10 @@
     ],
     "diagnostics": [
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.8 s",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.0 s",
-        "score": 0
+        "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
