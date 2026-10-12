@@ -3,7 +3,7 @@
   "label": "Porsche – Options Check",
   "url": "https://porschewindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-11T14:48:37.769Z",
+  "timestamp": "2026-10-12T17:25:29.797Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,17 +25,17 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 7,
-      "tls": 5,
-      "serverProcessing": 38,
-      "ttfb": 50,
+      "connection": 60,
+      "tls": 29,
+      "serverProcessing": 83,
+      "ttfb": 145,
       "download": 1,
-      "domParsing": 12,
-      "domContentLoaded": 158,
-      "loadEvent": 638,
-      "transferSize": 4566,
-      "encodedBodySize": 4266,
-      "decodedBodySize": 18438,
+      "domParsing": 7,
+      "domContentLoaded": 223,
+      "loadEvent": 758,
+      "transferSize": 4456,
+      "encodedBodySize": 4156,
+      "decodedBodySize": 18061,
       "protocol": "h2"
     },
     "issues": []
@@ -58,38 +58,28 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 42,
-    "totalSize": 327239,
+    "totalCount": 31,
+    "totalSize": 322916,
     "byType": {
       "link": {
-        "count": 4,
+        "count": 3,
         "totalSize": 39761,
-        "totalDuration": 150.10000000000582
+        "totalDuration": 161.5000000000291
       },
       "script": {
-        "count": 25,
+        "count": 21,
         "totalSize": 281250,
-        "totalDuration": 863.9000000000233
+        "totalDuration": 1815.1999999998661
       },
       "xmlhttprequest": {
-        "count": 8,
-        "totalSize": 6228,
-        "totalDuration": 3708.6999999999825
+        "count": 6,
+        "totalSize": 1905,
+        "totalDuration": 1714.6999999999825
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 168.89999999999418
-      },
-      "img": {
-        "count": 2,
-        "totalSize": 0,
-        "totalDuration": 186.80000000001746
-      },
-      "fetch": {
-        "count": 2,
-        "totalSize": 0,
-        "totalDuration": 34
+        "totalDuration": 192.30000000001746
       }
     },
     "largeResources": [],
@@ -101,82 +91,40 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 327239,
+    "firstPartySize": 322916,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 35
+        "duration": 68
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 22
+        "duration": 48
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 178
+        "duration": 200
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 169
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 26
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 3,
-        "size": 0,
-        "duration": 228
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 13
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 114
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 2,
-        "size": 0,
-        "duration": 34
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 110
-      },
-      {
-        "domain": "j.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 26
+        "duration": 192
       }
     ],
-    "totalDomains": 11
+    "totalDomains": 4
   },
   "domAnalysis": {
-    "totalElements": 74,
+    "totalElements": 62,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 29,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -589,20 +537,24 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [
-      {
-        "href": "https://www.googletagmanager.com/gtag/js?id=G-9619FJQ4TG",
-        "as": "script"
-      }
-    ],
+    "preloads": [],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "11 third-party origins without preconnect hints"
+      "4 third-party origins without preconnect hints",
+      "No preload hints found — consider preloading LCP image/font"
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings: AxiosError: Request failed with status code 500\n    at eI (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://porschewindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:451",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings for clarity: AxiosError: Request failed with status code 500\n    at eI (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://porschewindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:1153",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "AxiosError: Request failed with status code 500\n    at eI (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://porschewindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://porschewindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:1:6401"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -614,16 +566,29 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je6a72v9193685493za208zd9193685493xf1&_p=1791730114824&gcd=13l3l3l3l1l1&npa=0&dm",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://porschewindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9619FJQ4TG&gtm=45je6a72v9193685493za200zd9193685493xf1&_p=1791730114824&gcd=13l3l3l3l1l1&npa=0&dm",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://porschewindowsticker.com/api-cwa/plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://porschewindowsticker.com/api-cwa/sticker-plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://porschewindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://porschewindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     }
   ]
 }
