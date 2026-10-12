@@ -3,7 +3,7 @@
   "label": "Buick – Options Check",
   "url": "https://buickwindowsticker.com/options-check-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-11T14:35:52.411Z",
+  "timestamp": "2026-10-12T17:12:00.363Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,18 +24,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 11,
-      "tls": 8,
-      "serverProcessing": 32,
-      "ttfb": 46,
+      "dns": 1,
+      "connection": 57,
+      "tls": 28,
+      "serverProcessing": 79,
+      "ttfb": 138,
       "download": 1,
-      "domParsing": 15,
-      "domContentLoaded": 140,
-      "loadEvent": 693,
-      "transferSize": 4630,
-      "encodedBodySize": 4330,
-      "decodedBodySize": 19306,
+      "domParsing": 9,
+      "domContentLoaded": 264,
+      "loadEvent": 264,
+      "transferSize": 4521,
+      "encodedBodySize": 4221,
+      "decodedBodySize": 18978,
       "protocol": "h2"
     },
     "issues": []
@@ -58,38 +58,28 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 45,
-    "totalSize": 327231,
+    "totalCount": 31,
+    "totalSize": 322917,
     "byType": {
       "link": {
-        "count": 4,
+        "count": 3,
         "totalSize": 39761,
-        "totalDuration": 172.09999999997672
+        "totalDuration": 113.30000000001746
       },
       "script": {
-        "count": 26,
+        "count": 21,
         "totalSize": 281251,
-        "totalDuration": 1244.400000000198
+        "totalDuration": 1832.2000000000407
       },
       "xmlhttprequest": {
-        "count": 9,
-        "totalSize": 6219,
-        "totalDuration": 6175.200000000012
+        "count": 6,
+        "totalSize": 1905,
+        "totalDuration": 1617.3999999999942
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 146.20000000001164
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 70.70000000001164
-      },
-      "fetch": {
-        "count": 4,
-        "totalSize": 0,
-        "totalDuration": 90.79999999998836
+        "totalDuration": 364.6000000000058
       }
     },
     "largeResources": [],
@@ -101,94 +91,40 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 327231,
+    "firstPartySize": 322917,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 53
+        "duration": 103
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 18
+        "duration": 133
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 227
+        "duration": 311
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 146
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 29
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 96
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 14
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 71
-      },
-      {
-        "domain": "t.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 109
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 3,
-        "size": 0,
-        "duration": 238
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 28
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 27
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 2,
-        "size": 0,
-        "duration": 36
+        "duration": 365
       }
     ],
-    "totalDomains": 13
+    "totalDomains": 4
   },
   "domAnalysis": {
-    "totalElements": 75,
+    "totalElements": 63,
     "maxDepth": 6,
-    "maxChildren": 37,
+    "maxChildren": 29,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -601,20 +537,24 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [
-      {
-        "href": "https://www.googletagmanager.com/gtag/js?id=G-47K636ETNJ",
-        "as": "script"
-      }
-    ],
+    "preloads": [],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "13 third-party origins without preconnect hints"
+      "4 third-party origins without preconnect hints",
+      "No preload hints found — consider preloading LCP image/font"
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()"
+    "Failed to load resource: the server responded with a status of 404 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings for clarity: AxiosError: Request failed with status code 500\n    at eI (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://buickwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:1153",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "AxiosError: Request failed with status code 500\n    at eI (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://buickwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:1:6401",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings: AxiosError: Request failed with status code 500\n    at eI (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://buickwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://buickwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:451"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -626,28 +566,29 @@
       "resourceType": "document"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=190312602.1791729350&gtm=45He6a72v9230726554za200zd9230726554xeaxf1&fmt=8",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://buickwindowsticker.com/api-cwa/sticker-plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=1&ae=g&auid=190312602.1791729350&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://buickwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-47K636ETNJ&gtm=45je6a80h2v9193692806za20ozb9230726554zd9230726554xf1&_p=1791729349522&gcd=13l3l3l",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://buickwindowsticker.com/api-cwa/plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-47K636ETNJ&gtm=45je6a80h2v9193692806z89230726554za20gzb9230726554zd9230726554xf1&_p=1791729349522",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://buickwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
+    },
+    {
+      "url": "https://buickwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     }
   ]
 }
