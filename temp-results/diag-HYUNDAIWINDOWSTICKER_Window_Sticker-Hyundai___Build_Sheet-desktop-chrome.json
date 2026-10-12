@@ -3,7 +3,7 @@
   "label": "Hyundai – Build Sheet",
   "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-11T14:41:39.501Z",
+  "timestamp": "2026-10-12T17:19:48.404Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,22 +23,26 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 71,
+      "redirect": 1974,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 36,
-      "ttfb": 111,
-      "download": 3,
-      "domParsing": 87,
-      "domContentLoaded": 204,
-      "loadEvent": 411,
+      "serverProcessing": 612,
+      "ttfb": 2587,
+      "download": 50,
+      "domParsing": 787,
+      "domContentLoaded": 3427,
+      "loadEvent": 5716,
       "transferSize": 17528,
       "encodedBodySize": 17228,
       "decodedBodySize": 115634,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 1974ms",
+      "Slow server response: 612ms",
+      "TTFB exceeds 800ms threshold: 2587ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -154,42 +158,42 @@
   ],
   "resourceAnalysis": {
     "totalCount": 96,
-    "totalSize": 658030,
+    "totalSize": 657994,
     "byType": {
       "link": {
         "count": 7,
         "totalSize": 68025,
-        "totalDuration": 764.0999999999767
+        "totalDuration": 11607.5
       },
       "script": {
         "count": 42,
         "totalSize": 434187,
-        "totalDuration": 3069.4000000000233
+        "totalDuration": 43100.20000000004
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 529.7000000000116
+        "totalDuration": 4593.300000000047
       },
       "img": {
         "count": 2,
         "totalSize": 3973,
-        "totalDuration": 206.89999999999418
+        "totalDuration": 1916.3000000000175
       },
       "xmlhttprequest": {
         "count": 9,
         "totalSize": 6222,
-        "totalDuration": 9519.299999999988
+        "totalDuration": 6390.399999999965
       },
       "fetch": {
         "count": 31,
-        "totalSize": 73719,
-        "totalDuration": 2595.5999999999476
+        "totalSize": 73683,
+        "totalDuration": 15903.500000000204
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 219.60000000000582
+        "totalDuration": 115.5
       }
     },
     "largeResources": [],
@@ -230,74 +234,74 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 658030,
+    "firstPartySize": 657994,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 58
+        "duration": 46
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 54
+        "duration": 14
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 307
-      },
-      {
-        "domain": "secure.livechatinc.com",
-        "count": 1,
-        "size": 0,
-        "duration": 220
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 96
+        "duration": 1425
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 2,
         "size": 0,
-        "duration": 499
+        "duration": 338
       },
       {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 14
-      },
-      {
-        "domain": "c.clarity.ms",
+        "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 136
-      },
-      {
-        "domain": "n.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 190
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 1,
-        "size": 0,
-        "duration": 84
+        "duration": 268
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 123
+        "duration": 229
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 43
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 101
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 212
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 116
+      },
+      {
+        "domain": "r.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 260
       }
     ],
     "totalDomains": 11
@@ -317,22 +321,22 @@
       {
         "url": "...undaiwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 135
+        "duration": 1154
       },
       {
         "url": "...undaiwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 135
+        "duration": 1136
       },
       {
         "url": "...undaiwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 125
+        "duration": 1145
       },
       {
         "url": "...undaiwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
         "size": 17983,
-        "duration": 135
+        "duration": 1159
       }
     ],
     "fontFaces": [
@@ -779,7 +783,7 @@
   ],
   "failedRequests": [
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je6a72v9193688199za208zd9193688199xf1&_p=1791729695845&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9MJ1YFEG28&gtm=45je6a80v9193688199za208zd9193688199xf1&_p=1791825582717&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
