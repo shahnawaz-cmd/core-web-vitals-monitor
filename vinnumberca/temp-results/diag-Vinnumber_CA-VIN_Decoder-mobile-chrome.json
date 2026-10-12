@@ -3,7 +3,7 @@
   "label": "VIN Decoder",
   "url": "https://vinnumber.ca/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-11T14:34:46.791Z",
+  "timestamp": "2026-10-12T17:14:37.932Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,18 +23,18 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 4,
-      "connection": 10,
-      "tls": 8,
-      "serverProcessing": 16,
-      "ttfb": 30,
-      "download": 3,
-      "domParsing": 195,
-      "domContentLoaded": 234,
-      "loadEvent": 344,
-      "transferSize": 45106,
-      "encodedBodySize": 44806,
-      "decodedBodySize": 328672,
+      "dns": 1,
+      "connection": 57,
+      "tls": 29,
+      "serverProcessing": 33,
+      "ttfb": 92,
+      "download": 7,
+      "domParsing": 77,
+      "domContentLoaded": 227,
+      "loadEvent": 337,
+      "transferSize": 48681,
+      "encodedBodySize": 48381,
+      "decodedBodySize": 350874,
       "protocol": "h2"
     },
     "issues": []
@@ -52,43 +52,53 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/711389c6142d9db9.js",
+      "url": "/_next/static/chunks/45bd4e9d8cabff2a.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/6f9f776206b2628e.js",
+      "url": "/_next/static/chunks/d33df16abe5b50b8.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/c3f0b4b8c7b04b5e.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/38abb00caf7438c1.js",
       "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 35,
-    "totalSize": 287832,
+    "totalCount": 44,
+    "totalSize": 308402,
     "byType": {
       "link": {
         "count": 5,
         "totalSize": 81350,
-        "totalDuration": 156.30000000004657
+        "totalDuration": 295.39999999990687
       },
       "script": {
-        "count": 14,
-        "totalSize": 174021,
-        "totalDuration": 477.29999999987194
+        "count": 20,
+        "totalSize": 194644,
+        "totalDuration": 2152.9999999995343
       },
       "img": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 145.69999999995343
+        "totalDuration": 176.49999999988358
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 8
+        "totalDuration": 38.699999999953434
       },
       "fetch": {
-        "count": 11,
-        "totalSize": 32161,
-        "totalDuration": 405.29999999993015
+        "count": 14,
+        "totalSize": 32108,
+        "totalDuration": 1028.8000000000466
       }
     },
     "largeResources": [],
@@ -143,26 +153,44 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 287832,
+    "firstPartySize": 308402,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 35
+        "duration": 79
       },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 4,
         "size": 0,
-        "duration": 146
+        "duration": 176
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 3,
+        "size": 0,
+        "duration": 806
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 124
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 4,
+        "size": 0,
+        "duration": 272
       }
     ],
-    "totalDomains": 2
+    "totalDomains": 5
   },
   "domAnalysis": {
-    "totalElements": 656,
+    "totalElements": 664,
     "maxDepth": 14,
     "maxChildren": 61,
     "widestElement": "DIV",
@@ -176,12 +204,12 @@
       {
         "url": "https://vinnumber.ca/_next/static/media/017d9bea37084d9b-s.p.a6d6de71.woff2",
         "size": 41540,
-        "duration": 23
+        "duration": 42
       },
       {
         "url": "https://vinnumber.ca/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 23
+        "duration": 44
       }
     ],
     "fontFaces": [
@@ -281,21 +309,17 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "5 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 503 ()"
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
-    {
-      "url": "https://vinnumber.ca/?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
     {
       "url": "https://vinnumber.ca/?_rsc=1je0p",
       "status": 0,
@@ -303,9 +327,22 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/report/vin/2T1BURHE0FC320645?_rsc=lb0mp",
-      "status": 503,
-      "resourceType": "fetch"
+      "url": "https://vinnumber.ca/?_rsc=1tx74",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://vinnumber.ca/pricing?_rsc=1tx74",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://vinnumber.ca/pricing?_rsc=1upwa",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
     },
     {
       "url": "https://vinnumber.ca/pricing?_rsc=155pw",
@@ -314,13 +351,37 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/pricing?_rsc=1y3a3",
+      "url": "https://vinnumber.ca/?_rsc=yb46w",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/?_rsc=yb46w",
+      "url": "https://www.clarity.ms/tag/functionclaritycacafunctioncaqcaqpushargumentstlcreateElementrtasync1tsrchttpswwwclaritymstagiylgetElementsByTagNamer0ypare",
+      "status": 0,
+      "resourceType": "script",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6a80v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791825253148&g",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6a80v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791825253148&g",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6a80v9202392380za20ozb9228561071zd9228561071xf1&_p=1791825253148&gcd=13l3l3l3l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6a80v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1791825253148&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
