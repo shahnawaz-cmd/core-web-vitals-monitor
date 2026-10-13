@@ -3,7 +3,7 @@
   "label": "Jeep – Options Check",
   "url": "https://jeepwindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-11T14:42:58.377Z",
+  "timestamp": "2026-10-13T15:36:33.409Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,22 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 41,
-      "tls": 22,
-      "serverProcessing": 172,
-      "ttfb": 214,
+      "connection": 410,
+      "tls": 208,
+      "serverProcessing": 460,
+      "ttfb": 872,
       "download": 1,
-      "domParsing": 12,
-      "domContentLoaded": 354,
-      "loadEvent": 1091,
-      "transferSize": 4522,
-      "encodedBodySize": 4222,
-      "decodedBodySize": 18822,
+      "domParsing": 11,
+      "domContentLoaded": 983,
+      "loadEvent": 2312,
+      "transferSize": 4410,
+      "encodedBodySize": 4110,
+      "decodedBodySize": 18454,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "TTFB exceeds 800ms threshold: 872ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -58,38 +60,28 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 43,
-    "totalSize": 327227,
+    "totalCount": 31,
+    "totalSize": 322916,
     "byType": {
       "link": {
-        "count": 4,
+        "count": 3,
         "totalSize": 39761,
-        "totalDuration": 237.60000000000582
+        "totalDuration": 728.1000000000349
       },
       "script": {
-        "count": 25,
+        "count": 21,
         "totalSize": 281250,
-        "totalDuration": 1796.999999999971
+        "totalDuration": 9860.300000000105
       },
       "xmlhttprequest": {
-        "count": 8,
-        "totalSize": 6216,
-        "totalDuration": 7219.100000000006
+        "count": 6,
+        "totalSize": 1905,
+        "totalDuration": 4337.9000000000815
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 267.8999999999942
-      },
-      "fetch": {
-        "count": 4,
-        "totalSize": 0,
-        "totalDuration": 201.5
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 117
+        "totalDuration": 280.29999999998836
       }
     },
     "largeResources": [],
@@ -101,94 +93,40 @@
     "images": []
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 327227,
+    "firstPartySize": 322916,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 73
+        "duration": 97
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 82
+        "duration": 118
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 280
+        "duration": 238
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 268
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 201
-      },
-      {
-        "domain": "www.google-analytics.com",
-        "count": 2,
-        "size": 0,
-        "duration": 85
-      },
-      {
-        "domain": "www.google.com",
-        "count": 1,
-        "size": 0,
-        "duration": 59
-      },
-      {
-        "domain": "ad.doubleclick.net",
-        "count": 1,
-        "size": 0,
-        "duration": 58
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 143
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 11
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 117
-      },
-      {
-        "domain": "g.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 148
-      },
-      {
-        "domain": "ipapi.co",
-        "count": 1,
-        "size": 0,
-        "duration": 125
+        "duration": 280
       }
     ],
-    "totalDomains": 13
+    "totalDomains": 4
   },
   "domAnalysis": {
-    "totalElements": 74,
+    "totalElements": 62,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 29,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -601,21 +539,24 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [
-      {
-        "href": "https://www.googletagmanager.com/gtag/js?id=G-TRK1NC9HG6",
-        "as": "script"
-      }
-    ],
+    "preloads": [],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "13 third-party origins without preconnect hints"
+      "4 third-party origins without preconnect hints",
+      "No preload hints found — consider preloading LCP image/font"
     ]
   },
   "consoleErrors": [
     "Failed to load resource: the server responded with a status of 404 ()",
-    "Failed to load resource: the server responded with a status of 429 ()"
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "AxiosError: Request failed with status code 500\n    at eI (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://jeepwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:1:6401",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings: AxiosError: Request failed with status code 500\n    at eI (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://jeepwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:451",
+    "Failed to load resource: the server responded with a status of 500 ()",
+    "Failed to load site settings for clarity: AxiosError: Request failed with status code 500\n    at eI (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:42041)\n    at XMLHttpRequest.w (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:47074)\n    at tu.request (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:58678)\n    at async L (https://jeepwindowsticker.com/_next/static/chunks/10-cd-i9~mw4u.js:1:86128)\n    at async https://jeepwindowsticker.com/_next/static/chunks/0z7q47wq1m_25.js:827:1153"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -627,32 +568,28 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TRK1NC9HG6&gtm=45je6a72v9188530005za208zd9188530005xf1&_p=1791729774269&gcd=13l3l3l3l1l1&npa=0&dm",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://jeepwindowsticker.com/api-cwa/plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-TRK1NC9HG6&gtm=45je6a72v9188530005za200zd9188530005xf1&_p=1791729774269&gcd=13l3l3l3l1l1&npa=0&dm",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://jeepwindowsticker.com/api-cwa/sticker-plans?user_type=user",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1654890975.1791729775&gtm=45He6a72h1v9230895492za200zd9230895492xeaxf1&fmt=8",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://jeepwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1654890975.1791729775&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
+      "url": "https://jeepwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
+      "resourceType": "xhr"
     },
     {
-      "url": "https://ipapi.co/json",
-      "status": 429,
+      "url": "https://jeepwindowsticker.com/api-cwa/site_settings",
+      "status": 500,
       "resourceType": "xhr"
     }
   ]
