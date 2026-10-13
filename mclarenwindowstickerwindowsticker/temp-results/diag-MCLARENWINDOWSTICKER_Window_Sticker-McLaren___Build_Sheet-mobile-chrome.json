@@ -3,7 +3,7 @@
   "label": "McLaren – Build Sheet",
   "url": "https://mclarenwindowsticker.com/build-sheet-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-12T17:25:44.170Z",
+  "timestamp": "2026-10-13T15:40:50.493Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,21 +24,24 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 48,
-      "tls": 29,
-      "serverProcessing": 92,
-      "ttfb": 145,
-      "download": 2,
-      "domParsing": 30,
-      "domContentLoaded": 277,
-      "loadEvent": 941,
+      "dns": 1,
+      "connection": 418,
+      "tls": 212,
+      "serverProcessing": 895,
+      "ttfb": 1317,
+      "download": 1,
+      "domParsing": 15,
+      "domContentLoaded": 1462,
+      "loadEvent": 4111,
       "transferSize": 4612,
       "encodedBodySize": 4312,
       "decodedBodySize": 19092,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 895ms",
+      "TTFB exceeds 800ms threshold: 1317ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -58,38 +61,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 41,
+    "totalCount": 44,
     "totalSize": 327233,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 394.70000000001164
+        "totalDuration": 989.8000000000466
       },
       "script": {
-        "count": 25,
+        "count": 27,
         "totalSize": 281252,
-        "totalDuration": 2395.9000000000233
+        "totalDuration": 12586.199999999837
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6220,
-        "totalDuration": 4619.200000000128
-      },
-      "iframe": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 209.79999999998836
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 95.09999999997672
+        "totalDuration": 6661.599999999977
       },
       "fetch": {
         "count": 2,
         "totalSize": 0,
-        "totalDuration": 57.100000000034925
+        "totalDuration": 121.09999999997672
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 249.29999999998836
+      },
+      "img": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 105.5
       }
     },
     "largeResources": [],
@@ -108,75 +111,75 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 62
+        "duration": 129
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 41
+        "duration": 106
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 209
-      },
-      {
-        "domain": "secure.livechatinc.com",
-        "count": 1,
-        "size": 0,
-        "duration": 210
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 3,
-        "size": 0,
-        "duration": 592
+        "duration": 1627
       },
       {
         "domain": "www.clarity.ms",
-        "count": 1,
+        "count": 2,
         "size": 0,
-        "duration": 89
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 23
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 95
+        "duration": 259
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 121
+        "duration": 632
       },
       {
-        "domain": "l.clarity.ms",
-        "count": 1,
+        "domain": "scripts.clarity.ms",
+        "count": 2,
         "size": 0,
-        "duration": 73
+        "duration": 141
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 3,
+        "size": 0,
+        "duration": 842
+      },
+      {
+        "domain": "k.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 215
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 57
+        "duration": 121
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 249
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 106
       }
     ],
     "totalDomains": 11
   },
   "domAnalysis": {
-    "totalElements": 74,
+    "totalElements": 79,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 40,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,13 +617,13 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-8MENMG6509&gtm=45je6a80h1v9193694444za20ozb9230893801zd9230893801xf1&_p=1791825941104&gcd=13l3l3l",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-8MENMG6509&gtm=45je6a91v9193694444za208zd9193694444xf1&_p=1791906046375&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-8MENMG6509&gtm=45je6a80h1v9193694444z89230893801za20gzb9230893801zd9230893801xf1&_p=1791825941104",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-8MENMG6509&gtm=45je6a91v9193694444za200zd9193694444xf1&_p=1791906046375&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
