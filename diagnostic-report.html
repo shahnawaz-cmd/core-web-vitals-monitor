@@ -192,11 +192,11 @@
         <div class="stat-label">Pages Audited</div>
       </div>
       <div class="stat">
-        <div class="stat-value total">35</div>
+        <div class="stat-value total">24</div>
         <div class="stat-label">Total Issues</div>
       </div>
       <div class="stat">
-        <div class="stat-value critical">30</div>
+        <div class="stat-value critical">24</div>
         <div class="stat-label">Critical</div>
       </div>
     </div>
@@ -207,9 +207,9 @@
 
   <div class="page-section">
     <div class="page-header open" onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Build Sheet</span>
-      <span class="url">https://bmwwindowsticker.com/build-sheet-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
+      <span class="title">Classic Decoder — Build Sheet</span>
+      <span class="url">https://classicdecoder.com/build-sheet</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body open">
@@ -262,9 +262,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -288,27 +288,308 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value warn">133ms</div>
+                <div class="value good">30ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">69ms</div>
+                <div class="value" style="color:var(--text-2);">18ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
+                <div class="value good">39ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
+                <div class="value good">70ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Protocol</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Full Load</div>
+                <div class="value" style="color:var(--text-2);">945ms</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- Third-Party Impact -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🔗</span> Third-Party Impact
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
+          </div>
+          <div class="audit-body">
+            <div class="bar-chart" style="margin-bottom:16px;">
+              <div class="bar-row">
+                <div class="bar-label">First-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill first-party" style="width:99.57932270487547%;">1.01 MB</div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Third-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
+                </div>
+              </div>
+            </div>
+            
+              <table class="res-table">
+                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>711 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
+              </table>
+            
+          </div>
+        </div>
+
+        <!-- Resource Breakdown -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📦</span> Resource Breakdown
+            <span class="count pass">88 requests • 1.02 MB</span>
+          </div>
+          <div class="audit-body">
+            
+              <div class="bar-chart" style="margin-bottom:16px;">
+                
+                  <div class="bar-row">
+                    <div class="bar-label">script</div>
+                    <div class="bar-track">
+                      <div class="bar-fill js" style="width:78.10830919547223%;">43 files</div>
+                    </div>
+                    <div class="bar-value">815.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:21.157026340294706%;">29 files</div>
+                    </div>
+                    <div class="bar-value">220.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">10 files</div>
+                    </div>
+                    <div class="bar-value">5.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">2 files</div>
+                    </div>
+                    <div class="bar-value">787 B</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
+                  </div>
+                
+              </div>
+            
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>200ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>334ms</td></tr>
+              </table>
+            
+            <ul class="issue-list" style="margin-top:12px;">
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Render Blocking -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🚧</span> Render-Blocking Resources
+            <span class="count fail">4</span>
+          </div>
+          <div class="audit-body">
+            <table class="res-table">
+              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- Image Audit -->
+        
+
+        <!-- DOM + Fonts + Security + Preload condensed -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🛡️</span> Additional Checks
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">DOM Elements</div>
+                <div class="value good" style="font-size:16px;">746</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DOM Depth</div>
+                <div class="value good" style="font-size:16px;">19</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Web Fonts</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preloads</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">25</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preconnects</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Console Errors</div>
+                <div class="value good" style="font-size:16px;">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              <li class="warn-issue">⚠️ Wide node: HEAD has 87 children (recommended < 60)</li>
+              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
+              
+              <li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905075938&cv=11&fst=1791905075938&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=595274834.1791905076&dt=Get%20a%20Classic%20Car%20Build%20Sheet%20by%20VIN%20%7C%20Classic%</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=595274834.1791905076&gtm=45892e6ac0h2v9212952419za20czd9212952419xecxf4&fmt=8</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="page-header " onclick="toggleSection(this)">
+      <span class="title">Classic Decoder — Build Sheet</span>
+      <span class="url">https://classicdecoder.com/build-sheet</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="page-body ">
+      <div class="page-body-inner">
+
+        <!-- LCP Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📸</span> LCP Root Cause
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Render Time</div>
+                <div class="value good">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Element</div>
+                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Size</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
+              </div>
+            </div>
+            
+            <ul class="issue-list">
+              
+              <li class="good-issue">✅ No LCP issues detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CLS Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📐</span> CLS Root Cause
+            <span class="count pass">0</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Total CLS</div>
+                <div class="value good">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Shifts</div>
+                <div class="value" style="color:var(--text-2);">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              
+              <li class="good-issue">✅ No layout shifts detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TTFB Breakdown -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🌐</span> TTFB Breakdown
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Redirect</div>
+                <div class="value good">0ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DNS</div>
+                <div class="value good">1ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Connect</div>
+                <div class="value good">32ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TLS</div>
+                <div class="value" style="color:var(--text-2);">20ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Server</div>
+                <div class="value good">43ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
                 <div class="value good">78ms</div>
               </div>
               <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">214ms</div>
-              </div>
-              <div class="breakdown-cell">
                 <div class="label">Protocol</div>
                 <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">855ms</div>
+                <div class="value" style="color:var(--text-2);">871ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -322,27 +603,27 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">626.4 KB</div>
+                  <div class="bar-fill first-party" style="width:99.57794311986322%;">1.01 MB</div>
                 </div>
               </div>
               <div class="bar-row">
                 <div class="bar-label">Third-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
                 </div>
               </div>
             </div>
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">ipapi.co</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.google-analytics.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>720 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -352,7 +633,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">96 requests • 626.4 KB</span>
+            <span class="count pass">83 requests • 1.02 MB</span>
           </div>
           <div class="audit-body">
             
@@ -361,41 +642,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:67.9293027722905%;">43 files</div>
+                      <div class="bar-fill js" style="width:78.27607584643508%;">43 files</div>
                     </div>
-                    <div class="bar-value">425.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:11.509971421132146%;">33 files</div>
-                    </div>
-                    <div class="bar-value">72.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:11.210774217589178%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
+                    <div class="bar-value">815.0 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:8.094383543062413%;">5 files</div>
+                      <div class="bar-fill other" style="width:21.203950077236406%;">29 files</div>
                     </div>
-                    <div class="bar-value">50.7 KB</div>
+                    <div class="bar-value">220.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">5 files</div>
+                    </div>
+                    <div class="bar-value">2.8 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">xmlhttprequest</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
                     </div>
-                    <div class="bar-value">6.1 KB</div>
+                    <div class="bar-value">1.4 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -403,11 +676,25 @@
                     <div class="bar-track">
                       <div class="bar-fill img" style="width:5%;">2 files</div>
                     </div>
-                    <div class="bar-value">1.8 KB</div>
+                    <div class="bar-value">787 B</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
                   </div>
                 
               </div>
             
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>230ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>229ms</td></tr>
+              </table>
             
             <ul class="issue-list" style="margin-top:12px;">
               
@@ -420,30 +707,18 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">21</span>
+            <span class="count fail">4</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
         
 
         <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
-            </ul>
-          </div>
-        </div>
         
 
         <!-- DOM + Fonts + Security + Preload condensed -->
@@ -455,19 +730,300 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">1018</div>
+                <div class="value good" style="font-size:16px;">746</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">19</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">25</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preconnects</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Console Errors</div>
+                <div class="value good" style="font-size:16px;">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              <li class="warn-issue">⚠️ Wide node: HEAD has 87 children (recommended < 60)</li>
+              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
+              
+              <li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905076795&cv=11&fst=1791905076795&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&auid=1772339321.1791905077&dt=Get%20a%20Classic%20Car%20Build%20Sheet%20by%20VIN%20%7C%20Classic</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=1772339321.1791905077&gtm=45892e6a91v9212952419za20czd9212952419xecxf4&fmt=8</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="page-header " onclick="toggleSection(this)">
+      <span class="title">Classic Decoder — History Report</span>
+      <span class="url">https://classicdecoder.com/history-report</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--warn-bg);color:var(--warn);">5 issues</span>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="page-body ">
+      <div class="page-body-inner">
+
+        <!-- LCP Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📸</span> LCP Root Cause
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Render Time</div>
+                <div class="value good">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Element</div>
+                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Size</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
+              </div>
+            </div>
+            
+            <ul class="issue-list">
+              
+              <li class="good-issue">✅ No LCP issues detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CLS Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📐</span> CLS Root Cause
+            <span class="count pass">0</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Total CLS</div>
+                <div class="value good">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Shifts</div>
+                <div class="value" style="color:var(--text-2);">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              
+              <li class="good-issue">✅ No layout shifts detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TTFB Breakdown -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🌐</span> TTFB Breakdown
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Redirect</div>
+                <div class="value good">0ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DNS</div>
+                <div class="value good">1ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Connect</div>
+                <div class="value good">33ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TLS</div>
+                <div class="value" style="color:var(--text-2);">21ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Server</div>
+                <div class="value good">47ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
+                <div class="value good">81ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Protocol</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Full Load</div>
+                <div class="value" style="color:var(--text-2);">967ms</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- Third-Party Impact -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🔗</span> Third-Party Impact
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
+          </div>
+          <div class="audit-body">
+            <div class="bar-chart" style="margin-bottom:16px;">
+              <div class="bar-row">
+                <div class="bar-label">First-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill first-party" style="width:99.54344402713294%;">955.6 KB</div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Third-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
+                </div>
+              </div>
+            </div>
+            
+              <table class="res-table">
+                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>711 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
+              </table>
+            
+          </div>
+        </div>
+
+        <!-- Resource Breakdown -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📦</span> Resource Breakdown
+            <span class="count pass">77 requests • 960.0 KB</span>
+          </div>
+          <div class="audit-body">
+            
+              <div class="bar-chart" style="margin-bottom:16px;">
+                
+                  <div class="bar-row">
+                    <div class="bar-label">script</div>
+                    <div class="bar-track">
+                      <div class="bar-fill js" style="width:84.89967569063246%;">43 files</div>
+                    </div>
+                    <div class="bar-value">815.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:14.347332484242308%;">19 files</div>
+                    </div>
+                    <div class="bar-value">137.7 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">10 files</div>
+                    </div>
+                    <div class="bar-value">5.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">342 B</div>
+                  </div>
+                
+              </div>
+            
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>197ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>238ms</td></tr>
+              </table>
+            
+            <ul class="issue-list" style="margin-top:12px;">
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Render Blocking -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🚧</span> Render-Blocking Resources
+            <span class="count fail">4</span>
+          </div>
+          <div class="audit-body">
+            <table class="res-table">
+              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- Image Audit -->
+        
+
+        <!-- DOM + Fonts + Security + Preload condensed -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🛡️</span> Additional Checks
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">DOM Elements</div>
+                <div class="value good" style="font-size:16px;">485</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DOM Depth</div>
+                <div class="value good" style="font-size:16px;">13</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Web Fonts</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preloads</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">15</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -482,9 +1038,9 @@
               
               <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
               
-              <li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905034691&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=1520659390.1791905035&dt=Get%20Your%20BMW%20Build%20Sheet%20by%20VIN%20%E2%80%93%20Sp</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?_gsid=ndtyvOYkr7eVd_Cj6X_-srSpKYaJGacb3w&auid=1520659390.1791905035&gtm=45He6ac0h2v9230719683za200zd923071968</li>
+              <li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905068117&cv=11&fst=1791905068117&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=1116233258.1791905068&dt=Classic%20Vehicle%20History%20Reports%20for%20Classic%20%26%20Pre-</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?_gsid=ThO4rrXm4lSoHbvpv1ITMj_ypUUViW5oHA&auid=1116233258.1791905068&gtm=45892e6a91h1v9212952419za20czd9212952</li>
             </ul>
           </div>
         </div>
@@ -494,8 +1050,289 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Build Sheet</span>
-      <span class="url">https://bmwwindowsticker.com/build-sheet-by-vin</span>
+      <span class="title">Classic Decoder — History Report</span>
+      <span class="url">https://classicdecoder.com/history-report</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="page-body ">
+      <div class="page-body-inner">
+
+        <!-- LCP Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📸</span> LCP Root Cause
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Render Time</div>
+                <div class="value good">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Element</div>
+                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Size</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
+              </div>
+            </div>
+            
+            <ul class="issue-list">
+              
+              <li class="good-issue">✅ No LCP issues detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CLS Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📐</span> CLS Root Cause
+            <span class="count pass">0</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Total CLS</div>
+                <div class="value good">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Shifts</div>
+                <div class="value" style="color:var(--text-2);">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              
+              <li class="good-issue">✅ No layout shifts detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TTFB Breakdown -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🌐</span> TTFB Breakdown
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Redirect</div>
+                <div class="value good">0ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DNS</div>
+                <div class="value good">1ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Connect</div>
+                <div class="value good">30ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TLS</div>
+                <div class="value" style="color:var(--text-2);">18ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Server</div>
+                <div class="value good">42ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
+                <div class="value good">74ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Protocol</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Full Load</div>
+                <div class="value" style="color:var(--text-2);">834ms</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- Third-Party Impact -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🔗</span> Third-Party Impact
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
+          </div>
+          <div class="audit-body">
+            <div class="bar-chart" style="margin-bottom:16px;">
+              <div class="bar-row">
+                <div class="bar-label">First-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill first-party" style="width:99.54186673246873%;">953.3 KB</div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Third-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
+                </div>
+              </div>
+            </div>
+            
+              <table class="res-table">
+                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>720 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
+              </table>
+            
+          </div>
+        </div>
+
+        <!-- Resource Breakdown -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📦</span> Resource Breakdown
+            <span class="count pass">72 requests • 957.7 KB</span>
+          </div>
+          <div class="audit-body">
+            
+              <div class="bar-chart" style="margin-bottom:16px;">
+                
+                  <div class="bar-row">
+                    <div class="bar-label">script</div>
+                    <div class="bar-track">
+                      <div class="bar-fill js" style="width:85.09858583345485%;">43 files</div>
+                    </div>
+                    <div class="bar-value">815.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:14.381489499030813%;">19 files</div>
+                    </div>
+                    <div class="bar-value">137.7 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">5 files</div>
+                    </div>
+                    <div class="bar-value">2.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">342 B</div>
+                  </div>
+                
+              </div>
+            
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>283ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>273ms</td></tr>
+              </table>
+            
+            <ul class="issue-list" style="margin-top:12px;">
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Render Blocking -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🚧</span> Render-Blocking Resources
+            <span class="count fail">4</span>
+          </div>
+          <div class="audit-body">
+            <table class="res-table">
+              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- Image Audit -->
+        
+
+        <!-- DOM + Fonts + Security + Preload condensed -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🛡️</span> Additional Checks
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">DOM Elements</div>
+                <div class="value good" style="font-size:16px;">515</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DOM Depth</div>
+                <div class="value good" style="font-size:16px;">13</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Web Fonts</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preloads</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">15</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preconnects</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Console Errors</div>
+                <div class="value good" style="font-size:16px;">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              <li class="warn-issue">⚠️ Wide node: HEAD has 77 children (recommended < 60)</li>
+              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
+              
+              <li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=1&auid=759749003.1791905069&dt=Classic%20Vehicle%20History%20Reports%20for%20Classic%20%26%20Pre-1</li><li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905068738&cv=11&fst=1791905068738&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=759749003.1791905069&gtm=45892e6a91v9212952419za20czd9212952419xecxf4&fmt=8</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="page-header " onclick="toggleSection(this)">
+      <span class="title">Classic Decoder — Homepage</span>
+      <span class="url">https://classicdecoder.com/</span>
       <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
       <span class="toggle">▼</span>
     </div>
@@ -549,7 +1386,7 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
+              <li class="warn-issue">⚠️ 5 image(s) missing width/height attributes</li>
               
               
             </ul>
@@ -571,23 +1408,23 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">DNS</div>
-                <div class="value good">1ms</div>
+                <div class="value good">3ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">94ms</div>
+                <div class="value good">35ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">50ms</div>
+                <div class="value" style="color:var(--text-2);">23ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">56ms</div>
+                <div class="value good">41ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">153ms</div>
+                <div class="value good">81ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -595,7 +1432,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">683ms</div>
+                <div class="value" style="color:var(--text-2);">1.64s</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -609,27 +1446,27 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">519.6 KB</div>
+                  <div class="bar-fill first-party" style="width:99.69800962729131%;">1.41 MB</div>
                 </div>
               </div>
               <div class="bar-row">
                 <div class="bar-label">Third-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
                 </div>
               </div>
             </div>
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">scripts.clarity.ms</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">c.clarity.ms</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.3 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>711 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -639,7 +1476,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">66 requests • 519.6 KB</span>
+            <span class="count warn">103 requests • 1.41 MB</span>
           </div>
           <div class="audit-body">
             
@@ -648,56 +1485,62 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:70.40206123568899%;">38 files</div>
+                      <div class="bar-fill js" style="width:58.929376720182326%;">47 files</div>
                     </div>
-                    <div class="bar-value">365.8 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:13.513046223698948%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:9.756665939997143%;">5 files</div>
-                    </div>
-                    <div class="bar-value">50.7 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">23.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
+                    <div class="bar-value">853.7 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">img</div>
                     <div class="bar-track">
-                      <div class="bar-fill img" style="width:5%;">2 files</div>
+                      <div class="bar-fill img" style="width:22.472667511970077%;">9 files</div>
                     </div>
-                    <div class="bar-value">3.3 KB</div>
+                    <div class="bar-value">325.6 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:18.121309802351345%;">33 files</div>
+                    </div>
+                    <div class="bar-value">262.5 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">10 files</div>
+                    </div>
+                    <div class="bar-value">5.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
                   </div>
                 
               </div>
             
             
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>282ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>285ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.digitaloceanspaces.com%2Fpayload%2...</td><td>img</td><td style="color:var(--warn);font-weight:600;">123.6 KB</td><td>100ms</td></tr>
+              </table>
+            
             <ul class="issue-list" style="margin-top:12px;">
-              
+              <li class="warn-issue">⚠️ High request count: 103 resources</li>
             </ul>
           </div>
         </div>
@@ -707,12 +1550,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">16</span>
+            <span class="count fail">4</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -723,11 +1566,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
+            <span class="count warn">3 / 56 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
+              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/assets/apple_logo.svg</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/assets/google_play_logo.svg</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr</span></li>
             </ul>
           </div>
         </div>
@@ -742,19 +1585,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">1013</div>
+                <div class="value good" style="font-size:16px;">1406</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">19</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">29</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -769,9 +1612,9 @@
               
               <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
               
-              <li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905034515&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&auid=1438850812.1791905035&dt=Get%20Your%20BMW%20Build%20Sheet%20by%20VIN%20%E2%80%93%20Spe</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=1438850812.1791905035&gtm=45He6a91v9230719683za200zd9230719683xeaxf1&fmt=8</li>
+              <li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905063491&cv=11&fst=1791905063491&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=1&auid=690304639.1791905063&dt=Classic%20Car%20VIN%20Lookup%20%26%20History%20Report%20-%20Pre%20</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=690304639.1791905063&gtm=45892e6a91v9212952419za20czd9212952419xecxf4&fmt=8</li>
             </ul>
           </div>
         </div>
@@ -781,9 +1624,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Options Check</span>
-      <span class="url">https://bmwwindowsticker.com/options-check-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">9 issues</span>
+      <span class="title">Classic Decoder — Homepage</span>
+      <span class="url">https://classicdecoder.com/</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -836,7 +1679,7 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
+              <li class="warn-issue">⚠️ 5 image(s) missing width/height attributes</li>
               
               
             </ul>
@@ -848,45 +1691,45 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count warn">1 issues</span>
+            <span class="count pass">0 issues</span>
           </div>
           <div class="audit-body">
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">Redirect</div>
-                <div class="value warn">197ms</div>
+                <div class="value good">0ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DNS</div>
-                <div class="value good">0ms</div>
+                <div class="value good">1ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">0ms</div>
+                <div class="value good">36ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">0ms</div>
+                <div class="value" style="color:var(--text-2);">24ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
+                <div class="value good">58ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
                 <div class="value good">99ms</div>
               </div>
               <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">297ms</div>
-              </div>
-              <div class="breakdown-cell">
                 <div class="label">Protocol</div>
                 <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">1.14s</div>
+                <div class="value" style="color:var(--text-2);">980ms</div>
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Redirect chain taking 197ms</li>
+              
             </ul>
           </div>
         </div>
@@ -896,27 +1739,27 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">678.6 KB</div>
+                  <div class="bar-fill first-party" style="width:99.62073005250782%;">1.13 MB</div>
                 </div>
               </div>
               <div class="bar-row">
                 <div class="bar-label">Third-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
                 </div>
               </div>
             </div>
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">scripts.clarity.ms</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">c.clarity.ms</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>720 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -926,7 +1769,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">98 requests • 678.6 KB</span>
+            <span class="count pass">94 requests • 1.13 MB</span>
           </div>
           <div class="audit-body">
             
@@ -935,53 +1778,59 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:62.48550205345605%;">43 files</div>
+                      <div class="bar-fill js" style="width:73.68136267478023%;">47 files</div>
                     </div>
-                    <div class="bar-value">424.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:10.34700097564345%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
+                    <div class="bar-value">853.7 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:10.080066078978193%;">8 files</div>
+                      <div class="bar-fill other" style="width:18.63058264292156%;">32 files</div>
                     </div>
-                    <div class="bar-value">68.4 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:9.401576570742783%;">30 files</div>
-                    </div>
-                    <div class="bar-value">63.8 KB</div>
+                    <div class="bar-value">215.9 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">img</div>
                     <div class="bar-track">
-                      <div class="bar-fill img" style="width:6.790794991121357%;">3 files</div>
+                      <div class="bar-fill img" style="width:7.286871360062032%;">6 files</div>
                     </div>
-                    <div class="bar-value">46.1 KB</div>
+                    <div class="bar-value">84.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">5 files</div>
+                    </div>
+                    <div class="bar-value">2.8 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">xmlhttprequest</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">9 files</div>
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
                     </div>
-                    <div class="bar-value">6.1 KB</div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
                   </div>
                 
               </div>
             
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>333ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>329ms</td></tr>
+              </table>
             
             <ul class="issue-list" style="margin-top:12px;">
               
@@ -994,12 +1843,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">24</span>
+            <span class="count fail">4</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -1010,11 +1859,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 3 images</span>
+            <span class="count warn">3 / 56 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
+              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://classicdecoder.com/_next/image?url=https%3A%2F%2Fvhr</span></li>
             </ul>
           </div>
         </div>
@@ -1029,7 +1878,7 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">524</div>
+                <div class="value good" style="font-size:16px;">1393</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
@@ -1037,11 +1886,11 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">29</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -1053,12 +1902,12 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Wide node: HEAD has 61 children (recommended < 60)</li>
+              
               <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
               
-              <li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905051030&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=1&ae=g&auid=2142377138.1791905051&dt=Check%20BMW%20Options%20by%20VIN%20-%20Find%20Packages%20%26</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=2142377138.1791905051&gtm=45He6a91v9230719683za200zd9230719683xeaxf1&fmt=8</li>
+              <li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905063471&cv=11&fst=1791905063471&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=1&auid=452644617.1791905063&dt=Classic%20Car%20VIN%20Lookup%20%26%20History%20Report%20-%20Pre%201</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=452644617.1791905063&gtm=45892e6ac0h2v9212952419za20czd9212952419xecxf4&fmt=8</li>
             </ul>
           </div>
         </div>
@@ -1068,9 +1917,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Options Check</span>
-      <span class="url">https://bmwwindowsticker.com/options-check-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">8 issues</span>
+      <span class="title">Classic Decoder — VIN Decoder</span>
+      <span class="url">https://classicdecoder.com/vin-decoder</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -1123,296 +1972,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
               
               
-            </ul>
-          </div>
-        </div>
-
-        <!-- TTFB Breakdown -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count warn">1 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Redirect</div>
-                <div class="value warn">230ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DNS</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Connect</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Server</div>
-                <div class="value good">83ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">315ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Protocol</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">839ms</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Redirect chain taking 230ms</li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- Third-Party Impact -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
-          </div>
-          <div class="audit-body">
-            <div class="bar-chart" style="margin-bottom:16px;">
-              <div class="bar-row">
-                <div class="bar-label">First-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">580.2 KB</div>
-                </div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-label">Third-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
-                </div>
-              </div>
-            </div>
-            
-              <table class="res-table">
-                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">www.google-analytics.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipapi.co</td><td>1</td><td>0 B</td></tr>
-              </table>
-            
-          </div>
-        </div>
-
-        <!-- Resource Breakdown -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">71 requests • 580.2 KB</span>
-          </div>
-          <div class="audit-body">
-            
-              <div class="bar-chart" style="margin-bottom:16px;">
-                
-                  <div class="bar-row">
-                    <div class="bar-label">script</div>
-                    <div class="bar-track">
-                      <div class="bar-fill js" style="width:62.80607264281146%;">38 files</div>
-                    </div>
-                    <div class="bar-value">364.4 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:12.102198135119668%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:11.789982159087083%;">8 files</div>
-                    </div>
-                    <div class="bar-value">68.4 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">img</div>
-                    <div class="bar-track">
-                      <div class="bar-fill img" style="width:8.199245968963544%;">3 files</div>
-                    </div>
-                    <div class="bar-value">47.6 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">23.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">9 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
-                  </div>
-                
-              </div>
-            
-            
-            <ul class="issue-list" style="margin-top:12px;">
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- Render Blocking -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">19</span>
-          </div>
-          <div class="audit-body">
-            <table class="res-table">
-              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
-            </table>
-          </div>
-        </div>
-        
-
-        <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 3 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- DOM + Fonts + Security + Preload condensed -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🛡️</span> Additional Checks
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">519</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">19</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preconnects</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Console Errors</div>
-                <div class="value good" style="font-size:16px;">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
-              
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
-              
-              <li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905052265&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=1&ae=g&auid=1398297551.1791905052&dt=Check%20BMW%20Options%20by%20VIN%20-%20Find%20Packages%20%26%</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?_gsid=Z5v52AuYIn0Q51g4RWi9K3eOPq0XQLH5-w&auid=1398297551.1791905052&gtm=45He6a91v9230719683za200zd9230719683x</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Paint Code</span>
-      <span class="url">https://bmwwindowsticker.com/paint-code-by-vin-lookup</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">10 issues</span>
-      <span class="toggle">▼</span>
-    </div>
-    <div class="page-body ">
-      <div class="page-body-inner">
-
-        <!-- LCP Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📸</span> LCP Root Cause
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Render Time</div>
-                <div class="value good">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Element</div>
-                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Size</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
-              </div>
-            </div>
-            
-            <ul class="issue-list">
-              
-              <li class="good-issue">✅ No LCP issues detected</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CLS Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📐</span> CLS Root Cause
-            <span class="count pass">0</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Total CLS</div>
-                <div class="value good">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Shifts</div>
-                <div class="value" style="color:var(--text-2);">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
-              
-              
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -1436,19 +1998,19 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value warn">117ms</div>
+                <div class="value good">27ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">63ms</div>
+                <div class="value" style="color:var(--text-2);">16ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">132ms</div>
+                <div class="value good">37ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">250ms</div>
+                <div class="value good">65ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -1456,7 +2018,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">932ms</div>
+                <div class="value" style="color:var(--text-2);">834ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -1470,27 +2032,27 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">319.6 KB</div>
+                  <div class="bar-fill first-party" style="width:99.54344913598156%;">955.6 KB</div>
                 </div>
               </div>
               <div class="bar-row">
                 <div class="bar-label">Third-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
                 </div>
               </div>
             </div>
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipapi.co</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>3</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.google.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>711 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -1500,7 +2062,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">44 requests • 319.6 KB</span>
+            <span class="count pass">77 requests • 960.0 KB</span>
           </div>
           <div class="audit-body">
             
@@ -1509,41 +2071,41 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:85.94850136905926%;">26 files</div>
+                      <div class="bar-fill js" style="width:84.89953948178221%;">43 files</div>
                     </div>
-                    <div class="bar-value">274.7 KB</div>
+                    <div class="bar-value">815.0 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:12.150706532368472%;">4 files</div>
+                      <div class="bar-fill other" style="width:14.347171937991277%;">19 files</div>
                     </div>
-                    <div class="bar-value">38.8 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">iframe</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">1 files</div>
-                    </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">137.7 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">4 files</div>
+                      <div class="bar-fill other" style="width:5%;">10 files</div>
                     </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">5.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
                   </div>
                 
                   <div class="bar-row">
@@ -1551,11 +2113,17 @@
                     <div class="bar-track">
                       <div class="bar-fill img" style="width:5%;">1 files</div>
                     </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">342 B</div>
                   </div>
                 
               </div>
             
+            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
+              <table class="res-table">
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>175ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>209ms</td></tr>
+              </table>
             
             <ul class="issue-list" style="margin-top:12px;">
               
@@ -1568,12 +2136,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">3</span>
+            <span class="count fail">4</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -1591,19 +2159,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">75</div>
+                <div class="value good" style="font-size:16px;">592</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">6</div>
+                <div class="value good" style="font-size:16px;">13</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">0</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">15</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -1611,16 +2179,16 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Console Errors</div>
-                <div class="value fail" style="font-size:16px;">1</div>
+                <div class="value good" style="font-size:16px;">0</div>
               </div>
             </div>
             <ul class="issue-list">
-              
+              <li class="warn-issue">⚠️ Wide node: HEAD has 77 children (recommended < 60)</li>
               <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
-              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://bmwwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1586009520.1791905046&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=1586009520.1791905046&gtm=45He6a91v9230719683za200zd9230719683xeaxf1&fmt=8</li><li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za20ozb9230719683zd9230719683xf1&_p=1791905045490&gcd=13l3l3l3l</li><li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543z89230719683za20gzb9230719683zd9230719683xf1&_p=1791905045490&g</li>
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
+              
+              <li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=2080764779.1791905072&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-198</li><li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905072013&cv=11&fst=1791905072013&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=2080764779.1791905072&gtm=45892e6a91v9212952419za20czd9212952419xecxf4&fmt=8</li>
             </ul>
           </div>
         </div>
@@ -1630,9 +2198,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – Paint Code</span>
-      <span class="url">https://bmwwindowsticker.com/paint-code-by-vin-lookup</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">10 issues</span>
+      <span class="title">Classic Decoder — VIN Decoder</span>
+      <span class="url">https://classicdecoder.com/vin-decoder</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -1685,9 +2253,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -1711,19 +2279,19 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value warn">101ms</div>
+                <div class="value good">30ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">48ms</div>
+                <div class="value" style="color:var(--text-2);">18ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">91ms</div>
+                <div class="value good">43ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">193ms</div>
+                <div class="value good">74ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -1731,7 +2299,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">754ms</div>
+                <div class="value" style="color:var(--text-2);">743ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -1745,27 +2313,27 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">7 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">319.6 KB</div>
+                  <div class="bar-fill first-party" style="width:99.54186626532805%;">953.3 KB</div>
                 </div>
               </div>
               <div class="bar-row">
                 <div class="bar-label">Third-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                  <div class="bar-fill third-party" style="width:5%;">4.4 KB</div>
                 </div>
               </div>
             </div>
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipapi.co</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">www.google-analytics.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">www.google.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">googleads.g.doubleclick.net</td><td>1</td><td>3.4 KB</td></tr><tr><td class="url-cell">fonts.googleapis.com</td><td>1</td><td>720 B</td></tr><tr><td class="url-cell">www.google.com</td><td>3</td><td>342 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ad.doubleclick.net</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipinfo.io</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -1775,7 +2343,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">43 requests • 319.6 KB</span>
+            <span class="count pass">72 requests • 957.7 KB</span>
           </div>
           <div class="audit-body">
             
@@ -1784,41 +2352,41 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:85.94850136905926%;">25 files</div>
+                      <div class="bar-fill js" style="width:85.0985706390624%;">43 files</div>
                     </div>
-                    <div class="bar-value">274.7 KB</div>
+                    <div class="bar-value">815.0 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:12.150706532368472%;">4 files</div>
+                      <div class="bar-fill other" style="width:14.381504163276293%;">19 files</div>
                     </div>
-                    <div class="bar-value">38.8 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">iframe</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">1 files</div>
-                    </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">137.7 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">4 files</div>
+                      <div class="bar-fill other" style="width:5%;">5 files</div>
                     </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">2.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">3 files</div>
+                    </div>
+                    <div class="bar-value">1.4 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">other</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">451 B</div>
                   </div>
                 
                   <div class="bar-row">
@@ -1826,287 +2394,18 @@
                     <div class="bar-track">
                       <div class="bar-fill img" style="width:5%;">1 files</div>
                     </div>
-                    <div class="bar-value">0 B</div>
+                    <div class="bar-value">342 B</div>
                   </div>
                 
               </div>
             
             
-            <ul class="issue-list" style="margin-top:12px;">
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- Render Blocking -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">3</span>
-          </div>
-          <div class="audit-body">
-            <table class="res-table">
-              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
-            </table>
-          </div>
-        </div>
-        
-
-        <!-- Image Audit -->
-        
-
-        <!-- DOM + Fonts + Security + Preload condensed -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🛡️</span> Additional Checks
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">74</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">6</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preconnects</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Console Errors</div>
-                <div class="value fail" style="font-size:16px;">1</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
-              
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
-              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://bmwwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905046808&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za200zd9189106543xf1&_p=1791905046808&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=1310097309.1791905047&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=1310097309.1791905047&gtm=45He6a91v9230719683za200zd9230719683xeaxf1&fmt=8</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – VIN Decoder</span>
-      <span class="url">https://bmwwindowsticker.com/vin-decoder</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
-      <span class="toggle">▼</span>
-    </div>
-    <div class="page-body ">
-      <div class="page-body-inner">
-
-        <!-- LCP Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📸</span> LCP Root Cause
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Render Time</div>
-                <div class="value good">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Element</div>
-                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Size</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
-              </div>
-            </div>
-            
-            <ul class="issue-list">
-              
-              <li class="good-issue">✅ No LCP issues detected</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CLS Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📐</span> CLS Root Cause
-            <span class="count pass">0</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Total CLS</div>
-                <div class="value good">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Shifts</div>
-                <div class="value" style="color:var(--text-2);">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
-              
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- TTFB Breakdown -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Redirect</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DNS</div>
-                <div class="value good">1ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Connect</div>
-                <div class="value warn">147ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">77ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Server</div>
-                <div class="value good">83ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">232ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Protocol</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">584ms</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- Third-Party Impact -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
-          </div>
-          <div class="audit-body">
-            <div class="bar-chart" style="margin-bottom:16px;">
-              <div class="bar-row">
-                <div class="bar-label">First-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">647.8 KB</div>
-                </div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-label">Third-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
-                </div>
-              </div>
-            </div>
-            
+              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
               <table class="res-table">
-                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.google-analytics.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">ipapi.co</td><td>1</td><td>0 B</td></tr>
+                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
+                <tr><td class="url-cell">https://classicdecoder.com/_next/static/chunks/app/layout-ba3961c9bb9c4506.js</td><td>script</td><td style="color:var(--warn);font-weight:600;">304.4 KB</td><td>152ms</td></tr><tr><td class="url-cell">https://classicdecoder.com/0qia/</td><td>script</td><td style="color:var(--warn);font-weight:600;">173.5 KB</td><td>189ms</td></tr>
               </table>
             
-          </div>
-        </div>
-
-        <!-- Resource Breakdown -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">95 requests • 647.8 KB</span>
-          </div>
-          <div class="audit-body">
-            
-              <div class="bar-chart" style="margin-bottom:16px;">
-                
-                  <div class="bar-row">
-                    <div class="bar-label">script</div>
-                    <div class="bar-track">
-                      <div class="bar-fill js" style="width:65.87303262377134%;">43 files</div>
-                    </div>
-                    <div class="bar-value">426.7 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:10.840016884761502%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:9.765271663752035%;">29 files</div>
-                    </div>
-                    <div class="bar-value">63.3 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:9.155309654465418%;">7 files</div>
-                    </div>
-                    <div class="bar-value">59.3 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">img</div>
-                    <div class="bar-track">
-                      <div class="bar-fill img" style="width:5%;">3 files</div>
-                    </div>
-                    <div class="bar-value">22.2 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
-                  </div>
-                
-              </div>
-            
-            
             <ul class="issue-list" style="margin-top:12px;">
               
             </ul>
@@ -2118,30 +2417,18 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">23</span>
+            <span class="count fail">4</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/2d5f190d7ff1ee39.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/css/ddf3da47bfdcdbef.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/polyfills-42372ed130431b0a.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
         
 
         <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
-            </ul>
-          </div>
-        </div>
         
 
         <!-- DOM + Fonts + Security + Preload condensed -->
@@ -2153,19 +2440,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">886</div>
+                <div class="value good" style="font-size:16px;">592</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">13</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">1</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">15</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -2177,299 +2464,12 @@
               </div>
             </div>
             <ul class="issue-list">
-              
+              <li class="warn-issue">⚠️ Wide node: HEAD has 77 children (recommended < 60)</li>
               <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
+              <li class="info-issue">ℹ️ 7 third-party origins without preconnect hints</li>
               
-              <li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za208zd9189106543xf1&_p=1791905040439&gcd=13l3l3l3l1l1&npa=0&dm</li><li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=1&ae=g&auid=1475277300.1791905041&dt=BMW%20VIN%20Decoder%20%7C%20Check%20BMW%20VIN%20%26%20Vehicl</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=1475277300.1791905041&gtm=45He6a91v9230719683za200zd9230719683xeaxf1&fmt=8</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">BMWWINDOWSTICKER Window Sticker — BMW – VIN Decoder</span>
-      <span class="url">https://bmwwindowsticker.com/vin-decoder</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
-      <span class="toggle">▼</span>
-    </div>
-    <div class="page-body ">
-      <div class="page-body-inner">
-
-        <!-- LCP Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📸</span> LCP Root Cause
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Render Time</div>
-                <div class="value good">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Element</div>
-                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Size</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
-              </div>
-            </div>
-            
-            <ul class="issue-list">
-              
-              <li class="good-issue">✅ No LCP issues detected</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CLS Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📐</span> CLS Root Cause
-            <span class="count pass">0</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Total CLS</div>
-                <div class="value good">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Shifts</div>
-                <div class="value" style="color:var(--text-2);">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 iframe(s) missing dimensions</li><li class="warn-issue">⚠️ 1 fixed/sticky element(s) found that may push content</li>
-              
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- TTFB Breakdown -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Redirect</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DNS</div>
-                <div class="value good">1ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Connect</div>
-                <div class="value warn">135ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">65ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Server</div>
-                <div class="value good">77ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">214ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Protocol</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">525ms</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- Third-Party Impact -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">13 domains</span>
-          </div>
-          <div class="audit-body">
-            <div class="bar-chart" style="margin-bottom:16px;">
-              <div class="bar-row">
-                <div class="bar-label">First-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">529.5 KB</div>
-                </div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-label">Third-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
-                </div>
-              </div>
-            </div>
-            
-              <table class="res-table">
-                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">cdn.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">api.livechatinc.com</td><td>4</td><td>0 B</td></tr><tr><td class="url-cell">secure.livechatinc.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">scripts.clarity.ms</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">c.clarity.ms</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">www.googletagmanager.com</td><td>3</td><td>0 B</td></tr>
-              </table>
-            
-          </div>
-        </div>
-
-        <!-- Resource Breakdown -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">70 requests • 529.5 KB</span>
-          </div>
-          <div class="audit-body">
-            
-              <div class="bar-chart" style="margin-bottom:16px;">
-                
-                  <div class="bar-row">
-                    <div class="bar-label">script</div>
-                    <div class="bar-track">
-                      <div class="bar-fill js" style="width:69.3265926818067%;">39 files</div>
-                    </div>
-                    <div class="bar-value">367.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">css</div>
-                    <div class="bar-track">
-                      <div class="bar-fill css" style="width:13.261942923330313%;">4 files</div>
-                    </div>
-                    <div class="bar-value">70.2 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:11.200830715828419%;">7 files</div>
-                    </div>
-                    <div class="bar-value">59.3 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">8 files</div>
-                    </div>
-                    <div class="bar-value">23.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">9 files</div>
-                    </div>
-                    <div class="bar-value">6.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">img</div>
-                    <div class="bar-track">
-                      <div class="bar-fill img" style="width:5%;">2 files</div>
-                    </div>
-                    <div class="bar-value">3.3 KB</div>
-                  </div>
-                
-              </div>
-            
-            
-            <ul class="issue-list" style="margin-top:12px;">
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- Render Blocking -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">18</span>
-          </div>
-          <div class="audit-body">
-            <table class="res-table">
-              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0uri4l3yk.eh2.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/0jr9ko5e-4m1j.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/03~yq9q893hmn.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0szfrj0mmmm24.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0hjgac-m_p3sf.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0uip0u41g6psw.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0~~-yx1muykka.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0qkc32_tim~aq.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0p~_20pyj3ip8.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0ja-6gg8vg6x0.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
-            </table>
-          </div>
-        </div>
-        
-
-        <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://bmwwindowsticker.com/_next/image?url=https%3A%2F%2Fa</span></li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- DOM + Fonts + Security + Preload condensed -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🛡️</span> Additional Checks
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">882</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">4</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">1</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preconnects</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Console Errors</div>
-                <div class="value good" style="font-size:16px;">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-              <li class="warn-issue">⚠️ 1 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
-              
-              <li class="info-issue">ℹ️ 13 third-party origins without preconnect hints</li>
-              
-              <li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=1&ae=g&auid=243175599.1791905041&dt=BMW%20VIN%20Decoder%20%7C%20Check%20BMW%20VIN%20%26%20Vehicle</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=243175599.1791905041&gtm=45He6ac0h2v9230719683za200zd9230719683xeaxf1&fmt=8</li><li class="fail-issue">💥 [0] https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6a91v9189106543za20ozb9230719683zd9230719683xf1&_p=1791905040952&gcd=13l3l3l3l</li>
+              <li class="fail-issue">💥 [0] https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=574720922.1791905073&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-1981</li><li class="fail-issue">💥 [0] https://www.google.com/rmkt/collect/11047176851/?random=1791905072764&cv=11&fst=1791905072764&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892</li><li class="fail-issue">💥 [0] https://ad.doubleclick.net/ccm/s/collect?auid=574720922.1791905073&gtm=45892e6ac0h2v9212952419za20czd9212952419xecxf4&fmt=8</li>
             </ul>
           </div>
         </div>
