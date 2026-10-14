@@ -4,16 +4,16 @@
     "label": "Homepage",
     "url": "https://vinnumber.ca/",
     "strategy": "mobile",
-    "timestamp": "2026-10-13T15:31:58.584Z",
-    "performanceScore": 79,
+    "timestamp": "2026-10-14T13:19:31.956Z",
+    "performanceScore": 78,
     "lcp": {
-      "value": 4501,
-      "displayValue": "4.5 s",
-      "score": 0.37
+      "value": 4576,
+      "displayValue": "4.6 s",
+      "score": 0.35
     },
     "fcp": {
-      "value": 2149,
-      "displayValue": "2.1 s",
+      "value": 2151,
+      "displayValue": "2.2 s",
       "score": 0.79
     },
     "cls": {
@@ -22,38 +22,27 @@
       "score": 1
     },
     "tbt": {
-      "value": 10,
-      "displayValue": "10 ms",
+      "value": 34,
+      "displayValue": "30 ms",
       "score": 1
     },
     "si": {
-      "value": 4462.4215905492,
-      "displayValue": "4.5 s",
-      "score": 0.73
+      "value": 5096.174733168616,
+      "displayValue": "5.1 s",
+      "score": 0.62
     },
     "ttfb": {
-      "value": 7,
+      "value": 10,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 4516,
-      "displayValue": "4.5 s",
-      "score": 0.82
+      "value": 4598.5,
+      "displayValue": "4.6 s",
+      "score": 0.81
     },
     "opportunities": [],
     "diagnostics": [
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -61,15 +50,26 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 136 KiB",
         "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
       }
     ]
   },
@@ -78,30 +78,30 @@
     "label": "Homepage",
     "url": "https://vinnumber.ca/",
     "strategy": "desktop",
-    "timestamp": "2026-10-13T15:32:17.093Z",
-    "performanceScore": 100,
+    "timestamp": "2026-10-14T13:19:58.879Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 644,
-      "displayValue": "0.6 s",
-      "score": 0.99
+      "value": 872,
+      "displayValue": "0.9 s",
+      "score": 0.97
     },
     "fcp": {
-      "value": 501.71343068653346,
+      "value": 510.5054530380887,
       "displayValue": "0.5 s",
       "score": 1
     },
     "cls": {
-      "value": 0.0002221191796333219,
+      "value": 0.0003097139725260492,
       "displayValue": "0",
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 61,
+      "displayValue": "60 ms",
       "score": 1
     },
     "si": {
-      "value": 802.6321249423436,
+      "value": 770.2457087554125,
       "displayValue": "0.8 s",
       "score": 0.99
     },
@@ -111,27 +111,35 @@
       "score": 1
     },
     "interactive": {
-      "value": 648,
-      "displayValue": "0.6 s",
+      "value": 872,
+      "displayValue": "0.9 s",
       "score": 1
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 23887
+      }
+    ],
+    "diagnostics": [
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 98 KiB",
-        "score": 0
+        "score": 0.5
       },
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       },
       {
@@ -140,9 +148,9 @@
         "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       }
     ]
@@ -152,53 +160,59 @@
     "label": "VIN Search",
     "url": "https://vinnumber.ca/vin-search",
     "strategy": "mobile",
-    "timestamp": "2026-10-13T15:32:36.408Z",
-    "performanceScore": 88,
+    "timestamp": "2026-10-14T13:20:26.397Z",
+    "performanceScore": 82,
     "lcp": {
-      "value": 3628,
-      "displayValue": "3.6 s",
-      "score": 0.6
+      "value": 3926,
+      "displayValue": "3.9 s",
+      "score": 0.52
     },
     "fcp": {
-      "value": 1820.961940896073,
-      "displayValue": "1.8 s",
-      "score": 0.89
+      "value": 2277,
+      "displayValue": "2.3 s",
+      "score": 0.75
     },
     "cls": {
-      "value": 0.002277847164003863,
-      "displayValue": "0.002",
+      "value": null,
+      "displayValue": "0",
       "score": 1
     },
     "tbt": {
-      "value": 4,
-      "displayValue": "0 ms",
-      "score": 1
+      "value": 127,
+      "displayValue": "130 ms",
+      "score": 0.96
     },
     "si": {
-      "value": 2927.478583280637,
-      "displayValue": "2.9 s",
-      "score": 0.95
+      "value": 4507.086013109387,
+      "displayValue": "4.5 s",
+      "score": 0.72
     },
     "ttfb": {
-      "value": 6,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3641.6000000000004,
-      "displayValue": "3.6 s",
-      "score": 0.91
+      "value": 3938.6000000000004,
+      "displayValue": "3.9 s",
+      "score": 0.88
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 54694
+        "savingsMs": 200,
+        "savingsBytes": 54693
       }
     ],
     "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
+      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -206,19 +220,14 @@
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
@@ -228,85 +237,17 @@
     "label": "VIN Search",
     "url": "https://vinnumber.ca/vin-search",
     "strategy": "desktop",
-    "timestamp": "2026-10-13T15:32:54.777Z",
+    "timestamp": "2026-10-14T13:20:49.252Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 601,
-      "displayValue": "0.6 s",
-      "score": 0.99
+      "value": 765,
+      "displayValue": "0.8 s",
+      "score": 0.98
     },
     "fcp": {
-      "value": 509.64972051374343,
+      "value": 507.7697620548595,
       "displayValue": "0.5 s",
       "score": 1
-    },
-    "cls": {
-      "value": 0.001891319733475802,
-      "displayValue": "0.002",
-      "score": 1
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 691.9356157268196,
-      "displayValue": "0.7 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 10,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 605,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "Vinnumber CA",
-    "label": "VIN Decoder",
-    "url": "https://vinnumber.ca/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-10-13T15:33:12.551Z",
-    "performanceScore": 92,
-    "lcp": {
-      "value": 3152,
-      "displayValue": "3.2 s",
-      "score": 0.74
-    },
-    "fcp": {
-      "value": 1829.8312653630169,
-      "displayValue": "1.8 s",
-      "score": 0.89
     },
     "cls": {
       "value": null,
@@ -314,14 +255,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 4,
-      "displayValue": "0 ms",
+      "value": 15.5,
+      "displayValue": "20 ms",
       "score": 1
     },
     "si": {
-      "value": 3023.455498594354,
-      "displayValue": "3.0 s",
-      "score": 0.94
+      "value": 606.5497989279249,
+      "displayValue": "0.6 s",
+      "score": 1
     },
     "ttfb": {
       "value": 8,
@@ -329,84 +270,8 @@
       "score": 1
     },
     "interactive": {
-      "value": 3167,
-      "displayValue": "3.2 s",
-      "score": 0.95
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 23886
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "Vinnumber CA",
-    "label": "VIN Decoder",
-    "url": "https://vinnumber.ca/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-10-13T15:33:28.424Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 621,
-      "displayValue": "0.6 s",
-      "score": 0.99
-    },
-    "fcp": {
-      "value": 500.54518755011117,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 5,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 500.54518755011117,
-      "displayValue": "0.5 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 650.1500000000001,
-      "displayValue": "0.7 s",
+      "value": 779.6500000000001,
+      "displayValue": "0.8 s",
       "score": 1
     },
     "opportunities": [
@@ -415,82 +280,6 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 20,
-        "savingsBytes": 23886
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "Vinnumber CA",
-    "label": "Window Sticker",
-    "url": "https://vinnumber.ca/window-sticker",
-    "strategy": "mobile",
-    "timestamp": "2026-10-13T15:33:56.705Z",
-    "performanceScore": 89,
-    "lcp": {
-      "value": 3301,
-      "displayValue": "3.3 s",
-      "score": 0.69
-    },
-    "fcp": {
-      "value": 1847.8768990948704,
-      "displayValue": "1.8 s",
-      "score": 0.88
-    },
-    "cls": {
-      "value": 0.07875101983609606,
-      "displayValue": "0.079",
-      "score": 0.94
-    },
-    "tbt": {
-      "value": 91,
-      "displayValue": "90 ms",
-      "score": 0.99
-    },
-    "si": {
-      "value": 2507.370753420534,
-      "displayValue": "2.5 s",
-      "score": 0.98
-    },
-    "ttfb": {
-      "value": 40,
-      "displayValue": "Root document took 40 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3301,
-      "displayValue": "3.3 s",
-      "score": 0.94
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
         "savingsBytes": 54694
       }
     ],
@@ -508,13 +297,165 @@
         "score": 0.5
       },
       {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
         "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "Vinnumber CA",
+    "label": "VIN Decoder",
+    "url": "https://vinnumber.ca/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-10-14T13:21:20.934Z",
+    "performanceScore": 86,
+    "lcp": {
+      "value": 3451,
+      "displayValue": "3.5 s",
+      "score": 0.65
+    },
+    "fcp": {
+      "value": 2225,
+      "displayValue": "2.2 s",
+      "score": 0.77
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 78,
+      "displayValue": "80 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 4407.993322484359,
+      "displayValue": "4.4 s",
+      "score": 0.74
+    },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3466,
+      "displayValue": "3.5 s",
+      "score": 0.92
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 23887
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
       },
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "Vinnumber CA",
+    "label": "VIN Decoder",
+    "url": "https://vinnumber.ca/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-10-14T13:21:38.481Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 708,
+      "displayValue": "0.7 s",
+      "score": 0.99
+    },
+    "fcp": {
+      "value": 499.10125320790166,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0001357158125909484,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 48.5,
+      "displayValue": "50 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 756.5420631762063,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 9,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 745.95,
+      "displayValue": "0.7 s",
+      "score": 1
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 23887
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       }
     ]
@@ -523,18 +464,18 @@
     "site": "Vinnumber CA",
     "label": "Window Sticker",
     "url": "https://vinnumber.ca/window-sticker",
-    "strategy": "desktop",
-    "timestamp": "2026-10-13T15:34:29.481Z",
-    "performanceScore": 100,
+    "strategy": "mobile",
+    "timestamp": "2026-10-14T13:21:58.883Z",
+    "performanceScore": 93,
     "lcp": {
-      "value": 751,
-      "displayValue": "0.8 s",
-      "score": 0.98
+      "value": 3076,
+      "displayValue": "3.1 s",
+      "score": 0.76
     },
     "fcp": {
-      "value": 536.7786662044905,
-      "displayValue": "0.5 s",
-      "score": 1
+      "value": 1831.0311221912286,
+      "displayValue": "1.8 s",
+      "score": 0.89
     },
     "cls": {
       "value": null,
@@ -547,18 +488,86 @@
       "score": 1
     },
     "si": {
-      "value": 627.2537326416241,
-      "displayValue": "0.6 s",
+      "value": 1831.0311221912286,
+      "displayValue": "1.8 s",
       "score": 1
     },
     "ttfb": {
-      "value": 14,
+      "value": 12,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 775,
-      "displayValue": "0.8 s",
+      "value": 3098.5,
+      "displayValue": "3.1 s",
+      "score": 0.95
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "Vinnumber CA",
+    "label": "Window Sticker",
+    "url": "https://vinnumber.ca/window-sticker",
+    "strategy": "desktop",
+    "timestamp": "2026-10-14T13:22:17.248Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 736,
+      "displayValue": "0.7 s",
+      "score": 0.98
+    },
+    "fcp": {
+      "value": 499.2400108652361,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": null,
+      "displayValue": "0 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 589.6587691310124,
+      "displayValue": "0.6 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 10,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 740,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "opportunities": [
@@ -566,11 +575,16 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 54730
+        "savingsMs": 10,
+        "savingsBytes": 54604
       }
     ],
     "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -583,15 +597,10 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
+        "score": 0
       }
     ]
   }
