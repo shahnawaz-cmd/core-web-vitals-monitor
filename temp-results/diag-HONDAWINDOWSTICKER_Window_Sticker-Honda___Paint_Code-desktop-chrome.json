@@ -3,7 +3,7 @@
   "label": "Honda – Paint Code",
   "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-15T13:08:02.047Z",
+  "timestamp": "2026-10-16T13:00:49.351Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,20 +22,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 60,
-      "tls": 35,
-      "serverProcessing": 128,
-      "ttfb": 191,
+      "connection": 23,
+      "tls": 21,
+      "serverProcessing": 889,
+      "ttfb": 914,
       "download": 1,
-      "domParsing": 8,
-      "domContentLoaded": 294,
-      "loadEvent": 418,
+      "domParsing": 12,
+      "domContentLoaded": 958,
+      "loadEvent": 4394,
       "transferSize": 9517,
       "encodedBodySize": 9217,
       "decodedBodySize": 38142,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 889ms",
+      "TTFB exceeds 800ms threshold: 914ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -55,7 +58,7 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/f015a5fe158d8fb2.js",
+      "url": "/_next/static/chunks/b67ce49763353d66.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -65,7 +68,7 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/3c1092512908bab1.js",
+      "url": "/_next/static/chunks/1312242edaa34145.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -80,43 +83,43 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/a6366d622f0e1ca5.js",
+      "url": "/_next/static/chunks/c9e92fde6a5dc16d.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/59ac1f45ef909067.js",
+      "url": "/_next/static/chunks/c057aa95e45fbade.js",
       "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
     "totalCount": 81,
-    "totalSize": 503740,
+    "totalSize": 503773,
     "byType": {
       "link": {
         "count": 10,
-        "totalSize": 146159,
-        "totalDuration": 561.4000000000524
+        "totalSize": 146169,
+        "totalDuration": 478.70000000012806
       },
       "script": {
         "count": 15,
-        "totalSize": 205894,
-        "totalDuration": 767.5999999999767
-      },
-      "xmlhttprequest": {
-        "count": 1,
-        "totalSize": 300,
-        "totalDuration": 28.5
+        "totalSize": 205898,
+        "totalDuration": 3956.399999999965
       },
       "img": {
         "count": 1,
         "totalSize": 3098,
-        "totalDuration": 78.80000000001746
+        "totalDuration": 35.40000000002328
       },
       "fetch": {
         "count": 54,
-        "totalSize": 148289,
-        "totalDuration": 6097.899999999907
+        "totalSize": 148308,
+        "totalDuration": 2420.700000000128
+      },
+      "xmlhttprequest": {
+        "count": 1,
+        "totalSize": 300,
+        "totalDuration": 9
       }
     },
     "largeResources": [],
@@ -158,14 +161,14 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 503740,
+    "firstPartySize": 503773,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 73
+        "duration": 33
       }
     ],
     "totalDomains": 1
@@ -183,32 +186,32 @@
       {
         "url": "...://hondawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
         "size": 16047,
-        "duration": 42
+        "duration": 52
       },
       {
         "url": "...://hondawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
         "size": 25538,
-        "duration": 37
+        "duration": 49
       },
       {
         "url": "...://hondawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
         "size": 16132,
-        "duration": 36
+        "duration": 40
       },
       {
         "url": "...://hondawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 46
+        "duration": 52
       },
       {
         "url": "...://hondawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
         "size": 15944,
-        "duration": 45
+        "duration": 43
       },
       {
         "url": "...://hondawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
         "size": 15956,
-        "duration": 121
+        "duration": 41
       }
     ],
     "fontFaces": [
@@ -364,18 +367,6 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=t4hu4",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hondawindowsticker.com/vehicle-history?_rsc=t4hu4",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://hondawindowsticker.com/recall-check?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
@@ -394,13 +385,13 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/contact-us?_rsc=t4hu4",
+      "url": "https://hondawindowsticker.com/signup?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/about-us?_rsc=t4hu4",
+      "url": "https://hondawindowsticker.com/contact-us?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -412,13 +403,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/signup?_rsc=t4hu4",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=y2gn3",
+      "url": "https://hondawindowsticker.com/vin-decoder?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -436,13 +421,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=m29he",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=1p208",
+      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=y2gn3",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -454,19 +433,43 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/request-a-refund?_rsc=kbg1s",
+      "url": "https://hondawindowsticker.com/vehicle-history?_rsc=1x9bk",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/privacy-policy?_rsc=1x9bk",
+      "url": "https://hondawindowsticker.com/recall-check?_rsc=1p208",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hondawindowsticker.com/privacy-policy?_rsc=kbg1s",
+      "url": "https://hondawindowsticker.com/vehicle-history?_rsc=1p208",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://hondawindowsticker.com/?_rsc=bedo0",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://hondawindowsticker.com/pricing?_rsc=kbg1s",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://hondawindowsticker.com/about-us?_rsc=1x9bk",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://hondawindowsticker.com/about-us?_rsc=kbg1s",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
