@@ -3,7 +3,7 @@
   "label": "Infiniti – Build Sheet",
   "url": "https://infinitiwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-15T13:09:16.042Z",
+  "timestamp": "2026-10-16T13:01:39.007Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,21 +24,24 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 1,
-      "connection": 72,
-      "tls": 41,
-      "serverProcessing": 43,
-      "ttfb": 119,
-      "download": 4,
-      "domParsing": 171,
-      "domContentLoaded": 298,
-      "loadEvent": 433,
-      "transferSize": 14928,
-      "encodedBodySize": 14628,
-      "decodedBodySize": 91839,
+      "dns": 2,
+      "connection": 23,
+      "tls": 21,
+      "serverProcessing": 6039,
+      "ttfb": 6067,
+      "download": 2,
+      "domParsing": 182,
+      "domContentLoaded": 6255,
+      "loadEvent": 6321,
+      "transferSize": 14998,
+      "encodedBodySize": 14698,
+      "decodedBodySize": 92102,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 6039ms",
+      "TTFB exceeds 800ms threshold: 6067ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -123,17 +126,17 @@
     },
     {
       "type": "JS",
+      "url": "/_next/static/chunks/11yh6y8uhki12.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
       "url": "/_next/static/chunks/0c_u_4-~3wo9f.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
       "url": "/_next/static/chunks/0-hsb40u2t90f.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/11yh6y8uhki12.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -154,42 +157,42 @@
   ],
   "resourceAnalysis": {
     "totalCount": 101,
-    "totalSize": 810311,
+    "totalSize": 810027,
     "byType": {
       "link": {
         "count": 5,
         "totalSize": 51918,
-        "totalDuration": 890.3999999999942
+        "totalDuration": 322.5999999999767
       },
       "script": {
-        "count": 45,
+        "count": 44,
         "totalSize": 433944,
-        "totalDuration": 4097.599999999977
+        "totalDuration": 9852.500000000116
       },
       "css": {
         "count": 4,
         "totalSize": 71904,
-        "totalDuration": 396.80000000001746
+        "totalDuration": 282.9000000000233
       },
       "img": {
         "count": 4,
         "totalSize": 179051,
-        "totalDuration": 574.7999999999884
+        "totalDuration": 385.0999999999767
       },
       "xmlhttprequest": {
         "count": 8,
-        "totalSize": 6333,
-        "totalDuration": 5123.600000000006
+        "totalSize": 6157,
+        "totalDuration": 3926.29999999993
       },
       "fetch": {
-        "count": 34,
-        "totalSize": 67161,
-        "totalDuration": 4345.600000000006
+        "count": 35,
+        "totalSize": 67053,
+        "totalDuration": 2344.800000000105
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 204.69999999998254
+        "totalDuration": 446.4000000000233
       }
     },
     "largeResources": [],
@@ -232,86 +235,86 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 810311,
+    "firstPartySize": 810027,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 136
+        "duration": 48
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 22
+        "duration": 60
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 168
+        "duration": 245
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 205
+        "duration": 446
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 3,
+        "count": 2,
         "size": 0,
-        "duration": 1254
+        "duration": 152
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 168
+        "duration": 105
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 2,
+        "size": 0,
+        "duration": 39
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 144
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 21
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 219
-      },
-      {
-        "domain": "a.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 217
+        "duration": 42
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 120
+        "duration": 35
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 243
+        "duration": 30
       },
       {
-        "domain": "www.google-analytics.com",
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 16
+      },
+      {
+        "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 239
+        "duration": 164
+      },
+      {
+        "domain": "o.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 33
       }
     ],
     "totalDomains": 13
@@ -319,7 +322,7 @@
   "domAnalysis": {
     "totalElements": 499,
     "maxDepth": 18,
-    "maxChildren": 60,
+    "maxChildren": 59,
     "widestElement": "HEAD",
     "deepestElement": "circle",
     "issues": []
@@ -329,22 +332,22 @@
       {
         "url": "...initiwindowsticker.com/_next/static/media/89c2c771ed51f5b8-s.0fsiao4di78_e.woff2",
         "size": 18118,
-        "duration": 94
+        "duration": 60
       },
       {
         "url": "...initiwindowsticker.com/_next/static/media/6d205b44cc8ff5cb-s.0obzj7u9mi98y.woff2",
         "size": 18042,
-        "duration": 91
-      },
-      {
-        "url": "...initiwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
-        "size": 17983,
-        "duration": 98
+        "duration": 71
       },
       {
         "url": "...initiwindowsticker.com/_next/static/media/173b4e1ecbfe6c3b-s.0uyeu33xj2.w_.woff2",
         "size": 17761,
-        "duration": 115
+        "duration": 76
+      },
+      {
+        "url": "...initiwindowsticker.com/_next/static/media/cc75fa3e14c3cd04-s.0qimeh.-r~yg_.woff2",
+        "size": 17983,
+        "duration": 75
       }
     ],
     "fontFaces": [
@@ -771,19 +774,25 @@
   ],
   "failedRequests": [
     {
-      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=842544010.1792069753&dt=Infiniti%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs%20%2",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5G0Q79YZ7E&gtm=45je6ae1v9193691782za208zd9193691782xf1&_p=1792155691642&gcd=13l3l3l3l1l1&npa=0&dm",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=842544010.1792069753&gtm=45He6ad1v9230898820za200zd9230898820xeaxf1&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1654253875.1792155692&gtm=45He6ae1v9230898820za200zd9230898820xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5G0Q79YZ7E&gtm=45je6ad1h1v9193691782za20ozb9230898820zd9230898820xf1&_p=1792069752601&gcd=13l3l3l",
+      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&ae=g&auid=1654253875.1792155692&dt=Infiniti%20Build%20Sheet%20by%20VIN%3A%20Original%20Specs%20%",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-5G0Q79YZ7E&gtm=45je6ae1v9193691782z89230898820za200zd9193691782xf1&_p=1792155691642&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
