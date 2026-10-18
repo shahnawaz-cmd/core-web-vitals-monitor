@@ -3,7 +3,7 @@
   "label": "Dodge – Paint Code",
   "url": "https://dodgewindowsticker.com/paint-code-by-vin-lookup",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-17T11:56:03.618Z",
+  "timestamp": "2026-10-18T12:22:08.129Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -20,22 +20,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 53,
+      "redirect": 144,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 15,
-      "ttfb": 70,
-      "download": 6,
-      "domParsing": 102,
-      "domContentLoaded": 184,
-      "loadEvent": 569,
+      "serverProcessing": 19,
+      "ttfb": 165,
+      "download": 10,
+      "domParsing": 58,
+      "domContentLoaded": 532,
+      "loadEvent": 532,
       "transferSize": 44077,
       "encodedBodySize": 43777,
       "decodedBodySize": 283521,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 144ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -71,27 +73,27 @@
   ],
   "resourceAnalysis": {
     "totalCount": 53,
-    "totalSize": 407066,
+    "totalSize": 407065,
     "byType": {
       "link": {
         "count": 11,
         "totalSize": 134544,
-        "totalDuration": 751.0999999999767
+        "totalDuration": 770.4999999999418
       },
       "script": {
         "count": 14,
         "totalSize": 190021,
-        "totalDuration": 959.3999999999942
+        "totalDuration": 908.8000000000466
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 14.5
+        "totalDuration": 14.200000000011642
       },
       "fetch": {
         "count": 27,
-        "totalSize": 82201,
-        "totalDuration": 2643.7999999999884
+        "totalSize": 82200,
+        "totalDuration": 4342.200000000041
       }
     },
     "largeResources": [],
@@ -132,14 +134,14 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 407066,
+    "firstPartySize": 407065,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 28
+        "duration": 110
       }
     ],
     "totalDomains": 1
@@ -157,32 +159,32 @@
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
         "size": 16047,
-        "duration": 49
+        "duration": 34
       },
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
         "size": 25538,
-        "duration": 53
+        "duration": 57
       },
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
         "size": 16132,
-        "duration": 53
+        "duration": 69
       },
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 59
+        "duration": 79
       },
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
         "size": 15944,
-        "duration": 38
+        "duration": 85
       },
       {
         "url": "...://dodgewindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
         "size": 15956,
-        "duration": 84
+        "duration": 85
       }
     ],
     "fontFaces": [
@@ -363,7 +365,13 @@
   ],
   "failedRequests": [
     {
-      "url": "https://dodgewindowsticker.com/login?_rsc=ynaac",
+      "url": "https://dodgewindowsticker.com/?_rsc=ynaac",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/warranty-check-by-vin?_rsc=ynaac",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -375,19 +383,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://dodgewindowsticker.com/?_rsc=19mb8",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://dodgewindowsticker.com/?_rsc=1oxg3",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://dodgewindowsticker.com/?_rsc=5ae02",
+      "url": "https://dodgewindowsticker.com/vin-decoder?_rsc=ynaac",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -399,13 +395,37 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://dodgewindowsticker.com/?_rsc=5ae02",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/signup?_rsc=1g6vv",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/buildsheet-by-vin?_rsc=nh5py",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/login?_rsc=1g6vv",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://dodgewindowsticker.com/buildsheet-by-vin?_rsc=1ylp8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://dodgewindowsticker.com/buildsheet-by-vin?_rsc=1qq12",
+      "url": "https://dodgewindowsticker.com/msrp?_rsc=nh5py",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -417,7 +437,13 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://dodgewindowsticker.com/warranty-check-by-vin?_rsc=1qq12",
+      "url": "https://dodgewindowsticker.com/warranty-check-by-vin?_rsc=1ylp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/msrp?_rsc=1qq12",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -429,7 +455,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://dodgewindowsticker.com/msrp?_rsc=1ylp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://dodgewindowsticker.com/vin-decoder?_rsc=1qq12",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://dodgewindowsticker.com/vin-decoder?_rsc=1ylp8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
