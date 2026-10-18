@@ -4,15 +4,15 @@
     "label": "Mini‑Cooper – Build Sheet",
     "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-17T12:07:13.498Z",
-    "performanceScore": 81,
+    "timestamp": "2026-10-18T12:33:14.746Z",
+    "performanceScore": 57,
     "lcp": {
-      "value": 3841.294258237155,
-      "displayValue": "3.8 s",
-      "score": 0.54
+      "value": 4047.604247656176,
+      "displayValue": "4.0 s",
+      "score": 0.48
     },
     "fcp": {
-      "value": 1549.6015289268623,
+      "value": 1532.5525560030742,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -22,14 +22,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 268.5,
-      "displayValue": "270 ms",
-      "score": 0.82
+      "value": 1848,
+      "displayValue": "1,850 ms",
+      "score": 0.09
     },
     "si": {
-      "value": 3599.537785599551,
-      "displayValue": "3.6 s",
-      "score": 0.87
+      "value": 4142.25618662888,
+      "displayValue": "4.1 s",
+      "score": 0.78
     },
     "ttfb": {
       "value": 1,
@@ -37,11 +37,19 @@
       "score": 1
     },
     "interactive": {
-      "value": 9954.829108514889,
-      "displayValue": "10.0 s",
-      "score": 0.27
+      "value": 10438.435477535468,
+      "displayValue": "10.4 s",
+      "score": 0.24
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 130,
+        "savingsBytes": 30797
+      }
+    ],
     "diagnostics": [
       {
         "id": "legacy-javascript-insight",
@@ -50,9 +58,21 @@
         "score": 0
       },
       {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "3.1 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.9 s",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
@@ -62,15 +82,15 @@
     "label": "Mini‑Cooper – Build Sheet",
     "url": "https://minicooperwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-17T12:07:26.351Z",
-    "performanceScore": 99,
+    "timestamp": "2026-10-18T12:33:34.657Z",
+    "performanceScore": 71,
     "lcp": {
-      "value": 895.6950963371561,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 979.0041624694662,
+      "displayValue": "1.0 s",
+      "score": 0.95
     },
     "fcp": {
-      "value": 408.5939689403989,
+      "value": 446.70334387609057,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -80,14 +100,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 19,
-      "displayValue": "20 ms",
-      "score": 1
+      "value": 817.296892644847,
+      "displayValue": "820 ms",
+      "score": 0.09
     },
     "si": {
-      "value": 692.4468847282411,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 1129.3766640726305,
+      "displayValue": "1.1 s",
+      "score": 0.94
     },
     "ttfb": {
       "value": 1,
@@ -95,31 +115,43 @@
       "score": 1
     },
     "interactive": {
-      "value": 2175.1103314830775,
-      "displayValue": "2.2 s",
-      "score": 0.94
+      "value": 2492.5642221348803,
+      "displayValue": "2.5 s",
+      "score": 0.89
     },
     "opportunities": [
       {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 30751
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 253949
       }
     ],
     "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 44 KiB",
+        "displayValue": "Est savings of 45 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.3 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
+        "score": 0
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.7 s",
+        "score": 0
       }
     ]
   },
@@ -128,87 +160,88 @@
     "label": "Mini‑Cooper – VIN Decoder",
     "url": "https://minicooperwindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-17T12:07:55.405Z",
-    "performanceScore": 48,
+    "timestamp": "2026-10-18T12:34:00.299Z",
+    "performanceScore": 64,
     "lcp": {
-      "value": 6441.426931256697,
-      "displayValue": "6.4 s",
-      "score": 0.09
+      "value": 3676.0845977615386,
+      "displayValue": "3.7 s",
+      "score": 0.59
     },
     "fcp": {
-      "value": 2883.0681804896835,
-      "displayValue": "2.9 s",
-      "score": 0.53
+      "value": 1951.0413589056413,
+      "displayValue": "2.0 s",
+      "score": 0.85
     },
     "cls": {
-      "value": 0.06718344752712063,
-      "displayValue": "0.067",
-      "score": 0.97
+      "value": 0.08129822528057704,
+      "displayValue": "0.081",
+      "score": 0.94
     },
     "tbt": {
-      "value": 774.0000000000005,
-      "displayValue": "770 ms",
-      "score": 0.38
+      "value": 1057.5,
+      "displayValue": "1,060 ms",
+      "score": 0.25
     },
     "si": {
-      "value": 5714.950435105366,
-      "displayValue": "5.7 s",
-      "score": 0.51
+      "value": 2319.6387420194683,
+      "displayValue": "2.3 s",
+      "score": 0.98
     },
     "ttfb": {
-      "value": 3,
-      "displayValue": "Root document took 0 ms",
+      "value": 5,
+      "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12305.55338378216,
-      "displayValue": "12.3 s",
-      "score": 0.15
+      "value": 12607.259910739907,
+      "displayValue": "12.6 s",
+      "score": 0.14
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 286371
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 150,
-        "savingsBytes": 29209
+        "savingsBytes": 29208
       }
     ],
     "diagnostics": [
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "4.2 s",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 410 ms",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 15 KiB",
-        "score": 0.5
       },
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "2.7 s",
+        "displayValue": "2.8 s",
         "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 490 ms",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "4.5 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0.5
       }
     ]
@@ -218,80 +251,70 @@
     "label": "Mini‑Cooper – VIN Decoder",
     "url": "https://minicooperwindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-10-17T12:08:17.743Z",
-    "performanceScore": 87,
+    "timestamp": "2026-10-18T12:34:17.140Z",
+    "performanceScore": 98,
     "lcp": {
-      "value": 701.0285462380562,
-      "displayValue": "0.7 s",
-      "score": 0.99
+      "value": 761.0496252193833,
+      "displayValue": "0.8 s",
+      "score": 0.98
     },
     "fcp": {
-      "value": 461.8487662781878,
+      "value": 461.71044492741663,
       "displayValue": "0.5 s",
       "score": 1
     },
     "cls": {
-      "value": 0.0036760232659510295,
-      "displayValue": "0.004",
+      "value": 0.0033681389179136888,
+      "displayValue": "0.003",
       "score": 1
     },
     "tbt": {
-      "value": 314.5,
-      "displayValue": "310 ms",
-      "score": 0.56
+      "value": 124.50000000000023,
+      "displayValue": "120 ms",
+      "score": 0.94
     },
     "si": {
-      "value": 611.6371899379717,
-      "displayValue": "0.6 s",
+      "value": 461.71044492741663,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 4,
-      "displayValue": "Root document took 0 ms",
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2939.366953251085,
-      "displayValue": "2.9 s",
-      "score": 0.81
+      "value": 2569.487647673414,
+      "displayValue": "2.6 s",
+      "score": 0.88
     },
     "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 280568
+      },
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 20,
-        "savingsBytes": 28552
+        "savingsMs": 40,
+        "savingsBytes": 28555
       }
     ],
     "diagnostics": [
       {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.0 s",
-        "score": 0
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 44 KiB",
+        "score": 0.5
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.2 s",
-        "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 32 KiB",
+        "displayValue": "Est savings of 20 ms",
         "score": 0.5
       },
       {
@@ -299,6 +322,12 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 32 KiB",
+        "score": 0.5
       }
     ]
   },
@@ -307,16 +336,16 @@
     "label": "Mini‑Cooper – Paint Code",
     "url": "https://minicooperwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-10-17T12:08:32.738Z",
-    "performanceScore": 85,
+    "timestamp": "2026-10-18T12:34:36.059Z",
+    "performanceScore": 63,
     "lcp": {
-      "value": 2866.2958124570446,
-      "displayValue": "2.9 s",
-      "score": 0.81
+      "value": 4059.1917326567195,
+      "displayValue": "4.1 s",
+      "score": 0.48
     },
     "fcp": {
-      "value": 1527.0717670436627,
-      "displayValue": "1.5 s",
+      "value": 1551.9796235931167,
+      "displayValue": "1.6 s",
       "score": 0.95
     },
     "cls": {
@@ -325,37 +354,57 @@
       "score": 1
     },
     "tbt": {
-      "value": 337.7700321665043,
-      "displayValue": "340 ms",
-      "score": 0.74
+      "value": 998,
+      "displayValue": "1,000 ms",
+      "score": 0.27
     },
     "si": {
-      "value": 3942.8979318999664,
-      "displayValue": "3.9 s",
-      "score": 0.82
+      "value": 3492.216118618556,
+      "displayValue": "3.5 s",
+      "score": 0.88
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 10926.996305109158,
-      "displayValue": "10.9 s",
-      "score": 0.21
+      "value": 10253.681762994682,
+      "displayValue": "10.3 s",
+      "score": 0.25
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 110,
+        "savingsBytes": 30796
+      }
+    ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.8 s",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.5 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
@@ -365,15 +414,15 @@
     "label": "Mini‑Cooper – Paint Code",
     "url": "https://minicooperwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-10-17T12:08:49.855Z",
-    "performanceScore": 85,
+    "timestamp": "2026-10-18T12:34:50.659Z",
+    "performanceScore": 91,
     "lcp": {
-      "value": 926.6963845320654,
+      "value": 909.696463349049,
       "displayValue": "0.9 s",
       "score": 0.96
     },
     "fcp": {
-      "value": 425.1876113035259,
+      "value": 418.62875155997847,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -383,14 +432,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 331.5000000000001,
-      "displayValue": "330 ms",
-      "score": 0.53
+      "value": 233.0000000000001,
+      "displayValue": "230 ms",
+      "score": 0.73
     },
     "si": {
-      "value": 900.0717755621595,
-      "displayValue": "0.9 s",
-      "score": 0.98
+      "value": 740.4200008478331,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "ttfb": {
       "value": 1,
@@ -398,30 +447,30 @@
       "score": 1
     },
     "interactive": {
-      "value": 2427.7418715564645,
-      "displayValue": "2.4 s",
-      "score": 0.9
+      "value": 2266.6737166931116,
+      "displayValue": "2.3 s",
+      "score": 0.92
     },
     "opportunities": [
       {
         "id": "unused-css-rules",
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 20,
+        "savingsMs": 30,
         "savingsBytes": 30770
       }
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 45 KiB",
-        "score": 0
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 45 KiB",
         "score": 0
       }
     ]
@@ -431,15 +480,15 @@
     "label": "Mini‑Cooper – Options Check",
     "url": "https://minicooperwindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-17T12:09:08.225Z",
-    "performanceScore": 68,
+    "timestamp": "2026-10-18T12:35:07.711Z",
+    "performanceScore": 70,
     "lcp": {
-      "value": 3912.792533975245,
-      "displayValue": "3.9 s",
-      "score": 0.52
+      "value": 4011.6980930709674,
+      "displayValue": "4.0 s",
+      "score": 0.49
     },
     "fcp": {
-      "value": 1535.6766362765347,
+      "value": 1528.397536881639,
       "displayValue": "1.5 s",
       "score": 0.95
     },
@@ -449,14 +498,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 726.5,
-      "displayValue": "730 ms",
-      "score": 0.41
+      "value": 563,
+      "displayValue": "560 ms",
+      "score": 0.52
     },
     "si": {
-      "value": 3627.8552425787593,
-      "displayValue": "3.6 s",
-      "score": 0.86
+      "value": 4124.047124537417,
+      "displayValue": "4.1 s",
+      "score": 0.79
     },
     "ttfb": {
       "value": 1,
@@ -464,9 +513,9 @@
       "score": 1
     },
     "interactive": {
-      "value": 10789.488915691334,
-      "displayValue": "10.8 s",
-      "score": 0.22
+      "value": 10239.036474688903,
+      "displayValue": "10.2 s",
+      "score": 0.25
     },
     "opportunities": [
       {
@@ -487,13 +536,7 @@
       {
         "id": "bootup-time",
         "title": "Reduce JavaScript execution time",
-        "displayValue": "1.6 s",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.3 s",
+        "displayValue": "1.4 s",
         "score": 0
       },
       {
@@ -509,15 +552,15 @@
     "label": "Mini‑Cooper – Options Check",
     "url": "https://minicooperwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-17T12:09:23.050Z",
-    "performanceScore": 99,
+    "timestamp": "2026-10-18T12:35:30.549Z",
+    "performanceScore": 70,
     "lcp": {
-      "value": 895.6919114740535,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 1018.4972654750587,
+      "displayValue": "1.0 s",
+      "score": 0.94
     },
     "fcp": {
-      "value": 407.6139964018597,
+      "value": 432.5920930271684,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -527,42 +570,41 @@
       "score": 1
     },
     "tbt": {
-      "value": 27.5,
-      "displayValue": "30 ms",
-      "score": 1
+      "value": 849.5593351775135,
+      "displayValue": "850 ms",
+      "score": 0.08
     },
     "si": {
-      "value": 620.4887698983555,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 1153.8679714882,
+      "displayValue": "1.2 s",
+      "score": 0.94
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2128.0896549376725,
-      "displayValue": "2.1 s",
-      "score": 0.94
+      "value": 2493.472651750324,
+      "displayValue": "2.5 s",
+      "score": 0.89
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 255215
-      },
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 40,
-        "savingsBytes": 30770
+        "savingsMs": 30,
+        "savingsBytes": 255073
       }
     ],
     "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -570,9 +612,15 @@
         "score": 0
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.7 s",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.4 s",
         "score": 0
       }
     ]
