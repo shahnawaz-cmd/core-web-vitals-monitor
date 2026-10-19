@@ -3,7 +3,7 @@
   "label": "Volvo – Build Sheet",
   "url": "https://volvowindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-18T12:38:52.129Z",
+  "timestamp": "2026-10-19T15:30:21.716Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,21 +24,23 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 16,
-      "tls": 13,
-      "serverProcessing": 226,
-      "ttfb": 245,
-      "download": 2,
-      "domParsing": 26,
-      "domContentLoaded": 437,
-      "loadEvent": 437,
+      "dns": 1,
+      "connection": 353,
+      "tls": 211,
+      "serverProcessing": 523,
+      "ttfb": 880,
+      "download": 1,
+      "domParsing": 16,
+      "domContentLoaded": 956,
+      "loadEvent": 3059,
       "transferSize": 4654,
       "encodedBodySize": 4354,
       "decodedBodySize": 19400,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "TTFB exceeds 800ms threshold: 880ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -58,38 +60,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 42,
+    "totalCount": 47,
     "totalSize": 327261,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 199.5999999999476
+        "totalDuration": 749.4999999999709
       },
       "script": {
-        "count": 24,
+        "count": 27,
         "totalSize": 281251,
-        "totalDuration": 1513.200000000099
+        "totalDuration": 8531.99999999997
       },
       "xmlhttprequest": {
-        "count": 8,
+        "count": 9,
         "totalSize": 6249,
-        "totalDuration": 3932.2000000000116
-      },
-      "iframe": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 168.29999999998836
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 131.30000000001746
+        "totalDuration": 4829.1999999999825
       },
       "fetch": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 140.20000000001164
+        "totalDuration": 138.59999999997672
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 191.10000000000582
+      },
+      "img": {
+        "count": 2,
+        "totalSize": 0,
+        "totalDuration": 188.10000000000582
       }
     },
     "largeResources": [],
@@ -108,87 +110,87 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 69
+        "duration": 61
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 30
+        "duration": 20
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 216
-      },
-      {
-        "domain": "secure.livechatinc.com",
-        "count": 1,
-        "size": 0,
-        "duration": 168
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 188
+        "duration": 1225
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 75
+        "duration": 84
       },
       {
-        "domain": "scripts.clarity.ms",
-        "count": 1,
+        "domain": "www.clarity.ms",
+        "count": 2,
         "size": 0,
-        "duration": 10
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 131
+        "duration": 193
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 2,
+        "count": 4,
         "size": 0,
-        "duration": 182
-      },
-      {
-        "domain": "u.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 199
+        "duration": 225
       },
       {
         "domain": "www.google-analytics.com",
         "count": 2,
         "size": 0,
-        "duration": 62
+        "duration": 68
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 42
+        "duration": 24
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 37
+        "duration": 46
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 30
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 191
+      },
+      {
+        "domain": "a.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 227
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 170
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 73,
+    "totalElements": 79,
     "maxDepth": 6,
-    "maxChildren": 35,
+    "maxChildren": 40,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -626,25 +628,25 @@
       "resourceType": "document"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1V2KDR77M9&gtm=45je6ae1h1v9194024635za208zd9194024635xf1&_p=1792327129154&gcd=13l3l3l3l1l1&npa=0&",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1V2KDR77M9&gtm=45je6ae1h1v9194024635za208zd9194024635xf1&_p=1792423818169&gcd=13l3l3l3l1l1&npa=0&",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1V2KDR77M9&gtm=45je6ae1h1v9194024635za200zd9194024635xf1&_p=1792327129154&gcd=13l3l3l3l1l1&npa=0&",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-1V2KDR77M9&gtm=45je6ae1h1v9194024635za200zd9194024635xf1&_p=1792423818169&gcd=13l3l3l3l1l1&npa=0&",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=105154378.1792327129&gtm=45He6af0h2v9230719692za200zd9230719692xeaxf1&fmt=8",
+      "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&ae=g&auid=2087617082.1792423818&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_vie",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=1&ae=g&auid=105154378.1792327129&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=2087617082.1792423818&gtm=45He6ae1v9230719692za200zd9230719692xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
