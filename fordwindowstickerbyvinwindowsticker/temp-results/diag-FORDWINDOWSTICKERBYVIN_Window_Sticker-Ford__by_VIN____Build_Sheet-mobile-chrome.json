@@ -3,7 +3,7 @@
   "label": "Ford (by VIN) – Build Sheet",
   "url": "https://fordwindowstickerbyvin.com/build-sheet-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-18T12:22:41.564Z",
+  "timestamp": "2026-10-19T15:12:50.357Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,21 +23,24 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 14,
-      "tls": 10,
-      "serverProcessing": 40,
-      "ttfb": 97,
-      "download": 6,
-      "domParsing": 23,
-      "domContentLoaded": 195,
-      "loadEvent": 378,
-      "transferSize": 18133,
-      "encodedBodySize": 17833,
+      "dns": 1,
+      "connection": 48,
+      "tls": 34,
+      "serverProcessing": 3699,
+      "ttfb": 3752,
+      "download": 68,
+      "domParsing": 47,
+      "domContentLoaded": 3970,
+      "loadEvent": 4027,
+      "transferSize": 18055,
+      "encodedBodySize": 17755,
       "decodedBodySize": 62564,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 3699ms",
+      "TTFB exceeds 800ms threshold: 3752ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -88,22 +91,22 @@
       "link": {
         "count": 6,
         "totalSize": 82020,
-        "totalDuration": 162.89999999999418
+        "totalDuration": 328.80000000001746
       },
       "script": {
         "count": 13,
         "totalSize": 175550,
-        "totalDuration": 438.69999999998254
+        "totalDuration": 639.7000000000116
       },
       "fetch": {
         "count": 6,
         "totalSize": 32606,
-        "totalDuration": 234.89999999996508
+        "totalDuration": 713.2999999999593
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 16.89999999999418
+        "totalDuration": 25
       }
     },
     "largeResources": [],
@@ -148,16 +151,16 @@
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
-        "domain": "static.cloudflareinsights.com",
-        "count": 1,
-        "size": 0,
-        "duration": 60
-      },
-      {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 39
+        "duration": 68
+      },
+      {
+        "domain": "static.cloudflareinsights.com",
+        "count": 1,
+        "size": 0,
+        "duration": 68
       }
     ],
     "totalDomains": 2
@@ -175,12 +178,12 @@
       {
         "url": "...ordwindowstickerbyvin.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 15
+        "duration": 87
       },
       {
         "url": "...ordwindowstickerbyvin.com/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 33
+        "duration": 53
       }
     ],
     "fontFaces": [
@@ -287,6 +290,18 @@
       "url": "https://fordwindowstickerbyvin.com/build-sheet-by-vin",
       "status": 404,
       "resourceType": "document"
+    },
+    {
+      "url": "https://fordwindowstickerbyvin.com/?_rsc=b1sp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://fordwindowstickerbyvin.com/?_rsc=x6y86",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
     },
     {
       "url": "https://fordwindowstickerbyvin.com/?_rsc=1ci32",
