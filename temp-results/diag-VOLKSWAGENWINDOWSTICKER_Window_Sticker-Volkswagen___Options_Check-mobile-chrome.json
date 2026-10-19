@@ -3,7 +3,7 @@
   "label": "Volkswagen – Options Check",
   "url": "https://volkswagenwindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-18T12:37:43.740Z",
+  "timestamp": "2026-10-19T15:30:27.578Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -25,20 +25,22 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 8,
-      "tls": 7,
-      "serverProcessing": 31,
-      "ttfb": 42,
+      "connection": 300,
+      "tls": 160,
+      "serverProcessing": 539,
+      "ttfb": 841,
       "download": 1,
-      "domParsing": 19,
-      "domContentLoaded": 144,
-      "loadEvent": 778,
-      "transferSize": 4571,
-      "encodedBodySize": 4271,
+      "domParsing": 11,
+      "domContentLoaded": 900,
+      "loadEvent": 1966,
+      "transferSize": 4573,
+      "encodedBodySize": 4273,
       "decodedBodySize": 18284,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "TTFB exceeds 800ms threshold: 841ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -58,38 +60,38 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 43,
+    "totalCount": 44,
     "totalSize": 327243,
     "byType": {
       "link": {
         "count": 4,
         "totalSize": 39761,
-        "totalDuration": 204.09999999997672
+        "totalDuration": 939.2999999999884
       },
       "script": {
-        "count": 25,
+        "count": 26,
         "totalSize": 281251,
-        "totalDuration": 1363.5
+        "totalDuration": 7457.999999999942
       },
       "xmlhttprequest": {
         "count": 8,
         "totalSize": 6231,
-        "totalDuration": 3480.399999999994
+        "totalDuration": 4210.599999999977
       },
       "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 184.69999999998254
+        "totalDuration": 224.5
       },
       "fetch": {
         "count": 4,
         "totalSize": 0,
-        "totalDuration": 97.30000000001746
+        "totalDuration": 148
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 105.19999999998254
+        "totalDuration": 111.79999999998836
       }
     },
     "largeResources": [],
@@ -108,87 +110,87 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 63
+        "duration": 45
       },
       {
         "domain": "cdn.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 20
+        "duration": 30
       },
       {
         "domain": "api.livechatinc.com",
         "count": 4,
         "size": 0,
-        "duration": 260
+        "duration": 255
       },
       {
         "domain": "secure.livechatinc.com",
         "count": 1,
         "size": 0,
-        "duration": 185
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 2,
-        "size": 0,
-        "duration": 194
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 26
+        "duration": 225
       },
       {
         "domain": "ipapi.co",
         "count": 1,
         "size": 0,
-        "duration": 18
+        "duration": 47
       },
       {
-        "domain": "www.google-analytics.com",
-        "count": 2,
-        "size": 0,
-        "duration": 36
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 19
-      },
-      {
-        "domain": "c.clarity.ms",
+        "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 105
+        "duration": 207
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 3,
+        "size": 0,
+        "duration": 161
       },
       {
         "domain": "www.google.com",
         "count": 1,
         "size": 0,
-        "duration": 35
+        "duration": 38
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 27
+        "duration": 37
       },
       {
-        "domain": "q.clarity.ms",
+        "domain": "www.google-analytics.com",
+        "count": 2,
+        "size": 0,
+        "duration": 73
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 28
+      },
+      {
+        "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 13
+        "duration": 112
+      },
+      {
+        "domain": "n.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 214
       }
     ],
     "totalDomains": 13
   },
   "domAnalysis": {
-    "totalElements": 73,
+    "totalElements": 74,
     "maxDepth": 6,
-    "maxChildren": 36,
+    "maxChildren": 37,
     "widestElement": "HEAD",
     "deepestElement": "H2",
     "issues": []
@@ -614,9 +616,7 @@
     ]
   },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://volkswagenwindowsticker.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-    "Failed to load resource: net::ERR_FAILED"
+    "Failed to load resource: the server responded with a status of 404 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -628,31 +628,25 @@
       "resourceType": "document"
     },
     {
-      "url": "https://ipapi.co/json",
-      "status": 0,
-      "resourceType": "xhr",
-      "failure": "net::ERR_FAILED"
-    },
-    {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LYSYCRLHX5&gtm=45je6ae1v9193687955za208zd9193687955xf1&_p=1792327060635&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1131978472.1792423824&gtm=45He6ae1v9230898833za200zd9230898833xeaxf1&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LYSYCRLHX5&gtm=45je6ae1v9193687955za200zd9193687955xf1&_p=1792327060635&gcd=13l3l3l3l1l1&npa=0&dm",
+      "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&ae=g&auid=1131978472.1792423824&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=526879802.1792327061&gtm=45He6af0h2v9230898833za200zd9230898833xeaxf1&fmt=8",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LYSYCRLHX5&gtm=45je6ae1v9193687955za20ozb9230898833zd9230898833xf1&_p=1792423824259&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=526879802.1792327061&dt=404%3A%20This%20page%20could%20not%20be%20found.&en=page_view&",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-LYSYCRLHX5&gtm=45je6ae1v9193687955z89230898833za20gzb9230898833zd9230898833xf1&_p=1792423824259&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
