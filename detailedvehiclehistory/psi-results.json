@@ -4,15 +4,15 @@
     "label": "Homepage",
     "url": "https://www.detailedvehiclehistory.com",
     "strategy": "mobile",
-    "timestamp": "2026-10-18T12:20:49.751Z",
-    "performanceScore": 74,
+    "timestamp": "2026-10-19T15:11:36.619Z",
+    "performanceScore": 73,
     "lcp": {
-      "value": 5131,
+      "value": 5132,
       "displayValue": "5.1 s",
       "score": 0.24
     },
     "fcp": {
-      "value": 2609.3164729431332,
+      "value": 2614.342535243194,
       "displayValue": "2.6 s",
       "score": 0.63
     },
@@ -22,22 +22,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 7.5,
-      "displayValue": "10 ms",
+      "value": 17.5,
+      "displayValue": "20 ms",
       "score": 1
     },
     "si": {
-      "value": 5041.782054521477,
-      "displayValue": "5.0 s",
-      "score": 0.63
+      "value": 5253.833421081726,
+      "displayValue": "5.3 s",
+      "score": 0.59
     },
     "ttfb": {
-      "value": 11,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 5191,
+      "value": 5192,
       "displayValue": "5.2 s",
       "score": 0.74
     },
@@ -48,25 +48,32 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 780,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 22208
       }
     ],
     "diagnostics": [
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 223 KiB",
-        "score": 0
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
@@ -75,9 +82,9 @@
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 223 KiB",
         "score": 0
       }
     ]
@@ -87,42 +94,42 @@
     "label": "Homepage",
     "url": "https://www.detailedvehiclehistory.com",
     "strategy": "desktop",
-    "timestamp": "2026-10-18T12:21:16.435Z",
-    "performanceScore": 98,
+    "timestamp": "2026-10-19T15:12:26.169Z",
+    "performanceScore": 83,
     "lcp": {
-      "value": 1072,
-      "displayValue": "1.1 s",
-      "score": 0.93
+      "value": 852,
+      "displayValue": "0.9 s",
+      "score": 0.97
     },
     "fcp": {
-      "value": 762.6968231641317,
-      "displayValue": "0.8 s",
+      "value": 741.3159556738872,
+      "displayValue": "0.7 s",
       "score": 0.96
     },
     "cls": {
-      "value": 0.04378179761998573,
-      "displayValue": "0.044",
+      "value": 0.04531492350190402,
+      "displayValue": "0.045",
       "score": 0.99
     },
     "tbt": {
-      "value": 21,
-      "displayValue": "20 ms",
-      "score": 1
+      "value": 342,
+      "displayValue": "340 ms",
+      "score": 0.51
     },
     "si": {
-      "value": 837.0612132255422,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 1332.4445218871365,
+      "displayValue": "1.3 s",
+      "score": 0.89
     },
     "ttfb": {
-      "value": 11,
+      "value": 13,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1083.9,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 1862.8000000000002,
+      "displayValue": "1.9 s",
+      "score": 0.97
     },
     "opportunities": [
       {
@@ -135,9 +142,20 @@
     ],
     "diagnostics": [
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 174 KiB",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "2.8 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
@@ -149,18 +167,19 @@
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "4.4 s",
         "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 174 KiB",
+        "score": 0.5
       }
     ]
   },
@@ -169,7 +188,7 @@
     "label": "VIN Check",
     "url": "https://www.detailedvehiclehistory.com/vin-check",
     "strategy": "mobile",
-    "timestamp": "2026-10-18T12:21:35.503Z",
+    "timestamp": "2026-10-19T15:12:51.969Z",
     "performanceScore": 78,
     "lcp": {
       "value": 4306,
@@ -177,9 +196,9 @@
       "score": 0.42
     },
     "fcp": {
-      "value": 2635.697271586204,
+      "value": 2608.9232919438045,
       "displayValue": "2.6 s",
-      "score": 0.62
+      "score": 0.63
     },
     "cls": {
       "value": null,
@@ -187,14 +206,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 34,
-      "displayValue": "30 ms",
-      "score": 1
+      "value": 76,
+      "displayValue": "80 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 4840.933040933107,
-      "displayValue": "4.8 s",
-      "score": 0.66
+      "value": 4969.000381104128,
+      "displayValue": "5.0 s",
+      "score": 0.64
     },
     "ttfb": {
       "value": 12,
@@ -217,20 +236,15 @@
     ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 6 KiB",
-        "score": 0
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
         "displayValue": "Est savings of 150 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 6 KiB",
         "score": 0
       },
       {
@@ -238,6 +252,11 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
       }
     ]
   },
@@ -246,60 +265,70 @@
     "label": "VIN Check",
     "url": "https://www.detailedvehiclehistory.com/vin-check",
     "strategy": "desktop",
-    "timestamp": "2026-10-18T12:21:53.483Z",
-    "performanceScore": 98,
+    "timestamp": "2026-10-19T15:13:25.511Z",
+    "performanceScore": 90,
     "lcp": {
-      "value": 932,
-      "displayValue": "0.9 s",
-      "score": 0.96
+      "value": 1075.5,
+      "displayValue": "1.1 s",
+      "score": 0.93
     },
     "fcp": {
-      "value": 731.6972716472496,
-      "displayValue": "0.7 s",
-      "score": 0.97
+      "value": 762.5,
+      "displayValue": "0.8 s",
+      "score": 0.96
     },
     "cls": {
-      "value": 0.04036550592632919,
-      "displayValue": "0.04",
+      "value": 0.041563143190230904,
+      "displayValue": "0.042",
       "score": 0.99
     },
     "tbt": {
-      "value": 7,
-      "displayValue": "10 ms",
-      "score": 1
+      "value": 177.5,
+      "displayValue": "180 ms",
+      "score": 0.84
     },
     "si": {
-      "value": 731.6972716472496,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 1696.4142034632898,
+      "displayValue": "1.7 s",
+      "score": 0.75
     },
     "ttfb": {
-      "value": 11,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
+      "value": 607,
+      "displayValue": "Root document took 610 ms",
+      "score": 0
     },
     "interactive": {
-      "value": 956.1000000000001,
-      "displayValue": "1.0 s",
+      "value": 1178.3500000000001,
+      "displayValue": "1.2 s",
       "score": 1
     },
     "opportunities": [
+      {
+        "id": "server-response-time",
+        "title": "Reduce initial server response time",
+        "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
+        "savingsMs": 507,
+        "savingsBytes": 0
+      },
       {
         "id": "redirects",
         "title": "Avoid multiple page redirects",
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 230,
         "savingsBytes": 0
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 40,
-        "savingsBytes": 22208
       }
     ],
     "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -310,16 +339,6 @@
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 6 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
@@ -329,17 +348,17 @@
     "label": "License Plate Lookup",
     "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-10-18T12:22:13.151Z",
-    "performanceScore": 82,
+    "timestamp": "2026-10-19T15:13:42.993Z",
+    "performanceScore": 83,
     "lcp": {
       "value": 4081,
       "displayValue": "4.1 s",
       "score": 0.47
     },
     "fcp": {
-      "value": 2634.69612632167,
+      "value": 2600.002359028973,
       "displayValue": "2.6 s",
-      "score": 0.62
+      "score": 0.64
     },
     "cls": {
       "value": null,
@@ -347,14 +366,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 20,
-      "displayValue": "20 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 3119.9229625588537,
-      "displayValue": "3.1 s",
-      "score": 0.93
+      "value": 2600.002359028973,
+      "displayValue": "2.6 s",
+      "score": 0.97
     },
     "ttfb": {
       "value": 10,
@@ -373,26 +392,16 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 780,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 22208
       }
     ],
     "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 37 KiB",
-        "score": 0
-      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -400,8 +409,19 @@
         "score": 0
       },
       {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
         "score": 0.5
       }
     ]
@@ -411,41 +431,41 @@
     "label": "License Plate Lookup",
     "url": "https://www.detailedvehiclehistory.com/license-plate-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-10-18T12:22:37.204Z",
+    "timestamp": "2026-10-19T15:14:09.302Z",
     "performanceScore": 98,
     "lcp": {
-      "value": 1025,
+      "value": 1015,
       "displayValue": "1.0 s",
       "score": 0.94
     },
     "fcp": {
-      "value": 737.6288561033443,
+      "value": 740.2803330765443,
       "displayValue": "0.7 s",
       "score": 0.97
     },
     "cls": {
-      "value": 0.02095086875291645,
-      "displayValue": "0.021",
+      "value": 0.001115165774910489,
+      "displayValue": "0.001",
       "score": 1
     },
     "tbt": {
-      "value": 28.5,
-      "displayValue": "30 ms",
+      "value": 4,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 794.7522829189287,
-      "displayValue": "0.8 s",
-      "score": 0.99
+      "value": 1006.357588503761,
+      "displayValue": "1.0 s",
+      "score": 0.97
     },
     "ttfb": {
-      "value": 9,
+      "value": 10,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1070.5,
-      "displayValue": "1.1 s",
+      "value": 1024.7,
+      "displayValue": "1.0 s",
       "score": 1
     },
     "opportunities": [
@@ -455,6 +475,13 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 230,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 22208
       }
     ],
     "diagnostics": [
@@ -465,13 +492,14 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 112 KiB",
         "score": 0.5
       },
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
@@ -479,12 +507,6 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 112 KiB",
-        "score": 0.5
       }
     ]
   },
@@ -493,35 +515,35 @@
     "label": "Window Sticker",
     "url": "https://www.detailedvehiclehistory.com/window-sticker",
     "strategy": "mobile",
-    "timestamp": "2026-10-18T12:22:58.029Z",
-    "performanceScore": 79,
+    "timestamp": "2026-10-19T15:14:35.815Z",
+    "performanceScore": 73,
     "lcp": {
       "value": 4531,
       "displayValue": "4.5 s",
       "score": 0.36
     },
     "fcp": {
-      "value": 2757.731124477643,
+      "value": 2772.697809710485,
       "displayValue": "2.8 s",
-      "score": 0.58
+      "score": 0.57
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.005365059216680162,
+      "displayValue": "0.005",
       "score": 1
     },
     "tbt": {
-      "value": 15,
-      "displayValue": "20 ms",
-      "score": 1
+      "value": 240,
+      "displayValue": "240 ms",
+      "score": 0.85
     },
     "si": {
-      "value": 3602.9313695248384,
-      "displayValue": "3.6 s",
-      "score": 0.87
+      "value": 3970.6185417060196,
+      "displayValue": "4.0 s",
+      "score": 0.81
     },
     "ttfb": {
-      "value": 11,
+      "value": 13,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
@@ -537,16 +559,33 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 780,
         "savingsBytes": 0
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 21868
       }
     ],
     "diagnostics": [
+      {
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
+        "displayValue": "1.6 s",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 57 KiB",
+        "score": 0
+      },
+      {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.5 s",
+        "score": 0
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -562,18 +601,6 @@
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
         "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 57 KiB",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
       }
     ]
   },
@@ -582,41 +609,41 @@
     "label": "Window Sticker",
     "url": "https://www.detailedvehiclehistory.com/window-sticker",
     "strategy": "desktop",
-    "timestamp": "2026-10-18T12:23:21.859Z",
+    "timestamp": "2026-10-19T15:15:00.914Z",
     "performanceScore": 98,
     "lcp": {
-      "value": 1012.006064928898,
-      "displayValue": "1.0 s",
-      "score": 0.94
+      "value": 1074.0107052586209,
+      "displayValue": "1.1 s",
+      "score": 0.93
     },
     "fcp": {
-      "value": 733.4540572898223,
+      "value": 733.0173309432025,
       "displayValue": "0.7 s",
       "score": 0.97
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.02178626229687027,
+      "displayValue": "0.022",
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0��ms",
+      "value": 20.000000000000057,
+      "displayValue": "20 ms",
       "score": 1
     },
     "si": {
-      "value": 733.4540572898223,
-      "displayValue": "0.7 s",
-      "score": 1
+      "value": 813.0619974626143,
+      "displayValue": "0.8 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 11,
+      "value": 14,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1022.0061515707396,
-      "displayValue": "1.0 s",
+      "value": 1080.0108088578977,
+      "displayValue": "1.1 s",
       "score": 1
     },
     "opportunities": [
@@ -630,9 +657,20 @@
     ],
     "diagnostics": [
       {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 88 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
@@ -645,17 +683,6 @@
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
       }
     ]
   }
