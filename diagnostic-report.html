@@ -192,11 +192,11 @@
         <div class="stat-label">Pages Audited</div>
       </div>
       <div class="stat">
-        <div class="stat-value total">22</div>
+        <div class="stat-value total">24</div>
         <div class="stat-label">Total Issues</div>
       </div>
       <div class="stat">
-        <div class="stat-value critical">96</div>
+        <div class="stat-value critical">107</div>
         <div class="stat-label">Critical</div>
       </div>
     </div>
@@ -207,9 +207,9 @@
 
   <div class="page-section">
     <div class="page-header open" onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Build Sheet</span>
-      <span class="url">https://hyundaiwindowsticker.com/build-sheet-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">12 issues</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Build Sheet</span>
+      <span class="url">https://gmcwindowsticker.com/build-sheet-by-vin</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">16 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body open">
@@ -274,304 +274,33 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count warn">1 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Redirect</div>
-                <div class="value warn">263ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DNS</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Connect</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Server</div>
-                <div class="value good">15ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">281ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Protocol</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">706ms</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Redirect chain taking 263ms</li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- Third-Party Impact -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
-          </div>
-          <div class="audit-body">
-            <div class="bar-chart" style="margin-bottom:16px;">
-              <div class="bar-row">
-                <div class="bar-label">First-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">382.2 KB</div>
-                </div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-label">Third-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
-                </div>
-              </div>
-            </div>
-            
-              <table class="res-table">
-                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
-              </table>
-            
-          </div>
-        </div>
-
-        <!-- Resource Breakdown -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">46 requests • 382.2 KB</span>
-          </div>
-          <div class="audit-body">
-            
-              <div class="bar-chart" style="margin-bottom:16px;">
-                
-                  <div class="bar-row">
-                    <div class="bar-label">script</div>
-                    <div class="bar-track">
-                      <div class="bar-fill js" style="width:44.85126735086495%;">13 files</div>
-                    </div>
-                    <div class="bar-value">171.4 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:32.84790512177861%;">9 files</div>
-                    </div>
-                    <div class="bar-value">125.6 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:22.224180967637267%;">23 files</div>
-                    </div>
-                    <div class="bar-value">84.9 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">1 files</div>
-                    </div>
-                    <div class="bar-value">300 B</div>
-                  </div>
-                
-              </div>
-            
-            
-            <ul class="issue-list" style="margin-top:12px;">
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- Render Blocking -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">5</span>
-          </div>
-          <div class="audit-body">
-            <table class="res-table">
-              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/39573f24a4e6e140.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0f3c4b895b7f1ba9.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
-            </table>
-          </div>
-        </div>
-        
-
-        <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 3 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- DOM + Fonts + Security + Preload condensed -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🛡️</span> Additional Checks
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">565</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">8</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preconnects</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Console Errors</div>
-                <div class="value good" style="font-size:16px;">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
-              
-              
-              
-              <li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=ulqqs</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=ulqqs</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/build-sheet?_rsc=ulqqs</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=4zicc</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1egg0</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Build Sheet</span>
-      <span class="url">https://hyundaiwindowsticker.com/build-sheet-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
-      <span class="toggle">▼</span>
-    </div>
-    <div class="page-body ">
-      <div class="page-body-inner">
-
-        <!-- LCP Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📸</span> LCP Root Cause
             <span class="count pass">0 issues</span>
           </div>
           <div class="audit-body">
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
-                <div class="label">Render Time</div>
-                <div class="value good">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Element</div>
-                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Size</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
-              </div>
-            </div>
-            
-            <ul class="issue-list">
-              
-              <li class="good-issue">✅ No LCP issues detected</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CLS Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📐</span> CLS Root Cause
-            <span class="count pass">0</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Total CLS</div>
-                <div class="value good">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Shifts</div>
-                <div class="value" style="color:var(--text-2);">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
-              
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- TTFB Breakdown -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count warn">1 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
                 <div class="label">Redirect</div>
-                <div class="value warn">253ms</div>
+                <div class="value good">0ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DNS</div>
-                <div class="value good">0ms</div>
+                <div class="value good">2ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">0ms</div>
+                <div class="value good">26ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">0ms</div>
+                <div class="value" style="color:var(--text-2);">20ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">15ms</div>
+                <div class="value good">36ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">269ms</div>
+                <div class="value good">66ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -579,11 +308,11 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">606ms</div>
+                <div class="value" style="color:var(--text-2);">714ms</div>
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Redirect chain taking 253ms</li>
+              
             </ul>
           </div>
         </div>
@@ -593,14 +322,14 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">377.8 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">480.3 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -613,7 +342,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -623,34 +352,34 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">30 requests • 377.8 KB</span>
+            <span class="count pass">54 requests • 480.3 KB</span>
           </div>
           <div class="audit-body">
             
               <div class="bar-chart" style="margin-bottom:16px;">
                 
                   <div class="bar-row">
-                    <div class="bar-label">link</div>
+                    <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:45.924689133968975%;">9 files</div>
+                      <div class="bar-fill js" style="width:49.482100228957655%;">17 files</div>
                     </div>
-                    <div class="bar-value">173.5 KB</div>
+                    <div class="bar-value">237.6 KB</div>
                   </div>
                 
                   <div class="bar-row">
-                    <div class="bar-label">script</div>
+                    <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:45.3733881618907%;">13 files</div>
+                      <div class="bar-fill other" style="width:35.82760261410265%;">13 files</div>
                     </div>
-                    <div class="bar-value">171.4 KB</div>
+                    <div class="bar-value">172.1 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:8.62438388950202%;">7 files</div>
+                      <div class="bar-fill other" style="width:14.629296006051314%;">23 files</div>
                     </div>
-                    <div class="bar-value">32.6 KB</div>
+                    <div class="bar-value">70.3 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -664,12 +393,6 @@
               </div>
             
             
-              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
-              <table class="res-table">
-                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
-                <tr><td class="url-cell">https://hyundaiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2...</td><td>link</td><td style="color:var(--warn);font-weight:600;">105.5 KB</td><td>139ms</td></tr>
-              </table>
-            
             <ul class="issue-list" style="margin-top:12px;">
               
             </ul>
@@ -681,12 +404,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">5</span>
+            <span class="count fail">10</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/39573f24a4e6e140.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/0f3c4b895b7f1ba9.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e487b63e0be02fd2.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/164448dde4611b0b.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/2d9958787ab54ace.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aec34f4645bc6068.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/9c04299a39573f21.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/72de017515704c5f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -697,11 +420,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 3 images</span>
+            <span class="count warn">3 / 5 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Missing width/height attributes (causes CLS) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Missing width/height attributes (causes CLS) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
             </ul>
           </div>
         </div>
@@ -716,19 +439,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">565</div>
+                <div class="value good" style="font-size:16px;">961</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">17</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">8</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">12</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -740,12 +463,12 @@
               </div>
             </div>
             <ul class="issue-list">
+              <li class="warn-issue">⚠️ Wide node: BODY has 61 children (recommended < 60)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
               
-              
-              <li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=ulqqs</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=46t74</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1egg0</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=4zicc</li>
+              <li class="fail-issue">💥 [0] https://gmcwindowsticker.com/login?_rsc=m7x9l</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/build-sheet-by-vin?_rsc=m7x9l</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=b1sp8</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=1ci32</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=pw767</li>
             </ul>
           </div>
         </div>
@@ -755,9 +478,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Options Check</span>
-      <span class="url">https://hyundaiwindowsticker.com/options-check-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">24 issues</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Build Sheet</span>
+      <span class="url">https://gmcwindowsticker.com/build-sheet-by-vin</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">6 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -836,19 +559,19 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">17ms</div>
+                <div class="value good">20ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">12ms</div>
+                <div class="value" style="color:var(--text-2);">15ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">165ms</div>
+                <div class="value good">18ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">185ms</div>
+                <div class="value good">42ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -856,7 +579,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">359ms</div>
+                <div class="value" style="color:var(--text-2);">473ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -870,14 +593,14 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">387.0 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">486.6 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -890,7 +613,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -900,7 +623,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">68 requests • 387.0 KB</span>
+            <span class="count pass">38 requests • 486.6 KB</span>
           </div>
           <div class="audit-body">
             
@@ -909,25 +632,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:45.08324353244315%;">14 files</div>
+                      <div class="bar-fill js" style="width:48.84221765946728%;">17 files</div>
                     </div>
-                    <div class="bar-value">174.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:34.14183577415097%;">46 files</div>
-                    </div>
-                    <div class="bar-value">132.1 KB</div>
+                    <div class="bar-value">237.6 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:20.699210341024667%;">7 files</div>
+                      <div class="bar-fill other" style="width:27.264133334136165%;">12 files</div>
                     </div>
-                    <div class="bar-value">80.1 KB</div>
+                    <div class="bar-value">132.7 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:18.42316006237995%;">1 files</div>
+                    </div>
+                    <div class="bar-value">89.6 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5.410276635416478%;">7 files</div>
+                    </div>
+                    <div class="bar-value">26.3 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -952,12 +683,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">9</span>
+            <span class="count fail">10</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/fa0bc4ab0011cd33.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/26a82d55c31db016.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/df94d34309aa7edd.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8885377990d0df1b.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e487b63e0be02fd2.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/164448dde4611b0b.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/2d9958787ab54ace.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aec34f4645bc6068.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/9c04299a39573f21.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/72de017515704c5f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -968,11 +699,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 2 images</span>
+            <span class="count warn">2 / 5 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Missing width/height attributes (causes CLS) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Missing width/height attributes (causes CLS) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
             </ul>
           </div>
         </div>
@@ -987,19 +718,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">184</div>
+                <div class="value good" style="font-size:16px;">961</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">10</div>
+                <div class="value good" style="font-size:16px;">17</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">12</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -1007,16 +738,16 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Console Errors</div>
-                <div class="value fail" style="font-size:16px;">1</div>
+                <div class="value good" style="font-size:16px;">0</div>
               </div>
             </div>
             <ul class="issue-list">
+              <li class="warn-issue">⚠️ Wide node: BODY has 61 children (recommended < 60)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
               
-              <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
-              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://hyundaiwindowsticker.com/options-check-by-vin</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/paint-code?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/build-sheet?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/options?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/vin-decoder?_rsc=g67qx</li>
+              
+              <li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=b1sp8</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=x6y86</li>
             </ul>
           </div>
         </div>
@@ -1026,279 +757,8 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Options Check</span>
-      <span class="url">https://hyundaiwindowsticker.com/options-check-by-vin</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">13 issues</span>
-      <span class="toggle">▼</span>
-    </div>
-    <div class="page-body ">
-      <div class="page-body-inner">
-
-        <!-- LCP Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📸</span> LCP Root Cause
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Render Time</div>
-                <div class="value good">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Element</div>
-                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Size</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
-              </div>
-            </div>
-            
-            <ul class="issue-list">
-              
-              <li class="good-issue">✅ No LCP issues detected</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CLS Analysis -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📐</span> CLS Root Cause
-            <span class="count pass">0</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Total CLS</div>
-                <div class="value good">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Shifts</div>
-                <div class="value" style="color:var(--text-2);">0</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
-              
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- TTFB Breakdown -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🌐</span> TTFB Breakdown
-            <span class="count pass">0 issues</span>
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">Redirect</div>
-                <div class="value good">0ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DNS</div>
-                <div class="value good">1ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Connect</div>
-                <div class="value good">9ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">6ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Server</div>
-                <div class="value good">151ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">TTFB Total</div>
-                <div class="value good">162ms</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Protocol</div>
-                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">316ms</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- Third-Party Impact -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
-          </div>
-          <div class="audit-body">
-            <div class="bar-chart" style="margin-bottom:16px;">
-              <div class="bar-row">
-                <div class="bar-label">First-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">289.1 KB</div>
-                </div>
-              </div>
-              <div class="bar-row">
-                <div class="bar-label">Third-party</div>
-                <div class="bar-track">
-                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
-                </div>
-              </div>
-            </div>
-            
-              <table class="res-table">
-                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr>
-              </table>
-            
-          </div>
-        </div>
-
-        <!-- Resource Breakdown -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">31 requests • 289.1 KB</span>
-          </div>
-          <div class="audit-body">
-            
-              <div class="bar-chart" style="margin-bottom:16px;">
-                
-                  <div class="bar-row">
-                    <div class="bar-label">script</div>
-                    <div class="bar-track">
-                      <div class="bar-fill js" style="width:59.296952582974725%;">13 files</div>
-                    </div>
-                    <div class="bar-value">171.4 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">link</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:27.704405277415606%;">7 files</div>
-                    </div>
-                    <div class="bar-value">80.1 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:12.897309274659353%;">10 files</div>
-                    </div>
-                    <div class="bar-value">37.3 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">xmlhttprequest</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:5%;">1 files</div>
-                    </div>
-                    <div class="bar-value">300 B</div>
-                  </div>
-                
-              </div>
-            
-            
-            <ul class="issue-list" style="margin-top:12px;">
-              
-            </ul>
-          </div>
-        </div>
-
-        <!-- Render Blocking -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">8</span>
-          </div>
-          <div class="audit-body">
-            <table class="res-table">
-              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/fa0bc4ab0011cd33.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/26a82d55c31db016.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/df94d34309aa7edd.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
-            </table>
-          </div>
-        </div>
-        
-
-        <!-- Image Audit -->
-        
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 2 images</span>
-          </div>
-          <div class="audit-body">
-            <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
-            </ul>
-          </div>
-        </div>
-        
-
-        <!-- DOM + Fonts + Security + Preload condensed -->
-        <div class="audit">
-          <div class="audit-header">
-            <span class="emoji">🛡️</span> Additional Checks
-          </div>
-          <div class="audit-body">
-            <div class="breakdown-grid" style="margin-bottom:16px;">
-              <div class="breakdown-cell">
-                <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">183</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">10</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Preconnects</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
-              </div>
-              <div class="breakdown-cell">
-                <div class="label">Console Errors</div>
-                <div class="value fail" style="font-size:16px;">1</div>
-              </div>
-            </div>
-            <ul class="issue-list">
-              
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
-              
-              <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
-              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://hyundaiwindowsticker.com/options-check-by-vin</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/about-us?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=13rkf</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1x5h1</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=wjd54</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="page-section">
-    <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Paint Code</span>
-      <span class="url">https://hyundaiwindowsticker.com/paint-code-by-vin-lookup</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Options Check</span>
+      <span class="url">https://gmcwindowsticker.com/options-check-by-vin</span>
       <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">24 issues</span>
       <span class="toggle">▼</span>
     </div>
@@ -1352,9 +812,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -1378,15 +838,294 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">14ms</div>
+                <div class="value good">21ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">11ms</div>
+                <div class="value" style="color:var(--text-2);">15ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">106ms</div>
+                <div class="value good">108ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
+                <div class="value good">132ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Protocol</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Full Load</div>
+                <div class="value" style="color:var(--text-2);">424ms</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- Third-Party Impact -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🔗</span> Third-Party Impact
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
+          </div>
+          <div class="audit-body">
+            <div class="bar-chart" style="margin-bottom:16px;">
+              <div class="bar-row">
+                <div class="bar-label">First-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill first-party" style="width:100%;">456.6 KB</div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Third-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                </div>
+              </div>
+            </div>
+            
+              <table class="res-table">
+                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
+              </table>
+            
+          </div>
+        </div>
+
+        <!-- Resource Breakdown -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📦</span> Resource Breakdown
+            <span class="count pass">73 requests • 456.6 KB</span>
+          </div>
+          <div class="audit-body">
+            
+              <div class="bar-chart" style="margin-bottom:16px;">
+                
+                  <div class="bar-row">
+                    <div class="bar-label">script</div>
+                    <div class="bar-track">
+                      <div class="bar-fill js" style="width:44.041434153874455%;">15 files</div>
+                    </div>
+                    <div class="bar-value">201.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:30.925252974630883%;">10 files</div>
+                    </div>
+                    <div class="bar-value">141.2 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:24.48490707687306%;">46 files</div>
+                    </div>
+                    <div class="bar-value">111.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">2.2 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">300 B</div>
+                  </div>
+                
+              </div>
+            
+            
+            <ul class="issue-list" style="margin-top:12px;">
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Render Blocking -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🚧</span> Render-Blocking Resources
+            <span class="count fail">10</span>
+          </div>
+          <div class="audit-body">
+            <table class="res-table">
+              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e38a0adeb936e590.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/45bb9fb280e43468.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aa33da30a85599bc.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/78f2034f165d3b20.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- Image Audit -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🖼️</span> Image Optimization
+            <span class="count warn">2 / 2 images</span>
+          </div>
+          <div class="audit-body">
+            <ul class="issue-list">
+              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li>
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- DOM + Fonts + Security + Preload condensed -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🛡️</span> Additional Checks
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">DOM Elements</div>
+                <div class="value good" style="font-size:16px;">191</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DOM Depth</div>
+                <div class="value good" style="font-size:16px;">10</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Web Fonts</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preloads</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preconnects</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Console Errors</div>
+                <div class="value fail" style="font-size:16px;">1</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
+              
+              <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
+              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
+              <li class="fail-issue">💥 [404] https://gmcwindowsticker.com/options-check-by-vin</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/request-a-refund?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/privacy-policy?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/contact-us?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/signup?_rsc=g67qx</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="page-header " onclick="toggleSection(this)">
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Options Check</span>
+      <span class="url">https://gmcwindowsticker.com/options-check-by-vin</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">17 issues</span>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="page-body ">
+      <div class="page-body-inner">
+
+        <!-- LCP Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📸</span> LCP Root Cause
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Render Time</div>
+                <div class="value good">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Element</div>
+                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Size</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
+              </div>
+            </div>
+            
+            <ul class="issue-list">
+              
+              <li class="good-issue">✅ No LCP issues detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CLS Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📐</span> CLS Root Cause
+            <span class="count pass">0</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Total CLS</div>
+                <div class="value good">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Shifts</div>
+                <div class="value" style="color:var(--text-2);">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              
+              <li class="good-issue">✅ No layout shifts detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TTFB Breakdown -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🌐</span> TTFB Breakdown
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Redirect</div>
+                <div class="value good">0ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DNS</div>
+                <div class="value good">1ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Connect</div>
+                <div class="value good">15ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TLS</div>
+                <div class="value" style="color:var(--text-2);">9ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Server</div>
+                <div class="value good">105ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
@@ -1398,7 +1137,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">289ms</div>
+                <div class="value" style="color:var(--text-2);">306ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -1412,14 +1151,14 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">387.0 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">388.7 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -1432,7 +1171,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -1442,7 +1181,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">68 requests • 387.0 KB</span>
+            <span class="count pass">45 requests • 388.7 KB</span>
           </div>
           <div class="audit-body">
             
@@ -1451,25 +1190,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:45.08324353244315%;">14 files</div>
+                      <div class="bar-fill js" style="width:51.72721312134328%;">15 files</div>
                     </div>
-                    <div class="bar-value">174.5 KB</div>
-                  </div>
-                
-                  <div class="bar-row">
-                    <div class="bar-label">fetch</div>
-                    <div class="bar-track">
-                      <div class="bar-fill other" style="width:34.14183577415097%;">46 files</div>
-                    </div>
-                    <div class="bar-value">132.1 KB</div>
+                    <div class="bar-value">201.1 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:20.699210341024667%;">7 files</div>
+                      <div class="bar-fill other" style="width:36.32209491319344%;">10 files</div>
                     </div>
-                    <div class="bar-value">80.1 KB</div>
+                    <div class="bar-value">141.2 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:11.306582527149816%;">18 files</div>
+                    </div>
+                    <div class="bar-value">44.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">2.2 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -1494,12 +1241,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">9</span>
+            <span class="count fail">10</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/fa0bc4ab0011cd33.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/26a82d55c31db016.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/df94d34309aa7edd.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8885377990d0df1b.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e38a0adeb936e590.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/45bb9fb280e43468.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aa33da30a85599bc.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/78f2034f165d3b20.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -1510,11 +1257,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 2 images</span>
+            <span class="count warn">1 / 2 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li>
             </ul>
           </div>
         </div>
@@ -1529,7 +1276,7 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">184</div>
+                <div class="value good" style="font-size:16px;">191</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
@@ -1537,7 +1284,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
@@ -1554,11 +1301,11 @@
             </div>
             <ul class="issue-list">
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
               <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
               <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://hyundaiwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/build-sheet?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/options?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/paint-code?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/recalls?_rsc=t4hu4</li>
+              <li class="fail-issue">💥 [404] https://gmcwindowsticker.com/options-check-by-vin</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/about-us?_rsc=g67qx</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/about-us?_rsc=1x5h1</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/about-us?_rsc=wjd54</li>
             </ul>
           </div>
         </div>
@@ -1568,9 +1315,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – Paint Code</span>
-      <span class="url">https://hyundaiwindowsticker.com/paint-code-by-vin-lookup</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">13 issues</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Paint Code</span>
+      <span class="url">https://gmcwindowsticker.com/paint-code-by-vin-lookup</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">24 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -1623,9 +1370,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -1649,19 +1396,19 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">8ms</div>
+                <div class="value good">20ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">6ms</div>
+                <div class="value" style="color:var(--text-2);">14ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">126ms</div>
+                <div class="value good">116ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">136ms</div>
+                <div class="value good">138ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -1669,7 +1416,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">301ms</div>
+                <div class="value" style="color:var(--text-2);">400ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -1683,14 +1430,14 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">289.1 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">456.6 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -1703,7 +1450,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -1713,7 +1460,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">31 requests • 289.1 KB</span>
+            <span class="count pass">73 requests • 456.6 KB</span>
           </div>
           <div class="audit-body">
             
@@ -1722,25 +1469,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:59.296952582974725%;">13 files</div>
+                      <div class="bar-fill js" style="width:44.04115155922488%;">15 files</div>
                     </div>
-                    <div class="bar-value">171.4 KB</div>
+                    <div class="bar-value">201.1 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:27.704405277415606%;">7 files</div>
+                      <div class="bar-fill other" style="width:30.925054540787954%;">10 files</div>
                     </div>
-                    <div class="bar-value">80.1 KB</div>
+                    <div class="bar-value">141.2 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:12.897309274659353%;">10 files</div>
+                      <div class="bar-fill other" style="width:24.485391624246052%;">46 files</div>
                     </div>
-                    <div class="bar-value">37.3 KB</div>
+                    <div class="bar-value">111.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">2.2 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -1765,12 +1520,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">8</span>
+            <span class="count fail">10</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/fa0bc4ab0011cd33.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/26a82d55c31db016.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/df94d34309aa7edd.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e38a0adeb936e590.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/45bb9fb280e43468.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aa33da30a85599bc.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/78f2034f165d3b20.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -1785,7 +1540,7 @@
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li>
             </ul>
           </div>
         </div>
@@ -1800,7 +1555,7 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">183</div>
+                <div class="value good" style="font-size:16px;">192</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
@@ -1808,7 +1563,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
@@ -1825,11 +1580,11 @@
             </div>
             <ul class="issue-list">
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
               <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
               <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
-              <li class="fail-issue">💥 [404] https://hyundaiwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/about-us?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1x9bk</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=m29he</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=y2gn3</li>
+              <li class="fail-issue">💥 [404] https://gmcwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/vin-decoder?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/build-sheet-by-vin?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/request-a-refund?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/contact-us?_rsc=t4hu4</li>
             </ul>
           </div>
         </div>
@@ -1839,9 +1594,9 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – VIN Decoder</span>
-      <span class="url">https://hyundaiwindowsticker.com/vin-decoder</span>
-      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">18 issues</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – Paint Code</span>
+      <span class="url">https://gmcwindowsticker.com/paint-code-by-vin-lookup</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">20 issues</span>
       <span class="toggle">▼</span>
     </div>
     <div class="page-body ">
@@ -1894,9 +1649,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -1916,23 +1671,23 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">DNS</div>
-                <div class="value good">1ms</div>
+                <div class="value good">4ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">8ms</div>
+                <div class="value good">16ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">5ms</div>
+                <div class="value" style="color:var(--text-2);">11ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">13ms</div>
+                <div class="value good">97ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">25ms</div>
+                <div class="value good">122ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -1940,7 +1695,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">360ms</div>
+                <div class="value" style="color:var(--text-2);">432ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -1954,14 +1709,14 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🔗</span> Third-Party Impact
-            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+            <span class="count" style="background:var(--info-bg);color:var(--info);">1 domains</span>
           </div>
           <div class="audit-body">
             <div class="bar-chart" style="margin-bottom:16px;">
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">377.4 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">388.7 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -1974,7 +1729,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -1984,7 +1739,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">44 requests • 377.4 KB</span>
+            <span class="count pass">45 requests • 388.7 KB</span>
           </div>
           <div class="audit-body">
             
@@ -1993,25 +1748,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:45.42939657269439%;">13 files</div>
+                      <div class="bar-fill js" style="width:51.72721312134328%;">15 files</div>
                     </div>
-                    <div class="bar-value">171.4 KB</div>
+                    <div class="bar-value">201.1 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:32.10239476639771%;">8 files</div>
+                      <div class="bar-fill other" style="width:36.32209491319344%;">10 files</div>
                     </div>
-                    <div class="bar-value">121.1 KB</div>
+                    <div class="bar-value">141.2 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:22.390574133210496%;">22 files</div>
+                      <div class="bar-fill other" style="width:11.306582527149816%;">18 files</div>
                     </div>
-                    <div class="bar-value">84.5 KB</div>
+                    <div class="bar-value">44.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">2.2 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -2036,12 +1799,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">4</span>
+            <span class="count fail">10</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/39573f24a4e6e140.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/public-stylesheet.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e38a0adeb936e590.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/45bb9fb280e43468.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/aa33da30a85599bc.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/697eb4acc6d9d70f.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/78f2034f165d3b20.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -2052,11 +1815,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
+            <span class="count warn">1 / 2 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Above-fold image has loading="lazy" — slows LCP — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li>
             </ul>
           </div>
         </div>
@@ -2071,19 +1834,298 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">664</div>
+                <div class="value good" style="font-size:16px;">192</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">10</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">7</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preconnects</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Console Errors</div>
+                <div class="value fail" style="font-size:16px;">1</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
+              
+              <li class="info-issue">ℹ️ No preload hints found — consider preloading LCP image/font</li>
+              <li class="fail-issue">❌ Failed to load resource: the server responded with a status of 404 ()</li>
+              <li class="fail-issue">💥 [404] https://gmcwindowsticker.com/paint-code-by-vin-lookup</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/about-us?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/blog?_rsc=t4hu4</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/contact-us?_rsc=t4hu4</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="page-section">
+    <div class="page-header " onclick="toggleSection(this)">
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – VIN Decoder</span>
+      <span class="url">https://gmcwindowsticker.com/vin-decoder</span>
+      <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">17 issues</span>
+      <span class="toggle">▼</span>
+    </div>
+    <div class="page-body ">
+      <div class="page-body-inner">
+
+        <!-- LCP Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📸</span> LCP Root Cause
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Render Time</div>
+                <div class="value good">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Element</div>
+                <div class="value" style="font-size:14px;color:var(--text-2);">N/A</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Size</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">N/A</div>
+              </div>
+            </div>
+            
+            <ul class="issue-list">
+              
+              <li class="good-issue">✅ No LCP issues detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CLS Analysis -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📐</span> CLS Root Cause
+            <span class="count pass">0</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Total CLS</div>
+                <div class="value good">0</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Shifts</div>
+                <div class="value" style="color:var(--text-2);">0</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+              
+              <li class="good-issue">✅ No layout shifts detected</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TTFB Breakdown -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🌐</span> TTFB Breakdown
+            <span class="count pass">0 issues</span>
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">Redirect</div>
+                <div class="value good">0ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DNS</div>
+                <div class="value good">4ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Connect</div>
+                <div class="value good">27ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TLS</div>
+                <div class="value" style="color:var(--text-2);">21ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Server</div>
+                <div class="value good">19ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">TTFB Total</div>
+                <div class="value good">52ms</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Protocol</div>
+                <div class="value" style="font-size:14px;color:var(--accent);">h2</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Full Load</div>
+                <div class="value" style="color:var(--text-2);">463ms</div>
+              </div>
+            </div>
+            <ul class="issue-list">
+              
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- Third-Party Impact -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🔗</span> Third-Party Impact
+            <span class="count" style="background:var(--info-bg);color:var(--info);">2 domains</span>
+          </div>
+          <div class="audit-body">
+            <div class="bar-chart" style="margin-bottom:16px;">
+              <div class="bar-row">
+                <div class="bar-label">First-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill first-party" style="width:100%;">432.8 KB</div>
+                </div>
+              </div>
+              <div class="bar-row">
+                <div class="bar-label">Third-party</div>
+                <div class="bar-track">
+                  <div class="bar-fill third-party" style="width:5%;">0 B</div>
+                </div>
+              </div>
+            </div>
+            
+              <table class="res-table">
+                <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>1</td><td>0 B</td></tr>
+              </table>
+            
+          </div>
+        </div>
+
+        <!-- Resource Breakdown -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">📦</span> Resource Breakdown
+            <span class="count pass">50 requests • 432.8 KB</span>
+          </div>
+          <div class="audit-body">
+            
+              <div class="bar-chart" style="margin-bottom:16px;">
+                
+                  <div class="bar-row">
+                    <div class="bar-label">script</div>
+                    <div class="bar-track">
+                      <div class="bar-fill js" style="width:42.87974112252451%;">14 files</div>
+                    </div>
+                    <div class="bar-value">185.6 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">link</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:38.14877331070713%;">11 files</div>
+                    </div>
+                    <div class="bar-value">165.1 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">fetch</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:16.13132525770404%;">22 files</div>
+                    </div>
+                    <div class="bar-value">69.8 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:5%;">2 files</div>
+                    </div>
+                    <div class="bar-value">12.0 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">xmlhttprequest</div>
+                    <div class="bar-track">
+                      <div class="bar-fill other" style="width:5%;">1 files</div>
+                    </div>
+                    <div class="bar-value">300 B</div>
+                  </div>
+                
+              </div>
+            
+            
+            <ul class="issue-list" style="margin-top:12px;">
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Render Blocking -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🚧</span> Render-Blocking Resources
+            <span class="count fail">5</span>
+          </div>
+          <div class="audit-body">
+            <table class="res-table">
+              <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e487b63e0be02fd2.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+            </table>
+          </div>
+        </div>
+        
+
+        <!-- Image Audit -->
+        
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🖼️</span> Image Optimization
+            <span class="count warn">2 / 5 images</span>
+          </div>
+          <div class="audit-body">
+            <ul class="issue-list">
+              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://gmcwindowsticker.com/_next/image?url=https%3A%2F%2Fv</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+            </ul>
+          </div>
+        </div>
+        
+
+        <!-- DOM + Fonts + Security + Preload condensed -->
+        <div class="audit">
+          <div class="audit-header">
+            <span class="emoji">🛡️</span> Additional Checks
+          </div>
+          <div class="audit-body">
+            <div class="breakdown-grid" style="margin-bottom:16px;">
+              <div class="breakdown-cell">
+                <div class="label">DOM Elements</div>
+                <div class="value good" style="font-size:16px;">599</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">DOM Depth</div>
+                <div class="value good" style="font-size:16px;">17</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Web Fonts</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
+              </div>
+              <div class="breakdown-cell">
+                <div class="label">Preloads</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">10</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -2096,11 +2138,11 @@
             </div>
             <ul class="issue-list">
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
               
               
-              <li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/vin-decoder?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/options?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/build-sheet?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/options?_rsc=1tx74</li>
+              <li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/signup?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=1je0p</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/build-sheet-by-vin?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=1upwa</li>
             </ul>
           </div>
         </div>
@@ -2110,8 +2152,8 @@
   </div>
   <div class="page-section">
     <div class="page-header " onclick="toggleSection(this)">
-      <span class="title">HYUNDAIWINDOWSTICKER Window Sticker — Hyundai – VIN Decoder</span>
-      <span class="url">https://hyundaiwindowsticker.com/vin-decoder</span>
+      <span class="title">GMCWINDOWSTICKER Window Sticker — GMC – VIN Decoder</span>
+      <span class="url">https://gmcwindowsticker.com/vin-decoder</span>
       <span style="font-size:12px;padding:2px 10px;border-radius:20px;background:var(--fail-bg);color:var(--fail);">7 issues</span>
       <span class="toggle">▼</span>
     </div>
@@ -2165,9 +2207,9 @@
               </div>
             </div>
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ 2 image(s) missing width/height attributes</li>
               
               
+              <li class="good-issue">✅ No layout shifts detected</li>
             </ul>
           </div>
         </div>
@@ -2187,23 +2229,23 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">DNS</div>
-                <div class="value good">1ms</div>
+                <div class="value good">2ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Connect</div>
-                <div class="value good">15ms</div>
+                <div class="value good">21ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TLS</div>
-                <div class="value" style="color:var(--text-2);">11ms</div>
+                <div class="value" style="color:var(--text-2);">15ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Server</div>
-                <div class="value good">20ms</div>
+                <div class="value good">21ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">TTFB Total</div>
-                <div class="value good">38ms</div>
+                <div class="value good">47ms</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Protocol</div>
@@ -2211,7 +2253,7 @@
               </div>
               <div class="breakdown-cell">
                 <div class="label">Full Load</div>
-                <div class="value" style="color:var(--text-2);">362ms</div>
+                <div class="value" style="color:var(--text-2);">513ms</div>
               </div>
             </div>
             <ul class="issue-list">
@@ -2232,7 +2274,7 @@
               <div class="bar-row">
                 <div class="bar-label">First-party</div>
                 <div class="bar-track">
-                  <div class="bar-fill first-party" style="width:100%;">373.0 KB</div>
+                  <div class="bar-fill first-party" style="width:100%;">427.0 KB</div>
                 </div>
               </div>
               <div class="bar-row">
@@ -2245,7 +2287,7 @@
             
               <table class="res-table">
                 <tr><th>Domain</th><th>Requests</th><th>Size</th></tr>
-                <tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>2</td><td>0 B</td></tr><tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr>
+                <tr><td class="url-cell">static.cloudflareinsights.com</td><td>1</td><td>0 B</td></tr><tr><td class="url-cell">vhr.nyc3.cdn.digitaloceanspaces.com</td><td>1</td><td>0 B</td></tr>
               </table>
             
           </div>
@@ -2255,7 +2297,7 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">📦</span> Resource Breakdown
-            <span class="count pass">28 requests • 373.0 KB</span>
+            <span class="count pass">33 requests • 427.0 KB</span>
           </div>
           <div class="audit-body">
             
@@ -2264,25 +2306,33 @@
                   <div class="bar-row">
                     <div class="bar-label">script</div>
                     <div class="bar-track">
-                      <div class="bar-fill js" style="width:45.96514471541309%;">13 files</div>
+                      <div class="bar-fill js" style="width:43.452977146019414%;">14 files</div>
                     </div>
-                    <div class="bar-value">171.4 KB</div>
+                    <div class="bar-value">185.6 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">link</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:45.34093348903703%;">8 files</div>
+                      <div class="bar-fill other" style="width:29.42981673824257%;">10 files</div>
                     </div>
-                    <div class="bar-value">169.1 KB</div>
+                    <div class="bar-value">125.7 KB</div>
+                  </div>
+                
+                  <div class="bar-row">
+                    <div class="bar-label">img</div>
+                    <div class="bar-track">
+                      <div class="bar-fill img" style="width:20.99049160984043%;">2 files</div>
+                    </div>
+                    <div class="bar-value">89.6 KB</div>
                   </div>
                 
                   <div class="bar-row">
                     <div class="bar-label">fetch</div>
                     <div class="bar-track">
-                      <div class="bar-fill other" style="width:8.615371725116647%;">6 files</div>
+                      <div class="bar-fill other" style="width:6.058111402293173%;">6 files</div>
                     </div>
-                    <div class="bar-value">32.1 KB</div>
+                    <div class="bar-value">25.9 KB</div>
                   </div>
                 
                   <div class="bar-row">
@@ -2296,12 +2346,6 @@
               </div>
             
             
-              <div style="font-size:12px;color:var(--text-3);margin-bottom:8px;font-weight:600;">⚠️ Large Resources (> 100KB)</div>
-              <table class="res-table">
-                <tr><th>URL</th><th>Type</th><th>Size</th><th>Duration</th></tr>
-                <tr><td class="url-cell">https://hyundaiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2...</td><td>link</td><td style="color:var(--warn);font-weight:600;">105.5 KB</td><td>206ms</td></tr>
-              </table>
-            
             <ul class="issue-list" style="margin-top:12px;">
               
             </ul>
@@ -2313,12 +2357,12 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🚧</span> Render-Blocking Resources
-            <span class="count fail">4</span>
+            <span class="count fail">5</span>
           </div>
           <div class="audit-body">
             <table class="res-table">
               <tr><th>Type</th><th>URL</th><th>Suggestion</th></tr>
-              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/1bfa73028ee93baa.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/39573f24a4e6e140.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/f9b12a924703129c.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
+              <tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--info-bg);color:var(--info);font-size:11px;font-weight:600;">CSS</span></td><td class="url-cell">/_next/static/chunks/90dfdd788152cee8.css</td><td style="font-size:12px;color:var(--text-2);">Consider async loading or inlining critical CSS</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/a6dad97d9634a72d.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/e487b63e0be02fd2.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/8d819888ad1af5f4.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr><tr><td><span style="padding:2px 8px;border-radius:4px;background:var(--warn-bg);color:var(--warn);font-size:11px;font-weight:600;">JS</span></td><td class="url-cell">/_next/static/chunks/af13ed1c2c97f168.js</td><td style="font-size:12px;color:var(--text-2);">Add async or defer attribute</td></tr>
             </table>
           </div>
         </div>
@@ -2329,11 +2373,11 @@
         <div class="audit">
           <div class="audit-header">
             <span class="emoji">🖼️</span> Image Optimization
-            <span class="count warn">2 / 4 images</span>
+            <span class="count warn">1 / 5 images</span>
           </div>
           <div class="audit-body">
             <ul class="issue-list">
-              <li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Oversized: 350x100 displayed at 126x36 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
+              <li class="warn-issue">⚠️ Oversized: 724x1024 displayed at 351x496 — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li><li class="warn-issue">⚠️ Not using modern format (WebP/AVIF) — <span style="font-family:var(--mono);font-size:10px;">https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-</span></li>
             </ul>
           </div>
         </div>
@@ -2348,19 +2392,19 @@
             <div class="breakdown-grid" style="margin-bottom:16px;">
               <div class="breakdown-cell">
                 <div class="label">DOM Elements</div>
-                <div class="value good" style="font-size:16px;">664</div>
+                <div class="value good" style="font-size:16px;">599</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">DOM Depth</div>
-                <div class="value good" style="font-size:16px;">18</div>
+                <div class="value good" style="font-size:16px;">17</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Web Fonts</div>
-                <div class="value" style="font-size:16px;color:var(--text-2);">2</div>
+                <div class="value" style="font-size:16px;color:var(--text-2);">6</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preloads</div>
-                <div class="value" style="font-size:16px;color:var(--accent);">7</div>
+                <div class="value" style="font-size:16px;color:var(--accent);">10</div>
               </div>
               <div class="breakdown-cell">
                 <div class="label">Preconnects</div>
@@ -2373,11 +2417,11 @@
             </div>
             <ul class="issue-list">
               
-              <li class="warn-issue">⚠️ 2 font(s) using font-display: auto/block — causes invisible text (FOIT)</li>
+              <li class="warn-issue">⚠️ 3 font(s) using font-display: auto/block — causes invisible text (FOIT)</li><li class="warn-issue">⚠️ 6 font files loaded — consider reducing</li>
               
               
               
-              <li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1je0p</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1upwa</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=1tx74</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=155pw</li><li class="fail-issue">💥 [0] https://hyundaiwindowsticker.com/?_rsc=yb46w</li>
+              <li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=lb0mp</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=1tx74</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=1upwa</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=155pw</li><li class="fail-issue">💥 [0] https://gmcwindowsticker.com/?_rsc=yb46w</li>
             </ul>
           </div>
         </div>
