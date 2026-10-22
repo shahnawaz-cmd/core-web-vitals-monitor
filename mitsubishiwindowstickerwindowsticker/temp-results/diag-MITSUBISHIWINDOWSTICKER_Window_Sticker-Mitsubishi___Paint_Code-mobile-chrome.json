@@ -3,7 +3,7 @@
   "label": "Mitsubishi – Paint Code",
   "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin-lookup",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-21T13:36:00.263Z",
+  "timestamp": "2026-10-22T13:46:37.264Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,31 +16,40 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 image(s) missing width/height attributes"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 21,
-      "tls": 19,
-      "serverProcessing": 1802,
-      "ttfb": 1825,
-      "download": 1,
-      "domParsing": 14,
-      "domContentLoaded": 1875,
-      "loadEvent": 7892,
-      "transferSize": 8699,
-      "encodedBodySize": 8399,
+      "connection": 22,
+      "tls": 13,
+      "serverProcessing": 151,
+      "ttfb": 176,
+      "download": 5,
+      "domParsing": 28,
+      "domContentLoaded": 270,
+      "loadEvent": 466,
+      "transferSize": 8755,
+      "encodedBodySize": 8455,
       "decodedBodySize": 36355,
       "protocol": "h2"
     },
-    "issues": [
-      "Slow server response: 1802ms",
-      "TTFB exceeds 800ms threshold: 1825ms"
-    ]
+    "issues": []
   },
   "renderBlocking": [
+    {
+      "type": "CSS",
+      "url": "/_next/static/chunks/d44a50ffe9099b08.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
+      "url": "/public-stylesheet.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
     {
       "type": "JS",
       "url": "/_next/static/chunks/a6dad97d9634a72d.js",
@@ -70,61 +79,107 @@
       "type": "JS",
       "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/6b794fd64dc8f995.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/8885377990d0df1b.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 21,
-    "totalSize": 290748,
+    "totalCount": 78,
+    "totalSize": 457289,
     "byType": {
       "link": {
-        "count": 7,
-        "totalSize": 101049,
-        "totalDuration": 2480.499999999942
+        "count": 8,
+        "totalSize": 122306,
+        "totalDuration": 499.10000000020955
       },
       "script": {
-        "count": 13,
-        "totalSize": 189399,
-        "totalDuration": 13847.700000000012
+        "count": 15,
+        "totalSize": 203581,
+        "totalDuration": 863.6000000000931
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 522.9000000000233
+        "totalDuration": 17
+      },
+      "fetch": {
+        "count": 54,
+        "totalSize": 131102,
+        "totalDuration": 5691.700000000186
       }
     },
     "largeResources": [],
     "issues": []
   },
   "imageAudit": {
-    "totalImages": 0,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 2,
+    "issueCount": 2,
+    "images": [
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/mitsubishi/site-config--mit",
+        "naturalWidth": 350,
+        "naturalHeight": 100,
+        "displayWidth": 168,
+        "displayHeight": 48,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 350x100 displayed at 168x48",
+          "Not using modern format (WebP/AVIF)"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/mitsubishi/site-config--mit",
+        "naturalWidth": 350,
+        "naturalHeight": 100,
+        "displayWidth": 168,
+        "displayHeight": 48,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 350x100 displayed at 168x48",
+          "Not using modern format (WebP/AVIF)"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 290748,
+    "firstPartySize": 457289,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 30
+        "duration": 61
       },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 45
+        "duration": 53
       }
     ],
     "totalDomains": 2
   },
   "domAnalysis": {
-    "totalElements": 67,
-    "maxDepth": 2,
-    "maxChildren": 42,
+    "totalElements": 201,
+    "maxDepth": 10,
+    "maxChildren": 36,
     "widestElement": "HEAD",
-    "deepestElement": "META",
+    "deepestElement": "path",
     "issues": []
   },
   "fontAnalysis": {
@@ -132,70 +187,107 @@
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2",
         "size": 35244,
-        "duration": 270
+        "duration": 41
       },
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/8226f95c76ce3702-s.p.24ef737e.woff2",
         "size": 38248,
-        "duration": 749
+        "duration": 47
       },
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2",
         "size": 9854,
-        "duration": 303
+        "duration": 44
       },
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
         "size": 9766,
-        "duration": 532
+        "duration": 60
       }
     ],
-    "fontFaces": [],
-    "issues": []
-  },
-  "securityCheck": {
+    "fontFaces": [
+      {
+        "family": "\"Fjalla One\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fjalla One\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fjalla One\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fjalla One\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Fjalla One Fallback\"",
+        "display": "auto"
+      },
+      {
+        "family": "Archivo",
+        "display": "swap"
+      },
+      {
+        "family": "Archivo",
+        "display": "swap"
+      },
+      {
+        "family": "Archivo",
+        "display": "swap"
+      },
+      {
+        "family": "\"Archivo Fallback\"",
+        "display": "auto"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Space Mono Fallback\"",
+        "display": "auto"
+      }
+    ],
     "issues": [
-      "Missing lang attribute on <html>"
+      "3 font(s) using font-display: auto/block — causes invisible text (FOIT)"
     ]
   },
-  "preloadCheck": {
-    "preloads": [
-      {
-        "href": "/_next/static/chunks/fb3a7d9e6edafb03.js",
-        "as": "script"
-      },
-      {
-        "href": "/_next/static/chunks/d44a50ffe9099b08.css",
-        "as": "style"
-      },
-      {
-        "href": "/_next/static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2",
-        "as": "font"
-      },
-      {
-        "href": "/_next/static/media/8226f95c76ce3702-s.p.24ef737e.woff2",
-        "as": "font"
-      },
-      {
-        "href": "/_next/static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2",
-        "as": "font"
-      },
-      {
-        "href": "/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
-        "as": "font"
-      },
-      {
-        "href": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/mitsubi",
-        "as": "image"
-      }
-    ],
-    "preconnects": [],
-    "dnsPrefetch": [],
+  "securityCheck": {
     "issues": []
   },
+  "preloadCheck": {
+    "preloads": [],
+    "preconnects": [],
+    "dnsPrefetch": [],
+    "issues": [
+      "No preload hints found — consider preloading LCP image/font"
+    ]
+  },
   "consoleErrors": [
-    "Failed to load resource: the server responded with a status of 404 ()",
-    "Failed to load resource: the server responded with a status of 409 ()"
+    "Failed to load resource: the server responded with a status of 404 ()"
   ],
   "consoleWarnings": [
     "Deprecated API for given entry type."
@@ -207,9 +299,117 @@
       "resourceType": "document"
     },
     {
-      "url": "https://mitsubishiwindowsticker.com/_next/static/chunks/b8f15bf1f7eec6ac.js",
+      "url": "https://mitsubishiwindowsticker.com/pricing?_rsc=t4hu4",
       "status": 0,
-      "resourceType": "script",
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/contact-us?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/about-us?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/blog?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/signup?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/login?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/warranty-check-by-vin?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/msrp-lookup?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/vin-decoder?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/login?_rsc=1c0dz",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=1x9bk",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=y2gn3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=m29he",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=1p208",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=1x9bk",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=kbg1s",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/recalls-by-vin?_rsc=1x9bk",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=1p208",
+      "status": 0,
+      "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     }
   ]
