@@ -3,7 +3,7 @@
   "label": "RAM – Paint Code",
   "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-25T13:08:43.945Z",
+  "timestamp": "2026-10-26T15:04:18.832Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,22 +22,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 46,
+      "redirect": 161,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 16,
-      "ttfb": 66,
+      "serverProcessing": 30,
+      "ttfb": 192,
       "download": 3,
-      "domParsing": 85,
-      "domContentLoaded": 169,
-      "loadEvent": 335,
+      "domParsing": 128,
+      "domContentLoaded": 328,
+      "loadEvent": 381,
       "transferSize": 42750,
       "encodedBodySize": 42450,
       "decodedBodySize": 278722,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 161ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -64,31 +66,46 @@
       "type": "JS",
       "url": "/_next/static/chunks/c56db8f53f3a003a.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/39b24e33c1285f2e.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/b8329177338bdfbf.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 67,
-    "totalSize": 440807,
+    "totalCount": 78,
+    "totalSize": 442939,
     "byType": {
       "link": {
         "count": 9,
         "totalSize": 109754,
-        "totalDuration": 508.29999999995925
+        "totalDuration": 535
       },
       "script": {
-        "count": 14,
-        "totalSize": 201963,
-        "totalDuration": 864.4000000000815
+        "count": 20,
+        "totalSize": 204096,
+        "totalDuration": 1174.0999999999767
       },
       "xmlhttprequest": {
-        "count": 1,
+        "count": 2,
         "totalSize": 300,
-        "totalDuration": 8.60000000000582
+        "totalDuration": 323.30000000001746
       },
       "fetch": {
-        "count": 43,
-        "totalSize": 128790,
-        "totalDuration": 3401.500000000058
+        "count": 46,
+        "totalSize": 128789,
+        "totalDuration": 13053.800000000076
+      },
+      "img": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 120.30000000001746
       }
     },
     "largeResources": [],
@@ -131,28 +148,76 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 440807,
+    "firstPartySize": 442939,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 65
+        "duration": 44
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 46
+        "duration": 48
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 88
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 213
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 57
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 43
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 34
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 12
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 120
+      },
+      {
+        "domain": "o.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 300
       }
     ],
-    "totalDomains": 2
+    "totalDomains": 10
   },
   "domAnalysis": {
-    "totalElements": 449,
+    "totalElements": 458,
     "maxDepth": 16,
-    "maxChildren": 49,
+    "maxChildren": 55,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -162,22 +227,22 @@
       {
         "url": "...ps://ramwindowsticker.com/_next/static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2",
         "size": 35244,
-        "duration": 40
+        "duration": 57
       },
       {
         "url": "...ps://ramwindowsticker.com/_next/static/media/8226f95c76ce3702-s.p.24ef737e.woff2",
         "size": 38248,
-        "duration": 51
+        "duration": 67
       },
       {
         "url": "...ps://ramwindowsticker.com/_next/static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2",
         "size": 9854,
-        "duration": 53
+        "duration": 56
       },
       {
         "url": "...ps://ramwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
         "size": 9766,
-        "duration": 51
+        "duration": 61
       }
     ],
     "fontFaces": [
@@ -290,37 +355,15 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "10 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
-    {
-      "url": "https://ramwindowsticker.com/login?_rsc=h5c5j",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ramwindowsticker.com/?_rsc=h5c5j",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ramwindowsticker.com/signup?_rsc=h5c5j",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ramwindowsticker.com/msrp-lookup-by-vin?_rsc=h5c5j",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
     {
       "url": "https://ramwindowsticker.com/recalls?_rsc=h5c5j",
       "status": 0,
@@ -334,7 +377,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ramwindowsticker.com/paint-color-by-vin",
+      "url": "https://ramwindowsticker.com/login?_rsc=yoxq8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -352,25 +395,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ramwindowsticker.com/login?_rsc=yoxq8",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ramwindowsticker.com/msrp-lookup-by-vin?_rsc=ktm25",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://ramwindowsticker.com/msrp-lookup-by-vin?_rsc=17fhy",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://ramwindowsticker.com/msrp-lookup-by-vin?_rsc=1982x",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -382,13 +407,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ramwindowsticker.com/recalls?_rsc=5z7l5",
+      "url": "https://ramwindowsticker.com/recalls?_rsc=1982x",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ramwindowsticker.com/recalls?_rsc=1982x",
+      "url": "https://ramwindowsticker.com/paint-color-by-vin?_rsc=5z7l5",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/recalls?_rsc=5z7l5",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -400,7 +431,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ramwindowsticker.com/paint-color-by-vin?_rsc=5z7l5",
+      "url": "https://ramwindowsticker.com/paint-color-by-vin?_rsc=1982x",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -413,6 +444,42 @@
     },
     {
       "url": "https://ramwindowsticker.com/specs-by-vin?_rsc=1982x",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/paint-color-by-vin?_rsc=1h3r4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/specs-by-vin?_rsc=1h3r4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/fuel-economy-by-vin?_rsc=5z7l5",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/buildsheet-by-vin?_rsc=1982x",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/buildsheet-by-vin?_rsc=1h3r4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ramwindowsticker.com/buildsheet-by-vin?_rsc=5z7l5",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
