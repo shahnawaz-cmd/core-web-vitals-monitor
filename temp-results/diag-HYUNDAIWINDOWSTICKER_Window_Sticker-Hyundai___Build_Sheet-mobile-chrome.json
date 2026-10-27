@@ -3,7 +3,7 @@
   "label": "Hyundai – Build Sheet",
   "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-26T14:54:24.076Z",
+  "timestamp": "2026-10-27T14:01:38.830Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,22 +22,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 81,
+      "redirect": 272,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 25,
-      "ttfb": 110,
-      "download": 2,
-      "domParsing": 330,
-      "domContentLoaded": 453,
-      "loadEvent": 507,
-      "transferSize": 58344,
-      "encodedBodySize": 58044,
-      "decodedBodySize": 376316,
+      "serverProcessing": 32,
+      "ttfb": 305,
+      "download": 3,
+      "domParsing": 250,
+      "domContentLoaded": 564,
+      "loadEvent": 808,
+      "transferSize": 58348,
+      "encodedBodySize": 58048,
+      "decodedBodySize": 376359,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 272ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -64,46 +66,31 @@
       "type": "JS",
       "url": "/_next/static/chunks/f9b12a924703129c.js",
       "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/c3f0b4b8c7b04b5e.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/03386ab9ffc79529.js",
-      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 38,
-    "totalSize": 392037,
+    "totalCount": 30,
+    "totalSize": 386926,
     "byType": {
       "link": {
         "count": 9,
         "totalSize": 177687,
-        "totalDuration": 726
+        "totalDuration": 1028.2999999999884
       },
       "script": {
-        "count": 18,
-        "totalSize": 180678,
-        "totalDuration": 1260.8000000000175
-      },
-      "xmlhttprequest": {
-        "count": 3,
-        "totalSize": 300,
-        "totalDuration": 64.10000000003492
+        "count": 13,
+        "totalSize": 175567,
+        "totalDuration": 1154.7999999999302
       },
       "fetch": {
         "count": 7,
         "totalSize": 33372,
-        "totalDuration": 9439.399999999965
+        "totalDuration": 3350.2000000000116
       },
-      "img": {
+      "xmlhttprequest": {
         "count": 1,
-        "totalSize": 0,
-        "totalDuration": 153.20000000001164
+        "totalSize": 300,
+        "totalDuration": 19.699999999953434
       }
     },
     "largeResources": [
@@ -111,7 +98,7 @@
         "url": "https://hyundaiwindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2...",
         "type": "link",
         "size": 107985,
-        "duration": 122
+        "duration": 482
       }
     ],
     "issues": []
@@ -153,59 +140,29 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 392037,
+    "firstPartySize": 386926,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 2,
         "size": 0,
-        "duration": 122
+        "duration": 150
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 49
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 1,
-        "size": 0,
-        "duration": 55
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 29
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 16
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 153
-      },
-      {
-        "domain": "l.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 31
+        "duration": 69
       }
     ],
-    "totalDomains": 7
+    "totalDomains": 2
   },
   "domAnalysis": {
-    "totalElements": 573,
+    "totalElements": 566,
     "maxDepth": 18,
-    "maxChildren": 53,
-    "widestElement": "HEAD",
+    "maxChildren": 51,
+    "widestElement": "BODY",
     "deepestElement": "path",
     "issues": []
   },
@@ -214,12 +171,12 @@
       {
         "url": ".../hyundaiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 82
+        "duration": 63
       },
       {
         "url": ".../hyundaiwindowsticker.com/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 65
+        "duration": 48
       }
     ],
     "fontFaces": [
@@ -343,9 +300,7 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": [
-      "7 third-party origins without preconnect hints"
-    ]
+    "issues": []
   },
   "consoleErrors": [],
   "consoleWarnings": [
@@ -353,25 +308,13 @@
   ],
   "failedRequests": [
     {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=4zicc",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=1soqt",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=46t74",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://hyundaiwindowsticker.com/?_rsc=1egg0",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://hyundaiwindowsticker.com/?_rsc=4zicc",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"

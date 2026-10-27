@@ -3,7 +3,7 @@
   "label": "Hyundai – Build Sheet",
   "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-26T14:54:24.169Z",
+  "timestamp": "2026-10-27T14:01:39.131Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,22 +22,24 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 74,
+      "redirect": 271,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 35,
-      "ttfb": 111,
+      "serverProcessing": 28,
+      "ttfb": 300,
       "download": 3,
-      "domParsing": 242,
-      "domContentLoaded": 363,
-      "loadEvent": 530,
-      "transferSize": 58344,
-      "encodedBodySize": 58044,
-      "decodedBodySize": 376316,
+      "domParsing": 135,
+      "domContentLoaded": 601,
+      "loadEvent": 695,
+      "transferSize": 58348,
+      "encodedBodySize": 58048,
+      "decodedBodySize": 376359,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Redirect chain taking 271ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -64,46 +66,31 @@
       "type": "JS",
       "url": "/_next/static/chunks/f9b12a924703129c.js",
       "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/c3f0b4b8c7b04b5e.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/03386ab9ffc79529.js",
-      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 54,
-    "totalSize": 396501,
+    "totalCount": 46,
+    "totalSize": 391390,
     "byType": {
       "link": {
         "count": 9,
         "totalSize": 128572,
-        "totalDuration": 874.3000000000175
+        "totalDuration": 840.3999999999651
       },
       "script": {
-        "count": 18,
-        "totalSize": 180678,
-        "totalDuration": 1532.2000000000116
+        "count": 13,
+        "totalSize": 175567,
+        "totalDuration": 1153.2999999999884
       },
       "xmlhttprequest": {
-        "count": 3,
+        "count": 1,
         "totalSize": 300,
-        "totalDuration": 95.4999999999709
+        "totalDuration": 19
       },
       "fetch": {
         "count": 23,
         "totalSize": 86951,
-        "totalDuration": 10172.599999999919
-      },
-      "img": {
-        "count": 1,
-        "totalSize": 0,
-        "totalDuration": 129.60000000000582
+        "totalDuration": 5273.40000000014
       }
     },
     "largeResources": [],
@@ -146,59 +133,29 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 396501,
+    "firstPartySize": 391390,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 2,
         "size": 0,
-        "duration": 212
+        "duration": 153
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 53
-      },
-      {
-        "domain": "www.googletagmanager.com",
-        "count": 1,
-        "size": 0,
-        "duration": 59
-      },
-      {
-        "domain": "www.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 26
-      },
-      {
-        "domain": "scripts.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 17
-      },
-      {
-        "domain": "c.clarity.ms",
-        "count": 1,
-        "size": 0,
-        "duration": 130
-      },
-      {
-        "domain": "n.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 73
+        "duration": 107
       }
     ],
-    "totalDomains": 7
+    "totalDomains": 2
   },
   "domAnalysis": {
-    "totalElements": 573,
+    "totalElements": 566,
     "maxDepth": 18,
-    "maxChildren": 53,
-    "widestElement": "HEAD",
+    "maxChildren": 51,
+    "widestElement": "BODY",
     "deepestElement": "path",
     "issues": []
   },
@@ -207,12 +164,12 @@
       {
         "url": ".../hyundaiwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 63
+        "duration": 90
       },
       {
         "url": ".../hyundaiwindowsticker.com/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 108
+        "duration": 90
       }
     ],
     "fontFaces": [
@@ -336,9 +293,7 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": [
-      "7 third-party origins without preconnect hints"
-    ]
+    "issues": []
   },
   "consoleErrors": [],
   "consoleWarnings": [
@@ -346,43 +301,25 @@
   ],
   "failedRequests": [
     {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=ulqqs",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://hyundaiwindowsticker.com/options?_rsc=ulqqs",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/vin-decoder?_rsc=ulqqs",
+      "url": "https://hyundaiwindowsticker.com/build-sheet?_rsc=ulqqs",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=ulqqs",
+      "url": "https://hyundaiwindowsticker.com/options?_rsc=46t74",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=1soqt",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=46t74",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hyundaiwindowsticker.com/?_rsc=4zicc",
+      "url": "https://hyundaiwindowsticker.com/?_rsc=1egg0",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -394,31 +331,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/options?_rsc=171lk",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=46t74",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://hyundaiwindowsticker.com/options?_rsc=8cw60",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=171lk",
+      "url": "https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=8cw60",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://hyundaiwindowsticker.com/msrp-lookup-by-vin?_rsc=8cw60",
+      "url": "https://hyundaiwindowsticker.com/vin-decoder?_rsc=46t74",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
