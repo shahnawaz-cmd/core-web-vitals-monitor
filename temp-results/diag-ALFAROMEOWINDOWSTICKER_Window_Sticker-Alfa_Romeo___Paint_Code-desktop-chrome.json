@@ -3,7 +3,7 @@
   "label": "Alfa Romeo – Paint Code",
   "url": "https://alfaromeowindowsticker.com/paint-code-by-vin-lookup",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-27T13:53:57.421Z",
+  "timestamp": "2026-10-28T14:40:16.377Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,23 +22,23 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 139,
+      "redirect": 504,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 27,
-      "ttfb": 167,
-      "download": 3,
-      "domParsing": 89,
-      "domContentLoaded": 262,
-      "loadEvent": 374,
-      "transferSize": 55565,
-      "encodedBodySize": 55265,
-      "decodedBodySize": 324749,
+      "serverProcessing": 154,
+      "ttfb": 659,
+      "download": 31,
+      "domParsing": 155,
+      "domContentLoaded": 848,
+      "loadEvent": 1131,
+      "transferSize": 55553,
+      "encodedBodySize": 55253,
+      "decodedBodySize": 324738,
       "protocol": "h2"
     },
     "issues": [
-      "Redirect chain taking 139ms"
+      "Redirect chain taking 504ms"
     ]
   },
   "renderBlocking": [
@@ -66,36 +66,46 @@
       "type": "JS",
       "url": "/_next/static/chunks/d1c4b36e9604d7e9.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/c3f0b4b8c7b04b5e.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/03386ab9ffc79529.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 47,
-    "totalSize": 334086,
+    "totalCount": 58,
+    "totalSize": 339197,
     "byType": {
       "link": {
         "count": 8,
         "totalSize": 69700,
-        "totalDuration": 418.9999999998836
+        "totalDuration": 1768.6000000000058
       },
       "script": {
-        "count": 13,
-        "totalSize": 175567,
-        "totalDuration": 749.5999999999767
+        "count": 19,
+        "totalSize": 180678,
+        "totalDuration": 3844.899999999965
       },
       "img": {
-        "count": 2,
+        "count": 3,
         "totalSize": 0,
-        "totalDuration": 129.20000000006985
-      },
-      "fetch": {
-        "count": 23,
-        "totalSize": 88519,
-        "totalDuration": 4066.4000000001397
+        "totalDuration": 170
       },
       "xmlhttprequest": {
-        "count": 1,
+        "count": 2,
         "totalSize": 300,
-        "totalDuration": 23.100000000093132
+        "totalDuration": 184.70000000001164
+      },
+      "fetch": {
+        "count": 26,
+        "totalSize": 88519,
+        "totalDuration": 13296.900000000081
       }
     },
     "largeResources": [],
@@ -166,28 +176,76 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 334086,
+    "firstPartySize": 339197,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 4,
         "size": 0,
-        "duration": 267
+        "duration": 243
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 56
+        "duration": 60
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 156
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 40
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 38
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 35
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 10
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 14
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 74
+      },
+      {
+        "domain": "s.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 50
       }
     ],
-    "totalDomains": 2
+    "totalDomains": 10
   },
   "domAnalysis": {
-    "totalElements": 415,
+    "totalElements": 424,
     "maxDepth": 18,
-    "maxChildren": 47,
+    "maxChildren": 53,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -197,12 +255,12 @@
       {
         "url": "...lfaromeowindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 32
+        "duration": 310
       },
       {
         "url": "...lfaromeowindowsticker.com/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 44
+        "duration": 374
       }
     ],
     "fontFaces": [
@@ -323,7 +381,9 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "10 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [],
   "consoleWarnings": [
@@ -331,19 +391,13 @@
   ],
   "failedRequests": [
     {
-      "url": "https://alfaromeowindowsticker.com/build-sheet?_rsc=d1n8z",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://alfaromeowindowsticker.com/warranty?_rsc=d1n8z",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://alfaromeowindowsticker.com/vin-decoder?_rsc=d1n8z",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://alfaromeowindowsticker.com/build-sheet?_rsc=vaqez",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -355,13 +409,13 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://alfaromeowindowsticker.com/?_rsc=jwamv",
+      "url": "https://alfaromeowindowsticker.com/?_rsc=z66p5",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://alfaromeowindowsticker.com/?_rsc=z66p5",
+      "url": "https://alfaromeowindowsticker.com/?_rsc=jwamv",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -373,7 +427,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://alfaromeowindowsticker.com/msrp?_rsc=1oryi",
+      "url": "https://alfaromeowindowsticker.com/warranty?_rsc=82efv",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -385,13 +439,31 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://alfaromeowindowsticker.com/vin-decoder?_rsc=n09r8",
+      "url": "https://alfaromeowindowsticker.com/vin-decoder?_rsc=1oryi",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
       "url": "https://alfaromeowindowsticker.com/vin-decoder?_rsc=82efv",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1006017227.1793198415&gtm=45He6ar0h2v9230719671za200zd9230719671xeaxf1&fmt=8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=1006017227.1793198415&dt=Alfa%20Romeo%20Paint%20Code%20by%20VIN%3A%20Find%20Original%2",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-RB1NDVX5Z8&gtm=45je6ar0h2v9193982398za20ozb9230719671zd9230719671xf1&_p=1793198414910&gcd=13l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
