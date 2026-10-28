@@ -3,7 +3,7 @@
   "label": "Porsche – Options Check",
   "url": "https://porschewindowsticker.com/options-check-by-vin",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-27T14:05:13.229Z",
+  "timestamp": "2026-10-28T14:59:42.133Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,20 +22,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 74,
-      "tls": 41,
-      "serverProcessing": 188,
-      "ttfb": 264,
-      "download": 1,
-      "domParsing": 15,
-      "domContentLoaded": 399,
-      "loadEvent": 508,
-      "transferSize": 9633,
-      "encodedBodySize": 9333,
-      "decodedBodySize": 38774,
+      "connection": 54,
+      "tls": 29,
+      "serverProcessing": 994,
+      "ttfb": 1052,
+      "download": 3,
+      "domParsing": 9,
+      "domContentLoaded": 1184,
+      "loadEvent": 1253,
+      "transferSize": 9667,
+      "encodedBodySize": 9367,
+      "decodedBodySize": 38711,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 994ms",
+      "TTFB exceeds 800ms threshold: 1052ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -96,27 +99,27 @@
       "link": {
         "count": 10,
         "totalSize": 143159,
-        "totalDuration": 897.7000000000407
+        "totalDuration": 734.199999999837
       },
       "script": {
         "count": 15,
         "totalSize": 205912,
-        "totalDuration": 1202
+        "totalDuration": 828.5000000001164
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 45.59999999997672
+        "totalDuration": 33.09999999997672
       },
       "img": {
         "count": 1,
         "totalSize": 1742,
-        "totalDuration": 101
+        "totalDuration": 84.40000000002328
       },
       "fetch": {
         "count": 18,
         "totalSize": 42446,
-        "totalDuration": 1866.5999999999476
+        "totalDuration": 1666.5999999999767
       }
     },
     "largeResources": [],
@@ -150,15 +153,15 @@
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 94
+        "duration": 82
       }
     ],
     "totalDomains": 1
   },
   "domAnalysis": {
-    "totalElements": 198,
+    "totalElements": 197,
     "maxDepth": 10,
-    "maxChildren": 34,
+    "maxChildren": 33,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -168,32 +171,32 @@
       {
         "url": ".../porschewindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
         "size": 16047,
-        "duration": 108
+        "duration": 75
       },
       {
         "url": ".../porschewindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
         "size": 25538,
-        "duration": 125
+        "duration": 73
       },
       {
         "url": ".../porschewindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
         "size": 16132,
-        "duration": 55
+        "duration": 79
       },
       {
         "url": ".../porschewindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 123
-      },
-      {
-        "url": ".../porschewindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-        "size": 15956,
-        "duration": 115
+        "duration": 81
       },
       {
         "url": ".../porschewindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
         "size": 15944,
-        "duration": 123
+        "duration": 81
+      },
+      {
+        "url": ".../porschewindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
+        "size": 15956,
+        "duration": 81
       }
     ],
     "fontFaces": [
@@ -343,7 +346,19 @@
       "resourceType": "document"
     },
     {
-      "url": "https://porschewindowsticker.com/contact-us?_rsc=g67qx",
+      "url": "https://porschewindowsticker.com/blog?_rsc=13rkf",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://porschewindowsticker.com/blog?_rsc=1x5h1",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://porschewindowsticker.com/blog?_rsc=wjd54",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -361,6 +376,24 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://porschewindowsticker.com/contact-us?_rsc=1x5h1",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://porschewindowsticker.com/contact-us?_rsc=1bvp5",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://porschewindowsticker.com/blog?_rsc=1v0a2",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://porschewindowsticker.com/contact-us?_rsc=y7pvc",
       "status": 0,
       "resourceType": "fetch",
@@ -368,6 +401,12 @@
     },
     {
       "url": "https://porschewindowsticker.com/about-us?_rsc=1bvp5",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://porschewindowsticker.com/about-us?_rsc=1x5h1",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
