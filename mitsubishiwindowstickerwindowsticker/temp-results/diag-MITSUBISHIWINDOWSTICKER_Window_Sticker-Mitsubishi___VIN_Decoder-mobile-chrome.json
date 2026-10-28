@@ -3,7 +3,7 @@
   "label": "Mitsubishi – VIN Decoder",
   "url": "https://mitsubishiwindowsticker.com/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-27T14:05:14.982Z",
+  "timestamp": "2026-10-28T14:58:30.962Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,21 +23,24 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 49,
-      "tls": 26,
-      "serverProcessing": 30,
-      "ttfb": 82,
-      "download": 5,
-      "domParsing": 49,
-      "domContentLoaded": 262,
-      "loadEvent": 262,
-      "transferSize": 45593,
-      "encodedBodySize": 45293,
+      "dns": 1,
+      "connection": 237,
+      "tls": 120,
+      "serverProcessing": 762,
+      "ttfb": 1001,
+      "download": 268,
+      "domParsing": 466,
+      "domContentLoaded": 1737,
+      "loadEvent": 1825,
+      "transferSize": 45701,
+      "encodedBodySize": 45401,
       "decodedBodySize": 320252,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 762ms",
+      "TTFB exceeds 800ms threshold: 1001ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -63,32 +66,32 @@
   ],
   "resourceAnalysis": {
     "totalCount": 63,
-    "totalSize": 506456,
+    "totalSize": 506454,
     "byType": {
       "link": {
         "count": 9,
         "totalSize": 201547,
-        "totalDuration": 543.3000000000175
+        "totalDuration": 3287.499999999942
       },
       "script": {
         "count": 14,
         "totalSize": 200491,
-        "totalDuration": 1136.7000000000116
+        "totalDuration": 4492.900000000023
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 45.89999999999418
+        "totalDuration": 53.90000000002328
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 65.29999999998836
+        "totalDuration": 147.70000000001164
       },
       "fetch": {
         "count": 38,
-        "totalSize": 104118,
-        "totalDuration": 4573.699999999953
+        "totalSize": 104116,
+        "totalDuration": 10429.199999999953
       }
     },
     "largeResources": [],
@@ -146,20 +149,20 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 506456,
+    "firstPartySize": 506454,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 2,
         "size": 0,
-        "duration": 119
+        "duration": 144
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 120
+        "duration": 39
       }
     ],
     "totalDomains": 2
@@ -177,22 +180,22 @@
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2",
         "size": 35244,
-        "duration": 64
-      },
-      {
-        "url": "...tsubishiwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
-        "size": 9766,
-        "duration": 35
+        "duration": 254
       },
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/8226f95c76ce3702-s.p.24ef737e.woff2",
         "size": 38248,
-        "duration": 38
+        "duration": 157
       },
       {
         "url": "...tsubishiwindowsticker.com/_next/static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2",
         "size": 9854,
-        "duration": 64
+        "duration": 397
+      },
+      {
+        "url": "...tsubishiwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+        "size": 9766,
+        "duration": 254
       }
     ],
     "fontFaces": [
@@ -312,43 +315,7 @@
   ],
   "failedRequests": [
     {
-      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/signup?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/login?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/msrp-lookup?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/vin-decoder?_rsc=lb0mp",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/?_rsc=lb0mp",
+      "url": "https://mitsubishiwindowsticker.com/recalls-by-vin?_rsc=lb0mp",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -360,31 +327,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=1upwa",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=155pw",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=1tx74",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/paint-code-by-vin?_rsc=xqvg2",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=xqvg2",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -396,19 +339,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://mitsubishiwindowsticker.com/recalls-by-vin?_rsc=1tx74",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://mitsubishiwindowsticker.com/specs-by-vin?_rsc=1y3a3",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://mitsubishiwindowsticker.com/recalls-by-vin?_rsc=xqvg2",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -420,13 +351,25 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin?_rsc=1tx74",
+      "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin?_rsc=1y3a3",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://mitsubishiwindowsticker.com/build-sheet-by-vin?_rsc=xqvg2",
+      "url": "https://mitsubishiwindowsticker.com/warranty-check-by-vin?_rsc=1y3a3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/msrp-lookup?_rsc=1y3a3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://mitsubishiwindowsticker.com/vin-decoder?_rsc=1y3a3",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
