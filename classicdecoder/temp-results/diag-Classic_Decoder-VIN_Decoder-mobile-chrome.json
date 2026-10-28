@@ -3,7 +3,7 @@
   "label": "VIN Decoder",
   "url": "https://classicdecoder.com/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-10-27T13:44:54.249Z",
+  "timestamp": "2026-10-28T14:41:41.794Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,23 +16,26 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 59,
-      "tls": 29,
-      "serverProcessing": 45,
-      "ttfb": 105,
-      "download": 2,
-      "domParsing": 93,
-      "domContentLoaded": 289,
-      "loadEvent": 703,
-      "transferSize": 67096,
-      "encodedBodySize": 66796,
-      "decodedBodySize": 323057,
+      "connection": 45,
+      "tls": 26,
+      "serverProcessing": 97,
+      "ttfb": 144,
+      "download": 6,
+      "domParsing": 111,
+      "domContentLoaded": 380,
+      "loadEvent": 1146,
+      "transferSize": 66538,
+      "encodedBodySize": 66238,
+      "decodedBodySize": 321876,
       "protocol": "h2"
     },
     "issues": []
@@ -50,6 +53,11 @@
     },
     {
       "type": "CSS",
+      "url": "/_next/static/css/c0052ec527bf5b7f.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
       "url": "https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined",
       "suggestion": "Consider async loading or inlining critical CSS"
     },
@@ -60,38 +68,48 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 72,
-    "totalSize": 981683,
+    "totalCount": 112,
+    "totalSize": 1208532,
     "byType": {
       "other": {
         "count": 1,
         "totalSize": 451,
-        "totalDuration": 31.199999999982538
+        "totalDuration": 42.79999999998836
       },
       "link": {
-        "count": 18,
-        "totalSize": 141437,
-        "totalDuration": 2362.399999999994
+        "count": 20,
+        "totalSize": 144370,
+        "totalDuration": 2363.8999999998487
       },
       "script": {
-        "count": 44,
-        "totalSize": 835142,
-        "totalDuration": 7019.899999999907
+        "count": 69,
+        "totalSize": 1058698,
+        "totalDuration": 7042.199999999953
       },
       "fetch": {
-        "count": 5,
+        "count": 9,
         "totalSize": 2903,
-        "totalDuration": 372.8999999999651
+        "totalDuration": 456
       },
       "xmlhttprequest": {
-        "count": 3,
-        "totalSize": 1408,
-        "totalDuration": 1501.399999999965
+        "count": 8,
+        "totalSize": 1768,
+        "totalDuration": 28465.90000000008
       },
       "img": {
-        "count": 1,
+        "count": 3,
         "totalSize": 342,
-        "totalDuration": 36.79999999998836
+        "totalDuration": 62.29999999993015
+      },
+      "beacon": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 88.29999999998836
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 154.79999999998836
       }
     },
     "largeResources": [
@@ -99,85 +117,150 @@
         "url": "https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js",
         "type": "script",
         "size": 312344,
-        "duration": 217
+        "duration": 187
+      },
+      {
+        "url": "https://classicdecoder.com/0qia/G3NfVSiqgCAVIuiA94TnDyQNJ6a8HIPmPFiooDS6U58PvAgNZf4",
+        "type": "script",
+        "size": 193636,
+        "duration": 281
       },
       {
         "url": "https://classicdecoder.com/0qia/",
         "type": "script",
-        "size": 177550,
-        "duration": 275
+        "size": 178299,
+        "duration": 378
       }
     ],
-    "issues": []
+    "issues": [
+      "High request count: 112 resources"
+    ]
   },
   "imageAudit": {
-    "totalImages": 5,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 6,
+    "issueCount": 1,
+    "images": [
+      {
+        "src": "https://bat.bing.com/action/0?ti=295009016&Ver=2&mid=fc95865b-56c6-4c2b-a5fc-7ff8da85c7c1&bo=1&sid=a",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "displayWidth": 0,
+        "displayHeight": 0,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": false,
+        "hasDimensions": true,
+        "issues": [
+          "Missing alt text"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 977189,
-    "thirdPartySize": 4494,
+    "firstPartySize": 1204056,
+    "thirdPartySize": 4476,
     "thirdPartyDomains": [
       {
         "domain": "googleads.g.doubleclick.net",
         "count": 1,
-        "size": 3432,
-        "duration": 109
+        "size": 3414,
+        "duration": 57
       },
       {
         "domain": "fonts.googleapis.com",
         "count": 1,
         "size": 720,
-        "duration": 85
+        "duration": 96
       },
       {
         "domain": "www.google.com",
-        "count": 3,
+        "count": 4,
         "size": 342,
-        "duration": 181
+        "duration": 148
       },
       {
         "domain": "datafa.st",
         "count": 1,
         "size": 0,
-        "duration": 167
+        "duration": 97
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 57
+        "duration": 44
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 1,
+        "count": 3,
         "size": 0,
-        "duration": 107
+        "duration": 470
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 63
+        "duration": 42
       },
       {
         "domain": "ipinfo.io",
         "count": 1,
         "size": 0,
-        "duration": 126
+        "duration": 86
+      },
+      {
+        "domain": "bat.bing.com",
+        "count": 6,
+        "size": 0,
+        "duration": 103
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 2,
+        "size": 0,
+        "duration": 180
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 120
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 25
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 33
+      },
+      {
+        "domain": "analytics.google.com",
+        "count": 2,
+        "size": 0,
+        "duration": 54
+      },
+      {
+        "domain": "stats.g.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 88
       }
     ],
-    "totalDomains": 8
+    "totalDomains": 19
   },
   "domAnalysis": {
-    "totalElements": 615,
+    "totalElements": 643,
     "maxDepth": 13,
-    "maxChildren": 65,
+    "maxChildren": 74,
     "widestElement": "HEAD",
     "deepestElement": "TH",
     "issues": [
-      "Wide node: HEAD has 65 children (recommended < 60)"
+      "Wide node: HEAD has 74 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -185,7 +268,7 @@
       {
         "url": "https://classicdecoder.com/_next/static/media/f04c3881ee3d9785-s.p.woff2",
         "size": 33556,
-        "duration": 39
+        "duration": 83
       }
     ],
     "fontFaces": [
@@ -250,12 +333,20 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [],
+    "preloads": [
+      {
+        "href": "/_next/static/css/c0052ec527bf5b7f.css",
+        "as": "style"
+      },
+      {
+        "href": "https://www.googletagmanager.com/gtag/js?id=G-NL16THYYVW",
+        "as": "script"
+      }
+    ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "8 third-party origins without preconnect hints",
-      "No preload hints found — consider preloading LCP image/font"
+      "19 third-party origins without preconnect hints"
     ]
   },
   "consoleErrors": [],
@@ -265,19 +356,37 @@
   ],
   "failedRequests": [
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=2136588063.1793108691&gtm=45892e6an1v9212952419za20czd9212952419xecxf4&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1230949686.1793198488&gtm=45892e6aq1h1v9212952419za20czd9212952419xecxf4&fmt=8",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=2136588063.1793108691&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-198",
+      "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&auid=1230949686.1793198488&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-198",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793108690841&cv=11&fst=1793108690841&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793198487740&cv=11&fst=1793198487740&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6aq1v9105433919za208zb9212952419zd9212952419xf1&_p=1793198487055&_gaz=1&gcd=13l3l3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=1&frm=0&apvc=0&ae=g&auid=1230949686.1793198488&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pr",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6aq1v9105433919z89105442166za200zb9212952419zd9212952419xf1&_p=1793198487055&gcd=1",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
