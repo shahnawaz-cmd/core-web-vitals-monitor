@@ -3,7 +3,7 @@
   "label": "Lincoln – VIN Decoder",
   "url": "https://lincolnwindowsticker.com/vin-decoder",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-28T14:55:41.050Z",
+  "timestamp": "2026-10-29T14:59:09.885Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -24,20 +24,23 @@
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 69,
-      "tls": 38,
-      "serverProcessing": 58,
-      "ttfb": 130,
-      "download": 7,
-      "domParsing": 70,
-      "domContentLoaded": 398,
-      "loadEvent": 426,
+      "connection": 491,
+      "tls": 446,
+      "serverProcessing": 451,
+      "ttfb": 945,
+      "download": 950,
+      "domParsing": 8046,
+      "domContentLoaded": 9943,
+      "loadEvent": 9943,
       "transferSize": 48762,
       "encodedBodySize": 48462,
       "decodedBodySize": 352984,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "TTFB exceeds 800ms threshold: 945ms",
+      "Slow document download: 950ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -68,27 +71,27 @@
       "link": {
         "count": 9,
         "totalSize": 170198,
-        "totalDuration": 773.7000000000116
+        "totalDuration": 37875.69999999995
       },
       "script": {
         "count": 14,
         "totalSize": 201968,
-        "totalDuration": 1333.0999999999476
+        "totalDuration": 886.6999999999825
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 131
+        "totalDuration": 56.70000000001164
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 99.40000000002328
+        "totalDuration": 31.20000000001164
       },
       "fetch": {
         "count": 38,
         "totalSize": 100521,
-        "totalDuration": 4889.999999999971
+        "totalDuration": 3326.399999999965
       }
     },
     "largeResources": [],
@@ -152,13 +155,13 @@
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 2,
         "size": 0,
-        "duration": 269
+        "duration": 1074
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 132
+        "duration": 38
       }
     ],
     "totalDomains": 2
@@ -176,22 +179,22 @@
       {
         "url": ".../lincolnwindowsticker.com/_next/static/media/75affa71d1e2f6a7-s.p.51cde8ff.woff2",
         "size": 35244,
-        "duration": 62
+        "duration": 8919
       },
       {
         "url": ".../lincolnwindowsticker.com/_next/static/media/8226f95c76ce3702-s.p.24ef737e.woff2",
         "size": 38248,
-        "duration": 53
-      },
-      {
-        "url": ".../lincolnwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
-        "size": 9766,
-        "duration": 61
+        "duration": 7967
       },
       {
         "url": ".../lincolnwindowsticker.com/_next/static/media/8d05cfa5faa8406c-s.p.4adea45d.woff2",
         "size": 9854,
-        "duration": 79
+        "duration": 1444
+      },
+      {
+        "url": ".../lincolnwindowsticker.com/_next/static/media/dc0d9adbac686440-s.p.3b382e45.woff2",
+        "size": 9766,
+        "duration": 8415
       }
     ],
     "fontFaces": [
@@ -311,6 +314,12 @@
   ],
   "failedRequests": [
     {
+      "url": "https://lincolnwindowsticker.com/login?_rsc=lb0mp",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://lincolnwindowsticker.com/signup?_rsc=lb0mp",
       "status": 0,
       "resourceType": "fetch",
@@ -318,6 +327,24 @@
     },
     {
       "url": "https://lincolnwindowsticker.com/options?_rsc=lb0mp",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://lincolnwindowsticker.com/recalls?_rsc=lb0mp",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://lincolnwindowsticker.com/build-sheet?_rsc=lb0mp",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://lincolnwindowsticker.com/?_rsc=1tx74",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -335,13 +362,25 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://lincolnwindowsticker.com/signup?_rsc=jlxpl",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://lincolnwindowsticker.com/?_rsc=yb46w",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://lincolnwindowsticker.com/signup?_rsc=jlxpl",
+      "url": "https://lincolnwindowsticker.com/paint-codes?_rsc=xqvg2",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://lincolnwindowsticker.com/paint-codes?_rsc=1tx74",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -353,7 +392,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://lincolnwindowsticker.com/specs?_rsc=1tx74",
+      "url": "https://lincolnwindowsticker.com/login?_rsc=jlxpl",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -366,6 +405,12 @@
     },
     {
       "url": "https://lincolnwindowsticker.com/build-sheet?_rsc=1y3a3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://lincolnwindowsticker.com/warranty?_rsc=1tx74",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -384,12 +429,6 @@
     },
     {
       "url": "https://lincolnwindowsticker.com/vin-decoder?_rsc=xqvg2",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://lincolnwindowsticker.com/vin-decoder?_rsc=1y3a3",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
