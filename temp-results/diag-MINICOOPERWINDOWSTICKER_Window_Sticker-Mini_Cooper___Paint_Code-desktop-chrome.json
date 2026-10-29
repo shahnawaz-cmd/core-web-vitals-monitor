@@ -3,7 +3,7 @@
   "label": "Mini‑Cooper – Paint Code",
   "url": "https://minicooperwindowsticker.com/paint-code-by-vin-lookup",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-28T14:56:18.429Z",
+  "timestamp": "2026-10-29T15:03:21.485Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -23,21 +23,24 @@
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 220,
-      "tls": 115,
-      "serverProcessing": 254,
-      "ttfb": 478,
-      "download": 3,
-      "domParsing": 10,
-      "domContentLoaded": 540,
-      "loadEvent": 1118,
-      "transferSize": 8745,
-      "encodedBodySize": 8445,
-      "decodedBodySize": 35552,
+      "dns": 1,
+      "connection": 123,
+      "tls": 65,
+      "serverProcessing": 1601,
+      "ttfb": 1726,
+      "download": 329,
+      "domParsing": 7,
+      "domContentLoaded": 2183,
+      "loadEvent": 2184,
+      "transferSize": 8783,
+      "encodedBodySize": 8483,
+      "decodedBodySize": 35532,
       "protocol": "h2"
     },
-    "issues": []
+    "issues": [
+      "Slow server response: 1601ms",
+      "TTFB exceeds 800ms threshold: 1726ms"
+    ]
   },
   "renderBlocking": [
     {
@@ -93,27 +96,27 @@
   ],
   "resourceAnalysis": {
     "totalCount": 70,
-    "totalSize": 427694,
+    "totalSize": 429304,
     "byType": {
       "link": {
         "count": 8,
         "totalSize": 101925,
-        "totalDuration": 1555.6000000000058
+        "totalDuration": 769.7000000000116
       },
       "script": {
         "count": 15,
         "totalSize": 205029,
-        "totalDuration": 2737.5999999999476
+        "totalDuration": 1794.399999999965
+      },
+      "fetch": {
+        "count": 46,
+        "totalSize": 122050,
+        "totalDuration": 7723.799999999959
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 125.80000000001746
-      },
-      "fetch": {
-        "count": 46,
-        "totalSize": 120440,
-        "totalDuration": 11821.900000000023
+        "totalDuration": 65.79999999998836
       }
     },
     "largeResources": [],
@@ -156,20 +159,20 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 427694,
+    "firstPartySize": 429304,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
-      {
-        "domain": "static.cloudflareinsights.com",
-        "count": 1,
-        "size": 0,
-        "duration": 50
-      },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 49
+        "duration": 44
+      },
+      {
+        "domain": "static.cloudflareinsights.com",
+        "count": 1,
+        "size": 0,
+        "duration": 117
       }
     ],
     "totalDomains": 2
@@ -177,7 +180,7 @@
   "domAnalysis": {
     "totalElements": 188,
     "maxDepth": 10,
-    "maxChildren": 36,
+    "maxChildren": 35,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -187,22 +190,22 @@
       {
         "url": "...nicooperwindowsticker.com/_next/static/media/303804218d80822e-s.p.9b40bd6c.woff2",
         "size": 15144,
-        "duration": 315
-      },
-      {
-        "url": "...nicooperwindowsticker.com/_next/static/media/612838607db3d51d-s.p.7fc7e6d5.woff2",
-        "size": 14981,
-        "duration": 168
+        "duration": 69
       },
       {
         "url": "...nicooperwindowsticker.com/_next/static/media/d9b5d46d9a89ffe6-s.p.0855aa53.woff2",
         "size": 15192,
-        "duration": 288
+        "duration": 133
+      },
+      {
+        "url": "...nicooperwindowsticker.com/_next/static/media/612838607db3d51d-s.p.7fc7e6d5.woff2",
+        "size": 14981,
+        "duration": 145
       },
       {
         "url": "...nicooperwindowsticker.com/_next/static/media/fa0520225c6f3d07-s.p.d28ba1c8.woff2",
         "size": 26936,
-        "duration": 321
+        "duration": 156
       }
     ],
     "fontFaces": [
@@ -327,13 +330,7 @@
       "resourceType": "document"
     },
     {
-      "url": "https://minicooperwindowsticker.com/blog?_rsc=t4hu4",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://minicooperwindowsticker.com/vin-decoder?_rsc=t4hu4",
+      "url": "https://minicooperwindowsticker.com/about-us?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -345,19 +342,13 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://minicooperwindowsticker.com/about-us?_rsc=t4hu4",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://minicooperwindowsticker.com/contact-us?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://minicooperwindowsticker.com/login?_rsc=t4hu4",
+      "url": "https://minicooperwindowsticker.com/fuel-economy-by-vin?_rsc=t4hu4",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -369,7 +360,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://minicooperwindowsticker.com/vin-decoder?_rsc=m29he",
+      "url": "https://minicooperwindowsticker.com/warranty-check-by-vin?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://minicooperwindowsticker.com/build-sheet?_rsc=t4hu4",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://minicooperwindowsticker.com/vin-decoder?_rsc=1x9bk",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -387,7 +390,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://minicooperwindowsticker.com/vin-decoder?_rsc=m29he",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://minicooperwindowsticker.com/vin-decoder?_rsc=kbg1s",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://minicooperwindowsticker.com/?_rsc=1x9bk",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -399,13 +414,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://minicooperwindowsticker.com/?_rsc=bedo0",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://minicooperwindowsticker.com/pricing?_rsc=1p208",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://minicooperwindowsticker.com/blog?_rsc=matx5",
+      "url": "https://minicooperwindowsticker.com/blog?_rsc=1x9bk",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -418,24 +439,6 @@
     },
     {
       "url": "https://minicooperwindowsticker.com/contact-us?_rsc=kbg1s",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://minicooperwindowsticker.com/contact-us?_rsc=1p208",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://minicooperwindowsticker.com/about-us?_rsc=kbg1s",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://minicooperwindowsticker.com/about-us?_rsc=1p208",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
