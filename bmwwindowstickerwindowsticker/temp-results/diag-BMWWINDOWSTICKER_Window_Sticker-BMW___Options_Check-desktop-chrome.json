@@ -3,7 +3,7 @@
   "label": "BMW – Options Check",
   "url": "https://bmwwindowsticker.com/options-check-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-10-30T14:41:20.221Z",
+  "timestamp": "2026-10-31T14:00:46.626Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -22,24 +22,22 @@
   },
   "ttfbAnalysis": {
     "breakdown": {
-      "redirect": 214,
+      "redirect": 65,
       "dns": 0,
       "connection": 0,
       "tls": 0,
-      "serverProcessing": 29,
-      "ttfb": 245,
-      "download": 9,
-      "domParsing": 37,
-      "domContentLoaded": 390,
-      "loadEvent": 390,
-      "transferSize": 57745,
-      "encodedBodySize": 57445,
-      "decodedBodySize": 341560,
+      "serverProcessing": 17,
+      "ttfb": 83,
+      "download": 3,
+      "domParsing": 119,
+      "domContentLoaded": 208,
+      "loadEvent": 273,
+      "transferSize": 57653,
+      "encodedBodySize": 57353,
+      "decodedBodySize": 341286,
       "protocol": "h2"
     },
-    "issues": [
-      "Redirect chain taking 214ms"
-    ]
+    "issues": []
   },
   "renderBlocking": [
     {
@@ -66,36 +64,46 @@
       "type": "JS",
       "url": "/_next/static/chunks/1a7fb0b60034c6b2.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/c3f0b4b8c7b04b5e.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/03386ab9ffc79529.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 42,
-    "totalSize": 323845,
+    "totalCount": 53,
+    "totalSize": 328956,
     "byType": {
       "link": {
         "count": 8,
         "totalSize": 69698,
-        "totalDuration": 344.5999999999476
+        "totalDuration": 381.9000000000233
       },
       "script": {
-        "count": 13,
-        "totalSize": 175570,
-        "totalDuration": 821.100000000064
+        "count": 19,
+        "totalSize": 180681,
+        "totalDuration": 927
       },
       "img": {
-        "count": 1,
+        "count": 2,
         "totalSize": 0,
-        "totalDuration": 28.39999999999418
+        "totalDuration": 150.39999999999418
       },
       "xmlhttprequest": {
-        "count": 1,
+        "count": 2,
         "totalSize": 300,
-        "totalDuration": 28.29999999998836
+        "totalDuration": 131.70000000004075
       },
       "fetch": {
-        "count": 19,
+        "count": 22,
         "totalSize": 78277,
-        "totalDuration": 3304.3000000000175
+        "totalDuration": 7136.899999999936
       }
     },
     "largeResources": [],
@@ -152,28 +160,76 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 323845,
+    "firstPartySize": 328956,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 3,
         "size": 0,
-        "duration": 131
+        "duration": 86
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 98
+        "duration": 28
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 2,
+        "size": 0,
+        "duration": 151
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 23
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 10
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 138
+      },
+      {
+        "domain": "www.google.com",
+        "count": 1,
+        "size": 0,
+        "duration": 26
+      },
+      {
+        "domain": "ad.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 27
+      },
+      {
+        "domain": "r.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 118
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 1,
+        "size": 0,
+        "duration": 24
       }
     ],
-    "totalDomains": 2
+    "totalDomains": 10
   },
   "domAnalysis": {
-    "totalElements": 488,
+    "totalElements": 496,
     "maxDepth": 18,
-    "maxChildren": 47,
+    "maxChildren": 53,
     "widestElement": "HEAD",
     "deepestElement": "path",
     "issues": []
@@ -183,12 +239,12 @@
       {
         "url": "...ps://bmwwindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
         "size": 23406,
-        "duration": 32
+        "duration": 51
       },
       {
         "url": "...ps://bmwwindowsticker.com/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 36
+        "duration": 47
       }
     ],
     "fontFaces": [
@@ -309,13 +365,21 @@
     ],
     "preconnects": [],
     "dnsPrefetch": [],
-    "issues": []
+    "issues": [
+      "10 third-party origins without preconnect hints"
+    ]
   },
   "consoleErrors": [],
   "consoleWarnings": [
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
+    {
+      "url": "https://bmwwindowsticker.com/build-sheet-by-vin?_rsc=16c23",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
     {
       "url": "https://bmwwindowsticker.com/?_rsc=16c23",
       "status": 0,
@@ -335,49 +399,7 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://bmwwindowsticker.com/?_rsc=vnfbx",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
       "url": "https://bmwwindowsticker.com/?_rsc=1nax6",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/warranty-by-vin?_rsc=1bapl",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/warranty-by-vin?_rsc=vnfbx",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/warranty-by-vin?_rsc=1a25k",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/?_rsc=9r0g2",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/build-sheet-by-vin?_rsc=vnfbx",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://bmwwindowsticker.com/build-sheet-by-vin?_rsc=1a25k",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -389,13 +411,19 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://bmwwindowsticker.com/vin-decoder?_rsc=1a25k",
+      "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&ae=g&auid=749394729.1793455245&dt=Check%20BMW%20Options%20by%20VIN%20-%20Find%20Packages%20%26%",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://bmwwindowsticker.com/vin-decoder?_rsc=1bapl",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=749394729.1793455245&gtm=45He6as1v9230719683za200zd9230719683xeaxf1&fmt=8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PDTH9BF7H9&gtm=45je6as1v9189106543za20ozb9230719683zd9230719683xf1&_p=1793455245131&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
