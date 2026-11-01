@@ -4,15 +4,15 @@
     "label": "Hyundai – Build Sheet",
     "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:10:15.577Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-01T14:47:00.120Z",
+    "performanceScore": 96,
     "lcp": {
-      "value": 1099,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 2708.4126400000005,
+      "displayValue": "2.7 s",
+      "score": 0.85
     },
     "fcp": {
-      "value": 1099,
+      "value": 1136.31645,
       "displayValue": "1.1 s",
       "score": 0.99
     },
@@ -22,44 +22,50 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 23.5,
+      "displayValue": "20 ms",
       "score": 1
     },
     "si": {
-      "value": 2616.0336737259745,
-      "displayValue": "2.6 s",
-      "score": 0.97
+      "value": 1963.2647883902355,
+      "displayValue": "2.0 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
+      "value": 57,
+      "displayValue": "Root document took 60 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1099,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 2788.9089690000005,
+      "displayValue": "2.8 s",
+      "score": 0.97
     },
     "opportunities": [
       {
         "id": "redirects",
         "title": "Avoid multiple page redirects",
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 751,
+        "savingsMs": 752,
         "savingsBytes": 0
       }
     ],
     "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 70 ms",
+        "score": 0
+      },
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       },
       {
@@ -69,16 +75,10 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 100 ms",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
-        "score": 0.5
       }
     ]
   },
@@ -87,40 +87,40 @@
     "label": "Hyundai – Build Sheet",
     "url": "https://hyundaiwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:10:33.671Z",
+    "timestamp": "2026-11-01T14:47:16.228Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 682.5,
+      "value": 650.1402499999999,
       "displayValue": "0.7 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 293,
+      "value": 292.6075,
       "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.001142375095083251,
+      "displayValue": "0.001",
       "score": 1
     },
     "tbt": {
-      "value": 40.5,
-      "displayValue": "40 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 419.0069802683194,
+      "value": 369.35047710029284,
       "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
-      "value": 8,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 692.35,
+      "value": 653.408475,
       "displayValue": "0.7 s",
       "score": 1
     },
@@ -131,23 +131,20 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 201,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 21951
       }
     ],
     "diagnostics": [
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
@@ -157,9 +154,19 @@
         "score": 0
       },
       {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 34 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       }
     ]
@@ -169,15 +176,15 @@
     "label": "Hyundai – VIN Decoder",
     "url": "https://hyundaiwindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:10:49.531Z",
+    "timestamp": "2026-11-01T14:47:28.284Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 1118,
+      "value": 1109,
       "displayValue": "1.1 s",
       "score": 1
     },
     "fcp": {
-      "value": 1118,
+      "value": 1109,
       "displayValue": "1.1 s",
       "score": 0.99
     },
@@ -187,24 +194,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 4,
-      "displayValue": "0 ms",
+      "value": 5.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 2566.451812788779,
-      "displayValue": "2.6 s",
-      "score": 0.97
+      "value": 1109,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "ttfb": {
-      "value": 7,
+      "value": 13,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2789,
-      "displayValue": "2.8 s",
-      "score": 0.97
+      "value": 2642,
+      "displayValue": "2.6 s",
+      "score": 0.98
     },
     "opportunities": [],
     "diagnostics": [
@@ -215,6 +222,12 @@
         "score": 0
       },
       {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 14 KiB",
+        "score": 0.5
+      },
+      {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
@@ -223,12 +236,6 @@
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 14 KiB",
         "score": 0.5
       },
       {
@@ -244,15 +251,15 @@
     "label": "Hyundai – VIN Decoder",
     "url": "https://hyundaiwindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:11:05.939Z",
+    "timestamp": "2026-11-01T14:47:40.104Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 584,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 661,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 341,
+      "value": 288,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -262,13 +269,13 @@
       "score": 1
     },
     "tbt": {
-      "value": 6.5,
-      "displayValue": "10 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 370.72544032413674,
-      "displayValue": "0.4 s",
+      "value": 288,
+      "displayValue": "0.3 s",
       "score": 1
     },
     "ttfb": {
@@ -277,17 +284,20 @@
       "score": 1
     },
     "interactive": {
-      "value": 652,
+      "value": 663,
       "displayValue": "0.7 s",
       "score": 1
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 22291
+      }
+    ],
+    "diagnostics": [
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
@@ -295,8 +305,9 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
@@ -306,9 +317,13 @@
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
@@ -318,16 +333,79 @@
     "label": "Hyundai – Paint Code",
     "url": "https://hyundaiwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:11:17.041Z",
+    "timestamp": "2026-11-01T14:47:51.053Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 915,
+      "value": 909,
       "displayValue": "0.9 s",
       "score": 1
     },
     "fcp": {
-      "value": 915,
+      "value": 909,
       "displayValue": "0.9 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 0.5,
+      "displayValue": "0 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 2047.1383079509733,
+      "displayValue": "2.0 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2932,
+      "displayValue": "2.9 s",
+      "score": 0.96
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
+    "label": "Hyundai – Paint Code",
+    "url": "https://hyundaiwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:48:03.470Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 246,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 246,
+      "displayValue": "0.2 s",
       "score": 1
     },
     "cls": {
@@ -341,227 +419,95 @@
       "score": 1
     },
     "si": {
-      "value": 1158.8809099974624,
-      "displayValue": "1.2 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 915,
-      "displayValue": "0.9 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Paint Code",
-    "url": "https://hyundaiwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:11:34.912Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 257,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 257,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 41,
-      "displayValue": "40 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 796.810324807604,
-      "displayValue": "0.8 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 7,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 624,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Options Check",
-    "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-10-31T14:11:46.078Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 910,
-      "displayValue": "0.9 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 910,
-      "displayValue": "0.9 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 2051.0798138861655,
-      "displayValue": "2.1 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 5,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 910,
-      "displayValue": "0.9 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
-    "label": "Hyundai – Options Check",
-    "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:12:02.263Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 251,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 251,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 19,
-      "displayValue": "20 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 784.2839707779883,
-      "displayValue": "0.8 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 701.6500000000001,
+      "value": 694.1588105021716,
       "displayValue": "0.7 s",
       "score": 1
     },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 246,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
+    "label": "Hyundai – Options Check",
+    "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-11-01T14:48:15.472Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 909,
+      "displayValue": "0.9 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 909,
+      "displayValue": "0.9 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 5,
+      "displayValue": "10 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 2011.0934700244666,
+      "displayValue": "2.0 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 11,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2169,
+      "displayValue": "2.2 s",
+      "score": 0.99
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
@@ -573,6 +519,75 @@
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HYUNDAIWINDOWSTICKER Window Sticker",
+    "label": "Hyundai – Options Check",
+    "url": "https://hyundaiwindowsticker.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:48:28.954Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 248,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 248,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": null,
+      "displayValue": "0 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 677.1651279940004,
+      "displayValue": "0.7 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 248,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       }
     ]
