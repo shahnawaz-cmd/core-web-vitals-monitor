@@ -4,17 +4,17 @@
     "label": "Honda – Build Sheet",
     "url": "https://hondawindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:09:57.682Z",
-    "performanceScore": 95,
+    "timestamp": "2026-11-01T14:47:11.913Z",
+    "performanceScore": 97,
     "lcp": {
-      "value": 1992,
-      "displayValue": "2.0 s",
-      "score": 0.97
+      "value": 1542,
+      "displayValue": "1.5 s",
+      "score": 1
     },
     "fcp": {
-      "value": 1992,
-      "displayValue": "2.0 s",
-      "score": 0.84
+      "value": 1542,
+      "displayValue": "1.5 s",
+      "score": 0.95
     },
     "cls": {
       "value": null,
@@ -22,38 +22,50 @@
       "score": 1
     },
     "tbt": {
-      "value": 12,
-      "displayValue": "10 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 4673.811242982019,
-      "displayValue": "4.7 s",
-      "score": 0.69
+      "value": 4183.341564960228,
+      "displayValue": "4.2 s",
+      "score": 0.78
     },
     "ttfb": {
-      "value": 6,
+      "value": 8,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2893.6500000000005,
-      "displayValue": "2.9 s",
-      "score": 0.96
+      "value": 1542,
+      "displayValue": "1.5 s",
+      "score": 1
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 100,
-        "savingsBytes": 52952
+        "savingsMs": 150,
+        "savingsBytes": 52870
       }
     ],
     "diagnostics": [
       {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
         "score": 0.5
       },
       {
@@ -65,19 +77,8 @@
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
+        "displayValue": "Est savings of 160 ms",
+        "score": 0
       }
     ]
   },
@@ -86,15 +87,15 @@
     "label": "Honda – Build Sheet",
     "url": "https://hondawindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:10:15.823Z",
+    "timestamp": "2026-11-01T14:47:28.548Z",
     "performanceScore": 97,
     "lcp": {
-      "value": 811.5319647859342,
+      "value": 801.5074530773259,
       "displayValue": "0.8 s",
       "score": 0.98
     },
     "fcp": {
-      "value": 322.00913279598115,
+      "value": 334.5020702992572,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -104,22 +105,22 @@
       "score": 0.91
     },
     "tbt": {
-      "value": 5.5,
-      "displayValue": "10 ms",
+      "value": 40,
+      "displayValue": "40 ms",
       "score": 1
     },
     "si": {
-      "value": 512.5271509488264,
-      "displayValue": "0.5 s",
+      "value": 733.8664374622878,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "ttfb": {
-      "value": 5,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 822.4826040816529,
+      "value": 818.0070183144819,
       "displayValue": "0.8 s",
       "score": 1
     },
@@ -133,11 +134,6 @@
       }
     ],
     "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
@@ -150,9 +146,8 @@
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
@@ -160,6 +155,12 @@
         "title": "Improve image delivery",
         "displayValue": "Est savings of 228 KiB",
         "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
       }
     ]
   },
@@ -168,284 +169,17 @@
     "label": "Honda – VIN Decoder",
     "url": "https://hondawindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:10:28.839Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-01T14:47:49.103Z",
+    "performanceScore": 99,
     "lcp": {
-      "value": 1081,
+      "value": 1148,
       "displayValue": "1.1 s",
       "score": 1
     },
     "fcp": {
-      "value": 1081,
+      "value": 1148,
       "displayValue": "1.1 s",
       "score": 0.99
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 1,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 2791.330428517793,
-      "displayValue": "2.8 s",
-      "score": 0.96
-    },
-    "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2918,
-      "displayValue": "2.9 s",
-      "score": 0.96
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 15 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 140 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – VIN Decoder",
-    "url": "https://hondawindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:10:41.573Z",
-    "performanceScore": 98,
-    "lcp": {
-      "value": 669,
-      "displayValue": "0.7 s",
-      "score": 0.99
-    },
-    "fcp": {
-      "value": 304,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "cls": {
-      "value": 0.0787041008116221,
-      "displayValue": "0.079",
-      "score": 0.94
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 413.27922777207664,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 670.2,
-      "displayValue": "0.7 s",
-      "score": 1
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 20,
-        "savingsBytes": 53184
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Paint Code",
-    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-10-31T14:10:53.365Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 757,
-      "displayValue": "0.8 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 757,
-      "displayValue": "0.8 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 12,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 1883.4368315114973,
-      "displayValue": "1.9 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 10,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2175,
-      "displayValue": "2.2 s",
-      "score": 0.99
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Paint Code",
-    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:11:08.868Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 209,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 209,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 665.1824475220042,
-      "displayValue": "0.7 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 209,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "HONDAWINDOWSTICKER Window Sticker",
-    "label": "Honda – Options Check",
-    "url": "https://hondawindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-10-31T14:11:21.517Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 759,
-      "displayValue": "0.8 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 759,
-      "displayValue": "0.8 s",
-      "score": 1
     },
     "cls": {
       "value": null,
@@ -458,8 +192,217 @@
       "score": 1
     },
     "si": {
-      "value": 1967.2923518562322,
-      "displayValue": "2.0 s",
+      "value": 2863.8635380635205,
+      "displayValue": "2.9 s",
+      "score": 0.95
+    },
+    "ttfb": {
+      "value": 12,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2827,
+      "displayValue": "2.8 s",
+      "score": 0.97
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 50 ms",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 15 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – VIN Decoder",
+    "url": "https://hondawindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:48:08.371Z",
+    "performanceScore": 98,
+    "lcp": {
+      "value": 720,
+      "displayValue": "0.7 s",
+      "score": 0.99
+    },
+    "fcp": {
+      "value": 346,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": 0.0787041008116221,
+      "displayValue": "0.079",
+      "score": 0.94
+    },
+    "tbt": {
+      "value": 70,
+      "displayValue": "70 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 800.2851297543177,
+      "displayValue": "0.8 s",
+      "score": 0.99
+    },
+    "ttfb": {
+      "value": 9,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 786.4215508343526,
+      "displayValue": "0.8 s",
+      "score": 1
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 53093
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – Paint Code",
+    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "mobile",
+    "timestamp": "2026-11-01T14:48:25.058Z",
+    "performanceScore": 99,
+    "lcp": {
+      "value": 761,
+      "displayValue": "0.8 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 761,
+      "displayValue": "0.8 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 80,
+      "displayValue": "80 ms",
+      "score": 0.99
+    },
+    "si": {
+      "value": 2807.063943850517,
+      "displayValue": "2.8 s",
+      "score": 0.96
+    },
+    "ttfb": {
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2233,
+      "displayValue": "2.2 s",
+      "score": 0.99
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – Paint Code",
+    "url": "https://hondawindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:48:42.919Z",
+    "performanceScore": 99,
+    "lcp": {
+      "value": 211,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 211,
+      "displayValue": "0.2 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 93,
+      "displayValue": "90 ms",
+      "score": 0.98
+    },
+    "si": {
+      "value": 830.0208362629413,
+      "displayValue": "0.8 s",
       "score": 0.99
     },
     "ttfb": {
@@ -468,7 +411,65 @@
       "score": 1
     },
     "interactive": {
-      "value": 2884.5,
+      "value": 714,
+      "displayValue": "0.7 s",
+      "score": 1
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "HONDAWINDOWSTICKER Window Sticker",
+    "label": "Honda – Options Check",
+    "url": "https://hondawindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-11-01T14:48:55.248Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 764,
+      "displayValue": "0.8 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 764,
+      "displayValue": "0.8 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 40,
+      "displayValue": "40 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 1600.2865386562707,
+      "displayValue": "1.6 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2909.75,
       "displayValue": "2.9 s",
       "score": 0.96
     },
@@ -493,15 +494,15 @@
     "label": "Honda – Options Check",
     "url": "https://hondawindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:11:36.455Z",
+    "timestamp": "2026-11-01T14:49:13.103Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 210,
+      "value": 209,
       "displayValue": "0.2 s",
       "score": 1
     },
     "fcp": {
-      "value": 210,
+      "value": 209,
       "displayValue": "0.2 s",
       "score": 1
     },
@@ -511,37 +512,37 @@
       "score": 1
     },
     "tbt": {
-      "value": 2,
-      "displayValue": "0 ms",
+      "value": 36.5,
+      "displayValue": "40 ms",
       "score": 1
     },
     "si": {
-      "value": 612.6697834016334,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 778.2756950014532,
+      "displayValue": "0.8 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 3,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 530,
-      "displayValue": "0.5 s",
+      "value": 644.8,
+      "displayValue": "0.6 s",
       "score": 1
     },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
         "score": 0.5
       }
     ]
