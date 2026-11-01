@@ -4,15 +4,15 @@
     "label": "Homepage",
     "url": "https://classicdecoder.com/",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:01:28.917Z",
-    "performanceScore": 64,
+    "timestamp": "2026-11-01T14:38:20.290Z",
+    "performanceScore": 46,
     "lcp": {
-      "value": 9076,
-      "displayValue": "9.1 s",
+      "value": 9277.153515035605,
+      "displayValue": "9.3 s",
       "score": 0.01
     },
     "fcp": {
-      "value": 1357,
+      "value": 1351,
       "displayValue": "1.4 s",
       "score": 0.98
     },
@@ -22,64 +22,77 @@
       "score": 1
     },
     "tbt": {
-      "value": 297,
-      "displayValue": "300 ms",
-      "score": 0.79
+      "value": 1353.9999999999998,
+      "displayValue": "1,350 ms",
+      "score": 0.17
     },
     "si": {
-      "value": 5483.876988207347,
-      "displayValue": "5.5 s",
-      "score": 0.55
+      "value": 5406.57681412903,
+      "displayValue": "5.4 s",
+      "score": 0.56
     },
     "ttfb": {
-      "value": 13,
-      "displayValue": "Root document took 10 ms",
+      "value": 23,
+      "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 13585.000000000004,
-      "displayValue": "13.6 s",
-      "score": 0.11
+      "value": 9279.538163532045,
+      "displayValue": "9.3 s",
+      "score": 0.31
     },
     "opportunities": [
       {
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 371056
+        "savingsMs": 450,
+        "savingsBytes": 372382
+      },
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 150,
+        "savingsBytes": 28250
       }
     ],
     "diagnostics": [
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
+        "id": "bootup-time",
+        "title": "Reduce JavaScript execution time",
         "displayValue": "2.1 s",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
+        "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 20 KiB",
-        "score": 0.5
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "3.3 s",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 660 ms",
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 28 KiB",
         "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 300 ms",
-        "score": 0
       }
     ]
   },
@@ -88,16 +101,16 @@
     "label": "Homepage",
     "url": "https://classicdecoder.com/",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:01:57.981Z",
-    "performanceScore": 70,
+    "timestamp": "2026-11-01T14:38:41.300Z",
+    "performanceScore": 77,
     "lcp": {
       "value": 1001,
       "displayValue": "1.0 s",
       "score": 0.94
     },
     "fcp": {
-      "value": 364,
-      "displayValue": "0.4 s",
+      "value": 345,
+      "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
@@ -106,33 +119,27 @@
       "score": 1
     },
     "tbt": {
-      "value": 943.5,
-      "displayValue": "940 ms",
-      "score": 0.06
+      "value": 509,
+      "displayValue": "510 ms",
+      "score": 0.28
     },
     "si": {
-      "value": 1034.4187483252372,
-      "displayValue": "1.0 s",
-      "score": 0.96
+      "value": 829.3532378500996,
+      "displayValue": "0.8 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 24,
+      "value": 15,
       "displayValue": "Root document took 20 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2323.85,
-      "displayValue": "2.3 s",
-      "score": 0.92
+      "value": 2000.6000000000004,
+      "displayValue": "2.0 s",
+      "score": 0.96
     },
     "opportunities": [],
     "diagnostics": [
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 60 KiB",
-        "score": 0
-      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -140,28 +147,22 @@
         "score": 0
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 190 ms",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.8 s",
-        "score": 0
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "1.6 s",
-        "score": 0
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 60 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 100 ms",
+        "score": 0
       }
     ]
   },
@@ -170,8 +171,8 @@
     "label": "History Report",
     "url": "https://classicdecoder.com/history-report",
     "strategy": "mobile",
-    "timestamp": "2026-10-31T14:02:24.288Z",
-    "performanceScore": 79,
+    "timestamp": "2026-11-01T14:39:00.146Z",
+    "performanceScore": 86,
     "lcp": {
       "value": 1201,
       "displayValue": "1.2 s",
@@ -188,24 +189,288 @@
       "score": 1
     },
     "tbt": {
-      "value": 850,
-      "displayValue": "850 ms",
-      "score": 0.34
+      "value": 560.5,
+      "displayValue": "560 ms",
+      "score": 0.53
     },
     "si": {
-      "value": 3148.8089721454126,
-      "displayValue": "3.1 s",
-      "score": 0.92
+      "value": 2313.6251469495637,
+      "displayValue": "2.3 s",
+      "score": 0.99
     },
     "ttfb": {
-      "value": 10,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 12810.357435199792,
-      "displayValue": "12.8 s",
-      "score": 0.13
+      "value": 8054.35,
+      "displayValue": "8.1 s",
+      "score": 0.42
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+        "savingsMs": 90,
+        "savingsBytes": 28592
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 540 ms",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "History Report",
+    "url": "https://classicdecoder.com/history-report",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:39:14.846Z",
+    "performanceScore": 96,
+    "lcp": {
+      "value": 326,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 326,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 167,
+      "displayValue": "170 ms",
+      "score": 0.86
+    },
+    "si": {
+      "value": 326,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 11,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 1665,
+      "displayValue": "1.7 s",
+      "score": 0.98
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 130 ms",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "VIN Decoder",
+    "url": "https://classicdecoder.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-11-01T14:39:32.720Z",
+    "performanceScore": 91,
+    "lcp": {
+      "value": 1202,
+      "displayValue": "1.2 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 1202,
+      "displayValue": "1.2 s",
+      "score": 0.99
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 378,
+      "displayValue": "380 ms",
+      "score": 0.7
+    },
+    "si": {
+      "value": 1202,
+      "displayValue": "1.2 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 15,
+      "displayValue": "Root document took 20 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 7819.5,
+      "displayValue": "7.8 s",
+      "score": 0.44
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 550 ms",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "VIN Decoder",
+    "url": "https://classicdecoder.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-11-01T14:39:52.935Z",
+    "performanceScore": 78,
+    "lcp": {
+      "value": 338,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 338,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 509.5,
+      "displayValue": "510 ms",
+      "score": 0.28
+    },
+    "si": {
+      "value": 478.5813236330482,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 12,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 1612.65,
+      "displayValue": "1.6 s",
+      "score": 0.99
+    },
+    "opportunities": [],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 100 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "Classic Decoder",
+    "label": "Build Sheet",
+    "url": "https://classicdecoder.com/build-sheet",
+    "strategy": "mobile",
+    "timestamp": "2026-11-01T14:40:09.869Z",
+    "performanceScore": 90,
+    "lcp": {
+      "value": 1352,
+      "displayValue": "1.4 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 1352,
+      "displayValue": "1.4 s",
+      "score": 0.98
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 406,
+      "displayValue": "410 ms",
+      "score": 0.67
+    },
+    "si": {
+      "value": 2533.9759850208084,
+      "displayValue": "2.5 s",
+      "score": 0.97
+    },
+    "ttfb": {
+      "value": 15,
+      "displayValue": "Root document took 20 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 8144.5,
+      "displayValue": "8.1 s",
+      "score": 0.41
     },
     "opportunities": [
       {
@@ -213,10 +478,16 @@
         "title": "Reduce unused CSS",
         "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
         "savingsMs": 100,
-        "savingsBytes": 28592
+        "savingsBytes": 27658
       }
     ],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
@@ -228,300 +499,6 @@
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 22 KiB",
         "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.0 s",
-        "score": 0
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 20 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.9 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "Classic Decoder",
-    "label": "History Report",
-    "url": "https://classicdecoder.com/history-report",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:02:44.238Z",
-    "performanceScore": 78,
-    "lcp": {
-      "value": 360,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 360,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 537,
-      "displayValue": "540 ms",
-      "score": 0.25
-    },
-    "si": {
-      "value": 438.566861351484,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 9,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1792.7,
-      "displayValue": "1.8 s",
-      "score": 0.97
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 80 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "Classic Decoder",
-    "label": "VIN Decoder",
-    "url": "https://classicdecoder.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-10-31T14:03:13.539Z",
-    "performanceScore": 78,
-    "lcp": {
-      "value": 1201,
-      "displayValue": "1.2 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 1201,
-      "displayValue": "1.2 s",
-      "score": 0.99
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 1000.5,
-      "displayValue": "1,000 ms",
-      "score": 0.27
-    },
-    "si": {
-      "value": 2313.0796624095897,
-      "displayValue": "2.3 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 8,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 13344.009180425062,
-      "displayValue": "13.3 s",
-      "score": 0.11
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 20 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "bootup-time",
-        "title": "Reduce JavaScript execution time",
-        "displayValue": "2.2 s",
-        "score": 0
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 540 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "3.3 s",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "Classic Decoder",
-    "label": "VIN Decoder",
-    "url": "https://classicdecoder.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-10-31T14:03:32.279Z",
-    "performanceScore": 83,
-    "lcp": {
-      "value": 328,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 328,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 384,
-      "displayValue": "380 ms",
-      "score": 0.44
-    },
-    "si": {
-      "value": 395.00718235832096,
-      "displayValue": "0.4 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 11,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 1780.7,
-      "displayValue": "1.8 s",
-      "score": 0.97
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 110 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "Classic Decoder",
-    "label": "Build Sheet",
-    "url": "https://classicdecoder.com/build-sheet",
-    "strategy": "mobile",
-    "timestamp": "2026-10-31T14:03:46.609Z",
-    "performanceScore": 99,
-    "lcp": {
-      "value": 1351,
-      "displayValue": "1.4 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 1351,
-      "displayValue": "1.4 s",
-      "score": 0.98
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 115,
-      "displayValue": "120 ms",
-      "score": 0.97
-    },
-    "si": {
-      "value": 2477.907570933922,
-      "displayValue": "2.5 s",
-      "score": 0.98
-    },
-    "ttfb": {
-      "value": 9,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 7703,
-      "displayValue": "7.7 s",
-      "score": 0.45
-    },
-    "opportunities": [
-      {
-        "id": "unused-css-rules",
-        "title": "Reduce unused CSS",
-        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-        "savingsMs": 110,
-        "savingsBytes": 27659
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 570 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
       }
     ]
   },
@@ -530,15 +507,15 @@
     "label": "Build Sheet",
     "url": "https://classicdecoder.com/build-sheet",
     "strategy": "desktop",
-    "timestamp": "2026-10-31T14:04:11.573Z",
-    "performanceScore": 75,
+    "timestamp": "2026-11-01T14:40:32.935Z",
+    "performanceScore": 79,
     "lcp": {
-      "value": 391.5,
+      "value": 350,
       "displayValue": "0.4 s",
       "score": 1
     },
     "fcp": {
-      "value": 391.5,
+      "value": 350,
       "displayValue": "0.4 s",
       "score": 1
     },
@@ -548,38 +525,32 @@
       "score": 1
     },
     "tbt": {
-      "value": 627.5,
-      "displayValue": "630 ms",
-      "score": 0.18
+      "value": 496,
+      "displayValue": "500 ms",
+      "score": 0.29
     },
     "si": {
-      "value": 884.4005834667578,
+      "value": 893.9346704589034,
       "displayValue": "0.9 s",
       "score": 0.98
     },
     "ttfb": {
-      "value": 12,
+      "value": 13,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1864.4,
+      "value": 1948.5500000000002,
       "displayValue": "1.9 s",
-      "score": 0.97
+      "score": 0.96
     },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.1 s",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 90 ms",
         "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 22 KiB",
-        "score": 0.5
       },
       {
         "id": "cache-insight",
@@ -588,10 +559,10 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 60 ms",
-        "score": 0
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
       }
     ]
   }
