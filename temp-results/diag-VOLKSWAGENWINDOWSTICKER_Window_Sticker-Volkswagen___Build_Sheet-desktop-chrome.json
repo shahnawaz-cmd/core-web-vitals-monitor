@@ -3,7 +3,7 @@
   "label": "Volkswagen – Build Sheet",
   "url": "https://volkswagenwindowsticker.com/build-sheet-by-vin",
   "browser": "desktop-chrome",
-  "timestamp": "2026-11-01T14:56:17.516Z",
+  "timestamp": "2026-11-02T17:52:53.356Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,28 +16,40 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 image(s) missing width/height attributes"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 2,
-      "connection": 26,
-      "tls": 20,
-      "serverProcessing": 75,
-      "ttfb": 106,
-      "download": 1,
-      "domParsing": 37,
-      "domContentLoaded": 302,
-      "loadEvent": 358,
-      "transferSize": 8795,
-      "encodedBodySize": 8495,
-      "decodedBodySize": 36037,
+      "dns": 6,
+      "connection": 23,
+      "tls": 21,
+      "serverProcessing": 272,
+      "ttfb": 304,
+      "download": 7,
+      "domParsing": 29,
+      "domContentLoaded": 564,
+      "loadEvent": 577,
+      "transferSize": 8845,
+      "encodedBodySize": 8545,
+      "decodedBodySize": 36080,
       "protocol": "h2"
     },
     "issues": []
   },
   "renderBlocking": [
+    {
+      "type": "CSS",
+      "url": "/_next/static/chunks/85f706b819d890d7.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
+      "url": "/public-stylesheet.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
     {
       "type": "JS",
       "url": "/_next/static/chunks/a6dad97d9634a72d.js",
@@ -72,61 +84,102 @@
       "type": "JS",
       "url": "/_next/static/chunks/c797803f4ac9ae74.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/8885377990d0df1b.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 23,
-    "totalSize": 265670,
+    "totalCount": 82,
+    "totalSize": 460122,
     "byType": {
       "link": {
         "count": 8,
-        "totalSize": 64901,
-        "totalDuration": 441.4000000000524
+        "totalSize": 101925,
+        "totalDuration": 372.0999999999185
       },
       "script": {
-        "count": 14,
-        "totalSize": 200469,
-        "totalDuration": 764.9999999999709
+        "count": 15,
+        "totalSize": 203559,
+        "totalDuration": 870.4000000000233
       },
       "xmlhttprequest": {
         "count": 1,
         "totalSize": 300,
-        "totalDuration": 23
+        "totalDuration": 12.599999999976717
+      },
+      "fetch": {
+        "count": 58,
+        "totalSize": 154338,
+        "totalDuration": 7133.800000000279
       }
     },
     "largeResources": [],
     "issues": []
   },
   "imageAudit": {
-    "totalImages": 0,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 2,
+    "issueCount": 2,
+    "images": [
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/volkswagen/site-config--vol",
+        "naturalWidth": 350,
+        "naturalHeight": 100,
+        "displayWidth": 168,
+        "displayHeight": 48,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 350x100 displayed at 168x48",
+          "Not using modern format (WebP/AVIF)"
+        ]
+      },
+      {
+        "src": "https://vhr.nyc3.cdn.digitaloceanspaces.com/vehicle-history-euro-payload/volkswagen/site-config--vol",
+        "naturalWidth": 350,
+        "naturalHeight": 100,
+        "displayWidth": 168,
+        "displayHeight": 48,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": true,
+        "hasDimensions": true,
+        "issues": [
+          "Oversized: 350x100 displayed at 168x48",
+          "Not using modern format (WebP/AVIF)"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 265670,
+    "firstPartySize": 460122,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 98
+        "duration": 121
       },
       {
         "domain": "vhr.nyc3.cdn.digitaloceanspaces.com",
         "count": 1,
         "size": 0,
-        "duration": 77
+        "duration": 65
       }
     ],
     "totalDomains": 2
   },
   "domAnalysis": {
-    "totalElements": 36,
-    "maxDepth": 2,
-    "maxChildren": 19,
-    "widestElement": "BODY",
-    "deepestElement": "SCRIPT",
+    "totalElements": 198,
+    "maxDepth": 10,
+    "maxChildren": 36,
+    "widestElement": "HEAD",
+    "deepestElement": "path",
     "issues": []
   },
   "fontAnalysis": {
@@ -134,33 +187,124 @@
       {
         "url": "...lkswagenwindowsticker.com/_next/static/media/303804218d80822e-s.p.9b40bd6c.woff2",
         "size": 15144,
-        "duration": 61
+        "duration": 57
       },
       {
         "url": "...lkswagenwindowsticker.com/_next/static/media/612838607db3d51d-s.p.7fc7e6d5.woff2",
         "size": 14981,
-        "duration": 59
+        "duration": 39
       },
       {
         "url": "...lkswagenwindowsticker.com/_next/static/media/d9b5d46d9a89ffe6-s.p.0855aa53.woff2",
-        "size": 0,
-        "duration": 97
+        "size": 15192,
+        "duration": 58
       },
       {
         "url": "...lkswagenwindowsticker.com/_next/static/media/fa0520225c6f3d07-s.p.d28ba1c8.woff2",
         "size": 26936,
-        "duration": 36
+        "duration": 23
       }
     ],
-    "fontFaces": [],
-    "issues": []
+    "fontFaces": [
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Barlow Condensed Fallback\"",
+        "display": "auto"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans\"",
+        "display": "swap"
+      },
+      {
+        "family": "\"Public Sans Fallback\"",
+        "display": "auto"
+      }
+    ],
+    "issues": [
+      "2 font(s) using font-display: auto/block — causes invisible text (FOIT)"
+    ]
   },
   "securityCheck": {
-    "issues": [
-      "Missing viewport meta tag",
-      "Missing charset declaration",
-      "Missing lang attribute on <html>"
-    ]
+    "issues": []
   },
   "preloadCheck": {
     "preloads": [],
@@ -183,15 +327,117 @@
       "resourceType": "document"
     },
     {
-      "url": "https://volkswagenwindowsticker.com/_next/static/media/d9b5d46d9a89ffe6-s.p.0855aa53.woff2",
+      "url": "https://volkswagenwindowsticker.com/vin-check?_rsc=m7x9l",
       "status": 0,
-      "resourceType": "font",
+      "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://volkswagenwindowsticker.com/public-stylesheet.css",
+      "url": "https://volkswagenwindowsticker.com/vehicle-recalls?_rsc=m7x9l",
       "status": 0,
-      "resourceType": "stylesheet",
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/blog?_rsc=m7x9l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/login?_rsc=m7x9l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/warranty?_rsc=m7x9l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/options?_rsc=m7x9l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/specs?_rsc=m7x9l",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=x6y86",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=b1sp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=pw767",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=1m6c8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=1eao1",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/build-sheet?_rsc=1ci32",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vin-decoder?_rsc=b1sp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vehicle-recalls?_rsc=b1sp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vin-decoder?_rsc=1m6c8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vin-check?_rsc=1eao1",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vin-check?_rsc=b1sp8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://volkswagenwindowsticker.com/vehicle-recalls?_rsc=1m6c8",
+      "status": 0,
+      "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     }
   ]
