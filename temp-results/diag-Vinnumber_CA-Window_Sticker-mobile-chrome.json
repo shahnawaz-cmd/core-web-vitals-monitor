@@ -3,7 +3,7 @@
   "label": "Window Sticker",
   "url": "https://vinnumber.ca/window-sticker",
   "browser": "mobile-chrome",
-  "timestamp": "2026-11-03T15:42:55.231Z",
+  "timestamp": "2026-11-04T15:59:43.965Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -17,24 +17,26 @@
     "totalCLS": 0,
     "shifts": [],
     "issues": [
-      "7 image(s) missing width/height attributes"
+      "7 image(s) missing width/height attributes",
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
     ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 35,
-      "tls": 19,
-      "serverProcessing": 42,
-      "ttfb": 81,
-      "download": 5,
-      "domParsing": 239,
-      "domContentLoaded": 328,
-      "loadEvent": 356,
-      "transferSize": 58901,
-      "encodedBodySize": 58601,
-      "decodedBodySize": 457880,
+      "connection": 55,
+      "tls": 27,
+      "serverProcessing": 34,
+      "ttfb": 93,
+      "download": 8,
+      "domParsing": 111,
+      "domContentLoaded": 239,
+      "loadEvent": 297,
+      "transferSize": 59103,
+      "encodedBodySize": 58803,
+      "decodedBodySize": 458950,
       "protocol": "h2"
     },
     "issues": []
@@ -67,17 +69,17 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/3fdff02417a85c3c.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/fc987a7efaf07f43.js",
+      "url": "/_next/static/chunks/dbcbd998d48e58c1.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
       "url": "/_next/static/chunks/72de017515704c5f.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/25e2e03c6df252f6.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -89,36 +91,46 @@
       "type": "JS",
       "url": "/_next/static/chunks/b8329177338bdfbf.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/097dab568c39a797.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 49,
-    "totalSize": 389586,
+    "totalCount": 57,
+    "totalSize": 394143,
     "byType": {
       "link": {
         "count": 6,
         "totalSize": 83977,
-        "totalDuration": 341
+        "totalDuration": 280.4000000000233
       },
       "script": {
-        "count": 24,
-        "totalSize": 246906,
-        "totalDuration": 1183.9999999996508
+        "count": 30,
+        "totalSize": 251049,
+        "totalDuration": 2523.70000000007
       },
       "img": {
         "count": 2,
         "totalSize": 30714,
-        "totalDuration": 493
+        "totalDuration": 289.89999999990687
       },
       "xmlhttprequest": {
-        "count": 3,
+        "count": 4,
         "totalSize": 300,
-        "totalDuration": 59.59999999997672
+        "totalDuration": 263.89999999990687
       },
       "fetch": {
         "count": 14,
-        "totalSize": 27689,
-        "totalDuration": 476.50000000034925
+        "totalSize": 28103,
+        "totalDuration": 1156.6999999999534
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 345.60000000009313
       }
     },
     "largeResources": [],
@@ -229,56 +241,74 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 389586,
+    "firstPartySize": 394143,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 45
+        "duration": 64
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 3,
         "size": 0,
-        "duration": 261
+        "duration": 794
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 26
+        "duration": 123
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 17
+        "duration": 16
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 424
-      },
-      {
-        "domain": "l.clarity.ms",
-        "count": 2,
-        "size": 0,
-        "duration": 42
+        "duration": 230
       },
       {
         "domain": "www.google-analytics.com",
         "count": 4,
         "size": 0,
-        "duration": 69
+        "duration": 327
+      },
+      {
+        "domain": "l.clarity.ms",
+        "count": 3,
+        "size": 0,
+        "duration": 234
+      },
+      {
+        "domain": "cdn.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 73
+      },
+      {
+        "domain": "api.livechatinc.com",
+        "count": 4,
+        "size": 0,
+        "duration": 356
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 346
       }
     ],
-    "totalDomains": 7
+    "totalDomains": 10
   },
   "domAnalysis": {
-    "totalElements": 1052,
+    "totalElements": 1061,
     "maxDepth": 17,
     "maxChildren": 85,
     "widestElement": "DIV",
@@ -292,12 +322,12 @@
       {
         "url": "https://vinnumber.ca/_next/static/media/017d9bea37084d9b-s.p.a6d6de71.woff2",
         "size": 41540,
-        "duration": 69
+        "duration": 38
       },
       {
         "url": "https://vinnumber.ca/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 33
+        "duration": 43
       }
     ],
     "fontFaces": [
@@ -405,7 +435,7 @@
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "7 third-party origins without preconnect hints"
+      "10 third-party origins without preconnect hints"
     ]
   },
   "consoleErrors": [],
@@ -426,31 +456,43 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://vinnumber.ca/pricing?_rsc=x4mgl",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://vinnumber.ca/pricing?_rsc=l4evi",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://vinnumber.ca/?_rsc=1ilts",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720550416&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380za20ozb9228561071zd9228561071xf1&_p=1793807959182&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380za20ozb9228561071zd9228561071xf1&_p=1793720550416&gcd=13l3l3l3l",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807959182&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720550416&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807959182&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720550416&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807959182&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"

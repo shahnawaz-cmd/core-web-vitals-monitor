@@ -3,7 +3,7 @@
   "label": "Window Sticker",
   "url": "https://vinnumber.ca/window-sticker",
   "browser": "desktop-chrome",
-  "timestamp": "2026-11-03T15:42:53.907Z",
+  "timestamp": "2026-11-04T15:59:42.987Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -17,24 +17,26 @@
     "totalCLS": 0,
     "shifts": [],
     "issues": [
-      "7 image(s) missing width/height attributes"
+      "7 image(s) missing width/height attributes",
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
     ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 185,
-      "tls": 95,
-      "serverProcessing": 125,
-      "ttfb": 313,
-      "download": 23,
-      "domParsing": 236,
-      "domContentLoaded": 575,
-      "loadEvent": 796,
-      "transferSize": 58901,
-      "encodedBodySize": 58601,
-      "decodedBodySize": 457880,
+      "connection": 46,
+      "tls": 25,
+      "serverProcessing": 34,
+      "ttfb": 82,
+      "download": 9,
+      "domParsing": 33,
+      "domContentLoaded": 217,
+      "loadEvent": 279,
+      "transferSize": 59103,
+      "encodedBodySize": 58803,
+      "decodedBodySize": 458950,
       "protocol": "h2"
     },
     "issues": []
@@ -67,17 +69,17 @@
     },
     {
       "type": "JS",
-      "url": "/_next/static/chunks/3fdff02417a85c3c.js",
-      "suggestion": "Add async or defer attribute"
-    },
-    {
-      "type": "JS",
-      "url": "/_next/static/chunks/fc987a7efaf07f43.js",
+      "url": "/_next/static/chunks/dbcbd998d48e58c1.js",
       "suggestion": "Add async or defer attribute"
     },
     {
       "type": "JS",
       "url": "/_next/static/chunks/72de017515704c5f.js",
+      "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/25e2e03c6df252f6.js",
       "suggestion": "Add async or defer attribute"
     },
     {
@@ -89,41 +91,46 @@
       "type": "JS",
       "url": "/_next/static/chunks/b8329177338bdfbf.js",
       "suggestion": "Add async or defer attribute"
+    },
+    {
+      "type": "JS",
+      "url": "/_next/static/chunks/097dab568c39a797.js",
+      "suggestion": "Add async or defer attribute"
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 65,
-    "totalSize": 455982,
+    "totalCount": 72,
+    "totalSize": 460942,
     "byType": {
       "link": {
         "count": 7,
         "totalSize": 122239,
-        "totalDuration": 1192.6000000000931
+        "totalDuration": 349.60000000009313
       },
       "script": {
-        "count": 24,
-        "totalSize": 246906,
-        "totalDuration": 3559.0000000001164
+        "count": 30,
+        "totalSize": 251049,
+        "totalDuration": 2358.699999999837
       },
       "xmlhttprequest": {
-        "count": 2,
+        "count": 3,
         "totalSize": 300,
-        "totalDuration": 59.79999999993015
+        "totalDuration": 221.39999999990687
       },
       "fetch": {
         "count": 30,
-        "totalSize": 86537,
-        "totalDuration": 1291.5999999998603
+        "totalSize": 87354,
+        "totalDuration": 2481.599999999744
       },
       "img": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 210.30000000004657
+        "totalDuration": 143.20000000006985
       },
-      "beacon": {
+      "iframe": {
         "count": 1,
         "totalSize": 0,
-        "totalDuration": 14.20000000006985
+        "totalDuration": 494.69999999995343
       }
     },
     "largeResources": [],
@@ -234,56 +241,74 @@
     ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 455982,
+    "firstPartySize": 460942,
     "thirdPartySize": 0,
     "thirdPartyDomains": [
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 27
+        "duration": 39
       },
       {
         "domain": "www.googletagmanager.com",
         "count": 3,
         "size": 0,
-        "duration": 234
+        "duration": 577
       },
       {
         "domain": "www.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 40
+        "duration": 127
       },
       {
         "domain": "scripts.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 30
+        "duration": 20
       },
       {
         "domain": "c.clarity.ms",
         "count": 1,
         "size": 0,
-        "duration": 210
+        "duration": 143
       },
       {
-        "domain": "j.clarity.ms",
+        "domain": "a.clarity.ms",
         "count": 2,
         "size": 0,
-        "duration": 47
+        "duration": 190
       },
       {
         "domain": "www.google-analytics.com",
         "count": 4,
         "size": 0,
-        "duration": 92
+        "duration": 311
+      },
+      {
+        "domain": "cdn.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 124
+      },
+      {
+        "domain": "api.livechatinc.com",
+        "count": 4,
+        "size": 0,
+        "duration": 449
+      },
+      {
+        "domain": "secure.livechatinc.com",
+        "count": 1,
+        "size": 0,
+        "duration": 495
       }
     ],
-    "totalDomains": 7
+    "totalDomains": 10
   },
   "domAnalysis": {
-    "totalElements": 1052,
+    "totalElements": 1061,
     "maxDepth": 17,
     "maxChildren": 85,
     "widestElement": "DIV",
@@ -297,12 +322,12 @@
       {
         "url": "https://vinnumber.ca/_next/static/media/017d9bea37084d9b-s.p.a6d6de71.woff2",
         "size": 41540,
-        "duration": 142
+        "duration": 40
       },
       {
         "url": "https://vinnumber.ca/_next/static/media/caa3a2e1cccd8315-s.p.3b6cae6d.woff2",
         "size": 29585,
-        "duration": 238
+        "duration": 35
       }
     ],
     "fontFaces": [
@@ -410,7 +435,7 @@
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "7 third-party origins without preconnect hints"
+      "10 third-party origins without preconnect hints"
     ]
   },
   "consoleErrors": [],
@@ -419,19 +444,7 @@
   ],
   "failedRequests": [
     {
-      "url": "https://vinnumber.ca/login?_rsc=g5rd9",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://vinnumber.ca/window-sticker?_rsc=g5rd9",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://vinnumber.ca/vin-decoder?_rsc=g5rd9",
+      "url": "https://vinnumber.ca/?_rsc=g5rd9",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -443,19 +456,25 @@
       "failure": "net::ERR_ABORTED"
     },
     {
+      "url": "https://vinnumber.ca/vin-search?_rsc=g5rd9",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://vinnumber.ca/pricing?_rsc=5h4m3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
       "url": "https://vinnumber.ca/pricing?_rsc=s9h13",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/pricing?_rsc=jvuub",
-      "status": 0,
-      "resourceType": "fetch",
-      "failure": "net::ERR_ABORTED"
-    },
-    {
-      "url": "https://vinnumber.ca/?_rsc=5h4m3",
+      "url": "https://vinnumber.ca/pricing?_rsc=l4evi",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
@@ -467,43 +486,43 @@
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/vin-decoder?_rsc=jvuub",
+      "url": "https://vinnumber.ca/login?_rsc=1lid1",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/vin-decoder?_rsc=l4evi",
+      "url": "https://vinnumber.ca/window-sticker?_rsc=jvuub",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://vinnumber.ca/vin-search?_rsc=5h4m3",
+      "url": "https://vinnumber.ca/vin-search?_rsc=l4evi",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720549045&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807958192&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380za20ozb9228561071zd9228561071xf1&_p=1793720549045&gcd=13l3l3l3l",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807958192&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720549045&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793807958192&g",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6au1v9202392380z89228561071za20gzb9228561071zd9228561071xf1&_p=1793720549045&g",
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-4BHS4YZ6PJ&gtm=45je6b21v9202392380za20ozb9228561071zd9228561071xf1&_p=1793807958192&gcd=13l3l3l3l",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
