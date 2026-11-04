@@ -4,15 +4,15 @@
     "label": "RAM – Build Sheet",
     "url": "https://ramwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-11-03T15:53:45.823Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-04T16:11:45.881Z",
+    "performanceScore": 90,
     "lcp": {
-      "value": 1231.5,
-      "displayValue": "1.2 s",
-      "score": 1
+      "value": 3601,
+      "displayValue": "3.6 s",
+      "score": 0.61
     },
     "fcp": {
-      "value": 1231.5,
+      "value": 1212,
       "displayValue": "1.2 s",
       "score": 0.99
     },
@@ -22,45 +22,47 @@
       "score": 1
     },
     "tbt": {
-      "value": 19,
+      "value": 21,
       "displayValue": "20 ms",
       "score": 1
     },
     "si": {
-      "value": 2396.8435997576707,
-      "displayValue": "2.4 s",
-      "score": 0.98
+      "value": 2712.1785480733392,
+      "displayValue": "2.7 s",
+      "score": 0.96
     },
     "ttfb": {
-      "value": 4,
-      "displayValue": "Root document took 0 ms",
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3039.1000000000004,
-      "displayValue": "3.0 s",
-      "score": 0.95
+      "value": 3616,
+      "displayValue": "3.6 s",
+      "score": 0.91
     },
     "opportunities": [
       {
         "id": "redirects",
         "title": "Avoid multiple page redirects",
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 903,
+        "savingsMs": 901,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 140,
+        "savingsBytes": 46068
       }
     ],
     "diagnostics": [
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
@@ -69,16 +71,21 @@
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 140 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 130 ms",
-        "score": 0
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
       }
     ]
   },
@@ -87,16 +94,16 @@
     "label": "RAM – Build Sheet",
     "url": "https://ramwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-11-03T15:54:07.261Z",
-    "performanceScore": 98,
+    "timestamp": "2026-11-04T16:12:00.351Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 744,
+      "value": 721,
       "displayValue": "0.7 s",
-      "score": 0.98
+      "score": 0.99
     },
     "fcp": {
-      "value": 359,
-      "displayValue": "0.4 s",
+      "value": 288,
+      "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
@@ -105,23 +112,23 @@
       "score": 1
     },
     "tbt": {
-      "value": 124,
-      "displayValue": "120 ms",
-      "score": 0.94
+      "value": null,
+      "displayValue": "0 ms",
+      "score": 1
     },
     "si": {
-      "value": 622.0620175460775,
-      "displayValue": "0.6 s",
+      "value": 402.97992350217703,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
-      "value": 4,
-      "displayValue": "Root document took 0 ms",
+      "value": 9,
+      "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1108.95,
-      "displayValue": "1.1 s",
+      "value": 725,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "opportunities": [
@@ -131,26 +138,16 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 241,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 46069
       }
     ],
     "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
@@ -160,79 +157,13 @@
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 31 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "RAMWINDOWSTICKER Window Sticker",
-    "label": "RAM – VIN Decoder",
-    "url": "https://ramwindowsticker.com/vin-decoder",
-    "strategy": "mobile",
-    "timestamp": "2026-11-03T15:54:20.502Z",
-    "performanceScore": 92,
-    "lcp": {
-      "value": 3302,
-      "displayValue": "3.3 s",
-      "score": 0.69
-    },
-    "fcp": {
-      "value": 1084,
-      "displayValue": "1.1 s",
-      "score": 0.99
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 6.5,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 1084,
-      "displayValue": "1.1 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 6,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 3332,
-      "displayValue": "3.3 s",
-      "score": 0.93
-    },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 300,
-        "savingsBytes": 46256
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 120 ms",
         "score": 0
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 52 KiB",
-        "score": 0.5
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 10 KiB",
-        "score": 0.5
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0
       },
       {
         "id": "legacy-javascript-insight",
@@ -251,16 +182,99 @@
     "site": "RAMWINDOWSTICKER Window Sticker",
     "label": "RAM – VIN Decoder",
     "url": "https://ramwindowsticker.com/vin-decoder",
+    "strategy": "mobile",
+    "timestamp": "2026-11-04T16:12:25.671Z",
+    "performanceScore": 86,
+    "lcp": {
+      "value": 3827,
+      "displayValue": "3.8 s",
+      "score": 0.54
+    },
+    "fcp": {
+      "value": 1169,
+      "displayValue": "1.2 s",
+      "score": 0.99
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 93,
+      "displayValue": "90 ms",
+      "score": 0.98
+    },
+    "si": {
+      "value": 3734.4959218515933,
+      "displayValue": "3.7 s",
+      "score": 0.85
+    },
+    "ttfb": {
+      "value": 12,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 3864.5000000000005,
+      "displayValue": "3.9 s",
+      "score": 0.89
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 150,
+        "savingsBytes": 45198
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 10 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 52 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 40 ms",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – VIN Decoder",
+    "url": "https://ramwindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-11-03T15:54:37.480Z",
+    "timestamp": "2026-11-04T16:12:45.272Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 722,
+      "value": 731,
       "displayValue": "0.7 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 292,
+      "value": 348,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -270,22 +284,22 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 8,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 442.5389463383324,
+      "value": 415.7554525358081,
       "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
-      "value": 6,
+      "value": 11,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 726,
+      "value": 735,
       "displayValue": "0.7 s",
       "score": 1
     },
@@ -295,16 +309,10 @@
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
         "savingsMs": 40,
-        "savingsBytes": 46213
+        "savingsBytes": 46214
       }
     ],
     "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
@@ -314,84 +322,7 @@
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 60 ms",
-        "score": 0
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 10 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "RAMWINDOWSTICKER Window Sticker",
-    "label": "RAM – Paint Code",
-    "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
-    "strategy": "mobile",
-    "timestamp": "2026-11-03T15:54:55.182Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 1059,
-      "displayValue": "1.1 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 1059,
-      "displayValue": "1.1 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 13,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 2247.4951636171336,
-      "displayValue": "2.2 s",
-      "score": 0.99
-    },
-    "ttfb": {
-      "value": 35,
-      "displayValue": "Root document took 40 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2661.55,
-      "displayValue": "2.7 s",
-      "score": 0.97
-    },
-    "opportunities": [
-      {
-        "id": "redirects",
-        "title": "Avoid multiple page redirects",
-        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 759,
-        "savingsBytes": 0
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 100 ms",
-        "score": 0
       },
       {
         "id": "legacy-javascript-insight",
@@ -402,7 +333,89 @@
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 10 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Paint Code",
+    "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "mobile",
+    "timestamp": "2026-11-04T16:13:03.873Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 1051,
+      "displayValue": "1.1 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 1051,
+      "displayValue": "1.1 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 5.5,
+      "displayValue": "10 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 2427.1468680055136,
+      "displayValue": "2.4 s",
+      "score": 0.98
+    },
+    "ttfb": {
+      "value": 7,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 2703.8500000000004,
+      "displayValue": "2.7 s",
+      "score": 0.97
+    },
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 751,
+        "savingsBytes": 0
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 140 ms",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
@@ -412,15 +425,15 @@
     "label": "RAM – Paint Code",
     "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-11-03T15:55:15.446Z",
+    "timestamp": "2026-11-04T16:13:21.872Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 281,
+      "value": 283,
       "displayValue": "0.3 s",
       "score": 1
     },
     "fcp": {
-      "value": 281,
+      "value": 283,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -430,23 +443,23 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
+      "value": 4.5,
       "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 376.8419833322366,
+      "value": 393.8035583426555,
       "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
-      "value": 7,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 281,
-      "displayValue": "0.3 s",
+      "value": 651.35,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "opportunities": [
@@ -460,25 +473,25 @@
     ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       }
     ]
@@ -488,15 +501,15 @@
     "label": "RAM – Options Check",
     "url": "https://ramwindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-11-03T15:55:29.978Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-04T16:13:41.515Z",
+    "performanceScore": 98,
     "lcp": {
-      "value": 757,
+      "value": 760,
       "displayValue": "0.8 s",
       "score": 1
     },
     "fcp": {
-      "value": 757,
+      "value": 760,
       "displayValue": "0.8 s",
       "score": 1
     },
@@ -506,14 +519,14 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 13,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 2582.673166152954,
-      "displayValue": "2.6 s",
-      "score": 0.97
+      "value": 3783.420680070158,
+      "displayValue": "3.8 s",
+      "score": 0.84
     },
     "ttfb": {
       "value": 2,
@@ -521,22 +534,22 @@
       "score": 1
     },
     "interactive": {
-      "value": 757,
-      "displayValue": "0.8 s",
-      "score": 1
+      "value": 3016,
+      "displayValue": "3.0 s",
+      "score": 0.96
     },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
@@ -551,15 +564,15 @@
     "label": "RAM – Options Check",
     "url": "https://ramwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-11-03T15:55:46.435Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-04T16:13:57.502Z",
+    "performanceScore": 98,
     "lcp": {
-      "value": 210,
+      "value": 213.4515225,
       "displayValue": "0.2 s",
       "score": 1
     },
     "fcp": {
-      "value": 210,
+      "value": 213.4515225,
       "displayValue": "0.2 s",
       "score": 1
     },
@@ -569,27 +582,33 @@
       "score": 1
     },
     "tbt": {
-      "value": 31,
-      "displayValue": "30 ms",
+      "value": 7.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 878.6965508309207,
-      "displayValue": "0.9 s",
-      "score": 0.99
+      "value": 1534.0489218551284,
+      "displayValue": "1.5 s",
+      "score": 0.82
     },
     "ttfb": {
-      "value": 1,
+      "value": 2,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 768.6,
-      "displayValue": "0.8 s",
+      "value": 960.5897440000001,
+      "displayValue": "1.0 s",
       "score": 1
     },
     "opportunities": [],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -599,12 +618,6 @@
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       }
     ]
