@@ -3,7 +3,7 @@
   "label": "Build Sheet",
   "url": "https://classicdecoder.com/build-sheet",
   "browser": "desktop-chrome",
-  "timestamp": "2026-11-04T15:52:02.164Z",
+  "timestamp": "2026-11-05T15:55:24.022Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,22 +16,25 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
       "dns": 1,
-      "connection": 27,
-      "tls": 15,
-      "serverProcessing": 43,
-      "ttfb": 72,
-      "download": 13,
-      "domParsing": 81,
-      "domContentLoaded": 343,
-      "loadEvent": 746,
-      "transferSize": 87974,
-      "encodedBodySize": 87674,
+      "connection": 71,
+      "tls": 37,
+      "serverProcessing": 62,
+      "ttfb": 136,
+      "download": 35,
+      "domParsing": 66,
+      "domContentLoaded": 325,
+      "loadEvent": 1100,
+      "transferSize": 87975,
+      "encodedBodySize": 87675,
       "decodedBodySize": 523857,
       "protocol": "h2"
     },
@@ -50,6 +53,11 @@
     },
     {
       "type": "CSS",
+      "url": "/_next/static/css/c0052ec527bf5b7f.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
       "url": "https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined",
       "suggestion": "Consider async loading or inlining critical CSS"
     },
@@ -60,38 +68,48 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 89,
-    "totalSize": 1077895,
+    "totalCount": 129,
+    "totalSize": 1303375,
     "byType": {
       "other": {
         "count": 1,
         "totalSize": 451,
-        "totalDuration": 19.89999999999418
+        "totalDuration": 51
       },
       "link": {
-        "count": 29,
-        "totalSize": 233885,
-        "totalDuration": 3314.399999999936
+        "count": 31,
+        "totalSize": 236818,
+        "totalDuration": 5296.5
       },
       "script": {
-        "count": 44,
-        "totalSize": 836141,
-        "totalDuration": 5542.40000000014
+        "count": 69,
+        "totalSize": 1058328,
+        "totalDuration": 8944.299999999901
       },
       "img": {
-        "count": 2,
+        "count": 4,
         "totalSize": 787,
-        "totalDuration": 110.69999999998254
+        "totalDuration": 299.29999999995925
       },
       "fetch": {
-        "count": 10,
+        "count": 14,
         "totalSize": 5223,
-        "totalDuration": 795.0000000000582
+        "totalDuration": 725.9000000000233
       },
       "xmlhttprequest": {
-        "count": 3,
-        "totalSize": 1408,
-        "totalDuration": 1015.0999999999767
+        "count": 8,
+        "totalSize": 1768,
+        "totalDuration": 32016.399999999994
+      },
+      "beacon": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 26.39999999999418
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 178.89999999999418
       }
     },
     "largeResources": [
@@ -99,85 +117,150 @@
         "url": "https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js",
         "type": "script",
         "size": 312344,
-        "duration": 170
+        "duration": 272
+      },
+      {
+        "url": "https://classicdecoder.com/0qia/G3NfVSiqgCAVIuiA94TnDyQNJ6a8HIPmPFiooDS6U5xNvGX-",
+        "type": "script",
+        "size": 193230,
+        "duration": 171
       },
       {
         "url": "https://classicdecoder.com/0qia/",
         "type": "script",
-        "size": 178556,
-        "duration": 292
+        "size": 178327,
+        "duration": 269
       }
     ],
-    "issues": []
+    "issues": [
+      "High request count: 129 resources"
+    ]
   },
   "imageAudit": {
-    "totalImages": 14,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 15,
+    "issueCount": 1,
+    "images": [
+      {
+        "src": "https://bat.bing.com/action/0?ti=295009016&Ver=2&mid=5129d247-1068-4c40-a6e7-e35a1593736b&bo=1&sid=3",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "displayWidth": 0,
+        "displayHeight": 0,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": false,
+        "hasDimensions": true,
+        "issues": [
+          "Missing alt text"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 1073417,
-    "thirdPartySize": 4478,
+    "firstPartySize": 1298900,
+    "thirdPartySize": 4475,
     "thirdPartyDomains": [
       {
         "domain": "googleads.g.doubleclick.net",
         "count": 1,
-        "size": 3425,
-        "duration": 84
+        "size": 3422,
+        "duration": 33
       },
       {
         "domain": "fonts.googleapis.com",
         "count": 1,
         "size": 711,
-        "duration": 60
+        "duration": 27
       },
       {
         "domain": "www.google.com",
-        "count": 3,
+        "count": 4,
         "size": 342,
-        "duration": 161
+        "duration": 98
       },
       {
         "domain": "datafa.st",
         "count": 1,
         "size": 0,
-        "duration": 206
+        "duration": 142
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 48
+        "duration": 25
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 1,
+        "count": 3,
         "size": 0,
-        "duration": 76
+        "duration": 174
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 63
+        "duration": 26
       },
       {
         "domain": "ipinfo.io",
         "count": 1,
         "size": 0,
-        "duration": 59
+        "duration": 54
+      },
+      {
+        "domain": "bat.bing.com",
+        "count": 6,
+        "size": 0,
+        "duration": 124
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 2,
+        "size": 0,
+        "duration": 27
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 43
+      },
+      {
+        "domain": "analytics.google.com",
+        "count": 2,
+        "size": 0,
+        "duration": 41
+      },
+      {
+        "domain": "stats.g.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 26
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 17
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 159
       }
     ],
-    "totalDomains": 8
+    "totalDomains": 19
   },
   "domAnalysis": {
-    "totalElements": 896,
+    "totalElements": 961,
     "maxDepth": 20,
-    "maxChildren": 67,
-    "widestElement": "ARTICLE",
+    "maxChildren": 80,
+    "widestElement": "HEAD",
     "deepestElement": "INPUT",
     "issues": [
-      "Wide node: ARTICLE has 67 children (recommended < 60)"
+      "Wide node: HEAD has 80 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -185,7 +268,7 @@
       {
         "url": "https://classicdecoder.com/_next/static/media/f04c3881ee3d9785-s.p.woff2",
         "size": 33556,
-        "duration": 29
+        "duration": 80
       }
     ],
     "fontFaces": [
@@ -250,34 +333,82 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [],
+    "preloads": [
+      {
+        "href": "/_next/static/css/c0052ec527bf5b7f.css",
+        "as": "style"
+      },
+      {
+        "href": "https://www.googletagmanager.com/gtag/js?id=G-NL16THYYVW",
+        "as": "script"
+      }
+    ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "8 third-party origins without preconnect hints",
-      "No preload hints found — consider preloading LCP image/font"
+      "19 third-party origins without preconnect hints"
     ]
   },
-  "consoleErrors": [],
+  "consoleErrors": [
+    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://classicdecoder.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://ipapi.co/json/' from origin 'https://classicdecoder.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
   "consoleWarnings": [
     "DataFast: Tracking disabled - bot detected",
+    "The resource https://classicdecoder.com/_next/static/chunks/81700.d7b4d39bc90b935e.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "Failed to get client location data: TypeError: Failed to fetch\n    at l (https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:7448)\n    at d (https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:7880)\n    at https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:8305",
+    "The resource https://classicdecoder.com/_next/static/chunks/81700.d7b4d39bc90b935e.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://classicdecoder.com/_next/static/chunks/81700.d7b4d39bc90b935e.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+    "The resource https://classicdecoder.com/_next/static/chunks/81700.d7b4d39bc90b935e.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&auid=1355175537.1793807519&dt=Get%20a%20Classic%20Car%20Build%20Sheet%20by%20VIN%20%7C%20Classi",
+      "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=96685240.1793894091&dt=Get%20a%20Classic%20Car%20Build%20Sheet%20by%20VIN%20%7C%20Classic%2",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1355175537.1793807519&gtm=45892e6b21v9212952419za20czd9212952419xecxf4&fmt=8",
+      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793894091414&cv=11&fst=1793894091414&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793807518881&cv=11&fst=1793807518881&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=96685240.1793894091&gtm=45892e6b31v9212952419za20czd9212952419xecxf4&fmt=8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipapi.co/json",
+      "status": 0,
+      "resourceType": "xhr",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6b31h1v9105433919za208zb9212952419zd9212952419xf1&_p=1793894090839&_gaz=1&gcd=13l3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=0&ae=g&auid=96685240.1793894091&dt=Get%20a%20Classic%20Car%20Build%20Sheet%20by%20VIN%20%7C%20Cla",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipapi.co/json/",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6b31h1v9105433919z89105442166za200zb9212952419zd9212952419xf1&_p=1793894090839&gcd",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
