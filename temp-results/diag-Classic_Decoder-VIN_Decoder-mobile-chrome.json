@@ -3,7 +3,7 @@
   "label": "VIN Decoder",
   "url": "https://classicdecoder.com/vin-decoder",
   "browser": "mobile-chrome",
-  "timestamp": "2026-11-04T15:51:59.067Z",
+  "timestamp": "2026-11-05T15:54:56.931Z",
   "lcpAnalysis": {
     "element": null,
     "tagName": null,
@@ -16,22 +16,25 @@
   "clsAnalysis": {
     "totalCLS": 0,
     "shifts": [],
-    "issues": []
+    "issues": [
+      "2 iframe(s) missing dimensions",
+      "1 fixed/sticky element(s) found that may push content"
+    ]
   },
   "ttfbAnalysis": {
     "breakdown": {
       "redirect": 0,
-      "dns": 1,
-      "connection": 32,
-      "tls": 19,
-      "serverProcessing": 50,
-      "ttfb": 84,
-      "download": 19,
-      "domParsing": 136,
-      "domContentLoaded": 475,
-      "loadEvent": 729,
-      "transferSize": 68343,
-      "encodedBodySize": 68043,
+      "dns": 2,
+      "connection": 39,
+      "tls": 23,
+      "serverProcessing": 46,
+      "ttfb": 88,
+      "download": 18,
+      "domParsing": 148,
+      "domContentLoaded": 267,
+      "loadEvent": 1661,
+      "transferSize": 68054,
+      "encodedBodySize": 67754,
       "decodedBodySize": 348469,
       "protocol": "h2"
     },
@@ -50,6 +53,11 @@
     },
     {
       "type": "CSS",
+      "url": "/_next/static/css/c0052ec527bf5b7f.css",
+      "suggestion": "Consider async loading or inlining critical CSS"
+    },
+    {
+      "type": "CSS",
       "url": "https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined",
       "suggestion": "Consider async loading or inlining critical CSS"
     },
@@ -60,38 +68,48 @@
     }
   ],
   "resourceAnalysis": {
-    "totalCount": 72,
-    "totalSize": 982690,
+    "totalCount": 112,
+    "totalSize": 1208239,
     "byType": {
       "other": {
         "count": 1,
         "totalSize": 451,
-        "totalDuration": 33.10000000000582
+        "totalDuration": 22.60000000000582
       },
       "link": {
-        "count": 18,
-        "totalSize": 141437,
-        "totalDuration": 2122.899999999994
+        "count": 20,
+        "totalSize": 144370,
+        "totalDuration": 3305.499999999942
       },
       "script": {
-        "count": 44,
-        "totalSize": 836148,
-        "totalDuration": 5869.600000000035
+        "count": 69,
+        "totalSize": 1058404,
+        "totalDuration": 12491.49999999997
       },
       "fetch": {
-        "count": 5,
+        "count": 9,
         "totalSize": 2904,
-        "totalDuration": 318.80000000004657
+        "totalDuration": 344.3999999999942
       },
       "xmlhttprequest": {
-        "count": 3,
-        "totalSize": 1408,
-        "totalDuration": 1521.2999999999884
+        "count": 8,
+        "totalSize": 1768,
+        "totalDuration": 18903.599999999977
       },
       "img": {
-        "count": 1,
+        "count": 3,
         "totalSize": 342,
-        "totalDuration": 33
+        "totalDuration": 153.70000000001164
+      },
+      "beacon": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 23.60000000000582
+      },
+      "iframe": {
+        "count": 1,
+        "totalSize": 0,
+        "totalDuration": 255.89999999999418
       }
     },
     "largeResources": [
@@ -99,85 +117,150 @@
         "url": "https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js",
         "type": "script",
         "size": 312344,
-        "duration": 184
+        "duration": 338
+      },
+      {
+        "url": "https://classicdecoder.com/0qia/G3NfVSiqgCAVIuiA94TnDyQNJ6a8HIPmPFiooDS6U5xKvQgOZf4",
+        "type": "script",
+        "size": 193265,
+        "duration": 239
       },
       {
         "url": "https://classicdecoder.com/0qia/",
         "type": "script",
-        "size": 178556,
-        "duration": 248
+        "size": 178367,
+        "duration": 339
       }
     ],
-    "issues": []
+    "issues": [
+      "High request count: 112 resources"
+    ]
   },
   "imageAudit": {
-    "totalImages": 5,
-    "issueCount": 0,
-    "images": []
+    "totalImages": 6,
+    "issueCount": 1,
+    "images": [
+      {
+        "src": "https://bat.bing.com/action/0?ti=295009016&Ver=2&mid=b6871bee-325c-405e-a622-1ae48558392f&bo=1&sid=3",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "displayWidth": 0,
+        "displayHeight": 0,
+        "loading": "auto",
+        "fetchPriority": "auto",
+        "hasAlt": false,
+        "hasDimensions": true,
+        "issues": [
+          "Missing alt text"
+        ]
+      }
+    ]
   },
   "thirdPartyAnalysis": {
-    "firstPartySize": 978196,
-    "thirdPartySize": 4494,
+    "firstPartySize": 1203754,
+    "thirdPartySize": 4485,
     "thirdPartyDomains": [
       {
         "domain": "googleads.g.doubleclick.net",
         "count": 1,
-        "size": 3432,
-        "duration": 70
+        "size": 3423,
+        "duration": 833
       },
       {
         "domain": "fonts.googleapis.com",
         "count": 1,
         "size": 720,
-        "duration": 43
+        "duration": 27
       },
       {
         "domain": "www.google.com",
-        "count": 3,
+        "count": 4,
         "size": 342,
-        "duration": 149
+        "duration": 88
       },
       {
         "domain": "datafa.st",
         "count": 1,
         "size": 0,
-        "duration": 233
+        "duration": 148
       },
       {
         "domain": "static.cloudflareinsights.com",
         "count": 1,
         "size": 0,
-        "duration": 82
+        "duration": 25
       },
       {
         "domain": "www.googletagmanager.com",
-        "count": 1,
+        "count": 3,
         "size": 0,
-        "duration": 72
+        "duration": 170
       },
       {
         "domain": "ad.doubleclick.net",
         "count": 1,
         "size": 0,
-        "duration": 60
+        "duration": 27
       },
       {
         "domain": "ipinfo.io",
         "count": 1,
         "size": 0,
-        "duration": 70
+        "duration": 43
+      },
+      {
+        "domain": "bat.bing.com",
+        "count": 6,
+        "size": 0,
+        "duration": 201
+      },
+      {
+        "domain": "ipapi.co",
+        "count": 2,
+        "size": 0,
+        "duration": 28
+      },
+      {
+        "domain": "www.clarity.ms",
+        "count": 2,
+        "size": 0,
+        "duration": 37
+      },
+      {
+        "domain": "analytics.google.com",
+        "count": 2,
+        "size": 0,
+        "duration": 41
+      },
+      {
+        "domain": "stats.g.doubleclick.net",
+        "count": 1,
+        "size": 0,
+        "duration": 24
+      },
+      {
+        "domain": "c.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 124
+      },
+      {
+        "domain": "scripts.clarity.ms",
+        "count": 1,
+        "size": 0,
+        "duration": 262
       }
     ],
-    "totalDomains": 8
+    "totalDomains": 19
   },
   "domAnalysis": {
-    "totalElements": 727,
+    "totalElements": 764,
     "maxDepth": 13,
-    "maxChildren": 65,
+    "maxChildren": 81,
     "widestElement": "HEAD",
     "deepestElement": "TH",
     "issues": [
-      "Wide node: HEAD has 65 children (recommended < 60)"
+      "Wide node: HEAD has 81 children (recommended < 60)"
     ]
   },
   "fontAnalysis": {
@@ -185,7 +268,7 @@
       {
         "url": "https://classicdecoder.com/_next/static/media/f04c3881ee3d9785-s.p.woff2",
         "size": 33556,
-        "duration": 44
+        "duration": 30
       }
     ],
     "fontFaces": [
@@ -250,34 +333,78 @@
     "issues": []
   },
   "preloadCheck": {
-    "preloads": [],
+    "preloads": [
+      {
+        "href": "/_next/static/css/c0052ec527bf5b7f.css",
+        "as": "style"
+      },
+      {
+        "href": "https://www.googletagmanager.com/gtag/js?id=G-NL16THYYVW",
+        "as": "script"
+      }
+    ],
     "preconnects": [],
     "dnsPrefetch": [],
     "issues": [
-      "8 third-party origins without preconnect hints",
-      "No preload hints found — consider preloading LCP image/font"
+      "19 third-party origins without preconnect hints"
     ]
   },
-  "consoleErrors": [],
+  "consoleErrors": [
+    "Access to XMLHttpRequest at 'https://ipapi.co/json' from origin 'https://classicdecoder.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "Access to fetch at 'https://ipapi.co/json/' from origin 'https://classicdecoder.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED"
+  ],
   "consoleWarnings": [
     "DataFast: Tracking disabled - bot detected",
+    "Failed to get client location data: TypeError: Failed to fetch\n    at l (https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:7448)\n    at d (https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:7880)\n    at https://classicdecoder.com/_next/static/chunks/app/layout-56ce7aaff11fcace.js:1:8305",
     "Deprecated API for given entry type."
   ],
   "failedRequests": [
     {
-      "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=1&auid=1145628526.1793807516&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-198",
+      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793894078326&cv=11&fst=1793894078326&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://www.google.com/rmkt/collect/11047176851/?random=1793807515563&cv=11&fst=1793807515563&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45892",
+      "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=1&auid=361589278.1793894078&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pre-1981",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
     },
     {
-      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1145628526.1793807516&gtm=45892e6b21v9212952419za20czd9212952419xecxf4&fmt=8",
+      "url": "https://ad.doubleclick.net/ccm/s/collect?auid=361589278.1793894078&gtm=45892e6b40h2v9212952419za20czd9212952419xecxf4&fmt=8",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipapi.co/json",
+      "status": 0,
+      "resourceType": "xhr",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6b31v9105433919za208zb9212952419zd9212952419xf1&_p=1793894077652&_gaz=1&gcd=13l3l3",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=0&ae=g&auid=361589278.1793894078&dt=Classic%20Car%20VIN%20Decoder%20%7C%20Decode%20Old%20%26%20Pr",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://ipapi.co/json/",
+      "status": 0,
+      "resourceType": "fetch",
+      "failure": "net::ERR_FAILED"
+    },
+    {
+      "url": "https://analytics.google.com/g/collect?v=2&tid=G-NL16THYYVW&gtm=45je6b31v9105433919z89105442166za200zb9212952419zd9212952419xf1&_p=1793894077652&gcd=1",
       "status": 0,
       "resourceType": "fetch",
       "failure": "net::ERR_ABORTED"
