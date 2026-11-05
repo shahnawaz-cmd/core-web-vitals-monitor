@@ -4,7 +4,7 @@
     "label": "Toyota – Build Sheet",
     "url": "https://toyotawindowsticker.com/build-sheet-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-11-04T16:12:05.457Z",
+    "timestamp": "2026-11-05T16:19:22.726Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -22,21 +22,24 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 3,
-        "connection": 23,
-        "tls": 21,
-        "serverProcessing": 305,
-        "ttfb": 333,
-        "download": 2,
-        "domParsing": 16,
-        "domContentLoaded": 415,
-        "loadEvent": 841,
+        "dns": 7,
+        "connection": 119,
+        "tls": 63,
+        "serverProcessing": 671,
+        "ttfb": 802,
+        "download": 1,
+        "domParsing": 15,
+        "domContentLoaded": 888,
+        "loadEvent": 1126,
         "transferSize": 9761,
         "encodedBodySize": 9461,
         "decodedBodySize": 40436,
         "protocol": "h2"
       },
-      "issues": []
+      "issues": [
+        "Slow server response: 671ms",
+        "TTFB exceeds 800ms threshold: 802ms"
+      ]
     },
     "renderBlocking": [
       {
@@ -97,22 +100,22 @@
         "link": {
           "count": 10,
           "totalSize": 146017,
-          "totalDuration": 592.7999999999884
+          "totalDuration": 1092.6999999999534
         },
         "script": {
           "count": 15,
           "totalSize": 207349,
-          "totalDuration": 1145.3999999999069
-        },
-        "fetch": {
-          "count": 66,
-          "totalSize": 188573,
-          "totalDuration": 7291.300000000279
+          "totalDuration": 1635.2000000000698
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 11.399999999965075
+          "totalDuration": 70.09999999997672
+        },
+        "fetch": {
+          "count": 66,
+          "totalSize": 188573,
+          "totalDuration": 14881.199999999837
         }
       },
       "largeResources": [],
@@ -161,7 +164,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 58
+          "duration": 70
         }
       ],
       "totalDomains": 1
@@ -179,32 +182,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 27
+          "duration": 76
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 22
+          "duration": 75
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 67
+          "duration": 86
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 69
+          "duration": 76
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 56
+          "duration": 95
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
           "size": 15956,
-          "duration": 43
+          "duration": 76
         }
       ],
       "fontFaces": [
@@ -354,6 +357,12 @@
         "resourceType": "document"
       },
       {
+        "url": "https://toyotawindowsticker.com/paint-code?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
         "url": "https://toyotawindowsticker.com/privacy?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
@@ -366,13 +375,13 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/paint-code?_rsc=m7x9l",
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=m7x9l",
+        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -384,13 +393,31 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=m7x9l",
+        "url": "https://toyotawindowsticker.com/features-by-vin?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=m7x9l",
+        "url": "https://toyotawindowsticker.com/?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/pricing?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/specs-by-vin?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/contact-us?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -408,19 +435,7 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/contact-us?_rsc=m7x9l",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=b1sp8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=pw767",
+        "url": "https://toyotawindowsticker.com/msrp-lookup-by-vin?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -432,7 +447,7 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1eao1",
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=pw767",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -444,25 +459,13 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1eao1",
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=b1sp8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1m6c8",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/paint-code?_rsc=1eao1",
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1m6c8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -474,7 +477,7 @@
     "label": "Toyota – Build Sheet",
     "url": "https://toyotawindowsticker.com/build-sheet-by-vin",
     "browser": "mobile-chrome",
-    "timestamp": "2026-11-04T16:12:07.185Z",
+    "timestamp": "2026-11-05T16:19:20.345Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -492,17 +495,17 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 28,
-        "tls": 26,
-        "serverProcessing": 308,
-        "ttfb": 341,
-        "download": 5,
-        "domParsing": 17,
-        "domContentLoaded": 450,
-        "loadEvent": 1126,
-        "transferSize": 9761,
-        "encodedBodySize": 9461,
+        "dns": 1,
+        "connection": 121,
+        "tls": 65,
+        "serverProcessing": 536,
+        "ttfb": 662,
+        "download": 154,
+        "domParsing": 1,
+        "domContentLoaded": 892,
+        "loadEvent": 1038,
+        "transferSize": 9809,
+        "encodedBodySize": 9509,
         "decodedBodySize": 40436,
         "protocol": "h2"
       },
@@ -567,22 +570,22 @@
         "link": {
           "count": 10,
           "totalSize": 146017,
-          "totalDuration": 1546.799999999872
+          "totalDuration": 1449.1999999999534
         },
         "script": {
           "count": 15,
           "totalSize": 207349,
-          "totalDuration": 1236.600000000035
-        },
-        "fetch": {
-          "count": 18,
-          "totalSize": 44437,
-          "totalDuration": 5617.000000000116
+          "totalDuration": 1441.6999999997206
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 63.600000000034925
+          "totalDuration": 68.70000000006985
+        },
+        "fetch": {
+          "count": 18,
+          "totalSize": 44437,
+          "totalDuration": 5233.200000000186
         }
       },
       "largeResources": [],
@@ -616,7 +619,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 86
+          "duration": 27
         }
       ],
       "totalDomains": 1
@@ -634,32 +637,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 56
+          "duration": 141
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 68
+          "duration": 88
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 86
+          "duration": 148
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 324
+          "duration": 155
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 88
+          "duration": 153
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
           "size": 15956,
-          "duration": 98
+          "duration": 154
         }
       ],
       "fontFaces": [
@@ -809,13 +812,55 @@
         "resourceType": "document"
       },
       {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
         "url": "https://toyotawindowsticker.com/contact-us?_rsc=m7x9l",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/contact-us?_rsc=x6y86",
+        "url": "https://toyotawindowsticker.com/about-us?_rsc=m7x9l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=x6y86",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=b1sp8",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=1ci32",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=pw767",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=16pzb",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -827,7 +872,13 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/blog?_rsc=b1sp8",
+        "url": "https://toyotawindowsticker.com/contact-us?_rsc=1eao1",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=1c85r",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -845,31 +896,13 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/about-us?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/contact-us?_rsc=1eao1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/about-us?_rsc=1m6c8",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/?_rsc=1rw51",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/blog?_rsc=pw767",
+        "url": "https://toyotawindowsticker.com/about-us?_rsc=1eao1",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -881,7 +914,7 @@
     "label": "Toyota – Options Check",
     "url": "https://toyotawindowsticker.com/options-check-by-vin",
     "browser": "desktop-chrome",
-    "timestamp": "2026-11-04T16:12:20.211Z",
+    "timestamp": "2026-11-05T16:19:42.330Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -899,15 +932,485 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 23,
-        "tls": 21,
-        "serverProcessing": 197,
-        "ttfb": 224,
-        "download": 1,
+        "dns": 1,
+        "connection": 115,
+        "tls": 59,
+        "serverProcessing": 436,
+        "ttfb": 553,
+        "download": 24,
+        "domParsing": 2,
+        "domContentLoaded": 606,
+        "loadEvent": 940,
+        "transferSize": 9816,
+        "encodedBodySize": 9516,
+        "decodedBodySize": 40440,
+        "protocol": "h2"
+      },
+      "issues": []
+    },
+    "renderBlocking": [
+      {
+        "type": "CSS",
+        "url": "/_next/static/chunks/90dfdd788152cee8.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "CSS",
+        "url": "/public-stylesheet.css",
+        "suggestion": "Consider async loading or inlining critical CSS"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/baf2e8b2fd439321.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/45bb9fb280e43468.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/2e60a143a80df5d0.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/46cdb48d813b31d4.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/f2a6c215001a536b.js",
+        "suggestion": "Add async or defer attribute"
+      },
+      {
+        "type": "JS",
+        "url": "/_next/static/chunks/733229671ceb7940.js",
+        "suggestion": "Add async or defer attribute"
+      }
+    ],
+    "resourceAnalysis": {
+      "totalCount": 92,
+      "totalSize": 542241,
+      "byType": {
+        "link": {
+          "count": 10,
+          "totalSize": 146017,
+          "totalDuration": 1313.4000000001397
+        },
+        "script": {
+          "count": 15,
+          "totalSize": 207349,
+          "totalDuration": 1652.8999999999069
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 60.70000000006985
+        },
+        "fetch": {
+          "count": 66,
+          "totalSize": 188575,
+          "totalDuration": 13042.999999999302
+        }
+      },
+      "largeResources": [],
+      "issues": []
+    },
+    "imageAudit": {
+      "totalImages": 2,
+      "issueCount": 2,
+      "images": [
+        {
+          "src": "https://toyotawindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2F",
+          "naturalWidth": 345,
+          "naturalHeight": 106,
+          "displayWidth": 117,
+          "displayHeight": 36,
+          "loading": "auto",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 345x106 displayed at 117x36"
+          ]
+        },
+        {
+          "src": "https://toyotawindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2F",
+          "naturalWidth": 345,
+          "naturalHeight": 106,
+          "displayWidth": 117,
+          "displayHeight": 36,
+          "loading": "lazy",
+          "fetchPriority": "auto",
+          "hasAlt": true,
+          "hasDimensions": true,
+          "issues": [
+            "Oversized: 345x106 displayed at 117x36",
+            "Above-fold image has loading=\"lazy\" — slows LCP"
+          ]
+        }
+      ]
+    },
+    "thirdPartyAnalysis": {
+      "firstPartySize": 542241,
+      "thirdPartySize": 0,
+      "thirdPartyDomains": [
+        {
+          "domain": "static.cloudflareinsights.com",
+          "count": 1,
+          "size": 0,
+          "duration": 22
+        }
+      ],
+      "totalDomains": 1
+    },
+    "domAnalysis": {
+      "totalElements": 210,
+      "maxDepth": 10,
+      "maxChildren": 35,
+      "widestElement": "HEAD",
+      "deepestElement": "path",
+      "issues": []
+    },
+    "fontAnalysis": {
+      "fonts": [
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
+          "size": 16047,
+          "duration": 77
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
+          "size": 25538,
+          "duration": 175
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
+          "size": 16132,
+          "duration": 165
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
+          "size": 23406,
+          "duration": 175
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
+          "size": 15944,
+          "duration": 157
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
+          "size": 15956,
+          "duration": 133
+        }
+      ],
+      "fontFaces": [
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "Sora",
+          "display": "swap"
+        },
+        {
+          "family": "\"Sora Fallback\"",
+          "display": "auto"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "Barlow",
+          "display": "swap"
+        },
+        {
+          "family": "\"Barlow Fallback\"",
+          "display": "auto"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono\"",
+          "display": "swap"
+        },
+        {
+          "family": "\"Geist Mono Fallback\"",
+          "display": "auto"
+        }
+      ],
+      "issues": [
+        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
+        "6 font files loaded — consider reducing"
+      ]
+    },
+    "securityCheck": {
+      "issues": []
+    },
+    "preloadCheck": {
+      "preloads": [],
+      "preconnects": [],
+      "dnsPrefetch": [],
+      "issues": [
+        "No preload hints found — consider preloading LCP image/font"
+      ]
+    },
+    "consoleErrors": [
+      "Failed to load resource: the server responded with a status of 404 ()"
+    ],
+    "consoleWarnings": [
+      "Deprecated API for given entry type."
+    ],
+    "failedRequests": [
+      {
+        "url": "https://toyotawindowsticker.com/options-check-by-vin",
+        "status": 404,
+        "resourceType": "document"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/privacy?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/features-by-vin?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/specs-by-vin?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/contact-us?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/about-us?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/signup?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/login?_rsc=g67qx",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=wjd54",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=13rkf",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=c3j8v",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1x5h1",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=y7pvc",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1bvp5",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      }
+    ]
+  },
+  {
+    "site": "TOYOTAWINDOWSTICKER Window Sticker",
+    "label": "Toyota – Options Check",
+    "url": "https://toyotawindowsticker.com/options-check-by-vin",
+    "browser": "mobile-chrome",
+    "timestamp": "2026-11-05T16:19:36.070Z",
+    "lcpAnalysis": {
+      "element": null,
+      "tagName": null,
+      "size": null,
+      "src": null,
+      "renderTime": null,
+      "loadTime": null,
+      "issues": []
+    },
+    "clsAnalysis": {
+      "totalCLS": 0,
+      "shifts": [],
+      "issues": []
+    },
+    "ttfbAnalysis": {
+      "breakdown": {
+        "redirect": 0,
+        "dns": 1,
+        "connection": 115,
+        "tls": 60,
+        "serverProcessing": 458,
+        "ttfb": 576,
+        "download": 2,
         "domParsing": 13,
-        "domContentLoaded": 286,
-        "loadEvent": 507,
+        "domContentLoaded": 620,
+        "loadEvent": 885,
         "transferSize": 9765,
         "encodedBodySize": 9465,
         "decodedBodySize": 40440,
@@ -958,476 +1461,6 @@
       },
       {
         "type": "JS",
-        "url": "/_next/static/chunks/f2a6c215001a536b.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/733229671ceb7940.js",
-        "suggestion": "Add async or defer attribute"
-      }
-    ],
-    "resourceAnalysis": {
-      "totalCount": 92,
-      "totalSize": 542239,
-      "byType": {
-        "link": {
-          "count": 10,
-          "totalSize": 146017,
-          "totalDuration": 527.0000000000582
-        },
-        "script": {
-          "count": 15,
-          "totalSize": 207349,
-          "totalDuration": 583.0999999999767
-        },
-        "fetch": {
-          "count": 66,
-          "totalSize": 188573,
-          "totalDuration": 7656.599999999569
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 10.599999999976717
-        }
-      },
-      "largeResources": [],
-      "issues": []
-    },
-    "imageAudit": {
-      "totalImages": 2,
-      "issueCount": 2,
-      "images": [
-        {
-          "src": "https://toyotawindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2F",
-          "naturalWidth": 345,
-          "naturalHeight": 106,
-          "displayWidth": 117,
-          "displayHeight": 36,
-          "loading": "auto",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 345x106 displayed at 117x36"
-          ]
-        },
-        {
-          "src": "https://toyotawindowsticker.com/_next/image?url=https%3A%2F%2Fvhr.nyc3.cdn.digitaloceanspaces.com%2F",
-          "naturalWidth": 345,
-          "naturalHeight": 106,
-          "displayWidth": 117,
-          "displayHeight": 36,
-          "loading": "lazy",
-          "fetchPriority": "auto",
-          "hasAlt": true,
-          "hasDimensions": true,
-          "issues": [
-            "Oversized: 345x106 displayed at 117x36",
-            "Above-fold image has loading=\"lazy\" — slows LCP"
-          ]
-        }
-      ]
-    },
-    "thirdPartyAnalysis": {
-      "firstPartySize": 542239,
-      "thirdPartySize": 0,
-      "thirdPartyDomains": [
-        {
-          "domain": "static.cloudflareinsights.com",
-          "count": 1,
-          "size": 0,
-          "duration": 44
-        }
-      ],
-      "totalDomains": 1
-    },
-    "domAnalysis": {
-      "totalElements": 210,
-      "maxDepth": 10,
-      "maxChildren": 35,
-      "widestElement": "HEAD",
-      "deepestElement": "path",
-      "issues": []
-    },
-    "fontAnalysis": {
-      "fonts": [
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
-          "size": 16047,
-          "duration": 83
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 30
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
-          "size": 16132,
-          "duration": 43
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
-          "size": 23406,
-          "duration": 54
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
-          "size": 15944,
-          "duration": 54
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 50
-        }
-      ],
-      "fontFaces": [
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "Sora",
-          "display": "swap"
-        },
-        {
-          "family": "\"Sora Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "Barlow",
-          "display": "swap"
-        },
-        {
-          "family": "\"Barlow Fallback\"",
-          "display": "auto"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono\"",
-          "display": "swap"
-        },
-        {
-          "family": "\"Geist Mono Fallback\"",
-          "display": "auto"
-        }
-      ],
-      "issues": [
-        "3 font(s) using font-display: auto/block — causes invisible text (FOIT)",
-        "6 font files loaded — consider reducing"
-      ]
-    },
-    "securityCheck": {
-      "issues": []
-    },
-    "preloadCheck": {
-      "preloads": [],
-      "preconnects": [],
-      "dnsPrefetch": [],
-      "issues": [
-        "No preload hints found — consider preloading LCP image/font"
-      ]
-    },
-    "consoleErrors": [
-      "Failed to load resource: the server responded with a status of 404 ()"
-    ],
-    "consoleWarnings": [
-      "Deprecated API for given entry type."
-    ],
-    "failedRequests": [
-      {
-        "url": "https://toyotawindowsticker.com/options-check-by-vin",
-        "status": 404,
-        "resourceType": "document"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/features-by-vin?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/pricing?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/login?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/signup?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=c3j8v",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1bvp5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1bvp5",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=y7pvc",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/paint-code?_rsc=1x5h1",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      }
-    ]
-  },
-  {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Options Check",
-    "url": "https://toyotawindowsticker.com/options-check-by-vin",
-    "browser": "mobile-chrome",
-    "timestamp": "2026-11-04T16:12:20.165Z",
-    "lcpAnalysis": {
-      "element": null,
-      "tagName": null,
-      "size": null,
-      "src": null,
-      "renderTime": null,
-      "loadTime": null,
-      "issues": []
-    },
-    "clsAnalysis": {
-      "totalCLS": 0,
-      "shifts": [],
-      "issues": []
-    },
-    "ttfbAnalysis": {
-      "breakdown": {
-        "redirect": 0,
-        "dns": 1,
-        "connection": 8,
-        "tls": 6,
-        "serverProcessing": 113,
-        "ttfb": 123,
-        "download": 7,
-        "domParsing": 18,
-        "domContentLoaded": 192,
-        "loadEvent": 503,
-        "transferSize": 9913,
-        "encodedBodySize": 9613,
-        "decodedBodySize": 40440,
-        "protocol": "h2"
-      },
-      "issues": []
-    },
-    "renderBlocking": [
-      {
-        "type": "CSS",
-        "url": "/_next/static/chunks/90dfdd788152cee8.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "CSS",
-        "url": "/public-stylesheet.css",
-        "suggestion": "Consider async loading or inlining critical CSS"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/a6dad97d9634a72d.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/baf2e8b2fd439321.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/45bb9fb280e43468.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/2e60a143a80df5d0.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/697eb4acc6d9d70f.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
-        "url": "/_next/static/chunks/46cdb48d813b31d4.js",
-        "suggestion": "Add async or defer attribute"
-      },
-      {
-        "type": "JS",
         "url": "/_next/static/chunks/733229671ceb7940.js",
         "suggestion": "Add async or defer attribute"
       },
@@ -1444,22 +1477,22 @@
         "link": {
           "count": 10,
           "totalSize": 146017,
-          "totalDuration": 612.5
+          "totalDuration": 1239.3999999997905
         },
         "script": {
           "count": 15,
           "totalSize": 207349,
-          "totalDuration": 791.3000000000466
-        },
-        "fetch": {
-          "count": 18,
-          "totalSize": 44437,
-          "totalDuration": 3123.500000000058
+          "totalDuration": 1369.9000000000233
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 15.400000000023283
+          "totalDuration": 62.199999999953434
+        },
+        "fetch": {
+          "count": 18,
+          "totalSize": 44437,
+          "totalDuration": 4978.59999999986
         }
       },
       "largeResources": [],
@@ -1493,7 +1526,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 49
+          "duration": 27
         }
       ],
       "totalDomains": 1
@@ -1511,32 +1544,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 73
+          "duration": 105
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 30
+          "duration": 104
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 47
+          "duration": 83
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 85
+          "duration": 88
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 33
+          "duration": 73
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
           "size": 15956,
-          "duration": 75
+          "duration": 85
         }
       ],
       "fontFaces": [
@@ -1686,37 +1719,25 @@
         "resourceType": "document"
       },
       {
-        "url": "https://toyotawindowsticker.com/about-us?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/?_rsc=g67qx",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/contact-us?_rsc=g67qx",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/about-us?_rsc=wjd54",
+        "url": "https://toyotawindowsticker.com/blog?_rsc=g67qx",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/contact-us?_rsc=13rkf",
+        "url": "https://toyotawindowsticker.com/blog?_rsc=13rkf",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/blog?_rsc=1v0a2",
+        "url": "https://toyotawindowsticker.com/blog?_rsc=c3j8v",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -1752,7 +1773,7 @@
     "label": "Toyota – Paint Code",
     "url": "https://toyotawindowsticker.com/paint-code-by-vin-lookup",
     "browser": "desktop-chrome",
-    "timestamp": "2026-11-04T16:12:14.866Z",
+    "timestamp": "2026-11-05T16:19:35.145Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -1770,15 +1791,15 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 11,
-        "tls": 8,
-        "serverProcessing": 150,
-        "ttfb": 164,
-        "download": 4,
-        "domParsing": 9,
-        "domContentLoaded": 286,
-        "loadEvent": 304,
+        "dns": 1,
+        "connection": 118,
+        "tls": 62,
+        "serverProcessing": 213,
+        "ttfb": 334,
+        "download": 15,
+        "domParsing": 3,
+        "domContentLoaded": 410,
+        "loadEvent": 661,
         "transferSize": 9810,
         "encodedBodySize": 9510,
         "decodedBodySize": 40405,
@@ -1840,27 +1861,27 @@
     ],
     "resourceAnalysis": {
       "totalCount": 92,
-      "totalSize": 542240,
+      "totalSize": 542239,
       "byType": {
         "link": {
           "count": 10,
           "totalSize": 146017,
-          "totalDuration": 331.0000000000582
+          "totalDuration": 1137.5000000001164
         },
         "script": {
           "count": 15,
           "totalSize": 207349,
-          "totalDuration": 421.70000000001164
+          "totalDuration": 1648.9999999997672
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 6.599999999976717
+          "totalDuration": 62.79999999993015
         },
         "fetch": {
           "count": 66,
-          "totalSize": 188574,
-          "totalDuration": 7071.100000000035
+          "totalSize": 188573,
+          "totalDuration": 14014.499999999767
         }
       },
       "largeResources": [],
@@ -1902,14 +1923,14 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 542240,
+      "firstPartySize": 542239,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 45
+          "duration": 54
         }
       ],
       "totalDomains": 1
@@ -1927,32 +1948,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 17
+          "duration": 126
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 34
+          "duration": 88
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 24
+          "duration": 126
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 35
+          "duration": 127
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 28
+          "duration": 126
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
           "size": 15956,
-          "duration": 32
+          "duration": 69
         }
       ],
       "fontFaces": [
@@ -2102,43 +2123,7 @@
         "resourceType": "document"
       },
       {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/paint-code?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/features-by-vin?_rsc=t4hu4",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2168,12 +2153,6 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/contact-us?_rsc=t4hu4",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/signup?_rsc=t4hu4",
         "status": 0,
         "resourceType": "fetch",
@@ -2186,13 +2165,19 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=y2gn3",
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1x9bk",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=m29he",
+        "url": "https://toyotawindowsticker.com/terms-and-conditions?_rsc=1ntf6",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1x9bk",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2204,13 +2189,49 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=kbg1s",
+        "url": "https://toyotawindowsticker.com/request-a-refund?_rsc=1p208",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/privacy?_rsc=1x9bk",
+        "url": "https://toyotawindowsticker.com/privacy?_rsc=1p208",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/paint-code?_rsc=kbg1s",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/paint-code?_rsc=1p208",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/paint-code?_rsc=1x9bk",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=kbg1s",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=1x9bk",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=1x9bk",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2222,7 +2243,7 @@
     "label": "Toyota – Paint Code",
     "url": "https://toyotawindowsticker.com/paint-code-by-vin-lookup",
     "browser": "mobile-chrome",
-    "timestamp": "2026-11-04T16:12:15.594Z",
+    "timestamp": "2026-11-05T16:19:30.540Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2240,17 +2261,17 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 2,
-        "connection": 13,
-        "tls": 11,
-        "serverProcessing": 119,
-        "ttfb": 136,
-        "download": 5,
+        "dns": 1,
+        "connection": 116,
+        "tls": 61,
+        "serverProcessing": 244,
+        "ttfb": 364,
+        "download": 3,
         "domParsing": 13,
-        "domContentLoaded": 219,
-        "loadEvent": 467,
-        "transferSize": 9820,
-        "encodedBodySize": 9520,
+        "domContentLoaded": 414,
+        "loadEvent": 767,
+        "transferSize": 9762,
+        "encodedBodySize": 9462,
         "decodedBodySize": 40405,
         "protocol": "h2"
       },
@@ -2315,22 +2336,22 @@
         "link": {
           "count": 10,
           "totalSize": 146017,
-          "totalDuration": 404.4999999998836
+          "totalDuration": 1864.8000000000466
         },
         "script": {
           "count": 15,
           "totalSize": 207349,
-          "totalDuration": 600.2000000000116
-        },
-        "fetch": {
-          "count": 18,
-          "totalSize": 44437,
-          "totalDuration": 1949.0000000001746
+          "totalDuration": 1899.399999999674
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 8.799999999988358
+          "totalDuration": 61.300000000046566
+        },
+        "fetch": {
+          "count": 18,
+          "totalSize": 44437,
+          "totalDuration": 5549.000000000116
         }
       },
       "largeResources": [],
@@ -2364,7 +2385,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 54
+          "duration": 32
         }
       ],
       "totalDomains": 1
@@ -2382,32 +2403,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 47
+          "duration": 180
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 80
+          "duration": 169
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 42
+          "duration": 180
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 30
+          "duration": 188
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 30
+          "duration": 172
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
           "size": 15956,
-          "duration": 19
+          "duration": 191
         }
       ],
       "fontFaces": [
@@ -2563,13 +2584,19 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/about-us?_rsc=1x9bk",
+        "url": "https://toyotawindowsticker.com/about-us?_rsc=t4hu4",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/blog?_rsc=matx5",
+        "url": "https://toyotawindowsticker.com/blog?_rsc=1pg5l",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/blog?_rsc=1ntf6",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2581,13 +2608,19 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/?_rsc=bedo0",
+        "url": "https://toyotawindowsticker.com/contact-us?_rsc=kbg1s",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/?_rsc=1x9bk",
+        "url": "https://toyotawindowsticker.com/about-us?_rsc=1p208",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/?_rsc=bedo0",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2599,7 +2632,7 @@
     "label": "Toyota – VIN Decoder",
     "url": "https://toyotawindowsticker.com/vin-decoder",
     "browser": "desktop-chrome",
-    "timestamp": "2026-11-04T16:12:09.763Z",
+    "timestamp": "2026-11-05T16:19:27.880Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -2618,14 +2651,14 @@
       "breakdown": {
         "redirect": 0,
         "dns": 1,
-        "connection": 11,
-        "tls": 9,
-        "serverProcessing": 30,
-        "ttfb": 43,
-        "download": 2,
-        "domParsing": 143,
-        "domContentLoaded": 193,
-        "loadEvent": 382,
+        "connection": 115,
+        "tls": 60,
+        "serverProcessing": 70,
+        "ttfb": 188,
+        "download": 17,
+        "domParsing": 74,
+        "domContentLoaded": 282,
+        "loadEvent": 549,
         "transferSize": 53500,
         "encodedBodySize": 53200,
         "decodedBodySize": 447162,
@@ -2662,32 +2695,32 @@
     ],
     "resourceAnalysis": {
       "totalCount": 53,
-      "totalSize": 466354,
+      "totalSize": 466355,
       "byType": {
         "link": {
           "count": 11,
           "totalSize": 172255,
-          "totalDuration": 654.9000000001397
+          "totalDuration": 1548.7999999999302
         },
         "script": {
           "count": 14,
           "totalSize": 191447,
-          "totalDuration": 948.9999999998254
+          "totalDuration": 2042
         },
         "img": {
           "count": 1,
           "totalSize": 11884,
-          "totalDuration": 103.20000000001164
+          "totalDuration": 207.69999999995343
         },
         "xmlhttprequest": {
           "count": 1,
           "totalSize": 300,
-          "totalDuration": 25.70000000001164
+          "totalDuration": 69
         },
         "fetch": {
           "count": 26,
-          "totalSize": 90468,
-          "totalDuration": 3017.2999999998137
+          "totalSize": 90469,
+          "totalDuration": 5428.0999999996275
         }
       },
       "largeResources": [],
@@ -2728,14 +2761,14 @@
       ]
     },
     "thirdPartyAnalysis": {
-      "firstPartySize": 466354,
+      "firstPartySize": 466355,
       "thirdPartySize": 0,
       "thirdPartyDomains": [
         {
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 43
+          "duration": 18
         }
       ],
       "totalDomains": 1
@@ -2755,32 +2788,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 34
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
-          "size": 25538,
-          "duration": 30
+          "duration": 88
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 53
+          "duration": 79
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
+          "size": 25538,
+          "duration": 135
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 35
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 37
+          "duration": 152
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 39
+          "duration": 83
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
+          "size": 15956,
+          "duration": 152
         }
       ],
       "fontFaces": [
@@ -2960,7 +2993,19 @@
     ],
     "failedRequests": [
       {
-        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=lb0mp",
+        "url": "https://toyotawindowsticker.com/?_rsc=lb0mp",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=lb0mp",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=lb0mp",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -2978,19 +3023,7 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/?_rsc=155pw",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/?_rsc=yb46w",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=1tx74",
+        "url": "https://toyotawindowsticker.com/build-sheet?_rsc=xqvg2",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3002,19 +3035,7 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/login?_rsc=jlxpl",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/warranty-check?_rsc=xqvg2",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
-        "url": "https://toyotawindowsticker.com/warranty-check?_rsc=1tx74",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3026,13 +3047,13 @@
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/msrp-lookup-by-vin?_rsc=xqvg2",
+        "url": "https://toyotawindowsticker.com/msrp-lookup-by-vin?_rsc=1tx74",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
       },
       {
-        "url": "https://toyotawindowsticker.com/vin-decoder?_rsc=xqvg2",
+        "url": "https://toyotawindowsticker.com/msrp-lookup-by-vin?_rsc=1y3a3",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
@@ -3044,7 +3065,7 @@
     "label": "Toyota – VIN Decoder",
     "url": "https://toyotawindowsticker.com/vin-decoder",
     "browser": "mobile-chrome",
-    "timestamp": "2026-11-04T16:12:11.275Z",
+    "timestamp": "2026-11-05T16:19:24.867Z",
     "lcpAnalysis": {
       "element": null,
       "tagName": null,
@@ -3062,15 +3083,15 @@
     "ttfbAnalysis": {
       "breakdown": {
         "redirect": 0,
-        "dns": 1,
-        "connection": 44,
-        "tls": 42,
-        "serverProcessing": 26,
-        "ttfb": 73,
-        "download": 3,
-        "domParsing": 75,
-        "domContentLoaded": 154,
-        "loadEvent": 369,
+        "dns": 4,
+        "connection": 117,
+        "tls": 62,
+        "serverProcessing": 70,
+        "ttfb": 192,
+        "download": 22,
+        "domParsing": 78,
+        "domContentLoaded": 298,
+        "loadEvent": 741,
         "transferSize": 53500,
         "encodedBodySize": 53200,
         "decodedBodySize": 447162,
@@ -3112,27 +3133,27 @@
         "link": {
           "count": 10,
           "totalSize": 130117,
-          "totalDuration": 558.1000000000349
+          "totalDuration": 1354.0999999998603
         },
         "script": {
           "count": 14,
           "totalSize": 191447,
-          "totalDuration": 1034.8999999999069
+          "totalDuration": 2194.8999999997905
         },
         "img": {
           "count": 1,
           "totalSize": 95645,
-          "totalDuration": 200.10000000003492
-        },
-        "xmlhttprequest": {
-          "count": 1,
-          "totalSize": 300,
-          "totalDuration": 13.799999999988358
+          "totalDuration": 455.29999999993015
         },
         "fetch": {
           "count": 6,
           "totalSize": 25565,
-          "totalDuration": 757.0999999999185
+          "totalDuration": 1313.6999999999534
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "totalSize": 300,
+          "totalDuration": 76
         }
       },
       "largeResources": [],
@@ -3151,7 +3172,7 @@
           "domain": "static.cloudflareinsights.com",
           "count": 1,
           "size": 0,
-          "duration": 36
+          "duration": 25
         }
       ],
       "totalDomains": 1
@@ -3171,32 +3192,32 @@
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/0595f7052377a1a2-s.p.0de08f1e.woff2",
           "size": 16047,
-          "duration": 74
+          "duration": 137
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6bd983bd58a87a3d-s.p.cf80dd39.woff2",
           "size": 25538,
-          "duration": 44
+          "duration": 89
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/6c98c9fb873995d2-s.p.4a6499bc.woff2",
           "size": 16132,
-          "duration": 29
+          "duration": 82
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/797e433ab948586e-s.p.29207c2f.woff2",
           "size": 23406,
-          "duration": 35
-        },
-        {
-          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
-          "size": 15956,
-          "duration": 33
+          "duration": 141
         },
         {
           "url": "...//toyotawindowsticker.com/_next/static/media/a083361d37caf3d1-s.p.5c0d0b0d.woff2",
           "size": 15944,
-          "duration": 51
+          "duration": 137
+        },
+        {
+          "url": "...//toyotawindowsticker.com/_next/static/media/c6e2684784a55443-s.p.ea91da97.woff2",
+          "size": 15956,
+          "duration": 141
         }
       ],
       "fontFaces": [
@@ -3376,12 +3397,6 @@
     ],
     "failedRequests": [
       {
-        "url": "https://toyotawindowsticker.com/?_rsc=1je0p",
-        "status": 0,
-        "resourceType": "fetch",
-        "failure": "net::ERR_ABORTED"
-      },
-      {
         "url": "https://toyotawindowsticker.com/?_rsc=1upwa",
         "status": 0,
         "resourceType": "fetch",
@@ -3389,6 +3404,12 @@
       },
       {
         "url": "https://toyotawindowsticker.com/?_rsc=155pw",
+        "status": 0,
+        "resourceType": "fetch",
+        "failure": "net::ERR_ABORTED"
+      },
+      {
+        "url": "https://toyotawindowsticker.com/?_rsc=1tx74",
         "status": 0,
         "resourceType": "fetch",
         "failure": "net::ERR_ABORTED"
