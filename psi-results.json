@@ -1,20 +1,20 @@
 [
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Build Sheet",
-    "url": "https://toyotawindowsticker.com/build-sheet-by-vin",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Build Sheet",
+    "url": "https://ramwindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:48:15.773Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-07T14:48:08.415Z",
+    "performanceScore": 98,
     "lcp": {
-      "value": 757.32427,
-      "displayValue": "0.8 s",
+      "value": 1227,
+      "displayValue": "1.2 s",
       "score": 1
     },
     "fcp": {
-      "value": 757.32427,
-      "displayValue": "0.8 s",
-      "score": 1
+      "value": 1227,
+      "displayValue": "1.2 s",
+      "score": 0.99
     },
     "cls": {
       "value": null,
@@ -22,56 +22,81 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 12.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 1857.0658539869555,
-      "displayValue": "1.9 s",
-      "score": 1
+      "value": 3807.2405913424277,
+      "displayValue": "3.8 s",
+      "score": 0.84
     },
     "ttfb": {
-      "value": 2,
+      "value": 4,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 757.32427,
-      "displayValue": "0.8 s",
-      "score": 1
+      "value": 3039.15,
+      "displayValue": "3.0 s",
+      "score": 0.95
     },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 904,
+        "savingsBytes": 0
+      }
+    ],
+    "diagnostics": [
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 22 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 130 ms",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
       }
     ]
   },
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Build Sheet",
-    "url": "https://toyotawindowsticker.com/build-sheet-by-vin",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Build Sheet",
+    "url": "https://ramwindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-11-07T14:48:30.499Z",
+    "timestamp": "2026-11-07T14:48:23.960Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 208.2019375,
-      "displayValue": "0.2 s",
-      "score": 1
+      "value": 721,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 208.2019375,
-      "displayValue": "0.2 s",
+      "value": 313,
+      "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
@@ -80,55 +105,86 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 7.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 664.5363053134909,
+      "value": 455.62667380571366,
+      "displayValue": "0.5 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 725,
       "displayValue": "0.7 s",
       "score": 1
     },
-    "ttfb": {
-      "value": 2,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 208.20193750000004,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
+    "opportunities": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 241,
+        "savingsBytes": 0
       },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 10,
+        "savingsBytes": 46108
+      }
+    ],
+    "diagnostics": [
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 31 KiB",
+        "score": 0
+      },
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
   },
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – VIN Decoder",
-    "url": "https://toyotawindowsticker.com/vin-decoder",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – VIN Decoder",
+    "url": "https://ramwindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:48:47.101Z",
-    "performanceScore": 100,
+    "timestamp": "2026-11-07T14:48:44.396Z",
+    "performanceScore": 84,
     "lcp": {
-      "value": 1111,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 4276,
+      "displayValue": "4.3 s",
+      "score": 0.42
     },
     "fcp": {
-      "value": 1111,
+      "value": 1123,
       "displayValue": "1.1 s",
       "score": 0.99
     },
@@ -138,13 +194,96 @@
       "score": 1
     },
     "tbt": {
-      "value": 7,
+      "value": 54,
+      "displayValue": "50 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 3708.0383267213124,
+      "displayValue": "3.7 s",
+      "score": 0.85
+    },
+    "ttfb": {
+      "value": 6,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 4313.5,
+      "displayValue": "4.3 s",
+      "score": 0.84
+    },
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 300,
+        "savingsBytes": 46252
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 10 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 90 ms",
+        "score": 0
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 52 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      }
+    ]
+  },
+  {
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – VIN Decoder",
+    "url": "https://ramwindowsticker.com/vin-decoder",
+    "strategy": "desktop",
+    "timestamp": "2026-11-07T14:49:01.886Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 721,
+      "displayValue": "0.7 s",
+      "score": 0.99
+    },
+    "fcp": {
+      "value": 334,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 12.5,
       "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 1332.1272363786597,
-      "displayValue": "1.3 s",
+      "value": 368.8563842454404,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
@@ -153,53 +292,65 @@
       "score": 1
     },
     "interactive": {
-      "value": 2930,
-      "displayValue": "2.9 s",
-      "score": 0.96
+      "value": 725,
+      "displayValue": "0.7 s",
+      "score": 1
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 40,
+        "savingsBytes": 46213
+      }
+    ],
     "diagnostics": [
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
         "score": 0.5
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 12 KiB",
+        "displayValue": "Est savings of 67 KiB",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 100 ms",
-        "score": 0
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 10 KiB",
+        "score": 0.5
       }
     ]
   },
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – VIN Decoder",
-    "url": "https://toyotawindowsticker.com/vin-decoder",
-    "strategy": "desktop",
-    "timestamp": "2026-11-07T14:49:06.741Z",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Paint Code",
+    "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "mobile",
+    "timestamp": "2026-11-07T14:49:16.825Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 705,
-      "displayValue": "0.7 s",
-      "score": 0.99
+      "value": 1059.262575,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "fcp": {
-      "value": 368,
-      "displayValue": "0.4 s",
+      "value": 1059.262575,
+      "displayValue": "1.1 s",
       "score": 1
     },
     "cls": {
@@ -208,14 +359,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 46.5,
-      "displayValue": "50 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 614.8318885536936,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 2403.14559800276,
+      "displayValue": "2.4 s",
+      "score": 0.98
     },
     "ttfb": {
       "value": 7,
@@ -223,37 +374,127 @@
       "score": 1
     },
     "interactive": {
-      "value": 706.6500000000001,
-      "displayValue": "0.7 s",
+      "value": 1059.262575,
+      "displayValue": "1.1 s",
       "score": 1
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 757,
+        "savingsBytes": 0
+      }
+    ],
     "diagnostics": [
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 130 ms",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       }
     ]
   },
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Paint Code",
-    "url": "https://toyotawindowsticker.com/paint-code-by-vin-lookup",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Paint Code",
+    "url": "https://ramwindowsticker.com/paint-code-by-vin-lookup",
+    "strategy": "desktop",
+    "timestamp": "2026-11-07T14:49:29.705Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 281.14392499999997,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 281.14392499999997,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": null,
+      "displayValue": "0 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 281.9227464640911,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 4,
+      "displayValue": "Root document took 0 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 281.14392499999997,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 201,
+        "savingsBytes": 0
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Options Check",
+    "url": "https://ramwindowsticker.com/options-check-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:49:19.220Z",
+    "timestamp": "2026-11-07T14:49:45.470Z",
     "performanceScore": 100,
     "lcp": {
       "value": 759,
@@ -271,22 +512,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 14,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 2015.7380920138953,
-      "displayValue": "2.0 s",
+      "value": 80,
+      "displayValue": "80 ms",
       "score": 0.99
     },
+    "si": {
+      "value": 1474.941668134688,
+      "displayValue": "1.5 s",
+      "score": 1
+    },
     "ttfb": {
-      "value": 2,
+      "value": 1,
       "displayValue": "Root document took 0 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2181,
+      "value": 2247,
       "displayValue": "2.2 s",
       "score": 0.99
     },
@@ -299,27 +540,32 @@
         "score": 0.5
       },
       {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       }
     ]
   },
   {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Paint Code",
-    "url": "https://toyotawindowsticker.com/paint-code-by-vin-lookup",
+    "site": "RAMWINDOWSTICKER Window Sticker",
+    "label": "RAM – Options Check",
+    "url": "https://ramwindowsticker.com/options-check-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-11-07T14:49:32.184Z",
+    "timestamp": "2026-11-07T14:50:03.950Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 208.5,
+      "value": 210,
       "displayValue": "0.2 s",
       "score": 1
     },
     "fcp": {
-      "value": 208.5,
+      "value": 210,
       "displayValue": "0.2 s",
       "score": 1
     },
@@ -329,14 +575,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 3,
-      "displayValue": "0 ms",
-      "score": 1
+      "value": 76.5,
+      "displayValue": "80 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 586.6087776654165,
-      "displayValue": "0.6 s",
-      "score": 1
+      "value": 893.1463026601214,
+      "displayValue": "0.9 s",
+      "score": 0.98
     },
     "ttfb": {
       "value": 2,
@@ -344,68 +590,10 @@
       "score": 1
     },
     "interactive": {
-      "value": 615.5,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Options Check",
-    "url": "https://toyotawindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-11-07T14:49:43.372Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 758,
+      "value": 815.6000000000001,
       "displayValue": "0.8 s",
       "score": 1
     },
-    "fcp": {
-      "value": 758,
-      "displayValue": "0.8 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 33,
-      "displayValue": "30 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 1730.1611139966694,
-      "displayValue": "1.7 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2780,
-      "displayValue": "2.8 s",
-      "score": 0.97
-    },
     "opportunities": [],
     "diagnostics": [
       {
@@ -415,67 +603,14 @@
         "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "TOYOTAWINDOWSTICKER Window Sticker",
-    "label": "Toyota – Options Check",
-    "url": "https://toyotawindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-11-07T14:49:57.921Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 206,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 206,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 559.6351184364955,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 1,
-      "displayValue": "Root document took 0 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 206,
-      "displayValue": "0.2 s",
-      "score": 1
-    },
-    "opportunities": [],
-    "diagnostics": [
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       },
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
         "score": 0.5
       }
     ]
