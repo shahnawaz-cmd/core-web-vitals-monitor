@@ -4,17 +4,17 @@
     "label": "Homepage",
     "url": "https://vehiclehistory.eu/",
     "strategy": "mobile",
-    "timestamp": "2026-11-06T15:28:47.685Z",
-    "performanceScore": 97,
+    "timestamp": "2026-11-07T14:30:28.051Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 1535,
-      "displayValue": "1.5 s",
+      "value": 1189.5,
+      "displayValue": "1.2 s",
       "score": 1
     },
     "fcp": {
-      "value": 1535,
-      "displayValue": "1.5 s",
-      "score": 0.95
+      "value": 1189.5,
+      "displayValue": "1.2 s",
+      "score": 0.99
     },
     "cls": {
       "value": null,
@@ -22,40 +22,32 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 47,
+      "displayValue": "50 ms",
       "score": 1
     },
     "si": {
-      "value": 4557.424855522555,
-      "displayValue": "4.6 s",
-      "score": 0.71
+      "value": 2755.5430977813053,
+      "displayValue": "2.8 s",
+      "score": 0.96
     },
     "ttfb": {
-      "value": 9,
+      "value": 11,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1535,
-      "displayValue": "1.5 s",
-      "score": 1
+      "value": 2633,
+      "displayValue": "2.6 s",
+      "score": 0.98
     },
-    "opportunities": [
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 22232
-      }
-    ],
+    "opportunities": [],
     "diagnostics": [
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 80 KiB",
-        "score": 0.5
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 30 ms",
+        "score": 0
       },
       {
         "id": "cache-insight",
@@ -64,15 +56,15 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 170 ms",
-        "score": 0
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 80 KiB",
         "score": 0.5
       }
     ]
@@ -82,16 +74,16 @@
     "label": "Homepage",
     "url": "https://vehiclehistory.eu/",
     "strategy": "desktop",
-    "timestamp": "2026-11-06T15:29:03.882Z",
-    "performanceScore": 99,
+    "timestamp": "2026-11-07T14:30:45.001Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 611,
-      "displayValue": "0.6 s",
+      "value": 712.0000000000001,
+      "displayValue": "0.7 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 329,
-      "displayValue": "0.3 s",
+      "value": 353.5,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "cls": {
@@ -100,23 +92,23 @@
       "score": 1
     },
     "tbt": {
-      "value": 81.5,
-      "displayValue": "80 ms",
-      "score": 0.99
+      "value": 13,
+      "displayValue": "10 ms",
+      "score": 1
     },
     "si": {
-      "value": 622.8452931429383,
+      "value": 638.3439048455282,
       "displayValue": "0.6 s",
       "score": 1
     },
     "ttfb": {
-      "value": 6,
+      "value": 11,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 762.6,
-      "displayValue": "0.8 s",
+      "value": 712.3500000000001,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "opportunities": [
@@ -124,11 +116,17 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 10,
-        "savingsBytes": 22461
+        "savingsMs": 40,
+        "savingsBytes": 22453
       }
     ],
     "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
@@ -136,21 +134,16 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0
-      },
-      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 0 ms",
+        "score": 0.5
       }
     ]
   },
@@ -159,17 +152,17 @@
     "label": "Window Sticker",
     "url": "https://vehiclehistory.eu/window-sticker",
     "strategy": "mobile",
-    "timestamp": "2026-11-06T15:29:17.648Z",
+    "timestamp": "2026-11-07T14:30:57.393Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 1107,
+      "value": 1061,
       "displayValue": "1.1 s",
       "score": 1
     },
     "fcp": {
-      "value": 1107,
+      "value": 1061,
       "displayValue": "1.1 s",
-      "score": 0.99
+      "score": 1
     },
     "cls": {
       "value": null,
@@ -177,14 +170,14 @@
       "score": 1
     },
     "tbt": {
-      "value": 19,
-      "displayValue": "20 ms",
+      "value": 9.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 2649.1698068879023,
-      "displayValue": "2.6 s",
-      "score": 0.97
+      "value": 1061,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "ttfb": {
       "value": 10,
@@ -192,34 +185,34 @@
       "score": 1
     },
     "interactive": {
-      "value": 2431.8,
+      "value": 2411.3,
       "displayValue": "2.4 s",
       "score": 0.98
     },
     "opportunities": [],
     "diagnostics": [
       {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 150 ms",
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
-        "displayValue": "Est savings of 39 KiB",
+        "displayValue": "Est savings of 13 KiB",
         "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 110 ms",
-        "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       }
     ]
@@ -229,32 +222,32 @@
     "label": "Window Sticker",
     "url": "https://vehiclehistory.eu/window-sticker",
     "strategy": "desktop",
-    "timestamp": "2026-11-06T15:29:31.170Z",
-    "performanceScore": 98,
+    "timestamp": "2026-11-07T14:31:24.205Z",
+    "performanceScore": 92,
     "lcp": {
-      "value": 640.5,
-      "displayValue": "0.6 s",
-      "score": 0.99
+      "value": 922.5,
+      "displayValue": "0.9 s",
+      "score": 0.96
     },
     "fcp": {
-      "value": 322,
+      "value": 325,
       "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.03218441813754735,
+      "displayValue": "0.032",
       "score": 1
     },
     "tbt": {
-      "value": 127.5,
-      "displayValue": "130 ms",
-      "score": 0.93
+      "value": 214.5,
+      "displayValue": "210 ms",
+      "score": 0.77
     },
     "si": {
-      "value": 523.1274013054062,
-      "displayValue": "0.5 s",
-      "score": 1
+      "value": 1013.2372541722671,
+      "displayValue": "1.0 s",
+      "score": 0.97
     },
     "ttfb": {
       "value": 9,
@@ -262,28 +255,35 @@
       "score": 1
     },
     "interactive": {
-      "value": 689.3,
-      "displayValue": "0.7 s",
+      "value": 937.9000000000001,
+      "displayValue": "0.9 s",
       "score": 1
     },
     "opportunities": [],
     "diagnostics": [
       {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 4 KiB",
+        "score": 0.5
+      },
+      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
+        "displayValue": "Est savings of 20 ms",
         "score": 0.5
       },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
-        "score": 0
+        "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
+        "id": "mainthread-work-breakdown",
+        "title": "Minimize main-thread work",
+        "displayValue": "2.4 s",
+        "score": 0
       },
       {
         "id": "image-delivery-insight",
@@ -298,15 +298,15 @@
     "label": "VIN Check",
     "url": "https://vehiclehistory.eu/vin-check",
     "strategy": "mobile",
-    "timestamp": "2026-11-06T15:29:44.116Z",
+    "timestamp": "2026-11-07T14:31:40.194Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 1115,
+      "value": 1127,
       "displayValue": "1.1 s",
       "score": 1
     },
     "fcp": {
-      "value": 1115,
+      "value": 1127,
       "displayValue": "1.1 s",
       "score": 0.99
     },
@@ -316,38 +316,38 @@
       "score": 1
     },
     "tbt": {
-      "value": null,
-      "displayValue": "0 ms",
+      "value": 14.5,
+      "displayValue": "10 ms",
       "score": 1
     },
     "si": {
-      "value": 1115,
+      "value": 1127,
       "displayValue": "1.1 s",
       "score": 1
     },
     "ttfb": {
-      "value": 9,
+      "value": 10,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1144.3500000000001,
-      "displayValue": "1.1 s",
-      "score": 1
+      "value": 2510.3,
+      "displayValue": "2.5 s",
+      "score": 0.98
     },
     "opportunities": [],
     "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 90 ms",
-        "score": 0
-      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 80 ms",
+        "score": 0
       },
       {
         "id": "cache-insight",
@@ -362,15 +362,15 @@
     "label": "VIN Check",
     "url": "https://vehiclehistory.eu/vin-check",
     "strategy": "desktop",
-    "timestamp": "2026-11-06T15:30:03.075Z",
+    "timestamp": "2026-11-07T14:31:57.781Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 347,
+      "value": 318,
       "displayValue": "0.3 s",
       "score": 1
     },
     "fcp": {
-      "value": 347,
+      "value": 318,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -380,22 +380,22 @@
       "score": 1
     },
     "tbt": {
-      "value": 77,
-      "displayValue": "80 ms",
-      "score": 0.99
+      "value": 19.5,
+      "displayValue": "20 ms",
+      "score": 1
     },
     "si": {
-      "value": 577.3965283878897,
-      "displayValue": "0.6 s",
+      "value": 484.0055899909482,
+      "displayValue": "0.5 s",
       "score": 1
     },
     "ttfb": {
-      "value": 10,
+      "value": 11,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 611.3000000000001,
+      "value": 641,
       "displayValue": "0.6 s",
       "score": 1
     },
@@ -408,14 +408,15 @@
         "score": 0.5
       },
       {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 50 ms",
+        "score": 0
+      },
+      {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 4 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
         "score": 0.5
       }
     ]
