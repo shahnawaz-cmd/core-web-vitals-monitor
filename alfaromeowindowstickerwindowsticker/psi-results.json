@@ -4,17 +4,17 @@
     "label": "Alfa Romeo – Build Sheet",
     "url": "https://alfaromeowindowsticker.com/build-sheet-by-vin",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:30:38.995Z",
-    "performanceScore": 95,
+    "timestamp": "2026-11-08T14:39:38.722Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 1990,
-      "displayValue": "2.0 s",
-      "score": 0.97
+      "value": 1090,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "fcp": {
-      "value": 1990,
-      "displayValue": "2.0 s",
-      "score": 0.84
+      "value": 1090,
+      "displayValue": "1.1 s",
+      "score": 0.99
     },
     "cls": {
       "value": null,
@@ -22,24 +22,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 4.5,
+      "value": null,
       "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 4343.997415254188,
-      "displayValue": "4.3 s",
-      "score": 0.75
+      "value": 2394.305408010721,
+      "displayValue": "2.4 s",
+      "score": 0.98
     },
     "ttfb": {
-      "value": 8,
+      "value": 6,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2707.5,
-      "displayValue": "2.7 s",
-      "score": 0.97
+      "value": 1090,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "opportunities": [
       {
@@ -48,38 +48,31 @@
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
         "savingsMs": 751,
         "savingsBytes": 0
-      },
-      {
-        "id": "unused-javascript",
-        "title": "Reduce unused JavaScript",
-        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 150,
-        "savingsBytes": 21951
       }
     ],
     "diagnostics": [
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 150 ms",
-        "score": 0
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
+        "displayValue": "Est savings of 110 ms",
         "score": 0
       },
       {
         "id": "cache-insight",
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 5 KiB",
-        "score": 0
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
       }
     ]
   },
@@ -88,31 +81,31 @@
     "label": "Alfa Romeo – Build Sheet",
     "url": "https://alfaromeowindowsticker.com/build-sheet-by-vin",
     "strategy": "desktop",
-    "timestamp": "2026-11-07T14:30:57.086Z",
+    "timestamp": "2026-11-08T14:39:52.152Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 621,
-      "displayValue": "0.6 s",
+      "value": 663,
+      "displayValue": "0.7 s",
       "score": 0.99
     },
     "fcp": {
-      "value": 293,
+      "value": 331,
       "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.0007544354296880859,
+      "displayValue": "0.001",
       "score": 1
     },
     "tbt": {
-      "value": 0.5,
+      "value": null,
       "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 551.4915188656803,
-      "displayValue": "0.6 s",
+      "value": 397.5325805006772,
+      "displayValue": "0.4 s",
       "score": 1
     },
     "ttfb": {
@@ -121,8 +114,8 @@
       "score": 1
     },
     "interactive": {
-      "value": 627,
-      "displayValue": "0.6 s",
+      "value": 665.1000000000001,
+      "displayValue": "0.7 s",
       "score": 1
     },
     "opportunities": [
@@ -130,16 +123,18 @@
         "id": "redirects",
         "title": "Avoid multiple page redirects",
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 201,
+        "savingsMs": 202,
         "savingsBytes": 0
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 30,
+        "savingsBytes": 21951
       }
     ],
     "diagnostics": [
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
       {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
@@ -147,10 +142,15 @@
         "score": 0
       },
       {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 35 KiB",
-        "score": 0.5
+        "score": 0
       },
       {
         "id": "cache-insight",
@@ -159,8 +159,8 @@
         "score": 0.5
       },
       {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
@@ -170,17 +170,17 @@
     "label": "Alfa Romeo – VIN Decoder",
     "url": "https://alfaromeowindowsticker.com/vin-decoder",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:31:16.193Z",
-    "performanceScore": 95,
+    "timestamp": "2026-11-08T14:40:10.212Z",
+    "performanceScore": 94,
     "lcp": {
-      "value": 2030,
-      "displayValue": "2.0 s",
-      "score": 0.97
+      "value": 2114,
+      "displayValue": "2.1 s",
+      "score": 0.96
     },
     "fcp": {
-      "value": 2030,
-      "displayValue": "2.0 s",
-      "score": 0.83
+      "value": 2114,
+      "displayValue": "2.1 s",
+      "score": 0.81
     },
     "cls": {
       "value": null,
@@ -188,23 +188,23 @@
       "score": 1
     },
     "tbt": {
-      "value": 18.094335063963626,
-      "displayValue": "20 ms",
-      "score": 1
+      "value": 69,
+      "displayValue": "70 ms",
+      "score": 0.99
     },
     "si": {
-      "value": 4421.299514643708,
-      "displayValue": "4.4 s",
-      "score": 0.74
+      "value": 4558.865553939164,
+      "displayValue": "4.6 s",
+      "score": 0.71
     },
     "ttfb": {
-      "value": 9,
+      "value": 7,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 3299,
-      "displayValue": "3.3 s",
+      "value": 3209.3,
+      "displayValue": "3.2 s",
       "score": 0.94
     },
     "opportunities": [
@@ -212,8 +212,8 @@
         "id": "unused-javascript",
         "title": "Reduce unused JavaScript",
         "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-        "savingsMs": 120,
-        "savingsBytes": 22291
+        "savingsMs": 150,
+        "savingsBytes": 22306
       }
     ],
     "diagnostics": [
@@ -224,9 +224,10 @@
         "score": 0
       },
       {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 38 KiB",
+        "score": 0
       },
       {
         "id": "render-blocking-insight",
@@ -241,10 +242,9 @@
         "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 38 KiB",
-        "score": 0
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
       }
     ]
   },
@@ -253,62 +253,53 @@
     "label": "Alfa Romeo – VIN Decoder",
     "url": "https://alfaromeowindowsticker.com/vin-decoder",
     "strategy": "desktop",
-    "timestamp": "2026-11-07T14:31:46.912Z",
-    "performanceScore": 82,
+    "timestamp": "2026-11-08T14:40:26.793Z",
+    "performanceScore": 100,
     "lcp": {
-      "value": 802.5,
-      "displayValue": "0.8 s",
-      "score": 0.98
+      "value": 688,
+      "displayValue": "0.7 s",
+      "score": 0.99
     },
     "fcp": {
-      "value": 305,
+      "value": 293,
       "displayValue": "0.3 s",
       "score": 1
     },
     "cls": {
-      "value": null,
-      "displayValue": "0",
+      "value": 0.0007544354296880859,
+      "displayValue": "0.001",
       "score": 1
     },
     "tbt": {
-      "value": 397.5,
-      "displayValue": "400 ms",
-      "score": 0.42
+      "value": 8,
+      "displayValue": "10 ms",
+      "score": 1
     },
     "si": {
-      "value": 971.5608280033504,
-      "displayValue": "1.0 s",
-      "score": 0.97
+      "value": 355.91739431009444,
+      "displayValue": "0.4 s",
+      "score": 1
     },
     "ttfb": {
-      "value": 10,
+      "value": 9,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 1600.65,
-      "displayValue": "1.6 s",
-      "score": 0.99
+      "value": 734,
+      "displayValue": "0.7 s",
+      "score": 1
     },
-    "opportunities": [],
+    "opportunities": [
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+        "savingsMs": 30,
+        "savingsBytes": 22290
+      }
+    ],
     "diagnostics": [
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0
-      },
-      {
-        "id": "mainthread-work-breakdown",
-        "title": "Minimize main-thread work",
-        "displayValue": "2.1 s",
-        "score": 0
-      },
       {
         "id": "unsized-images",
         "title": "Image elements do not have explicit `width` and `height`",
@@ -325,6 +316,17 @@
         "title": "Use efficient cache lifetimes",
         "displayValue": "Est savings of 38 KiB",
         "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
       }
     ]
   },
@@ -333,15 +335,15 @@
     "label": "Alfa Romeo – Paint Code",
     "url": "https://alfaromeowindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "mobile",
-    "timestamp": "2026-11-07T14:32:02.346Z",
+    "timestamp": "2026-11-08T14:40:39.556Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 1097,
+      "value": 1077.5,
       "displayValue": "1.1 s",
       "score": 1
     },
     "fcp": {
-      "value": 1097,
+      "value": 1077.5,
       "displayValue": "1.1 s",
       "score": 0.99
     },
@@ -351,24 +353,24 @@
       "score": 1
     },
     "tbt": {
-      "value": 6,
-      "displayValue": "10 ms",
+      "value": null,
+      "displayValue": "0 ms",
       "score": 1
     },
     "si": {
-      "value": 1097,
+      "value": 1077.5,
       "displayValue": "1.1 s",
       "score": 1
     },
     "ttfb": {
-      "value": 8,
+      "value": 6,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 2876.5,
-      "displayValue": "2.9 s",
-      "score": 0.96
+      "value": 1077.5,
+      "displayValue": "1.1 s",
+      "score": 1
     },
     "opportunities": [
       {
@@ -386,27 +388,27 @@
         "score": 0.5
       },
       {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 125 KiB",
+        "score": 0.5
+      },
+      {
         "id": "legacy-javascript-insight",
         "title": "Legacy JavaScript",
         "displayValue": "Est savings of 24 KiB",
         "score": 0.5
       },
       {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 1,106 KiB",
-        "score": 0.5
-      },
-      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
-        "displayValue": "Est savings of 110 ms",
+        "displayValue": "Est savings of 130 ms",
         "score": 0
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 125 KiB",
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 1,106 KiB",
         "score": 0.5
       }
     ]
@@ -416,174 +418,15 @@
     "label": "Alfa Romeo – Paint Code",
     "url": "https://alfaromeowindowsticker.com/paint-code-by-vin-lookup",
     "strategy": "desktop",
-    "timestamp": "2026-11-07T14:32:23.586Z",
+    "timestamp": "2026-11-08T14:40:53.145Z",
     "performanceScore": 100,
     "lcp": {
-      "value": 344,
+      "value": 309,
       "displayValue": "0.3 s",
       "score": 1
     },
     "fcp": {
-      "value": 344,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 7,
-      "displayValue": "10 ms",
-      "score": 1
-    },
-    "si": {
-      "value": 567.5323856720955,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "ttfb": {
-      "value": 10,
-      "displayValue": "Root document took 10 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 630.15,
-      "displayValue": "0.6 s",
-      "score": 1
-    },
-    "opportunities": [
-      {
-        "id": "redirects",
-        "title": "Avoid multiple page redirects",
-        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 201,
-        "savingsBytes": 0
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 125 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "image-delivery-insight",
-        "title": "Improve image delivery",
-        "displayValue": "Est savings of 998 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      }
-    ]
-  },
-  {
-    "site": "ALFAROMEOWINDOWSTICKER Window Sticker",
-    "label": "Alfa Romeo – Options Check",
-    "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
-    "strategy": "mobile",
-    "timestamp": "2026-11-07T14:32:40.269Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 1128,
-      "displayValue": "1.1 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 1128,
-      "displayValue": "1.1 s",
-      "score": 0.99
-    },
-    "cls": {
-      "value": null,
-      "displayValue": "0",
-      "score": 1
-    },
-    "tbt": {
-      "value": 13,
-      "displayValue": "10��ms",
-      "score": 1
-    },
-    "si": {
-      "value": 2688.066159006916,
-      "displayValue": "2.7 s",
-      "score": 0.96
-    },
-    "ttfb": {
-      "value": 99,
-      "displayValue": "Root document took 100 ms",
-      "score": 1
-    },
-    "interactive": {
-      "value": 2581.5,
-      "displayValue": "2.6 s",
-      "score": 0.98
-    },
-    "opportunities": [
-      {
-        "id": "redirects",
-        "title": "Avoid multiple page redirects",
-        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 751,
-        "savingsBytes": 0
-      }
-    ],
-    "diagnostics": [
-      {
-        "id": "legacy-javascript-insight",
-        "title": "Legacy JavaScript",
-        "displayValue": "Est savings of 24 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
-        "score": 0.5
-      },
-      {
-        "id": "unsized-images",
-        "title": "Image elements do not have explicit `width` and `height`",
-        "score": 0.5
-      },
-      {
-        "id": "render-blocking-insight",
-        "title": "Render-blocking requests",
-        "displayValue": "Est savings of 80 ms",
-        "score": 0
-      }
-    ]
-  },
-  {
-    "site": "ALFAROMEOWINDOWSTICKER Window Sticker",
-    "label": "Alfa Romeo – Options Check",
-    "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
-    "strategy": "desktop",
-    "timestamp": "2026-11-07T14:32:55.377Z",
-    "performanceScore": 100,
-    "lcp": {
-      "value": 291,
-      "displayValue": "0.3 s",
-      "score": 1
-    },
-    "fcp": {
-      "value": 291,
+      "value": 309,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -598,17 +441,17 @@
       "score": 1
     },
     "si": {
-      "value": 387.69610000178216,
-      "displayValue": "0.4 s",
+      "value": 343.4684072489143,
+      "displayValue": "0.3 s",
       "score": 1
     },
     "ttfb": {
-      "value": 11,
+      "value": 7,
       "displayValue": "Root document took 10 ms",
       "score": 1
     },
     "interactive": {
-      "value": 291,
+      "value": 309,
       "displayValue": "0.3 s",
       "score": 1
     },
@@ -617,7 +460,7 @@
         "id": "redirects",
         "title": "Avoid multiple page redirects",
         "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
-        "savingsMs": 202,
+        "savingsMs": 201,
         "savingsBytes": 0
       }
     ],
@@ -628,9 +471,14 @@
         "score": 0.5
       },
       {
-        "id": "cache-insight",
-        "title": "Use efficient cache lifetimes",
-        "displayValue": "Est savings of 5 KiB",
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "image-delivery-insight",
+        "title": "Improve image delivery",
+        "displayValue": "Est savings of 998 KiB",
         "score": 0.5
       },
       {
@@ -640,14 +488,168 @@
         "score": 0.5
       },
       {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 125 KiB",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "ALFAROMEOWINDOWSTICKER Window Sticker",
+    "label": "Alfa Romeo – Options Check",
+    "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
+    "strategy": "mobile",
+    "timestamp": "2026-11-08T14:41:14.084Z",
+    "performanceScore": 98,
+    "lcp": {
+      "value": 1072.4952291048512,
+      "displayValue": "1.1 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 1072.4952291048512,
+      "displayValue": "1.1 s",
+      "score": 0.99
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": 146,
+      "displayValue": "150 ms",
+      "score": 0.95
+    },
+    "si": {
+      "value": 1072.4952291048512,
+      "displayValue": "1.1 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 7556.362633941659,
+      "displayValue": "7.6 s",
+      "score": 0.47
+    },
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 754,
+        "savingsBytes": 0
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 15 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
+        "id": "render-blocking-insight",
+        "title": "Render-blocking requests",
+        "displayValue": "Est savings of 140 ms",
+        "score": 0
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
+        "score": 0.5
+      }
+    ]
+  },
+  {
+    "site": "ALFAROMEOWINDOWSTICKER Window Sticker",
+    "label": "Alfa Romeo – Options Check",
+    "url": "https://alfaromeowindowsticker.com/options-check-by-vin",
+    "strategy": "desktop",
+    "timestamp": "2026-11-08T14:41:27.604Z",
+    "performanceScore": 100,
+    "lcp": {
+      "value": 290,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "fcp": {
+      "value": 290,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "cls": {
+      "value": null,
+      "displayValue": "0",
+      "score": 1
+    },
+    "tbt": {
+      "value": null,
+      "displayValue": "0 ms",
+      "score": 1
+    },
+    "si": {
+      "value": 290,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "ttfb": {
+      "value": 8,
+      "displayValue": "Root document took 10 ms",
+      "score": 1
+    },
+    "interactive": {
+      "value": 290,
+      "displayValue": "0.3 s",
+      "score": 1
+    },
+    "opportunities": [
+      {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn how to avoid page redirects](https://developer.chrome.com/docs/lighthouse/performance/redirects/).",
+        "savingsMs": 201,
+        "savingsBytes": 0
+      }
+    ],
+    "diagnostics": [
+      {
+        "id": "cache-insight",
+        "title": "Use efficient cache lifetimes",
+        "displayValue": "Est savings of 5 KiB",
+        "score": 0.5
+      },
+      {
         "id": "image-delivery-insight",
         "title": "Improve image delivery",
         "displayValue": "Est savings of 10 KiB",
         "score": 0.5
       },
       {
+        "id": "legacy-javascript-insight",
+        "title": "Legacy JavaScript",
+        "displayValue": "Est savings of 24 KiB",
+        "score": 0.5
+      },
+      {
         "id": "render-blocking-insight",
         "title": "Render-blocking requests",
+        "score": 0.5
+      },
+      {
+        "id": "unsized-images",
+        "title": "Image elements do not have explicit `width` and `height`",
         "score": 0.5
       }
     ]
