@@ -23,10 +23,14 @@ npx playwright install chromium
 
 # 2. Configure your sites (edit sites.json)
 
-# 3. Run all tests + generate report
+# 3. Discover whole sitemap for any domain
+npm run sitemap -- https://detailedvehiclehistory.com
+npm run sitemap -- classicdecoder.com --limit 100
+
+# 4. Run all tests + generate report
 npm run test:all
 
-# 4. Open the report
+# 5. Open the report
 npm run report:open
 ```
 
@@ -40,9 +44,11 @@ core-web-vitals-testing/
 ├── tests/
 │   └── core-web-vitals.spec.js   # Real browser CWV tests
 ├── scripts/
+│   ├── read-sitemap.js           # 🗺️ Sitemap Crawler & Whole Domain Discovery
 │   ├── pagespeed-audit.js        # PageSpeed Insights API
 │   └── generate-report.js        # HTML report generator
 └── reports/                      # Generated after tests run
+    ├── sitemap-<domain>.json     # Discovered sitemap URLs
     ├── cwv-results.json          # Browser test data
     ├── psi-results.json          # PageSpeed data
     └── cwv-report.html           # ← Beautiful HTML report

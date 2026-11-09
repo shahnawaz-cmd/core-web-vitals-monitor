@@ -23,7 +23,33 @@ if (fs.existsSync(configPath)) {
   sites = config.sites || [];
   settings = config.settings || settings;
   
-  if (DOMAIN_ID) {
+  if (process.env.USE_SITEMAP_URLS) {
+    const sitemapFile = process.env.SITEMAP_FILE
+      ? path.resolve(process.env.SITEMAP_FILE)
+      : path.resolve(__dirname, '../reports/discovered_urls.json');
+    if (fs.existsSync(sitemapFile)) {
+      let urls = JSON.parse(fs.readFileSync(sitemapFile, 'utf8'));
+      if (process.env.PSI_LIMIT) {
+        const limit = parseInt(process.env.PSI_LIMIT, 10);
+        urls = urls.slice(0, limit);
+      }
+      const defaultSiteName = urls.length > 0
+        ? new URL(urls[0]).hostname.replace(/^www\./, '') + ' (Sitemap)'
+        : 'Sitemap URLs';
+      const siteName = process.env.SITE_NAME || defaultSiteName;
+      sites = [{
+        name: siteName,
+        urls: urls.map((u, i) => {
+          try {
+            const pathName = new URL(u).pathname;
+            return { label: pathName === '/' ? 'Homepage' : pathName, url: u };
+          } catch (e) {
+            return { label: `URL ${i + 1}`, url: u };
+          }
+        })
+      }];
+    }
+  } else if (DOMAIN_ID) {
     sites = sites.filter(s => s.name.toLowerCase().replace(/[^a-z0-9]/g, '') === DOMAIN_ID);
   }
 }
@@ -163,53 +189,56 @@ async function main() {
 
   const allResults = [];
 
+  const queue = [];
   for (const site of sites) {
-    console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    console.log(`🌐 ${site.name}`);
-    console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`);
-
     for (const urlEntry of site.urls) {
-      const strategies = ['mobile', 'desktop'];
-
-      for (const strategy of strategies) {
-        const psiData = await fetchPageSpeedData(urlEntry.url, strategy);
-        const metrics = extractMetrics(psiData);
-
-        if (metrics) {
-          const result = {
-            site: site.name,
-            label: urlEntry.label,
-            url: urlEntry.url,
-            strategy,
-            timestamp: new Date().toISOString(),
-            ...metrics,
-          };
-
-          allResults.push(result);
-
-          // Display results
-          const scoreEmoji = metrics.performanceScore >= 90 ? '🟢' : metrics.performanceScore >= 50 ? '🟡' : '🔴';
-          console.log(`\n  ${scoreEmoji} ${urlEntry.label} (${strategy}) — Score: ${metrics.performanceScore}/100`);
-          console.log(`     LCP:  ${metrics.lcp.displayValue}`);
-          console.log(`     FCP:  ${metrics.fcp.displayValue}`);
-          console.log(`     CLS:  ${metrics.cls.displayValue}`);
-          console.log(`     TBT:  ${metrics.tbt.displayValue}`);
-          console.log(`     SI:   ${metrics.si.displayValue}`);
-          console.log(`     TTFB: ${metrics.ttfb.displayValue}`);
-
-          if (metrics.opportunities.length > 0) {
-            console.log(`\n     💡 Top Opportunities:`);
-            for (const opp of metrics.opportunities.slice(0, 3)) {
-              console.log(`        • ${opp.title} (save ~${opp.savingsMs}ms)`);
-            }
-          }
-        }
-
-        // Rate limit: wait between requests
-        await new Promise((r) => setTimeout(r, 2000));
+      for (const strategy of ['mobile', 'desktop']) {
+        queue.push({
+          site: site.name,
+          label: urlEntry.label,
+          url: urlEntry.url,
+          strategy,
+        });
       }
     }
   }
+
+  console.log(`📋 Total PSI audit tasks queued: ${queue.length} (Desktop & Mobile)`);
+  const CONCURRENCY = process.env.PSI_CONCURRENCY ? parseInt(process.env.PSI_CONCURRENCY, 10) : 4;
+  console.log(`⚡ Running with concurrency: ${CONCURRENCY} parallel requests\n`);
+
+  let completed = 0;
+  async function worker() {
+    while (queue.length > 0) {
+      const item = queue.shift();
+      if (!item) break;
+
+      const psiData = await fetchPageSpeedData(item.url, item.strategy);
+      const metrics = extractMetrics(psiData);
+      completed++;
+
+      if (metrics) {
+        const result = {
+          site: item.site,
+          label: item.label,
+          url: item.url,
+          strategy: item.strategy,
+          timestamp: new Date().toISOString(),
+          ...metrics,
+        };
+        allResults.push(result);
+
+        const scoreEmoji = metrics.performanceScore >= 90 ? '🟢' : metrics.performanceScore >= 50 ? '🟡' : '🔴';
+        console.log(`  [${completed}] ${scoreEmoji} ${item.label} (${item.strategy}) — Score: ${metrics.performanceScore}/100 | LCP: ${metrics.lcp.displayValue} | CLS: ${metrics.cls.displayValue}`);
+      }
+
+      // Small delay between requests to avoid burst rate limits
+      await new Promise((r) => setTimeout(r, 400));
+    }
+  }
+
+  const workers = Array.from({ length: CONCURRENCY }, () => worker());
+  await Promise.all(workers);
 
   // Save results
   const outputDir = path.resolve(__dirname, '..', 'reports');

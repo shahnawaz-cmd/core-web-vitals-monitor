@@ -10,18 +10,77 @@ const path = require('path');
 
 const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../sites.json'), 'utf8'));
 let sites = config.sites;
-if (process.env.DOMAIN_ID) {
+if (process.env.USE_SITEMAP_URLS) {
+  const sitemapFile = process.env.SITEMAP_FILE
+    ? path.resolve(process.env.SITEMAP_FILE)
+    : path.resolve(__dirname, '../reports/discovered_urls.json');
+  if (fs.existsSync(sitemapFile)) {
+    const urls = JSON.parse(fs.readFileSync(sitemapFile, 'utf8'));
+    const defaultSiteName = urls.length > 0
+      ? new URL(urls[0]).hostname.replace(/^www\./, '') + ' (Sitemap)'
+      : 'Sitemap URLs';
+    const siteName = process.env.SITE_NAME || defaultSiteName;
+    sites = [{
+      name: siteName,
+      urls: urls.map((u, i) => {
+        try {
+          const pathName = new URL(u).pathname;
+          return { label: pathName === '/' ? 'Homepage' : pathName, url: u };
+        } catch (e) {
+          return { label: `URL ${i + 1}`, url: u };
+        }
+      })
+    }];
+  }
+} else if (process.env.DOMAIN_ID) {
   sites = sites.filter(s => s.name.toLowerCase().replace(/[^a-z0-9]/g, '') === process.env.DOMAIN_ID);
 }
-const RUNS = 3;
+const RUNS = process.env.RUNS ? parseInt(process.env.RUNS, 10) : 3;
 
 const allResults = [];
 
 async function collectWebVitals(page, url, timeout = 15000) {
+  // Register Event Timing Observer for INP before navigation
+  await page.addInitScript(() => {
+    window.__eventTimings = [];
+    try {
+      const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+          if (entry.duration > 0) {
+            window.__eventTimings.push({
+              name: entry.name,
+              duration: Math.round(entry.duration),
+              interactionId: entry.interactionId || 0,
+            });
+          }
+        }
+      });
+      observer.observe({ type: 'event', durationThreshold: 0, buffered: true });
+    } catch (e) {}
+  }).catch(() => {});
+
   await page.goto(url, { waitUntil: 'load', timeout: 60000 });
   await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
 
-  return await page.evaluate(async (waitMs) => {
+  // Trigger realistic interaction to measure INP for every page
+  let interactionLatency = null;
+  try {
+    const input = page.locator('input[type="text"], input[type="search"], input[placeholder*="VIN"], input:not([type="hidden"]), textarea').first();
+    const isInputVisible = await input.isVisible({ timeout: 1000 }).catch(() => false);
+    const startInteraction = Date.now();
+    if (isInputVisible) {
+      await input.click({ timeout: 1000 }).catch(() => {});
+      await input.pressSequentially('1A', { delay: 30 }).catch(() => {});
+    } else {
+      // Click neutral area on body to trigger pointer/mouse event without navigating away
+      await page.mouse.click(100, 100).catch(() => {});
+    }
+    await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+    interactionLatency = Date.now() - startInteraction;
+    await page.waitForTimeout(150);
+  } catch (e) {}
+
+  return await page.evaluate(async ({ waitMs, latencyFallback }) => {
     return new Promise((resolve) => {
       const results = {
         lcp: null,
@@ -98,10 +157,24 @@ async function collectWebVitals(page, url, timeout = 15000) {
         results.lcp = lcpValue;
         results.cls = Math.round(clsValue * 10000) / 10000;
         results.totalBlockingTime = Math.round(totalBlockingTime);
+
+        // Extract INP from Event Timing API
+        try {
+          const events = window.__eventTimings || [];
+          const valid = events.filter((e) => e.duration > 0);
+          if (valid.length > 0) {
+            results.inp = Math.round(Math.max(...valid.map((e) => e.duration)));
+          }
+        } catch (e) {}
+
+        if (results.inp === null && latencyFallback) {
+          results.inp = Math.min(Math.round(latencyFallback), 1000);
+        }
+
         resolve(results);
       }, Math.min(waitMs, 5000));
     });
-  }, timeout);
+  }, { waitMs: timeout, latencyFallback: interactionLatency });
 }
 
 function rateMetric(name, value) {
@@ -145,9 +218,9 @@ for (const site of sites) {
           const metrics = await collectWebVitals(runPage, urlEntry.url);
           metrics.si = estimateSpeedIndex(metrics);
 
-          // Measure user interaction INP if visiting an input page
-          let inp = null;
-          if (urlEntry.url.includes('vin-check') || urlEntry.url.includes('license-plate-lookup')) {
+          // Measure user interaction INP (fallback to input if null)
+          let inp = metrics.inp;
+          if (!inp && (urlEntry.url.includes('vin-check') || urlEntry.url.includes('license-plate-lookup'))) {
             try {
               // 1. Enter dummy input
               const searchInput = runPage.locator('input[placeholder*="VIN"], input[type="text"]').first();
